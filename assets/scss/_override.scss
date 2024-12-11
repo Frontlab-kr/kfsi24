@@ -1,0 +1,245 @@
+$mobileWidth: 992px;
+
+html,
+body {
+  font-family: 'Pretendard', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+textarea {
+  resize: none;
+}
+.fs-14 {
+  font-size: 14px !important;
+}
+.fs-15 {
+  font-size: 15px !important;
+}
+.fs-16 {
+  font-size: 16px !important;
+}
+.fs-17 {
+  font-size: 17px !important;
+}
+.fs-18 {
+  font-size: 18px !important;
+}
+.fs-19 {
+  font-size: 19px !important;
+}
+.fs-20 {
+  font-size: 20px !important;
+}
+.fs-21 {
+  font-size: 21px !important;
+}
+small {
+  font-size: 15px !important;
+  line-height: 1.3 !important;
+}
+@media screen and (max-width: $mobileWidth) {
+  small {
+    font-size: 14px !important;
+  }
+}
+.modal {
+  &-dialog {
+    max-width: 600px;
+  }
+  &-content {
+    padding: 0;
+    border-radius: 0;
+    border: 0;
+  }
+  &-header {
+    height: 50px;
+    padding: 12px 12px 12px 24px;
+    background-color: #004d16;
+    border: 0;
+    border-radius: 0;
+    .btn-close {
+      width: 50px;
+      height: 50px;
+      background: url(../images/icon/ico-modal-close.png) no-repeat 50% 50%;
+      opacity: 1;
+    }
+  }
+  &-title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.09;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+  &-body {
+    margin: 0;
+    padding: 24px;
+  }
+  &-footer {
+    padding: 0 0 24px 0;
+    .btn {
+      min-width: 180px;
+    }
+  }
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  height: 35px;
+  border-radius: 5px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  text-decoration: none !important;
+  @media screen and (max-width: $mobileWidth) {
+    font-size: 15px;
+  }
+  &-round {
+    border-radius: 100px;
+  }
+  &-sm {
+    height: 32px;
+    font-size: 15px;
+  }
+  &-lg {
+    height: 40px;
+  }
+  &-xl {
+    height: 50px;
+    font-size: 17px;
+  }
+  &-white {
+    background: #fff;
+    color: #000;
+    &:hover {
+      background: #fff;
+      color: #000;
+    }
+  }
+  &-primary-light {
+    background-color: #406491;
+    color: #fff !important;
+    &:hover {
+      background-color: #406491;
+      color: #fff !important;
+    }
+  }
+  &-outline-primary {
+    color: #333;
+  }
+  &-outline-secondary {
+    border: solid 1px #ccc;
+    color: #666 !important;
+    &:hover {
+      background: none;
+      border: solid 1px #ccc;
+      color: #666;
+    }
+  }
+  &-info {
+    border: solid 1px #ccc;
+    color: #333 !important;
+  }
+  &:disabled,
+  &-disabled {
+    border-color: #eee !important;
+    background-color: #eee !important;
+    color: #999 !important;
+  }
+}
+.dropdown-toggle {
+  min-width: 200px;
+  justify-content: space-between;
+  @media screen and (max-width: $mobileWidth) {
+    min-width: 100%;
+  }
+}
+.form-check {
+  &-label {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+}
+.badge {
+  padding: 4px 6px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  &-outline-dark {
+    border: solid 1px #333;
+    color: #333;
+  }
+  &-outline-primary {
+    border: solid 1px #004d16;
+    color: #004d16;
+  }
+  &-outline-secondary {
+    border: solid 1px #999;
+    color: #999;
+  }
+  &-outline-danger {
+    border: solid 1px #d93600;
+    color: #d93600;
+  }
+  &-outline-info {
+    border: solid 1px #406491;
+    background-color: #f4fcff;
+    color: #406491;
+  }
+}
+
+.form-control {
+  display: inline-flex;
+  align-items: center;
+  min-width: 300px;
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 5px;
+  border: solid 1px #ccc;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  @media screen and (max-width: $mobileWidth) {
+    min-width: auto;
+  }
+
+  &-lg {
+    font-size: 18px;
+  }
+}
+.form-select {
+  width: auto;
+  height: 36px;
+  font-size: 16px;
+  border: solid 1px #ccc;
+  @media screen and (max-width: $mobileWidth) {
+    min-width: auto;
+  }
+}

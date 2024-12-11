@@ -1,0 +1,130 @@
+<footer class="kfsi-footer">
+  <div class="kfsi-footer-site">
+    <div class="kfsi-inner">
+      <div class="kfsi-footer-site-select">
+        <button>관련 사이트</button>
+        <ul>
+          <li>
+            <a href="" target="_blank" title="관련사이트1이 새창으로 열립니다."
+              >관련사이트 1</a
+            >
+          </li>
+          <li>
+            <a href="" target="_blank" title="관련사이트2이 새창으로 열립니다."
+              >관련사이트 2</a
+            >
+          </li>
+          <li>
+            <a href="" target="_blank" title="관련사이트3이 새창으로 열립니다."
+              >관련사이트 3</a
+            >
+          </li>
+          <li>
+            <a href="" target="_blank" title="관련사이트4이 새창으로 열립니다."
+              >관련사이트 4</a
+            >
+          </li>
+          <li>
+            <a href="" target="_blank" title="관련사이트5이 새창으로 열립니다."
+              >관련사이트 5</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="kfsi-inner">
+    <div class="kfsi-footer-head">
+      <address>
+        <img
+          src="./assets/images/logo-footer.svg"
+          alt="한국소방안전원"
+          class="kfsi-footer-logo"
+        />
+        [07226] 서울특별시 영등포구 영중로 170 (영등포동8가)<br />
+        사업자등록번호 : 107-82-05239<br />
+        사이트 · 단순문의 : 1849-4819
+        <p>
+          <span>(콜센터 운영시간 :</span>
+          <span
+            >평일 08:00~18:00/<br class="mo" />
+            점심시간 12:00~13:00/<br class="mo" />
+            주말, 공휴일 제외)</span
+          >
+        </p>
+        <br />
+        <div class="kfsi-footer-link">
+          <div class="kfsi-footer-accessibility">
+            <img src="./assets/images/wa.png" alt="웹접근성 인증마크" />
+          </div>
+          <a href="">찾아오시는 길</a>
+        </div>
+        <a href="">교재· 기술문의 안내 및 연락처</a>
+      </address>
+    </div>
+    <div class="kfsi-footer-foot">
+      <div>
+        <div class="kfsi-footer-menu">
+          <a href=""><strong>개인정보처리방침</strong></a>
+          <a href="">영상정보처리기기 운영관리 방침</a>
+          <a href="">이용약관</a>
+          <a href="" class="underline">원격지원서비스</a>
+        </div>
+        <div class="kfsi-footer-copyright">
+          COPYRIGHT ⓒ Korea Fire Safety Institute.<br class="mo" />
+          All Rights Reserved.
+        </div>
+      </div>
+      <div class="kfsi-footer-sns">
+        <a
+          href="https://pf.kakao.com/_reFxld"
+          target="_blank"
+          class="kfsi-footer-sns-kakao"
+        >
+          kakaotalk
+        </a>
+        <a
+          href="http://www.youtube.com/channel/UCxxWnGhFgJOzsNOwYSHN5cQ"
+          target="_blank"
+          class="kfsi-footer-sns-youtube"
+        >
+          youtube
+        </a>
+        <a
+          href="http://www.facebook.com/kfsi.official"
+          target="_blank"
+          class="kfsi-footer-sns-facebook"
+        >
+          facebook
+        </a>
+        <a
+          href="http://www.instagram.com/kfsi_official"
+          target="_blank"
+          class="kfsi-footer-sns-instagram"
+        >
+          instagram
+        </a>
+        <a href="" class="kfsi-footer-sns-webzine"> webzine </a>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function () {
+      // 버튼 클릭 시 .kfsi-footer-site-select에 active 클래스 토글
+      $('.kfsi-footer-site-select button').on('click', function (e) {
+        e.stopPropagation(); // 이벤트 버블링 방지
+        $('.kfsi-footer-site-select').toggleClass('active');
+      });
+
+      // .kfsi-footer-site-select 외부 영역 클릭 시 active 클래스 제거
+      $(document).on('click', function (e) {
+        if (
+          !$('.kfsi-footer-site-select').is(e.target) &&
+          $('.kfsi-footer-site-select').has(e.target).length === 0
+        ) {
+          $('.kfsi-footer-site-select').removeClass('active');
+        }
+      });
+    });
+  </script>
+</footer>

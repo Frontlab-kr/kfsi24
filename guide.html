@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div class="kfsi-inner">
+        <div class="kfsi-body">
+          <div>
+            <!-- <h3>BUTTON</h3>
+            <div class="mt-4">준비중</div> -->
+            <h3>ALERT</h3>
+            <div class="d-flex gap-3 mt-4">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#alert01"
+              >
+                alert (타입1)
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#alert02"
+              >
+                alert (타입2)
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#alert03"
+              >
+                alert (타입3)
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#alert04"
+              >
+                alert (타입4)
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="alert01"
+      tabindex="-1"
+      aria-labelledby="alert01Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered kfsi-alert">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="alert01Label">알림 타이틀</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              입력하신 정보가 틀렸습니다.<br />
+              다시 확인해 주시기 바랍니다.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-lg btn-primary">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="alert02"
+      tabindex="-1"
+      aria-labelledby="alert01Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered kfsi-alert">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="alert01Label">알림 타이틀</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              삭제된 게시글은 복구할 수 없습니다.<br />
+              정말로 삭제 하시겠습니까?
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-lg btn-outline-secondary">
+              취소
+            </button>
+            <button type="button" class="btn btn-lg btn-primary">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="alert03"
+      tabindex="-1"
+      aria-labelledby="alert01Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered kfsi-alert">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              입력하신 정보가 틀렸습니다.<br />
+              다시 확인해 주시기 바랍니다.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-lg btn-primary">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="alert04"
+      tabindex="-1"
+      aria-labelledby="alert01Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered kfsi-alert">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              삭제된 게시글은 복구할 수 없습니다.<br />
+              정말로 삭제 하시겠습니까?
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-lg btn-outline-secondary">
+              취소
+            </button>
+            <button type="button" class="btn btn-lg btn-primary">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
