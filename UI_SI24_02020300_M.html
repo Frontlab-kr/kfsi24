@@ -27,8 +27,8 @@
               <div class="kfsi-snb__title">
                 <h2>로그인</h2>
               </div>
-              <a href="" class="kfsi-snb-item active">로그인</a>
-              <a href="" class="kfsi-snb-item">회원가입</a>
+              <a href="" class="kfsi-snb-item">로그인</a>
+              <a href="" class="kfsi-snb-item active">회원가입</a>
               <a href="" class="kfsi-snb-item">아이디 찾기</a>
               <a href="" class="kfsi-snb-item">비밀번호 찾기</a>
             </div>
@@ -39,19 +39,285 @@
                     <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
                     <li class="breadcrumb-item">메인(로그인)</li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      로그인
+                      회원가입
                     </li>
                   </ol>
                 </nav>
               </div>
               <div class="kfsi-contents-title">
-                <h1>로그인</h1>
+                <h1>회원가입</h1>
+              </div>
+              <div class="kfsi-join">
+                <div class="kfsi-nav">
+                  <ol>
+                    <li>
+                      <span>01</span>
+                      <strong>약관동의</strong>
+                    </li>
+                    <li class="active">
+                      <span>02</span>
+                      <strong>정보입력</strong>
+                    </li>
+                    <li>
+                      <span>03</span>
+                      <strong>가입완료 </strong>
+                    </li>
+                  </ol>
+                </div>
+                <div class="kfsi-join-head">
+                  <div class="kfsi-box bg-light fs-20 mo-fs-17 text-center">
+                    만 14세 미만 회원가입의 법정대리인(부모) 동의
+                  </div>
+                </div>
+                <div class="kfsi-join-step02">
+                  <div class="mb-15 mo-mb-10">
+                    <h4 class="kfsi-h4">법정대리인 정보 입력</h4>
+                    <div class="kfsi-board">
+                      <div class="kfsi-board-write">
+                        <div class="kfsi-board-write-form">
+                          <table
+                            summary="법정대리인의 정보를 입력하는 양식입니다. 필수 입력 항목은 법정대리인의 성명입니다."
+                          >
+                            <caption>
+                              법정대리인 정보 입력
+                            </caption>
+                            <colgroup>
+                              <col style="width: 195px" />
+                              <col style="width: 745px" />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <th scope="row">
+                                  법정대리인 성명
+                                  <span class="text-danger">*</span>
+                                </th>
+                                <td>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    title="법정대리인 성명"
+                                    style="width: 200px"
+                                  />
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-15 mo-mb-10">
+                    <h4 class="kfsi-h4">
+                      법정대리인 개인정보 수집 목적 및 항목 등 안내
+                    </h4>
+                    <div class="kfsi-table">
+                      <table summary="">
+                        <caption></caption>
+                        <colgroup>
+                          <col style="width: 580px" />
+                          <col style="width: 180px" />
+                          <col style="width: 180px" />
+                        </colgroup>
+
+                        <thead>
+                          <tr>
+                            <th scope="col">수집목적</th>
+                            <th scope="col">수집항목</th>
+                            <th scope="col">보유기간</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              만 14세 아동 개인정보 수집에 대한 법정 대리인
+                              동의사항 확인
+                            </td>
+                            <td>법정대리인의 성명</td>
+                            <td>아동회원 탈퇴 시</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="mt-5">
+                      ※ 개인정보보호법 제 22조 제 6항에 의거 법정대리인의 동의를
+                      받기 위해 필요한 최소한의 정보는 법정대리인의 동의 없이
+                      해당 아동으로부터 직접 수집할 수 있습니다.
+                    </div>
+                  </div>
+                  <div>
+                    <div class="kfsi-agree-form">
+                      <div class="kfsi-agree-form__title">
+                        법적대리인 동의 (만 14세 미만)
+                      </div>
+                      <div class="kfsi-agree-form__contents">
+                        <strong>
+                          만 14세 미만의 경우 법적대리인의 동의를 받고
+                          있습니다.<br />
+                          개인정보의 수집·이용하는데 동의하십니까?
+                        </strong>
+                        <div class="mt-5 text-danger">
+                          ※ 법정대리인의 동의가 없는 경우 회원가입이 불가합니다.
+                        </div>
+                      </div>
+                      <div class="kfsi-agree-form__foot">
+                        <div class="form-check mx-2">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            value=""
+                            id="radio1-1"
+                          />
+                          <label class="form-check-label" for="radio1-1">
+                            위 내용에 동의합니다.
+                          </label>
+                        </div>
+                        <div class="form-check mx-2">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            value=""
+                            id="radio1-2"
+                          />
+                          <label class="form-check-label" for="radio1-2">
+                            위 내용에 동의하지 않습니다.
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mt-5">
+                      ※ 본인인증 시 제공되는 정보는 해당 인증기관에서 직접
+                      수집하며, 인증 이외의 용도는 이용 또는 저장하지 않습니다.
+                    </div>
+                  </div>
+                  <div class="kfsi-join-step02-button">
+                    <a href="" class="btn btn-primary btn-lg">
+                      보호자 휴대용 인증
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div id="footer"></div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="alert01"
+      tabindex="-1"
+      aria-labelledby="alert01Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered kfsi-alert">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="alert01Label">중복확인</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              abc4321@<br />
+              사용 가능한 아이디입니다.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-lg btn-primary">
+              아이디 사용
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal01" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5">비밀번호 도움말</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-10">
+              <strong>□ 비밀번호 만들기</strong>
+              <div class="kfsi-textlist">
+                <ul>
+                  <li>
+                    9~16자의 영문, 숫자, 특수문자 중 3가지 모두 혼용하여
+                    사용합니다.<br />
+                    (사용 가능한 특수문자 : ! # $ ( ) * , . : @ [ ] ^ _ { } | ~
+                    ?)
+                  </li>
+                  <li>
+                    아이디, 전화번호 혹은 연속된 영문자 및 숫자, 사전에 포함된
+                    단어 등 타인이 쉽게 알아낼 수 있는 비밀번호 사용은
+                    위험합니다.
+                  </li>
+                  <li>
+                    타 사이트와 동일한 비밀번호의 사용, 이전에 사용했던
+                    비밀번호의 재사용은 안전하지 않을 수 있습니다.
+                  </li>
+                  <li>
+                    비밀번호는 비밀번호 안전도에 따라 3~6개월에 한 번씩
+                    주기적으로 바꾸어 사용 하시는 것이 안전합니다.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="">
+              <strong>□ 사용 불가능한 비밀번호</strong>
+              <div class="kfsi-textlist">
+                <ul>
+                  <li>
+                    공백 또는 일부 특수문자는 비밀번호로 사용할 수 없습니다.<br />
+                    (사용 불가능한 특수문자 : " + ; / ; > < = & ' %)
+                  </li>
+                  <li>
+                    영문자 또는 숫자만으로 이루어진 비밀번호는 사용할 수
+                    없습니다.<br />
+                    (예) axd@13579(O), !abc357bc(O), abc12!34!(O), abcdefghi(X),
+                    13579012(X)
+                  </li>
+                  <li>
+                    동일한 영문자 또는 숫자를 연속적으로 4번 이상 포함할 경우
+                    사용할 수 없습니다.<br />
+                    (예) aabbcc12#(O), aaaabbbb1(X), abbbbccc2(X), ab1111222(X)
+                  </li>
+                  <li>
+                    연속된 영문자 또는 숫자를 연속적으로 3자리 이상 포함할 경우
+                    사용할 수 없습니다.<br />
+                    (예) a!b@c3d4%(O), abc123!@#(X), a123bc!@#(X)
+                  </li>
+                  <li>
+                    아이디, 전화번호 등 개인정보로만 이루어진 비밀번호는 사용할
+                    수 없습니다.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary btn-lg"
+              data-bs-dismiss="modal"
+            >
+              닫기
+            </button>
+          </div> -->
+        </div>
+      </div>
     </div>
   </body>
 </html>

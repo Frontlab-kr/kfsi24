@@ -19242,19 +19242,21 @@ small, .small {
 .kfsi-table table {
   width: 100%;
   border-top: 1px solid #999;
+  border-top: 2px solid var(--004D16, #004d16);
   word-break: keep-all;
 }
 .kfsi-table table thead th {
-  padding: 0 16px;
+  padding: 5px 16px;
   border: 1px solid #ccc;
   background: #e0efdb;
   color: #000;
+  text-align: center;
   font-family: Pretendard;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 200% */
-  letter-spacing: 0.42px;
+  line-height: normal;
+  letter-spacing: 0.48px;
   text-align: center;
 }
 .kfsi-table table thead tr th:first-child,
@@ -19267,16 +19269,17 @@ small, .small {
 }
 .kfsi-table table tbody th,
 .kfsi-table table tfoot th {
-  padding: 12px 16px;
+  padding: 5px 16px;
   border: 1px solid #ccc;
   background-color: #f7f7f7;
   color: #000;
   text-align: center;
   font-family: Pretendard;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  letter-spacing: 0.48px;
   word-break: keep-all;
 }
 .kfsi-table table tbody th:first-child,
@@ -19285,15 +19288,16 @@ small, .small {
 }
 .kfsi-table table tbody td,
 .kfsi-table table tfoot td {
-  padding: 12px 16px;
+  padding: 5px 16px;
   border: 1px solid #ccc;
   color: #000;
   text-align: center;
   font-family: Pretendard;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  letter-spacing: 0.48px;
   word-break: keep-all;
 }
 .kfsi-table table tbody td a,
@@ -31464,6 +31468,23 @@ body {
     min-width: 150px;
     width: 100%;
   }
+  .kfsi-join-step02 .kfsi-agree-form {
+    margin-top: 60px;
+  }
+  .kfsi-join-step02 .kfsi-agree-form:first-child {
+    margin-top: 0;
+  }
+  .kfsi-join-step02-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 40px 0 0 0;
+  }
+  .kfsi-join-step02-button .btn {
+    min-width: auto;
+    width: 100%;
+  }
   .kfsi-join-complete {
     padding: 40px 0 0 0;
   }
@@ -31606,6 +31627,7 @@ body {
   }
   .kfsi-mypage-phone .btn {
     width: 100%;
+    height: 40px;
   }
 }
 .kfsi-mypage-number {
@@ -31734,6 +31756,7 @@ body {
   }
   .kfsi-mypage-certification .btn {
     width: 100%;
+    height: 40px;
   }
   .kfsi-mypage-certification-id {
     display: flex;
@@ -31925,6 +31948,7 @@ body {
   font-weight: 400;
   line-height: 24px; /* 150% */
   letter-spacing: 0.48px;
+  word-break: keep-all;
 }
 .kfsi-agree-form__foot {
   display: flex;
@@ -31972,8 +31996,9 @@ body {
   }
   .kfsi-agree-form__foot {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     padding: 8px;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;

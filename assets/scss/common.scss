@@ -9938,6 +9938,26 @@ body {
           }
         }
       }
+      &-step02 {
+        .kfsi-agree-form {
+          margin-top: 60px;
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+        &-button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          margin: 40px 0 0 0;
+
+          .btn {
+            min-width: auto;
+            width: 100%;
+          }
+        }
+      }
       &-complete {
         padding: 40px 0 0 0;
         &::before {
@@ -10076,6 +10096,7 @@ body {
         }
         .btn {
           width: 100%;
+          height: 40px;
         }
       }
     }
@@ -10202,6 +10223,7 @@ body {
         gap: 5px;
         .btn {
           width: 100%;
+          height: 40px;
         }
         &-id {
           display: flex;
@@ -10396,6 +10418,7 @@ body {
         font-weight: 400;
         line-height: 24px; /* 150% */
         letter-spacing: 0.48px;
+        word-break: keep-all;
       }
       &__foot {
         display: flex;
@@ -10443,8 +10466,9 @@ body {
         }
         &__foot {
           display: flex;
-          align-items: center;
-          justify-content: center;
+          align-items: flex-start;
+          justify-content: flex-start;
+          flex-wrap: wrap;
           padding: 8px;
           border-top: 1px solid #ccc;
           border-bottom: 1px solid #ccc;

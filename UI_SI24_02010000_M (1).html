@@ -572,12 +572,17 @@
             ></button>
           </div>
           <div class="modal-body">
-            <div class="kfsi-table">
-              <table>
+            <div class="kfsi-table kfsi-table-scroll-mo">
+              <table
+                summary="메뉴별 대상 서비스와 로그인 인증방식(간편인증, 실명확인, 아이디, 디지털원패스) 권한 정보를 제공합니다."
+              >
+                <caption>
+                  로그인 인증별 권한 관리
+                </caption>
                 <colgroup>
                   <col style="width: 110px" />
                   <col style="width: 245px" />
-                  <col style="width: 90px" />
+                  <col style="width: 80px" />
                   <col style="width: 90px" />
                   <col style="width: 90px" />
                   <col style="width: 90px" />
@@ -586,7 +591,7 @@
                   <tr>
                     <th scope="col" rowspan="2">메뉴</th>
                     <th scope="col" rowspan="2">대상 서비스</th>
-                    <th scope="col" colspan="4">대상 서비스</th>
+                    <th scope="col" colspan="4">인증방식</th>
                   </tr>
                   <tr>
                     <th scope="col" style="background: #ffecc7">간편인증</th>
@@ -599,13 +604,58 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td></td>
+                    <td>소방안전교육</td>
+                    <td>강습,시험,수첩,실무교육발급 신청/확인</td>
+                    <td><strong>O</strong></td>
+                    <td><strong>O</strong></td>
+                    <td><strong>O</strong></td>
+                    <td><strong>O</strong></td>
+                  </tr>
+                  <tr>
+                    <td>의용소방대교육</td>
+                    <td>의용소방대 신청/수강/이수증 발급</td>
+                    <td><strong>O</strong></td>
+                    <td><strong class="text-danger">X</strong></td>
+                    <td><strong>O</strong></td>
+                    <td><strong>O</strong></td>
+                  </tr>
+                  <tr>
+                    <td>다중이용업교육</td>
+                    <td>다중이용업 신청/수강/이수증 발급</td>
+                    <td><strong>O</strong></td>
+                    <td><strong class="text-danger">X</strong></td>
+                    <td><strong>O</strong></td>
+                    <td><strong>O</strong></td>
+                  </tr>
+                  <tr>
+                    <td>회원서비스</td>
+                    <td>퀴즈이벤트, 전자도서관</td>
+                    <td><strong>O</strong></td>
+                    <td><strong>O</strong></td>
+                    <td><strong>O</strong></td>
+                    <td><strong>O</strong></td>
+                  </tr>
+                  <tr>
+                    <td>화재안전진단</td>
+                    <td>견적신청</td>
+                    <td><strong>O</strong></td>
+                    <td><strong class="text-danger">X</strong></td>
+                    <td><strong>O</strong></td>
+                    <td><strong>O</strong></td>
+                  </tr>
+                  <tr>
+                    <td>안전원소개</td>
+                    <td>고객의 소리, 취업정보, 채용</td>
+                    <td><strong>O</strong></td>
+                    <td><strong class="text-danger">X</strong></td>
+                    <td><strong>O</strong></td>
+                    <td><strong>O</strong></td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
-          <div class="modal-footer">
+          <!-- <div class="modal-footer">
             <button
               type="button"
               class="btn btn-outline-secondary btn-lg"
@@ -613,7 +663,7 @@
             >
               닫기
             </button>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
