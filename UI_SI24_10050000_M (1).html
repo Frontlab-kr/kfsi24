@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육용 콘텐츠</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">교재</a>
+              <a href="" class="kfsi-snb-item">디지털 콘텐츠</a>
+              <a href="" class="kfsi-snb-item">각종 메뉴얼</a>
+              <a href="" class="kfsi-snb-item active">서식</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">교육용 콘텐츠</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      서식
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>각종서식</h1>
+              </div>
+              <div class="kfsi-notice">
+                <div class="pc">
+                  <div class="kfsi-board">
+                    <div class="kfsi-board-head">
+                      <div class="kfsi-board-head-start">
+                        <div class="dropdown">
+                          <button
+                            class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            style="min-width: 150px"
+                          >
+                            전체 분류
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="javascript:void(0);"
+                                >선택1</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="javascript:void(0);"
+                                >선택2</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="javascript:void(0);"
+                                >선택3</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="kfsi-board-head-end">
+                        <div class="kfsi-board-head-search">
+                          <div class="dropdown">
+                            <button
+                              class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              제목
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="javascript:void(0);"
+                                  >선택1</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="javascript:void(0);"
+                                  >선택2</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="javascript:void(0);"
+                                  >선택3</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="검색어를 입력해 주세요."
+                            title="검색어를 입력해 주세요."
+                          />
+                          <button
+                            type="button"
+                            class="btn btn-secondary btn-sm"
+                          >
+                            검색
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-board-list">
+                      <table
+                        summary="공지사항 목록으로 No, 분류, 제목, 첨부파일, 작성자, 작성일, 조회수를 제공합니다."
+                      >
+                        <caption>
+                          공지사항 목록
+                        </caption>
+                        <colgroup>
+                          <col style="width: 70px" />
+                          <col style="width: 450px" />
+                          <col style="width: 140px" />
+                          <col style="width: 140px" />
+                          <col style="width: 140px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">No.</th>
+                            <th scope="col">제목</th>
+                            <th scope="col">적성일</th>
+                            <th scope="col">첨부파일</th>
+                            <th scope="col">조회수</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>122</td>
+                            <td class="text-start">
+                              <a
+                                href=""
+                                class="d-block text-truncate"
+                                style="max-width: 400px"
+                                >안전시설등세부점검표(다중이용업)
+                                안전시설등세부점검표(다중이용업)
+                                안전시설등세부점검표(다중이용업)
+                                안전시설등세부점검표(다중이용업)
+                              </a>
+                            </td>
+                            <td>2024.10.02</td>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center gap-1"
+                              >
+                                <i class="ico-attachment">파일</i>
+                                (2)
+                              </div>
+                            </td>
+                            <td>377</td>
+                          </tr>
+                          <tr>
+                            <td>122</td>
+                            <td class="text-start">
+                              <a
+                                href=""
+                                class="d-block text-truncate"
+                                style="max-width: 400px"
+                                >안전시설등세부점검표(다중이용업)
+                                안전시설등세부점검표(다중이용업)
+                                안전시설등세부점검표(다중이용업)
+                                안전시설등세부점검표(다중이용업)
+                              </a>
+                            </td>
+                            <td>2024.10.02</td>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center gap-1"
+                              >
+                                <i class="ico-attachment">파일</i>
+                                (2)
+                              </div>
+                            </td>
+                            <td>377</td>
+                          </tr>
+                          <tr>
+                            <td>122</td>
+                            <td class="text-start">
+                              <a
+                                href=""
+                                class="d-block text-truncate"
+                                style="max-width: 400px"
+                                >안전시설등세부점검표(다중이용업)
+                                안전시설등세부점검표(다중이용업)
+                                안전시설등세부점검표(다중이용업)
+                                안전시설등세부점검표(다중이용업)
+                              </a>
+                            </td>
+                            <td>2024.10.02</td>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center gap-1"
+                              >
+                                <i class="ico-attachment">파일</i>
+                                (2)
+                              </div>
+                            </td>
+                            <td>377</td>
+                          </tr>
+                          <tr>
+                            <td>122</td>
+                            <td class="text-start">
+                              <a
+                                href=""
+                                class="d-block text-truncate"
+                                style="max-width: 400px"
+                                >안전시설등세부점검표(다중이용업)
+                                안전시설등세부점검표(다중이용업)
+                                안전시설등세부점검표(다중이용업)
+                                안전시설등세부점검표(다중이용업)
+                              </a>
+                            </td>
+                            <td>2024.10.02</td>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center gap-1"
+                              >
+                                <i class="ico-attachment">파일</i>
+                                (2)
+                              </div>
+                            </td>
+                            <td>377</td>
+                          </tr>
+                          <tr>
+                            <td>122</td>
+                            <td class="text-start">
+                              <a
+                                href=""
+                                class="d-block text-truncate"
+                                style="max-width: 400px"
+                                >안전시설등세부점검표(다중이용업)
+                                안전시설등세부점검표(다중이용업)
+                                안전시설등세부점검표(다중이용업)
+                                안전시설등세부점검표(다중이용업)
+                              </a>
+                            </td>
+                            <td>2024.10.02</td>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center gap-1"
+                              >
+                                <i class="ico-attachment">파일</i>
+                                (2)
+                              </div>
+                            </td>
+                            <td>377</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="kfsi-board-pagination">
+                      <nav>
+                        <ul class="pagination">
+                          <li class="page-item page-item--first">
+                            <a class="page-link" href="#">처음</a>
+                          </li>
+                          <li class="page-item page-item--prev">
+                            <a class="page-link" href="#">이전</a>
+                          </li>
+                          <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">4</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">5</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">6</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">7</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">8</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">9</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">10</a>
+                          </li>
+                          <li class="page-item page-item--next">
+                            <a class="page-link" href="#">다음</a>
+                          </li>
+                          <li class="page-item page-item--last">
+                            <a class="page-link" href="#">마지막</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+                <div class="mo">
+                  <div class="kfsi-board">
+                    <div class="kfsi-board-head flex-column gap-1">
+                      <div class="kfsi-board-head-start gap-1">
+                        <div class="dropdown w-100">
+                          <button
+                            class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            style="height: 40px"
+                          >
+                            전체 분류
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="javascript:void(0);"
+                                >선택1</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="javascript:void(0);"
+                                >선택2</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="javascript:void(0);"
+                                >선택3</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="dropdown w-100">
+                          <button
+                            class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            style="height: 40px"
+                          >
+                            제목
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="javascript:void(0);"
+                                >선택1</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="javascript:void(0);"
+                                >선택2</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="javascript:void(0);"
+                                >선택3</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="kfsi-board-head-end">
+                        <div class="kfsi-board-head-search">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="검색어를 입력해 주세요."
+                            title="검색어를 입력해 주세요."
+                          />
+                          <button
+                            type="button"
+                            class="btn btn-secondary btn-sm"
+                            style="min-width: 80px"
+                          >
+                            검색
+                            <i class="ico-search-white"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-board-list">
+                      <a href="" class="kfsi-board-list-item">
+                        <div
+                          class="kfsi-board-list-item-text justify-content-between"
+                        >
+                          <span class="me-8">122</span>
+                          <span class="d-block text-truncate me-2"
+                            >소방시설등 자체점검기록표 소방시설등 자체점검기록표
+                            소방시설등 자체점검기록표 소방시설등 자체점검기록표
+                            소방시설등 자체점검기록표</span
+                          >
+                        </div>
+                      </a>
+                      <a href="" class="kfsi-board-list-item">
+                        <div
+                          class="kfsi-board-list-item-text justify-content-between"
+                        >
+                          <span class="me-8">122</span>
+                          <span class="d-block text-truncate me-2"
+                            >소방시설등 자체점검기록표 소방시설등 자체점검기록표
+                            소방시설등 자체점검기록표 소방시설등 자체점검기록표
+                            소방시설등 자체점검기록표</span
+                          >
+                        </div>
+                      </a>
+                      <a href="" class="kfsi-board-list-item">
+                        <div
+                          class="kfsi-board-list-item-text justify-content-between"
+                        >
+                          <span class="me-8">122</span>
+                          <span class="d-block text-truncate me-2"
+                            >소방시설등 자체점검기록표 소방시설등 자체점검기록표
+                            소방시설등 자체점검기록표 소방시설등 자체점검기록표
+                            소방시설등 자체점검기록표</span
+                          >
+                        </div>
+                      </a>
+                      <a href="" class="kfsi-board-list-item">
+                        <div
+                          class="kfsi-board-list-item-text justify-content-between"
+                        >
+                          <span class="me-8">122</span>
+                          <span class="d-block text-truncate me-2"
+                            >소방시설등 자체점검기록표 소방시설등 자체점검기록표
+                            소방시설등 자체점검기록표 소방시설등 자체점검기록표
+                            소방시설등 자체점검기록표</span
+                          >
+                        </div>
+                      </a>
+                      <a href="" class="kfsi-board-list-item">
+                        <div
+                          class="kfsi-board-list-item-text justify-content-between"
+                        >
+                          <span class="me-8">122</span>
+                          <span class="d-block text-truncate me-2"
+                            >소방시설등 자체점검기록표 소방시설등 자체점검기록표
+                            소방시설등 자체점검기록표 소방시설등 자체점검기록표
+                            소방시설등 자체점검기록표</span
+                          >
+                        </div>
+                      </a>
+                    </div>
+                    <div class="kfsi-board-pagination">
+                      <nav>
+                        <ul class="pagination">
+                          <li class="page-item page-item--first">
+                            <a class="page-link" href="#">처음</a>
+                          </li>
+                          <li class="page-item page-item--prev">
+                            <a class="page-link" href="#">이전</a>
+                          </li>
+                          <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">4</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">5</a>
+                          </li>
+                          <li class="page-item page-item--next">
+                            <a class="page-link" href="#">다음</a>
+                          </li>
+                          <li class="page-item page-item--last">
+                            <a class="page-link" href="#">마지막</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

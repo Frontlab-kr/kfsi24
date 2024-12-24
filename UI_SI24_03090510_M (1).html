@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>나의정보</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">개인정보수정</a>
+              <a href="" class="kfsi-snb-item">비밀번호 변경</a>
+              <a href="" class="kfsi-snb-item">로그인 기록보기</a>
+              <a href="" class="kfsi-snb-item">회원탈퇴</a>
+              <a href="" class="kfsi-snb-item">안전관리자 선임 이력 관리</a>
+              <a href="" class="kfsi-snb-item">나의 교육 정보 조회</a>
+              <a href="" class="kfsi-snb-item">나의 소속 관리</a>
+              <a href="" class="kfsi-snb-item">나의 자격 관리</a>
+              <a href="" class="kfsi-snb-item active">안전원 멤버십 관리</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">나의정보</li>
+                    <li class="breadcrumb-item">안전원 멤버십관리</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      정보제공 수신동의 신청/해지
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>정보제공 수신동의 신청/해지</h1>
+              </div>
+              <div class="kfsi-mypage">
+                <div class="kfsi-agree-form mb-15 mo-mb-10">
+                  <div class="kfsi-agree-form__title">
+                    정보제공 수신 동의 신청
+                  </div>
+                  <div class="kfsi-agree-form__contents">
+                    <strong>■ 한국소방안전원 정보제공 수신동의</strong><br />
+                    <div class="pc my-5">
+                      <div class="kfsi-table">
+                        <table
+                          summary="수집 및 이용 항목, 목적, 보유기간을 안내하는 표입니다."
+                        >
+                          <colgroup>
+                            <col style="width: 400px" />
+                            <col style="width: 240px" />
+                            <col style="width: 240px" />
+                          </colgroup>
+                          <caption>
+                            수집 및 이용 항목 안내
+                          </caption>
+                          <thead>
+                            <tr>
+                              <th scope="col">수집·이용 항목</th>
+                              <th scope="col">수집·이용 목적</th>
+                              <th scope="col">보유기간</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>성명, 휴대폰번호, 이메일</td>
+                              <td>
+                                안전원 정보수신 동의<br />
+                                (웹진 발간 안내 등)
+                              </td>
+                              <td>
+                                1년<br />
+                                (1년 경과시 자동폐기)
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="mo">
+                      <div class="kfsi-textlist my-5 mb-7">
+                        <ul>
+                          <li>수집, 이용 항목 : 성명, 휴대폰번호, 이메일</li>
+                          <li>
+                            수집, 이용 목적 : 안전원 정보수신 동의 (웹진 발간
+                            안내 등)
+                          </li>
+                          <li>보유기간 : 1년 (1년 경과시 자동폐기)</li>
+                        </ul>
+                      </div>
+                    </div>
+                    위 개인정보 제공에 관한 동의는 거부하실 수 있으며, "안전원
+                    정보제공 수신수신 동의"를 위한 선택적 사항이므로 동의하지
+                    않더라도 안전원사이트 이용 이용을 제한하지 않습니다. 다만,
+                    동의를 하지 않으시는 경우 "안전원 정보제공"의 혜택을 받지
+                    못할 수 있습니다.
+                  </div>
+                  <div class="kfsi-agree-form__foot">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        위 내용을 동의합니다.
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-board">
+                  <div class="kfsi-board-write">
+                    <h4 class="kfsi-h4">개인정보입력</h4>
+                    <div class="kfsi-board-write-form">
+                      <table
+                        summary="개인정보 입력을 위한 성명, 휴대폰 번호, 이메일 정보를 작성하는 테이블입니다."
+                      >
+                        <caption>
+                          개인정보 입력
+                        </caption>
+                        <colgroup>
+                          <col style="width: 195px" />
+                          <col style="width: 745px" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row">성명</th>
+                            <td>
+                              <input
+                                type="text"
+                                class="form-control"
+                                title="성명"
+                                style="width: 282px"
+                              />
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row">휴대폰 번호</th>
+                            <td>
+                              <div class="kfsi-mypage-phone">
+                                <div class="kfsi-mypage-phone-input">
+                                  <select
+                                    class="form-select"
+                                    aria-label="휴대폰 번호 앞자리 선택"
+                                    title="휴대폰 번호 앞자리 선택"
+                                    style="min-width: 80px; width: 80px"
+                                  >
+                                    <option selected>선택</option>
+                                  </select>
+                                  -
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    title="휴대폰 번호 중간 자리 입력"
+                                    style="min-width: 80px; width: 80px"
+                                  />
+                                  -
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    title="휴대폰 번호 마지막 자리 입력"
+                                    style="min-width: 80px; width: 80px"
+                                  />
+                                </div>
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary btn-sm"
+                                >
+                                  번호 변경
+                                </button>
+                                <div>(카카오 알림톡 또는 SMS 전송)</div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">휴대폰 번호</th>
+                            <td>
+                              <div class="kfsi-mypage-phone">
+                                <div class="kfsi-mypage-phone-input">
+                                  <select
+                                    class="form-select"
+                                    aria-label="휴대폰 번호 앞자리 선택"
+                                    title="휴대폰 번호 앞자리 선택"
+                                    style="min-width: 80px; width: 80px"
+                                  >
+                                    <option selected>선택</option>
+                                  </select>
+                                  -
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    title="휴대폰 번호 중간 자리 입력"
+                                    style="min-width: 80px; width: 80px"
+                                  />
+                                  -
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    title="휴대폰 번호 마지막 자리 입력"
+                                    style="min-width: 80px; width: 80px"
+                                  />
+                                </div>
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary btn-sm"
+                                >
+                                  번호 변경
+                                </button>
+                                <div>(카카오 알림톡 또는 SMS 전송)</div>
+                              </div>
+                              <div class="kfsi-mypage-certification">
+                                <div class="kfsi-mypage-certification-input">
+                                  인증번호입력
+                                  <input
+                                    type="number"
+                                    class="form-control"
+                                    title="인증번호입력"
+                                    style="min-width: 88px; width: 88px"
+                                  />
+                                </div>
+                                <div class="kfsi-mypage-certification-button">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary btn-sm"
+                                  >
+                                    인증번호 확인
+                                  </button>
+                                </div>
+                                <div class="kfsi-mypage-certification-text">
+                                  <ul>
+                                    <li class="text-primary">
+                                      <i class="ico-check-success"></i>
+                                      인증완료
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">휴대폰 번호</th>
+                            <td>
+                              <div class="kfsi-mypage-phone">
+                                <div class="kfsi-mypage-phone-input">
+                                  <select
+                                    class="form-select"
+                                    aria-label="휴대폰 번호 앞자리 선택"
+                                    title="휴대폰 번호 앞자리 선택"
+                                    style="min-width: 80px; width: 80px"
+                                  >
+                                    <option selected>선택</option>
+                                  </select>
+                                  -
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    title="휴대폰 번호 중간 자리 입력"
+                                    style="min-width: 80px; width: 80px"
+                                  />
+                                  -
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    title="휴대폰 번호 마지막 자리 입력"
+                                    style="min-width: 80px; width: 80px"
+                                  />
+                                </div>
+                                <div class="kfsi-mypage-certification-text">
+                                  <ul>
+                                    <li class="text-primary">
+                                      <i class="ico-check-success"></i>
+                                      인증완료
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">E-mail</th>
+                            <td>
+                              <div class="kfsi-mypage-email">
+                                <div class="kfsi-mypage-email-input">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    title="E-mail 아이디 입력"
+                                    style="min-width: 120px; width: 120px"
+                                  />
+                                  @
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    title="E-mail 도메인 입력"
+                                    style="min-width: 120px; width: 120px"
+                                  />
+                                </div>
+                                <select
+                                  class="form-select"
+                                  aria-label="E-mail 선택"
+                                  title="E-mail 선택"
+                                >
+                                  <option selected>선택</option>
+                                  <option value="daum.net">daum.net</option>
+                                  <option value="gmail.com">gmail.com</option>
+                                  <option value="hotmail.com">
+                                    hotmail.com
+                                  </option>
+                                  <option value="naver.com">naver.com</option>
+                                  <option value="nate.com">nate.com</option>
+                                  <option value="self">직접입력</option>
+                                </select>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="kfsi-board-button">
+                    <p>
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary btn-lg"
+                      >
+                        취소
+                      </button>
+                      <button type="button" class="btn btn-primary btn-lg">
+                        수신 신청하기
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

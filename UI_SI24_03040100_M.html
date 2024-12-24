@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>나의정보</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">개인정보수정</a>
+              <a href="" class="kfsi-snb-item">비밀번호 변경</a>
+              <a href="" class="kfsi-snb-item">로그인 기록보기</a>
+              <a href="" class="kfsi-snb-item active">회원탈퇴</a>
+              <a href="" class="kfsi-snb-item">안전관리자 선임 이력 관리</a>
+              <a href="" class="kfsi-snb-item">나의 교육 정보 조회</a>
+              <a href="" class="kfsi-snb-item">나의 소속 관리</a>
+              <a href="" class="kfsi-snb-item">나의 자격 관리</a>
+              <a href="" class="kfsi-snb-item">안전원 멤버십 관리</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">나의정보</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      회원탈퇴
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>회원탈퇴</h1>
+              </div>
+              <div class="kfsi-mypage">
+                <div class="kfsi-textlist">
+                  <ul>
+                    <li>
+                      외부로부터 회원님의 정보를 안전하게 보호하기 위해
+                      비밀번호를 다시 한번 확인합니다.
+                    </li>
+                    <li>
+                      항상 비밀번호는 타인에게 노출되지 않도록 주의해 주세요.
+                    </li>
+                  </ul>
+                </div>
+                <div class="kfsi-board">
+                  <div class="kfsi-board-write">
+                    <div class="kfsi-board-write-form">
+                      <table
+                        summary="회원탈퇴를 위한 아이디와 비밀번호 입력 테이블입니다."
+                      >
+                        <caption>
+                          회원탈퇴 정보 확인
+                        </caption>
+                        <colgroup>
+                          <col style="width: 195px" />
+                          <col style="width: 745px" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row">아이디</th>
+                            <td>
+                              <input
+                                type="text"
+                                class="form-control"
+                                value="sobang"
+                                title="아이디"
+                                style="width: 282px"
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">비밀번호</th>
+                            <td>
+                              <input
+                                type="password"
+                                class="form-control"
+                                title="비밀번호"
+                                style="width: 282px"
+                              />
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="kfsi-board-button">
+                    <p>
+                      <button type="button" class="btn btn-primary btn-lg">
+                        확인
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

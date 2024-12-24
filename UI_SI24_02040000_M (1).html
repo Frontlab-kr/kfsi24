@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>로그인</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">로그인</a>
+              <a href="" class="kfsi-snb-item">회원가입</a>
+              <a href="" class="kfsi-snb-item">아이디 찾기</a>
+              <a href="" class="kfsi-snb-item active">비밀번호 찾기</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">로그인</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      비밀번호 찾기
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>비밀번호 찾기</h1>
+              </div>
+              <div class="kfsi-login">
+                <div class="kfsi-login-find">
+                  회원가입 시 등록한 정보를 입력하시기 바랍니다.
+                  <div class="kfsi-board mt-5 mo-mt-4">
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form">
+                        <table
+                          summary="아이디, 성명, 휴대폰 번호를 입력하여 비밀번호를 찾는 테이블입니다."
+                        >
+                          <caption>
+                            비밀번호 찾기
+                          </caption>
+                          <colgroup>
+                            <col style="width: 195px" />
+                            <col style="width: 745px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row">아이디</th>
+                              <td>
+                                <input
+                                  type="text"
+                                  class="form-control w-100"
+                                  title="아이디"
+                                  style="width: 282px"
+                                />
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">성명</th>
+                              <td>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  title="성명"
+                                  style="width: 282px"
+                                />
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">휴대폰 번호</th>
+                              <td>
+                                <div class="kfsi-mypage-phone">
+                                  <div class="kfsi-mypage-phone-input">
+                                    <select
+                                      class="form-select"
+                                      aria-label="휴대폰 번호 앞자리 선택"
+                                      title="휴대폰 번호 앞자리 선택"
+                                      style="min-width: 80px; width: 80px"
+                                    >
+                                      <option selected>선택</option>
+                                    </select>
+                                    -
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      title="휴대폰 번호 중간 자리 입력"
+                                      style="min-width: 80px; width: 80px"
+                                    />
+                                    -
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      title="휴대폰 번호 마지막 자리 입력"
+                                      style="min-width: 80px; width: 80px"
+                                    />
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="kfsi-board-button">
+                      <p>
+                        <a href="" class="btn btn-primary btn-lg">확인</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

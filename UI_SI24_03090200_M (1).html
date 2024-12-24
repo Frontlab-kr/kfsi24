@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>나의정보</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">개인정보수정</a>
+              <a href="" class="kfsi-snb-item">비밀번호 변경</a>
+              <a href="" class="kfsi-snb-item">로그인 기록보기</a>
+              <a href="" class="kfsi-snb-item">회원탈퇴</a>
+              <a href="" class="kfsi-snb-item">안전관리자 선임 이력 관리</a>
+              <a href="" class="kfsi-snb-item">나의 교육 정보 조회</a>
+              <a href="" class="kfsi-snb-item">나의 소속 관리</a>
+              <a href="" class="kfsi-snb-item">나의 자격 관리</a>
+              <a href="" class="kfsi-snb-item active">안전원 멤버십 관리</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">나의정보</li>
+                    <li class="breadcrumb-item">안전원 멤버십 관리</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      안전원 회원확인서 발급
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>안전원 회원확인서 발급</h1>
+              </div>
+              <div class="kfsi-mypage">
+                <h4 class="kfsi-h4">회원확인서 발급</h4>
+                <div class="kfsi-box bg-light text-center fs-18 mo-fs-16">
+                  김소방님은 <span class="text-danger">안전원 회원 입니다.</span
+                  ><br />
+                  성원에 감사드립니다.<br />
+                  <br />
+                  소방기술자
+                </div>
+                <div class="kfsi-board-button">
+                  <p>
+                    <button type="button" class="btn btn-primary btn-lg">
+                      회원확인서 출력
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-lg"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal01"
+                    >
+                      회원확인서 팩스발송
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modal01" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5">팩스 전송</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="kfsi-board">
+              <div class="kfsi-board-write">
+                <div class="kfsi-board-write-form">
+                  <table
+                    summary="팩스 전송을 위한 팩스번호와 팩스번호 재확인을 입력하는 테이블입니다."
+                  >
+                    <caption>
+                      팩스번호 입력
+                    </caption>
+                    <colgroup>
+                      <col style="width: 195px" />
+                      <col style="width: 500px" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th scope="row">팩스번호</th>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control"
+                            value="sobang"
+                            title="팩스번호"
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">팩스번호 재확인</th>
+                        <td>
+                          <input
+                            type="password"
+                            class="form-control"
+                            title="팩스번호 재확인"
+                          />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="mt-5">
+                ※ 이수증을 받고자 하는 팩스번호(지역번호 포함)를 정확히
+                입력하시기 바랍니다.<br />
+                예) 0212345678<br />
+                ※ 팩스번호를 잘못 입력하여 다른 팩스번호로 발송될 경우 개인정보
+                유출 위험이 있으니 유의하시기 바랍니다.<br />
+                ※ 증명서 팩스 수신시간은 통신환경에 따라서 최장 5~10분까지
+                소요될 수 있습니다.
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              data-bs-dismiss="modal"
+            >
+              전송하기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

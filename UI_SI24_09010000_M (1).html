@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>안전관리자 선해임</h2>
+              </div>
+              <a href="" class="kfsi-snb-item active">안전관리자 선임 신고</a>
+              <a href="" class="kfsi-snb-item">신규대상처 신청 신고</a>
+              <a href="" class="kfsi-snb-item">안전관리보조자 선임 신고</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">안전관리자 선해임</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      소방안전관리자 선임 신고
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>소방안전관리자 선임 신고</h1>
+              </div>
+              <div class="kfsi-">
+                <div class="kfsi-nav">
+                  <ol>
+                    <li class="active">
+                      <span>01</span>
+                      <strong>대상물 확인</strong>
+                    </li>
+                    <li>
+                      <span>02</span>
+                      <strong>기 선임자 확인</strong>
+                    </li>
+                    <li>
+                      <span>03</span>
+                      <strong>선임신고</strong>
+                    </li>
+                  </ol>
+                </div>
+                <h4 class="kfsi-h4">소방안전관리 대상물 검색</h4>
+                <div class="pc">
+                  <div class="kfsi-board mb-15">
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form">
+                        <table
+                          summary="소방안전관리 대상물 검색을 위한 시도, 시구군, 소재지(도로명 주소), 상호명을 입력하는 테이블입니다."
+                        >
+                          <caption>
+                            소방안전관리 대상물 검색
+                          </caption>
+                          <colgroup>
+                            <col style="width: 170px" />
+                            <col style="width: 300px" />
+                            <col style="width: 170px" />
+                            <col style="width: 300px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row">시도</th>
+                              <td>
+                                <select
+                                  class="form-select"
+                                  aria-label="시도 선택"
+                                  title="시도 선택"
+                                  style="min-width: 190px; width: 190px"
+                                >
+                                  <option selected>선택</option>
+                                </select>
+                              </td>
+                              <th scope="row">시구군</th>
+                              <td>
+                                <select
+                                  class="form-select"
+                                  aria-label="시구군 선택"
+                                  title="시구군 선택"
+                                  style="min-width: 190px; width: 190px"
+                                >
+                                  <option selected>선택</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">소재지(도로명 주소)</th>
+                              <td colspan="3">
+                                <input
+                                  type="password"
+                                  class="form-control w-100"
+                                  title="소재지(도로명 주소)"
+                                />
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">상호명</th>
+                              <td colspan="3">
+                                <input
+                                  type="password"
+                                  class="form-control w-100"
+                                  title="상호명"
+                                />
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="kfsi-board-text">
+                      ※ 검색 옵션 중 하나의 조건만 입력해도 검색이 가능합니다.
+                    </div>
+                    <div class="kfsi-board-button">
+                      <p>
+                        <button type="button" class="btn btn-primary btn-lg">
+                          검색하기
+                        </button>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mo">
+                  <div class="kfsi-board mb-10">
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form">
+                        <table
+                          summary="소방안전관리 대상물 검색을 위한 시도, 시구군, 소재지(도로명 주소), 상호명을 입력하는 테이블입니다."
+                        >
+                          <caption>
+                            소방안전관리 대상물 검색
+                          </caption>
+                          <colgroup>
+                            <col style="width: 110px" />
+                            <col style="width: 248px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row">시도</th>
+                              <td>
+                                <select
+                                  class="form-select"
+                                  aria-label="시도 선택"
+                                  title="시도 선택"
+                                  style="min-width: 190px; width: 190px"
+                                >
+                                  <option selected>선택</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">시구군</th>
+                              <td>
+                                <select
+                                  class="form-select"
+                                  aria-label="시구군 선택"
+                                  title="시구군 선택"
+                                  style="min-width: 190px; width: 190px"
+                                >
+                                  <option selected>선택</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">소재지(도로명 주소)</th>
+                              <td>
+                                <input
+                                  type="password"
+                                  class="form-control w-100"
+                                  title="소재지(도로명 주소)"
+                                />
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">상호명</th>
+                              <td>
+                                <input
+                                  type="password"
+                                  class="form-control w-100"
+                                  title="상호명"
+                                />
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="kfsi-board-text">
+                      ※ 검색 옵션 중 하나의 조건만 입력해도 검색이 가능합니다.
+                    </div>
+                    <div class="kfsi-board-button">
+                      <p>
+                        <button type="button" class="btn btn-primary btn-lg">
+                          검색하기
+                        </button>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-board">
+                  <div class="kfsi-board-head mo-flex-column gap-3">
+                    <div class="kfsi-board-head-start">
+                      <h4 class="kfsi-h4">소방안전관리 대상물 목록</h4>
+                    </div>
+                    <div
+                      class="kfsi-board-head-end gap-2 mo-flex-column mo-align-items-end"
+                    >
+                      <p class="m-0 fs-14">
+                        ※ 검색된 대상물이 없는 경우 온라인 문의 [선임 대상물
+                        확인요청] 카테고리로 접수/문의해 주세요.
+                      </p>
+                      <a href="" class="btn btn-secondary btn-sm"
+                        >온라인 문의</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="kfsi-board-list kfsi-board-list--border">
+                    <table
+                      summary="소방안전관리 대상물의 수집목적, 수집항목, 선택을 제공하는 테이블입니다."
+                    >
+                      <caption>
+                        소방안전관리 대상물 목록
+                      </caption>
+                      <colgroup>
+                        <col style="width: 200px" />
+                        <col style="width: 570px" />
+                        <col style="width: 170px" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">수집목적</th>
+                          <th scope="col">수집항목</th>
+                          <th scope="col">선택</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-start">당산노래연습장</td>
+                          <td class="text-start">
+                            인천광역시 서구 인천광역시 서구 승학로587 587
+                            로얄프라자
+                          </td>
+                          <td>
+                            <a href="" class="btn btn-outline-secondary btn-sm"
+                              >선택</a
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">당산노래연습장</td>
+                          <td class="text-start">
+                            인천광역시 서구 인천광역시 서구 승학로587 587
+                            로얄프라자
+                          </td>
+                          <td>
+                            <a href="" class="btn btn-outline-secondary btn-sm"
+                              >선택</a
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">당산노래연습장</td>
+                          <td class="text-start">
+                            인천광역시 서구 인천광역시 서구 승학로587 587
+                            로얄프라자
+                          </td>
+                          <td>
+                            <a href="" class="btn btn-outline-secondary btn-sm"
+                              >선택</a
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">당산노래연습장</td>
+                          <td class="text-start">
+                            인천광역시 서구 인천광역시 서구 승학로587 587
+                            로얄프라자
+                          </td>
+                          <td>
+                            <a href="" class="btn btn-outline-secondary btn-sm"
+                              >선택</a
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">당산노래연습장</td>
+                          <td class="text-start">
+                            인천광역시 서구 인천광역시 서구 승학로587 587
+                            로얄프라자
+                          </td>
+                          <td>
+                            <a href="" class="btn btn-outline-secondary btn-sm"
+                              >선택</a
+                            >
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="pc">
+                    <div class="kfsi-board-pagination">
+                      <nav>
+                        <ul class="pagination">
+                          <li class="page-item page-item--first">
+                            <a class="page-link" href="#">처음</a>
+                          </li>
+                          <li class="page-item page-item--prev">
+                            <a class="page-link" href="#">이전</a>
+                          </li>
+                          <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">4</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">5</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">6</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">7</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">8</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">9</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">10</a>
+                          </li>
+                          <li class="page-item page-item--next">
+                            <a class="page-link" href="#">다음</a>
+                          </li>
+                          <li class="page-item page-item--last">
+                            <a class="page-link" href="#">마지막</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                  <div class="mo">
+                    <div class="kfsi-board-pagination">
+                      <nav>
+                        <ul class="pagination">
+                          <li class="page-item page-item--first">
+                            <a class="page-link" href="#">처음</a>
+                          </li>
+                          <li class="page-item page-item--prev">
+                            <a class="page-link" href="#">이전</a>
+                          </li>
+                          <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">4</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">5</a>
+                          </li>
+                          <li class="page-item page-item--next">
+                            <a class="page-link" href="#">다음</a>
+                          </li>
+                          <li class="page-item page-item--last">
+                            <a class="page-link" href="#">마지막</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

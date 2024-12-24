@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>공지사항</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">공지사항</a>
+              <a href="" class="kfsi-snb-item">자주묻는질문</a>
+              <a href="" class="kfsi-snb-item active">문의하기</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">공지사항</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      문의하기
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>문의하기</h1>
+              </div>
+
+              <div class="kfsi-board-write">
+                <div class="mb-15 mo-mb-10">
+                  <div class="kfsi-board-write-head mo-justify-content-center">
+                    <p class="pc"></p>
+                    <p>
+                      <a href="" class="btn btn-secondary btn-sm">목록</a>
+                    </p>
+                  </div>
+                  <div class="kfsi-board-write-form">
+                    <table
+                      summary="문의 작성 폼으로 분류, 성명, 연락처, 이메일, 제목, 내용, 첨부파일, 공개 여부, 답변 알림 방식을 입력받습니다."
+                    >
+                      <caption>
+                        문의 작성 폼
+                      </caption>
+                      <colgroup>
+                        <col style="width: 195px" />
+                        <col style="width: 745px" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="row">
+                            분류 <span class="text-danger">*</span>
+                          </th>
+                          <td>
+                            <div class="dropdown">
+                              <button
+                                class="btn btn-outline-secondary dropdown-toggle"
+                                type="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                                style="width: 282px"
+                              >
+                                선택
+                              </button>
+
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="javascript:void(0);"
+                                  >
+                                    선택
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="javascript:void(0);"
+                                  >
+                                    교육(강습,실무)
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="javascript:void(0);"
+                                  >
+                                    기술(점검 등)
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="javascript:void(0);"
+                                  >
+                                    기타
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="javascript:void(0);"
+                                  >
+                                    전체
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="javascript:void(0);"
+                                  >
+                                    시험 관련
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="javascript:void(0);"
+                                  >
+                                    자격증 관련
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="javascript:void(0);"
+                                  >
+                                    회원,회비,선임 관련
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="javascript:void(0);"
+                                  >
+                                    홈페이지 이용 관련
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">성명</th>
+                          <td>김소방</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            연락처 <span class="text-danger">*</span>
+                          </th>
+                          <td>
+                            <div class="kfsi-mypage-phone">
+                              <div class="kfsi-mypage-phone-input">
+                                <select
+                                  class="form-select"
+                                  aria-label="휴대폰 번호 앞자리 선택"
+                                  title="휴대폰 번호 앞자리 선택"
+                                  style="min-width: 80px; width: 80px"
+                                >
+                                  <option selected>선택</option>
+                                </select>
+                                -
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  title="휴대폰 번호 중간 자리 입력"
+                                  style="min-width: 80px; width: 80px"
+                                />
+                                -
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  title="휴대폰 번호 마지막 자리 입력"
+                                  style="min-width: 80px; width: 80px"
+                                />
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            이메일 <span class="text-danger">*</span>
+                          </th>
+                          <td>
+                            <div class="kfsi-mypage-email">
+                              <div class="kfsi-mypage-email-input">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  title="E-mail 아이디 입력"
+                                  style="min-width: 120px; width: 120px"
+                                />
+                                @
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  title="E-mail 도메인 입력"
+                                  style="min-width: 120px; width: 120px"
+                                />
+                              </div>
+                              <select
+                                class="form-select"
+                                aria-label="E-mail 선택"
+                                title="E-mail 선택"
+                              >
+                                <option selected>선택</option>
+                                <option value="daum.net">daum.net</option>
+                                <option value="gmail.com">gmail.com</option>
+                                <option value="hotmail.com">hotmail.com</option>
+                                <option value="naver.com">naver.com</option>
+                                <option value="nate.com">nate.com</option>
+                                <option value="self">직접입력</option>
+                              </select>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            제목 <span class="text-danger">*</span>
+                          </th>
+                          <td>
+                            <input
+                              type="text"
+                              class="form-control w-100"
+                              placeholder="제목을 입력해주세요."
+                              title="제목"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            내용 <span class="text-danger">*</span>
+                          </th>
+                          <td>
+                            <div class="kfsi-textarea">
+                              <textarea
+                                class="form-control w-100"
+                                rows="3"
+                                placeholder="한글 2,000자(공백포함)/ 영문4,000Bytes 이상의 경우 등록되지 않으니 유의하시기 바랍니다."
+                                title="한글 2,000자(공백포함)/ 영문4,000Bytes 이상의 경우 등록되지 않으니 유의하시기 바랍니다."
+                              ></textarea>
+                              <div class="kfsi-textarea-text">
+                                <strong>0</strong>/<span>4,000</span>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">첨부파일</th>
+                          <td>
+                            <div class="kfsi-file">
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="선택된 파일 없음"
+                                title="첨부파일"
+                              />
+                              <a href="" class="btn btn-secondary btn-sm"
+                                >파일찾기 <i class="ico-search-white"></i
+                              ></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            공개여부 <span class="text-danger">*</span>
+                          </th>
+                          <td>
+                            <div
+                              class="d-flex align-items-center mo-flex-column mo-align-items-start gap-2"
+                            >
+                              <div class="form-check m-0 me-8">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio1"
+                                  id="radio1-1"
+                                  checked
+                                />
+                                <label class="form-check-label" for="radio1-1">
+                                  공개
+                                </label>
+                              </div>
+                              <div class="d-flex align-items-center">
+                                <div class="form-check m-0 me-2">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="radio1"
+                                    id="radio1-2"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="radio1-2"
+                                  >
+                                    비공개
+                                  </label>
+                                </div>
+                                <input
+                                  type="password"
+                                  class="form-control"
+                                  placeholder="비밀번호 숫자4자리 입력"
+                                  title="비밀번호 숫자4자리 입력"
+                                  style="min-width: 210px"
+                                />
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            답변 알림 방식 <span class="text-danger">*</span>
+                          </th>
+                          <td>
+                            <div
+                              class="d-flex align-items-center mo-flex-column mo-align-items-start gap-2"
+                            >
+                              <div class="form-check m-0 me-8">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio2"
+                                  id="radio2-1"
+                                  checked
+                                />
+                                <label class="form-check-label" for="radio2-1">
+                                  홈페이지에서 직접 확인
+                                </label>
+                              </div>
+                              <div class="form-check m-0 me-8">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio2"
+                                  id="radio2-2"
+                                />
+                                <label class="form-check-label" for="radio2-2">
+                                  카카오메세지/ 문자메세지
+                                </label>
+                              </div>
+
+                              <div class="form-check m-0 me-8">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio2"
+                                  id="radio2-3"
+                                />
+                                <label class="form-check-label" for="radio2-3">
+                                  이메일
+                                </label>
+                              </div>
+                              <div class="form-check m-0 me-8">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio2"
+                                  id="radio2-4"
+                                />
+                                <label class="form-check-label" for="radio2-4">
+                                  전화
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="kfsi-agree-form mb-15 mo-mb-10">
+                  <div class="kfsi-agree-form__title">
+                    (필수) 개인정보 수집·이용 내역
+                  </div>
+                  <div class="kfsi-agree-form__contents">
+                    <div class="kfsi-textlist">
+                      <ul>
+                        <li>
+                          수집·이용 목적 : 게시물 게시자 신원확인, 게시글 수정
+                          삭제 확인
+                        </li>
+                        <li>수집 항목 : <strong>이름, 전화번호</strong></li>
+                        <li>
+                          이용 및 보유기간 : 민원처리 종료
+                          후 <strong>2년</strong>간 보유<br />
+                          ※ 실명인증서비스(나이스신용평가정보)를 통해 수집되며,
+                          개인정보수집·이용에 대한 동의를 거부할 권리가
+                          있습니다.<br /><strong
+                            >(단, 제공 거부 시 게시물 게시에 제한이
+                            있습니다.)</strong
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="kfsi-agree-form__foot">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="agree01"
+                      />
+                      <label class="form-check-label" for="agree01">
+                        <span class="text-info">(필수)</span> 위의 약관에
+                        동의합니다.
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="kfsi-agree-form">
+                  <div class="kfsi-agree-form__title">
+                    (선택) 개인정보 수집·이용에 대한 안내
+                  </div>
+                  <div class="kfsi-agree-form__contents">
+                    <div class="kfsi-textlist">
+                      <ul>
+                        <li>수집·이용 목적 : 민원에 대한 회신 및 의사소통</li>
+                        <li>수집 항목 : <strong>전화번호, 이메일</strong></li>
+                        <li>
+                          이용 및 보유기간 : 민원처리 종료
+                          후 <strong>2년</strong>간 보유<br />※
+                          개인정보수집·이용에 대한 동의를 거부할 권리가
+                          있습니다. <br />(단, 게시물 게시는 하실 수
+                          있으나, <strong
+                            >정확한 답변을 위한 의사소통에 제한이
+                            있습니다.</strong
+                          >)
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="kfsi-agree-form__foot">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="agree02"
+                      />
+                      <label class="form-check-label" for="agree02">
+                        (선택) 위의 약관에 동의합니다.
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="kfsi-board-write-button">
+                  <p class="pc"></p>
+                  <p>
+                    <a
+                      href=""
+                      class="btn btn-primary btn-lg"
+                      style="width: 200px"
+                      >등록</a
+                    >
+                  </p>
+                  <p>
+                    <a
+                      href=""
+                      class="btn btn-outline-dark btn-lg"
+                      style="width: 140px"
+                      >목록</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

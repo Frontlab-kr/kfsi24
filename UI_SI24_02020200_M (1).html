@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>로그인</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">로그인</a>
+              <a href="" class="kfsi-snb-item active">회원가입</a>
+              <a href="" class="kfsi-snb-item">아이디 찾기</a>
+              <a href="" class="kfsi-snb-item">비밀번호 찾기</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">메인(로그인)</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      회원가입
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>회원가입</h1>
+              </div>
+              <div class="kfsi-join">
+                <div class="kfsi-nav">
+                  <ol>
+                    <li>
+                      <span>01</span>
+                      <strong>약관동의</strong>
+                    </li>
+                    <li class="active">
+                      <span>02</span>
+                      <strong>정보입력</strong>
+                    </li>
+                    <li>
+                      <span>03</span>
+                      <strong>가입완료 </strong>
+                    </li>
+                  </ol>
+                </div>
+                <div class="kfsi-join-head">
+                  <div class="kfsi-box bg-light">
+                    <div class="kfsi-textlist">
+                      <ul>
+                        <li>성명은 가입 이후에 수정할 수 없습니다.</li>
+                        <li>
+                          비밀번호는 9~16자의 영문, 숫자, 특수문자 3가지를
+                          혼용하여 사용하여야 합니다.<br />
+                          (사용 가능한 특수문자 : ! # $ ( ) * , . : @ [ ] ^ _ {
+                          | } ~ ?)
+                        </li>
+                        <li>
+                          만 14세 미만의 경우 법정대리인의 동의를 받고
+                          있습니다.(법적대리인의 휴대전화 본인인증
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-join-step02">
+                  <h4 class="kfsi-h4">신청자 정보</h4>
+                  <div class="kfsi-board">
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form">
+                        <table summary="">
+                          <caption></caption>
+                          <colgroup>
+                            <col style="width: 195px" />
+                            <col style="width: 745px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row">
+                                아이디
+                                <span class="text-danger">*</span>
+                              </th>
+                              <td>
+                                <div class="kfsi-mypage-certification-id">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    title="아이디"
+                                    style="width: 200px"
+                                  />
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary btn-sm"
+                                  >
+                                    중복확인
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">
+                                비밀번호
+                                <span class="text-danger">*</span>
+                              </th>
+                              <td>
+                                <div class="kfsi-mypage-certification-input02">
+                                  <input
+                                    type="password"
+                                    class="form-control"
+                                    title="비밀번호"
+                                    style="width: 200px"
+                                  />
+                                  <p>
+                                    9~16자의 영문, 숫자, 특수문자를 혼용하여
+                                    사용
+                                  </p>
+                                </div>
+                                <div
+                                  class="kfsi-mypage-certification-text pt-2"
+                                >
+                                  <ul>
+                                    <li class="text-primary">
+                                      <i class="ico-check-success"></i>
+                                      9자 이상 16자 이하
+                                    </li>
+                                    <li>
+                                      <i class="ico-check-secondary"></i>
+                                      영문, 숫자, 특수문자 3가지 혼합
+                                    </li>
+                                    <li>
+                                      <i class="ico-check-secondary"></i>
+                                      4자 이상 동일 문자/숫자 연속 사용 금지
+                                      (예:aaaa, 1111)
+                                    </li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">
+                                비밀번호 확인
+                                <span class="text-danger">*</span>
+                              </th>
+                              <td>
+                                <div class="kfsi-mypage-certification-id">
+                                  <input
+                                    type="password"
+                                    class="form-control is-invalid"
+                                    title=" 비밀번호 확인"
+                                    style="width: 200px"
+                                  />
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary btn-sm"
+                                  >
+                                    비밀번호 도움말
+                                  </button>
+                                </div>
+                                <div class="invalid-feedback d-block">
+                                  새 비밀번호와 비밀번호 확인이 일치하지
+                                  않습니다.
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">
+                                성함
+                                <span class="text-danger">*</span>
+                              </th>
+                              <td>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  title="아이디"
+                                  style="width: 200px"
+                                />
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">생년월일</th>
+                              <td>
+                                <div
+                                  class="d-flex align-items-center gap-5 mb-3"
+                                >
+                                  <div class="d-flex align-items-center gap-1">
+                                    <select
+                                      class="form-select"
+                                      title=""
+                                      style="min-width: 100px; width: 100px"
+                                    >
+                                      <option selected>선택</option>
+                                    </select>
+                                    년
+                                  </div>
+                                  <div class="d-flex align-items-center gap-1">
+                                    <select
+                                      class="form-select"
+                                      title=""
+                                      style="min-width: 80px; width: 80px"
+                                    >
+                                      <option selected>선택</option>
+                                    </select>
+                                    월
+                                  </div>
+                                  <div class="d-flex align-items-center gap-1">
+                                    <select
+                                      class="form-select"
+                                      title=""
+                                      style="min-width: 80px; width: 80px"
+                                    >
+                                      <option selected>선택</option>
+                                    </select>
+                                    일
+                                  </div>
+                                </div>
+                                <p class="m-0">
+                                  ※ 생년월일 이용 안내<br />
+                                  (필수사용 업무) 강습교육, 실무교육, 시험신청,
+                                  자격수첩, 다중이용업, 의용소방대 교육관련일
+                                  경우 생년월일<br />
+                                  필수 입력 미 입력시 안전원 정보와 연계되지
+                                  않을 수 있습니다.<br />(미 사용 업무) 그 외,
+                                  사이트 타 기능을 이용하는 경우 [선택입력]
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">휴대폰 번호</th>
+                              <td>
+                                <div class="kfsi-mypage-phone">
+                                  <div class="kfsi-mypage-phone-input">
+                                    <select
+                                      class="form-select"
+                                      aria-label="휴대폰 번호 앞자리 선택"
+                                      title="휴대폰 번호 앞자리 선택"
+                                      style="min-width: 80px; width: 80px"
+                                    >
+                                      <option selected>선택</option>
+                                    </select>
+                                    -
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      title="휴대폰 번호 중간 자리 입력"
+                                      style="min-width: 80px; width: 80px"
+                                    />
+                                    -
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      title="휴대폰 번호 마지막 자리 입력"
+                                      style="min-width: 80px; width: 80px"
+                                    />
+                                  </div>
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary btn-sm"
+                                  >
+                                    번호 변경
+                                  </button>
+                                  <div>(카카오 알림톡 또는 SMS 전송)</div>
+                                </div>
+                                <div class="kfsi-mypage-certification">
+                                  <div class="kfsi-mypage-certification-input">
+                                    인증번호입력
+                                    <input
+                                      type="number"
+                                      class="form-control"
+                                      title="인증번호입력"
+                                      style="min-width: 88px; width: 88px"
+                                    />
+                                  </div>
+                                  <div class="kfsi-mypage-certification-button">
+                                    <button
+                                      type="button"
+                                      class="btn btn-secondary btn-sm"
+                                    >
+                                      인증번호 확인
+                                    </button>
+                                  </div>
+                                  <div class="kfsi-mypage-certification-text">
+                                    <ul>
+                                      <li class="text-primary">
+                                        <i class="ico-check-success"></i>
+                                        인증완료
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">E-mail</th>
+                              <td>
+                                <div class="kfsi-mypage-email">
+                                  <div class="kfsi-mypage-email-input">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      title="E-mail 아이디 입력"
+                                      style="min-width: 120px; width: 120px"
+                                    />
+                                    @
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      title="E-mail 도메인 입력"
+                                      style="min-width: 120px; width: 120px"
+                                    />
+                                  </div>
+                                  <select
+                                    class="form-select"
+                                    aria-label="E-mail 선택"
+                                    title="E-mail 선택"
+                                  >
+                                    <option selected>선택</option>
+                                    <option value="daum.net">daum.net</option>
+                                    <option value="gmail.com">gmail.com</option>
+                                    <option value="hotmail.com">
+                                      hotmail.com
+                                    </option>
+                                    <option value="naver.com">naver.com</option>
+                                    <option value="nate.com">nate.com</option>
+                                    <option value="self">직접입력</option>
+                                  </select>
+                                </div>
+                                <div class="kfsi-mypage-email-text">
+                                  아이디 및 비밀번호 분실시 사용되오니, 실제
+                                  사용하는 이메일을 입력하시기 바랍니다.
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kfsi-join-step02-button">
+                    <a href="" class="btn btn-outline-secondary btn-lg">
+                      취소
+                    </a>
+                    <a href="" class="btn btn-primary btn-lg"> 회원가입 </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

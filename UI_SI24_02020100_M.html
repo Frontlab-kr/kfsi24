@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>로그인</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">로그인</a>
+              <a href="" class="kfsi-snb-item active">회원가입</a>
+              <a href="" class="kfsi-snb-item">아이디 찾기</a>
+              <a href="" class="kfsi-snb-item">비밀번호 찾기</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">메인(로그인)</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      회원가입
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>회원가입</h1>
+              </div>
+              <div class="kfsi-join">
+                <div class="kfsi-nav">
+                  <ol>
+                    <li class="active">
+                      <span>01</span>
+                      <strong>약관동의</strong>
+                    </li>
+                    <li>
+                      <span>02</span>
+                      <strong>정보입력</strong>
+                    </li>
+                    <li>
+                      <span>03</span>
+                      <strong>가입완료 </strong>
+                    </li>
+                  </ol>
+                </div>
+                <div class="kfsi-join-head">
+                  우리 사이트는 안전원회원과 일반회원으로 운영됩니다.<br />
+                  <br />
+                  ■ 사이트회원 가입안내<br />
+                  <div class="ms-5">
+                    한국소방안전원 사이트의 원활한 이용을 위해서는 사이트 회원
+                    가입이 필요합니다.<br />
+                    사이트 콘텐츠 중 일부 "안전원 회원“ 콘텐츠를 제외한 서비스
+                    이용이 가능합니다.<br />
+                    <strong
+                      >("안전원 회원" 여부는 실명인증 및 휴대폰 인증시 해당
+                      여부를 확인하여 자동으로 처리됩니다.)</strong
+                    >
+                  </div>
+                  <br />
+                  "안전원 회원" 이란?<br />
+                  한국소방안전원의 직무회원(소방안전관리자 등), 개인회원,
+                  단체회원을 말합니다.
+                </div>
+                <div class="kfsi-join-step01">
+                  <div class="kfsi-agree-form">
+                    <div class="kfsi-agree-form__title">
+                      이용약관 (필수선택)
+                    </div>
+                    <div class="kfsi-agree-form__contents">
+                      제1조(목적)<br />
+                      이 약관은 한국소방안전원(이하 "안전원"이라 한다)에서
+                      운영하는 한국소방안전원사이트(이하 "사이트"라 한다)에서
+                      제공하는 인터넷 관련 서비스(이하 "서비스"라 한다)를
+                      이용함에 있어 안전원과 이용자 간의 권리․의무 및 책임사항과
+                      기타 필요한 사항을 규정함을 목적으로 합니다.<br />
+                      <br />
+                      관할하는 법원을 관할법원으로 합니다.<br />
+                      [부칙]<br />
+                      본 약관은 2022.09.01 부터 적용합니다.
+                    </div>
+                    <div class="kfsi-agree-form__foot">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox01"
+                        />
+                        <label class="form-check-label" for="checkbox01">
+                          위 내용을 동의합니다.
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kfsi-agree-form">
+                    <div class="kfsi-agree-form__title">
+                      개인정보 수집 및 이용에 대한 안내 (필수선택)
+                    </div>
+                    <div class="kfsi-agree-form__contents">
+                      <strong>□ 개인정보 수집 및 이용내역</strong><br />
+                      - 회원가입(계정인증방식)<br />
+                      <div class="pc mt-5">
+                        <div class="kfsi-table">
+                          <table summary="">
+                            <colgroup>
+                              <col style="width: 400px" />
+                              <col style="width: 240px" />
+                              <col style="width: 240px" />
+                            </colgroup>
+                            <caption></caption>
+                            <thead>
+                              <tr>
+                                <th scope="col">수집·이용 항목</th>
+                                <th scope="col">수집·이용 목적</th>
+                                <th scope="col">보유기간</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  성명,휴대폰,계정,비밀번호,이메일, 기타(만 14세
+                                  미만이 경우 법정대리인 이름),(선택)생년월일
+                                </td>
+                                <td>
+                                  사이트 서비스 이용<br />
+                                  (구인,구직,묻고답하기 등)<br />
+                                  *강습 등 교육접수시 별도 실명인증
+                                </td>
+                                <td>최근 사이트 접속일 기준 1년</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="mo mt-5">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              수집, 이용 항목 :
+                              성명,휴대폰,계정,비밀번호,이메일, 기타(만 14세
+                              미만이 경우 법정대리인 이름),(선택)생년월일
+                            </li>
+                            <li>
+                              수집, 이용 목적 : 사이트 서비스
+                              이용(구인,구직,묻고답하기 등)*강습 등 교육접수시
+                              별도 실명인증
+                            </li>
+                            <li>보유 기간 : 최근 사이트 접속일 기준 1년</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-agree-form__foot">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox02"
+                        />
+                        <label class="form-check-label" for="checkbox02">
+                          위 내용을 동의합니다.
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kfsi-agree-form">
+                    <div class="kfsi-agree-form__title">
+                      한국소방안전원 정보제공 수신동의
+                    </div>
+                    <div class="kfsi-agree-form__contents">
+                      ■ 한국소방안전원 정보제공 수신동의
+                      <div class="pc my-5">
+                        <div class="kfsi-table">
+                          <table summary="">
+                            <colgroup>
+                              <col style="width: 400px" />
+                              <col style="width: 240px" />
+                              <col style="width: 240px" />
+                            </colgroup>
+                            <caption></caption>
+                            <thead>
+                              <tr>
+                                <th scope="col">수집·이용 항목</th>
+                                <th scope="col">수집·이용 목적</th>
+                                <th scope="col">보유기간</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>성명, 휴대폰번호, 이메일</td>
+                                <td>
+                                  안전원 정보수신 동의<br />(웹진 발간 안내 등)
+                                </td>
+                                <td>
+                                  1년<br />
+                                  (1년 경과시 자동폐기)
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="mo my-5">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>수집, 이용 항목 : 성명, 휴대폰번호, 이메일</li>
+                            <li>
+                              수집, 이용 목적 : 안전원 정보수신 동의 (웹진 발간
+                              안내 등)
+                            </li>
+                            <li>보유 기간 : 1년 (1년 경과시 자동폐기)</li>
+                          </ul>
+                        </div>
+                      </div>
+                      위 개인정보 제공에 관한 동의는 거부하실 수 있으며, "안전원
+                      정보제공 수신수신 동의"를 위한 선택적 사항이므로 동의하지
+                      않더라도<br />
+                      안전원사이트 이용 이용을 제한하지 않습니다. 다만, 동의를
+                      하지 않으시는 경우 "안전원 정보제공"의 혜택을 받지 못할 수
+                      있습니다.
+                    </div>
+                    <div class="kfsi-agree-form__foot">
+                      <div class="form-check mx-2">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          value=""
+                          id="radio1-1"
+                        />
+                        <label class="form-check-label" for="radio1-1">
+                          동의
+                        </label>
+                      </div>
+                      <div class="form-check mx-2">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          value=""
+                          id="radio1-2"
+                        />
+                        <label class="form-check-label" for="radio1-2">
+                          비동의
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kfsi-join-step01-button">
+                    <a href="" class="btn btn-primary btn-lg"> 다음 </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

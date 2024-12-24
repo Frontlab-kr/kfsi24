@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>나의정보</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">개인정보수정</a>
+              <a href="" class="kfsi-snb-item">비밀번호 변경</a>
+              <a href="" class="kfsi-snb-item">로그인 기록보기</a>
+              <a href="" class="kfsi-snb-item">회원탈퇴</a>
+              <a href="" class="kfsi-snb-item">안전관리자 선임 이력 관리</a>
+              <a href="" class="kfsi-snb-item">나의 교육 정보 조회</a>
+              <a href="" class="kfsi-snb-item active">나의 소속 관리</a>
+              <a href="" class="kfsi-snb-item">나의 자격 관리</a>
+              <a href="" class="kfsi-snb-item">안전원 멤버십 관리</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">나의정보</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      나의 소속 관리
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>나의 소속 관리</h1>
+              </div>
+              <div class="kfsi-mypage">
+                <div class="kfsi-tab02">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="tab01"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab01-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab01-pane"
+                        aria-selected="true"
+                      >
+                        소속 회사관리
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab02"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab02-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab02-pane"
+                        aria-selected="false"
+                      >
+                        소속 관리자관리
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab03"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab03-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab03-pane"
+                        aria-selected="false"
+                      >
+                        소속 관서관리
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="tab01-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab01"
+                      tabindex="0"
+                    >
+                      <div class="kfsi-board-write">
+                        <h4 class="kfsi-h4">회사 정보</h4>
+                        <div class="kfsi-board-write-form">
+                          <table
+                            summary="회사명과 회사주소를 제공하는 테이블입니다."
+                          >
+                            <caption>
+                              회사 정보
+                            </caption>
+                            <colgroup>
+                              <col style="width: 195px" />
+                              <col style="width: 745px" />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <th scope="row">회사명</th>
+                                <td>회사이름</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">회사주소</th>
+                                <td>
+                                  서울특별시 강남구 도산대로 00번길 12345678
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="kfsi-board-button">
+                        <p>
+                          <button type="button" class="btn btn-primary btn-lg">
+                            회사 정보 변경
+                          </button>
+                        </p>
+                      </div>
+                      <div class="kfsi-board-write">
+                        <h4 class="kfsi-h4">회사 정보</h4>
+                        <div class="kfsi-board-write-form">
+                          <table
+                            summary="회사명과 회사주소를 제공하는 테이블입니다."
+                          >
+                            <caption>
+                              회사 정보
+                            </caption>
+                            <colgroup>
+                              <col style="width: 195px" />
+                              <col style="width: 745px" />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <th scope="row">회사명</th>
+                                <td>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="sobang"
+                                    style="width: 282px"
+                                    title="회사명"
+                                  />
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">회사주소</th>
+                                <td>
+                                  <div class="kfsi-mypage-address">
+                                    <div class="kfsi-mypage-address-post">
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        value="12345"
+                                        style="min-width: 110px; width: 110px"
+                                        readonly
+                                        title="우편번호"
+                                      />
+                                      <a
+                                        href=""
+                                        class="btn btn-secondary btn-sm"
+                                        >우편번호찾기
+                                        <i class="ico-post"></i>
+                                      </a>
+                                    </div>
+                                    <div class="kfsi-mypage-address-input">
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        value="서울특별시 강남구 도산대로 523 한성빌딩"
+                                        style="min-width: 460px; width: 460px"
+                                        readonly
+                                        title="주소"
+                                      />
+                                    </div>
+                                    <div class="kfsi-mypage-address-input">
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        value="106호"
+                                        style="min-width: 460px; width: 460px"
+                                        title="상세 주소"
+                                      />
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="kfsi-board-button">
+                        <p>
+                          <button type="button" class="btn btn-primary btn-lg">
+                            변경 신청
+                          </button>
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab02-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab02"
+                      tabindex="0"
+                    >
+                      <div class="kfsi-board">
+                        <div class="kfsi-board-head">
+                          <div class="kfsi-board-head-start">
+                            <h4 class="kfsi-h4">소속 관리자</h4>
+                          </div>
+                          <div class="kfsi-board-head-end"></div>
+                        </div>
+                        <div class="pc">
+                          <div class="kfsi-board-list kfsi-board-list--border">
+                            <table
+                              summary="소속 관리자의 번호, 성명, 연락처, 등록일 정보를 보여주는 테이블입니다."
+                            >
+                              <caption>
+                                소속 관리자 목록
+                              </caption>
+                              <colgroup>
+                                <col style="width: 140px" />
+                                <col style="width: 260px" />
+                                <col style="width: 310px" />
+                                <col style="width: 230px" />
+                              </colgroup>
+                              <thead>
+                                <tr>
+                                  <th scope="col">번호</th>
+                                  <th scope="col">성명</th>
+                                  <th scope="col">연락처</th>
+                                  <th scope="col">등록일</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>박소방</td>
+                                  <td>010-1234-5678</td>
+                                  <td>2024.10.23</td>
+                                </tr>
+                                <tr>
+                                  <td>1</td>
+                                  <td>박소방</td>
+                                  <td>010-1234-5678</td>
+                                  <td>2024.10.23</td>
+                                </tr>
+                                <tr>
+                                  <td>1</td>
+                                  <td>박소방</td>
+                                  <td>010-1234-5678</td>
+                                  <td>2024.10.23</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="kfsi-board-button">
+                            <p>
+                              <button
+                                type="button"
+                                class="btn btn-primary btn-lg"
+                              >
+                                수정
+                              </button>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="mo">
+                          <div class="kfsi-board-list">
+                            <a href="" class="kfsi-board-list-item">
+                              <div class="kfsi-board-list-item-text">
+                                번호 : 1
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                성명 : 일소방
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                연락처 : 010-0000-0000
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                등록일 : 2024.10.23
+                              </div>
+                            </a>
+                            <a href="" class="kfsi-board-list-item">
+                              <div class="kfsi-board-list-item-text">
+                                번호 : 1
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                성명 : 일소방
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                연락처 : 010-0000-0000
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                등록일 : 2024.10.23
+                              </div>
+                            </a>
+                            <a href="" class="kfsi-board-list-item">
+                              <div class="kfsi-board-list-item-text">
+                                번호 : 1
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                성명 : 일소방
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                연락처 : 010-0000-0000
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                등록일 : 2024.10.23
+                              </div>
+                            </a>
+                            <a href="" class="kfsi-board-list-item">
+                              <div class="kfsi-board-list-item-text">
+                                번호 : 1
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                성명 : 일소방
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                연락처 : 010-0000-0000
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                등록일 : 2024.10.23
+                              </div>
+                            </a>
+                            <a href="" class="kfsi-board-list-item">
+                              <div class="kfsi-board-list-item-text">
+                                번호 : 1
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                성명 : 일소방
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                연락처 : 010-0000-0000
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                등록일 : 2024.10.23
+                              </div>
+                            </a>
+                          </div>
+                          <div class="kfsi-board-button">
+                            <p>
+                              <button
+                                type="button"
+                                class="btn btn-primary btn-lg"
+                              >
+                                수정
+                              </button>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="kfsi-board">
+                        <div class="kfsi-board-head">
+                          <div class="kfsi-board-head-start">
+                            <h4 class="kfsi-h4">소속 관리자</h4>
+                          </div>
+                          <div class="kfsi-board-head-end">
+                            <button
+                              type="button"
+                              class="btn btn-sm btn-secondary"
+                            >
+                              추가
+                            </button>
+                          </div>
+                        </div>
+                        <div class="pc">
+                          <div class="kfsi-board-list kfsi-board-list--border">
+                            <table
+                              summary="소속 관리자의 번호, 성명, 연락처, 기능 정보를 보여주는 테이블입니다."
+                            >
+                              <caption>
+                                소속 관리자 목록
+                              </caption>
+                              <colgroup>
+                                <col style="width: 140px" />
+                                <col style="width: 260px" />
+                                <col style="width: 310px" />
+                                <col style="width: 230px" />
+                              </colgroup>
+                              <thead>
+                                <tr>
+                                  <th scope="col">번호</th>
+                                  <th scope="col">성명</th>
+                                  <th scope="col">연락처</th>
+                                  <th scope="col">기능</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      title="성명"
+                                    />
+                                  </td>
+                                  <td class="text-center">
+                                    <div class="kfsi-mypage-phone">
+                                      <div class="kfsi-mypage-phone-input">
+                                        <select
+                                          class="form-select"
+                                          aria-label="휴대폰 번호 앞자리 선택"
+                                          title="휴대폰 번호 앞자리 선택"
+                                          style="min-width: 80px; width: 80px"
+                                        >
+                                          <option selected>선택</option>
+                                        </select>
+                                        -
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          title="휴대폰 번호 중간 자리 입력"
+                                          style="min-width: 80px; width: 80px"
+                                        />
+                                        -
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          title="휴대폰 번호 마지막 자리 입력"
+                                          style="min-width: 80px; width: 80px"
+                                        />
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <button
+                                      type="button"
+                                      class="btn btn-sm btn-outline-secondary"
+                                      title="삭제"
+                                    >
+                                      삭제
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>1</td>
+                                  <td>
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      title="성명"
+                                    />
+                                  </td>
+                                  <td class="text-center">
+                                    <div class="kfsi-mypage-phone">
+                                      <div class="kfsi-mypage-phone-input">
+                                        <select
+                                          class="form-select"
+                                          aria-label="휴대폰 번호 앞자리 선택"
+                                          title="휴대폰 번호 앞자리 선택"
+                                          style="min-width: 80px; width: 80px"
+                                        >
+                                          <option selected>선택</option>
+                                        </select>
+                                        -
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          title="휴대폰 번호 중간 자리 입력"
+                                          style="min-width: 80px; width: 80px"
+                                        />
+                                        -
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          title="휴대폰 번호 마지막 자리 입력"
+                                          style="min-width: 80px; width: 80px"
+                                        />
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <button
+                                      type="button"
+                                      class="btn btn-sm btn-outline-secondary"
+                                      title="삭제"
+                                    >
+                                      삭제
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>1</td>
+                                  <td>
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      title="성명"
+                                    />
+                                  </td>
+                                  <td class="text-center">
+                                    <div class="kfsi-mypage-phone">
+                                      <div class="kfsi-mypage-phone-input">
+                                        <select
+                                          class="form-select"
+                                          aria-label="휴대폰 번호 앞자리 선택"
+                                          title="휴대폰 번호 앞자리 선택"
+                                          style="min-width: 80px; width: 80px"
+                                        >
+                                          <option selected>선택</option>
+                                        </select>
+                                        -
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          title="휴대폰 번호 중간 자리 입력"
+                                          style="min-width: 80px; width: 80px"
+                                        />
+                                        -
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          title="휴대폰 번호 마지막 자리 입력"
+                                          style="min-width: 80px; width: 80px"
+                                        />
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <button
+                                      type="button"
+                                      class="btn btn-sm btn-outline-secondary"
+                                      title="삭제"
+                                    >
+                                      삭제
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>1</td>
+                                  <td>
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      title="성명"
+                                    />
+                                  </td>
+                                  <td class="text-center">
+                                    <div class="kfsi-mypage-phone">
+                                      <div class="kfsi-mypage-phone-input">
+                                        <select
+                                          class="form-select"
+                                          aria-label="휴대폰 번호 앞자리 선택"
+                                          title="휴대폰 번호 앞자리 선택"
+                                          style="min-width: 80px; width: 80px"
+                                        >
+                                          <option selected>선택</option>
+                                        </select>
+                                        -
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          title="휴대폰 번호 중간 자리 입력"
+                                          style="min-width: 80px; width: 80px"
+                                        />
+                                        -
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          title="휴대폰 번호 마지막 자리 입력"
+                                          style="min-width: 80px; width: 80px"
+                                        />
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <button
+                                      type="button"
+                                      class="btn btn-sm btn-outline-secondary"
+                                      title="삭제"
+                                    >
+                                      삭제
+                                    </button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="kfsi-board-button">
+                            <p>
+                              <button
+                                type="button"
+                                class="btn btn-primary btn-lg"
+                              >
+                                변경 신청
+                              </button>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="mo">
+                          <div class="kfsi-board-list">
+                            <div class="kfsi-board-list-item">
+                              <div class="kfsi-board-list-item-text">
+                                번호 : 1
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                <div class="kfsi-board-list-item-text__title">
+                                  성명 :
+                                </div>
+                                <input
+                                  type="text"
+                                  class="form-control w-100"
+                                  title="성명"
+                                />
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                <div class="kfsi-board-list-item-text__title">
+                                  연락처 :
+                                </div>
+                                <div class="kfsi-mypage-phone">
+                                  <div class="kfsi-mypage-phone-input">
+                                    <select
+                                      class="form-select"
+                                      aria-label="휴대폰 번호 앞자리 선택"
+                                      title="휴대폰 번호 앞자리 선택"
+                                      style="min-width: 80px; width: 80px"
+                                    >
+                                      <option selected>선택</option>
+                                    </select>
+                                    -
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      title="휴대폰 번호 중간 자리 입력"
+                                      style="min-width: 80px; width: 80px"
+                                    />
+                                    -
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      title="휴대폰 번호 마지막 자리 입력"
+                                      style="min-width: 80px; width: 80px"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                <button
+                                  type="button"
+                                  class="btn btn-sm btn-outline-secondary w-100"
+                                >
+                                  삭제
+                                </button>
+                              </div>
+                            </div>
+                            <div class="kfsi-board-list-item">
+                              <div class="kfsi-board-list-item-text">
+                                번호 : 1
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                <div class="kfsi-board-list-item-text__title">
+                                  성명 :
+                                </div>
+                                <input
+                                  type="text"
+                                  class="form-control w-100"
+                                  title="성명"
+                                />
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                <div class="kfsi-board-list-item-text__title">
+                                  연락처 :
+                                </div>
+                                <div class="kfsi-mypage-phone">
+                                  <div class="kfsi-mypage-phone-input">
+                                    <select
+                                      class="form-select"
+                                      aria-label="휴대폰 번호 앞자리 선택"
+                                      title="휴대폰 번호 앞자리 선택"
+                                      style="min-width: 80px; width: 80px"
+                                    >
+                                      <option selected>선택</option>
+                                    </select>
+                                    -
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      title="휴대폰 번호 중간 자리 입력"
+                                      style="min-width: 80px; width: 80px"
+                                    />
+                                    -
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      title="휴대폰 번호 마지막 자리 입력"
+                                      style="min-width: 80px; width: 80px"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                <button
+                                  type="button"
+                                  class="btn btn-sm btn-outline-secondary w-100"
+                                >
+                                  삭제
+                                </button>
+                              </div>
+                            </div>
+                            <div class="kfsi-board-list-item">
+                              <div class="kfsi-board-list-item-text">
+                                번호 : 1
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                <div class="kfsi-board-list-item-text__title">
+                                  성명 :
+                                </div>
+                                <input
+                                  type="text"
+                                  class="form-control w-100"
+                                  title="성명"
+                                />
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                <div class="kfsi-board-list-item-text__title">
+                                  연락처 :
+                                </div>
+                                <div class="kfsi-mypage-phone">
+                                  <div class="kfsi-mypage-phone-input">
+                                    <select
+                                      class="form-select"
+                                      aria-label="휴대폰 번호 앞자리 선택"
+                                      title="휴대폰 번호 앞자리 선택"
+                                      style="min-width: 80px; width: 80px"
+                                    >
+                                      <option selected>선택</option>
+                                    </select>
+                                    -
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      title="휴대폰 번호 중간 자리 입력"
+                                      style="min-width: 80px; width: 80px"
+                                    />
+                                    -
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      title="휴대폰 번호 마지막 자리 입력"
+                                      style="min-width: 80px; width: 80px"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                <button
+                                  type="button"
+                                  class="btn btn-sm btn-outline-secondary w-100"
+                                >
+                                  삭제
+                                </button>
+                              </div>
+                            </div>
+                            <div class="kfsi-board-list-item">
+                              <div class="kfsi-board-list-item-text">
+                                번호 : 1
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                <div class="kfsi-board-list-item-text__title">
+                                  성명 :
+                                </div>
+                                <input
+                                  type="text"
+                                  class="form-control w-100"
+                                  title="성명"
+                                />
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                <div class="kfsi-board-list-item-text__title">
+                                  연락처 :
+                                </div>
+                                <div class="kfsi-mypage-phone">
+                                  <div class="kfsi-mypage-phone-input">
+                                    <select
+                                      class="form-select"
+                                      aria-label="휴대폰 번호 앞자리 선택"
+                                      title="휴대폰 번호 앞자리 선택"
+                                      style="min-width: 80px; width: 80px"
+                                    >
+                                      <option selected>선택</option>
+                                    </select>
+                                    -
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      title="휴대폰 번호 중간 자리 입력"
+                                      style="min-width: 80px; width: 80px"
+                                    />
+                                    -
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      title="휴대폰 번호 마지막 자리 입력"
+                                      style="min-width: 80px; width: 80px"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="kfsi-board-list-item-text">
+                                <button
+                                  type="button"
+                                  class="btn btn-sm btn-outline-secondary w-100"
+                                >
+                                  삭제
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="kfsi-board-button">
+                            <p>
+                              <button
+                                type="button"
+                                class="btn btn-primary btn-lg"
+                              >
+                                변경 신청
+                              </button>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab03-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab03"
+                      tabindex="0"
+                    >
+                      <div class="kfsi-board-text-caption">
+                        ※ 정산완료된 이수내역은 관서정보가 변경되지 않습니다.
+                      </div>
+                      <div class="kfsi-board-write">
+                        <h4 class="kfsi-h4">수강자 정보</h4>
+                        <div class="kfsi-board-write-form">
+                          <table
+                            summary="수강자의 성함, 생년월일, 휴대폰번호와 기본정보 변경 안내를 제공합니다."
+                          >
+                            <caption>
+                              수강자 정보
+                            </caption>
+                            <colgroup>
+                              <col style="width: 180px" />
+                              <col style="width: 350px" />
+                              <col style="width: 410px" />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <th scope="row">성함</th>
+                                <td>김소방</td>
+                                <td rowspan="3" class="pc border-start">
+                                  개명 또는 생년월일이 변경되신 분은 초본을
+                                  준비하셔서 유선 안내를 받으시기 바랍니다.<br />
+                                  연락처 : 02-850-1377
+                                  <div class="mt-4 text-center">
+                                    <button
+                                      type="button"
+                                      class="btn btn-sm btn-secondary"
+                                    >
+                                      기본정보 변경 바로가기
+                                    </button>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">생년월일</th>
+                                <td>1990.01.01</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">휴대폰번호</th>
+                                <td>010-1234-5678</td>
+                              </tr>
+                              <tr class="mo">
+                                <td colspan="2">
+                                  개명 또는 생년월일이 변경되신 분은 초본을
+                                  준비하셔서 유선 안내를 받으시기 바랍니다.<br />
+                                  연락처 : 02-850-1377
+                                  <div class="mt-4 text-center">
+                                    <button
+                                      type="button"
+                                      class="btn btn-sm btn-secondary"
+                                    >
+                                      기본정보 변경 바로가기
+                                    </button>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="kfsi-board-write">
+                        <h4 class="kfsi-h4">관서 정보</h4>
+                        <div class="kfsi-board-write-form">
+                          <table
+                            summary="교육 대상, 관할본부, 관할소방서, 구분 정보를 제공하는 테이블입니다."
+                          >
+                            <caption>
+                              관서 정보
+                            </caption>
+                            <colgroup>
+                              <col style="width: 180px" />
+                              <col style="width: 760px" />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <th scope="row">교육대상</th>
+                                <td>기본[1~2년차]</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">관할본부</th>
+                                <td>서울소방본부</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">관할소방서</th>
+                                <td>송파소방서</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">구분</th>
+                                <td>지역 의용소방대</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="kfsi-board-button">
+                          <p>
+                            <button
+                              type="button"
+                              class="btn btn-primary btn-lg"
+                            >
+                              관서정보 변경
+                            </button>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="kfsi-board-write">
+                        <h4 class="kfsi-h4">관서 정보</h4>
+                        <div class="kfsi-board-write-form">
+                          <table
+                            summary="교육 대상, 관할본부, 관할소방서, 구분 정보를 제공하는 테이블입니다."
+                          >
+                            <caption>
+                              관서 정보
+                            </caption>
+                            <colgroup>
+                              <col style="width: 180px" />
+                              <col style="width: 760px" />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <th scope="row">교육대상</th>
+                                <td>
+                                  <div class="d-flex flex-wrap">
+                                    <div class="form-check me-7">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="flexRadioDefault"
+                                        id="flexRadioDefault1"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="flexRadioDefault1"
+                                      >
+                                        기본[1-2년차]
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="flexRadioDefault"
+                                        id="flexRadioDefault2"
+                                        checked
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="flexRadioDefault2"
+                                      >
+                                        전문[3년차 이상]
+                                      </label>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">관할본부</th>
+                                <td>
+                                  <select
+                                    class="form-select"
+                                    aria-label="관할본부 선택"
+                                    title="관할본부 선택"
+                                    style="width: 188px"
+                                  >
+                                    <option selected>선택</option>
+                                  </select>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">관할소방서</th>
+                                <td>
+                                  <select
+                                    class="form-select"
+                                    aria-label="관할소방서 선택"
+                                    title="관할소방서 선택"
+                                    style="width: 188px"
+                                  >
+                                    <option selected>선택</option>
+                                  </select>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">구분</th>
+                                <td>
+                                  <div class="d-flex align-items-center gap-2">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      placeholder="예) 지역, 전문, 전담"
+                                      style="width: 188px"
+                                      title="구분"
+                                    />
+                                    의용소방대
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="kfsi-board-button">
+                          <p>
+                            <button
+                              type="button"
+                              class="btn btn-primary btn-lg"
+                            >
+                              관서정보 변경
+                            </button>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

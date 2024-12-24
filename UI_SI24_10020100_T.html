@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육용 콘텐츠</h2>
+              </div>
+              <a href="" class="kfsi-snb-item active">교재</a>
+              <a href="" class="kfsi-snb-item">디지털 콘텐츠</a>
+              <a href="" class="kfsi-snb-item">각종 메뉴얼</a>
+              <a href="" class="kfsi-snb-item">서식</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">교육용 콘텐츠</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      교재
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>강습교재</h1>
+              </div>
+              <div class="kfsi-edu">
+                <div class="kfsi-edu-head">
+                  <div class="mo">
+                    <div class="kfsi-tab02 kfsi-tab02--grid2">
+                      <ul class="nav nav-tabs mt-0">
+                        <li class="nav-item">
+                          <a href="" class="nav-link active">강습교재</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="" class="nav-link">실무교재</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="" class="nav-link">위험물 실무 해설서</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="" class="nav-link">기타교재</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="mo">
+                    <h4 class="kfsi-h4">강습교재</h4>
+                  </div>
+                  <div class="kfsi-textlist">
+                    <ul>
+                      <li>본 강습교재는 교육이수 등과는 무관합니다.</li>
+                      <li>
+                        본 책자의 어느 부분도 한국소방안전원의 승인 없이 일부
+                        또는 전부를 사진 복사, 디스크 복사 및 기타 정보 재생
+                        시스템을 비롯하여 현재 알려지거나 향후 발명될 어떤
+                        전기적, 기계적 또는 다른 방법을 통해 복사 및 재생 등을
+                        금하며, 법리적 해석 등에 대한 근거로 사용할 수 없습니다.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="d-flex justify-content-end mt-15 mo-mt-5">
+                    <a href="" class="btn btn-secondary btn-sm"
+                      >정부간행물 판매센터</a
+                    >
+                  </div>
+                </div>
+                <div class="kfsi-edu-body">
+                  <div class="kfsi-tab01">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link active"
+                          id="tab01"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab01-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="tab01-pane"
+                          aria-selected="true"
+                        >
+                          소방안전관리자
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="tab02"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab02-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="tab02-pane"
+                          aria-selected="false"
+                        >
+                          소방안전관리자 실무능력평가
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="tab03"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab03-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="tab03-pane"
+                          aria-selected="false"
+                        >
+                          위험물
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div
+                        class="tab-pane fade show active"
+                        id="tab01-pane"
+                        role="tabpanel"
+                        aria-labelledby="tab01"
+                        tabindex="0"
+                      >
+                        <div class="kfsi-edu-title">소방안전관리자</div>
+                        <div class="kfsi-edu-list">
+                          <a href="" class="kfsi-edu-list-item">
+                            <div class="kfsi-edu-list-item__thumb">
+                              <img
+                                src="./assets/images/edu/temp/img01.png"
+                                alt="특급,1급 소방안전관리자 실무능력평가"
+                              />
+                            </div>
+                            <div class="kfsi-edu-list-item__text">
+                              건설현장 소방안전관리자
+                              <p class="text-danger">(2024년 6월 발행)</p>
+                            </div> </a
+                          ><a href="" class="kfsi-edu-list-item">
+                            <div class="kfsi-edu-list-item__thumb">
+                              <img
+                                src="./assets/images/edu/temp/img01.png"
+                                alt="특급,1급 소방안전관리자 실무능력평가"
+                              />
+                            </div>
+                            <div class="kfsi-edu-list-item__text">
+                              건설현장 소방안전관리자
+                              <p class="text-danger">(2024년 6월 발행)</p>
+                            </div> </a
+                          ><a href="" class="kfsi-edu-list-item">
+                            <div class="kfsi-edu-list-item__thumb">
+                              <img
+                                src="./assets/images/edu/temp/img01.png"
+                                alt="특급,1급 소방안전관리자 실무능력평가"
+                              />
+                            </div>
+                            <div class="kfsi-edu-list-item__text">
+                              건설현장 소방안전관리자
+                              <p class="text-danger">(2024년 6월 발행)</p>
+                            </div> </a
+                          ><a href="" class="kfsi-edu-list-item">
+                            <div class="kfsi-edu-list-item__thumb">
+                              <img
+                                src="./assets/images/edu/temp/img01.png"
+                                alt="특급,1급 소방안전관리자 실무능력평가"
+                              />
+                            </div>
+                            <div class="kfsi-edu-list-item__text">
+                              건설현장 소방안전관리자
+                              <p class="text-danger">(2024년 6월 발행)</p>
+                            </div> </a
+                          ><a href="" class="kfsi-edu-list-item">
+                            <div class="kfsi-edu-list-item__thumb">
+                              <img
+                                src="./assets/images/edu/temp/img01.png"
+                                alt="특급,1급 소방안전관리자 실무능력평가"
+                              />
+                            </div>
+                            <div class="kfsi-edu-list-item__text">
+                              건설현장 소방안전관리자
+                              <p class="text-danger">(2024년 6월 발행)</p>
+                            </div> </a
+                          ><a href="" class="kfsi-edu-list-item">
+                            <div class="kfsi-edu-list-item__thumb">
+                              <img
+                                src="./assets/images/edu/temp/img01.png"
+                                alt="특급,1급 소방안전관리자 실무능력평가"
+                              />
+                            </div>
+                            <div class="kfsi-edu-list-item__text">
+                              건설현장 소방안전관리자
+                              <p class="text-danger">(2024년 6월 발행)</p>
+                            </div> </a
+                          ><a href="" class="kfsi-edu-list-item">
+                            <div class="kfsi-edu-list-item__thumb">
+                              <img
+                                src="./assets/images/edu/temp/img01.png"
+                                alt="특급,1급 소방안전관리자 실무능력평가"
+                              />
+                            </div>
+                            <div class="kfsi-edu-list-item__text">
+                              건설현장 소방안전관리자
+                              <p class="text-danger">(2024년 6월 발행)</p>
+                            </div> </a
+                          ><a href="" class="kfsi-edu-list-item">
+                            <div class="kfsi-edu-list-item__thumb">
+                              <img
+                                src="./assets/images/edu/temp/img01.png"
+                                alt="특급,1급 소방안전관리자 실무능력평가"
+                              />
+                            </div>
+                            <div class="kfsi-edu-list-item__text">
+                              건설현장 소방안전관리자
+                              <p class="text-danger">(2024년 6월 발행)</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="tab02-pane"
+                        role="tabpanel"
+                        aria-labelledby="tab02"
+                        tabindex="0"
+                      >
+                        <div class="kfsi-edu-title">
+                          소방안전관리자 실무능력평가
+                        </div>
+                        <div class="kfsi-edu-list">
+                          <a href="" class="kfsi-edu-list-item">
+                            <div class="kfsi-edu-list-item__thumb">
+                              <img
+                                src="./assets/images/edu/temp/img02.png"
+                                alt="특급,1급 소방안전관리자 실무능력평가"
+                              />
+                            </div>
+                            <div class="kfsi-edu-list-item__text">
+                              특급,1급 소방안전관리자 실무능력평가
+                            </div>
+                          </a>
+                          <a href="" class="kfsi-edu-list-item">
+                            <div class="kfsi-edu-list-item__thumb">
+                              <img
+                                src="./assets/images/edu/temp/img02.png"
+                                alt="특급,1급 소방안전관리자 실무능력평가"
+                              />
+                            </div>
+                            <div class="kfsi-edu-list-item__text">
+                              특급,1급 소방안전관리자 실무능력평가
+                            </div>
+                          </a>
+                          <a href="" class="kfsi-edu-list-item">
+                            <div class="kfsi-edu-list-item__thumb">
+                              <img
+                                src="./assets/images/edu/temp/img02.png"
+                                alt="특급,1급 소방안전관리자 실무능력평가"
+                              />
+                            </div>
+                            <div class="kfsi-edu-list-item__text">
+                              특급,1급 소방안전관리자 실무능력평가
+                            </div>
+                          </a>
+                          <a href="" class="kfsi-edu-list-item">
+                            <div class="kfsi-edu-list-item__thumb">
+                              <img
+                                src="./assets/images/edu/temp/img02.png"
+                                alt="특급,1급 소방안전관리자 실무능력평가"
+                              />
+                            </div>
+                            <div class="kfsi-edu-list-item__text">
+                              특급,1급 소방안전관리자 실무능력평가
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="tab03-pane"
+                        role="tabpanel"
+                        aria-labelledby="tab03"
+                        tabindex="0"
+                      >
+                        <div class="kfsi-edu-title">위험물</div>
+                        <div class="kfsi-edu-list">
+                          <a href="" class="kfsi-edu-list-item">
+                            <div class="kfsi-edu-list-item__thumb">
+                              <img
+                                src="./assets/images/edu/temp/img03.png"
+                                alt="특급,1급 소방안전관리자 실무능력평가"
+                              />
+                            </div>
+                            <div class="kfsi-edu-list-item__text">
+                              위험물안전관리자
+                            </div>
+                          </a>
+                          <a href="" class="kfsi-edu-list-item">
+                            <div class="kfsi-edu-list-item__thumb">
+                              <img
+                                src="./assets/images/edu/temp/img03.png"
+                                alt="특급,1급 소방안전관리자 실무능력평가"
+                              />
+                            </div>
+                            <div class="kfsi-edu-list-item__text">
+                              위험물안전관리자
+                            </div>
+                          </a>
+                          <a href="" class="kfsi-edu-list-item">
+                            <div class="kfsi-edu-list-item__thumb">
+                              <img
+                                src="./assets/images/edu/temp/img03.png"
+                                alt="특급,1급 소방안전관리자 실무능력평가"
+                              />
+                            </div>
+                            <div class="kfsi-edu-list-item__text">
+                              위험물안전관리자
+                            </div>
+                          </a>
+                          <a href="" class="kfsi-edu-list-item">
+                            <div class="kfsi-edu-list-item__thumb">
+                              <img
+                                src="./assets/images/edu/temp/img03.png"
+                                alt="특급,1급 소방안전관리자 실무능력평가"
+                              />
+                            </div>
+                            <div class="kfsi-edu-list-item__text">
+                              위험물안전관리자
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

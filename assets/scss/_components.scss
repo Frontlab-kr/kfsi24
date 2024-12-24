@@ -1,17 +1,60 @@
 $mobileWidth: 992px;
 .kfsi {
-  &-h4 {
-    font-size: 20px;
-    font-weight: bold;
-    font-stretch: normal;
+  &-h3 {
+    color: var(--004D16, #004d16);
+    font-family: Pretendard;
+    font-size: 22px;
     font-style: normal;
-    line-height: 1.2;
-    letter-spacing: normal;
-    text-align: left;
-    color: #004d16;
-    word-break: keep-all;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.66px;
+
     @media screen and (max-width: $mobileWidth) {
+      color: var(--004D16, #004d16);
+      font-family: Pretendard;
       font-size: 17px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px; /* 141.176% */
+      letter-spacing: 0.51px;
+    }
+  }
+  &-h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    color: #000;
+    font-family: Pretendard;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.66px;
+    word-break: keep-all;
+    &::before {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50px;
+      border: 5px solid #8bc53f;
+      background: #fff;
+    }
+    @media screen and (max-width: $mobileWidth) {
+      margin-bottom: 16px;
+      color: #000;
+      font-family: Pretendard;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px; /* 141.176% */
+      letter-spacing: 0.51px;
+      &::before {
+        width: 12px;
+        height: 12px;
+        border: 4px solid #8bc53f;
+      }
     }
   }
   &-h5 {
@@ -49,8 +92,25 @@ $mobileWidth: 992px;
     }
   }
   &-box {
-    padding: 24px;
-    border: solid 1px #ccc;
+    padding: 20px 20px;
+    color: #000;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.48px;
+    word-break: keep-all;
+    &__title {
+      margin-bottom: 20px;
+      color: var(--1854a3, #1854a3);
+      font-family: Pretendard;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.6px;
+    }
     table {
       margin: -8px 0;
       tbody {
@@ -79,7 +139,23 @@ $mobileWidth: 992px;
       }
     }
     @media screen and (max-width: $mobileWidth) {
-      padding: 16px;
+      padding: 16px 16px;
+      color: #000;
+      font-family: Pretendard;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 160% */
+      &__title {
+        margin-bottom: 16px;
+        color: var(--1854a3, #1854a3);
+        font-family: Pretendard;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.51px;
+      }
       table {
         margin: -8px 0;
         tbody {
@@ -106,6 +182,9 @@ $mobileWidth: 992px;
             color: #666;
           }
         }
+      }
+      .kfsi-textlist {
+        margin-bottom: 10px !important;
       }
     }
   }
@@ -221,17 +300,17 @@ $mobileWidth: 992px;
       word-break: keep-all;
       thead {
         th {
-          padding: 16px;
+          padding: 0 16px;
           border: 1px solid #ccc;
-          background-color: #f7f7f7;
-          font-size: 16px;
-          font-weight: bold;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: 1.5;
-          letter-spacing: normal;
-          text-align: center;
+          background: #e0efdb;
           color: #000;
+          font-family: Pretendard;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px; /* 200% */
+          letter-spacing: 0.42px;
+          text-align: center;
         }
         tr {
           th,
@@ -257,14 +336,13 @@ $mobileWidth: 992px;
           padding: 12px 16px;
           border: 1px solid #ccc;
           background-color: #f7f7f7;
-          font-size: 16px;
-          font-weight: bold;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: 1.5;
-          letter-spacing: normal;
-          text-align: center;
           color: #000;
+          text-align: center;
+          font-family: Pretendard;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
           word-break: keep-all;
           &:first-child {
             border-left: none;
@@ -273,14 +351,13 @@ $mobileWidth: 992px;
         td {
           padding: 12px 16px;
           border: 1px solid #ccc;
-          font-size: 16px;
-          font-weight: normal;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: 1.5;
-          letter-spacing: normal;
-          text-align: center;
           color: #000;
+          text-align: center;
+          font-family: Pretendard;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
           word-break: keep-all;
           a {
             color: #054a9d;
@@ -380,6 +457,151 @@ $mobileWidth: 992px;
       }
     }
   }
+  &-nav {
+    margin-bottom: 60px;
+    text-align: center;
+    ol {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 100px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      &::before {
+        content: '';
+        position: absolute;
+        left: 30px;
+        right: 30px;
+        top: 50%;
+        border-top: 1px solid #ccc;
+      }
+      li {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        margin: 0;
+        padding: 0;
+        white-space: noWrap;
+        &::before {
+          position: absolute;
+          top: 50%;
+          content: '';
+          display: block;
+          width: 20px;
+          height: 20px;
+          margin-top: -10px;
+          border-radius: 20px;
+          background: #c1d6c7;
+        }
+        span {
+          color: #666;
+          text-align: center;
+          font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        strong {
+          color: #666;
+          text-align: center;
+          font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        &.active {
+          &::before {
+            background: #3d744d;
+          }
+          span {
+            color: #333;
+          }
+          strong {
+            color: #333;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: $mobileWidth) {
+      margin-bottom: 40px;
+      ol {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        &::before {
+          content: '';
+          position: absolute;
+          left: 30px;
+          right: 30px;
+          top: 50%;
+          border-top: 1px solid #ccc;
+        }
+        li {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 40px;
+          margin: 0;
+          padding: 0;
+          white-space: noWrap;
+          &::before {
+            position: absolute;
+            top: 50%;
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin-top: -10px;
+            border-radius: 20px;
+            background: #c1d6c7;
+          }
+          span {
+            color: #666;
+            text-align: center;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+          strong {
+            color: #666;
+            text-align: center;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+          &.active {
+            &::before {
+              background: #3d744d;
+            }
+            span {
+              color: #333;
+            }
+            strong {
+              color: #333;
+            }
+          }
+        }
+      }
+    }
+  }
   &-danger {
     p {
       display: flex;
@@ -437,6 +659,81 @@ $mobileWidth: 992px;
         border-left: none;
         border-radius: 0 5px 5px 0;
         max-width: 200px;
+      }
+    }
+  }
+  &-textarea {
+    textarea {
+      height: 98px;
+    }
+    &-text {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin: 6px 0 0 0;
+      span,
+      strong {
+        color: #666;
+        font-family: Pretendard;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400 !important;
+        line-height: normal;
+        letter-spacing: 0.48px;
+      }
+    }
+    @media screen and (max-width: $mobileWidth) {
+      textarea {
+        height: 158px;
+      }
+      &-text {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 0;
+        span,
+        strong {
+          color: #666;
+          font-family: Pretendard;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+  &-player {
+    font-size: 0;
+    @media screen and (max-width: $mobileWidth) {
+      width: 100%;
+      //height: 100%;
+      video {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &-file {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    .btn {
+      min-width: 140px;
+    }
+    @media screen and (max-width: $mobileWidth) {
+      display: inline-flex;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 5px;
+      width: 100%;
+      .form-control {
+        width: 100%;
+      }
+      .btn {
+        width: 100%;
+        min-width: 140px;
+        height: 40px;
       }
     }
   }
@@ -503,7 +800,7 @@ $mobileWidth: 992px;
     }
   }
   &-textlist {
-    margin-left: 22px;
+    margin-left: 10px;
     ul {
       margin: 0;
       padding: 0;
@@ -527,16 +824,15 @@ $mobileWidth: 992px;
       }
       > li {
         position: relative;
-        margin-bottom: 4px;
-        padding-left: 15px;
-        font-size: 16px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.41;
-        letter-spacing: normal;
-        text-align: left;
+        margin-bottom: 0px;
+        padding-left: 14px;
         color: #000;
+        font-family: Pretendard;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        letter-spacing: 0.48px;
         a {
           color: #000;
         }
@@ -544,14 +840,14 @@ $mobileWidth: 992px;
           content: '';
           display: block;
           position: absolute;
-          top: 8px;
+          top: 11px;
           left: 0;
-          min-width: 5px;
-          width: 5px;
-          height: 5px;
+          min-width: 3px;
+          width: 3px;
+          height: 3px;
 
-          border-radius: 5px;
-          background-color: #999;
+          border-radius: 3px;
+          background-color: #000;
         }
         &:last-child {
           margin-bottom: 0;
@@ -591,32 +887,27 @@ $mobileWidth: 992px;
       }
     }
     @media screen and (max-width: $mobileWidth) {
-      margin-left: 0;
       > ul {
         > li {
           position: relative;
-          margin-bottom: 6px;
-          padding-left: 15px;
-          font-size: 15px;
-          font-weight: normal;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: 1.33;
-          letter-spacing: normal;
-          text-align: left;
+          margin-bottom: 0;
+          padding-left: 12px;
           color: #000;
+          font-family: Pretendard;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 22px; /* 146.667% */
           &::before {
             content: '';
             display: block;
             position: absolute;
-            top: 8px;
+            top: 10px;
             left: 0;
-            min-width: 5px;
-            width: 5px;
-            height: 5px;
-
-            border-radius: 5px;
-            background-color: #004d16;
+            min-width: 3px;
+            width: 3px;
+            height: 3px;
+            border-radius: 3px;
           }
           &:last-child {
             margin-bottom: 0;

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>공지사항</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">공지사항</a>
+              <a href="" class="kfsi-snb-item active">자주묻는질문</a>
+              <a href="" class="kfsi-snb-item">문의하기</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">공지사항</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      자주묻는질문
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>자주묻는질문</h1>
+              </div>
+              <div class="kfsi-notice">
+                <div class="pc">
+                  <div class="kfsi-board">
+                    <div class="kfsi-board-list" id="accordionPC">
+                      <table
+                        summary="자주 묻는 질문의 번호, 분류, 제목, 및 상세 정보를 제공합니다."
+                      >
+                        <caption>
+                          자주 묻는 질문
+                        </caption>
+                        <colgroup>
+                          <col style="width: 70px" />
+                          <col style="width: 120px" />
+                          <col style="width: 750px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">No.</th>
+                            <th scope="col">분류</th>
+                            <th scope="col">제목</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>10</td>
+                            <td>로그인</td>
+                            <td>
+                              <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapsePc01"
+                                aria-expanded="true"
+                                aria-controls="collapsePc01"
+                              >
+                                <p>
+                                  한국소방안전원 사이트 로그인은 어떻게 하나요?
+                                  한국소방안전원 사이트 로그인은 어떻게 하나요?
+                                  한국소방안전원 사이트 로그인은 어떻게 하나요?
+                                </p>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="3" class="p-0 h-100 border-0">
+                              <div
+                                id="collapsePc01"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionPC"
+                              >
+                                <div class="accordion-body">
+                                  ■ PC로그인 방법 :
+                                  <a href="">동영상으로 확인하기</a><br />
+                                  <br />
+                                  ■ 모바일 로그인 방법 :
+                                  <a href="">동영상으로 확인하기</a>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>10</td>
+                            <td>로그인</td>
+                            <td>
+                              <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapsePc02"
+                                aria-expanded="true"
+                                aria-controls="collapsePc02"
+                              >
+                                <p>
+                                  실무교육은 어떻게 신청 하는 건가요?실무교육은
+                                  어떻게 신청 하는 건가요?실무교육은 어떻게 신청
+                                  하는 건가요?실무교육은 어떻게 신청 하는
+                                  건가요?실무교육은 어떻게 신청 하는 건가요?
+                                </p>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="3" class="p-0 h-100 border-0">
+                              <div
+                                id="collapsePc02"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionPC"
+                              >
+                                <div class="accordion-body">
+                                  ■ PC로그인 방법 :
+                                  <a href="">동영상으로 확인하기</a><br />
+                                  <br />
+                                  ■ 모바일 로그인 방법 :
+                                  <a href="">동영상으로 확인하기</a>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>10</td>
+                            <td>로그인</td>
+                            <td>
+                              <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapsePc03"
+                                aria-expanded="true"
+                                aria-controls="collapsePc03"
+                              >
+                                <p>
+                                  실무교육은 어떻게 신청 하는 건가요?실무교육은
+                                  어떻게 신청 하는 건가요?실무교육은 어떻게 신청
+                                  하는 건가요?실무교육은 어떻게 신청 하는
+                                  건가요?실무교육은 어떻게 신청 하는 건가요?
+                                </p>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="3" class="p-0 h-100 border-0">
+                              <div
+                                id="collapsePc03"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionPC"
+                              >
+                                <div class="accordion-body">
+                                  ■ PC로그인 방법 :
+                                  <a href="">동영상으로 확인하기</a><br />
+                                  <br />
+                                  ■ 모바일 로그인 방법 :
+                                  <a href="">동영상으로 확인하기</a>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>10</td>
+                            <td>로그인</td>
+                            <td>
+                              <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapsePc04"
+                                aria-expanded="true"
+                                aria-controls="collapsePc04"
+                              >
+                                <p>
+                                  실무교육은 어떻게 신청 하는 건가요?실무교육은
+                                  어떻게 신청 하는 건가요?실무교육은 어떻게 신청
+                                  하는 건가요?실무교육은 어떻게 신청 하는
+                                  건가요?실무교육은 어떻게 신청 하는 건가요?
+                                </p>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="3" class="p-0 h-100 border-0">
+                              <div
+                                id="collapsePc04"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionPC"
+                              >
+                                <div class="accordion-body">
+                                  ■ PC로그인 방법 :
+                                  <a href="">동영상으로 확인하기</a><br />
+                                  <br />
+                                  ■ 모바일 로그인 방법 :
+                                  <a href="">동영상으로 확인하기</a>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>10</td>
+                            <td>로그인</td>
+                            <td>
+                              <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapsePc05"
+                                aria-expanded="true"
+                                aria-controls="collapsePc05"
+                              >
+                                <p>
+                                  실무교육은 어떻게 신청 하는 건가요?실무교육은
+                                  어떻게 신청 하는 건가요?실무교육은 어떻게 신청
+                                  하는 건가요?실무교육은 어떻게 신청 하는
+                                  건가요?실무교육은 어떻게 신청 하는 건가요?
+                                </p>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="3" class="p-0 h-100 border-0">
+                              <div
+                                id="collapsePc05"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionPC"
+                              >
+                                <div class="accordion-body">
+                                  ■ PC로그인 방법 :
+                                  <a href="">동영상으로 확인하기</a><br />
+                                  <br />
+                                  ■ 모바일 로그인 방법 :
+                                  <a href="">동영상으로 확인하기</a>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>10</td>
+                            <td>로그인</td>
+                            <td>
+                              <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapsePc06"
+                                aria-expanded="true"
+                                aria-controls="collapsePc06"
+                              >
+                                <p>
+                                  실무교육은 어떻게 신청 하는 건가요?실무교육은
+                                  어떻게 신청 하는 건가요?실무교육은 어떻게 신청
+                                  하는 건가요?실무교육은 어떻게 신청 하는
+                                  건가요?실무교육은 어떻게 신청 하는 건가요?
+                                </p>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="3" class="p-0 h-100 border-0">
+                              <div
+                                id="collapsePc06"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionPC"
+                              >
+                                <div class="accordion-body">
+                                  ■ PC로그인 방법 :
+                                  <a href="">동영상으로 확인하기</a><br />
+                                  <br />
+                                  ■ 모바일 로그인 방법 :
+                                  <a href="">동영상으로 확인하기</a>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>10</td>
+                            <td>로그인</td>
+                            <td>
+                              <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapsePc07"
+                                aria-expanded="true"
+                                aria-controls="collapsePc07"
+                              >
+                                <p>
+                                  실무교육은 어떻게 신청 하는 건가요?실무교육은
+                                  어떻게 신청 하는 건가요?실무교육은 어떻게 신청
+                                  하는 건가요?실무교육은 어떻게 신청 하는
+                                  건가요?실무교육은 어떻게 신청 하는 건가요?
+                                </p>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="3" class="p-0 h-100 border-0">
+                              <div
+                                id="collapsePc07"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionPC"
+                              >
+                                <div class="accordion-body">
+                                  ■ PC로그인 방법 :
+                                  <a href="">동영상으로 확인하기</a><br />
+                                  <br />
+                                  ■ 모바일 로그인 방법 :
+                                  <a href="">동영상으로 확인하기</a>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>10</td>
+                            <td>로그인</td>
+                            <td>
+                              <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapsePc08"
+                                aria-expanded="true"
+                                aria-controls="collapsePc08"
+                              >
+                                <p>
+                                  실무교육은 어떻게 신청 하는 건가요?실무교육은
+                                  어떻게 신청 하는 건가요?실무교육은 어떻게 신청
+                                  하는 건가요?실무교육은 어떻게 신청 하는
+                                  건가요?실무교육은 어떻게 신청 하는 건가요?
+                                </p>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="3" class="p-0 h-100 border-0">
+                              <div
+                                id="collapsePc08"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionPC"
+                              >
+                                <div class="accordion-body">
+                                  ■ PC로그인 방법 :
+                                  <a href="">동영상으로 확인하기</a><br />
+                                  <br />
+                                  ■ 모바일 로그인 방법 :
+                                  <a href="">동영상으로 확인하기</a>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>10</td>
+                            <td>로그인</td>
+                            <td>
+                              <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapsePc09"
+                                aria-expanded="true"
+                                aria-controls="collapsePc09"
+                              >
+                                <p>
+                                  실무교육은 어떻게 신청 하는 건가요?실무교육은
+                                  어떻게 신청 하는 건가요?실무교육은 어떻게 신청
+                                  하는 건가요?실무교육은 어떻게 신청 하는
+                                  건가요?실무교육은 어떻게 신청 하는 건가요?
+                                </p>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="3" class="p-0 h-100 border-0">
+                              <div
+                                id="collapsePc09"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionPC"
+                              >
+                                <div class="accordion-body">
+                                  ■ PC로그인 방법 :
+                                  <a href="">동영상으로 확인하기</a><br />
+                                  <br />
+                                  ■ 모바일 로그인 방법 :
+                                  <a href="">동영상으로 확인하기</a>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>10</td>
+                            <td>로그인</td>
+                            <td>
+                              <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapsePc10"
+                                aria-expanded="true"
+                                aria-controls="collapsePc10"
+                              >
+                                <p>
+                                  실무교육은 어떻게 신청 하는 건가요?실무교육은
+                                  어떻게 신청 하는 건가요?실무교육은 어떻게 신청
+                                  하는 건가요?실무교육은 어떻게 신청 하는
+                                  건가요?실무교육은 어떻게 신청 하는 건가요?
+                                </p>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="3" class="p-0 h-100 border-0">
+                              <div
+                                id="collapsePc10"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionPC"
+                              >
+                                <div class="accordion-body">
+                                  ■ PC로그인 방법 :
+                                  <a href="">동영상으로 확인하기</a><br />
+                                  <br />
+                                  ■ 모바일 로그인 방법 :
+                                  <a href="">동영상으로 확인하기</a>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="kfsi-board-pagination">
+                      <nav>
+                        <ul class="pagination">
+                          <li class="page-item page-item--first">
+                            <a class="page-link" href="#">처음</a>
+                          </li>
+                          <li class="page-item page-item--prev">
+                            <a class="page-link" href="#">이전</a>
+                          </li>
+                          <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">4</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">5</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">6</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">7</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">8</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">9</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">10</a>
+                          </li>
+                          <li class="page-item page-item--next">
+                            <a class="page-link" href="#">다음</a>
+                          </li>
+                          <li class="page-item page-item--last">
+                            <a class="page-link" href="#">마지막</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+                <div class="mo">
+                  <div class="kfsi-board">
+                    <div class="kfsi-board-list" id="accordionMO">
+                      <a
+                        href="javascript:void(0)"
+                        class="kfsi-board-list-item collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsePc01"
+                        aria-expanded="true"
+                        aria-controls="collapsePc01"
+                      >
+                        <div class="kfsi-board-list-item-text">로그인</div>
+                        <div class="kfsi-board-list-item-text">
+                          <strong
+                            >한국소방안전원 사이트 로그인은 어떻게
+                            하나요?</strong
+                          >
+                        </div>
+                      </a>
+                      <div
+                        id="collapsePc01"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionMO"
+                      >
+                        <div class="accordion-body">
+                          ■ PC로그인 방법 :
+                          <a href="">동영상으로 확인하기</a><br />
+                          <br />
+                          ■ 모바일 로그인 방법 :
+                          <a href="">동영상으로 확인하기</a>
+                        </div>
+                      </div>
+                      <a
+                        href="javascript:void(0)"
+                        class="kfsi-board-list-item collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsePc02"
+                        aria-expanded="true"
+                        aria-controls="collapsePc02"
+                      >
+                        <div class="kfsi-board-list-item-text">로그인</div>
+                        <div class="kfsi-board-list-item-text">
+                          <strong
+                            >한국소방안전원 사이트 로그인은 어떻게
+                            하나요?</strong
+                          >
+                        </div>
+                      </a>
+                      <div
+                        id="collapsePc02"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionMO"
+                      >
+                        <div class="accordion-body">
+                          ■ PC로그인 방법 :
+                          <a href="">동영상으로 확인하기</a><br />
+                          <br />
+                          ■ 모바일 로그인 방법 :
+                          <a href="">동영상으로 확인하기</a>
+                        </div>
+                      </div>
+                      <a
+                        href="javascript:void(0)"
+                        class="kfsi-board-list-item collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsePc03"
+                        aria-expanded="true"
+                        aria-controls="collapsePc03"
+                      >
+                        <div class="kfsi-board-list-item-text">로그인</div>
+                        <div class="kfsi-board-list-item-text">
+                          <strong
+                            >한국소방안전원 사이트 로그인은 어떻게
+                            하나요?</strong
+                          >
+                        </div>
+                      </a>
+                      <div
+                        id="collapsePc03"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionMO"
+                      >
+                        <div class="accordion-body">
+                          ■ PC로그인 방법 :
+                          <a href="">동영상으로 확인하기</a><br />
+                          <br />
+                          ■ 모바일 로그인 방법 :
+                          <a href="">동영상으로 확인하기</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-board-pagination">
+                      <nav>
+                        <ul class="pagination">
+                          <li class="page-item page-item--first">
+                            <a class="page-link" href="#">처음</a>
+                          </li>
+                          <li class="page-item page-item--prev">
+                            <a class="page-link" href="#">이전</a>
+                          </li>
+                          <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">4</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">5</a>
+                          </li>
+                          <li class="page-item page-item--next">
+                            <a class="page-link" href="#">다음</a>
+                          </li>
+                          <li class="page-item page-item--last">
+                            <a class="page-link" href="#">마지막</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

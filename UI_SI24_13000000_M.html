@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>영상정보처리기기 운영관리 방침</h2>
+              </div>
+              <a href="" class="kfsi-snb-item active"
+                >영상정보처리기기<br />운영관리 방침</a
+              >
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      영상정보처리기기 운영관리 방침
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>영상정보처리기기 운영관리 방침</h1>
+              </div>
+              <div class="kfsi-agree">
+                <div class="kfsi-agree-head">
+                  한국소방안전원(이하 본 안전원라 함)은 영상정보처리기기
+                  운영관리 방침을 통해 본 안전원에서 처리하는 영상정보가 어떠한
+                  용도와 방식으로 이용 관리되고 있는지 알려 드립니다.
+                </div>
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#accordion01"
+                        aria-expanded="true"
+                        aria-controls="accordion01"
+                      >
+                        1. 영상정보처리기기의 설치 근거 및 설치 목적
+                      </button>
+                    </h2>
+                    <div
+                      id="accordion01"
+                      class="accordion-collapse collapse show"
+                    >
+                      <div class="accordion-body">
+                        <div class="kfsi-privacy-list-item-contents">
+                          <div>
+                            <div>
+                              <p>
+                                본 안전원은 개인정보보호법 제25조 제1항에 따라
+                                다음과 같은 목적으로 영상정보처리기기를
+                                설치·운영 합니다.
+                              </p>
+                              <p class="ps-4">
+                                - 청사시설안전 및 화재 예방 <br />
+                                - 청사내 고객의 안전을 위한 범죄 예방 (주차장에
+                                설치하는 경우) <br />
+                                - 청사내 차량도난 및 파손방지
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#accordion02"
+                        aria-expanded="false"
+                        aria-controls="accordion02"
+                      >
+                        2. 설치 대수, 설치 위치, 촬영범위 및 설치장소
+                      </button>
+                    </h2>
+                    <div id="accordion02" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <div class="kfsi-privacy-list-item-contents">
+                          <div>
+                            <div class="kfsi-table kfsi-table-scroll-mo my-2">
+                              <table
+                                summary="설치 대수, 설치 위치, 촬영범위 및 설치장소"
+                              >
+                                <caption>
+                                  설치 대수, 설치 위치, 촬영범위 및 설치장소
+                                </caption>
+                                <colgroup>
+                                  <col width="200" />
+                                  <col width="100" />
+                                  <col width="" />
+                                  <col width="200" />
+                                </colgroup>
+                                <thead>
+                                  <tr>
+                                    <th scope="col">지부</th>
+                                    <th scope="col">설치대수</th>
+                                    <th scope="col">설치 위치 및 촬영 범위</th>
+                                    <th scope="col">보관장소</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>계</td>
+                                    <td>144대</td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td>본부</td>
+                                    <td>10대</td>
+                                    <td>건물내부, 주차장</td>
+                                    <td>경비실</td>
+                                  </tr>
+                                  <tr>
+                                    <td>서울지부</td>
+                                    <td>3대</td>
+                                    <td>건물내부</td>
+                                    <td>사무실</td>
+                                  </tr>
+                                  <tr>
+                                    <td>서울동부지부</td>
+                                    <td>5대</td>
+                                    <td>건물내부</td>
+                                    <td>사무실</td>
+                                  </tr>
+                                  <tr>
+                                    <td>부산지부</td>
+                                    <td>16대</td>
+                                    <td>건물내부, 주차장</td>
+                                    <td>사무실</td>
+                                  </tr>
+                                  <tr>
+                                    <td>대구경북지부</td>
+                                    <td>7대</td>
+                                    <td>건물내부</td>
+                                    <td>사무실</td>
+                                  </tr>
+                                  <tr>
+                                    <td>인천지부</td>
+                                    <td>8대</td>
+                                    <td>건물내부, 주차장</td>
+                                    <td>사무실</td>
+                                  </tr>
+                                  <tr>
+                                    <td>광주전남지부</td>
+                                    <td>6대</td>
+                                    <td>건물내부, 주차장</td>
+                                    <td>사무실</td>
+                                  </tr>
+                                  <tr>
+                                    <td>대전충남지부</td>
+                                    <td>24대</td>
+                                    <td>건물내부, 주차장</td>
+                                    <td>사무실</td>
+                                  </tr>
+                                  <tr>
+                                    <td>울산지부</td>
+                                    <td>1대</td>
+                                    <td>건물내부</td>
+                                    <td>사무실</td>
+                                  </tr>
+                                  <tr>
+                                    <td>경기지부</td>
+                                    <td>15대</td>
+                                    <td>건물내부, 주차장</td>
+                                    <td>사무실</td>
+                                  </tr>
+                                  <tr>
+                                    <td>경기북부지부</td>
+                                    <td>7대</td>
+                                    <td>건물내부</td>
+                                    <td>사무실</td>
+                                  </tr>
+                                  <tr>
+                                    <td>강원지부</td>
+                                    <td>9대</td>
+                                    <td>건물내부, 주차장</td>
+                                    <td>사무실</td>
+                                  </tr>
+                                  <tr>
+                                    <td>충북지부</td>
+                                    <td>18대</td>
+                                    <td>건물내부, 주차장</td>
+                                    <td>용역실</td>
+                                  </tr>
+                                  <tr>
+                                    <td>전북지부</td>
+                                    <td>15대</td>
+                                    <td>건물내부, 주차장</td>
+                                    <td>사무실</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#accordion03"
+                        aria-expanded="false"
+                        aria-controls="accordion03"
+                      >
+                        3. 관리책임자 및 접근 권한자
+                      </button>
+                    </h2>
+                    <div id="accordion03" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <div class="kfsi-privacy-list-item-contents">
+                          <div>
+                            <p>
+                              귀하의 영상정보를 보호하고 개인영상정보와 관련한
+                              불만을 처리하기 위하여 아래와 같이 개인영상정보
+                              보호책임자를 두고 있습니다.
+                            </p>
+                            <p class="ps-4">- 관리책임자 : 경영기획이사</p>
+                            <div class="kfsi-table kfsi-table-scroll-mo my-2">
+                              <table
+                                summary="접근권한자의 지부, 직위 및 전화번호를 나타내는 표"
+                              >
+                                <caption>
+                                  접근권한자 연락처 정보
+                                </caption>
+                                <colgroup>
+                                  <col width="25%" />
+                                  <col width="25%" />
+                                  <col width="25%" />
+                                  <col width="25%" />
+                                </colgroup>
+                                <thead>
+                                  <tr>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">지부</th>
+                                    <th scope="col">직위</th>
+                                    <th scope="col">전화번호</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="center">
+                                    <td rowspan="14">접근권한자</td>
+                                    <td>본부</td>
+                                    <td>경영관리과장</td>
+                                    <td>02-2069-1198</td>
+                                  </tr>
+                                  <tr class="center">
+                                    <td>서울지부</td>
+                                    <td>안전국장</td>
+                                    <td>02-850-1378</td>
+                                  </tr>
+                                  <tr class="center">
+                                    <td>서울동부지부</td>
+                                    <td>사무국장</td>
+                                    <td>02-850-1392</td>
+                                  </tr>
+                                  <tr class="center">
+                                    <td>부산지부</td>
+                                    <td>사무국장</td>
+                                    <td>051-553-8423</td>
+                                  </tr>
+                                  <tr class="center">
+                                    <td>대구경북지부</td>
+                                    <td>안전국장</td>
+                                    <td>053-431-2393</td>
+                                  </tr>
+                                  <tr class="center">
+                                    <td>인천지부</td>
+                                    <td>사무국장</td>
+                                    <td>032-569-1971</td>
+                                  </tr>
+                                  <tr class="center">
+                                    <td>광주전남지부</td>
+                                    <td>사무국장</td>
+                                    <td>062-942-6679</td>
+                                  </tr>
+                                  <tr class="center">
+                                    <td>대전충남지부</td>
+                                    <td>사무국장</td>
+                                    <td>042-638-4119</td>
+                                  </tr>
+                                  <tr class="center">
+                                    <td>울산지부</td>
+                                    <td>사무국장</td>
+                                    <td>052-256-9011</td>
+                                  </tr>
+                                  <tr class="center">
+                                    <td>경기지부</td>
+                                    <td>안전국장</td>
+                                    <td>031-257-0131</td>
+                                  </tr>
+                                  <tr class="center">
+                                    <td>경기북부지부</td>
+                                    <td>사무국장</td>
+                                    <td>031-945-3118</td>
+                                  </tr>
+                                  <tr class="center">
+                                    <td>강원지부</td>
+                                    <td>사무국장</td>
+                                    <td>033-345-2119</td>
+                                  </tr>
+                                  <tr class="center">
+                                    <td>충북지부</td>
+                                    <td>사무국장</td>
+                                    <td>043-237-3119</td>
+                                  </tr>
+                                  <tr class="center">
+                                    <td>전북지부</td>
+                                    <td>사무국장</td>
+                                    <td>063-212-8315</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#accordion04"
+                        aria-expanded="false"
+                        aria-controls="accordion04"
+                      >
+                        4. 영상정보의 촬영시간, 보관기간 및 처리방법
+                      </button>
+                    </h2>
+                    <div id="accordion04" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <div class="kfsi-privacy-list-item-contents">
+                          <div>
+                            <div class="kfsi-table kfsi-table-scroll-mo my-2">
+                              <table
+                                summary="영상정보의 촬영시간, 보관기간 및 처리방법"
+                              >
+                                <caption>
+                                  설치 대수, 설치 위치, 촬영범위 및 설치장소
+                                </caption>
+                                <colgroup>
+                                  <col width="50%" />
+                                  <col width="" />
+                                </colgroup>
+                                <thead>
+                                  <tr>
+                                    <th scope="col">촬영시간</th>
+                                    <th scope="col">보관기간</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>24시간</td>
+                                    <td>촬영일로부터 30일</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div>
+                              - 처리방법 : 개인영상정보의 목적 외 이용, 제3자
+                              제공, 파기, 열람 등 요구에 관한 사항을
+                              기록·관리하고, 보관기간 만료 시 복원이 불가능한
+                              방법으로 영구 삭제(출력물의 경우 파쇄 또는
+                              소각)합니다.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#accordion05"
+                        aria-expanded="false"
+                        aria-controls="accordion05"
+                      >
+                        5. 개인영상정보의 확인 방법 및 장소에 관한 사항
+                      </button>
+                    </h2>
+                    <div id="accordion05" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <div class="kfsi-privacy-list-item-contents">
+                          <div>
+                            <div>
+                              <p>
+                                - 확인방법 : 영상정보 접근권한자에게 미리
+                                연락하고, 개인 영상정보 존재 유, 무 확인후 본
+                                안전원를 방문하시면 확인 가능합니다. <br />
+                                - 확인장소 : 지부별 사무실
+                              </p>
+                              <a
+                                href="/assets/downloadDoc/cctv.hwp"
+                                title="화상정보열람신청서 다운로드"
+                                >[화상정보열람신청서 다운로드]</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#accordion06"
+                        aria-expanded="false"
+                        aria-controls="accordion06"
+                      >
+                        6. 정보주체의 영상정보 열람 등 요구에 대한 조치
+                      </button>
+                    </h2>
+                    <div id="accordion06" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <div class="kfsi-privacy-list-item-contents">
+                          <div>
+                            <div>
+                              <p>
+                                귀하는 개인영상정보에 관하여 열람 또는 존재
+                                확인·삭제를 원하는 경우 언제든지
+                                영상정보처리기기 운영자에게 요구하실 수
+                                있습니다. 단, 귀하가 촬영된 개인영상정보 및
+                                명백히 정보주체의 급박한 생명, 신체, 재산의
+                                이익을 위하여 필요한 개인영상정보에 한정됩니다.
+                                본 안전원은 개인영상정보에 관하여 열람 또는
+                                존재확인·삭제를 요구한 경우 지체 없이 필요한
+                                조치를 하겠습니다. <br />
+                                ※ 개인영상정보 열람·존재확인 청구서(
+                                <a
+                                  href="/assets/downloadDoc/cctv.hwp"
+                                  title="별지 제2호 서식 다운로드"
+                                  >별지 제2호 서식</a
+                                >)를 작성·청구하여야 합니다.
+                              </p>
+                              <br />
+                              <p>
+                                본 안전원의 영상정보는 열람 등 요구한 자가
+                                본인이거나 정당한 대리인 인지「주민등록증,
+                                운전면허증, 여권」등의 신분증명서를 제출받아
+                                확인하는 절차를 거친 후 열람이 가능합니다. 다만
+                                거부시에는 정보주체의 거부사유를 10일 이내에
+                                서면으로 정보주체에게 통지하여 드리겠습니다.
+                              </p>
+                              <p class="ps-4">
+                                1. 범죄수사·공소유지·재판수행에 중대한 지장을
+                                초래하는 경우 <br />
+                                2. 개인영상정보의 보관기간이 경과하여 파기한
+                                경우
+                                <br />
+                                3. 그 밖의 정보주체의 열람 요구를 거부할 만한
+                                정당한 사유가 존재하는 경우<br />
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#accordion07"
+                        aria-expanded="false"
+                        aria-controls="accordion07"
+                      >
+                        7. 영상정보의 안전성 확보조치
+                      </button>
+                    </h2>
+                    <div id="accordion07" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <div class="kfsi-privacy-list-item-contents">
+                          <div>
+                            <p>
+                              본 안전원에서 관리중인 개인영상정보의 안정성
+                              확보를 위하여 영상저장장치의 저장영상을 검색할
+                              경우 암호를 설정하여 안전하게 관리되고 있으며,
+                              수집된 영상은 목적 외 이용 및 제공을 금지하고
+                              있으며, 처리목적이 달성된 경우에는 지체 없이
+                              파기하고 있습니다. 또한 본 안전원은 개인영상정보의
+                              위·변조 방지를 위하여 개인영상정보의 생성 일시,
+                              열람 시 열람 목적·열람자·열람 일시 등을 기록하여
+                              관리하고 있습니다. 이 외에도 개인영상정보의 안전한
+                              물리적 보관을 위하여 잠금장치를 설치하고 있습니다.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#accordion08"
+                        aria-expanded="false"
+                        aria-controls="accordion08"
+                      >
+                        8. 개인정보 처리방침 변경에 관한 사항
+                      </button>
+                    </h2>
+                    <div id="accordion08" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <div class="kfsi-privacy-list-item-contents">
+                          <div>
+                            <p>
+                              이 영상정보처리기기 운영·관리방침은 2021년 2월
+                              4일에 개정되었으며 법령·정책 또는 보안기술의
+                              변경에 따라 내용의 추가·삭제 및 수정이 있을 시에는
+                              시행하기 전에 본 안전원 홈페이지를 통해 변경사유
+                              및 내용 등을 공지하도록 하겠습니다.<br />
+                              공고일자 : 2021년 2월 4일 / 시행일자 : 2021년 2월
+                              4일
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

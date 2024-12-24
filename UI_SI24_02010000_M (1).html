@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>로그인</h2>
+              </div>
+              <a href="" class="kfsi-snb-item active">로그인</a>
+              <a href="" class="kfsi-snb-item">회원가입</a>
+              <a href="" class="kfsi-snb-item">아이디 찾기</a>
+              <a href="" class="kfsi-snb-item">비밀번호 찾기</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">메인(로그인)</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      로그인
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>로그인</h1>
+              </div>
+              <div class="kfsi-login">
+                <div class="kfsi-login-head">
+                  <p class="m-0 mb-6">
+                    <strong
+                      >아이디 회원가입 방법을 포함한 간편인증 및
+                      실명확인로그인과 디지털원패스 또한</strong
+                    ><br />
+                    <span class="text-danger">
+                      인증별 서비스권한에 따라 로그인 방식은 다르지만,
+                      이용약관에 따라 모든 로그인 방법은 회원가입으로
+                      진행됩니다.
+                    </span>
+                  </p>
+                  <p class="m-0 mb-6">
+                    안전원 사이트 회원가입 및 이용동의를 하신다고 하여, 안전원
+                    회원으로 가입이 되는 것은 아닙니다.<br />
+                    <span class="text-success">
+                      우리 사이트는 안전원 회원과 일반회원으로 운영되며
+                      한국소방안전원의 회원인 경우,<br />실명확인 로그인을 통한
+                      인증 시 해당여부를 확인하여 자동으로 처리됩니다.
+                    </span>
+                  </p>
+                  <p class="m-0 mb-12">
+                    ‘안전원 회원‘이란?<br />
+                    한국소방안전원 의 직무회원(소방안전관리자 등), 개인회원,
+                    단체회원을 말합니다.
+                  </p>
+                  <p class="m-0">
+                    우측 인증별 서비스 권한을 확인한 후, 이용하려는 서비스에
+                    맞게 로그인을 진행하시기 바랍니다. 고객님의 개인정보 보호를
+                    위해 회원가입정보를 최근 사이트 접속일 기준 1년 이내 자료만
+                    보관하고 있습니다.<br />
+                    회원가입 후 사이트 접속일이 1년이 지난 경우 다시
+                    회원가입하시기 바랍니다.
+                  </p>
+                  <div class="kfsi-login-head-button">
+                    <button
+                      type="button"
+                      class="btn btn-secondary btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal02"
+                    >
+                      인증별 서비스 권한
+                    </button>
+                  </div>
+                </div>
+                <div class="kfsi-login-body">
+                  <div class="kfsi-tab01 kfsi-tab01--grid2">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link active"
+                          id="tab01"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab01-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="tab01-pane"
+                          aria-selected="true"
+                        >
+                          간편인증 로그인
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="tab02"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab02-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="tab02-pane"
+                          aria-selected="false"
+                        >
+                          실명확인 로그인
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="tab03"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab03-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="tab03-pane"
+                          aria-selected="false"
+                        >
+                          네이버 아이디 로그인
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="tab04"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab04-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="tab04-pane"
+                          aria-selected="false"
+                        >
+                          디지털원패스 로그인
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="tab05"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab05-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="tab05-pane"
+                          aria-selected="false"
+                        >
+                          아이디 로그인
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div
+                        class="tab-pane fade show active"
+                        id="tab01-pane"
+                        role="tabpanel"
+                        aria-labelledby="tab01"
+                        tabindex="0"
+                      >
+                        <div class="kfsi-login-body-title">간편인증 로그인</div>
+                        <div class="kfsi-box bg-light">
+                          이용)소방안전교육(강습,시험,실무 교육접수),
+                          의용소방대, 다중이용업, 취업정보, 묻고답하기<br />
+                          *안전원 교육접수 및 교육이수 등 확인<br />
+                          <span class="text-danger"
+                            >*강습교육 등 접수 시 "최초 1회 실명확인 로그인" 후
+                            이용 가능합니다.</span
+                          >
+                        </div>
+                        <div class="kfsi-login-simple">
+                          <div class="kfsi-login-simple-img">
+                            <img
+                              src="./assets/images/login/kakaotalk.png"
+                              alt="카카오톡"
+                            />
+                            <img
+                              src="./assets/images/login/bankKB.png"
+                              alt="KB국민은행"
+                            />
+                            <img
+                              src="./assets/images/login/payco.png"
+                              alt="페이코"
+                            />
+                            <img
+                              src="./assets/images/login/pass.png"
+                              alt="통신사 패스"
+                            />
+                            <img
+                              src="./assets/images/login/samsungpass.png"
+                              alt="삼성패스"
+                            />
+                            <img
+                              src="./assets/images/login/naver.png"
+                              alt="네이버"
+                            />
+                            <img
+                              src="./assets/images/login/shinhan.png"
+                              alt="신한은행 인증서"
+                            />
+                            <img
+                              src="./assets/images/login/toss.png"
+                              alt="토스"
+                            />
+                            <img
+                              src="./assets/images/login/bankKakao.png"
+                              alt="카카오뱅크"
+                            />
+                            <img
+                              src="./assets/images/login/woori.png"
+                              alt="우리은행"
+                            />
+                            <img
+                              src="./assets/images/login/banksalad.png"
+                              alt="뱅크샐러드"
+                            />
+                            <img
+                              src="./assets/images/login/hana.png"
+                              alt="하나은행"
+                            />
+                            <img
+                              src="./assets/images/login/nh.png"
+                              alt="NH은행"
+                            />
+                            <img
+                              src="./assets/images/login/dream.png"
+                              alt="드림인증"
+                            />
+                          </div>
+                          <div class="kfsi-login-simple-text">
+                            카카오톡, KB국민은행, 페이코, 통신사 패스, 삼성패스,
+                            네이버, 신한은행 인증서, 토스, 카카오뱅크, 우리은행,
+                            뱅크샐러드, 하나은행, NH은행, 드림인증을 이용하여
+                            로그인하실 수 있습니다.
+                          </div>
+                          <div class="kfsi-login-simple-button">
+                            <button
+                              type="button"
+                              class="btn btn-lg btn-primary"
+                            >
+                              간편인증 로그인
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="tab02-pane"
+                        role="tabpanel"
+                        aria-labelledby="tab02"
+                        tabindex="0"
+                      >
+                        <div class="kfsi-login-body-title">실명확인 로그인</div>
+                        <div class="kfsi-box bg-light">
+                          <span class="text-danger"
+                            >강습·실무교육, 시험 접수 및 교육이수를 확인하는
+                            경우</span
+                          >
+                        </div>
+                        <div class="kfsi-login-blindness">
+                          <div class="kfsi-login-blindness-text">
+                            실명확인을 위해 실명확인기관(SCI평가정보)에 입력한
+                            주민등록번호는 실명확인을 위해서만 이용되며 별도로
+                            저장되지 않습니다.
+                          </div>
+                          <div class="kfsi-login-blindness-form">
+                            <div class="kfsi-board">
+                              <div class="kfsi-board-write">
+                                <div class="kfsi-board-write-form">
+                                  <table
+                                    summary="휴대폰 번호를 입력하여 실명확인을 진행하는 테이블입니다."
+                                  >
+                                    <caption>
+                                      실명확인 로그인
+                                    </caption>
+                                    <colgroup>
+                                      <col style="width: 160px" />
+                                      <col style="width: 330px" />
+                                    </colgroup>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">휴대폰 번호</th>
+                                        <td>
+                                          <div class="kfsi-mypage-phone">
+                                            <div
+                                              class="kfsi-mypage-phone-input"
+                                            >
+                                              <select
+                                                class="form-select"
+                                                aria-label="휴대폰 번호 앞자리 선택"
+                                                title="휴대폰 번호 앞자리 선택"
+                                                style="
+                                                  min-width: 80px;
+                                                  width: 80px;
+                                                "
+                                              >
+                                                <option selected>선택</option>
+                                              </select>
+                                              -
+                                              <input
+                                                type="text"
+                                                class="form-control"
+                                                title="휴대폰 번호 중간 자리 입력"
+                                                style="
+                                                  min-width: 80px;
+                                                  width: 80px;
+                                                "
+                                              />
+                                              -
+                                              <input
+                                                type="text"
+                                                class="form-control"
+                                                title="휴대폰 번호 마지막 자리 입력"
+                                                style="
+                                                  min-width: 80px;
+                                                  width: 80px;
+                                                "
+                                              />
+                                            </div>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="kfsi-login-blindness-button">
+                            <button
+                              type="button"
+                              class="btn btn-lg btn-primary"
+                              data-bs-toggle="modal"
+                              data-bs-target="#modal01"
+                            >
+                              실명확인 로그인
+                            </button>
+                            <p>
+                              <a href="" class="btn btn-link"
+                                >로그인오류 해결방법 안내</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="tab03-pane"
+                        role="tabpanel"
+                        aria-labelledby="tab03"
+                        tabindex="0"
+                      >
+                        <div class="kfsi-login-body-title">
+                          네이버 아이디 로그인
+                        </div>
+                        <div class="kfsi-box bg-light">
+                          이용)의용소방대, 다중이용업, 취업정보, 묻고답하기<br />
+                          <span class="text-danger"
+                            >*강습교육 등 접수 시 "최초 1회 실명확인 로그인" 후
+                            이용 가능합니다.</span
+                          >
+                        </div>
+                        <div class="kfsi-login-naver">
+                          <div class="kfsi-login-naver-button">
+                            <button
+                              type="button"
+                              class="btn btn-lg btn-primary"
+                            >
+                              네이버로 계속하기
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="tab04-pane"
+                        role="tabpanel"
+                        aria-labelledby="tab04"
+                        tabindex="0"
+                      >
+                        <div class="kfsi-login-body-title">
+                          디지털원패스 로그인
+                        </div>
+                        <div class="kfsi-box bg-light">
+                          이용)의용소방대, 다중이용업, 취업정보, 묻고답하기<br />
+                          <span class="text-danger"
+                            >*강습교육 등 접수 시 "최초 1회 실명확인 로그인" 후
+                            이용 가능합니다.</span
+                          >
+                        </div>
+                        <div class="kfsi-login-pass">
+                          <div class="kfsi-login-pass-text">
+                            하나의 아이디로 본인이 선택한 인증수단(휴대폰의
+                            패턴, 지문/안면인식 등)을 사용하여 안전하고 편리하게
+                            여러 전자정부 서비스를 이용할 수 있는 서비스입니다.
+                          </div>
+                          <div class="kfsi-login-pass-button">
+                            <button
+                              type="button"
+                              class="btn btn-lg btn-primary"
+                            >
+                              디지털원패스 로그인
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="tab05-pane"
+                        role="tabpanel"
+                        aria-labelledby="tab05"
+                        tabindex="0"
+                      >
+                        <div class="kfsi-login-body-title">아이디 로그인</div>
+                        <div class="kfsi-box bg-light">
+                          이용)의용소방대, 다중이용업, 취업정보, 묻고답하기<br />
+                          <span class="text-danger">
+                            *강습교육 등 접수 시 "최초 1회 실명확인 로그인" 후
+                            이용 가능합니다.<br />
+                            *0000년 00월 00일부터 아이디/비밀번호로 회원가입이
+                            중단됩니다. 기존 회원은 아이디/비밀번호로 로그인
+                            가능하지만, 추후 지원이 종료되니 다른 로그인
+                            방식으로 전환해 주세요.
+                          </span>
+                        </div>
+                        <div class="kfsi-login-id">
+                          <div class="kfsi-login-id-form">
+                            <div class="kfsi-board">
+                              <div class="kfsi-board-write">
+                                <div class="kfsi-board-write-form">
+                                  <table
+                                    summary="아이디와 비밀번호를 입력하여 로그인을 진행하는 테이블입니다."
+                                  >
+                                    <caption>
+                                      아이디 로그인
+                                    </caption>
+                                    <colgroup>
+                                      <col style="width: 160px" />
+                                      <col style="width: 330px" />
+                                    </colgroup>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">아이디</th>
+                                        <td>
+                                          <input
+                                            type="text"
+                                            class="form-control w-100"
+                                            title="아이디"
+                                          />
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">비밀번호</th>
+                                        <td>
+                                          <input
+                                            type="password"
+                                            class="form-control w-100"
+                                            title="비밀번호"
+                                          />
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="kfsi-login-id-button">
+                            <button
+                              type="button"
+                              class="btn btn-lg btn-primary"
+                            >
+                              아이디 로그인
+                            </button>
+                          </div>
+                          <div class="kfsi-login-id-link">
+                            <a href="">아이디찾기</a>
+                            <hr />
+                            <a href="">비밀번호찾기</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modal01" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" style="max-width: 600px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5">실명확인 로그인 이용안내</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" style="word-break: keep-all">
+            <p>
+              강습교육, 시험접수, 수첩발급 및 실무교육 등 본인식별이 필요한 경우
+              관련 법령의 주민등록번호 처리근거에 따라 주민등록번호를 수집하고
+              있습니다.<br />
+              <span class="text-danger"
+                >※ 근거 : 「화재예방법 강습교육」 제 49조 (고유식별정보의
+                처리)</span
+              >
+            </p>
+
+            <p>
+              <span class="text-success">
+                ※ 다중이용업 사이버교육, 의용소방대 사이버교육, 취업정보 등은
+                "간편인증", "아이디 로그인" 및 "디지털 원패스 로그인"을
+                이용해주세요.
+              </span>
+            </p>
+
+            <p>
+              실명인증은 인증된 실명 인증기관에서 이루어지며, 상기에 기재된
+              서비스를 이용하시는 고객분을 제외한 고객분에 대해서는
+              안전원은 입력하신 주민등록번호는 보관하지 않고,
+              실명인증기관에서 제공된 식별 정보만 안전하게 관리하고 있습니다.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary btn-lg"
+              data-bs-dismiss="modal"
+            >
+              닫기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal02" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5">로그인 인증별 권한관리</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="kfsi-table">
+              <table>
+                <colgroup>
+                  <col style="width: 110px" />
+                  <col style="width: 245px" />
+                  <col style="width: 90px" />
+                  <col style="width: 90px" />
+                  <col style="width: 90px" />
+                  <col style="width: 90px" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col" rowspan="2">메뉴</th>
+                    <th scope="col" rowspan="2">대상 서비스</th>
+                    <th scope="col" colspan="4">대상 서비스</th>
+                  </tr>
+                  <tr>
+                    <th scope="col" style="background: #ffecc7">간편인증</th>
+                    <th scope="col" style="background: #ffecc7">실명확인</th>
+                    <th scope="col" style="background: #ffecc7">아이디</th>
+                    <th scope="col" style="background: #ffecc7">
+                      디지털원패스
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary btn-lg"
+              data-bs-dismiss="modal"
+            >
+              닫기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

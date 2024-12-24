@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>공지사항</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">공지사항</a>
+              <a href="" class="kfsi-snb-item">자주묻는질문</a>
+              <a href="" class="kfsi-snb-item active">문의하기</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">공지사항</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      문의하기
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>문의하기</h1>
+              </div>
+              <div class="kfsi-notice">
+                <div class="kfsi-board">
+                  <div class="kfsi-board-view">
+                    <div class="kfsi-board-view-head">
+                      <div class="kfsi-board-view-head-button">
+                        <button type="button" class="btn btn-secondary btn-sm">
+                          목록
+                        </button>
+                      </div>
+                      <div class="kfsi-board-view-head-title">
+                        <div class="kfsi-board-view-head-title-text">
+                          <span class="badge text-bg-primary-light"
+                            ><strong>분류1</strong></span
+                          >
+                          <p>문의합니다</p>
+                        </div>
+                        <div class="kfsi-board-view-head-title-date">
+                          2024.10.02 15:43
+                        </div>
+                      </div>
+                      <div class="pc">
+                        <div class="kfsi-board-view-head-table">
+                          <table
+                            summary="문의 상세 정보를 나타내는 테이블로, 등록자, 공개 여부, 처리 상태, 첨부파일을 포함합니다."
+                          >
+                            <caption>
+                              문의 상세 정보
+                            </caption>
+                            <colgroup>
+                              <col style="width: 156px" />
+                              <col style="width: 156px" />
+                              <col style="width: 156px" />
+                              <col style="width: 156px" />
+                              <col style="width: 156px" />
+                              <col style="width: 156px" />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <th scope="row">등록자</th>
+                                <td class="text-center">김*방</td>
+                                <th scope="row">공개여부</th>
+                                <td class="text-center">
+                                  <div class="d-flex justify-content-center">
+                                    <i class="ico-lock">비공개</i>
+                                  </div>
+                                </td>
+                                <th scope="row">처리상태</th>
+                                <td class="text-center">
+                                  <span
+                                    class="badge badge-sm badge-outline-danger"
+                                    >신청</span
+                                  >
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">첨부파일</th>
+                                <td colspan="5">
+                                  <div class="kfsi-board-view-head-file">
+                                    <a
+                                      href=""
+                                      title="제21회 특급 소방안전관리자 제1차시험 합격자 명단.pdf가 다운로드 됩니다."
+                                    >
+                                      <i class="ico-attachment">파일</i>
+                                      <p> ESS자동침수장치 필요성 및 소개.pdf</p>
+                                    </a>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="mo">
+                        <div class="kfsi-board-view-head-table">
+                          <div class="kfsi-board-view-head-table-item">
+                            <dl>
+                              <dt>등록자</dt>
+                              <dd>김*방</dd>
+                            </dl>
+                            <div class="kfsi-board-view-head-table-item__info">
+                              <i class="ico-lock">비공개</i>
+                              <span class="badge badge-sm badge-outline-danger"
+                                >신청</span
+                              >
+                            </div>
+                          </div>
+                          <div class="kfsi-board-view-head-table-item">
+                            <dl>
+                              <dt>첨부파일</dt>
+                              <dd>
+                                <div class="kfsi-board-view-head-file">
+                                  <a
+                                    href=""
+                                    title="제21회 특급 소방안전관리자 제1차시험 합격자 명단.pdf가 다운로드 됩니다."
+                                  >
+                                    <i class="ico-attachment">파일</i>
+                                    <p> ESS자동침수장치 필요성 및 소개.pdf</p>
+                                  </a>
+                                </div>
+                              </dd>
+                            </dl>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-board-view-body">
+                      <div class="kfsi-board-view-contents">
+                        수원 소재의 벤처 기업입니다.<br />
+                        2022년도 카타오 데이타 센터의 화재를 보고... 첨부해 드린
+                        것과 같이 ESS에 화재가 발생 시에 화재가 발생된
+                        ESS-Rack만을 자동 침수 시키는 장치에 대한 기술을 개발
+                        하고 있습니다. <br />
+                        – 벤처기업이다 보니... 저희가 개발하는 ESS 자동침수 화재
+                        확산방지 장치가 실재 사용자 (데이타 센터 운용자 , 대규모
+                        태양과 발전소 운용자)에게 필요한 기술이 될 수 있는 지
+                        아니면 자사의 자동 침수 장치가 이 분야에서 특별히 의미가
+                        있는 방재 시스템이 될 수 없다든지... <br />이러한 의견을
+                        듣을 수 있는 기회가 없어서 이곳에 글을 올림니다.<br />
+                        - 첨부한 자료를 보시고... 가능성이 있는 ESS 화재 확산
+                        방지 시스템이라고 검토가 된다면 연락을 부탁 드립니다.
+                      </div>
+                    </div>
+                    <div class="kfsi-board-view-button">
+                      <p></p>
+                      <p>
+                        <button
+                          type="button"
+                          class="btn btn-outline-secondary btn-lg"
+                        >
+                          삭제
+                        </button>
+                        <button type="button" class="btn btn-primary btn-lg">
+                          수정
+                        </button>
+                      </p>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

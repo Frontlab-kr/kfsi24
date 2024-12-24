@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>공지사항</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">공지사항</a>
+              <a href="" class="kfsi-snb-item">자주묻는질문</a>
+              <a href="" class="kfsi-snb-item active">문의하기</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">공지사항</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      문의하기
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>문의하기</h1>
+              </div>
+              <div class="kfsi-notice">
+                <div class="kfsi-tab02 kfsi-tab02--grid2">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="tab01"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab01-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab01-pane"
+                        aria-selected="true"
+                      >
+                        전체
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab02"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab02-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab02-pane"
+                        aria-selected="false"
+                      >
+                        분류1
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab03"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab03-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab03-pane"
+                        aria-selected="false"
+                      >
+                        분류2
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab04"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab04-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab04-pane"
+                        aria-selected="false"
+                      >
+                        분류3
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab05"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab05-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab05-pane"
+                        aria-selected="false"
+                      >
+                        분류4
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="tab01-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab01"
+                      tabindex="0"
+                    >
+                      <div class="pc">
+                        <div class="kfsi-board">
+                          <div class="kfsi-board-head">
+                            <div class="kfsi-board-head-start">
+                              <div class="kfsi-board-head-amount">총 122개</div>
+                            </div>
+                            <div class="kfsi-board-head-end">
+                              <div class="kfsi-board-head-search">
+                                <div class="dropdown">
+                                  <button
+                                    class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    제목
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택1</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택2</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택3</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="검색어를 입력해 주세요."
+                                  title="검색어를 입력해 주세요."
+                                />
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary btn-sm"
+                                >
+                                  검색
+                                  <i class="ico-search-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="kfsi-board-list">
+                            <table summary="">
+                              <caption></caption>
+                              <colgroup>
+                                <col style="width: 70px" />
+                                <col style="width: 70px" />
+                                <col style="width: 380px" />
+                                <col style="width: 80px" />
+                                <col style="width: 100px" />
+                                <col style="width: 100px" />
+                                <col style="width: 140px" />
+                              </colgroup>
+                              <thead>
+                                <tr>
+                                  <th scope="col">No.</th>
+                                  <th scope="col">분류</th>
+                                  <th scope="col">제목</th>
+                                  <th scope="col">공개여부</th>
+                                  <th scope="col">처리상태</th>
+                                  <th scope="col">작성자</th>
+                                  <th scope="col">적성일</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>122</td>
+                                  <td>분류1</td>
+                                  <td class="text-start">
+                                    <a
+                                      href=""
+                                      class="d-block text-truncate"
+                                      style="max-width: 360px"
+                                      >회원정보 변경을 원합니다.회원정보 변경을
+                                      원합니다.회원정보 변경을 원합니다.회원정보
+                                      변경을 원합니다.회원정보 변경을
+                                      원합니다.회원정보 변경을 원합니다.</a
+                                    >
+                                  </td>
+                                  <td>
+                                    <div
+                                      class="d-flex align-items-center justify-content-center gap-1"
+                                    >
+                                      <i class="ico-lock">비공개</i>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <span
+                                      class="badge badge-sm badge-outline-danger"
+                                      >신청</span
+                                    >
+                                  </td>
+                                  <td>김*방</td>
+                                  <td>2024.10.02 15:43</td>
+                                </tr>
+                                <tr>
+                                  <td>122</td>
+                                  <td>분류1</td>
+                                  <td class="text-start">
+                                    <a
+                                      href=""
+                                      class="d-block text-truncate"
+                                      style="max-width: 360px"
+                                      >회원정보 변경을 원합니다.</a
+                                    >
+                                  </td>
+                                  <td>
+                                    <div
+                                      class="d-flex align-items-center justify-content-center gap-1"
+                                    >
+                                      <i class="ico-lock">비공개</i>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <span
+                                      class="badge badge-sm badge-outline-success"
+                                      >접수</span
+                                    >
+                                  </td>
+                                  <td>김*방</td>
+                                  <td>2024.10.02 15:43</td>
+                                </tr>
+                                <tr>
+                                  <td>122</td>
+                                  <td>분류1</td>
+                                  <td class="text-start">
+                                    <a
+                                      href=""
+                                      class="d-block text-truncate"
+                                      style="max-width: 360px"
+                                      >회원정보 변경을 원합니다.</a
+                                    >
+                                  </td>
+                                  <td>
+                                    <div
+                                      class="d-flex align-items-center justify-content-center gap-1"
+                                    >
+                                      <i class="ico-lock-off">비공개</i>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <span
+                                      class="badge badge-sm badge-outline-warning"
+                                      >대기</span
+                                    >
+                                  </td>
+                                  <td>김*방</td>
+                                  <td>2024.10.02 15:43</td>
+                                </tr>
+                                <tr>
+                                  <td>122</td>
+                                  <td>분류1</td>
+                                  <td class="text-start">
+                                    <a
+                                      href=""
+                                      class="d-block text-truncate"
+                                      style="max-width: 360px"
+                                      >회원정보 변경을 원합니다.</a
+                                    >
+                                  </td>
+                                  <td>
+                                    <div
+                                      class="d-flex align-items-center justify-content-center gap-1"
+                                    >
+                                      <i class="ico-lock-off">비공개</i>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <span
+                                      class="badge badge-sm badge-outline-info"
+                                      >완료</span
+                                    >
+                                  </td>
+                                  <td>김*방</td>
+                                  <td>2024.10.02 15:43</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="kfsi-board-list-button">
+                            <p></p>
+                            <p>
+                              <a href="" class="btn btn-secondary btn-sm"
+                                >문의하기</a
+                              >
+                            </p>
+                          </div>
+                          <div class="kfsi-board-pagination">
+                            <nav>
+                              <ul class="pagination">
+                                <li class="page-item page-item--first">
+                                  <a class="page-link" href="#">처음</a>
+                                </li>
+                                <li class="page-item page-item--prev">
+                                  <a class="page-link" href="#">이전</a>
+                                </li>
+                                <li class="page-item active">
+                                  <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item">
+                                  <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item">
+                                  <a class="page-link" href="#">3</a>
+                                </li>
+                                <li class="page-item">
+                                  <a class="page-link" href="#">4</a>
+                                </li>
+                                <li class="page-item">
+                                  <a class="page-link" href="#">5</a>
+                                </li>
+                                <li class="page-item">
+                                  <a class="page-link" href="#">6</a>
+                                </li>
+                                <li class="page-item">
+                                  <a class="page-link" href="#">7</a>
+                                </li>
+                                <li class="page-item">
+                                  <a class="page-link" href="#">8</a>
+                                </li>
+                                <li class="page-item">
+                                  <a class="page-link" href="#">9</a>
+                                </li>
+                                <li class="page-item">
+                                  <a class="page-link" href="#">10</a>
+                                </li>
+                                <li class="page-item page-item--next">
+                                  <a class="page-link" href="#">다음</a>
+                                </li>
+                                <li class="page-item page-item--last">
+                                  <a class="page-link" href="#">마지막</a>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mo">
+                        <div class="kfsi-board">
+                          <div
+                            class="kfsi-board-head mo-flex-column-reverse gap-5 pb-2"
+                          >
+                            <div class="kfsi-board-head-start">
+                              <div class="kfsi-board-head-amount">총 122개</div>
+                            </div>
+                            <div class="kfsi-board-head-end">
+                              <div class="kfsi-board-head-search">
+                                <div class="dropdown">
+                                  <button
+                                    class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    제목
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택1</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택2</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택3</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="검색어를 입력해 주세요."
+                                  title="검색어를 입력해 주세요."
+                                />
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary btn-sm"
+                                >
+                                  검색
+                                  <i class="ico-search-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="kfsi-board-list">
+                            <a href="" class="kfsi-board-list-item">
+                              <div class="kfsi-board-list-item-text">
+                                문의합니다
+                              </div>
+                              <div
+                                class="kfsi-board-list-item-text justify-content-between"
+                              >
+                                <strong class="d-block text-truncate me-2"
+                                  >문의합니다
+                                </strong>
+                                <i class="ico-lock">파일</i>
+                              </div>
+
+                              <div class="kfsi-board-list-item-text">
+                                <span
+                                  class="badge badge-sm badge-outline-danger"
+                                  >신청</span
+                                >
+                                <hr />
+                                김*방
+                                <hr />
+                                2024.10.02 15:43
+                              </div>
+                            </a>
+                            <a href="" class="kfsi-board-list-item">
+                              <div class="kfsi-board-list-item-text">
+                                문의합니다
+                              </div>
+                              <div
+                                class="kfsi-board-list-item-text justify-content-between"
+                              >
+                                <strong class="d-block text-truncate me-2"
+                                  >문의합니다
+                                </strong>
+                                <i class="ico-lock">파일</i>
+                              </div>
+
+                              <div class="kfsi-board-list-item-text">
+                                <span
+                                  class="badge badge-sm badge-outline-success"
+                                  >접수</span
+                                >
+                                <hr />
+                                김*방
+                                <hr />
+                                2024.10.02 15:43
+                              </div>
+                            </a>
+                            <a href="" class="kfsi-board-list-item">
+                              <div class="kfsi-board-list-item-text">
+                                문의합니다
+                              </div>
+                              <div
+                                class="kfsi-board-list-item-text justify-content-between"
+                              >
+                                <strong class="d-block text-truncate me-2"
+                                  >문의합니다
+                                </strong>
+                                <i class="ico-lock-off">파일</i>
+                              </div>
+
+                              <div class="kfsi-board-list-item-text">
+                                <span
+                                  class="badge badge-sm badge-outline-warning"
+                                  >대기</span
+                                >
+                                <hr />
+                                김*방
+                                <hr />
+                                2024.10.02 15:43
+                              </div>
+                            </a>
+                            <a href="" class="kfsi-board-list-item">
+                              <div class="kfsi-board-list-item-text">
+                                문의합니다
+                              </div>
+                              <div
+                                class="kfsi-board-list-item-text justify-content-between"
+                              >
+                                <strong class="d-block text-truncate me-2"
+                                  >문의합니다
+                                </strong>
+                                <i class="ico-lock-off">파일</i>
+                              </div>
+
+                              <div class="kfsi-board-list-item-text">
+                                <span class="badge badge-sm badge-outline-info"
+                                  >완료</span
+                                >
+                                <hr />
+                                김*방
+                                <hr />
+                                2024.10.02 15:43
+                              </div>
+                            </a>
+                          </div>
+                          <div class="kfsi-board-list-button">
+                            <p></p>
+                            <p>
+                              <a href="" class="btn btn-secondary btn-sm"
+                                >문의하기</a
+                              >
+                            </p>
+                          </div>
+                          <div class="kfsi-board-pagination">
+                            <nav>
+                              <ul class="pagination">
+                                <li class="page-item page-item--first">
+                                  <a class="page-link" href="#">처음</a>
+                                </li>
+                                <li class="page-item page-item--prev">
+                                  <a class="page-link" href="#">이전</a>
+                                </li>
+                                <li class="page-item active">
+                                  <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item">
+                                  <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item">
+                                  <a class="page-link" href="#">3</a>
+                                </li>
+                                <li class="page-item">
+                                  <a class="page-link" href="#">4</a>
+                                </li>
+                                <li class="page-item">
+                                  <a class="page-link" href="#">5</a>
+                                </li>
+                                <li class="page-item page-item--next">
+                                  <a class="page-link" href="#">다음</a>
+                                </li>
+                                <li class="page-item page-item--last">
+                                  <a class="page-link" href="#">마지막</a>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab02-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab02"
+                      tabindex="0"
+                    >
+                      2
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab03-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab03"
+                      tabindex="0"
+                    >
+                      3
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab04-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab04"
+                      tabindex="0"
+                    >
+                      4
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab05-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab05"
+                      tabindex="0"
+                    >
+                      5
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
