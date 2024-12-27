@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>나의강의실</h2>
+              </div>
+              <div class="kfsi-snb-item-sub active">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >나의 교육 정보 조회</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">납부 내역 조회</a>
+                  <a href="" class="kfsi-snb-item-sub-item">자격 취득 현황</a>
+                  <a href="" class="kfsi-snb-item-sub-item">선임 대상처 현황</a>
+                  <a href="" class="kfsi-snb-item-sub-item active"
+                    >실무교육 이수기한</a
+                  >
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >진행 중인 교육</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">목차</a>
+                  <a href="" class="kfsi-snb-item-sub-item">평가</a>
+                  <a href="" class="kfsi-snb-item-sub-item">설문</a>
+                </div>
+              </div>
+              <a href="" class="kfsi-snb-item">완료된 교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">나의 강의실</li>
+                    <li class="breadcrumb-item">나의 교육정보 조회</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      실무교육이수 기한
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>실무교육이수 기한</h1>
+              </div>
+              <div class="kfsi-mypage">
+                <div class="kfsi-board">
+                  <div class="kfsi-board-head">
+                    <div class="kfsi-board-head-start">
+                      <h4 class="kfsi-h4">실무교육이수 기한</h4>
+                    </div>
+                    <div class="kfsi-board-head-end"></div>
+                  </div>
+                  <div class="pc">
+                    <div class="kfsi-table">
+                      <table
+                        summary="실무교육이수 기한에 대한 정보를 포함하며, 직능, 건물명, 주소, 교육이수 기한, 선임 신고일, 안내문 출력 버튼이 포함됩니다."
+                      >
+                        <caption>
+                          실무교육이수 기한 상세 정보
+                        </caption>
+                        <colgroup>
+                          <col style="width: 160px" />
+                          <col style="width: 160px" />
+                          <col style="width: 270px" />
+                          <col style="width: 120px" />
+                          <col style="width: 110px" />
+                          <col style="width: 120px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">직능</th>
+                            <th scope="col">건물(업체)명</th>
+                            <th scope="col">주소</th>
+                            <th scope="col">
+                              교육이수기한<br />
+                              (최종교육일)
+                            </th>
+                            <th scope="col">선임신고일</th>
+                            <th scope="col">
+                              실무교육<br />
+                              안내문
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1급 소방안전관리자</td>
+                            <td>하나로 마트 영등포</td>
+                            <td>서울 영등포구 도신로 194 지하1층</td>
+                            <td>2024.11.24</td>
+                            <td>2024.10.11</td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark btn-sm"
+                              >
+                                출력하기
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="mo">
+                    <div class="kfsi-list">
+                      <div class="kfsi-list-section">
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">직능</div>
+                          <div class="kfsi-list-item-text">
+                            1급 소방안전관리자
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">건물(업체)명</div>
+                          <div class="kfsi-list-item-text">
+                            하나로 마트 영등포
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">주소</div>
+                          <div class="kfsi-list-item-text">
+                            서울 영등포구 도신로 194 지하1층
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">
+                            교육이수기한<br />
+                            (최종교육일)
+                          </div>
+                          <div class="kfsi-list-item-text">2024.11.24</div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">선임신고일</div>
+                          <div class="kfsi-list-item-text">2024.10.11</div>
+                        </div>
+
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">
+                            실무교육<br />
+                            안내문
+                          </div>
+                          <div class="kfsi-list-item-text">
+                            <button
+                              type="button"
+                              class="btn btn-outline-dark btn-sm"
+                            >
+                              출력하기
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

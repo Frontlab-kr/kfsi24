@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- chart.js -->
+    <script src="./assets/js/chart.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>나의강의실</h2>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >나의 교육 정보 조회</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">납부 내역 조회</a>
+                  <a href="" class="kfsi-snb-item-sub-item">자격 취득 현황</a>
+                  <a href="" class="kfsi-snb-item-sub-item">선임 대상처 현황</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >실무교육 이수기한</a
+                  >
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub active">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >진행 중인 교육</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">목차</a>
+                  <a href="" class="kfsi-snb-item-sub-item">평가</a>
+                  <a href="" class="kfsi-snb-item-sub-item">설문</a>
+                </div>
+              </div>
+              <a href="" class="kfsi-snb-item">완료된 교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">나의 강의실</li>
+                    <li class="breadcrumb-item">나의 교육정보 조회</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      진행중 교육
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>진행중 교육</h1>
+              </div>
+              <div class="kfsi-classroom-detail">
+                <div class="kfsi-classroom-detail-head">
+                  <div class="kfsi-classroom-detail-head-title">
+                    과정명
+                    <p>소방안전관리자 소방법령</p>
+                  </div>
+                  <div class="kfsi-classroom-detail-head-contents">
+                    <div>
+                      <h4>나의 학습 진도율</h4>
+                      <div class="kfsi-classroom-detail-head-progress">
+                        <div class="kfsi-classroom-detail-head-progress-head">
+                          <span>권장 53%</span>
+                          <p>현재 진도율 <strong>65%</strong></p>
+                        </div>
+                        <div
+                          class="progress"
+                          role="progressbar"
+                          aria-label="Basic example"
+                          aria-valuenow="65"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div class="progress-bar" style="width: 65%"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-classroom-detail-head-info">
+                      <div class="kfsi-classroom-detail-head-info-text">
+                        <h4>교육기간</h4>
+                        <p>
+                          학습 종료까지 <span class="text-primary">D-476</span>
+                        </p>
+                        <span>2024.10.10 ~ 2024. 10.15</span>
+                      </div>
+                      <a href="" class="btn btn-primary btn-lg">학습하기</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-15 mo-mt-10">
+                  <h4 class="kfsi-h4">수료기준 및 학습현황</h4>
+                  <div class="kfsi-classroom-detail-state">
+                    <div class="kfsi-classroom-detail-state-chart">
+                      <h5>진도</h5>
+                      <div class="kfsi-classroom-detail-state-chart__chart">
+                        <canvas id="progressChart"></canvas>
+                        <div class="kfsi-classroom-detail-state-chart__number">
+                          <strong>65</strong> / 100
+                        </div>
+                        <script>
+                          const ctx = document
+                            .getElementById('progressChart')
+                            .getContext('2d');
+                          const progressChart = new Chart(ctx, {
+                            type: 'doughnut',
+                            data: {
+                              datasets: [
+                                {
+                                  data: [35, 65],
+                                  backgroundColor: ['#eee', '#0094D0'],
+                                },
+                              ],
+                            },
+                            options: {
+                              cutout: '60%', // Makes it look like a progress ring
+                              //rotation: -90, // Start from the top
+                              //circumference: 180, // Display only half the circle
+                              plugins: {
+                                tooltip: { enabled: false }, // Disable tooltips
+                                legend: { display: false }, // Disable the legend
+                              },
+                            },
+                          });
+                        </script>
+                      </div>
+                      <p>(100% 달성 필수)</p>
+                    </div>
+                    <div class="kfsi-classroom-detail-state-progress">
+                      <h5>환산점수</h5>
+                      <div
+                        class="kfsi-classroom-detail-state-progress__progress"
+                      >
+                        <p><strong>45</strong> / 100</p>
+                        <div
+                          class="progress"
+                          role="progressbar"
+                          aria-label="Basic example"
+                          aria-valuenow="65"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div class="progress-bar" style="width: 45%"></div>
+                        </div>
+                      </div>
+                      <p>(100% 달성 필수)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-15 mo-mt-10">
+                  <h4 class="kfsi-h4">수료기준 및 성적</h4>
+                  <div class="kfsi-table">
+                    <table
+                      summary="수료기준 및 성적에 대한 정보를 제공하는 표입니다. 구분, 반영비율, 과락기준, 나의 원 점수, 나의 환산점수로 구성됩니다."
+                    >
+                      <caption>
+                        수료기준 및 성적
+                      </caption>
+                      <colgroup>
+                        <col style="width: 160px" />
+                        <col style="width: 195px" />
+                        <col style="width: 195px" />
+                        <col style="width: 195px" />
+                        <col style="width: 195px" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">구분</th>
+                          <th scope="col">반영비율</th>
+                          <th scope="col">과락기준</th>
+                          <th scope="col">나의 원 점수</th>
+                          <th scope="col">나의 환산점수</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">진도</th>
+                          <td>100%</td>
+                          <td>100</td>
+                          <td>65</td>
+                          <td>65</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">총점</th>
+                          <td colspan="4">환선점수 65점 100점</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">수료기준</th>
+                          <td colspan="4">
+                            진도 100% 달성 (필수) / 총점 수료기준 : 100점 이상
+                            (필수)
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="mt-15 mo-mt-10">
+                  <h4 class="kfsi-h4">학습 유의사항</h4>
+                  <div class="kfsi-classroom-detail-box">
+                    <div>
+                      <strong>학습기간</strong><br />
+                      <div class="p-1">
+                        - 2024년 05월 25일 00:00 ~ 2026년 02월 18일 23:59<br />
+                        - 학습 시작일 이후 수강취소는 불가합니다.
+                      </div>
+                    </div>
+                    <div class="mt-3">
+                      <strong>평가 및 수료기준</strong><br />
+                      <div class="p-1">
+                        - 반영비율 : 진도(100%)<br />
+                        - 과락기준 : 진도(100%) 달성(필수)<br />
+                        - 총점 수료기준 : 100점 이상(필수)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

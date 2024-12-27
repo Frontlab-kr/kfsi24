@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>나의강의실</h2>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >나의 교육 정보 조회</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">납부 내역 조회</a>
+                  <a href="" class="kfsi-snb-item-sub-item">자격 취득 현황</a>
+                  <a href="" class="kfsi-snb-item-sub-item">선임 대상처 현황</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >실무교육 이수기한</a
+                  >
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >진행 중인 교육</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">목차</a>
+                  <a href="" class="kfsi-snb-item-sub-item">평가</a>
+                  <a href="" class="kfsi-snb-item-sub-item">설문</a>
+                </div>
+              </div>
+              <a href="" class="kfsi-snb-item active">완료된 교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">나의 강의실</li>
+                    <li class="breadcrumb-item">나의 교육정보 조회</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      완료된 교육
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>완료된 교육</h1>
+              </div>
+              <div class="kfsi-classroom-list">
+                <div class="kfsi-classroom-list-head">
+                  <div class="kfsi-classroom-list-head-select">
+                    <select
+                      class="form-select"
+                      aria-label="년도 선택"
+                      title="년도 선택"
+                    >
+                      <option selected>2024</option>
+                    </select>
+                    <select
+                      class="form-select"
+                      aria-label="카테고리 선택"
+                      title="카테고리 선택"
+                    >
+                      <option selected>카테고리 전체</option>
+                    </select>
+                  </div>
+                  <div class="kfsi-classroom-list-head-search">
+                    <input
+                      type="text"
+                      class="form-control"
+                      title="검색"
+                      placeholder="검색"
+                    />
+                    <button type="button" class="btn btn-sm btn-secondary">
+                      검색
+                    </button>
+                  </div>
+                </div>
+                <div class="kfsi-board mt-15 mo-mt-10">
+                  <div class="pc">
+                    <div class="kfsi-table">
+                      <table
+                        summary="완료된 교육 정보를 제공합니다. 각 교육의 번호, 구분, 과정명, 학습기간, 수료 여부, 평가항목, 과제 상태, 복습 가능 여부, 수료증 출력 여부를 포함합니다."
+                      >
+                        <caption>
+                          완료된 교육
+                        </caption>
+                        <!-- <colgroup>
+                          <col style="width: 45px" />
+                          <col style="width: 120px" />
+                          <col style="width: 180px" />
+                          <col style="width: 175px" />
+                          <col style="width: 120px" />
+                          <col style="width: 75px" />
+                          <col style="width: 75px" />
+                          <col style="width: 75px" />
+                          <col style="width: 75px" />
+                        </colgroup> -->
+                        <thead>
+                          <tr>
+                            <th scope="col">번호</th>
+                            <th scope="col">구분</th>
+                            <th scope="col">과정명</th>
+                            <th scope="col">학습기간</th>
+                            <th scope="col">수료여부 (합격)</th>
+                            <th scope="col">평가항목</th>
+                            <th scope="col">과제</th>
+                            <th scope="col">복습</th>
+                            <th scope="col">수료증</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>다중이용업교육</td>
+                            <td>소방안전관리자 실무교육</td>
+                            <td>2024.10.31~2024.11.30</td>
+                            <td class="text-success">합격</td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark btn-sm"
+                              >
+                                확인
+                              </button>
+                            </td>
+                            <td>제출</td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark btn-sm"
+                              >
+                                복습
+                              </button>
+                            </td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark btn-sm"
+                              >
+                                출력
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>다중이용업교육</td>
+                            <td>소방안전관리자 실무교육</td>
+                            <td>2024.10.31~2024.11.30</td>
+                            <td class="text-danger">불합격</td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark btn-sm"
+                              >
+                                확인
+                              </button>
+                            </td>
+                            <td>제출</td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark btn-sm"
+                              >
+                                복습
+                              </button>
+                            </td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark btn-sm"
+                              >
+                                출력
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>다중이용업교육</td>
+                            <td>소방안전관리자 실무교육</td>
+                            <td>2024.10.31~2024.11.30</td>
+                            <td class="text-danger">불합격</td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark btn-sm"
+                              >
+                                확인
+                              </button>
+                            </td>
+                            <td>제출</td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark btn-sm"
+                              >
+                                복습
+                              </button>
+                            </td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark btn-sm"
+                              >
+                                출력
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="mo">
+                    <div class="kfsi-list">
+                      <div class="kfsi-list-section">
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">번호</div>
+                          <div class="kfsi-list-item-text">1</div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">구분</div>
+                          <div class="kfsi-list-item-text">다중이용업교육</div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">과정명</div>
+                          <div class="kfsi-list-item-text">
+                            소방안전관리자 실무교육
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">학습기간</div>
+                          <div class="kfsi-list-item-text">
+                            2024.10.31~2024.11.30
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">수료여부(합격)</div>
+                          <div class="kfsi-list-item-text text-success">
+                            합격
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">평가항목</div>
+                          <div class="kfsi-list-item-text">
+                            <button
+                              type="button"
+                              class="btn btn-outline-dark btn-sm"
+                            >
+                              확인
+                            </button>
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">과제</div>
+                          <div class="kfsi-list-item-text">제출</div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">복습</div>
+                          <div class="kfsi-list-item-text">
+                            <button
+                              type="button"
+                              class="btn btn-outline-dark btn-sm"
+                            >
+                              복습
+                            </button>
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">수료증</div>
+                          <div class="kfsi-list-item-text">
+                            <button
+                              type="button"
+                              class="btn btn-outline-dark btn-sm"
+                            >
+                              출력
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="kfsi-list-section">
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">번호</div>
+                          <div class="kfsi-list-item-text">1</div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">구분</div>
+                          <div class="kfsi-list-item-text">다중이용업교육</div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">과정명</div>
+                          <div class="kfsi-list-item-text">
+                            소방안전관리자 실무교육
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">학습기간</div>
+                          <div class="kfsi-list-item-text">
+                            2024.10.31~2024.11.30
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">수료여부(합격)</div>
+                          <div class="kfsi-list-item-text text-danger">
+                            불합격
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">평가항목</div>
+                          <div class="kfsi-list-item-text">
+                            <button
+                              type="button"
+                              class="btn btn-outline-dark btn-sm"
+                            >
+                              확인
+                            </button>
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">과제</div>
+                          <div class="kfsi-list-item-text">제출</div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">복습</div>
+                          <div class="kfsi-list-item-text">
+                            <button
+                              type="button"
+                              class="btn btn-outline-dark btn-sm"
+                            >
+                              복습
+                            </button>
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">수료증</div>
+                          <div class="kfsi-list-item-text">
+                            <button
+                              type="button"
+                              class="btn btn-outline-dark btn-sm"
+                            >
+                              출력
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="kfsi-list-section">
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">번호</div>
+                          <div class="kfsi-list-item-text">1</div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">구분</div>
+                          <div class="kfsi-list-item-text">다중이용업교육</div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">과정명</div>
+                          <div class="kfsi-list-item-text">
+                            소방안전관리자 실무교육
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">학습기간</div>
+                          <div class="kfsi-list-item-text">
+                            2024.10.31~2024.11.30
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">수료여부(합격)</div>
+                          <div class="kfsi-list-item-text text-danger">
+                            불합격
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">평가항목</div>
+                          <div class="kfsi-list-item-text">
+                            <button
+                              type="button"
+                              class="btn btn-outline-dark btn-sm"
+                            >
+                              확인
+                            </button>
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">과제</div>
+                          <div class="kfsi-list-item-text">제출</div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">복습</div>
+                          <div class="kfsi-list-item-text">
+                            <button
+                              type="button"
+                              class="btn btn-outline-dark btn-sm"
+                            >
+                              복습
+                            </button>
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">수료증</div>
+                          <div class="kfsi-list-item-text">
+                            <button
+                              type="button"
+                              class="btn btn-outline-dark btn-sm"
+                            >
+                              출력
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

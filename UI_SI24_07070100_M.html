@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>자격발급 신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">자격 발급안내</a>
+              <a href="" class="kfsi-snb-item">자격 재발급안내</a>
+              <a href="" class="kfsi-snb-item">자격 발급심사 신청</a>
+              <a href="" class="kfsi-snb-item">자격 (재)발급신청</a>
+              <a href="" class="kfsi-snb-item">
+                자격 발급<br />
+                (심사) 신청 내역
+              </a>
+              <a href="" class="kfsi-snb-item">자격 취득확인</a>
+              <a href="" class="kfsi-snb-item active">자격 발급 진위확인</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">자격발급 신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      자격 발급 진위확인
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>자격 발급 진위확인</h1>
+              </div>
+              <div class="kfsi-license">
+                <div class="fs-18 mo-fs-15 mb-4 mo-mb-3">
+                  <strong
+                    >안전원에서 발급된 자격의 진위여부를 확인하실 수
+                    있습니다.</strong
+                  >
+                </div>
+                <div class="kfsi-board">
+                  <div class="kfsi-board-write">
+                    <div class="kfsi-board-write-form">
+                      <table
+                        summary="자격 발급 진위 확인을 위한 정보 입력 테이블입니다. 발급시기, 자격번호, 종목, 성명, 생년월일을 입력합니다."
+                      >
+                        <caption>
+                          자격 발급 진위 확인 입력
+                        </caption>
+                        <colgroup>
+                          <col style="width: 180px" />
+                          <col style="width: 760px" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row">발급시기</th>
+                            <td>
+                              <div class="d-flex align-items-center gap-2">
+                                2005년 10월 20일
+                                <select
+                                  class="form-select"
+                                  aria-label="발급시기 선택"
+                                  title="발급시기 선택"
+                                  style="
+                                    min-width: 80px !important;
+                                    width: 80px !important;
+                                  "
+                                >
+                                  <option selected>이후</option>
+                                </select>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">자격번호</th>
+                            <td>
+                              <div
+                                class="d-flex align-items-center gap-2 flex-wrap fs-14"
+                                style="color: #ccc"
+                              >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  title="자격번호 첫번째자리 입력"
+                                  style="
+                                    min-width: 80px !important;
+                                    width: 80px !important;
+                                  "
+                                />
+                                -
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  title="자격번호 두번째자리 입력"
+                                  style="
+                                    min-width: 80px !important;
+                                    width: 80px !important;
+                                  "
+                                />
+                                -
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  title="자격번호 세번째자리 입력"
+                                  style="
+                                    min-width: 80px !important;
+                                    width: 80px !important;
+                                  "
+                                />
+                                -
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  title="자격번호 네번째자리 입력"
+                                  style="
+                                    min-width: 80px !important;
+                                    width: 80px !important;
+                                  "
+                                />
+                                -
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  title="자격번호 다섯번째자리 입력"
+                                  style="
+                                    min-width: 80px !important;
+                                    width: 80px !important;
+                                  "
+                                />
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">종목</th>
+                            <td>
+                              <select
+                                class="form-select"
+                                aria-label="종목 선택"
+                                title="종목 선택"
+                                style="min-width: 200px"
+                              >
+                                <option selected>특급소방안전관리자</option>
+                              </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">성명</th>
+                            <td>
+                              <input
+                                type="text"
+                                class="form-control"
+                                title="성명"
+                                style="min-width: 200px"
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">생년월일</th>
+                            <td>
+                              <div
+                                class="d-flex align-items-center row-gap-1 column-gap-5 flex-wrap"
+                              >
+                                <div class="d-flex align-items-center gap-1">
+                                  <select
+                                    class="form-select"
+                                    title="년도 선택"
+                                    style="min-width: 100px; width: 100px"
+                                  >
+                                    <option selected>선택</option>
+                                  </select>
+                                  년
+                                </div>
+                                <div class="d-flex align-items-center gap-1">
+                                  <select
+                                    class="form-select"
+                                    title="월 선택"
+                                    style="min-width: 80px; width: 80px"
+                                  >
+                                    <option selected>선택</option>
+                                  </select>
+                                  월
+                                </div>
+                                <div class="d-flex align-items-center gap-1">
+                                  <select
+                                    class="form-select"
+                                    title="일 선택"
+                                    style="min-width: 80px; width: 80px"
+                                  >
+                                    <option selected>선택</option>
+                                  </select>
+                                  일
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="mt-5">
+                    ※ 공공기관, 건설현장, 업무대행감독 소방안전관리자 자격
+                    여부는 ‘강습교육‘의 ‘수료증 진위확인’ 에서 확인 가능합니다.
+                    ‘기간한정 소방안전관리자’의 자격은 ‘겸직’등의 사유로 선임된
+                    기간에 한하여 인정되는 자격이므로 관할 지부로 문의 바랍니다.
+                  </div>
+                  <div class="kfsi-board-button">
+                    <p>
+                      <a href="" class="btn btn-primary btn-lg"
+                        >진위여부 확인</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>자격발급 신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">자격 발급안내</a>
+              <a href="" class="kfsi-snb-item">자격 재발급안내</a>
+              <a href="" class="kfsi-snb-item">자격 발급심사 신청</a>
+              <a href="" class="kfsi-snb-item">자격 (재)발급신청</a>
+              <a href="" class="kfsi-snb-item">
+                자격 발급<br />
+                (심사) 신청 내역
+              </a>
+              <a href="" class="kfsi-snb-item active">자격 취득확인</a>
+              <a href="" class="kfsi-snb-item">자격 발급 진위확인</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">자격발급 신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      자격 취득확인
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>자격 취득확인</h1>
+              </div>
+              <div class="kfsi-license">
+                <div class="kfsi-board">
+                  <div class="pc">
+                    <div class="kfsi-table">
+                      <table summary="자격 취득 확인 현황을 나타내는 표입니다.">
+                        <caption>
+                          자격 취득 확인 현황
+                        </caption>
+                        <colgroup>
+                          <col style="width: 160px" />
+                          <col style="width: 200px" />
+                          <col style="width: 140px" />
+                          <col style="width: 140px" />
+                          <col style="width: 150px" />
+                          <col style="width: 150px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">구분</th>
+                            <th scope="col">자격번호</th>
+                            <th scope="col">발급일자</th>
+                            <th scope="col">발급사유</th>
+                            <th scope="col">취득확인서</th>
+                            <th scope="col">팩스 발송</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>2급 소방안전관리자</td>
+                            <td>2024-12-34-5-678901</td>
+                            <td>2024.03.22</td>
+                            <td>자격인정</td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                출력하기
+                              </button>
+                            </td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark btn-sm"
+                              >
+                                발송하기
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="mo">
+                    <div class="kfsi-list">
+                      <div class="kfsi-list-section">
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">구분</div>
+                          <div class="kfsi-list-item-text">
+                            2급 소방안전관리자
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">자격번호</div>
+                          <div class="kfsi-list-item-text">
+                            2024-12-34-5-678901
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">발급일자</div>
+                          <div class="kfsi-list-item-text">2024.03.22</div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">발급사유</div>
+                          <div class="kfsi-list-item-text">자격인정</div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">취득확인서</div>
+                          <div class="kfsi-list-item-text">
+                            <button
+                              type="button"
+                              class="btn btn-secondary btn-sm"
+                            >
+                              출력하기
+                            </button>
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">팩스 발송</div>
+                          <div class="kfsi-list-item-text">
+                            <button
+                              type="button"
+                              class="btn btn-outline-dark btn-sm"
+                            >
+                              발송하기
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  ※ 공공기관, 건설현장, 업무대행감독 소방안전관리자 자격 여부는
+                  ‘강습교육‘의 ‘수료증 진위확인＇에서 확인 가능합니다.
+                </div>
+                <div class="mt-15 mo-mt-10">
+                  <h4 class="kfsi-h4">영문/중문 수료증 신청</h4>
+                  <div class="kfsi-textlist mb-3">
+                    <ul>
+                      <li>
+                        영문 또는 중문으로 출력되는 수료증이 필요하신 경우, 아래
+                        영문 또는 중문 성명을 입력 후 신청해 주세요.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="kfsi-license-apply">
+                    <div class="kfsi-license-apply__title">
+                      영문 또는 중문 이름을 입력하신 후, 담당자의 확인절차를
+                      거쳐 출력하실 수 있습니다.<br />
+                      아래 본인의 이름을 영문 또는 중문으로 정확히 입력해 주시기
+                      바랍니다.
+                    </div>
+                    <div class="kfsi-board">
+                      <div class="kfsi-board-write">
+                        <div class="kfsi-board-write-form">
+                          <table
+                            summary="영문 또는 중문 이름 입력과 출력, 팩스 발송 기능을 제공하는 표입니다."
+                          >
+                            <caption>
+                              영문 또는 중문 이름 입력
+                            </caption>
+                            <colgroup>
+                              <col style="width: 180px" />
+                              <col style="width: 760px" />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <th scope="row">영문 또는 중문 이름</th>
+                                <td>
+                                  <div class="kfsi-license-apply__input">
+                                    <input
+                                      type="text"
+                                      class="form-control w-100"
+                                      title="영문 또는 중문 이름"
+                                    />
+                                    <p>
+                                      <button
+                                        type="button"
+                                        class="btn btn-secondary btn-sm"
+                                      >
+                                        출력하기
+                                      </button>
+                                      <button
+                                        type="button"
+                                        class="btn btn-outline-dark btn-sm"
+                                      >
+                                        팩스발송
+                                      </button>
+                                    </p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-15 mo-mt-10">
+                  영문 및 중문 확인서의 이름표기 방법은 아래 예를 참조하시기
+                  바랍니다.
+                  <div class="kfsi-table mt-4">
+                    <table
+                      summary="영문 및 중문 확인서에 사용되는 이름 표기 예시를 나타내는 표입니다."
+                    >
+                      <caption>
+                        이름 표기 예시
+                      </caption>
+                      <colgroup>
+                        <col style="width: 235px" />
+                        <col style="width: 235px" />
+                        <col style="width: 235px" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">구분</th>
+                          <th scope="col">한글명</th>
+                          <th scope="col">영문명</th>
+                          <th scope="col">중문명</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">2글자</th>
+                          <td class="text-start">지성</td>
+                          <td class="text-start">Ji sung</td>
+                          <td class="text-start">智星</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3글자</th>
+                          <td class="text-start">김지성</td>
+                          <td class="text-start">Kim Ji-sung</td>
+                          <td class="text-start">金智星</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4글자</th>
+                          <td class="text-start">선우지성</td>
+                          <td class="text-start">Sunwoo Ji-sung</td>
+                          <td class="text-start">鲜于智星</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

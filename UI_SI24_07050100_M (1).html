@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>자격발급 신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">자격 발급안내</a>
+              <a href="" class="kfsi-snb-item">자격 재발급안내</a>
+              <a href="" class="kfsi-snb-item">자격 발급심사 신청</a>
+              <a href="" class="kfsi-snb-item">자격 (재)발급신청</a>
+              <a href="" class="kfsi-snb-item active">
+                자격 발급<br />
+                (심사) 신청 내역
+              </a>
+              <a href="" class="kfsi-snb-item">자격 취득확인</a>
+              <a href="" class="kfsi-snb-item">자격 발급 진위확인</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">자격발급 신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      자격 발급(심사) 신청 내역
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>자격 발급(심사) 신청 내역</h1>
+              </div>
+              <div class="kfsi-license">
+                <div class="kfsi-tab02 kfsi-tab02--mo-grid2">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="tab01"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab01-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab01-pane"
+                        aria-selected="true"
+                      >
+                        자격 발급심사 현황
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab02"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab02-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab02-pane"
+                        aria-selected="false"
+                      >
+                        자격 발급현황(수첩형/ 상장형)
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="tab01-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab01"
+                      tabindex="0"
+                    >
+                      <div class="kfsi-board">
+                        <div class="pc">
+                          <div class="kfsi-table">
+                            <table
+                              summary="자격 발급 심사 현황을 나타내는 표입니다."
+                            >
+                              <caption>
+                                자격 발급 심사 현황
+                              </caption>
+                              <colgroup>
+                                <col style="width: 60px" />
+                                <col style="width: 150px" />
+                                <col style="width: 150px" />
+                                <col style="width: 150px" />
+                                <col style="width: 150px" />
+                                <col style="width: 280px" />
+                              </colgroup>
+                              <thead>
+                                <tr>
+                                  <th scope="col">번호</th>
+                                  <th scope="col">지부</th>
+                                  <th scope="col">등급</th>
+                                  <th scope="col">신청일자</th>
+                                  <th scope="col">상태</th>
+                                  <th scope="col">보고</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>서울</td>
+                                  <td>2급</td>
+                                  <td>2024.11.06</td>
+                                  <td>신청</td>
+                                  <td>
+                                    <div class="d-flex gap-2">
+                                      <button
+                                        type="button"
+                                        class="btn btn-secondary btn-sm"
+                                      >
+                                        정보확인 및 수정
+                                      </button>
+                                      <button
+                                        type="button"
+                                        class="btn btn-outline-dark btn-sm"
+                                      >
+                                        신청취소
+                                      </button>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="mo">
+                          <div class="kfsi-list">
+                            <div class="kfsi-list-section">
+                              <div class="kfsi-list-item">
+                                <div class="kfsi-list-item-title">번호</div>
+                                <div class="kfsi-list-item-text">1</div>
+                              </div>
+                              <div class="kfsi-list-item">
+                                <div class="kfsi-list-item-title">지부</div>
+                                <div class="kfsi-list-item-text">서울</div>
+                              </div>
+                              <div class="kfsi-list-item">
+                                <div class="kfsi-list-item-title">등급</div>
+                                <div class="kfsi-list-item-text">2급</div>
+                              </div>
+                              <div class="kfsi-list-item">
+                                <div class="kfsi-list-item-title">신청일자</div>
+                                <div class="kfsi-list-item-text">
+                                  2024.11.06
+                                </div>
+                              </div>
+                              <div class="kfsi-list-item">
+                                <div class="kfsi-list-item-title">상태</div>
+                                <div class="kfsi-list-item-text">신청</div>
+                              </div>
+                              <div class="kfsi-list-item">
+                                <div class="kfsi-list-item-title">보고</div>
+                                <div class="kfsi-list-item-text">
+                                  <div class="d-flex gap-2">
+                                    <button
+                                      type="button"
+                                      class="btn btn-secondary btn-sm"
+                                    >
+                                      정보확인 및 수정
+                                    </button>
+                                    <button
+                                      type="button"
+                                      class="btn btn-outline-dark btn-sm"
+                                    >
+                                      신청취소
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab02-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab02"
+                      tabindex="0"
+                    >
+                      <div class="mb-15 mo-mb-10">
+                        <h4 class="kfsi-h4">수첩형</h4>
+                        <div class="kfsi-board">
+                          <div class="pc">
+                            <div class="kfsi-table">
+                              <table
+                                summary="수첩형 자격증 발급 신청 현황을 나타내는 표입니다."
+                              >
+                                <caption>
+                                  수첩형 신청 현황
+                                </caption>
+                                <colgroup>
+                                  <col style="width: 140px" />
+                                  <col style="width: 260px" />
+                                  <col style="width: 180px" />
+                                  <col style="width: 180px" />
+                                  <col style="width: 180px" />
+                                </colgroup>
+                                <thead>
+                                  <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">신청일자</th>
+                                    <th scope="col">신청내용</th>
+                                    <th scope="col">결제금액</th>
+                                    <th scope="col">처리상태</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>2024.12.23</td>
+                                    <td>신청내용 text</td>
+                                    <td>20,000원</td>
+                                    <td>처리상태 text</td>
+                                  </tr>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>2024.12.23</td>
+                                    <td>신청내용 text</td>
+                                    <td>20,000원</td>
+                                    <td>처리상태 text</td>
+                                  </tr>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>2024.12.23</td>
+                                    <td>신청내용 text</td>
+                                    <td>20,000원</td>
+                                    <td>처리상태 text</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="mo">
+                            <div class="kfsi-list">
+                              <div class="kfsi-list-section">
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">번호</div>
+                                  <div class="kfsi-list-item-text">1</div>
+                                </div>
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">
+                                    신청일자
+                                  </div>
+                                  <div class="kfsi-list-item-text">
+                                    2024.12.23
+                                  </div>
+                                </div>
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">
+                                    신청내용
+                                  </div>
+                                  <div class="kfsi-list-item-text">
+                                    신청내용 text
+                                  </div>
+                                </div>
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">
+                                    결제금액
+                                  </div>
+                                  <div class="kfsi-list-item-text">
+                                    20,000원
+                                  </div>
+                                </div>
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">
+                                    처리상태
+                                  </div>
+                                  <div class="kfsi-list-item-text">
+                                    처리상태 text
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="kfsi-list-section">
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">번호</div>
+                                  <div class="kfsi-list-item-text">1</div>
+                                </div>
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">
+                                    신청일자
+                                  </div>
+                                  <div class="kfsi-list-item-text">
+                                    2024.12.23
+                                  </div>
+                                </div>
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">
+                                    신청내용
+                                  </div>
+                                  <div class="kfsi-list-item-text">
+                                    신청내용 text
+                                  </div>
+                                </div>
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">
+                                    결제금액
+                                  </div>
+                                  <div class="kfsi-list-item-text">
+                                    20,000원
+                                  </div>
+                                </div>
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">
+                                    처리상태
+                                  </div>
+                                  <div class="kfsi-list-item-text">
+                                    처리상태 text
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="kfsi-list-section">
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">번호</div>
+                                  <div class="kfsi-list-item-text">1</div>
+                                </div>
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">
+                                    신청일자
+                                  </div>
+                                  <div class="kfsi-list-item-text">
+                                    2024.12.23
+                                  </div>
+                                </div>
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">
+                                    신청내용
+                                  </div>
+                                  <div class="kfsi-list-item-text">
+                                    신청내용 text
+                                  </div>
+                                </div>
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">
+                                    결제금액
+                                  </div>
+                                  <div class="kfsi-list-item-text">
+                                    20,000원
+                                  </div>
+                                </div>
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">
+                                    처리상태
+                                  </div>
+                                  <div class="kfsi-list-item-text">
+                                    처리상태 text
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="kfsi-board-more">
+                            <p>
+                              <a href="" class="btn btn-primary btn-lg"
+                                >더보기</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h4 class="kfsi-h4">상장형</h4>
+                        <div class="mb-4">
+                          - 자격 발급 승인일로부터 90일간 출력 가능합니다.
+                        </div>
+                        <div class="kfsi-board">
+                          <div class="pc">
+                            <div class="kfsi-table">
+                              <table
+                                summary="상장형 자격증 발급 신청 현황을 나타내는 표입니다."
+                              >
+                                <caption>
+                                  상장형 신청 현황
+                                </caption>
+                                <colgroup>
+                                  <col style="width: 140px" />
+                                  <col style="width: 260px" />
+                                  <col style="width: 180px" />
+                                  <col style="width: 180px" />
+                                  <col style="width: 180px" />
+                                </colgroup>
+                                <thead>
+                                  <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">신청일자</th>
+                                    <th scope="col">신청내용</th>
+                                    <th scope="col">결제금액</th>
+                                    <th scope="col">처리상태</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>2024.12.23</td>
+                                    <td>신청내용 text</td>
+                                    <td>20,000원</td>
+                                    <td>처리상태 text</td>
+                                  </tr>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>2024.12.23</td>
+                                    <td>신청내용 text</td>
+                                    <td>20,000원</td>
+                                    <td>처리상태 text</td>
+                                  </tr>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>2024.12.23</td>
+                                    <td>신청내용 text</td>
+                                    <td>20,000원</td>
+                                    <td>처리상태 text</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="mo">
+                            <div class="kfsi-list">
+                              <div class="kfsi-list-section">
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">번호</div>
+                                  <div class="kfsi-list-item-text">1</div>
+                                </div>
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">
+                                    신청일자
+                                  </div>
+                                  <div class="kfsi-list-item-text">
+                                    2024.12.23
+                                  </div>
+                                </div>
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">
+                                    신청내용
+                                  </div>
+                                  <div class="kfsi-list-item-text">
+                                    신청내용 text
+                                  </div>
+                                </div>
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">
+                                    결제금액
+                                  </div>
+                                  <div class="kfsi-list-item-text">
+                                    20,000원
+                                  </div>
+                                </div>
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">
+                                    처리상태
+                                  </div>
+                                  <div class="kfsi-list-item-text">
+                                    처리상태 text
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="kfsi-list-section">
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">번호</div>
+                                  <div class="kfsi-list-item-text">1</div>
+                                </div>
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">
+                                    신청일자
+                                  </div>
+                                  <div class="kfsi-list-item-text">
+                                    2024.12.23
+                                  </div>
+                                </div>
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">
+                                    신청내용
+                                  </div>
+                                  <div class="kfsi-list-item-text">
+                                    신청내용 text
+                                  </div>
+                                </div>
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">
+                                    결제금액
+                                  </div>
+                                  <div class="kfsi-list-item-text">
+                                    20,000원
+                                  </div>
+                                </div>
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">
+                                    처리상태
+                                  </div>
+                                  <div class="kfsi-list-item-text">
+                                    처리상태 text
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="kfsi-list-section">
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">번호</div>
+                                  <div class="kfsi-list-item-text">1</div>
+                                </div>
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">
+                                    신청일자
+                                  </div>
+                                  <div class="kfsi-list-item-text">
+                                    2024.12.23
+                                  </div>
+                                </div>
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">
+                                    신청내용
+                                  </div>
+                                  <div class="kfsi-list-item-text">
+                                    신청내용 text
+                                  </div>
+                                </div>
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">
+                                    결제금액
+                                  </div>
+                                  <div class="kfsi-list-item-text">
+                                    20,000원
+                                  </div>
+                                </div>
+                                <div class="kfsi-list-item">
+                                  <div class="kfsi-list-item-title">
+                                    처리상태
+                                  </div>
+                                  <div class="kfsi-list-item-text">
+                                    처리상태 text
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="kfsi-board-more">
+                            <p>
+                              <a href="" class="btn btn-primary btn-lg"
+                                >더보기</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

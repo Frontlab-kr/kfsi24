@@ -3,6 +3,7 @@ $mobileWidth: 992px;
 html,
 body {
   font-family: 'Pretendard', sans-serif;
+  word-break: keep-all;
 }
 a {
   text-decoration: none;
@@ -169,6 +170,8 @@ small {
   }
   &-outline-primary {
     color: #333;
+    border: 1px solid var(--004D16, #004d16);
+    background: #f8fff4;
   }
   &-outline-dark {
     color: #333;
@@ -345,7 +348,7 @@ small {
 .form-select {
   width: auto;
   height: 30px;
-  padding: 0 10px;
+  padding: 0 40px 0 10px;
   font-size: 16px;
   border: solid 1px #ccc;
   @media screen and (max-width: $mobileWidth) {

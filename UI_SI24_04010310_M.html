@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>나의강의실</h2>
+              </div>
+              <div class="kfsi-snb-item-sub active">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >나의 교육 정보 조회</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">납부 내역 조회</a>
+                  <a href="" class="kfsi-snb-item-sub-item">자격 취득 현황</a>
+                  <a href="" class="kfsi-snb-item-sub-item active"
+                    >선임 대상처 현황</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >실무교육 이수기한</a
+                  >
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >진행 중인 교육</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">목차</a>
+                  <a href="" class="kfsi-snb-item-sub-item">평가</a>
+                  <a href="" class="kfsi-snb-item-sub-item">설문</a>
+                </div>
+              </div>
+              <a href="" class="kfsi-snb-item">완료된 교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">나의 강의실</li>
+                    <li class="breadcrumb-item">나의 교육정보 조회</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      선임 대상처 현황
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>선임 대상처 현황</h1>
+              </div>
+              <div class="kfsi-mypage">
+                <div class="mb-15 mo-mb-10">
+                  <h4 class="kfsi-h4">
+                    소방안전관리(보조)자, 소방기술자, 위험물 안전관리자
+                  </h4>
+                  <div class="kfsi-textlist">
+                    <ul>
+                      <li>
+                        <span class="text-danger"
+                          ><strong>반드시 소방관서에 선임신고 후</strong>
+                          선임대상처 추가 또는 변경신청 하시기 바랍니다</span
+                        >
+                      </li>
+                      <li>
+                        선임대상처 정보
+                        <ul>
+                          <li>
+                            선임대상처가 없는 경우 [선임대상처 추가] 버튼을
+                            클릭하여 추가 신청해주세요.
+                          </li>
+                          <li>
+                            선임대상처 정보가 다를 경우 “건물(업체)명＂을
+                            클릭하여 변경신청 하시거나 삭제신청을 하시기
+                            바랍니다.
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="kfsi-board mb-15 mo-mb-10">
+                  <div class="kfsi-board-head">
+                    <div class="kfsi-board-head-start">
+                      <h4 class="kfsi-h4">선임대상처</h4>
+                    </div>
+                    <div
+                      class="kfsi-board-head-end mo-justify-content-start"
+                    ></div>
+                  </div>
+                  <div class="pc">
+                    <div class="kfsi-table">
+                      <table
+                        summary="선임대상처 테이블로, 직능, 건물(업체)명, 주소, 선임신고일, 변경신청 항목을 포함합니다."
+                      >
+                        <caption>
+                          선임대상처 내역
+                        </caption>
+                        <colgroup>
+                          <col style="width: 140px" />
+                          <col style="width: 140px" />
+                          <col style="width: 360px" />
+                          <col style="width: 160px" />
+                          <col style="width: 140px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">직능</th>
+                            <th scope="col">건물(업체)명</th>
+                            <th scope="col">주소</th>
+                            <th scope="col">선임신고일</th>
+                            <th scope="col">변경신청</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>소방기술자</td>
+                            <td>한국소방안전원</td>
+                            <td>
+                              서울특별시 영등포구 영중로170 (영등포동 8가)
+                            </td>
+                            <td>2014.12.03</td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark btn-sm"
+                              >
+                                변경하기
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="d-flex justify-content-end mt-5">
+                      <button type="button" class="btn btn-secondary btn-sm">
+                        선임대상처 추가(이동탱크저장소)
+                      </button>
+                    </div>
+                  </div>
+                  <div class="mo">
+                    <div class="kfsi-list">
+                      <div class="kfsi-list-section">
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">직능</div>
+                          <div class="kfsi-list-item-text">소방기술자</div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">건물(업체)명</div>
+                          <div class="kfsi-list-item-text">한국소방안전원</div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">주소</div>
+                          <div class="kfsi-list-item-text">
+                            서울특별시 영등포구 영중로170 (영등포동 8가)
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">선임신고일</div>
+                          <div class="kfsi-list-item-text">2014.12.03</div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">변경신청</div>
+                          <div class="kfsi-list-item-text">
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary btn-sm"
+                            >
+                              변경하기
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-7">
+                      <button type="button" class="btn btn-secondary btn-sm">
+                        선임대상처 추가(이동탱크저장소)
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-board">
+                  <div class="kfsi-board-head">
+                    <div class="kfsi-board-head-start">
+                      <h4 class="kfsi-h4">변경신청 이력</h4>
+                    </div>
+                    <div
+                      class="kfsi-board-head-end mo-justify-content-start"
+                    ></div>
+                  </div>
+                  <div class="pc">
+                    <div class="kfsi-table">
+                      <table
+                        summary="변경신청 이력 테이블로, 신청일, 직능, 건물(업체)명, 구분, 변경신청 항목을 포함합니다."
+                      >
+                        <caption>
+                          변경신청 이력 내역
+                        </caption>
+                        <colgroup>
+                          <col style="width: 140px" />
+                          <col style="width: 140px" />
+                          <col style="width: 200px" />
+                          <col style="width: 320px" />
+                          <col style="width: 140px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">신청일</th>
+                            <th scope="col">직능</th>
+                            <th scope="col">건물(업체)명</th>
+                            <th scope="col">구분</th>
+                            <th scope="col">변경신청</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>2024.10.23</td>
+                            <td>소방기술자</td>
+                            <td>한국소방안전원 인천지부</td>
+                            <td>현재 대상물(업체) 정보 변경</td>
+                            <td>접수 중</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="mo">
+                    <div class="kfsi-list">
+                      <div class="kfsi-list-section">
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">신청일</div>
+                          <div class="kfsi-list-item-text">2024.10.23</div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">직능</div>
+                          <div class="kfsi-list-item-text">소방기술자</div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">건물(업체)명</div>
+                          <div class="kfsi-list-item-text">
+                            한국소방안전원 인천지부
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">구분</div>
+                          <div class="kfsi-list-item-text">
+                            현재 대상물(업체) 정보 변경
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">변경신청</div>
+                          <div class="kfsi-list-item-text">접수 중</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

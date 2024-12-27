@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>자격발급 신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item active">자격 발급안내</a>
+              <a href="" class="kfsi-snb-item">자격 재발급안내</a>
+              <a href="" class="kfsi-snb-item">자격 발급심사 신청</a>
+              <a href="" class="kfsi-snb-item">자격 (재)발급신청</a>
+              <a href="" class="kfsi-snb-item">
+                자격 발급<br />
+                (심사) 신청 내역
+              </a>
+              <a href="" class="kfsi-snb-item">자격 취득확인</a>
+              <a href="" class="kfsi-snb-item">자격 발급 진위확인</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">자격발급 신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      자격 발급안내
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>자격 발급안내</h1>
+              </div>
+              <div class="kfsi-license">
+                <div>
+                  자격 발급대상에 해당하는 사람은 안전원 시·도지부를
+                  방문(구비서류 지참 필요)하거나 온라인으로 자격 발급신청이
+                  가능합니다.<br />
+                  단, 온라인으로 신청하는 경우 자격발급 심사신청을 통하여
+                  승인받은 경우에 한하여 자격 발급신청이 가능합니다.
+                </div>
+                <div class="mt-15 mo-mt-10">
+                  <h4 class="kfsi-h4">구비서류 안내</h4>
+                </div>
+                <div class="kfsi-tab01 kfsi-tab01--grid4 kfsi-tab01--mo-grid2">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="tab01"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab01-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab01-pane"
+                        aria-selected="true"
+                      >
+                        특급 소방안전관리자
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab02"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab02-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab02-pane"
+                        aria-selected="false"
+                      >
+                        1급 소방안전관리자
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab03"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab03-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab03-pane"
+                        aria-selected="false"
+                      >
+                        2급 소방안전관리자
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab04"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab04-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab04-pane"
+                        aria-selected="false"
+                      >
+                        3급 소방안전관리자
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab05"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab05-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab05-pane"
+                        aria-selected="false"
+                      >
+                        기간한정 소방안전관리자
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab06"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab06-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab06-pane"
+                        aria-selected="false"
+                      >
+                        위험물 소방안전관리자
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab07"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab07-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab07-pane"
+                        aria-selected="false"
+                      >
+                        위험물 운송자
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="tab01-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab01"
+                      tabindex="0"
+                    >
+                      1
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab02-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab02"
+                      tabindex="0"
+                    >
+                      2
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

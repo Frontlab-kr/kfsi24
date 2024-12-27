@@ -301,9 +301,9 @@ $mobileWidth: 992px;
       word-break: keep-all;
       thead {
         th {
-          padding: 5px 16px;
+          padding: 10px 16px;
           border: 1px solid #ccc;
-          background: #e0efdb;
+          background: #e4f2d3;
           color: #000;
           text-align: center;
           font-family: Pretendard;
@@ -335,9 +335,9 @@ $mobileWidth: 992px;
       tbody,
       tfoot {
         th {
-          padding: 5px 16px;
+          padding: 10px 16px;
           border: 1px solid #ccc;
-          background-color: #f7f7f7;
+          background: #f8fff4;
           color: #000;
           text-align: center;
           font-family: Pretendard;
@@ -352,7 +352,7 @@ $mobileWidth: 992px;
           }
         }
         td {
-          padding: 5px 16px;
+          padding: 10px 16px;
           border: 1px solid #ccc;
           color: #000;
           text-align: center;
@@ -389,43 +389,20 @@ $mobileWidth: 992px;
       @media screen and (max-width: $mobileWidth) {
         thead {
           th {
-            padding: 16px 8px;
-            border: 1px solid #ccc;
-            background-color: #f7f7f7;
+            padding: 10px 8px;
             font-size: 15px;
-            font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.33;
-            letter-spacing: normal;
-            text-align: center;
-            color: #000;
           }
         }
         tbody,
         tfoot {
           th {
-            padding: 16px 8px;
+            padding: 10px 8px;
             font-size: 14px;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.33;
-            letter-spacing: normal;
-            text-align: center;
-            color: #000;
           }
           td {
-            padding: 16px 8px;
+            padding: 10px 8px;
             border: 1px solid #ccc;
             font-size: 14px;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.33;
-            letter-spacing: normal;
-            text-align: center;
-            color: #000;
           }
         }
       }
@@ -457,6 +434,45 @@ $mobileWidth: 992px;
         overflow: auto;
         table {
           white-space: noWrap;
+        }
+      }
+    }
+  }
+  &-list {
+    @media screen and (max-width: $mobileWidth) {
+      border-top: 2px solid #004d16;
+      &-section {
+        padding: 14px;
+        border-bottom: 1px solid #ccc;
+      }
+      &-item {
+        display: flex;
+        margin-top: 10px;
+        &:first-child {
+          margin-top: 0;
+        }
+        &-title {
+          display: flex;
+          align-items: center;
+          min-width: 100px;
+          margin-right: 5px;
+          color: #000;
+          font-family: Pretendard;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px; /* 150% */
+        }
+        &-text {
+          display: flex;
+          align-items: center;
+          color: #000;
+          font-family: Pretendard;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px; /* 150% */
+          word-break: keep-all;
         }
       }
     }
@@ -837,6 +853,7 @@ $mobileWidth: 992px;
         font-weight: 400;
         line-height: 24px; /* 150% */
         letter-spacing: 0.48px;
+        text-align: left;
         a {
           color: #000;
         }

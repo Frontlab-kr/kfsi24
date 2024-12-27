@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>나의강의실</h2>
+              </div>
+              <div class="kfsi-snb-item-sub active">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >나의 교육 정보 조회</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">납부 내역 조회</a>
+                  <a href="" class="kfsi-snb-item-sub-item">자격 취득 현황</a>
+                  <a href="" class="kfsi-snb-item-sub-item active"
+                    >선임 대상처 현황</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >실무교육 이수기한</a
+                  >
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >진행 중인 교육</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">목차</a>
+                  <a href="" class="kfsi-snb-item-sub-item">평가</a>
+                  <a href="" class="kfsi-snb-item-sub-item">설문</a>
+                </div>
+              </div>
+              <a href="" class="kfsi-snb-item">완료된 교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">나의 강의실</li>
+                    <li class="breadcrumb-item">나의 교육정보 조회</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      선임 대상처 현황
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>선임대상처 검색</h1>
+              </div>
+              <div class="kfsi-mypage">
+                <div class="mb-15 mo-mb-10">
+                  <h4 class="kfsi-h4">지역 및 직능 선택</h4>
+                  <div class="pc">
+                    <div class="kfsi-board">
+                      <div class="kfsi-board-write">
+                        <div class="kfsi-board-write-form">
+                          <table
+                            summary="지역(지부)와 직능을 선택할 수 있는 양식입니다."
+                          >
+                            <caption>
+                              지역 및 직능 선택
+                            </caption>
+                            <colgroup>
+                              <col style="width: 170px" />
+                              <col style="width: 300px" />
+                              <col style="width: 170px" />
+                              <col style="width: 300px" />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <th scope="row">대상처 지역(지부) 선택</th>
+                                <td>
+                                  <select
+                                    class="form-select w-100"
+                                    aria-label="대상처 지역(지부) 선택"
+                                    title="대상처 지역(지부) 선택"
+                                  >
+                                    <option selected>선택</option>
+                                  </select>
+                                </td>
+                                <th scope="row">직능 선택</th>
+                                <td>
+                                  <select
+                                    class="form-select w-100"
+                                    aria-label="직능 선택"
+                                    title="직능 선택"
+                                  >
+                                    <option selected>선택</option>
+                                  </select>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mo">
+                    <div class="kfsi-board">
+                      <div class="kfsi-board-write">
+                        <div class="kfsi-board-write-form">
+                          <table
+                            summary="지역(지부)와 직능을 선택할 수 있는 양식입니다."
+                          >
+                            <caption>
+                              지역 및 직능 선택
+                            </caption>
+                            <colgroup>
+                              <col style="width: 170px" />
+                              <col style="width: 300px" />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <th scope="row">대상처 지역(지부) 선택</th>
+                                <td>
+                                  <select
+                                    class="form-select w-100"
+                                    aria-label="대상처 지역(지부) 선택"
+                                    title="대상처 지역(지부) 선택"
+                                  >
+                                    <option selected>선택</option>
+                                  </select>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">직능 선택</th>
+                                <td>
+                                  <select
+                                    class="form-select w-100"
+                                    aria-label="직능 선택"
+                                    title="직능 선택"
+                                  >
+                                    <option selected>선택</option>
+                                  </select>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-15 mo-mb-10">
+                  <h4 class="kfsi-h4 mb-1">대상처 검색</h4>
+                  <div class="kfsi-textlist">
+                    <ul>
+                      <li>
+                        대상처(업체)명, 관리번호, 주소로 대상처를 검색할 수
+                        있습니다.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="d-flex gap-3 mo-flex-column">
+                    <div class="kfsi-board">
+                      <div class="kfsi-board-write">
+                        <div class="kfsi-board-write-form">
+                          <table
+                            summary="대상처(업체)명을 입력하여 검색할 수 있는 양식입니다."
+                          >
+                            <caption>
+                              대상처(업체)명 검색
+                            </caption>
+                            <colgroup>
+                              <col style="width: 170px" />
+                              <col style="width: 300px" />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <th scope="row">대상처(업체)명 검색</th>
+                                <td>
+                                  <input
+                                    type="text"
+                                    class="form-control w-100"
+                                    title="대상처(업체)명 입력"
+                                  />
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div
+                          class="d-flex justify-content-end mo-justify-content-center mt-2"
+                        >
+                          <button
+                            type="button"
+                            class="btn btn-secondary btn-sm"
+                            style="min-width: 90px"
+                          >
+                            검색
+                          </button>
+                        </div>
+                      </div>
+                      <div class="kfsi-board-write mt-4">
+                        <div class="kfsi-board-write-form">
+                          <table
+                            summary="관리번호를 입력하여 실무교육 안내문에 기재된 정보를 검색할 수 있는 양식입니다."
+                          >
+                            <caption>
+                              관리번호 검색
+                            </caption>
+                            <colgroup>
+                              <col style="width: 170px" />
+                              <col style="width: 300px" />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <th scope="row">관리번호로 검색</th>
+                                <td>
+                                  <p class="mb-1 fs-14" style="color: #999">
+                                    실무교육 안내문에 기재된 관리번호 입력
+                                  </p>
+                                  <input
+                                    type="text"
+                                    class="form-control w-100"
+                                    title="관리번호 입력"
+                                  />
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div
+                          class="d-flex justify-content-end mo-justify-content-center mt-2"
+                        >
+                          <button
+                            type="button"
+                            class="btn btn-secondary btn-sm"
+                            style="min-width: 90px"
+                          >
+                            검색
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-board">
+                      <div class="kfsi-board-write">
+                        <div class="kfsi-board-write-form">
+                          <table
+                            summary="주소를 검색할 수 있는 양식으로, 도로명 또는 읍면동과 건물번호 또는 번지를 입력하는 필드를 제공합니다."
+                          >
+                            <caption>
+                              주소 검색
+                            </caption>
+                            <colgroup>
+                              <col style="width: 100px" />
+                              <col style="width: 365px" />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <th scope="row">주소 검색</th>
+                                <td>
+                                  <div class="mt-3">
+                                    <p class="mb-1 fs-14" style="color: #999">
+                                      도로명 또는 읍면동
+                                    </p>
+                                    <input
+                                      type="text"
+                                      class="form-control w-100"
+                                      title="도로명 또는 읍면동 입력"
+                                    />
+                                  </div>
+                                  <div class="mb-3 mt-9">
+                                    <p class="mb-1 fs-14" style="color: #999">
+                                      건물번호 또는 번지
+                                    </p>
+                                    <input
+                                      type="text"
+                                      class="form-control w-100"
+                                      title="건물번호 또는 번지 입력"
+                                    />
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div
+                          class="d-flex justify-content-end mo-justify-content-center mt-2"
+                        >
+                          <button
+                            type="button"
+                            class="btn btn-secondary btn-sm"
+                            style="min-width: 90px"
+                          >
+                            검색
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="kfsi-h4">대상처 검색 결과</h4>
+                  <div class="kfsi-board">
+                    <div class="pc">
+                      <div class="kfsi-table">
+                        <table
+                          summary="대상처 검색 결과를 보여주는 테이블로, 대상처의 직능, 건물명, 주소, 선임자 정보 및 선임신고일을 제공합니다."
+                        >
+                          <caption>
+                            대상처 검색 결과
+                          </caption>
+                          <colgroup>
+                            <col style="width: 60px" />
+                            <col style="width: 140px" />
+                            <col style="width: 140px" />
+                            <col style="width: 340px" />
+                            <col style="width: 120px" />
+                            <col style="width: 140px" />
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th scope="col">선택</th>
+                              <th scope="col">직능</th>
+                              <th scope="col">건물(업체)명</th>
+                              <th scope="col">주소</th>
+                              <th scope="col">선임자</th>
+                              <th scope="col">선임신고일</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radioNoLabel"
+                                  id="radioNoLabel1"
+                                  value=""
+                                />
+                              </td>
+                              <td>소방안전관리자</td>
+                              <td>롯데시네마(신관)</td>
+                              <td>
+                                서울특별시 강남구 도산대로 8길 8 신관
+                                관리사무소(논현동 3-5)
+                              </td>
+                              <td>홍*동</td>
+                              <td>2018.06.01</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radioNoLabel"
+                                  id="radioNoLabel2"
+                                  value=""
+                                />
+                              </td>
+                              <td>소방안전관리자</td>
+                              <td>롯데시네마(신관)</td>
+                              <td>
+                                서울특별시 강남구 도산대로 8길 8 신관
+                                관리사무소(논현동 3-5)
+                              </td>
+                              <td>홍*동</td>
+                              <td>2018.06.01</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radioNoLabel"
+                                  id="radioNoLabel3"
+                                  value=""
+                                />
+                              </td>
+                              <td>소방안전관리자</td>
+                              <td>롯데시네마(신관)</td>
+                              <td>
+                                서울특별시 강남구 도산대로 8길 8 신관
+                                관리사무소(논현동 3-5)
+                              </td>
+                              <td>홍*동</td>
+                              <td>2018.06.01</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="mo">
+                      <div class="kfsi-list">
+                        <div class="kfsi-list-section">
+                          <div class="kfsi-list-item">
+                            <div class="kfsi-list-item-title">선택</div>
+                            <div class="kfsi-list-item-text">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="radioNoLabel"
+                                id="radioNoLabel1"
+                                value=""
+                              />
+                            </div>
+                          </div>
+                          <div class="kfsi-list-item">
+                            <div class="kfsi-list-item-title">직능</div>
+                            <div class="kfsi-list-item-text">
+                              소방안전관리자
+                            </div>
+                          </div>
+                          <div class="kfsi-list-item">
+                            <div class="kfsi-list-item-title">건물(업체명)</div>
+                            <div class="kfsi-list-item-text">
+                              롯데시네마(신관)
+                            </div>
+                          </div>
+                          <div class="kfsi-list-item">
+                            <div class="kfsi-list-item-title">주소</div>
+                            <div class="kfsi-list-item-text">
+                              서울특별시 강남구 도산대로 8길 8 신관
+                              관리사무소(논현동 3-5)
+                            </div>
+                          </div>
+                          <div class="kfsi-list-item">
+                            <div class="kfsi-list-item-title">선임자</div>
+                            <div class="kfsi-list-item-text">홍*동</div>
+                          </div>
+                          <div class="kfsi-list-item">
+                            <div class="kfsi-list-item-title">선임신고일</div>
+                            <div class="kfsi-list-item-text">2018.06.01</div>
+                          </div>
+                        </div>
+                        <div class="kfsi-list-section">
+                          <div class="kfsi-list-item">
+                            <div class="kfsi-list-item-title">선택</div>
+                            <div class="kfsi-list-item-text">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="radioNoLabel"
+                                id="radioNoLabel2"
+                                value=""
+                              />
+                            </div>
+                          </div>
+                          <div class="kfsi-list-item">
+                            <div class="kfsi-list-item-title">직능</div>
+                            <div class="kfsi-list-item-text">
+                              소방안전관리자
+                            </div>
+                          </div>
+                          <div class="kfsi-list-item">
+                            <div class="kfsi-list-item-title">건물(업체명)</div>
+                            <div class="kfsi-list-item-text">
+                              롯데시네마(신관)
+                            </div>
+                          </div>
+                          <div class="kfsi-list-item">
+                            <div class="kfsi-list-item-title">주소</div>
+                            <div class="kfsi-list-item-text">
+                              서울특별시 강남구 도산대로 8길 8 신관
+                              관리사무소(논현동 3-5)
+                            </div>
+                          </div>
+                          <div class="kfsi-list-item">
+                            <div class="kfsi-list-item-title">선임자</div>
+                            <div class="kfsi-list-item-text">홍*동</div>
+                          </div>
+                          <div class="kfsi-list-item">
+                            <div class="kfsi-list-item-title">선임신고일</div>
+                            <div class="kfsi-list-item-text">2018.06.01</div>
+                          </div>
+                        </div>
+                        <div class="kfsi-list-section">
+                          <div class="kfsi-list-item">
+                            <div class="kfsi-list-item-title">선택</div>
+                            <div class="kfsi-list-item-text">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="radioNoLabel"
+                                id="radioNoLabel3"
+                                value=""
+                              />
+                            </div>
+                          </div>
+                          <div class="kfsi-list-item">
+                            <div class="kfsi-list-item-title">직능</div>
+                            <div class="kfsi-list-item-text">
+                              소방안전관리자
+                            </div>
+                          </div>
+                          <div class="kfsi-list-item">
+                            <div class="kfsi-list-item-title">건물(업체명)</div>
+                            <div class="kfsi-list-item-text">
+                              롯데시네마(신관)
+                            </div>
+                          </div>
+                          <div class="kfsi-list-item">
+                            <div class="kfsi-list-item-title">주소</div>
+                            <div class="kfsi-list-item-text">
+                              서울특별시 강남구 도산대로 8길 8 신관
+                              관리사무소(논현동 3-5)
+                            </div>
+                          </div>
+                          <div class="kfsi-list-item">
+                            <div class="kfsi-list-item-title">선임자</div>
+                            <div class="kfsi-list-item-text">홍*동</div>
+                          </div>
+                          <div class="kfsi-list-item">
+                            <div class="kfsi-list-item-title">선임신고일</div>
+                            <div class="kfsi-list-item-text">2018.06.01</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kfsi-textlist mt-5">
+                    <ul>
+                      <li
+                        class="d-flex align-items-center column-gap-5 row-gap-2 mo-flex-column mo-align-items-start mb-2"
+                      >
+                        <p class="m-0">
+                          선임자가 본인이 아닐 경우,
+                          <span class="text-danger">"선임자 변경 신청"</span>을
+                          하시기 바랍니다.
+                        </p>
+                        <a href="" class="btn btn-outline-dark btn-sm"
+                          >선임자 변경 신청하기</a
+                        >
+                      </li>
+                      <li
+                        class="d-flex align-items-center column-gap-5 row-gap-2 mo-flex-column mo-align-items-start"
+                      >
+                        <p class="m-0">
+                          선임되신 대상처가 없는 경우,
+                          <span class="text-danger">"선임대상처 신규 신청"</span
+                          >을 하시기 바랍니다.
+                        </p>
+                        <a href="" class="btn btn-outline-dark btn-sm"
+                          >선임대상처 신규 신청하기</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

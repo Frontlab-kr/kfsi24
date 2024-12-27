@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>자격발급 신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">자격 발급안내</a>
+              <a href="" class="kfsi-snb-item active">자격 재발급안내</a>
+              <a href="" class="kfsi-snb-item">자격 발급심사 신청</a>
+              <a href="" class="kfsi-snb-item">자격 (재)발급신청</a>
+              <a href="" class="kfsi-snb-item">
+                자격 발급<br />
+                (심사) 신청 내역
+              </a>
+              <a href="" class="kfsi-snb-item">자격 취득확인</a>
+              <a href="" class="kfsi-snb-item">자격 발급 진위확인</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">자격발급 신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      자격 재발급안내
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>자격 재발급안내</h1>
+              </div>
+              <div class="kfsi-license">
+                <div class="kfsi-tab02 kfsi-tab02--mo-grid2">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="tab01"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab01-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab01-pane"
+                        aria-selected="true"
+                      >
+                        온라인 신청
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab02"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab02-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab02-pane"
+                        aria-selected="false"
+                      >
+                        방문 신청
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="tab01-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab01"
+                      tabindex="0"
+                    >
+                      <div class="mb-15 mo-mb-10">
+                        <h4 class="kfsi-h4">대상</h4>
+                        안전원에 자격취득 당시 사진이 등록된 신청자
+                      </div>
+                      <div>
+                        <h4 class="kfsi-h4">자격 발급절차</h4>
+                        <div>
+                          <div class="pc">
+                            <img
+                              src="./assets/images/license/license.png"
+                              alt="아래 대체 텍스트를 확인해주세요."
+                            />
+                          </div>
+                          <div class="mo text-center">
+                            <img
+                              src="./assets/images/license/license-mo.png"
+                              alt="아래 대체 텍스트를 확인해주세요."
+                              class="w-100"
+                              style="max-width: 358px"
+                            />
+                          </div>
+                          <div class="hide">
+                            이미지는 자격증 발급 과정의 두 가지 유형을
+                            설명합니다. 왼쪽에는 “수첩형” 발급 과정이,
+                            오른쪽에는 “상장형” 발급 과정이 다이어그램으로
+                            나타나 있습니다.<br />
+                            1. 수첩형 발급 과정:<br />
+                            • 상단에 수첩형 자격증 이미지가 있으며, 아래에 발급
+                            절차가 단계별로 정리되어 있습니다.<br />
+                            • 단계:<br />
+                            1. 자격증 발급신청<br />
+                            2. 수수료 결제<br />
+                            3. 심사 (보완 요청 가능)<br />
+                            4. 승인<br />
+                            5. 발급<br />
+                            6. 발송<br />
+                            2. 상장형 발급 과정:<br />
+                            • 상단에 상장형 자격증 이미지가 있으며, 아래에 발급
+                            절차가 단계별로 정리되어 있습니다.<br />
+                            • 단계:<br />
+                            1. 자격증 발급신청<br />
+                            2. 심사 (보완 요청 가능)<br />
+                            3. 승인<br />
+                            4. 개별 출력<br />
+                            <br />
+                            각 과정은 화살표와 박스를 사용하여 단계별 흐름을
+                            명확히 보여줍니다. “보완 요청”은 필요한 경우 중간
+                            과정에서 발생할 수 있음을 나타냅니다.
+                          </div>
+                        </div>
+                        <div class="kfsi-board-button">
+                          <p>
+                            <a href="" class="btn btn-primary btn-lg"
+                              >재발급 온라인 신청 바로가기</a
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab02-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab02"
+                      tabindex="0"
+                    >
+                      <div class="mb-15 mo-mb-10">
+                        <h4 class="kfsi-h4">대상</h4>
+                        온라인 신청이 불가하거나 인적사항(주민등록번호, 성명 등)
+                        변경을 원하는 신청자
+                      </div>
+                      <div class="mb-15 mo-mb-10">
+                        <h4 class="kfsi-h4">구비서류</h4>
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li
+                              class="d-flex align-items-center column-gap-2 row-gap-1 mo-flex-column mo-align-items-start mb-2"
+                            >
+                              소방안전관리자용 신청서
+                              <a href="" class="btn btn-outline-primary btn-sm">
+                                양식 다운로드
+                                <i class="ico-download"></i>
+                              </a>
+                            </li>
+                            <li
+                              class="d-flex align-items-center column-gap-2 row-gap-1 mo-flex-column mo-align-items-start"
+                            >
+                              위험물안전관리자, 운송자, 운반자용
+                              <a href="" class="btn btn-outline-primary btn-sm">
+                                양식 다운로드
+                                <i class="ico-download"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="fs-14 mt-2">
+                          ※ 위의 양식 안전원 사무실 비치
+                        </div>
+                        <div class="kfsi-table mt-5">
+                          <table
+                            summary="자격증 재발급 안내와 구비서류를 구분별로 제공합니다."
+                          >
+                            <caption>
+                              자격 재발급 안내 구비서류
+                            </caption>
+                            <colgroup>
+                              <col style="width: 270px" />
+                              <col style="width: 670px" />
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">구분</th>
+                                <th scope="col">구비서류</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>자격증(자격수첩)분실</td>
+                                <td>
+                                  <div class="kfsi-textlist">
+                                    <ul>
+                                      <li>자격증 재발급 신청서</li>
+                                      <li>
+                                        반명함판(가로 3.5cm x 세로 4.5cm) 1장
+                                        (최근 6개월 이내에 촬영)
+                                      </li>
+                                      <li>
+                                        수수료 : 수첩형(10,000원), 상장형(무료)
+                                      </li>
+                                      <li>신분증</li>
+                                      <li>
+                                        ※ 대리인 신청 시 신청인 및 대리인 신분증
+                                        지참
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  자격증(자력수첩)이 <br />헐어 못쓰게 된 경우
+                                </td>
+                                <td>
+                                  <div class="kfsi-textlist">
+                                    <ul>
+                                      <li>자격증 재발급 신청서</li>
+                                      <li>훼손된 자격수첩(해당자에 한함)</li>
+                                      <li>
+                                        반명함판(가로 3.5cm x 세로 4.5cm) 1장
+                                        (최근 6개월 이내에 촬영)
+                                      </li>
+                                      <li>
+                                        수수료 : 수첩형(10,000원), 상장형(무료)
+                                      </li>
+                                      <li>신분증</li>
+                                      <li>
+                                        ※ 대리인 신청 시 신청인 및 대리인 신분증
+                                        지참
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  인적사항<br />(주민등록번호, 성명 등)을
+                                  <br />변경한 경우
+                                </td>
+                                <td>
+                                  <div class="kfsi-textlist">
+                                    <ul>
+                                      <li>자격증 재발급 신청서</li>
+                                      <li>
+                                        주민등록 초본 또는 기본증명서 (개명,
+                                        주민등록번호 변경자 등)
+                                      </li>
+                                      <li>
+                                        반명함판(가로 3.5cm x 세로 4.5cm) 1장
+                                        (최근 6개월 이내에 촬영)
+                                      </li>
+                                      <li>
+                                        수수료 : 수첩형(10,000원), 상장형(무료)
+                                      </li>
+                                      <li>신분증</li>
+                                      <li>
+                                        ※ 대리인 신청 시 신청인 및 대리인 신분증
+                                        지참
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

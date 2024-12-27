@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>나의강의실</h2>
+              </div>
+              <div class="kfsi-snb-item-sub active">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >나의 교육 정보 조회</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">납부 내역 조회</a>
+                  <a href="" class="kfsi-snb-item-sub-item">자격 취득 현황</a>
+                  <a href="" class="kfsi-snb-item-sub-item active"
+                    >선임 대상처 현황</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >실무교육 이수기한</a
+                  >
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >진행 중인 교육</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">목차</a>
+                  <a href="" class="kfsi-snb-item-sub-item">평가</a>
+                  <a href="" class="kfsi-snb-item-sub-item">설문</a>
+                </div>
+              </div>
+              <a href="" class="kfsi-snb-item">완료된 교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">나의 강의실</li>
+                    <li class="breadcrumb-item">나의 교육정보 조회</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      선임대상처 상세정보
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>선임대상처 상세정보</h1>
+              </div>
+              <div class="kfsi-mypage">
+                <div class="kfsi-board mb-15 mo-mb-10">
+                  <div class="kfsi-board-head">
+                    <div class="kfsi-board-head-start">
+                      <h4 class="kfsi-h4">선임사항</h4>
+                    </div>
+                    <div
+                      class="kfsi-board-head-end mo-justify-content-start"
+                    ></div>
+                  </div>
+                  <div class="kfsi-board">
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form">
+                        <table
+                          summary="선임사항 정보를 포함하며, 직능, 건물명, 주소, 연락처, 이메일, 신고일, 우편수령지 등의 정보를 제공합니다."
+                        >
+                          <caption>
+                            선임사항 상세 정보
+                          </caption>
+                          <colgroup>
+                            <col style="width: 195px" />
+                            <col style="width: 745px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th>직능</th>
+                              <td>소방기술자</td>
+                            </tr>
+                            <tr>
+                              <th>건물(업체)명</th>
+                              <td>한국소방안전원</td>
+                            </tr>
+                            <tr>
+                              <th>업체 주소</th>
+                              <td>
+                                (072-26) 서울특별시 영등포구 영중로 170
+                                (영등포동8가)
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>업체 연락처</th>
+                              <td>02-2671-8694</td>
+                            </tr>
+                            <tr>
+                              <th>선임자 휴대폰</th>
+                              <td>010-1234-5678</td>
+                            </tr>
+                            <tr>
+                              <th>선임자 이메일</th>
+                              <td>sobang.kim@kfsi.co.kr</td>
+                            </tr>
+                            <tr>
+                              <th>선임 신고일</th>
+                              <td>2014.12.03</td>
+                            </tr>
+                            <tr>
+                              <th>희망 우편수령지</th>
+                              <td>
+                                (072-26) 서울특별시 영등포구 영중로 170
+                                (영등포동8가)
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="kfsi-board-write-button">
+                      <p></p>
+                      <p></p>
+                      <p>
+                        <a
+                          href=""
+                          class="btn btn-outline-dark btn-lg"
+                          style="width: 140px"
+                          >목록</a
+                        >
+                        <a
+                          href=""
+                          class="btn btn-outline-secondary btn-lg"
+                          style="width: 140px"
+                          >삭제</a
+                        >
+                        <a
+                          href=""
+                          class="btn btn-primary btn-lg"
+                          style="width: 140px"
+                          >수정</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

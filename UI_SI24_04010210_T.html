@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>나의강의실</h2>
+              </div>
+              <div class="kfsi-snb-item-sub active">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >나의 교육 정보 조회</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">납부 내역 조회</a>
+                  <a href="" class="kfsi-snb-item-sub-item active"
+                    >자격 취득 현황</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">선임 대상처 현황</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >실무교육 이수기한</a
+                  >
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >진행 중인 교육</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">목차</a>
+                  <a href="" class="kfsi-snb-item-sub-item">평가</a>
+                  <a href="" class="kfsi-snb-item-sub-item">설문</a>
+                </div>
+              </div>
+              <a href="" class="kfsi-snb-item">완료된 교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">나의 강의실</li>
+                    <li class="breadcrumb-item">나의 교육정보 조회</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      자격취득 현황
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>자격취득 현황</h1>
+              </div>
+              <div class="kfsi-mypage">
+                <div class="kfsi-board">
+                  <div class="kfsi-board-head mo-flex-column gap-2">
+                    <div class="kfsi-board-head-start">
+                      <h4 class="kfsi-h4">안전원발급 수첩 현황</h4>
+                    </div>
+                    <div class="kfsi-board-head-end mo-justify-content-start">
+                      <a href="" class="btn btn-link fs-16 mo-fs-15 p-0 h-auto">
+                        <strong>영문/중문 수료증 신청 바로가기</strong>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="pc">
+                    <div class="kfsi-table">
+                      <table
+                        summary="안전원발급 수첩 현황 테이블로, 종목, 수첩번호, 이수/인정일자, 발급사유, 취득확인서를 포함합니다."
+                      >
+                        <caption>
+                          안전원발급 수첩 현황
+                        </caption>
+                        <colgroup>
+                          <col style="width: 200px" />
+                          <col style="width: 240px" />
+                          <col style="width: 180px" />
+                          <col style="width: 110px" />
+                          <col style="width: 210px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">종목</th>
+                            <th scope="col">수첩번호</th>
+                            <th scope="col">이수/인정일자</th>
+                            <th scope="col">발급사유</th>
+                            <th scope="col">취득확인서</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>2급 소방안전관리자</td>
+                            <td>2024-12-34-5-678910</td>
+                            <td>2024.10.23</td>
+                            <td>시험합격</td>
+                            <td>
+                              <div class="d-flex gap-2">
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary btn-sm"
+                                >
+                                  출력하기
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-dark btn-sm"
+                                >
+                                  팩스발송
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2급 소방안전관리자</td>
+                            <td>2024-12-34-5-678910</td>
+                            <td>2024.10.23</td>
+                            <td>시험합격</td>
+                            <td>
+                              <div class="d-flex gap-2">
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary btn-sm"
+                                >
+                                  출력하기
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-dark btn-sm"
+                                >
+                                  팩스발송
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="mo">
+                    <div class="kfsi-list">
+                      <div class="kfsi-list-section">
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">종목</div>
+                          <div class="kfsi-list-item-text">
+                            2급 소방안전관리자
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">수첩번호</div>
+                          <div class="kfsi-list-item-text">
+                            2024-12-34-5-678910
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">이수/인정일자</div>
+                          <div class="kfsi-list-item-text">2024.10.23</div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">발급사유</div>
+                          <div class="kfsi-list-item-text">시험합격</div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">취득확인서</div>
+                          <div class="kfsi-list-item-text">
+                            <div class="d-flex gap-2">
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                출력하기
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-outline-secondary btn-sm"
+                              >
+                                팩스발송
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="kfsi-list-section">
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">종목</div>
+                          <div class="kfsi-list-item-text">
+                            2급 소방안전관리자
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">수첩번호</div>
+                          <div class="kfsi-list-item-text">
+                            2024-12-34-5-678910
+                          </div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">이수/인정일자</div>
+                          <div class="kfsi-list-item-text">2024.10.23</div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">발급사유</div>
+                          <div class="kfsi-list-item-text">시험합격</div>
+                        </div>
+                        <div class="kfsi-list-item">
+                          <div class="kfsi-list-item-title">취득확인서</div>
+                          <div class="kfsi-list-item-text">
+                            <div class="d-flex gap-2">
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                출력하기
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-outline-secondary btn-sm"
+                              >
+                                팩스발송
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
