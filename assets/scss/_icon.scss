@@ -116,6 +116,15 @@
   font-size: 0;
   line-height: 0;
 }
+.ico-download-primary {
+  display: inline-block;
+  min-width: 16px;
+  height: 17px;
+  background: url(../images/icon/ico-download-primary.svg) no-repeat 50% 50%;
+  background-size: cover;
+  font-size: 0;
+  line-height: 0;
+}
 .ico-youtube {
   display: inline-block;
   min-width: 23px;
@@ -304,6 +313,24 @@
   min-width: 15px;
   height: 15px;
   background: url(../images/icon/ico-exclamation-circle.svg) no-repeat 50% 50%;
+  background-size: cover;
+  font-size: 0;
+  line-height: 0;
+}
+.ico-exclamation-alert {
+  display: inline-block;
+  min-width: 80px;
+  height: 80px;
+  background: url(../images/icon/ico-exclamation-alert.png) no-repeat 50% 50%;
+  background-size: cover;
+  font-size: 0;
+  line-height: 0;
+}
+.ico-refresh-alert {
+  display: inline-block;
+  min-width: 80px;
+  height: 80px;
+  background: url(../images/icon/ico-refresh-alert.svg) no-repeat 50% 50%;
   background-size: cover;
   font-size: 0;
   line-height: 0;

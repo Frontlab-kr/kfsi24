@@ -18374,6 +18374,10 @@ small, .small {
   color: #666 !important;
 }
 
+.rounded-3 {
+  border-radius: 10px !important;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -18450,11 +18454,17 @@ small, .small {
   color: #fff !important;
 }
 .btn-outline-primary {
-  color: #333;
+  color: var(--004D16, #004d16) !important;
+  border: 1px solid var(--004D16, #004d16);
+  background: #f8fff4;
+}
+.btn-outline-primary:hover {
+  color: var(--004D16, #004d16);
   border: 1px solid var(--004D16, #004d16);
   background: #f8fff4;
 }
 .btn-outline-dark {
+  background: #fff;
   color: #333;
   border: 1px solid #ddd;
 }
@@ -18470,6 +18480,16 @@ small, .small {
 }
 .btn-outline-secondary:hover {
   background: #e9e9e9;
+  border: solid 1px #ccc;
+  color: #333;
+}
+.btn-outline-warning {
+  border: solid 1px #ccc;
+  color: #333 !important;
+  background: var(--FEF3DD, #fef3dd);
+}
+.btn-outline-warning:hover {
+  background: var(--FEF3DD, #fef3dd);
   border: solid 1px #ccc;
   color: #333;
 }
@@ -18778,6 +18798,16 @@ small, .small {
   line-height: 0;
 }
 
+.ico-download-primary {
+  display: inline-block;
+  min-width: 16px;
+  height: 17px;
+  background: url(../images/icon/ico-download-primary.svg) no-repeat 50% 50%;
+  background-size: cover;
+  font-size: 0;
+  line-height: 0;
+}
+
 .ico-youtube {
   display: inline-block;
   min-width: 23px;
@@ -18991,6 +19021,26 @@ small, .small {
   min-width: 15px;
   height: 15px;
   background: url(../images/icon/ico-exclamation-circle.svg) no-repeat 50% 50%;
+  background-size: cover;
+  font-size: 0;
+  line-height: 0;
+}
+
+.ico-exclamation-alert {
+  display: inline-block;
+  min-width: 80px;
+  height: 80px;
+  background: url(../images/icon/ico-exclamation-alert.png) no-repeat 50% 50%;
+  background-size: cover;
+  font-size: 0;
+  line-height: 0;
+}
+
+.ico-refresh-alert {
+  display: inline-block;
+  min-width: 80px;
+  height: 80px;
+  background: url(../images/icon/ico-refresh-alert.svg) no-repeat 50% 50%;
   background-size: cover;
   font-size: 0;
   line-height: 0;
@@ -19972,6 +20022,162 @@ small, .small {
 }
 .kfsi-upload .dropzone.dz-started .dz-message {
   display: none;
+}
+.kfsi-date {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #666;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+@media screen and (max-width: 992px) {
+  .kfsi-date {
+    flex-wrap: wrap;
+  }
+}
+.kfsi-radio-type1 {
+  display: inline-flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.kfsi-radio-type1 .form-check {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  height: 30px;
+  margin: 0;
+  padding: 6px 8px;
+  border-radius: 5px;
+  border: 1px solid #999;
+  background: #fff;
+}
+.kfsi-radio-type1 .form-check-input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  float: none;
+  width: 100%;
+  height: 100%;
+  background: none;
+  opacity: 0;
+}
+.kfsi-radio-type1 .form-check-input:checked ~ .form-check-label {
+  color: #0f6327;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 133.333% */
+}
+.kfsi-radio-type1 .form-check-input:checked ~ .form-check-label::after {
+  opacity: 1;
+}
+.kfsi-radio-type1 .form-check-label {
+  width: 100%;
+  color: #666;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 133.333% */
+  cursor: pointer;
+}
+.kfsi-radio-type1 .form-check-label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  border-radius: 5px;
+  border: 2px solid #0f6327;
+  opacity: 0;
+}
+@media screen and (max-width: 992px) {
+  .kfsi-radio-type1 {
+    gap: 5px;
+    width: 100%;
+  }
+  .kfsi-radio-type1 .form-check {
+    width: 100%;
+  }
+}
+.kfsi-radio-type2 {
+  display: inline-flex;
+  gap: 10px;
+  width: 100%;
+}
+.kfsi-radio-type2 .form-check {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  min-height: 40px;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  border: 1px solid #999;
+  background: #fff;
+}
+.kfsi-radio-type2 .form-check-input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  float: none;
+  width: 100%;
+  height: 100%;
+  background: none;
+  opacity: 0;
+}
+.kfsi-radio-type2 .form-check-input:checked ~ .form-check-label {
+  color: #004d16;
+  background: var(--E4F2D3, #e4f2d3);
+}
+.kfsi-radio-type2 .form-check-input:checked ~ .form-check-label::after {
+  opacity: 1;
+}
+.kfsi-radio-type2 .form-check-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+  color: #666;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  text-align: center;
+  cursor: pointer;
+}
+.kfsi-radio-type2 .form-check-label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  border-radius: 0;
+  border: 1px solid var(--004D16, #004d16);
+  opacity: 0;
 }
 
 .kfsi-write {
@@ -22232,6 +22438,12 @@ body {
   }
   .mo-flex-column-reverse {
     flex-direction: column-reverse !important;
+  }
+  .mo-flex-nowrap {
+    flex-wrap: nowrap;
+  }
+  .mo-w-100 {
+    width: 100% !important;
   }
 }
 @media screen and (max-width: 992px) {
@@ -27132,6 +27344,21 @@ body {
   line-height: normal;
   letter-spacing: 0.48px;
 }
+.kfsi-board-list table tbody th {
+  height: 40px;
+  padding: 10px 10px;
+  background: var(--E4F2D3, #e4f2d3);
+  border-bottom: 1px solid #ccc;
+  color: #000;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  vertical-align: middle;
+}
 .kfsi-board-list table tbody td {
   height: 40px;
   padding: 10px 10px;
@@ -27780,8 +28007,7 @@ body {
 .kfsi-board-write-form table {
   width: 100%;
 }
-.kfsi-board-write-form table tbody th {
-  height: 55px;
+.kfsi-board-write-form table thead th {
   padding: 10px 10px;
   border-bottom: 1px solid #ccc;
   background: var(--E4F2D3, #e4f2d3);
@@ -27795,9 +28021,25 @@ body {
   letter-spacing: 0.48px;
   word-break: keep-all;
 }
+.kfsi-board-write-form table tbody th {
+  padding: 10px 10px;
+  border-bottom: 1px solid #ccc;
+  background: var(--E4F2D3, #e4f2d3);
+  color: #000;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  word-break: keep-all;
+}
+.kfsi-board-write-form table tbody th + th {
+  border-left: 1px solid #ccc;
+}
 .kfsi-board-write-form table tbody td {
-  height: 55px;
-  padding: 10px 20px;
+  padding: 10px 10px;
   border-bottom: 1px solid #ccc;
   color: #333;
   font-family: Pretendard;
@@ -27806,6 +28048,9 @@ body {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.48px;
+}
+.kfsi-board-write-form table tbody td + td {
+  border-left: 1px solid #ccc;
 }
 .kfsi-board-write-form--border table thead th {
   border-left: 1px solid #ccc;
@@ -28202,7 +28447,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 10px;
     margin-top: 40px;
   }
   .kfsi-board-button--length3 {
@@ -28584,7 +28829,35 @@ body {
     color: #000;
     word-break: keep-all;
   }
-  .kfsi-board-write-form .form-control,
+  .kfsi-board-write-form table tbody td table tbody th {
+    min-width: auto;
+    width: auto;
+    height: 100%;
+    padding: 6px;
+    border-bottom: 1px solid #ccc;
+    background: #e4f2d3;
+    color: #000;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 133.333% */
+  }
+  .kfsi-board-write-form table tbody td table tbody td {
+    min-width: auto;
+    width: auto;
+    height: 100%;
+    padding: 6px;
+    color: #000;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 133.333% */
+  }
+  .kfsi-board-write-form .form-control:not([type=date]),
   .kfsi-board-write-form .form-select {
     min-width: auto !important;
     width: 100% !important;
@@ -31963,7 +32236,7 @@ body {
 .kfsi-mypage-address {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
 }
 .kfsi-mypage-address-post {
   display: flex;
@@ -32037,7 +32310,6 @@ body {
 .kfsi-agree-form__title {
   padding: 6px 20px;
   border-top: 2px solid var(--004D16, #004d16);
-  border-bottom: 1px solid #ccc;
   background: #e4f2d3;
   color: var(--004D16, #004d16);
   font-family: Pretendard;
@@ -32049,6 +32321,7 @@ body {
 }
 .kfsi-agree-form__contents {
   padding: 30px;
+  border-top: 1px solid #ccc;
   color: #000;
   font-family: Pretendard;
   font-size: 16px;
@@ -32059,16 +32332,32 @@ body {
   word-break: keep-all;
 }
 .kfsi-agree-form__foot {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 8px;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   background: #f6f6f6;
+  text-align: center;
 }
 .kfsi-agree-form__foot .form-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   margin: 0;
+  padding: 0;
+}
+.kfsi-agree-form__foot .form-check-input {
+  margin-bottom: 5px;
+}
+.kfsi-agree-form .kfsi-table table {
+  border: none;
+}
+.kfsi-agree-form .kfsi-table table a {
+  color: #000;
+}
+.kfsi-agree-form .kfsi-table table th,
+.kfsi-agree-form .kfsi-table table td {
+  font-size: 14px;
 }
 @media screen and (max-width: 992px) {
   .kfsi-agree-form__title {
@@ -32103,10 +32392,6 @@ body {
     border-bottom: none;
   }
   .kfsi-agree-form__foot {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-wrap: wrap;
     padding: 8px;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
