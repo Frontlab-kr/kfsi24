@@ -43,6 +43,15 @@
   font-size: 0;
   line-height: 0;
 }
+.ico-newwindow-white {
+  display: inline-block;
+  min-width: 19px;
+  height: 19px;
+  background: url(../images/icon/ico-newwindow-white.svg) no-repeat 50% 50%;
+  background-size: cover;
+  font-size: 0;
+  line-height: 0;
+}
 .ico-search {
   display: inline-block;
   min-width: 17px;
@@ -331,6 +340,42 @@
   min-width: 80px;
   height: 80px;
   background: url(../images/icon/ico-refresh-alert.svg) no-repeat 50% 50%;
+  background-size: cover;
+  font-size: 0;
+  line-height: 0;
+}
+.ico-warning-alert {
+  display: inline-block;
+  min-width: 75px;
+  height: 75px;
+  background: url(../images/icon/ico-warning-alert.png) no-repeat 50% 50%;
+  background-size: cover;
+  font-size: 0;
+  line-height: 0;
+}
+.ico-check-alert {
+  display: inline-block;
+  min-width: 70px;
+  height: 70px;
+  background: url(../images/icon/ico-check-alert.png) no-repeat 50% 50%;
+  background-size: cover;
+  font-size: 0;
+  line-height: 0;
+}
+.ico-bookmark {
+  display: inline-block;
+  min-width: 9px;
+  height: 11px;
+  background: url(../images/icon/ico-bookmark.svg) no-repeat 50% 50%;
+  background-size: cover;
+  font-size: 0;
+  line-height: 0;
+}
+.ico-yes24 {
+  display: inline-block;
+  min-width: 42px;
+  height: 45px;
+  background: url(../images/icon/ico-yes24.png) no-repeat 50% 50%;
   background-size: cover;
   font-size: 0;
   line-height: 0;

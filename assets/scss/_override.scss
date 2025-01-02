@@ -25,7 +25,7 @@ strong {
       font-size: #{$i}px !important;
     }
   }
-  @for $i from 1 through 10 {
+  @for $i from 0 through 20 {
     .mo-mt-#{$i} {
       margin-top: #{4 * $i}px !important;
     }
@@ -37,6 +37,18 @@ strong {
     }
     .mo-ms-#{$i} {
       margin-left: #{4 * $i}px !important;
+    }
+    .mo-pt-#{$i} {
+      padding-top: #{4 * $i}px !important;
+    }
+    .mo-pe-#{$i} {
+      padding-right: #{4 * $i}px !important;
+    }
+    .mo-pb-#{$i} {
+      padding-bottom: #{4 * $i}px !important;
+    }
+    .mo-ps-#{$i} {
+      padding-left: #{4 * $i}px !important;
     }
   }
 }
@@ -268,18 +280,26 @@ small {
 .was-validated .form-control:valid,
 .form-control.is-valid {
   border-color: #ccc;
-  background: url(../images/icon/ico-valid.svg) no-repeat calc(100% - 7px) 50%;
+  background: #fff url(../images/icon/ico-valid.svg) no-repeat calc(100% - 7px)
+    50%;
   background-size: 19px 14px;
 }
 .was-validated .form-control:invalid,
 .form-control.is-invalid {
   border-color: #ccc;
-  background: url(../images/icon/ico-invalid.svg) no-repeat calc(100% - 0px) 50%;
+  background: #fff url(../images/icon/ico-invalid.svg) no-repeat
+    calc(100% - 0px) 50%;
   background-size: 28px 28px;
 }
 .invalid-feedback {
-  margin-top: 10px;
+  margin: 5px 0 0 10px;
   font-size: 14px;
+}
+.bg-warning-subtle {
+  background: var(--FEF3DD, #fef3dd) !important;
+}
+.bg-light {
+  background: var(--f6f6f6, #f6f6f6) !important;
 }
 .badge {
   padding: 3px 9px;
@@ -308,6 +328,12 @@ small {
   }
   &.text-bg-primary-light {
     background: var(--009732, #009732) !important;
+  }
+  &.text-bg-info {
+    background: #389edd !important;
+  }
+  &.text-bg-dark {
+    background: #565656 !important;
   }
   &-outline-dark {
     border: solid 1px #333;

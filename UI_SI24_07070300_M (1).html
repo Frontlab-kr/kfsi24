@@ -11,6 +11,9 @@
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
 
+    <!-- dropzone -->
+    <script src="./assets/js/dropzone.min.js"></script>
+
     <!-- js -->
     <script src="./assets/js/common.js"></script>
 
@@ -45,26 +48,175 @@
                     <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
                     <li class="breadcrumb-item">자격발급 신청</li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      자격 발급 진위확인
+                      자격 발급 진위확인(다건)
                     </li>
                   </ol>
                 </nav>
               </div>
               <div class="kfsi-contents-title">
-                <h1>자격 발급 진위확인</h1>
+                <h1>자격 발급 진위확인(다건)</h1>
               </div>
               <div class="kfsi-license">
-                <div class="kfsi-mypage-none">
-                  <p>
-                    죄송합니다.<br />
-                    입력하신 내용으로는 안전원에서 발급된 자격수첩을 찾을 수
-                    없습니다.
-                  </p>
+                <div class="mb-15 mo-mb-10">
+                  <div class="kfsi-textlist">
+                    <ul>
+                      <li>
+                        여러명의 자격 발급 진위확인 사실 여부를 한번에 확인하는
+                        서비스입니다.
+                      </li>
+                      <li>
+                        자격 취득 확인을 발급 받기를 원하실 경우, 자격발급 신청
+                        〉 자격 취득확인 메뉴를 이용하세요.
+                      </li>
+                      <li>
+                        자격 취득이 확인되지 않는 경우
+                        <span class="text-danger">자격발급 지부</span>로
+                        문의바랍니다.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="mb-15 mo-mb-10">
+                  <div
+                    class="d-flex align-items-center column-gap-5 row-gap-3 mb-5 mo-flex-column mo-align-items-start"
+                  >
+                    <h4 class="kfsi-h4 m-0">
+                      업로드 양식을 다운로드 받아 작성 후 업로드 해주세요.
+                    </h4>
+                    <div class="mo-w-100 text-center">
+                      <a
+                        href=""
+                        class="btn btn-outline-primary btn-sm rounded-3"
+                      >
+                        양식 다운로드
+                        <i class="ico-download-primary"></i>
+                      </a>
+                    </div>
+                  </div>
+                  양식 작성 가이드
+                </div>
+                <div>
+                  <h4 class="kfsi-h4">
+                    양식을 작성하여 저장 후 파일을 업로드 해주세요.
+                  </h4>
+                  <div class="kfsi-upload">
+                    <div id="dropzone">
+                      <form
+                        class="dropzone needsclick"
+                        id="demo-upload"
+                        action="/upload"
+                      >
+                        <div class="dz-message needsclick">
+                          <div class="dz-message__title">
+                            <i class="ico-file-plus"></i>
+                            파일을 이곳에 드래그하세요.<br />
+                          </div>
+                          <small>(또는 클릭하여 파일을 선택하세요)</small>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <script>
+                    var dropzone = new Dropzone('#demo-upload', {
+                      previewTemplate:
+                        document.querySelector('#preview-template').innerHTML,
+                      parallelUploads: 2,
+                      thumbnailHeight: 120,
+                      thumbnailWidth: 120,
+                      maxFilesize: 3, // 최대 파일 크기 (MB)
+                      filesizeBase: 1000,
+                      dictDefaultMessage: '파일을 이곳에 드래그하세요.', // 기본 메시지
+                      dictFallbackMessage:
+                        '이 브라우저는 드래그 앤 드롭 파일 업로드를 지원하지 않습니다.',
+                      dictFileTooBig:
+                        '파일 크기가 너무 큽니다 ({{filesize}}MB). 최대 크기: {{maxFilesize}}MB.',
+                      dictInvalidFileType:
+                        '이 파일 형식은 업로드할 수 없습니다.',
+                      dictResponseError:
+                        '서버에서 {{statusCode}} 에러가 발생했습니다.',
+                      dictCancelUpload: '업로드 취소',
+                      dictCancelUploadConfirmation:
+                        '이 업로드를 정말 취소하시겠습니까?',
+                      dictRemoveFile: '파일 삭제',
+                      dictMaxFilesExceeded:
+                        '더 이상 파일을 업로드할 수 없습니다.',
+                      thumbnail: function (file, dataUrl) {
+                        if (file.previewElement) {
+                          file.previewElement.classList.remove(
+                            'dz-file-preview'
+                          );
+                          var images = file.previewElement.querySelectorAll(
+                            '[data-dz-thumbnail]'
+                          );
+                          for (var i = 0; i < images.length; i++) {
+                            var thumbnailElement = images[i];
+                            thumbnailElement.alt = file.name;
+                            thumbnailElement.src = dataUrl;
+                          }
+                          setTimeout(function () {
+                            file.previewElement.classList.add(
+                              'dz-image-preview'
+                            );
+                          }, 1);
+                        }
+                      },
+                    });
+
+                    // 파일 업로드 시 시뮬레이션
+                    var minSteps = 6,
+                      maxSteps = 60,
+                      timeBetweenSteps = 100,
+                      bytesPerStep = 100000;
+
+                    dropzone.uploadFiles = function (files) {
+                      var self = this;
+
+                      for (var i = 0; i < files.length; i++) {
+                        var file = files[i];
+                        totalSteps = Math.round(
+                          Math.min(
+                            maxSteps,
+                            Math.max(minSteps, file.size / bytesPerStep)
+                          )
+                        );
+
+                        for (var step = 0; step < totalSteps; step++) {
+                          var duration = timeBetweenSteps * (step + 1);
+                          setTimeout(
+                            (function (file, totalSteps, step) {
+                              return function () {
+                                file.upload = {
+                                  progress: (100 * (step + 1)) / totalSteps,
+                                  total: file.size,
+                                  bytesSent:
+                                    ((step + 1) * file.size) / totalSteps,
+                                };
+
+                                self.emit(
+                                  'uploadprogress',
+                                  file,
+                                  file.upload.progress,
+                                  file.upload.bytesSent
+                                );
+                                if (file.upload.progress == 100) {
+                                  file.status = Dropzone.SUCCESS;
+                                  self.emit('success', file, 'success', null);
+                                  self.emit('complete', file);
+                                  self.processQueue();
+                                }
+                              };
+                            })(file, totalSteps, step),
+                            duration
+                          );
+                        }
+                      }
+                    };
+                  </script>
                 </div>
                 <div class="kfsi-button">
                   <p>
                     <button type="button" class="btn btn-primary btn-lg">
-                      진위여부 다시 확인
+                      발급 여부 확인
                     </button>
                   </p>
                 </div>

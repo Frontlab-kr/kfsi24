@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- dropzone -->
+    <script src="./assets/js/dropzone.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>회원서비스 신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">회원서비스 안내</a>
+              <a href="" class="kfsi-snb-item active">재해위로금</a>
+              <a href="" class="kfsi-snb-item">소방안전장학금</a>
+              <a href="" class="kfsi-snb-item">퀴즈이벤트</a>
+              <a href="" class="kfsi-snb-item">전자도서관</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">회원서비스 신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      재해위로금 신청
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>재해위로금 신청</h1>
+              </div>
+              <div class="kfsi-member">
+                <div class="mb-15">
+                  <h4 class="kfsi-h4">지급기준을 선택해 주세요.</h4>
+                  <div class="d-flex flex-wrap gap-12 mb-5 mo-mb-15 mo-ms-6">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="radio1"
+                        id="radio1-1"
+                      />
+                      <label class="form-check-label" for="radio1-1">
+                        사망
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="radio1"
+                        id="radio1-2"
+                        checked
+                      />
+                      <label class="form-check-label" for="radio1-2">
+                        부상
+                      </label>
+                    </div>
+                  </div>
+                  <div class="kfsi-agree-form">
+                    <div class="kfsi-agree-form__title">
+                      개인정보 수집 · 이용동의 [필수]
+                    </div>
+                    <div class="kfsi-agree-form__contents">
+                      회원재해위로금 신청을 위해 「개인정보 보호법」에 따라
+                      개인정보 수집∙이용 동의를 받고자 합니다.<br />
+                      <div class="pc my-5">
+                        <div class="kfsi-table">
+                          <table
+                            summary="개인정보 수집 및 이용에 대한 동의 항목으로, 수집·이용 항목, 세부 항목, 보유 및 이용 기간에 대한 정보를 제공합니다."
+                          >
+                            <caption>
+                              개인정보 수집 및 이용 동의 [필수]
+                            </caption>
+                            <colgroup>
+                              <col style="width: 240px" />
+                              <col style="width: 400px" />
+                              <col style="width: 240px" />
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">수집·이용 항목</th>
+                                <th scope="col">항목</th>
+                                <th scope="col">보유 · 이용기간</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><a href="">회원재해위로금 신청 업무</a></td>
+                                <td class="text-start">
+                                  ⦁ 신청인정보: 성명, 생년월일, 업체명,
+                                  전화번호, 업체주소, 화재발생개요, 기타 관련
+                                  서류(화재증명원, 진단서 등)<br />
+                                  ⦁  기타정보(해당시에만 제출): 가족관계증명서
+                                </td>
+                                <td><a href="">5년</a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="mo my-5">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              수집, 이용 항목 :
+                              <a href="">회원재해위로금 신청 업무</a>
+                            </li>
+                            <li>
+                              항목 : ⦁ 신청인정보: 성명, 생년월일, 업체명,
+                              전화번호, 업체주소, 화재발생개요, 기타 관련
+                              서류(화재증명원, 진단서 등) ⦁  기타정보(해당시에만
+                              제출): 가족관계증명서
+                            </li>
+                            <li>보유 · 이용기간 : <a href="">5년</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      ※ 동의를 거부할 수 있으며, 동의 거부 시 회원재해위로금
+                      신청이 불가합니다.
+                    </div>
+                    <div class="kfsi-agree-form__foot">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox02"
+                        />
+                        <label class="form-check-label" for="checkbox02">
+                          위 개인정보 수집·이용에 동의합니다.
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-15">
+                  <div
+                    class="d-flex align-items-center mb-5 mo-flex-column mo-align-items-start mo-mb-3"
+                  >
+                    <h4 class="kfsi-h4 m-0 mo-mb-2 me-5">
+                      신청자 정보를 입력해 주세요.
+                    </h4>
+                    <span class="text-danger">※ 필수 입력항목입니다.</span>
+                  </div>
+                  <div class="kfsi-member-form">
+                    <div class="kfsi-member-form-item">
+                      <div class="kfsi-member-form-item-title">
+                        성명 <span class="text-danger">*</span>
+                      </div>
+                      <div class="kfsi-member-form-item-contents">
+                        <input
+                          type="text"
+                          class="form-control w-100 is-invalid"
+                          title="성명을 입력해주세요(홍길동)"
+                          placeholder="성명을 입력해주세요(홍길동)"
+                        />
+                        <div class="invalid-feedback">
+                          성명을 확인해 주세요.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-member-form-item">
+                      <div class="kfsi-member-form-item-title">
+                        생년월일 <span class="text-danger">*</span>
+                      </div>
+                      <div class="kfsi-member-form-item-contents">
+                        <input
+                          type="text"
+                          class="form-control w-100 is-invalid"
+                          title="생년월일을 입력해주세요(1971-11-09)"
+                          placeholder="생년월일을 입력해주세요(1971-11-09)"
+                        />
+                        <div class="invalid-feedback">
+                          생년월일(YYYY-MM-DD)을 확인해 주세요.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-member-form-item">
+                      <div class="kfsi-member-form-item-title">
+                        업체명 <span class="text-danger">*</span>
+                      </div>
+                      <div class="kfsi-member-form-item-contents">
+                        <input
+                          type="text"
+                          class="form-control w-100 is-invalid"
+                          title="업체명을 입력해주세요"
+                          placeholder="업체명을 확인해 주세요."
+                        />
+                        <div class="invalid-feedback">
+                          업체명을 확인해 주세요.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-member-form-item">
+                      <div class="kfsi-member-form-item-title">
+                        연락처 <span class="text-danger">*</span>
+                      </div>
+                      <div class="kfsi-member-form-item-contents">
+                        <div class="kfsi-mypage-phone">
+                          <div class="kfsi-mypage-phone-input">
+                            <select
+                              class="form-select"
+                              aria-label="연락처 앞자리 선택"
+                              title="연락처 앞자리 선택"
+                              style="min-width: 80px; width: 80px"
+                            >
+                              <option selected>선택</option>
+                            </select>
+                            -
+                            <input
+                              type="text"
+                              class="form-control"
+                              title="연락처 중간 자리 입력"
+                              style="min-width: 80px; width: 80px"
+                            />
+                            -
+                            <input
+                              type="text"
+                              class="form-control"
+                              title="연락처 마지막 자리 입력"
+                              style="min-width: 80px; width: 80px"
+                            />
+                          </div>
+                        </div>
+                        <div class="invalid-feedback d-block">
+                          번호를 확인해 주세요.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-member-form-item">
+                      <div class="kfsi-member-form-item-title">
+                        직능 <span class="text-danger">*</span>
+                      </div>
+                      <div class="kfsi-member-form-item-contents">
+                        <select
+                          class="form-select w-100"
+                          aria-label="직능 선택"
+                          title="직능 선택"
+                        >
+                          <option selected>선택</option>
+                        </select>
+                        <div class="invalid-feedback d-block">
+                          직능을 선택해 주세요.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-15">
+                  <h4 class="kfsi-h4">화재발생개요</h4>
+                  <div class="kfsi-member-form kfsi-member-form--grid1">
+                    <div class="kfsi-member-form-item">
+                      <div class="kfsi-member-form-item-title">
+                        발생일시 <span class="text-danger">*</span>
+                      </div>
+                      <div class="kfsi-member-form-item-contents">
+                        <div class="d-flex flex-wrap gap-1">
+                          <input
+                            type="date"
+                            class="form-control"
+                            title="발생일시"
+                          />
+                          <select
+                            class="form-select"
+                            aria-label="시간 선택"
+                            title="시간 선택"
+                            style="min-width: auto"
+                          >
+                            <option selected>시간</option>
+                          </select>
+                        </div>
+                        <div class="invalid-feedback d-block">
+                          발생일시를 입력해 주세요.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-member-form-item">
+                      <div class="kfsi-member-form-item-title">
+                        발생장소 <span class="text-danger">*</span>
+                      </div>
+                      <div class="kfsi-member-form-item-contents">
+                        <input
+                          type="text"
+                          class="form-control w-100 is-invalid"
+                          title="발생장소을 입력해주세요"
+                          placeholder="발생장소을 입력해주세요"
+                        />
+                        <div class="invalid-feedback d-block">
+                          발생장소을 입력해주세요
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-member-form-item">
+                      <div class="kfsi-member-form-item-title">
+                        화재원인 <br />
+                        및 발생경위 <span class="text-danger">*</span>
+                      </div>
+                      <div class="kfsi-member-form-item-contents">
+                        <textarea
+                          class="form-control w-100 d-block"
+                          rows="3"
+                          placeholder="화재원인 및 발생경위를 입력해 주세요."
+                          title="화재원인 및 발생경위를 입력해 주세요."
+                          style="height: 60px"
+                        ></textarea>
+                        <div class="invalid-feedback d-block">
+                          화재원인 및 발생경위를 입력해 주세요.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-member-form-item">
+                      <div class="kfsi-member-form-item-title">
+                        인명<br />
+                        피해사항 <span class="text-danger">*</span>
+                      </div>
+                      <div class="kfsi-member-form-item-contents">
+                        <div
+                          class="d-flex align-items-center flex-wrap row-gap-2"
+                        >
+                          <p class="d-flex align-items-center m-0">
+                            사망
+                            <input
+                              type="text"
+                              class="form-control ms-2 me-1"
+                              title="사망"
+                              style="min-width: 50px; width: 50px"
+                            />
+                            명
+                          </p>
+                          <span
+                            class="mx-5 mo-ms-2 mo-me-2"
+                            style="width: 1px; height: 25px; background: #000"
+                          ></span>
+                          <p class="d-flex align-items-center m-0">
+                            부상
+                            <input
+                              type="text"
+                              class="form-control ms-2 me-1"
+                              title="부상"
+                              style="min-width: 50px; width: 50px"
+                            />
+                            명
+                          </p>
+                        </div>
+                        <div class="invalid-feedback d-block">
+                          인명피해사항을 숫자로 입력해 주세요.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-member-form-item">
+                      <div class="kfsi-member-form-item-title">기타</div>
+                      <div class="kfsi-member-form-item-contents">
+                        <input
+                          type="text"
+                          class="form-control w-100"
+                          title="기타 사항을 입력해주세요"
+                          placeholder="기타 사항을 입력해주세요"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-15">
+                  <div class="kfsi-member-accordion">
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <div class="accordion-button">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="checkbox01"
+                              />
+                              <label class="form-check-label" for="checkbox01">
+                                신청자가 회원본인이 아닌 경우 체크해 주세요.
+                              </label>
+                            </div>
+                            <button
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne"
+                              aria-expanded="true"
+                              aria-controls="collapseOne"
+                            >
+                              열기
+                            </button>
+                          </div>
+                        </h2>
+                        <div
+                          id="collapseOne"
+                          class="accordion-collapse collapse show"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <p class="m-0 mb-5">
+                              ■ 신청자가 회원본인이 아닌 경우, 아래 항목을
+                              반드시 입력해 주세요.
+                            </p>
+                            <div class="kfsi-member-form">
+                              <div class="kfsi-member-form-item">
+                                <div class="kfsi-member-form-item-title">
+                                  성명 <span class="text-danger">*</span>
+                                </div>
+                                <div class="kfsi-member-form-item-contents">
+                                  <input
+                                    type="text"
+                                    class="form-control w-100 is-invalid"
+                                    title="성명을 입력해주세요(홍길동)"
+                                    placeholder="성명을 입력해주세요(홍길동)"
+                                  />
+                                  <div class="invalid-feedback">
+                                    성명을 확인해 주세요.
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="kfsi-member-form-item">
+                                <div class="kfsi-member-form-item-title">
+                                  생년월일 <span class="text-danger">*</span>
+                                </div>
+                                <div class="kfsi-member-form-item-contents">
+                                  <input
+                                    type="text"
+                                    class="form-control w-100 is-invalid"
+                                    title="생년월일을 입력해주세요(1971-11-09)"
+                                    placeholder="생년월일을 입력해주세요(1971-11-09)"
+                                  />
+                                  <div class="invalid-feedback">
+                                    생년월일(YYYY-MM-DD)을 확인해 주세요.
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="kfsi-member-form-item kfsi-member-form-item--100"
+                              >
+                                <div class="kfsi-member-form-item-title">
+                                  주소 <span class="text-danger">*</span>
+                                </div>
+                                <div class="kfsi-member-form-item-contents">
+                                  <div class="kfsi-mypage-address">
+                                    <div class="kfsi-mypage-address-post">
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        value="12345"
+                                        style="min-width: 110px; width: 110px"
+                                        readonly
+                                        title="우편번호"
+                                      />
+                                      <a
+                                        href=""
+                                        class="btn btn-secondary btn-sm"
+                                        >우편번호찾기
+                                        <i class="ico-post"></i>
+                                      </a>
+                                    </div>
+                                    <div class="kfsi-mypage-address-input">
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        value="서울특별시 강남구 도산대로 523 한성빌딩"
+                                        style="min-width: 460px; width: 460px"
+                                        readonly
+                                        title="주소"
+                                      />
+                                    </div>
+                                    <div class="kfsi-mypage-address-input">
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        value="106호"
+                                        style="min-width: 460px; width: 460px"
+                                        title="상세 주소"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="invalid-feedback d-block">
+                                    주소를 확인해 주세요.
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="kfsi-member-form-item">
+                                <div class="kfsi-member-form-item-title">
+                                  연락처 <span class="text-danger">*</span>
+                                </div>
+                                <div class="kfsi-member-form-item-contents">
+                                  <div class="kfsi-mypage-phone">
+                                    <div class="kfsi-mypage-phone-input">
+                                      <select
+                                        class="form-select"
+                                        aria-label="연락처 앞자리 선택"
+                                        title="연락처 앞자리 선택"
+                                        style="min-width: 80px; width: 80px"
+                                      >
+                                        <option selected>선택</option>
+                                      </select>
+                                      -
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        title="연락처 중간 자리 입력"
+                                        style="min-width: 80px; width: 80px"
+                                      />
+                                      -
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        title="연락처 마지막 자리 입력"
+                                        style="min-width: 80px; width: 80px"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="invalid-feedback d-block">
+                                    번호를 확인해 주세요.
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="kfsi-member-form-item">
+                                <div class="kfsi-member-form-item-title">
+                                  유선전화
+                                </div>
+                                <div class="kfsi-member-form-item-contents">
+                                  <div class="kfsi-mypage-phone">
+                                    <div class="kfsi-mypage-phone-input">
+                                      <select
+                                        class="form-select"
+                                        aria-label="유선전화 앞자리 선택"
+                                        title="유선전화 앞자리 선택"
+                                        style="min-width: 80px; width: 80px"
+                                      >
+                                        <option selected>선택</option>
+                                      </select>
+                                      -
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        title="유선전화 중간 자리 입력"
+                                        style="min-width: 80px; width: 80px"
+                                      />
+                                      -
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        title="유선전화 마지막 자리 입력"
+                                        style="min-width: 80px; width: 80px"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="invalid-feedback d-block">
+                                    번호를 확인해 주세요.
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="kfsi-member-form-item kfsi-member-form-item--100"
+                              >
+                                <div class="kfsi-member-form-item-title">
+                                  회원과의 관계
+                                  <span class="text-danger">*</span>
+                                </div>
+                                <div class="kfsi-member-form-item-contents">
+                                  <div
+                                    class="d-flex column-gap-10 row-gap-2 mo-flex-column"
+                                  >
+                                    <div class="d-flex align-items-center">
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="radio"
+                                          name="radio2"
+                                          id="radio2-1"
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="radio2-1"
+                                        >
+                                          배우자
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="radio"
+                                          name="radio2"
+                                          id="radio2-2"
+                                          checked
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="radio2-2"
+                                        >
+                                          자녀
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="d-flex align-items-center gap-5"
+                                    >
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="radio"
+                                          name="radio2"
+                                          id="radio2-3"
+                                          checked
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="radio2-3"
+                                        >
+                                          기타
+                                        </label>
+                                      </div>
+                                      <input
+                                        type="text"
+                                        class="form-control w-100"
+                                        style="max-width: 200px"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="invalid-feedback d-block">
+                                    회원과의 관계를 확인해 주세요.
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-15">
+                  <h4 class="kfsi-h4">유의사항</h4>
+                  <div>
+                    신청자격은 회원 및 배우자, 자녀(미성년자의 경우 법정대리인
+                    포함), 부모, 조부모, 형제자매이며, 지급대상은 부상의 경우
+                    회원, 사망의 경우 ①배우자, ②자녀(미성년자의 경우 법정대리인
+                    포함), ③부모, ④손(孫), ⑤조부모 중 선 순위자 임
+                  </div>
+                </div>
+                <div class="mb-15">
+                  <h4 class="kfsi-h4">구비서류 파일첨부</h4>
+                  <div class="kfsi-board">
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form">
+                        <table
+                          summary="사망, 부상, 공통 서류 및 파일 첨부 내용을 제공합니다."
+                        >
+                          <caption>
+                            구비서류 및 파일첨부
+                          </caption>
+                          <colgroup>
+                            <col style="width: 180px" />
+                            <col style="width: 760px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row">사망</th>
+                              <td>
+                                1. 사망증명서류 2. 사망자 가족관계증명서(등록부)
+                                3. 법정대리인이 신청 시 대리인 증명 가능서류 4.
+                                위임장(유족 중 선순위자가 2인 이상인 경우
+                                선순위자 모두의 인 감날인 및 인감증명 첨부)
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">부상</th>
+                              <td>
+                                1. 부상증명서류 2. 가족관계증명서(신청자가 회원
+                                본인이 아닌 경우) 3. 위임장(신청자가 회원 본인이
+                                아닌 경우)
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">공통</th>
+                              <td>
+                                1. 화재사실증명서류(소방서, 경찰서, 보험사 발급)
+                                2. 신분증 사본(회원 또는 신청자) 3. 통장
+                                사본(회원 또는 신청자 명의)
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">파일첨부</th>
+                              <td>
+                                <div class="kfsi-upload">
+                                  <div id="dropzone">
+                                    <form
+                                      class="dropzone needsclick"
+                                      id="demo-upload"
+                                      action="/upload"
+                                    >
+                                      <div class="dz-message needsclick">
+                                        <div class="dz-message__title">
+                                          <i class="ico-file-plus"></i>
+                                          파일을 이곳에 드래그하세요.<br />
+                                        </div>
+                                        <small
+                                          >(또는 클릭하여 파일을
+                                          선택하세요)</small
+                                        >
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                                <script>
+                                  var dropzone = new Dropzone('#demo-upload', {
+                                    previewTemplate:
+                                      document.querySelector(
+                                        '#preview-template'
+                                      ).innerHTML,
+                                    parallelUploads: 2,
+                                    thumbnailHeight: 120,
+                                    thumbnailWidth: 120,
+                                    maxFilesize: 3, // 최대 파일 크기 (MB)
+                                    filesizeBase: 1000,
+                                    dictDefaultMessage:
+                                      '파일을 이곳에 드래그하세요.', // 기본 메시지
+                                    dictFallbackMessage:
+                                      '이 브라우저는 드래그 앤 드롭 파일 업로드를 지원하지 않습니다.',
+                                    dictFileTooBig:
+                                      '파일 크기가 너무 큽니다 ({{filesize}}MB). 최대 크기: {{maxFilesize}}MB.',
+                                    dictInvalidFileType:
+                                      '이 파일 형식은 업로드할 수 없습니다.',
+                                    dictResponseError:
+                                      '서버에서 {{statusCode}} 에러가 발생했습니다.',
+                                    dictCancelUpload: '업로드 취소',
+                                    dictCancelUploadConfirmation:
+                                      '이 업로드를 정말 취소하시겠습니까?',
+                                    dictRemoveFile: '파일 삭제',
+                                    dictMaxFilesExceeded:
+                                      '더 이상 파일을 업로드할 수 없습니다.',
+                                    thumbnail: function (file, dataUrl) {
+                                      if (file.previewElement) {
+                                        file.previewElement.classList.remove(
+                                          'dz-file-preview'
+                                        );
+                                        var images =
+                                          file.previewElement.querySelectorAll(
+                                            '[data-dz-thumbnail]'
+                                          );
+                                        for (
+                                          var i = 0;
+                                          i < images.length;
+                                          i++
+                                        ) {
+                                          var thumbnailElement = images[i];
+                                          thumbnailElement.alt = file.name;
+                                          thumbnailElement.src = dataUrl;
+                                        }
+                                        setTimeout(function () {
+                                          file.previewElement.classList.add(
+                                            'dz-image-preview'
+                                          );
+                                        }, 1);
+                                      }
+                                    },
+                                  });
+
+                                  // 파일 업로드 시 시뮬레이션
+                                  var minSteps = 6,
+                                    maxSteps = 60,
+                                    timeBetweenSteps = 100,
+                                    bytesPerStep = 100000;
+
+                                  dropzone.uploadFiles = function (files) {
+                                    var self = this;
+
+                                    for (var i = 0; i < files.length; i++) {
+                                      var file = files[i];
+                                      totalSteps = Math.round(
+                                        Math.min(
+                                          maxSteps,
+                                          Math.max(
+                                            minSteps,
+                                            file.size / bytesPerStep
+                                          )
+                                        )
+                                      );
+
+                                      for (
+                                        var step = 0;
+                                        step < totalSteps;
+                                        step++
+                                      ) {
+                                        var duration =
+                                          timeBetweenSteps * (step + 1);
+                                        setTimeout(
+                                          (function (file, totalSteps, step) {
+                                            return function () {
+                                              file.upload = {
+                                                progress:
+                                                  (100 * (step + 1)) /
+                                                  totalSteps,
+                                                total: file.size,
+                                                bytesSent:
+                                                  ((step + 1) * file.size) /
+                                                  totalSteps,
+                                              };
+
+                                              self.emit(
+                                                'uploadprogress',
+                                                file,
+                                                file.upload.progress,
+                                                file.upload.bytesSent
+                                              );
+                                              if (file.upload.progress == 100) {
+                                                file.status = Dropzone.SUCCESS;
+                                                self.emit(
+                                                  'success',
+                                                  file,
+                                                  'success',
+                                                  null
+                                                );
+                                                self.emit('complete', file);
+                                                self.processQueue();
+                                              }
+                                            };
+                                          })(file, totalSteps, step),
+                                          duration
+                                        );
+                                      }
+                                    }
+                                  };
+                                </script>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="fs-18 mo-fs-17">
+                    <strong
+                      >위 기재 사실이 틀림없음과 위로금과 관련하여 법령에 따른
+                      모든 책임이 신청자 본인에 있음을 확인하며
+                      회원재해위로금지급규칙에 따라 재해위로금을
+                      신청합니다</strong
+                    >
+                  </div>
+                  <div class="kfsi-button mt-15 mo-mt-10">
+                    <p>
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary btn-lg"
+                      >
+                        취소
+                      </button>
+                      <button type="button" class="btn btn-primary btn-lg">
+                        신청하기
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 5000;
+      "
+    >
+      <div>
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#alert01"
+        >
+          alert1
+        </button>
+      </div>
+
+      <div class="mt-1">
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#alert02"
+        >
+          alert2
+        </button>
+      </div>
+
+      <div class="mt-1">
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#alert03"
+        >
+          alert3
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="alert01"
+      tabindex="-1"
+      aria-labelledby="alert01Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered kfsi-alert">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex align-items-center gap-4 my-4">
+              <i class="ico-warning-alert"></i>
+              <p class="m-0">신청인의 관계를 선택해 주세요.</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-lg btn-primary"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              확인
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="alert02"
+      tabindex="-1"
+      aria-labelledby="alert01Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered kfsi-alert">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex align-items-center gap-4 my-4">
+              <i class="ico-warning-alert"></i>
+              <p class="m-0">
+                개인정보 수집 · 이용동의에<br />
+                체크(동의)해 주세요.
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-lg btn-primary"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              확인
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="alert03"
+      tabindex="-1"
+      aria-labelledby="alert01Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered kfsi-alert">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex align-items-center gap-4 my-4">
+              <i class="ico-check-alert"></i>
+              <p class="m-0">
+                소방안전장학금 신청이 완료<br />
+                되었습니다.
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-lg btn-primary"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              확인
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

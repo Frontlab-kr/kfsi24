@@ -5017,7 +5017,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 60px;
     p {
       display: flex;
       gap: 20px;
@@ -8599,62 +8599,7 @@ body {
   &-privacy {
     &-head {
     }
-    &-labeling {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-      gap: 8px;
-      margin-top: 16px;
-      &-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 158px;
-        background-color: #f7f7f7;
-        p {
-          margin: 20px 0 0 0;
-          font-size: 16px;
-          font-weight: normal;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: 1.5;
-          letter-spacing: normal;
-          text-align: center;
-          color: #000;
-        }
-      }
-    }
-    &-index {
-      display: flex;
-      margin: 12px 0 40px 0;
-      padding: 23px;
-      border: solid 1px #ccc;
-      > div {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        width: 50%;
-      }
-      a {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        color: #000;
-        &:hover {
-          color: #004d16;
-          text-decoration: underline;
-          font-weight: bold;
-        }
-        span {
-          min-width: 30px;
-          text-align: center;
-        }
-        img {
-          transform: scale(0.8335);
-        }
-      }
-    }
+
     &-list {
       display: flex;
       flex-direction: column;
@@ -8678,7 +8623,7 @@ body {
           }
         }
         &-contents {
-          padding: 10px 0 0 40px;
+          padding: 30px;
           p {
             margin: 0 0 5px 0;
             font-size: 15px;
@@ -8691,76 +8636,44 @@ body {
             color: #000;
             word-break: keep-all;
           }
+          .kfsi-table {
+            thead {
+              th {
+                font-size: 14px;
+              }
+            }
+            tbody {
+              th,
+              td {
+                font-size: 14px;
+              }
+            }
+          }
         }
+      }
+    }
+    .accordion {
+      border-top: 2px solid var(--6c6e75, #6c6e75);
+      &-item {
+        border-radius: 0;
+        border: none;
+      }
+      &-button {
+        background: none;
+        box-shadow: none;
+        border-bottom: 1px solid #ccc;
+        color: #000;
+      }
+      &-body {
+        padding: 0;
+        background: var(--f6f6f6, #f6f6f6);
+        border-bottom: 1px solid #ccc;
       }
     }
     @media screen and (max-width: $mobileWidth) {
       &-head {
-        padding: 24px 16px;
-        border: solid 1px #ccc;
-        background-color: #f7f7f7;
-        font-size: 15px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.33;
-        letter-spacing: normal;
-        text-align: left;
-        color: #000;
       }
-      &-labeling {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 8px;
-        margin-top: 16px;
-        &-item {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          width: 100%;
-          height: 158px;
-          background-color: #f7f7f7;
-          p {
-            margin: 20px 0 0 0;
-            font-size: 15px;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.33;
-            letter-spacing: normal;
-            text-align: center;
-            color: #000;
-          }
-        }
-      }
-      &-index {
-        display: flex;
-        flex-direction: column;
-        margin: 12px 0 40px 0;
-        padding: 23px;
-        border: solid 1px #ccc;
-        > div {
-          display: flex;
-          flex-direction: column;
-          gap: 12px;
-          width: 100%;
-        }
-        a {
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          color: #000;
-          &:hover {
-            color: #004d16;
-            text-decoration: underline;
-            font-weight: bold;
-          }
-          img {
-            transform: scale(0.8335);
-          }
-        }
-      }
+
       &-list {
         display: flex;
         flex-direction: column;
@@ -8781,6 +8694,26 @@ body {
             span {
               min-width: 30px;
               text-align: center;
+            }
+          }
+          &-contents {
+            padding: 20px 10px;
+            p {
+              margin: 0 0 5px 0;
+              font-size: 14px;
+            }
+            .kfsi-table {
+              thead {
+                th {
+                  font-size: 14px;
+                }
+              }
+              tbody {
+                th,
+                td {
+                  font-size: 14px;
+                }
+              }
             }
           }
         }
@@ -10205,11 +10138,13 @@ body {
         align-items: flex-start;
         gap: 5px;
         width: 100%;
+        flex-wrap: wrap;
         &-input {
           display: flex;
           align-items: center;
           gap: 3px;
           width: 100%;
+          flex-wrap: wrap;
           select,
           input {
             width: 100% !important;
@@ -10458,8 +10393,19 @@ body {
           display: flex;
           align-items: center;
           gap: 10px;
+          .form-control {
+            min-width: auto !important;
+            width: 100% !important;
+          }
           .btn {
             height: 40px;
+            padding: 0 10px;
+          }
+        }
+        &-input {
+          .form-control {
+            min-width: auto !important;
+            width: 100% !important;
           }
         }
       }
@@ -11728,6 +11674,113 @@ body {
         }
         .kfsi-board-write-form {
           border-top: 2px solid #004d16;
+        }
+      }
+    }
+  }
+  &-member {
+    &-event {
+      &-answer {
+        ol {
+          margin: 0 0 0 40px;
+          padding: 0;
+          li {
+            position: relative;
+            margin: 5px 0 0 0;
+            padding: 0;
+            color: #666;
+            font-family: Pretendard;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.48px;
+            &:first-child {
+              margin-top: 0;
+            }
+            &.active {
+              color: var(--1854a3, #1854a3);
+              font-weight: bold;
+            }
+            strong {
+              display: inline-flex;
+              align-items: center;
+              height: 20px;
+              position: absolute;
+              left: -60px;
+              padding: 0 6px;
+              border-radius: 30px;
+              background: #389edd;
+              color: #fff;
+              text-align: center;
+              font-family: Pretendard;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            }
+          }
+        }
+      }
+    }
+    &-library {
+      display: flex;
+      gap: 11px;
+      padding: 20px 0 0 0;
+      dl {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        dt {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          margin: 0 0 20px 0;
+          padding: 0 0 13px 0;
+          color: #000;
+          font-family: Pretendard;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: 0.48px;
+          background: url(../images/icon/ico-library.svg) no-repeat 100% 100%;
+          strong {
+            color: #000;
+            font-family: Pretendard;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.66px;
+          }
+        }
+        dd {
+          margin: 0;
+          padding: 0;
+          color: #000;
+          font-family: Pretendard;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px; /* 150% */
+          letter-spacing: 0.48px;
+          a {
+            color: var(--1854a3, #1854a3);
+            text-decoration: underline;
+          }
+        }
+      }
+      @media screen and (max-width: $mobileWidth) {
+        flex-direction: column;
+        gap: 30px;
+        width: 314px;
+        margin: 0 auto;
+        dl {
+          dt {
+            align-items: center !important;
+            flex-direction: row !important;
+          }
         }
       }
     }

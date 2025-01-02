@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>회원서비스 신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">회원서비스 안내</a>
+              <a href="" class="kfsi-snb-item">재해위로금</a>
+              <a href="" class="kfsi-snb-item">소방안전장학금</a>
+              <a href="" class="kfsi-snb-item active">퀴즈이벤트</a>
+              <a href="" class="kfsi-snb-item">전자도서관</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">회원서비스 신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      퀴즈이벤트
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>퀴즈이벤트</h1>
+              </div>
+              <div class="kfsi-member">
+                <div class="kfsi-tab02">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="tab01"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab01-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab01-pane"
+                        aria-selected="true"
+                      >
+                        퀴즈이벤트 참여
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab02"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab02-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab02-pane"
+                        aria-selected="false"
+                      >
+                        지난이벤트(당첨자)
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="tab01-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab01"
+                      tabindex="0"
+                    >
+                      <div class="mb-15 mo-mb-10">
+                        <img
+                          src="./assets/images/event.png"
+                          alt="소방안전원 회원 퀴즈이벤트"
+                          style="max-width: 100%"
+                        />
+                      </div>
+                      <div class="mb-12 mo-mb-10">
+                        <div class="d-flex gap-5 mb-5 mo-mb-4">
+                          <span
+                            class="badge rounded-pill text-bg-dark"
+                            style="min-width: 60px"
+                            >마감</span
+                          >
+                          <p class="m-0 fs-18">
+                            <strong>제 42회 안전원 회원 퀴즈이벤트</strong>
+                          </p>
+                        </div>
+                        <div class="p-7 bg-light text-center fs-16">
+                          제 42회 회원 퀴즈이벤트가 마감되었습니다.<br />
+                          다음 퀴즈 이벤트는 7월에 진행합니다.  
+                        </div>
+                      </div>
+                      <div class="kfsi-board-button">
+                        <p>
+                          <button type="button" class="btn btn-primary btn-lg">
+                            지난이벤트 보기
+                          </button>
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab02-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab02"
+                      tabindex="0"
+                    >
+                      <div class="mb-15 mo-mb-10">
+                        <img
+                          src="./assets/images/event.png"
+                          alt="소방안전원 회원 퀴즈이벤트"
+                          style="max-width: 100%"
+                        />
+                      </div>
+
+                      <div class="kfsi-table kfsi-table-scroll-mo">
+                        <table summary="">
+                          <caption></caption>
+                          <colgroup>
+                            <col style="width: 100px" />
+                            <col style="width: 500px" />
+                            <col style="width: 200px" />
+                            <col style="width: 100px" />
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th scope="col">No.</th>
+                              <th scope="col">제목</th>
+                              <th scope="col">이벤트기간</th>
+                              <th scope="col">참여자 수</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td class="text-start">
+                                <a
+                                  href=""
+                                  class="d-block text-truncate"
+                                  style="max-width: 500px"
+                                  >제43회 회원 퀴즈이벤트제43회 회원
+                                  퀴즈이벤트제43회 회원 퀴즈이벤트제43회 회원
+                                  퀴즈이벤트제43회 회원 퀴즈이벤트</a
+                                >
+                              </td>
+                              <td>24/07/01 ~ 24/07/31</td>
+                              <td>702</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td class="text-start">
+                                <a
+                                  href=""
+                                  class="d-block text-truncate"
+                                  style="max-width: 500px"
+                                  >제43회 회원 퀴즈이벤트</a
+                                >
+                              </td>
+                              <td>24/07/01 ~ 24/07/31</td>
+                              <td>702</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td class="text-start">
+                                <a
+                                  href=""
+                                  class="d-block text-truncate"
+                                  style="max-width: 500px"
+                                  >제43회 회원 퀴즈이벤트</a
+                                >
+                              </td>
+                              <td>24/07/01 ~ 24/07/31</td>
+                              <td>702</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td class="text-start">
+                                <a
+                                  href=""
+                                  class="d-block text-truncate"
+                                  style="max-width: 500px"
+                                  >제43회 회원 퀴즈이벤트</a
+                                >
+                              </td>
+                              <td>24/07/01 ~ 24/07/31</td>
+                              <td>702</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td class="text-start">
+                                <a
+                                  href=""
+                                  class="d-block text-truncate"
+                                  style="max-width: 500px"
+                                  >제43회 회원 퀴즈이벤트</a
+                                >
+                              </td>
+                              <td>24/07/01 ~ 24/07/31</td>
+                              <td>702</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td class="text-start">
+                                <a
+                                  href=""
+                                  class="d-block text-truncate"
+                                  style="max-width: 500px"
+                                  >제43회 회원 퀴즈이벤트</a
+                                >
+                              </td>
+                              <td>24/07/01 ~ 24/07/31</td>
+                              <td>702</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td class="text-start">
+                                <a
+                                  href=""
+                                  class="d-block text-truncate"
+                                  style="max-width: 500px"
+                                  >제43회 회원 퀴즈이벤트</a
+                                >
+                              </td>
+                              <td>24/07/01 ~ 24/07/31</td>
+                              <td>702</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td class="text-start">
+                                <a
+                                  href=""
+                                  class="d-block text-truncate"
+                                  style="max-width: 500px"
+                                  >제43회 회원 퀴즈이벤트</a
+                                >
+                              </td>
+                              <td>24/07/01 ~ 24/07/31</td>
+                              <td>702</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td class="text-start">
+                                <a
+                                  href=""
+                                  class="d-block text-truncate"
+                                  style="max-width: 500px"
+                                  >제43회 회원 퀴즈이벤트</a
+                                >
+                              </td>
+                              <td>24/07/01 ~ 24/07/31</td>
+                              <td>702</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td class="text-start">
+                                <a
+                                  href=""
+                                  class="d-block text-truncate"
+                                  style="max-width: 500px"
+                                  >제43회 회원 퀴즈이벤트</a
+                                >
+                              </td>
+                              <td>24/07/01 ~ 24/07/31</td>
+                              <td>702</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <div class="pc">
+                        <div class="kfsi-board-pagination">
+                          <nav>
+                            <ul class="pagination">
+                              <li class="page-item page-item--first">
+                                <a class="page-link" href="#">처음</a>
+                              </li>
+                              <li class="page-item page-item--prev">
+                                <a class="page-link" href="#">이전</a>
+                              </li>
+                              <li class="page-item active">
+                                <a class="page-link" href="#">1</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">4</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">5</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">6</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">7</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">8</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">9</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">10</a>
+                              </li>
+                              <li class="page-item page-item--next">
+                                <a class="page-link" href="#">다음</a>
+                              </li>
+                              <li class="page-item page-item--last">
+                                <a class="page-link" href="#">마지막</a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                      <div class="mo">
+                        <div class="kfsi-board-pagination">
+                          <nav>
+                            <ul class="pagination">
+                              <li class="page-item page-item--first">
+                                <a class="page-link" href="#">처음</a>
+                              </li>
+                              <li class="page-item page-item--prev">
+                                <a class="page-link" href="#">이전</a>
+                              </li>
+                              <li class="page-item active">
+                                <a class="page-link" href="#">1</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">4</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">5</a>
+                              </li>
+                              <li class="page-item page-item--next">
+                                <a class="page-link" href="#">다음</a>
+                              </li>
+                              <li class="page-item page-item--last">
+                                <a class="page-link" href="#">마지막</a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

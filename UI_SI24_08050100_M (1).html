@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>회원서비스 신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">회원서비스 안내</a>
+              <a href="" class="kfsi-snb-item">재해위로금</a>
+              <a href="" class="kfsi-snb-item">소방안전장학금</a>
+              <a href="" class="kfsi-snb-item">퀴즈이벤트</a>
+              <a href="" class="kfsi-snb-item active">전자도서관</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">회원서비스 신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      전자도서관
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>전자도서관</h1>
+              </div>
+              <div class="kfsi-member">
+                <div class="mb-15">
+                  <h4 class="kfsi-h4">소장자료</h4>
+                  <div class="d-flex justify-content-between mo-flex-column">
+                    <div>전자책(E-BOOK)</div>
+                    <div class="text-center mo-mt-7">
+                      <a href="" class="btn btn-secondary btn-sm"
+                        >전자도서관 바로가기</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-15">
+                  <h4 class="kfsi-h4">대출규정</h4>
+                  <div class="kfsi-textlist">
+                    <ul>
+                      <li>이용자격 : 회원(회비 납부자)</li>
+                      <li>이용기간 : 회비 납부년도부터 다음 해 말까지</li>
+                      <li>세부내용</li>
+                    </ul>
+                  </div>
+                  <div class="kfsi-table mt-2">
+                    <table
+                      summary="대출규정에 대한 테이블로, 대출권수, 대출기간, 연장신청 조건을 나타냅니다."
+                    >
+                      <caption>
+                        대출규정
+                      </caption>
+                      <colgroup>
+                        <col style="width: 140px" />
+                        <col style="width: 585px" />
+                        <col style="width: 214px" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">대출권수</th>
+                          <th scope="col">대출기간</th>
+                          <th scope="col">연장신청</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1인당 1권</td>
+                          <td>5일(대출일로부터 5일 후 자동 반납 처리)</td>
+                          <td>1회(반납예정일~5일)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="mb-15">
+                  <h4 class="kfsi-h4">개인용 컴퓨터(PC) 이용방법</h4>
+                  <div class="kfsi-member-library">
+                    <dl>
+                      <dt>
+                        <strong>01</strong>
+                        회원가입(인증)
+                      </dt>
+                      <dd>
+                        한국소방안전원 홈페이지(PC)에서<br />
+                        접속 및 회원가입(인증) 진행
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt>
+                        <strong>02</strong>
+                        최초 비밀번호 설정
+                      </dt>
+                      <dd>
+                        회원서비스 상단의<br />
+                        <span
+                          style="
+                            display: inline-flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0 5px;
+                            border-radius: 5px;
+                            background: #626262;
+                            color: #fff;
+                            font-weight: 700;
+                            font-size: 14px;
+                          "
+                          >전자도서관 바로가기</span
+                        >
+                        버튼 클릭 후<br />
+                        “최초 비밀번호 설정“ 진행
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt>
+                        <strong>03</strong>
+                        전자도서관 이용
+                      </dt>
+                      <dd>
+                        전자도서관 홈페이지 내<br />
+                        도서 선택 후
+                        <span
+                          style="
+                            display: inline-flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 3px;
+                            padding: 0 5px;
+                            border-radius: 5px;
+                            background: #018d86;
+                            color: #f5e105;
+                            font-weight: 700;
+                            font-size: 14px;
+                          "
+                          ><i class="ico-bookmark"></i>대출하기</span
+                        >
+                        버튼 클릭
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="mb-15">
+                  <h4 class="kfsi-h4 mb-2">스마트폰 및 태블릿 이용방법</h4>
+                  <div class="mb-4 text-danger">
+                    ※ 01)회원가입(인증) 및 02) 최초 비밀번호 설정은 반드시
+                    개인용 컴퓨터(PC)를 통해서만 가능
+                  </div>
+                  <div class="kfsi-member-library">
+                    <dl>
+                      <dt class="flex-column align-items-start">
+                        <strong>01</strong>
+                        <p class="m-0">
+                          회원가입(인증)
+                          <span
+                            style="
+                              display: inline-flex;
+                              justify-content: center;
+                              align-items: center;
+                              padding: 0 5px;
+                              border-radius: 30px;
+                              background: #fdbc42;
+                              color: #fff;
+                              font-weight: 700;
+                              font-size: 14px;
+                            "
+                            >PC</span
+                          >
+                        </p>
+                      </dt>
+                      <dd>
+                        한국소방안전원 <br class="pc" />
+                        홈페이지(PC)에서 <br />
+                        접속 및 회원가입(인증)<br class="pc" />
+                        진행
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt class="flex-column align-items-start">
+                        <strong>02</strong>
+                        <p class="m-0">
+                          최초 비밀번호 설정
+                          <span
+                            style="
+                              display: inline-flex;
+                              justify-content: center;
+                              align-items: center;
+                              padding: 0 5px;
+                              border-radius: 30px;
+                              background: #fdbc42;
+                              color: #fff;
+                              font-weight: 700;
+                              font-size: 14px;
+                            "
+                            >PC</span
+                          >
+                        </p>
+                      </dt>
+                      <dd>
+                        회원서비스 상단의<br />
+                        <span
+                          style="
+                            display: inline-flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0 5px;
+                            border-radius: 5px;
+                            background: #626262;
+                            color: #fff;
+                            font-weight: 700;
+                            font-size: 14px;
+                          "
+                          >전자도서관 바로가기</span
+                        ><br class="pc" />
+                        버튼 클릭 후 <br />“최초 비밀번호 설정“ 진행
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt class="flex-column align-items-start">
+                        <strong>03</strong>
+                        <p class="m-0">앱 설치</p>
+                      </dt>
+                      <dd>
+                        앱스토어 접속 후 <br />
+                        예스24 전자도서관(리뉴얼) 앱 검색하여 설치 또는
+                        <a
+                          href="javascript:void(0)"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modal01"
+                          >QR코드 스캔하여 설치 </a
+                        >
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt class="flex-column align-items-start">
+                        <strong>04</strong>
+                        <p class="m-0">앱 실행</p>
+                      </dt>
+                      <dd>
+                        <div class="d-flex flex-wrap mo-flex-column">
+                          <div style="font-size: 0; line-height: 0">
+                            <i class="ico-yes24 mb-1">YES24</i>
+                          </div>
+                          앱 실행 후 전자도서관(공공기관 → 한국소방안전원) 찾기
+                        </div>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt class="flex-column align-items-start">
+                        <strong>05</strong>
+                        <p class="m-0">로그인</p>
+                      </dt>
+                      <dd>
+                        아이디 : 가입한 아이디 입력<br />
+                        비밀번호 : 최초 설정한 비밀번호 입력<br />
+                        <span class="text-danger">
+                          ※ 비밀번호 : 개인별 비밀번호 설정(변경)
+                          <br class="pc" />진행 후 이용 가능
+                        </span>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="kfsi-h4">기타 이용 문의</h4>
+                  <div class="kfsi-textlist">
+                    <ul>
+                      <li>
+                        탈퇴 : 회비 납부연도로부터 익년 말에 자동 탈퇴됨 (ex.
+                        2024년 회비 납부자는 2025년 12월까지 이용가능)
+                      </li>
+                      <li>
+                        아이디 및 비밀번호를 모르는 경우 : 한국 소방안전원
+                        홈페이지에서 [로그인] 선택 후 [아이디 및 비밀번호 찾기]
+                        진행
+                      </li>
+                      <li>
+                        앱 사용법 및 비밀번호 문의 : 예스이십사(YES24) 고객센터
+                        (1544-3800)
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modal01" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" style="max-width: 500px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5">앱 설치 QR코드 안내</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="m-0 mb-10 text-center">
+              보유하고 계신 휴대폰의 카메라를 실행 후<br />
+              아래의 QR코드를 스캔하여 앱을 설치해주세요.
+            </p>
+            <div class="d-flex justify-content-center mb-5">
+              <div
+                class="d-flex flex-column align-items-center gap-2 pe-10 mo-pe-3"
+              >
+                <div class="d-flex align-items-center" style="height: 34px">
+                  <img
+                    src="./assets/images/icon/library-google.png"
+                    alt="Google Play"
+                    style="width: 109px"
+                  />
+                </div>
+                <div style="height: 138px">
+                  <img
+                    src="./assets/images/icon/library-google-qr.png"
+                    alt="Google Play QR코드"
+                  />
+                </div>
+                <p class="m-0 text-center">구글 앱스토어</p>
+              </div>
+              <div
+                class="d-flex flex-column align-items-center gap-2 ps-10 mo-ps-3"
+              >
+                <div class="d-flex align-items-center" style="height: 34px">
+                  <img
+                    src="./assets/images/icon/library-apple.png"
+                    alt="App store"
+                    style="width: 27px"
+                  />
+                </div>
+                <div style="height: 138px">
+                  <img
+                    src="./assets/images/icon/library-apple-qr.png"
+                    alt="App store QR코드"
+                  />
+                </div>
+                <p class="m-0 text-center">애플 앱스토어</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

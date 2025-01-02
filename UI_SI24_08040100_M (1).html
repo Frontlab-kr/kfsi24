@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>회원서비스 신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">회원서비스 안내</a>
+              <a href="" class="kfsi-snb-item">재해위로금</a>
+              <a href="" class="kfsi-snb-item">소방안전장학금</a>
+              <a href="" class="kfsi-snb-item active">퀴즈이벤트</a>
+              <a href="" class="kfsi-snb-item">전자도서관</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">회원서비스 신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      퀴즈이벤트
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>퀴즈이벤트</h1>
+              </div>
+              <div class="kfsi-member">
+                <div class="kfsi-tab02">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="tab01"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab01-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab01-pane"
+                        aria-selected="true"
+                      >
+                        퀴즈이벤트 참여
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab02"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab02-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab02-pane"
+                        aria-selected="false"
+                      >
+                        지난이벤트(당첨자)
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="tab01-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab01"
+                      tabindex="0"
+                    >
+                      <div class="mb-15 mo-mb-10">
+                        <img
+                          src="./assets/images/event.png"
+                          alt="소방안전원 회원 퀴즈이벤트"
+                          style="max-width: 100%"
+                        />
+                      </div>
+                      <div class="mb-12 mo-mb-10">
+                        <div class="d-flex gap-5 mb-5 mo-mb-4">
+                          <span
+                            class="badge rounded-pill text-bg-info"
+                            style="min-width: 60px"
+                            >진행중</span
+                          >
+                          <p class="m-0 fs-18">
+                            <strong>제 42회 안전원 회원 퀴즈이벤트</strong>
+                          </p>
+                        </div>
+                        <div class="kfsi-board-write">
+                          <div class="kfsi-board-write-form">
+                            <table
+                              summary="제 42회 안전원 회원 퀴즈 이벤트의 참가 자격, 응모 방법, 당첨 인원, 이벤트 기간, 당첨자 발표일, 그리고 상품 정보를 제공합니다."
+                            >
+                              <caption>
+                                제 42회 안전원 회원 퀴즈이벤트 정보
+                              </caption>
+                              <colgroup>
+                                <col style="width: 230px" />
+                                <col style="width: 710px" />
+                              </colgroup>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">참가자격</th>
+                                  <td>안전원회원 (회비 완납자)</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">응모방법</th>
+                                  <td>로그인 후 퀴즈응모</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">당첨인원</th>
+                                  <td>100명</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">이벤트 기간</th>
+                                  <td>2024.10.01 ~ 2024.10.31</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">당첨자 발표</th>
+                                  <td>
+                                    2024.11.05 (홈페이지 공지 및 휴대폰 문자
+                                    전송-모바일 상품권 포함)
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">상품</th>
+                                  <td>
+                                    백화점(마트) 모바일상품권 2만원 교환권
+                                    (유효기간 : 수령일부터 60일)
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mb-17 mo-mb-10">
+                        <div class="px-4 mo-ps-0 mo-pe-0">
+                          <div class="fw-bold fs-16">
+                            <span class="text-success">Q1</span> .
+                            화재위험작업을 하는 건축공사현장에는 임시소방시설을
+                            설치하여야 한다. 임시소방시설을 설치하여야 하는
+                            작업장의 종류는 다음과 같다.<br />
+                            - 인화성·가연성·폭발성 물질 취급 또는 가연성가스
+                            발생 작업장<br />
+                            - 용접·용단 등 불꽃 발생 또는 화기취급 작업장<br />
+                            - 전열기구, 가열 전선 등 열 발생 작업장<br />
+                            - 부유분진을 발생시킬 수 있는 작업장<br />
+                            <br />
+                            위의 공사장(작업장)에 설치하여야 하는 임시소방시설이
+                            아닌 것은?
+                          </div>
+                          <div class="my-4 mx-2">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="radio1"
+                                id="radio1-1"
+                              />
+                              <label class="form-check-label" for="radio1-1">
+                                1. 소화기 (분말소화약제 또는 소화용 가스를
+                                이용한 일반 소화기)
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="radio1"
+                                id="radio1-2"
+                              />
+                              <label class="form-check-label" for="radio1-2">
+                                2. 간이소화장치(공사장에 설치된 상수도배관에
+                                연결하여 이동용 임시가압장치(펌프)을 이용하여
+                                물을 방사할 수 있도록 설치하는 장치)
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="radio1"
+                                id="radio1-3"
+                              />
+                              <label class="form-check-label" for="radio1-3">
+                                3. 스프링클러설비
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="radio1"
+                                id="radio1-4"
+                              />
+                              <label class="form-check-label" for="radio1-4">
+                                4. 비상경보장치(비상벨, 싸이렌, 확성기)
+                              </label>
+                            </div>
+                          </div>
+                          <div class="p-2 bg-warning-subtle">
+                            <힌트><br />
+                            스프링클러설비를 설치하는데 최소 1개월의 시간이
+                            필요합니다.<br />
+                            블라블라 힌트 영역 노출 블라블라 힌트 영역 노출
+                            블라블라 힌트 영역 노출 블라블라 힌트 영역 노출
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mb-15 mo-mb-10">
+                        <div class="kfsi-board-write">
+                          <h4 class="kfsi-h4 mb-2">퀴즈 참여자 정보</h4>
+                          <div class="mb-5">
+                            - 당첨시 상품을 받으실 정확한 정보를 입력하시기
+                            바랍니다.
+                          </div>
+                          <div class="kfsi-board-write-form">
+                            <table
+                              summary="퀴즈 참여자의 이름과 휴대폰 번호를 입력받기 위한 양식입니다."
+                            >
+                              <caption>
+                                퀴즈 참여자 정보 입력
+                              </caption>
+                              <colgroup>
+                                <col style="width: 195px" />
+                                <col style="width: 745px" />
+                              </colgroup>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">성명</th>
+                                  <td>
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      value="sobang"
+                                      style="width: 282px"
+                                      title="성명"
+                                    />
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">휴대폰 번호</th>
+                                  <td>
+                                    <div class="kfsi-mypage-phone">
+                                      <div class="kfsi-mypage-phone-input">
+                                        <select
+                                          class="form-select"
+                                          aria-label="휴대폰 번호 앞자리 선택"
+                                          title="휴대폰 번호 앞자리 선택"
+                                          style="min-width: 80px; width: 80px"
+                                        >
+                                          <option selected>선택</option>
+                                        </select>
+                                        -
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          title="휴대폰 번호 중간 자리 입력"
+                                          style="min-width: 80px; width: 80px"
+                                        />
+                                        -
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          title="휴대폰 번호 마지막 자리 입력"
+                                          style="min-width: 80px; width: 80px"
+                                        />
+                                      </div>
+                                    </div>
+                                    <div class="mt-2">
+                                      ※ 모바일상품권 발송을 위한 휴대폰 번호를
+                                      정확하게 입력하시기 바랍니다.<br />
+                                      잘못된 번호 입력으로 인한 경품 미수령은
+                                      책임지지 않습니다.
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mb-15 mo-mb-10">
+                        <p class="mb-5">
+                          “회원 퀴즈이벤트” 에 참여하기 위해 아래와 같이 본인의
+                          개인정보를 수집 및 이용하는 것에 대하여 숙지하였으며,
+                          이에 동의합니다.
+                        </p>
+                        <div class="kfsi-agree-form">
+                          <div class="kfsi-agree-form__title">
+                            개인정보 수집 및 이용동의
+                          </div>
+                          <div class="kfsi-agree-form__contents">
+                            □ 개인정보 수집·이용 동의<br />
+                            <div class="pc my-5">
+                              <div class="kfsi-table">
+                                <table
+                                  summary="퀴즈 이벤트 참여를 위한 개인정보 수집 및 이용 항목, 목적, 그리고 보유 기간을 안내하는 표입니다."
+                                >
+                                  <caption>
+                                    퀴즈 이벤트 개인정보 수집·이용 안내
+                                  </caption>
+                                  <colgroup>
+                                    <col style="width: 240px" />
+                                    <col style="width: 400px" />
+                                    <col style="width: 240px" />
+                                  </colgroup>
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">수집·이용 항목</th>
+                                      <th scope="col">항목</th>
+                                      <th scope="col">보유 · 이용기간</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>성명,휴대폰번호</td>
+                                      <td>회원 퀴즈이벤트 당첨시 경품 발송</td>
+                                      <td>1년</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="mo my-5">
+                              <div class="kfsi-textlist">
+                                <ul>
+                                  <li>수집, 이용 항목 : 성명,휴대폰번호</li>
+                                  <li>
+                                    항목 : 회원 퀴즈이벤트 당첨시 경품 발송
+                                  </li>
+                                  <li>보유 · 이용기간 : 1년</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="mb-2">
+                              ● 개인정보 처리 위탁업체<br />
+                              <div class="kfsi-textlist">
+                                <ul>
+                                  <li>수탁업체 : (주)옴니텔</li>
+                                  <li>위탁항목 : 휴대폰번호</li>
+                                  <li>
+                                    위탁업무내용 : 퀴즈이벤트 당첨자
+                                    모바일상품권 발송
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div>
+                              ● 개인정보 수집·이용에 대한 동의를 거부할 수
+                              있으며, 동의거부시 “회원 퀴즈이벤트＂에 참여 할 수
+                              없습니다.
+                            </div>
+                          </div>
+                          <div class="kfsi-agree-form__foot">
+                            <div
+                              class="d-flex align-align-center justify-content-center gap-10"
+                            >
+                              <div class="form-check mx-2">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  value=""
+                                  name="radio1"
+                                  id="radio1-1"
+                                />
+                                <label class="form-check-label" for="radio1-1">
+                                  동의
+                                </label>
+                              </div>
+                              <div class="form-check mx-2">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  value=""
+                                  name="radio1"
+                                  id="radio1-2"
+                                />
+                                <label class="form-check-label" for="radio1-2">
+                                  비동의
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="kfsi-board-button">
+                        <p>
+                          <button type="button" class="btn btn-primary btn-lg">
+                            퀴즈 응모하기
+                          </button>
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab02-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab02"
+                      tabindex="0"
+                    >
+                      <div
+                        class="d-flex justify-content-end mo-justify-content-center mb-5"
+                      >
+                        <a
+                          href=""
+                          class="btn btn-secondary btn-sm"
+                          style="min-width: 80px"
+                          >목록</a
+                        >
+                      </div>
+                      <div class="mb-12 mo-mb-10">
+                        <div class="d-flex gap-5 mb-5 mo-mb-4">
+                          <span
+                            class="badge rounded-pill text-bg-dark"
+                            style="min-width: 60px"
+                            >마감</span
+                          >
+                          <p class="m-0 fs-18">
+                            <strong>제 42회 안전원 회원 퀴즈이벤트</strong>
+                          </p>
+                        </div>
+                        <div class="kfsi-board-write">
+                          <div class="kfsi-board-write-form">
+                            <table
+                              summary="제 42회 안전원 회원 퀴즈 이벤트의  이벤트 기간, 당첨자 발표일, 그리고 상품 정보를 제공합니다."
+                            >
+                              <caption>
+                                제 42회 안전원 회원 퀴즈이벤트 정보
+                              </caption>
+                              <colgroup>
+                                <col style="width: 230px" />
+                                <col style="width: 710px" />
+                              </colgroup>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">이벤트 기간</th>
+                                  <td>2024.10.01 ~ 2024.10.31</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">당첨자 발표</th>
+                                  <td>2024.11.05</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">상품</th>
+                                  <td>
+                                    백화점(마트) 모바일상품권 2만원 교환권
+                                    (유효기간 : 수령일부터 60일)
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mb-17 mo-mb-10">
+                        <div class="px-4 mo-ps-0 mo-pe-0">
+                          <div class="fw-bold fs-16">
+                            <span class="text-success">Q1</span> .
+                            화재위험작업을 하는 건축공사현장에는 임시소방시설을
+                            설치하여야 한다. 임시소방시설을 설치하여야 하는
+                            작업장의 종류는 다음과 같다.<br />
+                            - 인화성·가연성·폭발성 물질 취급 또는 가연성가스
+                            발생 작업장<br />
+                            - 용접·용단 등 불꽃 발생 또는 화기취급 작업장<br />
+                            - 전열기구, 가열 전선 등 열 발생 작업장<br />
+                            - 부유분진을 발생시킬 수 있는 작업장<br />
+                            <br />
+                            위의 공사장(작업장)에 설치하여야 하는 임시소방시설이
+                            아닌 것은?
+                          </div>
+                          <div class="my-4 mx-2">
+                            <div class="kfsi-member-event-answer">
+                              <ol>
+                                <li>
+                                  소화기 (분말소화약제 또는 소화용 가스를 이용한
+                                  일반 소화기)
+                                </li>
+                                <li class="active">
+                                  <strong>정답</strong>간이소화장치(공사장에
+                                  설치된 상수도배관에 연결하여 이동용
+                                  임시가압장치(펌프)을 이용하여 물을 방사할 수
+                                  있도록 설치하는 장치)
+                                </li>
+                                <li>스프링클러설비</li>
+                                <li>비상경보장치(비상벨, 싸이렌, 확성기)</li>
+                              </ol>
+                            </div>
+                          </div>
+                          <div class="p-2 bg-warning-subtle">
+                            <해설><br />
+                            「위험물안전관리법」제15조에 의거 선임된
+                            위험물안전관리자는「위험물 취급에 관한 안전관리와
+                            감독」,「화재 등 재난 발생시 응급조치 및 소방관서
+                            등에 대 한 연락」,「위험물 제조소등의 위치, 구조,
+                            설비 점검 및 기록보관」,「안전장치 등에 대한 적정한
+                            유지관리 업무」등을 성실히 수행하여야 합니다.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mb-15 mo-mb-10">
+                        <div class="kfsi-board-write">
+                          <h4 class="kfsi-h4">당첨자 발표</h4>
+                          <div class="text-success pc mb-2">
+                            *당첨고객님께서는 Ctrl+F 를 눌러  회원 아이디 앞
+                            4자리를 검색하시면 편리하게 확인하실 수 있습니다.
+                          </div>
+                          <div class="d-flex gap-5 mo-flex-column">
+                            <div class="kfsi-table">
+                              <table
+                                summary="당첨자 발표 목록으로, 이름과 회원 아이디를 포함합니다."
+                              >
+                                <caption>
+                                  당첨자 발표
+                                </caption>
+                                <colgroup>
+                                  <col style="width: 120px" />
+                                  <col style="width: 180px" />
+                                </colgroup>
+                                <thead>
+                                  <tr>
+                                    <th scope="col">이름</th>
+                                    <th scope="col">회원 아이디</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>김*기</td>
+                                    <td>roadl***</td>
+                                  </tr>
+                                  <tr>
+                                    <td>조*희</td>
+                                    <td>oacx95kls***</td>
+                                  </tr>
+                                  <tr>
+                                    <td>김*기</td>
+                                    <td>roadl***</td>
+                                  </tr>
+                                  <tr>
+                                    <td>조*희</td>
+                                    <td>oacx95kls***</td>
+                                  </tr>
+                                  <tr>
+                                    <td>김*기</td>
+                                    <td>roadl***</td>
+                                  </tr>
+                                  <tr>
+                                    <td>조*희</td>
+                                    <td>oacx95kls***</td>
+                                  </tr>
+                                  <tr>
+                                    <td>김*기</td>
+                                    <td>roadl***</td>
+                                  </tr>
+                                  <tr>
+                                    <td>조*희</td>
+                                    <td>oacx95kls***</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="kfsi-table">
+                              <table
+                                summary="당첨자 발표 목록으로, 이름과 회원 아이디를 포함합니다."
+                              >
+                                <caption>
+                                  당첨자 발표
+                                </caption>
+                                <colgroup>
+                                  <col style="width: 120px" />
+                                  <col style="width: 180px" />
+                                </colgroup>
+                                <thead>
+                                  <tr>
+                                    <th scope="col">이름</th>
+                                    <th scope="col">회원 아이디</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>김*기</td>
+                                    <td>roadl***</td>
+                                  </tr>
+                                  <tr>
+                                    <td>조*희</td>
+                                    <td>oacx95kls***</td>
+                                  </tr>
+                                  <tr>
+                                    <td>김*기</td>
+                                    <td>roadl***</td>
+                                  </tr>
+                                  <tr>
+                                    <td>조*희</td>
+                                    <td>oacx95kls***</td>
+                                  </tr>
+                                  <tr>
+                                    <td>김*기</td>
+                                    <td>roadl***</td>
+                                  </tr>
+                                  <tr>
+                                    <td>조*희</td>
+                                    <td>oacx95kls***</td>
+                                  </tr>
+                                  <tr>
+                                    <td>김*기</td>
+                                    <td>roadl***</td>
+                                  </tr>
+                                  <tr>
+                                    <td>조*희</td>
+                                    <td>oacx95kls***</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="kfsi-table">
+                              <table
+                                summary="당첨자 발표 목록으로, 이름과 회원 아이디를 포함합니다."
+                              >
+                                <caption>
+                                  당첨자 발표
+                                </caption>
+                                <colgroup>
+                                  <col style="width: 120px" />
+                                  <col style="width: 180px" />
+                                </colgroup>
+                                <thead>
+                                  <tr>
+                                    <th scope="col">이름</th>
+                                    <th scope="col">회원 아이디</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>김*기</td>
+                                    <td>roadl***</td>
+                                  </tr>
+                                  <tr>
+                                    <td>조*희</td>
+                                    <td>oacx95kls***</td>
+                                  </tr>
+                                  <tr>
+                                    <td>김*기</td>
+                                    <td>roadl***</td>
+                                  </tr>
+                                  <tr>
+                                    <td>조*희</td>
+                                    <td>oacx95kls***</td>
+                                  </tr>
+                                  <tr>
+                                    <td>김*기</td>
+                                    <td>roadl***</td>
+                                  </tr>
+                                  <tr>
+                                    <td>조*희</td>
+                                    <td>oacx95kls***</td>
+                                  </tr>
+                                  <tr>
+                                    <td>김*기</td>
+                                    <td>roadl***</td>
+                                  </tr>
+                                  <tr>
+                                    <td>조*희</td>
+                                    <td>oacx95kls***</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="d-flex justify-content-end mo-justify-content-center"
+                      >
+                        <a
+                          href=""
+                          class="btn btn-outline-dark btn-lg"
+                          style="min-width: 140px"
+                          >목록</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
