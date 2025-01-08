@@ -105,61 +105,76 @@
                         </colgroup>
                         <tbody>
                           <tr>
-                            <th scope="row">현재 비밀번호</th>
+                            <th scope="row">
+                              <span> 현재 비밀번호 </span>
+                            </th>
                             <td>
-                              <input
-                                type="password"
-                                class="form-control is-invalid"
-                                placeholder="현재 비밀번호를 입력하세요."
-                                title="현재 비밀번호"
-                                style="width: 282px"
-                              />
-                              <div class="invalid-feedback">
-                                현재 비밀번호가 일치하지 않습니다.
-                              </div>
+                              <span>
+                                <input
+                                  type="password"
+                                  class="form-control is-invalid"
+                                  placeholder="현재 비밀번호를 입력하세요."
+                                  title="현재 비밀번호"
+                                  style="width: 282px"
+                                />
+                                <div class="invalid-feedback">
+                                  현재 비밀번호가 일치하지 않습니다.
+                                </div>
+                              </span>
                             </td>
                           </tr>
                           <tr>
-                            <th scope="row">새 비밀번호</th>
+                            <th scope="row">
+                              <span> 새 비밀번호 </span>
+                            </th>
                             <td>
-                              <input
-                                type="password"
-                                class="form-control is-invalid"
-                                placeholder="새 비밀번호를 입력하세요."
-                                title="새 비밀번호"
-                                style="width: 282px"
-                              />
-                              <div class="kfsi-mypage-certification-text pt-2">
-                                <ul>
-                                  <li class="text-primary">
-                                    <i class="ico-check-success"></i>
-                                    현재와 다른 비밀번호
-                                  </li>
-                                  <li>
-                                    <i class="ico-check-secondary"></i>
-                                    9자 이상 16자 이하
-                                  </li>
-                                  <li>
-                                    <i class="ico-check-secondary"></i>
-                                    영문, 숫자, 특수문자 3가지 혼합
-                                  </li>
-                                </ul>
-                              </div>
+                              <span>
+                                <input
+                                  type="password"
+                                  class="form-control is-invalid"
+                                  placeholder="새 비밀번호를 입력하세요."
+                                  title="새 비밀번호"
+                                  style="width: 282px"
+                                />
+                                <div
+                                  class="kfsi-mypage-certification-text pt-2"
+                                >
+                                  <ul>
+                                    <li class="text-primary">
+                                      <i class="ico-check-success"></i>
+                                      현재와 다른 비밀번호
+                                    </li>
+                                    <li>
+                                      <i class="ico-check-secondary"></i>
+                                      9자 이상 16자 이하
+                                    </li>
+                                    <li>
+                                      <i class="ico-check-secondary"></i>
+                                      영문, 숫자, 특수문자 3가지 혼합
+                                    </li>
+                                  </ul>
+                                </div>
+                              </span>
                             </td>
                           </tr>
                           <tr>
-                            <th scope="row">새 비밀번호 확인</th>
+                            <th scope="row">
+                              <span>새 비밀번호 확인</span>
+                            </th>
                             <td>
-                              <input
-                                type="password"
-                                class="form-control is-invalid"
-                                placeholder="새 비밀번호를 다시 입력하세요."
-                                title="새 비밀번호 확인"
-                                style="width: 282px"
-                              />
-                              <div class="invalid-feedback">
-                                새 비밀번호와 비밀번호 확인이 일치하지 않습니다.
-                              </div>
+                              <span>
+                                <input
+                                  type="password"
+                                  class="form-control is-invalid"
+                                  placeholder="새 비밀번호를 다시 입력하세요."
+                                  title="새 비밀번호 확인"
+                                  style="width: 282px"
+                                />
+                                <div class="invalid-feedback">
+                                  새 비밀번호와 비밀번호 확인이 일치하지
+                                  않습니다.
+                                </div>
+                              </span>
                             </td>
                           </tr>
                         </tbody>
@@ -181,6 +196,29 @@
       </div>
       <div id="footer"></div>
     </div>
+
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 5000;
+      "
+    >
+      <div>
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#modal01"
+        >
+          비밀번호 도움말
+        </button>
+      </div>
+    </div>
+
     <!-- Modal -->
     <div class="modal fade" id="modal01" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">

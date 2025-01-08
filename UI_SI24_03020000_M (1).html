@@ -105,39 +105,51 @@
                         </colgroup>
                         <tbody>
                           <tr>
-                            <th scope="row">현재 비밀번호</th>
+                            <th scope="row">
+                              <span> 현재 비밀번호 </span>
+                            </th>
                             <td>
-                              <input
-                                type="password"
-                                class="form-control"
-                                placeholder="현재 비밀번호를 입력하세요."
-                                title="현재 비밀번호"
-                                style="width: 282px"
-                              />
+                              <span>
+                                <input
+                                  type="password"
+                                  class="form-control"
+                                  placeholder="현재 비밀번호를 입력하세요."
+                                  title="현재 비밀번호"
+                                  style="width: 282px"
+                                />
+                              </span>
                             </td>
                           </tr>
                           <tr>
-                            <th scope="row">새 비밀번호</th>
+                            <th scope="row">
+                              <span>새 비밀번호</span>
+                            </th>
                             <td>
-                              <input
-                                type="password"
-                                class="form-control"
-                                placeholder="새 비밀번호를 입력하세요."
-                                title="새 비밀번호"
-                                style="width: 282px"
-                              />
+                              <span>
+                                <input
+                                  type="password"
+                                  class="form-control"
+                                  placeholder="새 비밀번호를 입력하세요."
+                                  title="새 비밀번호"
+                                  style="width: 282px"
+                                />
+                              </span>
                             </td>
                           </tr>
                           <tr>
-                            <th scope="row">새 비밀번호 확인</th>
+                            <th scope="row">
+                              <span> 새 비밀번호 확인 </span>
+                            </th>
                             <td>
-                              <input
-                                type="password"
-                                class="form-control"
-                                placeholder="새 비밀번호를 다시 입력하세요."
-                                title="새 비밀번호 확인"
-                                style="width: 282px"
-                              />
+                              <span>
+                                <input
+                                  type="password"
+                                  class="form-control"
+                                  placeholder="새 비밀번호를 다시 입력하세요."
+                                  title="새 비밀번호 확인"
+                                  style="width: 282px"
+                                />
+                              </span>
                             </td>
                           </tr>
                         </tbody>
@@ -159,6 +171,29 @@
       </div>
       <div id="footer"></div>
     </div>
+
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 5000;
+      "
+    >
+      <div>
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#modal01"
+        >
+          비밀번호 도움말
+        </button>
+      </div>
+    </div>
+
     <!-- Modal -->
     <div class="modal fade" id="modal01" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">

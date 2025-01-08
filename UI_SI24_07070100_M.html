@@ -75,144 +75,154 @@
                         </colgroup>
                         <tbody>
                           <tr>
-                            <th scope="row">발급시기</th>
+                            <th scope="row"><span>발급시기</span></th>
                             <td>
-                              <div class="d-flex align-items-center gap-2">
-                                2005년 10월 20일
+                              <span>
+                                <div class="d-flex align-items-center gap-2">
+                                  2005년 10월 20일
+                                  <select
+                                    class="form-select"
+                                    aria-label="발급시기 선택"
+                                    title="발급시기 선택"
+                                    style="
+                                      min-width: 80px !important;
+                                      width: 80px !important;
+                                    "
+                                  >
+                                    <option selected>이후</option>
+                                  </select>
+                                </div>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><span>자격번호</span></th>
+                            <td>
+                              <span>
+                                <div
+                                  class="d-flex align-items-center gap-2 flex-wrap fs-14"
+                                  style="color: #ccc"
+                                >
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    title="자격번호 첫번째자리 입력"
+                                    style="
+                                      min-width: 80px !important;
+                                      width: 80px !important;
+                                    "
+                                  />
+                                  -
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    title="자격번호 두번째자리 입력"
+                                    style="
+                                      min-width: 80px !important;
+                                      width: 80px !important;
+                                    "
+                                  />
+                                  -
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    title="자격번호 세번째자리 입력"
+                                    style="
+                                      min-width: 80px !important;
+                                      width: 80px !important;
+                                    "
+                                  />
+                                  -
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    title="자격번호 네번째자리 입력"
+                                    style="
+                                      min-width: 80px !important;
+                                      width: 80px !important;
+                                    "
+                                  />
+                                  -
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    title="자격번호 다섯번째자리 입력"
+                                    style="
+                                      min-width: 80px !important;
+                                      width: 80px !important;
+                                    "
+                                  />
+                                </div>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><span>종목</span></th>
+                            <td>
+                              <span>
                                 <select
                                   class="form-select"
-                                  aria-label="발급시기 선택"
-                                  title="발급시기 선택"
-                                  style="
-                                    min-width: 80px !important;
-                                    width: 80px !important;
-                                  "
+                                  aria-label="종목 선택"
+                                  title="종목 선택"
+                                  style="min-width: 200px"
                                 >
-                                  <option selected>이후</option>
+                                  <option selected>특급소방안전관리자</option>
                                 </select>
-                              </div>
+                              </span>
                             </td>
                           </tr>
                           <tr>
-                            <th scope="row">자격번호</th>
+                            <th scope="row"><span>성명</span></th>
                             <td>
-                              <div
-                                class="d-flex align-items-center gap-2 flex-wrap fs-14"
-                                style="color: #ccc"
-                              >
+                              <span>
                                 <input
                                   type="text"
                                   class="form-control"
-                                  title="자격번호 첫번째자리 입력"
-                                  style="
-                                    min-width: 80px !important;
-                                    width: 80px !important;
-                                  "
+                                  title="성명"
+                                  style="min-width: 200px"
                                 />
-                                -
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  title="자격번호 두번째자리 입력"
-                                  style="
-                                    min-width: 80px !important;
-                                    width: 80px !important;
-                                  "
-                                />
-                                -
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  title="자격번호 세번째자리 입력"
-                                  style="
-                                    min-width: 80px !important;
-                                    width: 80px !important;
-                                  "
-                                />
-                                -
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  title="자격번호 네번째자리 입력"
-                                  style="
-                                    min-width: 80px !important;
-                                    width: 80px !important;
-                                  "
-                                />
-                                -
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  title="자격번호 다섯번째자리 입력"
-                                  style="
-                                    min-width: 80px !important;
-                                    width: 80px !important;
-                                  "
-                                />
-                              </div>
+                              </span>
                             </td>
                           </tr>
                           <tr>
-                            <th scope="row">종목</th>
+                            <th scope="row"><span>생년월일</span></th>
                             <td>
-                              <select
-                                class="form-select"
-                                aria-label="종목 선택"
-                                title="종목 선택"
-                                style="min-width: 200px"
-                              >
-                                <option selected>특급소방안전관리자</option>
-                              </select>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">성명</th>
-                            <td>
-                              <input
-                                type="text"
-                                class="form-control"
-                                title="성명"
-                                style="min-width: 200px"
-                              />
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">생년월일</th>
-                            <td>
-                              <div
-                                class="d-flex align-items-center row-gap-1 column-gap-5 flex-wrap"
-                              >
-                                <div class="d-flex align-items-center gap-1">
-                                  <select
-                                    class="form-select"
-                                    title="년도 선택"
-                                    style="min-width: 100px; width: 100px"
-                                  >
-                                    <option selected>선택</option>
-                                  </select>
-                                  년
+                              <span>
+                                <div
+                                  class="d-flex align-items-center row-gap-1 column-gap-5 flex-wrap"
+                                >
+                                  <div class="d-flex align-items-center gap-1">
+                                    <select
+                                      class="form-select"
+                                      title="년도 선택"
+                                      style="min-width: 100px; width: 100px"
+                                    >
+                                      <option selected>선택</option>
+                                    </select>
+                                    년
+                                  </div>
+                                  <div class="d-flex align-items-center gap-1">
+                                    <select
+                                      class="form-select"
+                                      title="월 선택"
+                                      style="min-width: 80px; width: 80px"
+                                    >
+                                      <option selected>선택</option>
+                                    </select>
+                                    월
+                                  </div>
+                                  <div class="d-flex align-items-center gap-1">
+                                    <select
+                                      class="form-select"
+                                      title="일 선택"
+                                      style="min-width: 80px; width: 80px"
+                                    >
+                                      <option selected>선택</option>
+                                    </select>
+                                    일
+                                  </div>
                                 </div>
-                                <div class="d-flex align-items-center gap-1">
-                                  <select
-                                    class="form-select"
-                                    title="월 선택"
-                                    style="min-width: 80px; width: 80px"
-                                  >
-                                    <option selected>선택</option>
-                                  </select>
-                                  월
-                                </div>
-                                <div class="d-flex align-items-center gap-1">
-                                  <select
-                                    class="form-select"
-                                    title="일 선택"
-                                    style="min-width: 80px; width: 80px"
-                                  >
-                                    <option selected>선택</option>
-                                  </select>
-                                  일
-                                </div>
-                              </div>
+                              </span>
                             </td>
                           </tr>
                         </tbody>

@@ -50,7 +50,7 @@
               <div class="kfsi-edu">
                 <div class="kfsi-edu-head">
                   <div class="mo">
-                    <div class="kfsi-tab02 kfsi-tab02--mo-grid2">
+                    <div class="kfsi-tab02">
                       <ul class="nav nav-tabs mt-0">
                         <li class="nav-item">
                           <a href="" class="nav-link active">소방교육영상</a>
@@ -267,6 +267,28 @@
       <div id="footer"></div>
     </div>
 
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 5000;
+      "
+    >
+      <div>
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#modal01"
+        >
+          소화기 개요
+        </button>
+      </div>
+    </div>
+
     <!-- Modal -->
     <div class="modal fade" id="modal01" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
@@ -282,7 +304,13 @@
           </div>
           <div class="modal-body">
             <div class="kfsi-player">
-              <video poster="" width="700" height="400" controls="controls">
+              <video
+                id="video01"
+                poster=""
+                width="700"
+                height="400"
+                controls="controls"
+              >
                 <source
                   src="http://cdn.kfsi.or.kr/kfsa/WebService/sobangEdu/012.mp4"
                   type="video/mp4"
@@ -302,5 +330,16 @@
         </div>
       </div>
     </div>
+
+    <script>
+      // 이벤트 리스너 추가
+      document
+        .getElementById('modal01')
+        .addEventListener('hidden.bs.modal', function () {
+          var video = document.getElementById('video01');
+          video.pause(); // 비디오 일시 정지
+          video.currentTime = 0; // 재생 시간을 처음으로 설정
+        });
+    </script>
   </body>
 </html>

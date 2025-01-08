@@ -71,8 +71,8 @@
                 <h1>납부내역 조회</h1>
               </div>
               <div class="kfsi-mypage">
-                <div class="kfsi-tab02 kfsi-tab02--mo-grid2">
-                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <div class="kfsi-tab02">
+                  <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item" role="presentation">
                       <button
                         class="nav-link active"
@@ -130,7 +130,7 @@
                       </button>
                     </li>
                   </ul>
-                  <div class="tab-content" id="myTabContent">
+                  <div class="tab-content">
                     <div
                       class="tab-pane fade show active"
                       id="tab01-pane"
@@ -152,92 +152,51 @@
                             </a>
                           </div>
                         </div>
-                        <div class="pc">
-                          <div class="kfsi-table">
-                            <table
-                              summary="강습교육 내역을 나타내며, 수강번호, 교육과정, 지부, 교육일자, 상태, 영수증 정보를 포함합니다."
-                            >
-                              <caption>
-                                강습교육 내역
-                              </caption>
-                              <colgroup>
-                                <col style="width: 120px" />
-                                <col style="width: 240px" />
-                                <col style="width: 120px" />
-                                <col style="width: 200px" />
-                                <col style="width: 110px" />
-                                <col style="width: 150px" />
-                              </colgroup>
-                              <thead>
-                                <tr>
-                                  <th scope="col">수강번호</th>
-                                  <th scope="col">교육과정</th>
-                                  <th scope="col">지부</th>
-                                  <th scope="col">교육일자</th>
-                                  <th scope="col">상태</th>
-                                  <th scope="col">영수증</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>027-114</td>
-                                  <td>2급 소방안전관리자(정규)</td>
-                                  <td>대구경북</td>
-                                  <td>2024.11.12~2024.12.31</td>
-                                  <td>접수완료</td>
-                                  <td>
-                                    <button
-                                      type="button"
-                                      class="btn btn-secondary btn-sm"
-                                    >
-                                      영수증 출력
-                                    </button>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                        <div class="mo">
-                          <div class="kfsi-list">
-                            <div class="kfsi-list-section">
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">수강번호</div>
-                                <div class="kfsi-list-item-text">027-114</div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">교육과정</div>
-                                <div class="kfsi-list-item-text">
+                        <div class="kfsi-table kfsi-table-mo-list">
+                          <table
+                            summary="강습교육 내역을 나타내며, 수강번호, 교육과정, 지부, 교육일자, 상태, 영수증 정보를 포함합니다."
+                          >
+                            <caption>
+                              강습교육 내역
+                            </caption>
+                            <colgroup>
+                              <col style="width: 120px" />
+                              <col style="width: 240px" />
+                              <col style="width: 120px" />
+                              <col style="width: 200px" />
+                              <col style="width: 110px" />
+                              <col style="width: 150px" />
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">수강번호</th>
+                                <th scope="col">교육과정</th>
+                                <th scope="col">지부</th>
+                                <th scope="col">교육일자</th>
+                                <th scope="col">상태</th>
+                                <th scope="col">영수증</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td title="수강번호">027-114</td>
+                                <td title="교육과정">
                                   2급 소방안전관리자(정규)
-                                </div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">지부</div>
-                                <div class="kfsi-list-item-text">대구경북</div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">교육일자</div>
-                                <div class="kfsi-list-item-text">
-                                  2024.11.12~2024.12.31
-                                </div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">상태</div>
-                                <div class="kfsi-list-item-text">접수완료</div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">영수증</div>
-                                <div class="kfsi-list-item-text">
+                                </td>
+                                <td title="지부">대구경북</td>
+                                <td title="교육일자">2024.11.12~2024.12.31</td>
+                                <td title="상태">접수완료</td>
+                                <td title="영수증">
                                   <button
                                     type="button"
                                     class="btn btn-secondary btn-sm"
                                   >
                                     영수증 출력
                                   </button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
                       </div>
                       <div class="kfsi-board">
@@ -254,100 +213,53 @@
                             </a>
                           </div>
                         </div>
-                        <div class="pc">
-                          <div class="kfsi-table">
-                            <table
-                              summary="실무교육 내역을 나타내며, 교육과정, 지부, 사이버교육기간, 소집교육기간, 상태, 영수증 정보를 포함합니다."
-                            >
-                              <caption>
-                                실무교육 내역
-                              </caption>
-                              <colgroup>
-                                <col style="width: 160px" />
-                                <col style="width: 120px" />
-                                <col style="width: 200px" />
-                                <col style="width: 200px" />
-                                <col style="width: 110px" />
-                                <col style="width: 150px" />
-                              </colgroup>
-                              <thead>
-                                <tr>
-                                  <th scope="col">교육과정</th>
-                                  <th scope="col">지부</th>
-                                  <th scope="col">사이버교육기간</th>
-                                  <th scope="col">소집교육기간</th>
-                                  <th scope="col">상태</th>
-                                  <th scope="col">영수증</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>소방안전관리자</td>
-                                  <td>경기남부지부</td>
-                                  <td>2024.11.12~2024.12.31</td>
-                                  <td>2024.11.12~2024.12.31</td>
-                                  <td>수료</td>
-                                  <td>
-                                    <button
-                                      type="button"
-                                      class="btn btn-secondary btn-sm"
-                                    >
-                                      영수증 출력
-                                    </button>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                        <div class="mo">
-                          <div class="kfsi-list">
-                            <div class="kfsi-list-section">
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">교육과정</div>
-                                <div class="kfsi-list-item-text">
-                                  소방안전관리자
-                                </div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">지부</div>
-                                <div class="kfsi-list-item-text">
-                                  경기남부지부
-                                </div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">
-                                  사이버교육기간
-                                </div>
-                                <div class="kfsi-list-item-text">
+                        <div class="kfsi-table kfsi-table-mo-list">
+                          <table
+                            summary="실무교육 내역을 나타내며, 교육과정, 지부, 사이버교육기간, 소집교육기간, 상태, 영수증 정보를 포함합니다."
+                          >
+                            <caption>
+                              실무교육 내역
+                            </caption>
+                            <colgroup>
+                              <col style="width: 160px" />
+                              <col style="width: 120px" />
+                              <col style="width: 200px" />
+                              <col style="width: 200px" />
+                              <col style="width: 110px" />
+                              <col style="width: 150px" />
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">교육과정</th>
+                                <th scope="col">지부</th>
+                                <th scope="col">사이버교육기간</th>
+                                <th scope="col">소집교육기간</th>
+                                <th scope="col">상태</th>
+                                <th scope="col">영수증</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td title="교육과정">소방안전관리자</td>
+                                <td title="지부">경기남부지부</td>
+                                <td title="사이버교육기간">
                                   2024.11.12~2024.12.31
-                                </div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">
-                                  소집교육기간
-                                </div>
-                                <div class="kfsi-list-item-text">
+                                </td>
+                                <td title="소집교육기간">
                                   2024.11.12~2024.12.31
-                                </div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">상태</div>
-                                <div class="kfsi-list-item-text">수료</div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">영수증</div>
-                                <div class="kfsi-list-item-text">
+                                </td>
+                                <td title="상태">수료</td>
+                                <td title="영수증">
                                   <button
                                     type="button"
                                     class="btn btn-secondary btn-sm"
                                   >
                                     영수증 출력
                                   </button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
                       </div>
                     </div>
@@ -372,92 +284,51 @@
                             </a>
                           </div>
                         </div>
-                        <div class="pc">
-                          <div class="kfsi-table">
-                            <table
-                              summary="시험신청 내역을 나타내며, 응시번호, 시험과정, 지부, 시험일자, 상태, 영수증 정보를 포함합니다."
-                            >
-                              <caption>
-                                시험신청 내역
-                              </caption>
-                              <colgroup>
-                                <col style="width: 120px" />
-                                <col style="width: 240px" />
-                                <col style="width: 120px" />
-                                <col style="width: 200px" />
-                                <col style="width: 110px" />
-                                <col style="width: 150px" />
-                              </colgroup>
-                              <thead>
-                                <tr>
-                                  <th scope="col">응시번호</th>
-                                  <th scope="col">시험과정</th>
-                                  <th scope="col">지부</th>
-                                  <th scope="col">시험일자</th>
-                                  <th scope="col">상태</th>
-                                  <th scope="col">영수증</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>027-114</td>
-                                  <td>2급 소방안전관리자(정규)</td>
-                                  <td>대구경북</td>
-                                  <td>2024.11.12~2024.12.31</td>
-                                  <td>접수완료</td>
-                                  <td>
-                                    <button
-                                      type="button"
-                                      class="btn btn-secondary btn-sm"
-                                    >
-                                      영수증 출력
-                                    </button>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                        <div class="mo">
-                          <div class="kfsi-list">
-                            <div class="kfsi-list-section">
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">응시번호</div>
-                                <div class="kfsi-list-item-text">027-114</div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">시험과정</div>
-                                <div class="kfsi-list-item-text">
+                        <div class="kfsi-table kfsi-table-mo-list">
+                          <table
+                            summary="시험신청 내역을 나타내며, 응시번호, 시험과정, 지부, 시험일자, 상태, 영수증 정보를 포함합니다."
+                          >
+                            <caption>
+                              시험신청 내역
+                            </caption>
+                            <colgroup>
+                              <col style="width: 120px" />
+                              <col style="width: 240px" />
+                              <col style="width: 120px" />
+                              <col style="width: 200px" />
+                              <col style="width: 110px" />
+                              <col style="width: 150px" />
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">응시번호</th>
+                                <th scope="col">시험과정</th>
+                                <th scope="col">지부</th>
+                                <th scope="col">시험일자</th>
+                                <th scope="col">상태</th>
+                                <th scope="col">영수증</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td title="응시번호">027-114</td>
+                                <td title="시험과정">
                                   2급 소방안전관리자(정규)
-                                </div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">지부</div>
-                                <div class="kfsi-list-item-text">대구경북</div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">시험일자</div>
-                                <div class="kfsi-list-item-text">
-                                  2024.11.12~2024.12.31
-                                </div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">상태</div>
-                                <div class="kfsi-list-item-text">접수완료</div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">영수증</div>
-                                <div class="kfsi-list-item-text">
+                                </td>
+                                <td title="지부">대구경북</td>
+                                <td title="시험일자">2024.11.12~2024.12.31</td>
+                                <td title="상태">접수완료</td>
+                                <td title="영수증">
                                   <button
                                     type="button"
                                     class="btn btn-secondary btn-sm"
                                   >
                                     영수증 출력
                                   </button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
                       </div>
                     </div>
@@ -475,139 +346,42 @@
                           </div>
                           <div class="kfsi-board-head-end"></div>
                         </div>
-                        <div class="pc">
-                          <div class="kfsi-table">
-                            <table
-                              summary="회비 및 교육수수료 납부내역을 나타내며, 납부년도, 구분, 상태, 처리일자, 금액, 영수증 정보를 포함합니다."
-                            >
-                              <caption>
-                                회비/교육수수료 납부내역
-                              </caption>
-                              <colgroup>
-                                <col style="width: 160px" />
-                                <col style="width: 140px" />
-                                <col style="width: 140px" />
-                                <col style="width: 180px" />
-                                <col style="width: 160px" />
-                                <col style="width: 160px" />
-                              </colgroup>
-                              <thead>
-                                <tr>
-                                  <th scope="col">납부년도</th>
-                                  <th scope="col">구분</th>
-                                  <th scope="col">상태</th>
-                                  <th scope="col">처리일자</th>
-                                  <th scope="col">금액</th>
-                                  <th scope="col">영수증</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>
-                                    2024년<br />
-                                    (01월~12월)
-                                  </td>
-                                  <td>회비</td>
-                                  <td>납부완료</td>
-                                  <td>2024.03.15</td>
-                                  <td>36,000원</td>
-                                  <td>
-                                    <button
-                                      type="button"
-                                      class="btn btn-secondary btn-sm"
-                                    >
-                                      영수증 출력
-                                    </button>
-                                    <button
-                                      type="button"
-                                      class="btn btn-outline-dark btn-sm mt-2"
-                                    >
-                                      영수증 팩스
-                                    </button>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    2024년<br />
-                                    (01월~12월)
-                                  </td>
-                                  <td>회비</td>
-                                  <td>납부완료</td>
-                                  <td>2024.03.15</td>
-                                  <td>36,000원</td>
-                                  <td>
-                                    <button
-                                      type="button"
-                                      class="btn btn-secondary btn-sm"
-                                    >
-                                      영수증 출력
-                                    </button>
-                                    <button
-                                      type="button"
-                                      class="btn btn-outline-dark btn-sm mt-2"
-                                    >
-                                      영수증 팩스
-                                    </button>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    2024년<br />
-                                    (01월~12월)
-                                  </td>
-                                  <td>회비</td>
-                                  <td>납부완료</td>
-                                  <td>2024.03.15</td>
-                                  <td>36,000원</td>
-                                  <td>
-                                    <button
-                                      type="button"
-                                      class="btn btn-secondary btn-sm"
-                                    >
-                                      영수증 출력
-                                    </button>
-                                    <button
-                                      type="button"
-                                      class="btn btn-outline-dark btn-sm mt-2"
-                                    >
-                                      영수증 팩스
-                                    </button>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                        <div class="mo">
-                          <div class="kfsi-list">
-                            <div class="kfsi-list-section">
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">납부년도</div>
-                                <div class="kfsi-list-item-text">
-                                  2024년 (01월~12월)
-                                </div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">구분</div>
-                                <div class="kfsi-list-item-text">회비</div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">상태</div>
-                                <div class="kfsi-list-item-text">납부완료</div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">처리일자</div>
-                                <div class="kfsi-list-item-text">
-                                  2024.03.15
-                                </div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">금액</div>
-                                <div class="kfsi-list-item-text">36,000원</div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">영수증</div>
-                                <div class="kfsi-list-item-text d-flex gap-2">
+                        <div class="kfsi-table kfsi-table-mo-list">
+                          <table
+                            summary="회비 및 교육수수료 납부내역을 나타내며, 납부년도, 구분, 상태, 처리일자, 금액, 영수증 정보를 포함합니다."
+                          >
+                            <caption>
+                              회비/교육수수료 납부내역
+                            </caption>
+                            <colgroup>
+                              <col style="width: 160px" />
+                              <col style="width: 140px" />
+                              <col style="width: 140px" />
+                              <col style="width: 180px" />
+                              <col style="width: 160px" />
+                              <col style="width: 160px" />
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">납부년도</th>
+                                <th scope="col">구분</th>
+                                <th scope="col">상태</th>
+                                <th scope="col">처리일자</th>
+                                <th scope="col">금액</th>
+                                <th scope="col">영수증</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td title="납부년도">
+                                  2024년<br />
+                                  (01월~12월)
+                                </td>
+                                <td title="구분">회비</td>
+                                <td title="상태">납부완료</td>
+                                <td title="처리일자">2024.03.15</td>
+                                <td title="금액">36,000원</td>
+                                <td title="영수증">
                                   <button
                                     type="button"
                                     class="btn btn-secondary btn-sm"
@@ -616,41 +390,22 @@
                                   </button>
                                   <button
                                     type="button"
-                                    class="btn btn-outline-secondary btn-sm"
+                                    class="btn btn-outline-dark btn-sm mt-2"
                                   >
                                     영수증 팩스
                                   </button>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="kfsi-list-section">
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">납부년도</div>
-                                <div class="kfsi-list-item-text">
-                                  2024년 (01월~12월)
-                                </div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">구분</div>
-                                <div class="kfsi-list-item-text">회비</div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">상태</div>
-                                <div class="kfsi-list-item-text">납부완료</div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">처리일자</div>
-                                <div class="kfsi-list-item-text">
-                                  2024.03.15
-                                </div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">금액</div>
-                                <div class="kfsi-list-item-text">36,000원</div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">영수증</div>
-                                <div class="kfsi-list-item-text d-flex gap-2">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td title="납부년도">
+                                  2024년<br />
+                                  (01월~12월)
+                                </td>
+                                <td title="구분">회비</td>
+                                <td title="상태">납부완료</td>
+                                <td title="처리일자">2024.03.15</td>
+                                <td title="금액">36,000원</td>
+                                <td title="영수증">
                                   <button
                                     type="button"
                                     class="btn btn-secondary btn-sm"
@@ -659,41 +414,22 @@
                                   </button>
                                   <button
                                     type="button"
-                                    class="btn btn-outline-secondary btn-sm"
+                                    class="btn btn-outline-dark btn-sm mt-2"
                                   >
                                     영수증 팩스
                                   </button>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="kfsi-list-section">
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">납부년도</div>
-                                <div class="kfsi-list-item-text">
-                                  2024년 (01월~12월)
-                                </div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">구분</div>
-                                <div class="kfsi-list-item-text">회비</div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">상태</div>
-                                <div class="kfsi-list-item-text">납부완료</div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">처리일자</div>
-                                <div class="kfsi-list-item-text">
-                                  2024.03.15
-                                </div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">금액</div>
-                                <div class="kfsi-list-item-text">36,000원</div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">영수증</div>
-                                <div class="kfsi-list-item-text d-flex gap-2">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td title="납부년도">
+                                  2024년<br />
+                                  (01월~12월)
+                                </td>
+                                <td title="구분">회비</td>
+                                <td title="상태">납부완료</td>
+                                <td title="처리일자">2024.03.15</td>
+                                <td title="금액">36,000원</td>
+                                <td title="영수증">
                                   <button
                                     type="button"
                                     class="btn btn-secondary btn-sm"
@@ -702,14 +438,14 @@
                                   </button>
                                   <button
                                     type="button"
-                                    class="btn btn-outline-secondary btn-sm"
+                                    class="btn btn-outline-dark btn-sm mt-2"
                                   >
                                     영수증 팩스
                                   </button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
                       </div>
                     </div>
@@ -734,144 +470,64 @@
                             </a>
                           </div>
                         </div>
-                        <div class="pc">
-                          <div class="kfsi-table">
-                            <table
-                              summary="자격발급 내역 테이블로, 번호, 등급, 지부, 신청일자, 상태, 영수증 정보 제공"
-                            >
-                              <caption>
-                                자격발급 내역
-                              </caption>
-                              <colgroup>
-                                <col style="width: 120px" />
-                                <col style="width: 240px" />
-                                <col style="width: 120px" />
-                                <col style="width: 200px" />
-                                <col style="width: 110px" />
-                                <col style="width: 150px" />
-                              </colgroup>
-                              <thead>
-                                <tr>
-                                  <th scope="col">번호</th>
-                                  <th scope="col">등급</th>
-                                  <th scope="col">지부</th>
-                                  <th scope="col">신청일자</th>
-                                  <th scope="col">상태</th>
-                                  <th scope="col">영수증</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>1</td>
-                                  <td>1급 소방안전관리자</td>
-                                  <td>서울지부</td>
-                                  <td>2024.06.21</td>
-                                  <td>발급완료</td>
-                                  <td>
-                                    <button
-                                      type="button"
-                                      class="btn btn-secondary btn-sm"
-                                    >
-                                      영수증 출력
-                                    </button>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>1</td>
-                                  <td>1급 소방안전관리자</td>
-                                  <td>서울지부</td>
-                                  <td>2024.06.21</td>
-                                  <td>발급완료</td>
-                                  <td>
-                                    <button
-                                      type="button"
-                                      class="btn btn-secondary btn-sm"
-                                    >
-                                      영수증 출력
-                                    </button>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                        <div class="mo">
-                          <div class="kfsi-list">
-                            <div class="kfsi-list-section">
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">번호</div>
-                                <div class="kfsi-list-item-text">1</div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">등급</div>
-                                <div class="kfsi-list-item-text">
-                                  1급 소방안전관리자
-                                </div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">지부</div>
-                                <div class="kfsi-list-item-text">서울지부</div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">신청일자</div>
-                                <div class="kfsi-list-item-text">
-                                  2024.06.21
-                                </div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">상태</div>
-                                <div class="kfsi-list-item-text">발급완료</div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">영수증</div>
-                                <div class="kfsi-list-item-text d-flex gap-2">
+                        <div class="kfsi-table kfsi-table-mo-list">
+                          <table
+                            summary="자격발급 내역 테이블로, 번호, 등급, 지부, 신청일자, 상태, 영수증 정보 제공"
+                          >
+                            <caption>
+                              자격발급 내역
+                            </caption>
+                            <colgroup>
+                              <col style="width: 120px" />
+                              <col style="width: 240px" />
+                              <col style="width: 120px" />
+                              <col style="width: 200px" />
+                              <col style="width: 110px" />
+                              <col style="width: 150px" />
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">등급</th>
+                                <th scope="col">지부</th>
+                                <th scope="col">신청일자</th>
+                                <th scope="col">상태</th>
+                                <th scope="col">영수증</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td title="번호">1</td>
+                                <td title="등급">1급 소방안전관리자</td>
+                                <td title="지부">서울지부</td>
+                                <td title="신청일자">2024.06.21</td>
+                                <td title="상태">발급완료</td>
+                                <td title="영수증">
                                   <button
                                     type="button"
                                     class="btn btn-secondary btn-sm"
                                   >
                                     영수증 출력
                                   </button>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="kfsi-list-section">
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">번호</div>
-                                <div class="kfsi-list-item-text">1</div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">등급</div>
-                                <div class="kfsi-list-item-text">
-                                  1급 소방안전관리자
-                                </div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">지부</div>
-                                <div class="kfsi-list-item-text">서울지부</div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">신청일자</div>
-                                <div class="kfsi-list-item-text">
-                                  2024.06.21
-                                </div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">상태</div>
-                                <div class="kfsi-list-item-text">발급완료</div>
-                              </div>
-                              <div class="kfsi-list-item">
-                                <div class="kfsi-list-item-title">영수증</div>
-                                <div class="kfsi-list-item-text d-flex gap-2">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td title="번호">1</td>
+                                <td title="등급">1급 소방안전관리자</td>
+                                <td title="지부">서울지부</td>
+                                <td title="신청일자">2024.06.21</td>
+                                <td title="상태">발급완료</td>
+                                <td title="영수증">
                                   <button
                                     type="button"
                                     class="btn btn-secondary btn-sm"
                                   >
                                     영수증 출력
                                   </button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
                       </div>
                     </div>

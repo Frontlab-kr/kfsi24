@@ -84,6 +84,29 @@
       </div>
       <div id="footer"></div>
     </div>
+
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 5000;
+      "
+    >
+      <div>
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#modal01"
+        >
+          팩스 전송
+        </button>
+      </div>
+    </div>
+
     <!-- Modal -->
     <div class="modal fade" id="modal01" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
@@ -113,24 +136,28 @@
                     </colgroup>
                     <tbody>
                       <tr>
-                        <th scope="row">팩스번호</th>
+                        <th scope="row"><span>팩스번호</span></th>
                         <td>
-                          <input
-                            type="text"
-                            class="form-control"
-                            value="sobang"
-                            title="팩스번호"
-                          />
+                          <span>
+                            <input
+                              type="text"
+                              class="form-control"
+                              value="sobang"
+                              title="팩스번호"
+                            />
+                          </span>
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row">팩스번호 재확인</th>
+                        <th scope="row"><span>팩스번호 재확인</span></th>
                         <td>
-                          <input
-                            type="password"
-                            class="form-control"
-                            title="팩스번호 재확인"
-                          />
+                          <span>
+                            <input
+                              type="password"
+                              class="form-control"
+                              title="팩스번호 재확인"
+                            />
+                          </span>
                         </td>
                       </tr>
                     </tbody>

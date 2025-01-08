@@ -100,9 +100,9 @@
 }
 .ico-eye {
   display: inline-block;
-  min-width: 14px;
-  height: 11px;
-  background: url(../images/icon/ico-eye.png) no-repeat 50% 50%;
+  min-width: 16px;
+  height: 13px;
+  background: url(../images/icon/ico-eye.svg) no-repeat 50% 50%;
   background-size: cover;
   font-size: 0;
   line-height: 0;
@@ -376,6 +376,24 @@
   min-width: 42px;
   height: 45px;
   background: url(../images/icon/ico-yes24.png) no-repeat 50% 50%;
+  background-size: cover;
+  font-size: 0;
+  line-height: 0;
+}
+.ico-tel-white {
+  display: inline-block;
+  min-width: 17px;
+  height: 18px;
+  background: url(../images/icon/ico-tel-white.svg) no-repeat 50% 50%;
+  background-size: cover;
+  font-size: 0;
+  line-height: 0;
+}
+.ico-camera {
+  display: inline-block;
+  min-width: 16px;
+  height: 13px;
+  background: url(../images/icon/ico-camera.svg) no-repeat 50% 50%;
   background-size: cover;
   font-size: 0;
   line-height: 0;

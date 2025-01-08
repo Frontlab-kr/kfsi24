@@ -38,6 +38,14 @@ strong {
     .mo-ms-#{$i} {
       margin-left: #{4 * $i}px !important;
     }
+    .mo-my-#{$i} {
+      margin-top: #{4 * $i}px !important;
+      margin-bottom: #{4 * $i}px !important;
+    }
+    .mo-mx-#{$i} {
+      margin-left: #{4 * $i}px !important;
+      margin-right: #{4 * $i}px !important;
+    }
     .mo-pt-#{$i} {
       padding-top: #{4 * $i}px !important;
     }
@@ -49,6 +57,14 @@ strong {
     }
     .mo-ps-#{$i} {
       padding-left: #{4 * $i}px !important;
+    }
+    .mo-py-#{$i} {
+      padding-top: #{4 * $i}px !important;
+      padding-bottom: #{4 * $i}px !important;
+    }
+    .mo-px-#{$i} {
+      padding-left: #{4 * $i}px !important;
+      padding-right: #{4 * $i}px !important;
     }
   }
 }
@@ -199,7 +215,8 @@ small {
     background: #fff;
     color: #333;
     border: 1px solid #ddd;
-    &:hover {
+    &:hover,
+    &:active {
       border: 1px solid #ddd;
       background-color: #fff;
       color: #333 !important;

@@ -55,104 +55,66 @@
               </div>
               <div class="kfsi-license">
                 <div class="kfsi-board">
-                  <div class="pc">
-                    <div class="kfsi-table">
-                      <table summary="자격 취득 확인 현황을 나타내는 표입니다.">
-                        <caption>
-                          자격 취득 확인 현황
-                        </caption>
-                        <colgroup>
-                          <col style="width: 160px" />
-                          <col style="width: 200px" />
-                          <col style="width: 140px" />
-                          <col style="width: 140px" />
-                          <col style="width: 150px" />
-                          <col style="width: 150px" />
-                        </colgroup>
-                        <thead>
-                          <tr>
-                            <th scope="col">구분</th>
-                            <th scope="col">자격번호</th>
-                            <th scope="col">발급일자</th>
-                            <th scope="col">발급사유</th>
-                            <th scope="col">취득확인서</th>
-                            <th scope="col">팩스 발송</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>2급 소방안전관리자</td>
-                            <td>2024-12-34-5-678901</td>
-                            <td>2024.03.22</td>
-                            <td>자격인정</td>
-                            <td>
+                  <div class="kfsi-table kfsi-table-mo-list">
+                    <table summary="자격 취득 확인 현황을 나타내는 표입니다.">
+                      <caption>
+                        자격 취득 확인 현황
+                      </caption>
+                      <colgroup>
+                        <col style="width: 160px" />
+                        <col style="width: 200px" />
+                        <col style="width: 140px" />
+                        <col style="width: 140px" />
+                        <col style="width: 150px" />
+                        <col style="width: 150px" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">구분</th>
+                          <th scope="col">자격번호</th>
+                          <th scope="col">발급일자</th>
+                          <th scope="col">발급사유</th>
+                          <th scope="col">취득확인서</th>
+                          <th scope="col">팩스 발송</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td title="구분">
+                            <div>2급 소방안전관리자</div>
+                          </td>
+                          <td title="자격번호">
+                            <div>2024-12-34-5-678901</div>
+                          </td>
+                          <td title="발급일자">
+                            <div>2024.03.22</div>
+                          </td>
+                          <td title="발급사유">
+                            <div>자격인정</div>
+                          </td>
+                          <td title="취득확인서">
+                            <div>
                               <button
                                 type="button"
                                 class="btn btn-secondary btn-sm"
                               >
                                 출력하기
                               </button>
-                            </td>
-                            <td>
+                            </div>
+                          </td>
+                          <td title="팩스 발송">
+                            <div>
                               <button
                                 type="button"
                                 class="btn btn-outline-dark btn-sm"
                               >
                                 발송하기
                               </button>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                  <div class="mo">
-                    <div class="kfsi-list">
-                      <div class="kfsi-list-section">
-                        <div class="kfsi-list-item">
-                          <div class="kfsi-list-item-title">구분</div>
-                          <div class="kfsi-list-item-text">
-                            2급 소방안전관리자
-                          </div>
-                        </div>
-                        <div class="kfsi-list-item">
-                          <div class="kfsi-list-item-title">자격번호</div>
-                          <div class="kfsi-list-item-text">
-                            2024-12-34-5-678901
-                          </div>
-                        </div>
-                        <div class="kfsi-list-item">
-                          <div class="kfsi-list-item-title">발급일자</div>
-                          <div class="kfsi-list-item-text">2024.03.22</div>
-                        </div>
-                        <div class="kfsi-list-item">
-                          <div class="kfsi-list-item-title">발급사유</div>
-                          <div class="kfsi-list-item-text">자격인정</div>
-                        </div>
-                        <div class="kfsi-list-item">
-                          <div class="kfsi-list-item-title">취득확인서</div>
-                          <div class="kfsi-list-item-text">
-                            <button
-                              type="button"
-                              class="btn btn-secondary btn-sm"
-                            >
-                              출력하기
-                            </button>
-                          </div>
-                        </div>
-                        <div class="kfsi-list-item">
-                          <div class="kfsi-list-item-title">팩스 발송</div>
-                          <div class="kfsi-list-item-text">
-                            <button
-                              type="button"
-                              class="btn btn-outline-dark btn-sm"
-                            >
-                              발송하기
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
                 <div class="mt-4">
@@ -191,31 +153,35 @@
                             </colgroup>
                             <tbody>
                               <tr>
-                                <th scope="row">영문 또는 중문 이름</th>
+                                <th scope="row">
+                                  <span>영문 또는 중문 이름</span>
+                                </th>
                                 <td>
-                                  <div class="kfsi-license-apply__input">
-                                    <input
-                                      type="text"
-                                      class="form-control w-100"
-                                      title="영문 또는 중문 이름"
-                                    />
-                                    <p>
-                                      <button
-                                        type="button"
-                                        class="btn btn-secondary btn-sm"
-                                      >
-                                        출력하기
-                                      </button>
-                                      <button
-                                        type="button"
-                                        class="btn btn-outline-dark btn-sm"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#modal01"
-                                      >
-                                        팩스발송
-                                      </button>
-                                    </p>
-                                  </div>
+                                  <span>
+                                    <div class="kfsi-license-apply__input">
+                                      <input
+                                        type="text"
+                                        class="form-control w-100"
+                                        title="영문 또는 중문 이름"
+                                      />
+                                      <p>
+                                        <button
+                                          type="button"
+                                          class="btn btn-secondary btn-sm"
+                                        >
+                                          출력하기
+                                        </button>
+                                        <button
+                                          type="button"
+                                          class="btn btn-outline-dark btn-sm"
+                                          data-bs-toggle="modal"
+                                          data-bs-target="#modal01"
+                                        >
+                                          팩스발송
+                                        </button>
+                                      </p>
+                                    </div>
+                                  </span>
                                 </td>
                               </tr>
                             </tbody>
@@ -279,6 +245,28 @@
       <div id="footer"></div>
     </div>
 
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 5000;
+      "
+    >
+      <div>
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#modal01"
+        >
+          팩스 전송
+        </button>
+      </div>
+    </div>
+
     <!-- Modal -->
     <div class="modal fade" id="modal01" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
@@ -308,24 +296,28 @@
                     </colgroup>
                     <tbody>
                       <tr>
-                        <th scope="row">팩스번호</th>
+                        <th scope="row"><span>팩스번호</span></th>
                         <td>
-                          <input
-                            type="text"
-                            class="form-control"
-                            value="sobang"
-                            title="팩스번호"
-                          />
+                          <span>
+                            <input
+                              type="text"
+                              class="form-control"
+                              value="sobang"
+                              title="팩스번호"
+                            />
+                          </span>
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row">팩스번호 재확인</th>
+                        <th scope="row"><span>팩스번호 재확인</span></th>
                         <td>
-                          <input
-                            type="password"
-                            class="form-control"
-                            title="팩스번호 재확인"
-                          />
+                          <span>
+                            <input
+                              type="password"
+                              class="form-control"
+                              title="팩스번호 재확인"
+                            />
+                          </span>
                         </td>
                       </tr>
                     </tbody>

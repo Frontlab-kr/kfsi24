@@ -101,303 +101,351 @@
                           <tbody>
                             <tr>
                               <th scope="row">
-                                아이디
-                                <span class="text-danger">*</span>
+                                <span>
+                                  아이디
+                                  <span class="text-danger">*</span>
+                                </span>
                               </th>
                               <td>
-                                <div class="kfsi-mypage-certification-id">
+                                <span>
+                                  <div class="kfsi-mypage-certification-id">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      title="아이디"
+                                      style="width: 200px"
+                                    />
+                                    <button
+                                      type="button"
+                                      class="btn btn-secondary btn-sm"
+                                      data-bs-toggle="modal"
+                                      data-bs-target="#alert01"
+                                    >
+                                      중복확인
+                                    </button>
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">
+                                <span>
+                                  비밀번호
+                                  <span class="text-danger">*</span>
+                                </span>
+                              </th>
+                              <td>
+                                <span>
+                                  <div
+                                    class="kfsi-mypage-certification-input02"
+                                  >
+                                    <input
+                                      type="password"
+                                      class="form-control"
+                                      title="비밀번호"
+                                      style="width: 200px"
+                                    />
+                                    <p>
+                                      9~16자의 영문, 숫자, 특수문자를 혼용하여
+                                      사용
+                                    </p>
+                                  </div>
+                                  <div
+                                    class="kfsi-mypage-certification-text pt-2"
+                                  >
+                                    <ul>
+                                      <li class="text-primary">
+                                        <i class="ico-check-success"></i>
+                                        9자 이상 16자 이하
+                                      </li>
+                                      <li>
+                                        <i class="ico-check-secondary"></i>
+                                        영문, 숫자, 특수문자 3가지 혼합
+                                      </li>
+                                      <li>
+                                        <i class="ico-check-secondary"></i>
+                                        4자 이상 동일 문자/숫자 연속 사용 금지
+                                        (예:aaaa, 1111)
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">
+                                <span>
+                                  비밀번호 확인
+                                  <span class="text-danger">*</span>
+                                </span>
+                              </th>
+                              <td>
+                                <span>
+                                  <div class="kfsi-mypage-certification-id">
+                                    <input
+                                      type="password"
+                                      class="form-control is-invalid"
+                                      title=" 비밀번호 확인"
+                                      style="width: 200px"
+                                    />
+                                    <button
+                                      type="button"
+                                      class="btn btn-secondary btn-sm"
+                                      data-bs-toggle="modal"
+                                      data-bs-target="#modal01"
+                                    >
+                                      비밀번호 도움말
+                                    </button>
+                                  </div>
+                                  <div class="invalid-feedback d-block">
+                                    새 비밀번호와 비밀번호 확인이 일치하지
+                                    않습니다.
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">
+                                <span>
+                                  성함
+                                  <span class="text-danger">*</span>
+                                </span>
+                              </th>
+                              <td>
+                                <span>
                                   <input
                                     type="text"
                                     class="form-control"
                                     title="아이디"
                                     style="width: 200px"
                                   />
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary btn-sm"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#alert01"
-                                  >
-                                    중복확인
-                                  </button>
-                                </div>
+                                </span>
                               </td>
                             </tr>
                             <tr>
                               <th scope="row">
-                                비밀번호
-                                <span class="text-danger">*</span>
+                                <span> 생년월일 </span>
                               </th>
                               <td>
-                                <div class="kfsi-mypage-certification-input02">
-                                  <input
-                                    type="password"
-                                    class="form-control"
-                                    title="비밀번호"
-                                    style="width: 200px"
-                                  />
-                                  <p>
-                                    9~16자의 영문, 숫자, 특수문자를 혼용하여
-                                    사용
+                                <span>
+                                  <div
+                                    class="d-flex align-items-center gap-5 mb-3"
+                                  >
+                                    <div
+                                      class="d-flex align-items-center gap-1"
+                                    >
+                                      <select
+                                        class="form-select"
+                                        title="년도 선택"
+                                        style="min-width: 100px; width: 100px"
+                                      >
+                                        <option selected>선택</option>
+                                      </select>
+                                      년
+                                    </div>
+                                    <div
+                                      class="d-flex align-items-center gap-1"
+                                    >
+                                      <select
+                                        class="form-select"
+                                        title="월 선택"
+                                        style="min-width: 80px; width: 80px"
+                                      >
+                                        <option selected>선택</option>
+                                      </select>
+                                      월
+                                    </div>
+                                    <div
+                                      class="d-flex align-items-center gap-1"
+                                    >
+                                      <select
+                                        class="form-select"
+                                        title="일 선택"
+                                        style="min-width: 80px; width: 80px"
+                                      >
+                                        <option selected>선택</option>
+                                      </select>
+                                      일
+                                    </div>
+                                  </div>
+                                  <p class="m-0 fs-15 lh-base">
+                                    ※ 생년월일 이용 안내<br />
+                                    (필수사용 업무) 강습교육, 실무교육,
+                                    시험신청, 자격수첩, 다중이용업, 의용소방대
+                                    교육관련일 경우 생년월일<br />
+                                    필수 입력 미 입력시 안전원 정보와 연계되지
+                                    않을 수 있습니다.<br />(미 사용 업무) 그 외,
+                                    사이트 타 기능을 이용하는 경우 [선택입력]
                                   </p>
-                                </div>
-                                <div
-                                  class="kfsi-mypage-certification-text pt-2"
-                                >
-                                  <ul>
-                                    <li class="text-primary">
-                                      <i class="ico-check-success"></i>
-                                      9자 이상 16자 이하
-                                    </li>
-                                    <li>
-                                      <i class="ico-check-secondary"></i>
-                                      영문, 숫자, 특수문자 3가지 혼합
-                                    </li>
-                                    <li>
-                                      <i class="ico-check-secondary"></i>
-                                      4자 이상 동일 문자/숫자 연속 사용 금지
-                                      (예:aaaa, 1111)
-                                    </li>
-                                  </ul>
-                                </div>
+                                </span>
                               </td>
                             </tr>
                             <tr>
                               <th scope="row">
-                                비밀번호 확인
-                                <span class="text-danger">*</span>
+                                <span>
+                                  휴대폰 번호 <span class="text-danger">*</span>
+                                </span>
                               </th>
                               <td>
-                                <div class="kfsi-mypage-certification-id">
-                                  <input
-                                    type="password"
-                                    class="form-control is-invalid"
-                                    title=" 비밀번호 확인"
-                                    style="width: 200px"
-                                  />
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary btn-sm"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#modal01"
-                                  >
-                                    비밀번호 도움말
-                                  </button>
-                                </div>
-                                <div class="invalid-feedback d-block">
-                                  새 비밀번호와 비밀번호 확인이 일치하지
-                                  않습니다.
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <th scope="row">
-                                성함
-                                <span class="text-danger">*</span>
-                              </th>
-                              <td>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  title="아이디"
-                                  style="width: 200px"
-                                />
-                              </td>
-                            </tr>
-                            <tr>
-                              <th scope="row">생년월일</th>
-                              <td>
-                                <div
-                                  class="d-flex align-items-center gap-5 mb-3"
-                                >
-                                  <div class="d-flex align-items-center gap-1">
-                                    <select
-                                      class="form-select"
-                                      title="년도 선택"
-                                      style="min-width: 100px; width: 100px"
-                                    >
-                                      <option selected>선택</option>
-                                    </select>
-                                    년
-                                  </div>
-                                  <div class="d-flex align-items-center gap-1">
-                                    <select
-                                      class="form-select"
-                                      title="월 선택"
-                                      style="min-width: 80px; width: 80px"
-                                    >
-                                      <option selected>선택</option>
-                                    </select>
-                                    월
-                                  </div>
-                                  <div class="d-flex align-items-center gap-1">
-                                    <select
-                                      class="form-select"
-                                      title="일 선택"
-                                      style="min-width: 80px; width: 80px"
-                                    >
-                                      <option selected>선택</option>
-                                    </select>
-                                    일
-                                  </div>
-                                </div>
-                                <p class="m-0 fs-15 lh-base">
-                                  ※ 생년월일 이용 안내<br />
-                                  (필수사용 업무) 강습교육, 실무교육, 시험신청,
-                                  자격수첩, 다중이용업, 의용소방대 교육관련일
-                                  경우 생년월일<br />
-                                  필수 입력 미 입력시 안전원 정보와 연계되지
-                                  않을 수 있습니다.<br />(미 사용 업무) 그 외,
-                                  사이트 타 기능을 이용하는 경우 [선택입력]
-                                </p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <th scope="row">
-                                휴대폰 번호 <span class="text-danger">*</span>
-                              </th>
-                              <td>
-                                <div class="kfsi-mypage-phone">
-                                  <div class="kfsi-mypage-phone-input">
-                                    <select
-                                      class="form-select"
-                                      aria-label="휴대폰 번호 앞자리 선택"
-                                      title="휴대폰 번호 앞자리 선택"
-                                      style="min-width: 80px; width: 80px"
-                                    >
-                                      <option selected>선택</option>
-                                    </select>
-                                    -
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      title="휴대폰 번호 중간 자리 입력"
-                                      style="min-width: 80px; width: 80px"
-                                    />
-                                    -
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      title="휴대폰 번호 마지막 자리 입력"
-                                      style="min-width: 80px; width: 80px"
-                                    />
-                                  </div>
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary btn-sm"
-                                  >
-                                    인증번호 전송
-                                  </button>
-                                </div>
-                                <div class="kfsi-mypage-certification">
-                                  <div class="kfsi-mypage-certification-input">
-                                    인증번호입력
-                                    <input
-                                      type="number"
-                                      class="form-control"
-                                      title="인증번호입력"
-                                      style="min-width: 88px; width: 88px"
-                                    />
-                                  </div>
-                                  <div class="kfsi-mypage-certification-button">
+                                <span>
+                                  <div class="kfsi-mypage-phone">
+                                    <div class="kfsi-mypage-phone-input">
+                                      <select
+                                        class="form-select"
+                                        aria-label="휴대폰 번호 앞자리 선택"
+                                        title="휴대폰 번호 앞자리 선택"
+                                        style="min-width: 80px; width: 80px"
+                                      >
+                                        <option selected>선택</option>
+                                      </select>
+                                      -
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        title="휴대폰 번호 중간 자리 입력"
+                                        style="min-width: 80px; width: 80px"
+                                      />
+                                      -
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        title="휴대폰 번호 마지막 자리 입력"
+                                        style="min-width: 80px; width: 80px"
+                                      />
+                                    </div>
                                     <button
                                       type="button"
                                       class="btn btn-secondary btn-sm"
                                     >
-                                      인증번호 확인
+                                      인증번호 전송
                                     </button>
                                   </div>
-                                  <div class="kfsi-mypage-certification-text">
-                                    <ul>
-                                      <li class="text-primary">
-                                        <i class="ico-check-success"></i>
-                                        인증완료
-                                      </li>
-                                    </ul>
+                                  <div class="kfsi-mypage-certification">
+                                    <div
+                                      class="kfsi-mypage-certification-input"
+                                    >
+                                      인증번호입력
+                                      <input
+                                        type="number"
+                                        class="form-control"
+                                        title="인증번호입력"
+                                        style="min-width: 88px; width: 88px"
+                                      />
+                                    </div>
+                                    <div
+                                      class="kfsi-mypage-certification-button"
+                                    >
+                                      <button
+                                        type="button"
+                                        class="btn btn-secondary btn-sm"
+                                      >
+                                        인증번호 확인
+                                      </button>
+                                    </div>
+                                    <div class="kfsi-mypage-certification-text">
+                                      <ul>
+                                        <li class="text-primary">
+                                          <i class="ico-check-success"></i>
+                                          인증완료
+                                        </li>
+                                      </ul>
+                                    </div>
                                   </div>
-                                </div>
+                                </span>
                               </td>
                             </tr>
                             <tr>
                               <th scope="row">
-                                E-mail <span class="text-danger">*</span>
+                                <span>
+                                  E-mail <span class="text-danger">*</span>
+                                </span>
                               </th>
                               <td>
-                                <div class="kfsi-mypage-email">
-                                  <div class="kfsi-mypage-email-input">
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      title="E-mail 아이디 입력"
-                                      style="min-width: 120px; width: 120px"
-                                    />
-                                    @
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      title="E-mail 도메인 입력"
-                                      style="min-width: 120px; width: 120px"
-                                    />
+                                <span>
+                                  <div class="kfsi-mypage-email">
+                                    <div class="kfsi-mypage-email-input">
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        title="E-mail 아이디 입력"
+                                        style="min-width: 120px; width: 120px"
+                                      />
+                                      @
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        title="E-mail 도메인 입력"
+                                        style="min-width: 120px; width: 120px"
+                                      />
+                                    </div>
+                                    <select
+                                      class="form-select"
+                                      aria-label="E-mail 선택"
+                                      title="E-mail 선택"
+                                    >
+                                      <option selected>선택</option>
+                                      <option value="daum.net">daum.net</option>
+                                      <option value="gmail.com">
+                                        gmail.com
+                                      </option>
+                                      <option value="hotmail.com">
+                                        hotmail.com
+                                      </option>
+                                      <option value="naver.com">
+                                        naver.com
+                                      </option>
+                                      <option value="nate.com">nate.com</option>
+                                      <option value="self">직접입력</option>
+                                    </select>
                                   </div>
-                                  <select
-                                    class="form-select"
-                                    aria-label="E-mail 선택"
-                                    title="E-mail 선택"
-                                  >
-                                    <option selected>선택</option>
-                                    <option value="daum.net">daum.net</option>
-                                    <option value="gmail.com">gmail.com</option>
-                                    <option value="hotmail.com">
-                                      hotmail.com
-                                    </option>
-                                    <option value="naver.com">naver.com</option>
-                                    <option value="nate.com">nate.com</option>
-                                    <option value="self">직접입력</option>
-                                  </select>
-                                </div>
-                                <div class="kfsi-mypage-email-text">
-                                  아이디 및 비밀번호 분실시 사용되오니, 실제
-                                  사용하는 이메일을 입력하시기 바랍니다.
-                                </div>
+                                  <div class="kfsi-mypage-email-text">
+                                    아이디 및 비밀번호 분실시 사용되오니, 실제
+                                    사용하는 이메일을 입력하시기 바랍니다.
+                                  </div>
+                                </span>
                               </td>
                             </tr>
                             <tr>
                               <th scope="row">
-                                연령확인 <span class="text-danger">*</span>
+                                <span>
+                                  연령확인 <span class="text-danger">*</span>
+                                </span>
                               </th>
                               <td>
-                                <div class="d-flex flex-wrap gap-1">
-                                  <div class="form-check me-9">
-                                    <input
-                                      class="form-check-input"
-                                      type="radio"
-                                      value=""
-                                      name="radio1"
-                                      id="radio1-1"
-                                    />
-                                    <label
-                                      class="form-check-label"
-                                      for="radio1-1"
-                                    >
-                                      만 14세 이상입니다.
-                                    </label>
+                                <span>
+                                  <div class="d-flex flex-wrap gap-1">
+                                    <div class="form-check me-9">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        value=""
+                                        name="radio1"
+                                        id="radio1-1"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="radio1-1"
+                                      >
+                                        만 14세 이상입니다.
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        value=""
+                                        name="radio1"
+                                        id="radio1-2"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="radio1-2"
+                                      >
+                                        만 14세 미만입니다.
+                                      </label>
+                                    </div>
                                   </div>
-                                  <div class="form-check">
-                                    <input
-                                      class="form-check-input"
-                                      type="radio"
-                                      value=""
-                                      name="radio1"
-                                      id="radio1-2"
-                                    />
-                                    <label
-                                      class="form-check-label"
-                                      for="radio1-2"
-                                    >
-                                      만 14세 미만입니다.
-                                    </label>
-                                  </div>
-                                </div>
+                                </span>
                               </td>
                             </tr>
                           </tbody>
@@ -419,6 +467,40 @@
       </div>
       <div id="footer"></div>
     </div>
+
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 5000;
+      "
+    >
+      <div>
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#alert01"
+        >
+          중복확인
+        </button>
+      </div>
+
+      <div class="mt-1">
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#modal01"
+        >
+          비밀번호 도움말
+        </button>
+      </div>
+    </div>
+
     <!-- Modal -->
     <div
       class="modal fade"

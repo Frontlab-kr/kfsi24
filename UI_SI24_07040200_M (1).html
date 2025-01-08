@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>자격발급 신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">자격 발급안내</a>
+              <a href="" class="kfsi-snb-item">자격 재발급안내</a>
+              <a href="" class="kfsi-snb-item">자격 발급심사 신청</a>
+              <a href="" class="kfsi-snb-item active">자격 (재)발급신청</a>
+              <a href="" class="kfsi-snb-item">
+                자격 발급<br />
+                (심사) 신청 내역
+              </a>
+              <a href="" class="kfsi-snb-item">자격 취득확인</a>
+              <a href="" class="kfsi-snb-item">자격 발급 진위확인</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">자격발급 신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      자격 (재)발급신청
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>자격 (재)발급신청</h1>
+              </div>
+              <div class="kfsi-license">
+                <div class="kfsi-tab02">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="tab01"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab01-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab01-pane"
+                        aria-selected="true"
+                      >
+                        자격 발급 신청안내
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab02"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab02-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab02-pane"
+                        aria-selected="false"
+                      >
+                        자격 발급 신청
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div
+                      class="tab-pane fade show active"
+                      id="tab01-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab01"
+                      tabindex="0"
+                    >
+                      <div class="mb-15">
+                        <h4 class="kfsi-h4">온라인 신청자격</h4>
+                        안전원에 자격취득 당시 사진이 등록된 신청자
+                        <div class="mt-10 mo-mt-7">
+                          ※ 주의사항<br />
+                          인적사항(성명, 주민번호 등)의 변경이 필요한 경우,
+                          증빙서류(기본증명서 또는 주민등록초본)를 지참하여
+                          가까운 시·도지부로 방문신청 하시기 바랍니다.
+                          <div class="mt-2 mo-mt-5 mo-text-center">
+                            <button
+                              type="button"
+                              class="btn btn-secondary btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#alert04"
+                            >
+                              지부연락처 보기 <i class="ico-tel-white"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mb-15">
+                        <h4 class="kfsi-h4">수첩형 발급</h4>
+                        <div class="kfsi-license-type">
+                          <div class="kfsi-license-type-img">
+                            <img
+                              src="./assets/images/license/license-type01.png"
+                              alt="수첩형"
+                            />
+                          </div>
+                          <div class="kfsi-license-type-text">
+                            <dl>
+                              <dt>1. 자격 발급유형</dt>
+                              <dd>
+                                안전원 시·도지부를 방문(구비서류 지참)하거나
+                                안전원 홈페이지에서 신청(배송신청)하여
+                                자격발급<br />
+                                  - 발급자격 : 소방안전관리자 자격증,
+                                위험물안전관리자 자격수첩, 위험물운송자
+                                자격수첩, 위험물운반자 자격수첩
+                              </dd>
+                            </dl>
+                            <dl>
+                              <dt>2. 자격 발급절차</dt>
+                              <dd>
+                                <div class="pc">
+                                  <img
+                                    src="./assets/images/license/license-type01-chart.png"
+                                    alt="아래 대체 텍스트를 확인해주세요."
+                                  />
+                                </div>
+                                <div class="mo">
+                                  <img
+                                    src="./assets/images/license/license-type01-chart-mo.png"
+                                    alt="아래 대체 텍스트를 확인해주세요."
+                                  />
+                                </div>
+                                <div class="hide">
+                                  “자격증 발급 신청 프로세스를 나타내는
+                                  이미지입니다. 이 프로세스는 다음 단계로
+                                  구성됩니다:<br />
+                                  1. 자격증 발급 신청<br />
+                                  2. 수수료 결재<br />
+                                  3. 심사<br />
+                                  • 심사 단계에서 보완 요청이 발생할 수
+                                  있습니다.<br />
+                                  4. 승인<br />
+                                  5. 발급<br />
+                                  6. 발송<br />
+                                  <br />
+                                  각 단계는 순차적으로 진행되며, 필요한 경우
+                                  보완 요청이 포함될 수 있습니다.”
+                                </div>
+                                <div class="mt-5">
+                                  - 신청일로부터 7~10일 정도 소요됩니다.<br />
+                                  - 배송기간 중 부득이 자격수첩이 필요한 경우,
+                                  자격취득확인서를 활용하시기 바랍니다
+                                </div>
+                              </dd>
+                            </dl>
+                            <dl>
+                              <dt>3. 발급 소요비용</dt>
+                              <dd>
+                                발급수수료 + 배송비(등기)
+                                <div class="mt-4">
+                                  <div class="kfsi-table kfsi-table-scroll-mo">
+                                    <table
+                                      summary="발급수량별 결제금액, 발급수수료 및 배송비(등기수수료)에 대한 상세 정보를 제공합니다."
+                                    >
+                                      <caption>
+                                        발급 소요비용 상세 정보
+                                      </caption>
+                                      <colgroup>
+                                        <col style="width: 120px" />
+                                        <col style="width: 270px" />
+                                        <col style="width: 170px" />
+                                        <col style="width: 170px" />
+                                      </colgroup>
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">발급수량</th>
+                                          <th scope="col">
+                                            결제금액 (발급수수료+등기수수료)
+                                          </th>
+                                          <th scope="col">발급수수료</th>
+                                          <th scope="col">
+                                            배송비(등기수수료)
+                                          </th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>1개</td>
+                                          <td class="bg-light text-success">
+                                            12,620 원
+                                          </td>
+                                          <td>10,000원</td>
+                                          <td>2,620 원</td>
+                                        </tr>
+                                        <tr>
+                                          <td>2개</td>
+                                          <td class="bg-light text-success">
+                                            22,740 원
+                                          </td>
+                                          <td>20,000원</td>
+                                          <td>2,740 원</td>
+                                        </tr>
+                                        <tr>
+                                          <td>3개</td>
+                                          <td class="bg-light text-success">
+                                            32,740 원
+                                          </td>
+                                          <td>30,000원</td>
+                                          <td>2,740 원</td>
+                                        </tr>
+                                        <tr>
+                                          <td>4개</td>
+                                          <td class="bg-light text-success">
+                                            42,860 원
+                                          </td>
+                                          <td>40,000원</td>
+                                          <td>2,860 원</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="mt-3 text-success">
+                                  ※ 1회 최대 4개 발급신청이 가능합니다.
+                                </div>
+                              </dd>
+                            </dl>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h4 class="kfsi-h4">상장형 발급</h4>
+                        <div class="kfsi-license-type">
+                          <div class="kfsi-license-type-img">
+                            <img
+                              src="./assets/images/license/license-type02.png"
+                              alt="상장형 발급"
+                            />
+                          </div>
+                          <div class="kfsi-license-type-text">
+                            <dl>
+                              <dt>1. 자격 발급유형</dt>
+                              <dd>
+                                안전원 홈페이지에서 신청하여 신청인이 직접
+                                출력하여 자격 발급<br />
+                                  - 발급자격 : 소방안전관리자 자격증
+                              </dd>
+                            </dl>
+                            <dl>
+                              <dt>2. 자격 발급절차</dt>
+                              <dd>
+                                <div class="pc">
+                                  <img
+                                    src="./assets/images/license/license-type02-chart.png"
+                                    alt="아래 대체 텍스트를 확인해주세요."
+                                  />
+                                </div>
+                                <div class="mo">
+                                  <img
+                                    src="./assets/images/license/license-type02-chart-mo.png"
+                                    alt="아래 대체 텍스트를 확인해주세요."
+                                  />
+                                </div>
+                                <div class="hide">
+                                  “자격증 발급 신청 프로세스를 나타내는
+                                  이미지입니다. 이 프로세스는 다음 단계로
+                                  구성됩니다:<br />
+                                  1. 자격증 발급 신청<br />
+                                  2. 수수료 결재<br />
+                                  3. 심사<br />
+                                  • 심사 단계에서 보완 요청이 발생할 수
+                                  있습니다.<br />
+                                  4. 승인<br />
+                                  5. 발급<br />
+                                  6. 발송<br />
+                                  <br />
+                                  각 단계는 순차적으로 진행되며, 필요한 경우
+                                  보완 요청이 포함될 수 있습니다.”
+                                </div>
+                              </dd>
+                            </dl>
+                            <dl>
+                              <dt>3. 발급 소요비용</dt>
+                              <dd>
+                                무료 (‘자격 발급(심사) 신청 내역‘ 메뉴에서 출력)
+                                <span
+                                  class="mo-d-flex mo-justify-content-center mo-w-100 ms-2 mo-ms-0 mo-mt-4"
+                                >
+                                  <a href="" class="btn btn-secondary btn-sm"
+                                    >바로가기 <i class="ico-newwindow-white"></i
+                                  ></a>
+                                </span>
+                              </dd>
+                            </dl>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab02-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab02"
+                      tabindex="0"
+                    >
+                      <div class="kfsi-agree-form">
+                        <div class="kfsi-agree-form__title">유의사항</div>
+                        <div class="kfsi-agree-form__contents">
+                          <div class="kfsi-textlist m-0">
+                            <ul>
+                              <li>
+                                자격 심사신청에 필요한 증명서류는 하단의
+                                첨부서류를 참조하여 주시기 바랍니다.
+                              </li>
+                              <li>
+                                자격증 발급을 희망하는 경우 자격심사 승인 후
+                                별도 자격발급 신청을 하여야 합니다.
+                              </li>
+                              <li>
+                                안전원 담당자가 접수한 이후에는 심사신청 내역
+                                수정 및 취소가 불가능합니다.
+                              </li>
+                              <li>
+                                안전원 심사 과정에서 사진, 증명서류 등 불분명한
+                                경우 보완을 요청할 수 있습니다.
+                              </li>
+                              <li>
+                                보완요청 사항에 대해서는 3일 이내에 수정하여
+                                주시기 바랍니다. (기한 내 미수정 시 자동취소 될
+                                수 있습니다.)
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="mt-7 mo-mt-5">
+                            ■ 보완요청사항 예시
+                            <div class="mt-3">
+                              ① 사진 : 흑백, 셀카, 측면, 배경표시, 인식불가,
+                              모자착용 사진<br />
+                              ② 주소 : 등기우편수령이 불가능한 주소<br />
+                              ※ 보완요청 대상 사진 및 주소 기재로 인한 불이익은
+                              신청자에게 있습니다.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kfsi-agree-form__foot">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="checkbox1-1"
+                            />
+                            <label class="form-check-label" for="checkbox1-1">
+                              자격 발급절차 및 유의사항 등을 확인하였습니다.
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="kfsi-button">
+                        <p>
+                          <a href="" class="btn btn-primary btn-lg"
+                            >수첩형 신청</a
+                          >
+                          <a href="" class="btn btn-primary btn-lg"
+                            >상장형 신청</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

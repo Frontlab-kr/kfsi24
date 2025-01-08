@@ -95,7 +95,7 @@
                 </div>
                 <div class="kfsi-login-body">
                   <div class="kfsi-tab01 kfsi-tab01--mo-grid2">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item" role="presentation">
                         <button
                           class="nav-link active"
@@ -167,7 +167,7 @@
                         </button>
                       </li>
                     </ul>
-                    <div class="tab-content" id="myTabContent">
+                    <div class="tab-content">
                       <div
                         class="tab-pane fade show active"
                         id="tab01-pane"
@@ -507,6 +507,39 @@
       </div>
       <div id="footer"></div>
     </div>
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 5000;
+      "
+    >
+      <div>
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#modal01"
+        >
+          실명확인 로그인 이용안내
+        </button>
+      </div>
+
+      <div class="mt-1">
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#modal02"
+        >
+          로그인 인증별 권한관리
+        </button>
+      </div>
+    </div>
+
     <!-- Modal -->
     <div class="modal fade" id="modal01" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" style="max-width: 600px">

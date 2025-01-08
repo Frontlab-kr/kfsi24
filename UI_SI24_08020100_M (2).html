@@ -72,7 +72,6 @@
                         type="radio"
                         name="radio1"
                         id="radio1-2"
-                        checked
                       />
                       <label class="form-check-label" for="radio1-2">
                         부상
@@ -620,7 +619,7 @@
                                       </div>
                                     </div>
                                     <div
-                                      class="d-flex align-items-center gap-5"
+                                      class="d-flex align-items-center gap-3"
                                     >
                                       <div class="form-check">
                                         <input
@@ -640,6 +639,7 @@
                                       <input
                                         type="text"
                                         class="form-control w-100"
+                                        title="기타"
                                         style="max-width: 200px"
                                       />
                                     </div>
@@ -682,173 +682,188 @@
                           </colgroup>
                           <tbody>
                             <tr>
-                              <th scope="row">사망</th>
+                              <th scope="row"><span>사망</span></th>
                               <td>
-                                1. 사망증명서류 2. 사망자 가족관계증명서(등록부)
-                                3. 법정대리인이 신청 시 대리인 증명 가능서류 4.
-                                위임장(유족 중 선순위자가 2인 이상인 경우
-                                선순위자 모두의 인 감날인 및 인감증명 첨부)
+                                <span>
+                                  1. 사망증명서류 2. 사망자
+                                  가족관계증명서(등록부) 3. 법정대리인이 신청 시
+                                  대리인 증명 가능서류 4. 위임장(유족 중
+                                  선순위자가 2인 이상인 경우 선순위자 모두의 인
+                                  감날인 및 인감증명 첨부)
+                                </span>
                               </td>
                             </tr>
                             <tr>
-                              <th scope="row">부상</th>
+                              <th scope="row"><span>부상</span></th>
                               <td>
-                                1. 부상증명서류 2. 가족관계증명서(신청자가 회원
-                                본인이 아닌 경우) 3. 위임장(신청자가 회원 본인이
-                                아닌 경우)
+                                <span>
+                                  1. 부상증명서류 2. 가족관계증명서(신청자가
+                                  회원 본인이 아닌 경우) 3. 위임장(신청자가 회원
+                                  본인이 아닌 경우)
+                                </span>
                               </td>
                             </tr>
                             <tr>
-                              <th scope="row">공통</th>
+                              <th scope="row"><span>공통</span></th>
                               <td>
-                                1. 화재사실증명서류(소방서, 경찰서, 보험사 발급)
-                                2. 신분증 사본(회원 또는 신청자) 3. 통장
-                                사본(회원 또는 신청자 명의)
+                                <span>
+                                  1. 화재사실증명서류(소방서, 경찰서, 보험사
+                                  발급) 2. 신분증 사본(회원 또는 신청자) 3. 통장
+                                  사본(회원 또는 신청자 명의)
+                                </span>
                               </td>
                             </tr>
                             <tr>
-                              <th scope="row">파일첨부</th>
+                              <th scope="row"><span>파일첨부</span></th>
                               <td>
-                                <div class="kfsi-upload">
-                                  <div id="dropzone">
-                                    <form
-                                      class="dropzone needsclick"
-                                      id="demo-upload"
-                                      action="/upload"
-                                    >
-                                      <div class="dz-message needsclick">
-                                        <div class="dz-message__title">
-                                          <i class="ico-file-plus"></i>
-                                          파일을 이곳에 드래그하세요.<br />
+                                <span>
+                                  <div class="kfsi-upload">
+                                    <div id="dropzone">
+                                      <form
+                                        class="dropzone needsclick"
+                                        id="demo-upload"
+                                        action="/upload"
+                                      >
+                                        <div class="dz-message needsclick">
+                                          <div class="dz-message__title">
+                                            <i class="ico-file-plus"></i>
+                                            파일을 이곳에 드래그하세요.<br />
+                                          </div>
+                                          <small
+                                            >(또는 클릭하여 파일을
+                                            선택하세요)</small
+                                          >
                                         </div>
-                                        <small
-                                          >(또는 클릭하여 파일을
-                                          선택하세요)</small
-                                        >
-                                      </div>
-                                    </form>
+                                      </form>
+                                    </div>
                                   </div>
-                                </div>
-                                <script>
-                                  var dropzone = new Dropzone('#demo-upload', {
-                                    previewTemplate:
-                                      document.querySelector(
-                                        '#preview-template'
-                                      ).innerHTML,
-                                    parallelUploads: 2,
-                                    thumbnailHeight: 120,
-                                    thumbnailWidth: 120,
-                                    maxFilesize: 3, // 최대 파일 크기 (MB)
-                                    filesizeBase: 1000,
-                                    dictDefaultMessage:
-                                      '파일을 이곳에 드래그하세요.', // 기본 메시지
-                                    dictFallbackMessage:
-                                      '이 브라우저는 드래그 앤 드롭 파일 업로드를 지원하지 않습니다.',
-                                    dictFileTooBig:
-                                      '파일 크기가 너무 큽니다 ({{filesize}}MB). 최대 크기: {{maxFilesize}}MB.',
-                                    dictInvalidFileType:
-                                      '이 파일 형식은 업로드할 수 없습니다.',
-                                    dictResponseError:
-                                      '서버에서 {{statusCode}} 에러가 발생했습니다.',
-                                    dictCancelUpload: '업로드 취소',
-                                    dictCancelUploadConfirmation:
-                                      '이 업로드를 정말 취소하시겠습니까?',
-                                    dictRemoveFile: '파일 삭제',
-                                    dictMaxFilesExceeded:
-                                      '더 이상 파일을 업로드할 수 없습니다.',
-                                    thumbnail: function (file, dataUrl) {
-                                      if (file.previewElement) {
-                                        file.previewElement.classList.remove(
-                                          'dz-file-preview'
-                                        );
-                                        var images =
-                                          file.previewElement.querySelectorAll(
-                                            '[data-dz-thumbnail]'
-                                          );
-                                        for (
-                                          var i = 0;
-                                          i < images.length;
-                                          i++
-                                        ) {
-                                          var thumbnailElement = images[i];
-                                          thumbnailElement.alt = file.name;
-                                          thumbnailElement.src = dataUrl;
-                                        }
-                                        setTimeout(function () {
-                                          file.previewElement.classList.add(
-                                            'dz-image-preview'
-                                          );
-                                        }, 1);
-                                      }
-                                    },
-                                  });
-
-                                  // 파일 업로드 시 시뮬레이션
-                                  var minSteps = 6,
-                                    maxSteps = 60,
-                                    timeBetweenSteps = 100,
-                                    bytesPerStep = 100000;
-
-                                  dropzone.uploadFiles = function (files) {
-                                    var self = this;
-
-                                    for (var i = 0; i < files.length; i++) {
-                                      var file = files[i];
-                                      totalSteps = Math.round(
-                                        Math.min(
-                                          maxSteps,
-                                          Math.max(
-                                            minSteps,
-                                            file.size / bytesPerStep
-                                          )
-                                        )
-                                      );
-
-                                      for (
-                                        var step = 0;
-                                        step < totalSteps;
-                                        step++
-                                      ) {
-                                        var duration =
-                                          timeBetweenSteps * (step + 1);
-                                        setTimeout(
-                                          (function (file, totalSteps, step) {
-                                            return function () {
-                                              file.upload = {
-                                                progress:
-                                                  (100 * (step + 1)) /
-                                                  totalSteps,
-                                                total: file.size,
-                                                bytesSent:
-                                                  ((step + 1) * file.size) /
-                                                  totalSteps,
-                                              };
-
-                                              self.emit(
-                                                'uploadprogress',
-                                                file,
-                                                file.upload.progress,
-                                                file.upload.bytesSent
+                                  <script>
+                                    var dropzone = new Dropzone(
+                                      '#demo-upload',
+                                      {
+                                        previewTemplate:
+                                          document.querySelector(
+                                            '#preview-template'
+                                          ).innerHTML,
+                                        parallelUploads: 2,
+                                        thumbnailHeight: 120,
+                                        thumbnailWidth: 120,
+                                        maxFilesize: 3, // 최대 파일 크기 (MB)
+                                        filesizeBase: 1000,
+                                        dictDefaultMessage:
+                                          '파일을 이곳에 드래그하세요.', // 기본 메시지
+                                        dictFallbackMessage:
+                                          '이 브라우저는 드래그 앤 드롭 파일 업로드를 지원하지 않습니다.',
+                                        dictFileTooBig:
+                                          '파일 크기가 너무 큽니다 ({{filesize}}MB). 최대 크기: {{maxFilesize}}MB.',
+                                        dictInvalidFileType:
+                                          '이 파일 형식은 업로드할 수 없습니다.',
+                                        dictResponseError:
+                                          '서버에서 {{statusCode}} 에러가 발생했습니다.',
+                                        dictCancelUpload: '업로드 취소',
+                                        dictCancelUploadConfirmation:
+                                          '이 업로드를 정말 취소하시겠습니까?',
+                                        dictRemoveFile: '파일 삭제',
+                                        dictMaxFilesExceeded:
+                                          '더 이상 파일을 업로드할 수 없습니다.',
+                                        thumbnail: function (file, dataUrl) {
+                                          if (file.previewElement) {
+                                            file.previewElement.classList.remove(
+                                              'dz-file-preview'
+                                            );
+                                            var images =
+                                              file.previewElement.querySelectorAll(
+                                                '[data-dz-thumbnail]'
                                               );
-                                              if (file.upload.progress == 100) {
-                                                file.status = Dropzone.SUCCESS;
-                                                self.emit(
-                                                  'success',
-                                                  file,
-                                                  'success',
-                                                  null
-                                                );
-                                                self.emit('complete', file);
-                                                self.processQueue();
-                                              }
-                                            };
-                                          })(file, totalSteps, step),
-                                          duration
-                                        );
+                                            for (
+                                              var i = 0;
+                                              i < images.length;
+                                              i++
+                                            ) {
+                                              var thumbnailElement = images[i];
+                                              thumbnailElement.alt = file.name;
+                                              thumbnailElement.src = dataUrl;
+                                            }
+                                            setTimeout(function () {
+                                              file.previewElement.classList.add(
+                                                'dz-image-preview'
+                                              );
+                                            }, 1);
+                                          }
+                                        },
                                       }
-                                    }
-                                  };
-                                </script>
+                                    );
+
+                                    // 파일 업로드 시 시뮬레이션
+                                    var minSteps = 6,
+                                      maxSteps = 60,
+                                      timeBetweenSteps = 100,
+                                      bytesPerStep = 100000;
+
+                                    dropzone.uploadFiles = function (files) {
+                                      var self = this;
+
+                                      for (var i = 0; i < files.length; i++) {
+                                        var file = files[i];
+                                        totalSteps = Math.round(
+                                          Math.min(
+                                            maxSteps,
+                                            Math.max(
+                                              minSteps,
+                                              file.size / bytesPerStep
+                                            )
+                                          )
+                                        );
+
+                                        for (
+                                          var step = 0;
+                                          step < totalSteps;
+                                          step++
+                                        ) {
+                                          var duration =
+                                            timeBetweenSteps * (step + 1);
+                                          setTimeout(
+                                            (function (file, totalSteps, step) {
+                                              return function () {
+                                                file.upload = {
+                                                  progress:
+                                                    (100 * (step + 1)) /
+                                                    totalSteps,
+                                                  total: file.size,
+                                                  bytesSent:
+                                                    ((step + 1) * file.size) /
+                                                    totalSteps,
+                                                };
+
+                                                self.emit(
+                                                  'uploadprogress',
+                                                  file,
+                                                  file.upload.progress,
+                                                  file.upload.bytesSent
+                                                );
+                                                if (
+                                                  file.upload.progress == 100
+                                                ) {
+                                                  file.status =
+                                                    Dropzone.SUCCESS;
+                                                  self.emit(
+                                                    'success',
+                                                    file,
+                                                    'success',
+                                                    null
+                                                  );
+                                                  self.emit('complete', file);
+                                                  self.processQueue();
+                                                }
+                                              };
+                                            })(file, totalSteps, step),
+                                            duration
+                                          );
+                                        }
+                                      }
+                                    };
+                                  </script>
+                                </span>
                               </td>
                             </tr>
                           </tbody>

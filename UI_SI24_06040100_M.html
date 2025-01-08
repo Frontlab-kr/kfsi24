@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>시험 및 점수</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">시험안내(응시자격 등)</a>
+              <a href="" class="kfsi-snb-item">시험신청</a>
+              <a href="" class="kfsi-snb-item">응시자격 심사 신청</a>
+              <a href="" class="kfsi-snb-item active">시험(심사) 신청내역</a>
+              <a href="" class="kfsi-snb-item">시험(평가) 점수확인 </a>
+              <a href="" class="kfsi-snb-item">합격자 발표 조회</a>
+              <a href="" class="kfsi-snb-item">응시자격 자가진단</a>
+              <a href="" class="kfsi-snb-item">시험관련 확인서 신청</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">시험 및 점수</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      시험(심사) 신청내역
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>시험(심사) 신청내역</h1>
+              </div>
+              <div>
+                <div class="kfsi-tab02">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="tab01"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab01-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab01-pane"
+                        aria-selected="true"
+                      >
+                        나의 시험신청 내역
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab02"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab02-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab02-pane"
+                        aria-selected="false"
+                      >
+                        온라인 응시자격 심사신청 내역
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div
+                      class="tab-pane fade show active"
+                      id="tab01-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab01"
+                      tabindex="0"
+                    >
+                      <div>
+                        <div class="mb-15 mo-mb-10">
+                          <div class="kfsi-box bg-light">
+                            <div class="kfsi-textlist">
+                              <ul>
+                                <li>
+                                  1급 / 2급 / 3급 소방안전관리자 시험의 일정변경
+                                  또는 응시수수료 환불기준<br />- 해당
+                                  시험시행일 전일까지 신청한 경우 일정변경 또는
+                                  전액환불 (시험시행일부터 환불 불가)
+                                </li>
+                                <li>
+                                  특급 소방안전관리자 시험의 일정변경 또는
+                                  응시수수료 환불기준<br />- 해당 시험시행일 5일
+                                  전까지 신청한 경우 일정변경 또는 전액환불
+                                  (시험시행일 4일 전부터 환불 불가)
+                                </li>
+                                <li>
+                                  단, 일정변경은 해당연도 시험일정이 있는 경우에
+                                  한하며, 직접 방문하거나 인터넷 등으로
+                                  신청하여야 합니다.<br />방문신청의 경우 근무일
+                                  중에만 가능합니다.
+                                </li>
+                                <li>
+                                  "지난 신청 내역" 중 해당 시험일로부터
+                                  3개월까지의 신청내역만 조회됩니다.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="kfsi-board">
+                            <div class="kfsi-board-head">
+                              <div class="kfsi-board-head-start"></div>
+                              <div class="kfsi-board-head-end">
+                                <a href="" class="btn btn-secondary btn-sm">
+                                  <strong>나의 강의실 바로가기</strong>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="kfsi-table kfsi-table-mo-list">
+                              <table
+                                summary="사용자가 신청한 시험의 내역을 확인하는 테이블입니다. 응시번호, 시험과정, 지부, 시험일자, 상태, 약도 정보를 제공합니다."
+                              >
+                                <caption>
+                                  나의 시험신청 내역
+                                </caption>
+                                <colgroup>
+                                  <col style="width: 160px" />
+                                  <col style="width: 160px" />
+                                  <col style="width: 160px" />
+                                  <col style="width: 160px" />
+                                  <col style="width: 160px" />
+                                  <col style="width: 160px" />
+                                </colgroup>
+                                <thead>
+                                  <tr>
+                                    <th scope="col">응시번호</th>
+                                    <th scope="col">시험과정</th>
+                                    <th scope="col">지부</th>
+                                    <th scope="col">시험일자</th>
+                                    <th scope="col">상태</th>
+                                    <th scope="col">약도</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td title="응시번호">&nbsp;</td>
+                                    <td title="시험과정">&nbsp;</td>
+                                    <td title="지부">&nbsp;</td>
+                                    <td title="시험일자">&nbsp;</td>
+                                    <td title="상태">&nbsp;</td>
+                                    <td title="약도">&nbsp;</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab02-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab02"
+                      tabindex="0"
+                    >
+                      <div>
+                        <div class="mb-15 mo-mb-10">
+                          <div class="kfsi-box bg-light">
+                            <div class="kfsi-textlist">
+                              <ul>
+                                <li>
+                                  1급 / 2급 / 3급 소방안전관리자 시험의 일정변경
+                                  또는 응시수수료 환불기준<br />- 해당
+                                  시험시행일 전일까지 신청한 경우 일정변경 또는
+                                  전액환불 (시험시행일부터 환불 불가)
+                                </li>
+                                <li>
+                                  특급 소방안전관리자 시험의 일정변경 또는
+                                  응시수수료 환불기준<br />- 해당 시험시행일 5일
+                                  전까지 신청한 경우 일정변경 또는 전액환불
+                                  (시험시행일 4일 전부터 환불 불가)
+                                </li>
+                                <li>
+                                  단, 일정변경은 해당연도 시험일정이 있는 경우에
+                                  한하며, 직접 방문하거나 인터넷 등으로
+                                  신청하여야 합니다.<br />방문신청의 경우 근무일
+                                  중에만 가능합니다.
+                                </li>
+                                <li>
+                                  "지난 신청 내역" 중 해당 시험일로부터
+                                  3개월까지의 신청내역만 조회됩니다.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="kfsi-board">
+                            <div
+                              class="kfsi-board-head align-items-start mo-flex-column gap-4"
+                            >
+                              <div class="kfsi-board-head-start">
+                                <div class="kfsi-textlist">
+                                  <ul>
+                                    <li>
+                                      온라인 응시자격 심사 승인은 신청일로부터
+                                      5~7일 정도 소요됩니다.
+                                    </li>
+                                    <li>
+                                      응시자격 심사 승인 이후 ‘시험신청‘
+                                      메뉴에서 시험접수 가능합니다.
+                                    </li>
+                                    <li>
+                                      안전원 담당자가 접수한 이후에는 심사신청
+                                      내역 수정 및 취소가 불가능합니다.
+                                    </li>
+                                    <li>
+                                      안전원 심사 과정에서 사진, 증명서류 등
+                                      불분명한 경우 보완을 요청할 수 있습니다.
+                                    </li>
+                                    <li>
+                                      보완요청 사항에 대해서는 3일 이내에
+                                      수정하여 주시기 바랍니다. (기한 내 미수정
+                                      시 자동취소 될 수 있습니다.)
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="kfsi-board-head-end">
+                                <a href="" class="btn btn-secondary btn-sm">
+                                  <strong>나의 강의실 바로가기</strong>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="kfsi-table kfsi-table-mo-list">
+                              <table
+                                summary="온라인 응시자격 심사 신청 내역으로 신청일자, 지부, 시험과정, 처리상태 및 비고 정보를 제공합니다."
+                              >
+                                <caption>
+                                  온라인 응시자격 심사 신청 내역
+                                </caption>
+                                <colgroup>
+                                  <col style="width: 170px" />
+                                  <col style="width: 170px" />
+                                  <col style="width: 170px" />
+                                  <col style="width: 170px" />
+                                  <col style="width: 240px" />
+                                </colgroup>
+                                <thead>
+                                  <tr>
+                                    <th scope="col">신청일자</th>
+                                    <th scope="col">지부</th>
+                                    <th scope="col">시험과정</th>
+                                    <th scope="col">처리상태</th>
+                                    <th scope="col">비고</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td title="신청일자">2024.11.06</td>
+                                    <td title="지부">서울</td>
+                                    <td title="시험과정">2급</td>
+                                    <td title="처리상태">신청</td>
+                                    <td title="비고">
+                                      <div class="d-inline-flex gap-2">
+                                        <button
+                                          type="button"
+                                          class="btn btn-secondary btn-sm"
+                                        >
+                                          정보수정
+                                        </button>
+                                        <button
+                                          type="button"
+                                          class="btn btn-outline-dark btn-sm"
+                                        >
+                                          신청취소
+                                        </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
