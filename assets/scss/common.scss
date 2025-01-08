@@ -7377,6 +7377,25 @@ body {
           }
         }
       }
+      &-type2 {
+        > .nav {
+          display: flex;
+          width: auto;
+          overflow: auto;
+          margin: -30px -16px 30px -16px;
+          border-bottom: 1px solid #ccc;
+          .nav-link {
+            display: inline-flex;
+            padding: 10px 16px;
+            border: none !important;
+            background: none !important;
+            white-space: noWrap;
+            &:before {
+              display: none !important;
+            }
+          }
+        }
+      }
     }
   }
   // &-table {

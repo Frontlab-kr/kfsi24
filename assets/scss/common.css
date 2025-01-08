@@ -30494,6 +30494,23 @@ body {
   .kfsi-tab02--grid3 .nav-item:nth-child(1) .nav-link, .kfsi-tab02--mo-grid3 .nav-item:nth-child(1) .nav-link {
     border-left: 1px solid #ccc !important;
   }
+  .kfsi-tab02-type2 > .nav {
+    display: flex;
+    width: auto;
+    overflow: auto;
+    margin: -30px -16px 30px -16px;
+    border-bottom: 1px solid #ccc;
+  }
+  .kfsi-tab02-type2 > .nav .nav-link {
+    display: inline-flex;
+    padding: 10px 16px;
+    border: none !important;
+    background: none !important;
+    white-space: noWrap;
+  }
+  .kfsi-tab02-type2 > .nav .nav-link:before {
+    display: none !important;
+  }
 }
 .kfsi-faq-search {
   display: flex;
