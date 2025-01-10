@@ -48,289 +48,46 @@
                 <h1>각종서식</h1>
               </div>
               <div class="kfsi-notice">
-                <div class="pc">
-                  <div class="kfsi-board">
-                    <div class="kfsi-board-head">
-                      <div class="kfsi-board-head-start">
+                <div class="kfsi-board">
+                  <div class="kfsi-board-head mo-flex-column">
+                    <div class="kfsi-board-head-start mo-mb-2">
+                      <div class="dropdown mo-w-100">
+                        <button
+                          class="btn btn-outline-secondary btn-sm dropdown-toggle mo-w-100"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          style="min-width: 150px"
+                        >
+                          전체 분류
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="javascript:void(0);"
+                              >선택1</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="javascript:void(0);"
+                              >선택2</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="javascript:void(0);"
+                              >선택3</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="kfsi-board-head-end">
+                      <div class="kfsi-board-head-search">
                         <div class="dropdown">
                           <button
                             class="btn btn-outline-secondary btn-sm dropdown-toggle"
                             type="button"
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
-                            style="min-width: 150px"
-                          >
-                            전체 분류
-                          </button>
-                          <ul class="dropdown-menu">
-                            <li>
-                              <a
-                                class="dropdown-item"
-                                href="javascript:void(0);"
-                                >선택1</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item"
-                                href="javascript:void(0);"
-                                >선택2</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item"
-                                href="javascript:void(0);"
-                                >선택3</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="kfsi-board-head-end">
-                        <div class="kfsi-board-head-search">
-                          <div class="dropdown">
-                            <button
-                              class="btn btn-outline-secondary btn-sm dropdown-toggle"
-                              type="button"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              제목
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a
-                                  class="dropdown-item"
-                                  href="javascript:void(0);"
-                                  >선택1</a
-                                >
-                              </li>
-                              <li>
-                                <a
-                                  class="dropdown-item"
-                                  href="javascript:void(0);"
-                                  >선택2</a
-                                >
-                              </li>
-                              <li>
-                                <a
-                                  class="dropdown-item"
-                                  href="javascript:void(0);"
-                                  >선택3</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="검색어를 입력해 주세요."
-                            title="검색어를 입력해 주세요."
-                          />
-                          <button
-                            type="button"
-                            class="btn btn-secondary btn-sm"
-                          >
-                            검색
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="kfsi-board-list">
-                      <table
-                        summary="공지사항 목록으로 No, 분류, 제목, 첨부파일, 작성자, 작성일, 조회수를 제공합니다."
-                      >
-                        <caption>
-                          공지사항 목록
-                        </caption>
-                        <colgroup>
-                          <col style="width: 70px" />
-                          <col style="width: 450px" />
-                          <col style="width: 140px" />
-                          <col style="width: 140px" />
-                          <col style="width: 140px" />
-                        </colgroup>
-                        <thead>
-                          <tr>
-                            <th scope="col">No.</th>
-                            <th scope="col">제목</th>
-                            <th scope="col">적성일</th>
-                            <th scope="col">첨부파일</th>
-                            <th scope="col">조회수</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>122</td>
-                            <td class="text-start">
-                              <a
-                                href=""
-                                class="d-block text-truncate"
-                                style="max-width: 400px"
-                                >안전시설등세부점검표(다중이용업)
-                                안전시설등세부점검표(다중이용업)
-                                안전시설등세부점검표(다중이용업)
-                                안전시설등세부점검표(다중이용업)
-                              </a>
-                            </td>
-                            <td>2024.10.02</td>
-                            <td>
-                              <div
-                                class="d-flex align-items-center justify-content-center gap-1"
-                              >
-                                <i class="ico-attachment">파일</i>
-                                (2)
-                              </div>
-                            </td>
-                            <td>377</td>
-                          </tr>
-                          <tr>
-                            <td>122</td>
-                            <td class="text-start">
-                              <a
-                                href=""
-                                class="d-block text-truncate"
-                                style="max-width: 400px"
-                                >안전시설등세부점검표(다중이용업)
-                                안전시설등세부점검표(다중이용업)
-                                안전시설등세부점검표(다중이용업)
-                                안전시설등세부점검표(다중이용업)
-                              </a>
-                            </td>
-                            <td>2024.10.02</td>
-                            <td>
-                              <div
-                                class="d-flex align-items-center justify-content-center gap-1"
-                              >
-                                <i class="ico-attachment">파일</i>
-                                (2)
-                              </div>
-                            </td>
-                            <td>377</td>
-                          </tr>
-                          <tr>
-                            <td>122</td>
-                            <td class="text-start">
-                              <a
-                                href=""
-                                class="d-block text-truncate"
-                                style="max-width: 400px"
-                                >안전시설등세부점검표(다중이용업)
-                                안전시설등세부점검표(다중이용업)
-                                안전시설등세부점검표(다중이용업)
-                                안전시설등세부점검표(다중이용업)
-                              </a>
-                            </td>
-                            <td>2024.10.02</td>
-                            <td>
-                              <div
-                                class="d-flex align-items-center justify-content-center gap-1"
-                              >
-                                <i class="ico-attachment">파일</i>
-                                (2)
-                              </div>
-                            </td>
-                            <td>377</td>
-                          </tr>
-                          <tr>
-                            <td>122</td>
-                            <td class="text-start">
-                              <a
-                                href=""
-                                class="d-block text-truncate"
-                                style="max-width: 400px"
-                                >안전시설등세부점검표(다중이용업)
-                                안전시설등세부점검표(다중이용업)
-                                안전시설등세부점검표(다중이용업)
-                                안전시설등세부점검표(다중이용업)
-                              </a>
-                            </td>
-                            <td>2024.10.02</td>
-                            <td>
-                              <div
-                                class="d-flex align-items-center justify-content-center gap-1"
-                              >
-                                <i class="ico-attachment">파일</i>
-                                (2)
-                              </div>
-                            </td>
-                            <td>377</td>
-                          </tr>
-                          <tr>
-                            <td>122</td>
-                            <td class="text-start">
-                              <a
-                                href=""
-                                class="d-block text-truncate"
-                                style="max-width: 400px"
-                                >안전시설등세부점검표(다중이용업)
-                                안전시설등세부점검표(다중이용업)
-                                안전시설등세부점검표(다중이용업)
-                                안전시설등세부점검표(다중이용업)
-                              </a>
-                            </td>
-                            <td>2024.10.02</td>
-                            <td>
-                              <div
-                                class="d-flex align-items-center justify-content-center gap-1"
-                              >
-                                <i class="ico-attachment">파일</i>
-                                (2)
-                              </div>
-                            </td>
-                            <td>377</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                <div class="mo">
-                  <div class="kfsi-board">
-                    <div class="kfsi-board-head flex-column gap-1">
-                      <div class="kfsi-board-head-start gap-1">
-                        <div class="dropdown w-100">
-                          <button
-                            class="btn btn-outline-secondary btn-sm dropdown-toggle"
-                            type="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                            style="height: 40px"
-                          >
-                            전체 분류
-                          </button>
-                          <ul class="dropdown-menu">
-                            <li>
-                              <a
-                                class="dropdown-item"
-                                href="javascript:void(0);"
-                                >선택1</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item"
-                                href="javascript:void(0);"
-                                >선택2</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item"
-                                href="javascript:void(0);"
-                                >선택3</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="dropdown w-100">
-                          <button
-                            class="btn btn-outline-secondary btn-sm dropdown-toggle"
-                            type="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                            style="height: 40px"
                           >
                             제목
                           </button>
@@ -358,88 +115,169 @@
                             </li>
                           </ul>
                         </div>
-                      </div>
-                      <div class="kfsi-board-head-end">
-                        <div class="kfsi-board-head-search">
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="검색어를 입력해 주세요."
-                            title="검색어를 입력해 주세요."
-                          />
-                          <button
-                            type="button"
-                            class="btn btn-secondary btn-sm"
-                            style="min-width: 80px"
-                          >
-                            검색
-                            <i class="ico-search-white"></i>
-                          </button>
-                        </div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="검색어를 입력해 주세요."
+                          title="검색어를 입력해 주세요."
+                        />
+                        <button type="button" class="btn btn-secondary btn-sm">
+                          검색
+                        </button>
                       </div>
                     </div>
-                    <div class="kfsi-board-list">
-                      <a href="" class="kfsi-board-list-item">
-                        <div
-                          class="kfsi-board-list-item-text justify-content-between"
-                        >
-                          <span class="me-8">122</span>
-                          <span class="d-block text-truncate me-2"
-                            >소방시설등 자체점검기록표 소방시설등 자체점검기록표
-                            소방시설등 자체점검기록표 소방시설등 자체점검기록표
-                            소방시설등 자체점검기록표</span
-                          >
+                  </div>
+                  <div class="kfsi-board-list">
+                    <a href="" class="kfsi-board-list-item">
+                      <div class="kfsi-board-list-item-number">122</div>
+                      <div class="kfsi-board-list-item-text">
+                        <div class="kfsi-board-list-item-text__title">
+                          <p>소방시설등 자체점검기록표</p>
+                          <i class="ico-file">파일</i>
                         </div>
-                      </a>
-                      <a href="" class="kfsi-board-list-item">
-                        <div
-                          class="kfsi-board-list-item-text justify-content-between"
-                        >
-                          <span class="me-8">122</span>
-                          <span class="d-block text-truncate me-2"
-                            >소방시설등 자체점검기록표 소방시설등 자체점검기록표
-                            소방시설등 자체점검기록표 소방시설등 자체점검기록표
-                            소방시설등 자체점검기록표</span
-                          >
+                        <div class="kfsi-board-list-item-text__info">
+                          <p>
+                            <span>2024.10.02</span>
+                            <span>조회수 1234</span>
+                          </p>
                         </div>
-                      </a>
-                      <a href="" class="kfsi-board-list-item">
-                        <div
-                          class="kfsi-board-list-item-text justify-content-between"
-                        >
-                          <span class="me-8">122</span>
-                          <span class="d-block text-truncate me-2"
-                            >소방시설등 자체점검기록표 소방시설등 자체점검기록표
-                            소방시설등 자체점검기록표 소방시설등 자체점검기록표
-                            소방시설등 자체점검기록표</span
-                          >
+                      </div>
+                    </a>
+                    <a href="" class="kfsi-board-list-item">
+                      <div class="kfsi-board-list-item-number">122</div>
+                      <div class="kfsi-board-list-item-text">
+                        <div class="kfsi-board-list-item-text__title">
+                          <p>소방시설등 자체점검기록표</p>
+                          <i class="ico-file">파일</i>
                         </div>
-                      </a>
-                      <a href="" class="kfsi-board-list-item">
-                        <div
-                          class="kfsi-board-list-item-text justify-content-between"
-                        >
-                          <span class="me-8">122</span>
-                          <span class="d-block text-truncate me-2"
-                            >소방시설등 자체점검기록표 소방시설등 자체점검기록표
-                            소방시설등 자체점검기록표 소방시설등 자체점검기록표
-                            소방시설등 자체점검기록표</span
-                          >
+                        <div class="kfsi-board-list-item-text__info">
+                          <p>
+                            <span>2024.10.02</span>
+                            <span>조회수 1234</span>
+                          </p>
                         </div>
-                      </a>
-                      <a href="" class="kfsi-board-list-item">
-                        <div
-                          class="kfsi-board-list-item-text justify-content-between"
-                        >
-                          <span class="me-8">122</span>
-                          <span class="d-block text-truncate me-2"
-                            >소방시설등 자체점검기록표 소방시설등 자체점검기록표
-                            소방시설등 자체점검기록표 소방시설등 자체점검기록표
-                            소방시설등 자체점검기록표</span
-                          >
+                      </div>
+                    </a>
+                    <a href="" class="kfsi-board-list-item">
+                      <div class="kfsi-board-list-item-number">122</div>
+                      <div class="kfsi-board-list-item-text">
+                        <div class="kfsi-board-list-item-text__title">
+                          <p>소방시설등 자체점검기록표</p>
+                          <i class="ico-file">파일</i>
                         </div>
-                      </a>
-                    </div>
+                        <div class="kfsi-board-list-item-text__info">
+                          <p>
+                            <span>2024.10.02</span>
+                            <span>조회수 1234</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="" class="kfsi-board-list-item">
+                      <div class="kfsi-board-list-item-number">122</div>
+                      <div class="kfsi-board-list-item-text">
+                        <div class="kfsi-board-list-item-text__title">
+                          <p>소방시설등 자체점검기록표</p>
+                          <i class="ico-file">파일</i>
+                        </div>
+                        <div class="kfsi-board-list-item-text__info">
+                          <p>
+                            <span>2024.10.02</span>
+                            <span>조회수 1234</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="" class="kfsi-board-list-item">
+                      <div class="kfsi-board-list-item-number">122</div>
+                      <div class="kfsi-board-list-item-text">
+                        <div class="kfsi-board-list-item-text__title">
+                          <p>소방시설등 자체점검기록표</p>
+                          <i class="ico-file">파일</i>
+                        </div>
+                        <div class="kfsi-board-list-item-text__info">
+                          <p>
+                            <span>2024.10.02</span>
+                            <span>조회수 1234</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="" class="kfsi-board-list-item">
+                      <div class="kfsi-board-list-item-number">122</div>
+                      <div class="kfsi-board-list-item-text">
+                        <div class="kfsi-board-list-item-text__title">
+                          <p>소방시설등 자체점검기록표</p>
+                          <i class="ico-file">파일</i>
+                        </div>
+                        <div class="kfsi-board-list-item-text__info">
+                          <p>
+                            <span>2024.10.02</span>
+                            <span>조회수 1234</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="" class="kfsi-board-list-item">
+                      <div class="kfsi-board-list-item-number">122</div>
+                      <div class="kfsi-board-list-item-text">
+                        <div class="kfsi-board-list-item-text__title">
+                          <p>소방시설등 자체점검기록표</p>
+                          <i class="ico-file">파일</i>
+                        </div>
+                        <div class="kfsi-board-list-item-text__info">
+                          <p>
+                            <span>2024.10.02</span>
+                            <span>조회수 1234</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="" class="kfsi-board-list-item">
+                      <div class="kfsi-board-list-item-number">122</div>
+                      <div class="kfsi-board-list-item-text">
+                        <div class="kfsi-board-list-item-text__title">
+                          <p>소방시설등 자체점검기록표</p>
+                          <i class="ico-file">파일</i>
+                        </div>
+                        <div class="kfsi-board-list-item-text__info">
+                          <p>
+                            <span>2024.10.02</span>
+                            <span>조회수 1234</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="" class="kfsi-board-list-item">
+                      <div class="kfsi-board-list-item-number">122</div>
+                      <div class="kfsi-board-list-item-text">
+                        <div class="kfsi-board-list-item-text__title">
+                          <p>소방시설등 자체점검기록표</p>
+                          <i class="ico-file">파일</i>
+                        </div>
+                        <div class="kfsi-board-list-item-text__info">
+                          <p>
+                            <span>2024.10.02</span>
+                            <span>조회수 1234</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="" class="kfsi-board-list-item">
+                      <div class="kfsi-board-list-item-number">122</div>
+                      <div class="kfsi-board-list-item-text">
+                        <div class="kfsi-board-list-item-text__title">
+                          <p>소방시설등 자체점검기록표</p>
+                          <i class="ico-file">파일</i>
+                        </div>
+                        <div class="kfsi-board-list-item-text__info">
+                          <p>
+                            <span>2024.10.02</span>
+                            <span>조회수 1234</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
                   </div>
                 </div>
                 <div class="kfsi-board-pagination">

@@ -121,6 +121,9 @@ small {
     }
   }
 }
+.text-333 {
+  color: #333 !important;
+}
 .text-666 {
   color: #666 !important;
 }
@@ -318,6 +321,9 @@ small {
 .bg-light {
   background: var(--f6f6f6, #f6f6f6) !important;
 }
+.bg-success-subtle {
+  background: #f8fff4 !important;
+}
 .badge {
   padding: 3px 9px;
   border-radius: 12px;
@@ -343,6 +349,8 @@ small {
       font-size: 15px;
     }
   }
+  &.text-bg-danger {
+  }
   &.text-bg-primary-light {
     background: var(--009732, #009732) !important;
   }
@@ -357,23 +365,44 @@ small {
     color: #333;
   }
   &-outline-primary {
-    border: solid 1px #004d16;
-    color: #004d16;
-  }
-  &-outline-success {
     border: 1px solid #ccc;
     background: #f3fff5;
     color: #000;
+    font-family: Pretendard;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  &-outline-success {
+    border: 1px solid #ccc;
+    background: #edf3ff;
+    color: #000;
+    font-family: Pretendard;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
   }
   &-outline-danger {
     border: 1px solid #ccc;
     background: #fff4f4;
     color: #000;
+    font-family: Pretendard;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
   }
   &-outline-warning {
     border: 1px solid #ccc;
     background: #fff8e7;
     color: #000;
+    font-family: Pretendard;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
   }
   &-outline-info {
     border: 1px solid #ccc;

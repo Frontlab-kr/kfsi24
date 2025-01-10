@@ -339,7 +339,7 @@ $mobileWidth: 992px;
         th {
           padding: 10px 16px;
           border: 1px solid #ccc;
-          background: #f8fff4;
+          background: var(--E4F2D3, #e4f2d3);
           color: #000;
           text-align: center;
           font-family: Pretendard;
@@ -348,6 +348,7 @@ $mobileWidth: 992px;
           font-weight: 400;
           line-height: normal;
           letter-spacing: 0.48px;
+          line-height: 24px;
           word-break: keep-all;
           &:first-child {
             border-left: none;
@@ -365,8 +366,9 @@ $mobileWidth: 992px;
           font-weight: 400;
           line-height: normal;
           letter-spacing: 0.48px;
+          line-height: 24px;
           word-break: keep-all;
-          a {
+          a:not(.btn) {
             color: #054a9d;
             text-decoration: underline;
           }
@@ -622,10 +624,6 @@ $mobileWidth: 992px;
               line-height: normal;
               letter-spacing: 0.48px;
               word-break: keep-all;
-              a {
-                color: #054a9d;
-                text-decoration: underline;
-              }
             }
             tr {
               th,
@@ -1133,6 +1131,16 @@ $mobileWidth: 992px;
         }
       }
     }
+    &.text-success {
+      ul {
+        li {
+          color: #1854a3;
+          &::before {
+            background-color: #1854a3;
+          }
+        }
+      }
+    }
     @media screen and (max-width: $mobileWidth) {
       > ul {
         > li {
@@ -1325,7 +1333,7 @@ $mobileWidth: 992px;
         gap: 5px;
         width: 100%;
         .form-check {
-          width: 100%;
+          width: 100% !important;
         }
       }
     }
@@ -1508,7 +1516,7 @@ $mobileWidth: 992px;
           &-title {
             display: flex;
             gap: 7px;
-            min-width: 95px;
+            min-width: 78px;
             margin: 6px 20px 0 0;
             color: #000;
             font-family: Pretendard;

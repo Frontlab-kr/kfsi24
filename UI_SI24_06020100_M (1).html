@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>시험 및 점수</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">시험안내(응시자격 등)</a>
+              <a href="" class="kfsi-snb-item active">시험신청</a>
+              <a href="" class="kfsi-snb-item">응시자격 심사 신청</a>
+              <a href="" class="kfsi-snb-item">시험(심사) 신청내역</a>
+              <a href="" class="kfsi-snb-item">시험(평가) 점수확인 </a>
+              <a href="" class="kfsi-snb-item">합격자 발표 조회</a>
+              <a href="" class="kfsi-snb-item">응시자격 자가진단</a>
+              <a href="" class="kfsi-snb-item">시험관련 확인서 신청</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">시험 및 점수</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      시험신청
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>시험신청</h1>
+              </div>
+              <div class="kfsi-test">
+                <div class="kfsi-tab02">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="tab01"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab01-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab01-pane"
+                        aria-selected="true"
+                      >
+                        시험안내
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab02"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab02-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab02-pane"
+                        aria-selected="false"
+                      >
+                        시험접수
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div
+                      class="tab-pane fade show active"
+                      id="tab01-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab01"
+                      tabindex="0"
+                    >
+                      <div class="mb-15">
+                        <h4 class="kfsi-h4">
+                          시험안내 및 응시자격심사 제출서류
+                        </h4>
+                        <div class="kfsi-table">
+                          <table
+                            summary="특급, 1급, 2급, 3급 소방안전관리자 시험안내 및 응시자격심사 제출서류에 대한 정보를 제공하는 표입니다. 각 시험과정에 대한 안내와 필요한 제출서류 다운로드 링크를 포함하고 있습니다."
+                          >
+                            <caption>
+                              시험안내 및 응시자격심사 제출서류
+                            </caption>
+                            <colgroup>
+                              <col style="width: 220px" />
+                              <col style="width: 360px" />
+                              <col style="width: 360px" />
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">시험과정</th>
+                                <th scope="col">시험안내</th>
+                                <th scope="col">응시자격심사 제출서류</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row" class="bg-success-subtle">
+                                  특급 소방안전관리자 (1차)
+                                </th>
+                                <td rowspan="2">
+                                  <div
+                                    class="d-inline-flex align-items-center column-gap-7 row-gap-4 mo-flex-column"
+                                  >
+                                    <div class="pc">시험안내</div>
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/31.hwp"
+                                      title="특급 소방안전관리자 (1차) 시험안내 hwp가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-hwp">hwp</i>
+                                    </a>
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/31.pdf"
+                                      title="특급 소방안전관리자 (1차) 시험안내 pdf가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-pdf">pdf</i>
+                                    </a>
+                                  </div>
+                                </td>
+                                <td rowspan="2">
+                                  <div
+                                    class="d-inline-flex align-items-center column-gap-7 row-gap-4 mo-flex-column"
+                                  >
+                                    <div class="pc">제출서류</div>
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/47.hwp"
+                                      title="특급 소방안전관리자 (1차) 제출서류 hwp가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-hwp">hwp</i>
+                                    </a>
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/47.pdf"
+                                      title="특급 소방안전관리자 (1차) 제출서류 pdf가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-pdf">pdf</i>
+                                    </a>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row" class="bg-success-subtle">
+                                  특급 소방안전관리자 (2차)
+                                </th>
+                              </tr>
+                              <tr>
+                                <th scope="row" class="bg-success-subtle">
+                                  1급 소방안전관리자
+                                </th>
+                                <td>
+                                  <div
+                                    class="d-inline-flex align-items-center column-gap-7 row-gap-4 mo-flex-column"
+                                  >
+                                    <div class="pc">시험안내</div>
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/32.hwp"
+                                      title="1급 소방안전관리자 시험안내 hwp가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-hwp">hwp</i>
+                                    </a>
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/32.pdf"
+                                      title="1급 소방안전관리자 시험안내 pdf가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-pdf">pdf</i>
+                                    </a>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div
+                                    class="d-inline-flex align-items-center column-gap-7 row-gap-4 mo-flex-column"
+                                  >
+                                    <div class="pc">제출서류</div>
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/48.hwp"
+                                      title="1급 소방안전관리자 제출서류 hwp가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-hwp">hwp</i>
+                                    </a>
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/48.pdf"
+                                      title="1급 소방안전관리자 제출서류 pdf가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-pdf">pdf</i>
+                                    </a>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row" class="bg-success-subtle">
+                                  2급 소방안전관리자
+                                </th>
+                                <td>
+                                  <div
+                                    class="d-inline-flex align-items-center column-gap-7 row-gap-4 mo-flex-column"
+                                  >
+                                    <div class="pc">시험안내</div>
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/33.hwp"
+                                      title="2급 소방안전관리자 시험안내 hwp가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-hwp">hwp</i>
+                                    </a>
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/33.pdf"
+                                      title="2급 소방안전관리자 시험안내 pdf가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-pdf">pdf</i>
+                                    </a>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div
+                                    class="d-inline-flex align-items-center column-gap-7 row-gap-4 mo-flex-column"
+                                  >
+                                    <div class="pc">제출서류</div>
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/49.hwp"
+                                      title="2급 소방안전관리자 제출서류 hwp가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-hwp">hwp</i>
+                                    </a>
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/49.pdf"
+                                      title="2급 소방안전관리자 제출서류 pdf가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-pdf">pdf</i>
+                                    </a>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row" class="bg-success-subtle">
+                                  3급 소방안전관리자
+                                </th>
+                                <td>
+                                  <div
+                                    class="d-inline-flex align-items-center column-gap-7 row-gap-4 mo-flex-column"
+                                  >
+                                    <div class="pc">시험안내</div>
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/34.hwp"
+                                      title="3급 소방안전관리자 시험안내 hwp가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-hwp">hwp</i>
+                                    </a>
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/34.pdf"
+                                      title="3급 소방안전관리자 시험안내 pdf가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-pdf">pdf</i>
+                                    </a>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div
+                                    class="d-inline-flex align-items-center column-gap-7 row-gap-4 mo-flex-column"
+                                  >
+                                    <div class="pc">제출서류</div>
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/50.hwp"
+                                      title="3급 소방안전관리자 제출서류 hwp가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-hwp">hwp</i>
+                                    </a>
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/50.pdf"
+                                      title="3급 소방안전관리자 제출서류 pdf가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-pdf">pdf</i>
+                                    </a>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="mt-5">
+                          ○ 학·경력 ·자격인정으로 시험을 신청하기 위해서는
+                          응시자격심사를 먼저 하셔야 합니다.(최초시험에 한함)<br />
+                            * 절차 : 사전 응시자격 심사 신청 (증빙서류 첨부) →
+                          안전원 승인 → 시험신청<br />
+                          ○ 사전 응시자격 심사 승인은 5∼7일 소요됩니다.<br />
+                          ○ 공공기관 소방안전관리자 강습교육을 수료하신 분은
+                          시험(2 · 3급 일정을 클릭하여 시험신청을 할 수
+                          있습니다.)<br />
+                          ○ 시험신청은 중복으로 접수하여 응시할 수 없습니다.
+                        </div>
+                      </div>
+                      <div class="mb-15">
+                        <h4 class="kfsi-h4">시험일정 안내</h4>
+                        <div class="mb-10 mo-mb-6">
+                          시험접수는 선착순(일정 클릭순) 접수이므로 조기에
+                          마감될 수 있습니다.<br />
+                          - 마감된 시험일정은 환불자 등이 발생할 경우에 접수
+                          가능합니다.
+                        </div>
+                        <div class="mb-10 mo-mb-6">
+                          <div class="mb-4 mo-mb-2">
+                            <strong class="fs-18 mo-fs-16">
+                              □ 소방안전관리자 자격시험 알림사항
+                            </strong>
+                          </div>
+                            - 마감된 시험일정의 경우, 환불자 발생 시 접수가
+                          가능합니다.<br />
+                            - 지부별 운영사정에 따라 시험일정이 추가 또는 취소
+                          될 수 있습니다.
+                        </div>
+                        <div class="mb-10 mo-mb-6">
+                          <div class="mb-4 mo-mb-2">
+                            <strong class="fs-18 mo-fs-16">
+                              □ 제21회 특급 소방안전관리자 자격시험
+                            </strong>
+                          </div>
+                          <div class="kfsi-table kfsi-table-scroll-mo">
+                            <table
+                              summary="제21회 특급 소방안전관리자 자격시험의 1차 및 2차 시험 관련 원서접수, 시험일자, 합격자 발표 일정 정보를 제공합니다."
+                            >
+                              <caption>
+                                제21회 특급 소방안전관리자 자격시험 일정
+                              </caption>
+                              <colgroup>
+                                <col style="width: 190px" />
+                                <col style="width: 250px" />
+                                <col style="width: 250px" />
+                                <col style="width: 250px" />
+                              </colgroup>
+                              <thead>
+                                <tr>
+                                  <th scope="col">구분</th>
+                                  <th scope="col">원서접수</th>
+                                  <th scope="col">시험일자</th>
+                                  <th scope="col">합격자 발표</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row" class="bg-success-subtle">
+                                    1차 시험
+                                  </th>
+                                  <td>9.11.(수) ~ 9.20.(금)</td>
+                                  <td>9.28(토)</td>
+                                  <td>10.4.(금) 15:00</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" class="bg-success-subtle">
+                                    2차 시험
+                                  </th>
+                                  <td>10.17.(목) ~ 10.23.(수)</td>
+                                  <td>11.3(토)</td>
+                                  <td>12.13.(금) 10:00</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="mt-5 mo-mt-2 text-danger">
+                            ※ 제1차시험 가접수자 추가 서류 제출기간 : 제1차
+                            시험응시일 전일(9.27.) 까지
+                          </div>
+                        </div>
+                        <div>
+                          <div class="mb-4 mo-mb-2">
+                            <strong class="fs-18 mo-fs-16">
+                              □  1·2·3급 소방안전관리자 자격시험
+                            </strong>
+                          </div>
+                          <div class="kfsi-table kfsi-table-scroll-mo">
+                            <table
+                              summary="1·2·3급 소방안전관리자 자격시험의 공고문 및 접수일 관련 원서접수, 시험일자, 합격자 발표 정보를 제공합니다."
+                            >
+                              <caption>
+                                1·2·3급 소방안전관리자 자격시험 일정
+                              </caption>
+                              <colgroup>
+                                <col style="width: 116px" />
+                                <col style="width: 116px" />
+                                <col style="width: 116px" />
+                                <col style="width: 116px" />
+                                <col style="width: 116px" />
+                                <col style="width: 116px" />
+                                <col style="width: 116px" />
+                                <col style="width: 116px" />
+                              </colgroup>
+                              <thead>
+                                <tr>
+                                  <th scope="col"></th>
+                                  <th scope="col">원서접수</th>
+                                  <th scope="col">시험일자</th>
+                                  <th scope="col">합격자 발표</th>
+                                  <th scope="col">구분</th>
+                                  <th scope="col">원서접수</th>
+                                  <th scope="col">시험일자</th>
+                                  <th scope="col">합격자 발표</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">공고문</th>
+                                  <td>4.30</td>
+                                  <td>5.31</td>
+                                  <td>6.28</td>
+                                  <td>7.31</td>
+                                  <td>8.30</td>
+                                  <td>9.30</td>
+                                  <td>10.31</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                    접수일<br />
+                                    (접수시간)
+                                  </th>
+                                  <td>5.17<br />(10:00)</td>
+                                  <td>6.13<br />(10:00)</td>
+                                  <td>7.18<br />(10:00)</td>
+                                  <td>8.14<br />(10:00)</td>
+                                  <td>9.12<br />(10:00)</td>
+                                  <td>10.17<br />(10:00)</td>
+                                  <td>
+                                    11.14<br />1.3급 (10:00)<br />
+                                    2급 <br />(14:00)
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="mt-5 mo-mt-2 text-danger">
+                            ※ 직능(1·2·3급)별 시험접수 시간을 확인하여 주시기
+                            바랍니다.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="kfsi-button">
+                        <p>
+                          <a href="" class="btn btn-primary btn-lg">
+                            시험 신청하기
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab02-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab02"
+                      tabindex="0"
+                    >
+                      2
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

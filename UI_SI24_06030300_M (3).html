@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>시험 및 점수</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">시험안내(응시자격 등)</a>
+              <a href="" class="kfsi-snb-item">시험신청</a>
+              <a href="" class="kfsi-snb-item active">응시자격 심사 신청</a>
+              <a href="" class="kfsi-snb-item">시험(심사) 신청내역</a>
+              <a href="" class="kfsi-snb-item">시험(평가) 점수확인 </a>
+              <a href="" class="kfsi-snb-item">합격자 발표 조회</a>
+              <a href="" class="kfsi-snb-item">응시자격 자가진단</a>
+              <a href="" class="kfsi-snb-item">시험관련 확인서 신청</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">시험 및 점수</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      응시자격 심사 신청
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>응시자격 심사 신청</h1>
+              </div>
+              <div class="kfsi-license">
+                <div class="kfsi-tab02">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab01"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab01-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab01-pane"
+                        aria-selected="true"
+                      >
+                        심사신청 안내
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="tab02"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab02-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab02-pane"
+                        aria-selected="false"
+                      >
+                        심사 신청
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div
+                      class="tab-pane fade"
+                      id="tab01-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab01"
+                      tabindex="0"
+                    ></div>
+                    <div
+                      class="tab-pane fade show active"
+                      id="tab02-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab02"
+                      tabindex="0"
+                    >
+                      <div class="kfsi-nav">
+                        <ol>
+                          <li>
+                            <span>01</span>
+                            <strong>약관동의/실명인증</strong>
+                          </li>
+                          <li>
+                            <span>02</span>
+                            <strong>정보입력</strong>
+                          </li>
+                          <li class="active">
+                            <span>03</span>
+                            <strong>신청완료 </strong>
+                          </li>
+                        </ol>
+                      </div>
+                      <div class="mb-15 mo-mb-10">
+                        <div class="text-center fs-20">
+                          <strong
+                            >응시자격 심사 신청이 정상적으로
+                            완료되었습니다.</strong
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <div class="kfsi-board">
+                          <div class="kfsi-board-write">
+                            <div class="kfsi-board-write-form">
+                              <table
+                                summary="심사 신청이 정상적으로 완료된 사용자 정보를 확인하는 테이블입니다. 성명, 생년월일, 성별, 전화번호, 주소, 등급, 발급구분, 신청일시 등의 정보를 제공합니다."
+                              >
+                                <caption>
+                                  심사 신청 완료 정보
+                                </caption>
+                                <colgroup>
+                                  <col style="width: 230px" />
+                                  <col style="width: 710px" />
+                                </colgroup>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row"><span>성명</span></th>
+                                    <td><span>김소방</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"><span>생년월일</span></th>
+                                    <td><span>1980.01.01</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"><span>성별</span></th>
+                                    <td><span>남자</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"><span>전화번호</span></th>
+                                    <td><span>02-1234-5678</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">
+                                      <span>휴대폰 번호</span>
+                                    </th>
+                                    <td><span>010-1234-5678</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">
+                                      <span>주소(주민등록상)</span>
+                                    </th>
+                                    <td>
+                                      <span>
+                                        (12345)<br />
+                                        서울시 강남구 도산대로 523 한성빌딩
+                                        106호
+                                      </span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"><span>등급</span></th>
+                                    <td><span>특급</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"><span>응시자격</span></th>
+                                    <td>
+                                      <span>
+                                        1급 소방안전관리자 실무경력 5년 이상
+                                        (업무대행 경력 제외, 이하 같음)
+                                      </span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"><span>신청일시</span></th>
+                                    <td><span>2024-09-25 13:24:20</span></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="kfsi-button">
+                        <p>
+                          <a href="" class="btn btn-primary btn-lg"
+                            >심사 신청 내역 바로가기</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

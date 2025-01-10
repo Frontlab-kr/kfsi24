@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">강습교육</a>
+              <a href="" class="kfsi-snb-item active">실무교육</a>
+              <a href="" class="kfsi-snb-item">의용소방대교육</a>
+              <a href="" class="kfsi-snb-item">다중이용업교육</a>
+              <a href="" class="kfsi-snb-item">열린교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">교육신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      수료확인서 발급
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>수료확인서 발급</h1>
+              </div>
+              <div class="kfsi-education">
+                <div class="kfsi-textlist">
+                  <ul>
+                    <li>실무교육을 수강한 내역을 확인하는 서비스입니다.</li>
+                    <li>
+                      조회된 이력이 있는 경우, 수료확인증 출력이 가능합니다.
+                    </li>
+                  </ul>
+                </div>
+                <div class="kfsi-board mt-10">
+                  <div class="kfsi-board-head">
+                    <div class="kfsi-board-head-start">
+                      <div class="fs-22 mo-fs-17 text-primary">
+                        <strong>나의 실무교육 수료 내역</strong>
+                      </div>
+                    </div>
+                    <div class="kfsi-board-head-end"></div>
+                  </div>
+                  <div class="kfsi-table kfsi-table-mo-list">
+                    <table summary="">
+                      <caption></caption>
+                      <colgroup>
+                        <col style="width: 140px" />
+                        <col style="width: 190px" />
+                        <col style="width: 190px" />
+                        <col style="width: 190px" />
+                        <col style="width: 230px" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">직능</th>
+                          <th scope="col">교육년도</th>
+                          <th scope="col">교육일자</th>
+                          <th scope="col">수료여부</th>
+                          <th scope="col">영수증</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td title="직능">소방기술자</td>
+                          <td title="교육년도">2022</td>
+                          <td title="교육일자">2024.10.02</td>
+                          <td title="수료여부" class="text-success">수료</td>
+                          <td title="영수증">
+                            <div class="d-flex justify-content-center gap-3">
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                출력
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                팩스
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 5000;
+      "
+    >
+      <div>
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#modal01"
+        >
+          팩스 전송
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal01" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5">팩스 전송</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="kfsi-board">
+              <div class="kfsi-board-write">
+                <div class="kfsi-board-write-form">
+                  <table
+                    summary="팩스 전송을 위한 팩스번호와 팩스번호 재확인을 입력하는 테이블입니다."
+                  >
+                    <caption>
+                      팩스번호 입력
+                    </caption>
+                    <colgroup>
+                      <col style="width: 195px" />
+                      <col style="width: 500px" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><span>팩스번호</span></th>
+                        <td>
+                          <span>
+                            <input
+                              type="text"
+                              class="form-control"
+                              value="sobang"
+                              title="팩스번호"
+                            />
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><span>팩스번호 재확인</span></th>
+                        <td>
+                          <span>
+                            <input
+                              type="password"
+                              class="form-control"
+                              title="팩스번호 재확인"
+                            />
+                          </span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="mt-5">
+                ※ 증명서를 받고자 하는 팩스번호(지역번호 포함)를 정확히
+                입력하시기 바랍니다.<br />
+                예) 0212345678<br />
+                ※ 팩스번호를 잘못 입력하여 다른 팩스번호로 발송될 경우 개인정보
+                유출 위험이 있으니 유의하시기 바랍니다.<br />
+                ※ 증명서 팩스 수신시간은 통신환경에 따라서 최장 5~10분까지
+                소요될 수 있습니다.
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              data-bs-dismiss="modal"
+            >
+              전송하기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

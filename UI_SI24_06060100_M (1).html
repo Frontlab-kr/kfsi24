@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>시험 및 점수</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">시험안내(응시자격 등)</a>
+              <a href="" class="kfsi-snb-item">시험신청</a>
+              <a href="" class="kfsi-snb-item">응시자격 심사 신청</a>
+              <a href="" class="kfsi-snb-item">시험(심사) 신청내역</a>
+              <a href="" class="kfsi-snb-item">시험(평가) 점수확인 </a>
+              <a href="" class="kfsi-snb-item active">합격자 발표 조회</a>
+              <a href="" class="kfsi-snb-item">응시자격 자가진단</a>
+              <a href="" class="kfsi-snb-item">시험관련 확인서 신청</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">시험 및 점수</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      합격자 발표 조회
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>합격자 발표 조회</h1>
+              </div>
+              <div>
+                <div class="kfsi-textlist mb-10 mo-mb-6">
+                  <ul>
+                    <li>
+                      1급/2급/3급 소방안전관리자 자격시험의 합격자만 조회됩니다.
+                    </li>
+                    <li>
+                      (특급 소방안전관리자 자격시험의 합격자는 공지사항을 통하여
+                      공고)<br />
+                      합격자는 응시자의 응시지역 및 응시번호로 발표합니다.
+                    </li>
+                    <li>
+                      개인별 점수확인은
+                      <span class="text-success"><시험(평가) 점수확인></span>
+                      메뉴에서 확인 가능합니다.
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="kfsi-h4">합격자 발표 조회</h4>
+                  <div class="kfsi-board">
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form">
+                        <table summary="">
+                          <caption></caption>
+                          <colgroup>
+                            <col style="width: 195px" />
+                            <col style="width: 745px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row"><span>시험과정</span></th>
+                              <td>
+                                <span>
+                                  <select
+                                    class="form-select"
+                                    aria-label="시험과정 선택"
+                                    title="시험과정 선택"
+                                    style="min-width: 282px"
+                                  >
+                                    <option selected>선택</option>
+                                  </select>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row"><span>시험일정</span></th>
+                              <td>
+                                <span>
+                                  <select
+                                    class="form-select"
+                                    aria-label="시험과정 선택"
+                                    title="시험과정 선택"
+                                    style="min-width: 282px"
+                                  >
+                                    <option selected>선택</option>
+                                  </select>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kfsi-button">
+                    <p>
+                      <button type="button" class="btn btn-primary btn-lg">
+                        전체 합격자 보기
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
