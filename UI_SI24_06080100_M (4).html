@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>시험 및 점수</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">시험안내(응시자격 등)</a>
+              <a href="" class="kfsi-snb-item">시험신청</a>
+              <a href="" class="kfsi-snb-item">응시자격 심사 신청</a>
+              <a href="" class="kfsi-snb-item">시험(심사) 신청내역</a>
+              <a href="" class="kfsi-snb-item">시험(평가) 점수확인 </a>
+              <a href="" class="kfsi-snb-item">합격자 발표 조회</a>
+              <a href="" class="kfsi-snb-item active">응시자격 자가진단</a>
+              <a href="" class="kfsi-snb-item">시험관련 확인서 신청</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">시험 및 점수</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      응시자격 자가진단
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>응시자격 자가진단</h1>
+              </div>
+              <div class="kfsi-test">
+                <div class="kfsi-test-nav">
+                  <ul>
+                    <li>
+                      <strong>정보확인</strong>
+                    </li>
+                    <li>
+                      <strong>보유자격</strong>
+                    </li>
+                    <li class="active">
+                      <strong>학력정보</strong>
+                    </li>
+                    <li>
+                      <strong>경력사항</strong>
+                    </li>
+                    <li>
+                      <strong>진단결과</strong>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="kfsi-board">
+                    <div
+                      class="kfsi-board-head mo-flex-column mo-align-items-end gap-3"
+                    >
+                      <div class="kfsi-board-head-start">
+                        <h4 class="kfsi-h4">학력정보 확인 (복수등록 가능)</h4>
+                      </div>
+                      <div class="kfsi-board-head-end">
+                        <button
+                          type="button"
+                          class="btn btn-secondary btn-sm"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modal01"
+                        >
+                          관련 학과 및 관련 교과목 보기
+                        </button>
+                      </div>
+                    </div>
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form">
+                        <table
+                          summary="사용자가 학력 정보를 등록 및 관리할 수 있는 표로, 학력구분과 졸업일 정보를 입력합니다."
+                        >
+                          <caption>
+                            학력정보 확인 (복수등록 가능)
+                          </caption>
+                          <colgroup>
+                            <col style="width: 135px" />
+                            <col style="width: 400px" />
+                            <col style="width: 135px" />
+                            <col style="width: 250px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row">학력구분1</th>
+                              <td>
+                                <select
+                                  class="form-select"
+                                  title="월 선택"
+                                  style="min-width: 400px; width: 400px"
+                                >
+                                  <option selected>선택</option>
+                                </select>
+                              </td>
+                              <th scope="row">졸업일</th>
+                              <td>
+                                <div
+                                  class="d-flex justify-content-between gap-2 w-100"
+                                >
+                                  <input
+                                    type="date"
+                                    class="form-control"
+                                    title="졸업일"
+                                  />
+                                  <button
+                                    type="button"
+                                    class="btn btn-outline-danger btn-sm px-3 mo-h-40"
+                                  >
+                                    <i class="ico-minus"></i>삭제
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">학력구분2</th>
+                              <td>
+                                <select
+                                  class="form-select"
+                                  title="월 선택"
+                                  style="min-width: 400px; width: 400px"
+                                >
+                                  <option selected>선택</option>
+                                </select>
+                              </td>
+                              <th scope="row">졸업일</th>
+                              <td>
+                                <div
+                                  class="d-flex justify-content-between gap-2 w-100"
+                                >
+                                  <input
+                                    type="date"
+                                    class="form-control"
+                                    title="졸업일"
+                                  />
+                                  <button
+                                    type="button"
+                                    class="btn btn-outline-danger btn-sm px-3 mo-h-40"
+                                  >
+                                    <i class="ico-minus"></i>삭제
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">학력구분3</th>
+                              <td>
+                                <select
+                                  class="form-select"
+                                  title="월 선택"
+                                  style="min-width: 400px; width: 400px"
+                                >
+                                  <option selected>선택</option>
+                                </select>
+                              </td>
+                              <th scope="row"></th>
+                              <td>
+                                <div
+                                  class="d-flex justify-content-between gap-2 w-100"
+                                >
+                                  <div></div>
+                                  <button
+                                    type="button"
+                                    class="btn btn-outline-danger btn-sm px-3 mo-h-40"
+                                  >
+                                    <i class="ico-minus"></i>삭제
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between mo-flex-column mo-align-items-end gap-2 w-100 mt-3"
+                    >
+                      <p class="m-0 text-danger">
+                        ※ 관련 고시에 따른 학과명 또는 교과명이 다른 경우
+                        인정되지 않을 수 있습니다.
+                      </p>
+                      <button
+                        type="button"
+                        class="btn btn-outline-success btn-sm px-3 mo-h-40"
+                      >
+                        <i class="ico-plus"></i>학력정보 추가
+                      </button>
+                    </div>
+                  </div>
+                  <div class="kfsi-textlist mt-15 mo-mt-10">
+                    <ul>
+                      <li>
+                        본 응시자격 자가진단은 시험 접수 전 본인의 응시자격
+                        여부를 스스로 진단해보는 것으로서 시험 응시를 희망하는
+                        경우 별도로 시험접수를 진행하셔야 합니다.<br />
+                        <span class="text-danger"
+                          >※ 응시자격은 실제 제출서류의 사실관계 등에 따라
+                          결과가 달라질 수 있으므로 이점 유의하시기
+                          바랍니다.</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="kfsi-button">
+                  <p>
+                    <a href="" class="btn btn-primary btn-lg">다음</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 5000;
+      "
+    >
+      <div>
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#modal01"
+        >
+          관련 학과 및 관련 교과목 보기
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal01" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5">관련 학과 및 관련 교과목</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <div class="text-danger">
+                관련 고시에 따른 학과명 또는 교과명이 다른 경우 인정되지 않을 수
+                있습니다.
+              </div>
+              <div class="mt-6">
+                <div class="mb-1 fs-18 text-success">
+                  <strong>"소방안전관리학과"</strong>
+                </div>
+                1. 소방안전관리과(소방안전과를 포함한다)<br />
+                2. 소방시스템학과 <br />
+                3. 소방학과 <br />
+                4. 소방환경관리과(소빙환경안전학과, 소빙환경방재학과,
+                소방환경학과를 포함한다) <br />
+                5. 소방공학과 <br />
+                6. 소방행정학과 <br />
+                7. 소방방재학과 <br />
+                8. 소방기계.전기.설비과 <br />
+                9. 학군, 전공 또는 학부제로 운영되는 대학의 경우에는 제1호부터
+                제8호끼지 학과에 해당하는 학과(과 또는 공학과를 포힘한다)
+              </div>
+              <div class="mt-6">
+                <div class="mb-1 fs-18 text-success">
+                  <strong>"소방안전관련학과"</strong>
+                </div>
+                1. 전기공학과(전기과, 전기설비과, 전자과, 전자공학과, 전기전자과
+                전기전자공학과, 전기제어공학과를 포함한다) <br />
+                2. 산업안전공학과(산업안전과, 산업공학과, 안전공학과
+                안전시스템공학과를 포함한다) <br />
+                3. 기계공학과(기계과, 기계학과, 기계설계학과, 기계설계공학과,
+                정밀기계공학과를 포함한다) <br />
+                4. 건축공학과(건축과, 건축학과, 건축설비학과, 건축설계학과를
+                포함한다) <br />
+                5. 화학공학과(공업화학과, 회학공업과를 포함한다) <br />
+                6. 학군, 전공 또는 학부제로 운영되는 대학의 경우에는 제1호부터
+                제5호까지 학과에 해당하는 학과(과 또는 공학과를 포함한다)
+              </div>
+              <div class="mt-6">
+                <div class="mb-1 fs-18 text-success">
+                  <strong>"소방안전관련교과목"</strong>
+                </div>
+                1. 소방안전관리론(소빙학개론, 재난관리론, 소방관계법규를
+                포함한다). <br />
+                2. 유제역학 <br />
+                3. 위험물질론 및 약제화학 <br />
+                4. 소빙시설의 구조원리 <br />
+                5. 방화 및 방폭공학 <br />
+                6. 건축공학 <br />
+                7. 전기전자공학 <br />
+                8. 가스안전 <br />
+                9. 기계공학 <br />
+                10. 화재유동학(열역학, 열전담을 포함한다) <br />
+                11. 화재조사론
+              </div>
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-outline-secondary btn-lg"
+            data-bs-dismiss="modal"
+          >
+            닫기
+          </button>
+        </div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

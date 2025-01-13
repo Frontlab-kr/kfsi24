@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>시험 및 점수</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">시험안내(응시자격 등)</a>
+              <a href="" class="kfsi-snb-item">시험신청</a>
+              <a href="" class="kfsi-snb-item">응시자격 심사 신청</a>
+              <a href="" class="kfsi-snb-item">시험(심사) 신청내역</a>
+              <a href="" class="kfsi-snb-item">시험(평가) 점수확인 </a>
+              <a href="" class="kfsi-snb-item">합격자 발표 조회</a>
+              <a href="" class="kfsi-snb-item active">응시자격 자가진단</a>
+              <a href="" class="kfsi-snb-item">시험관련 확인서 신청</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">시험 및 점수</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      응시자격 자가진단
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>응시자격 자가진단</h1>
+              </div>
+              <div class="kfsi-test">
+                <div class="kfsi-test-nav">
+                  <ul>
+                    <li class="active">
+                      <strong>정보확인</strong>
+                    </li>
+                    <li>
+                      <strong>보유자격</strong>
+                    </li>
+                    <li>
+                      <strong>학력정보</strong>
+                    </li>
+                    <li>
+                      <strong>경력사항</strong>
+                    </li>
+                    <li>
+                      <strong>진단결과</strong>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mb-15 mo-mb-10">
+                  <h4 class="kfsi-h4">강습교육 내역</h4>
+                  <div class="kfsi-table kfsi-table-mo-list">
+                    <table
+                      summary="강습교육 내역을 나타내는 표로, 수강번호, 교육과정, 지부, 교육일자, 수료정보에 대한 정보를 포함합니다."
+                    >
+                      <caption>
+                        강습교육 내역
+                      </caption>
+                      <colgroup>
+                        <col style="width: 140px" />
+                        <col style="width: 260px" />
+                        <col style="width: 140px" />
+                        <col style="width: 260px" />
+                        <col style="width: 140px" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">수강번호</th>
+                          <th scope="col">교육과정</th>
+                          <th scope="col">지부</th>
+                          <th scope="col">교육일자</th>
+                          <th scope="col">수료정보</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td title="수강번호">001-001</td>
+                          <td title="교육과정">1급 소방안전관리자</td>
+                          <td title="지부">경기북부지부</td>
+                          <td title="교육일자">2023.12.05 ~ 2023.12.10</td>
+                          <td title="수료정보">수료</td>
+                        </tr>
+                        <tr>
+                          <td title="수강번호">002-002</td>
+                          <td title="교육과정">2급 소방안전관리자</td>
+                          <td title="지부">경기북부지부</td>
+                          <td title="교육일자">2022.11.05 ~ 2022.11.10</td>
+                          <td title="수료정보">수료</td>
+                        </tr>
+                        <tr>
+                          <td colspan="5" class="kfsi-table-none">
+                            강습교육 수료내역이 없습니다.
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="kfsi-h4">소방안전관리자 자격 취득 내역</h4>
+                  <div class="kfsi-table kfsi-table-mo-list">
+                    <table
+                      summary="소방안전관리자 자격 취득 내역을 나타내는 표로, 직능, 자격번호, 발급구분, 취득일에 대한 정보를 포함합니다."
+                    >
+                      <caption>
+                        소방안전관리자 자격 취득 내역
+                      </caption>
+                      <colgroup>
+                        <col style="width: 235px" />
+                        <col style="width: 235px" />
+                        <col style="width: 235px" />
+                        <col style="width: 235px" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">직능</th>
+                          <th scope="col">자격번호</th>
+                          <th scope="col">발급구분</th>
+                          <th scope="col">취득일</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td title="직능">1급 소방안전관리자</td>
+                          <td title="자격번호">2024-01-22-6-000051</td>
+                          <td title="발급구분">자격인정</td>
+                          <td title="취득일">2024.04.23</td>
+                        </tr>
+                        <tr>
+                          <td title="직능">2급 소방안전관리자</td>
+                          <td title="자격번호">2023-02-33-7-000049</td>
+                          <td title="발급구분">자격인정</td>
+                          <td title="취득일">2023.11.20</td>
+                        </tr>
+                        <tr>
+                          <td colspan="4" class="kfsi-table-none">
+                            강습교육 수료내역이 없습니다.
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="kfsi-textlist mt-5">
+                    <ul>
+                      <li>
+                        본 응시자격 자가진단은 시험 접수 전 본인의 응시자격
+                        여부를 스스로 진단해보는 것으로서 시험 응시를 희망하는
+                        경우 별도로 시험접수를 진행하셔야 합니다.<br />
+                        <span class="text-danger"
+                          >※ 응시자격은 실제 제출서류의 사실관계 등에 따라
+                          결과가 달라질 수 있으므로 이점 유의하시기
+                          바랍니다.</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="kfsi-button">
+                  <p>
+                    <a href="" class="btn btn-primary btn-lg">다음</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

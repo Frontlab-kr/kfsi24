@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- swiper -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi kfsi--main">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-main">
+          <div class="kfsi-main-head">
+            <div class="kfsi-inner">
+              <div class="kfsi-main-head-start">
+                <div class="kfsi-main-banner">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <a href="">
+                          <img
+                            src="./assets/images/main/img01.png"
+                            alt="한국소방안전원이 회원분들께만 드리는 혜택 재해위로금 지급, 회원자료 운영, 소방안전장학금 지급, 전자도서관 운영"
+                          />
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="">
+                          <img
+                            src="./assets/images/main/img01.png"
+                            alt="한국소방안전원이 회원분들께만 드리는 혜택 재해위로금 지급, 회원자료 운영, 소방안전장학금 지급, 전자도서관 운영"
+                          />
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="">
+                          <img
+                            src="./assets/images/main/img01.png"
+                            alt="한국소방안전원이 회원분들께만 드리는 혜택 재해위로금 지급, 회원자료 운영, 소방안전장학금 지급, 전자도서관 운영"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="kfsi-main-banner__button">
+                      <div class="swiper-pagination"></div>
+                      <a href="javascript:void(0)" class="swiper-button-prev"
+                        >이전</a
+                      >
+
+                      <a href="javascript:void(0)" class="swiper-button-next"
+                        >다음</a
+                      >
+                      <div class="swiper-control">
+                        <a href="javascript:void(0)" class="swiper-button-pause"
+                          >멈춤</a
+                        >
+                        <a href="javascript:void(0)" class="swiper-button-play"
+                          >재생</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <script>
+                    $(document).ready(function () {
+                      var swiper = new Swiper('.kfsi-main-banner .swiper', {
+                        loop: true,
+                        pagination: {
+                          el: '.kfsi-main-banner .swiper-pagination',
+                          type: 'fraction',
+                        },
+                        navigation: {
+                          nextEl: '.kfsi-main-banner .swiper-button-next',
+                          prevEl: '.kfsi-main-banner .swiper-button-prev',
+                        },
+                        autoplay: {
+                          delay: 2500,
+                          disableOnInteraction: false,
+                        },
+                      });
+
+                      // 멈춤 버튼 클릭 이벤트
+                      $('.swiper-button-pause').on('click', function () {
+                        swiper.autoplay.stop();
+                        $('.kfsi-main-banner').addClass('pause');
+                      });
+
+                      // 재생 버튼 클릭 이벤트
+                      $('.swiper-button-play').on('click', function () {
+                        swiper.autoplay.start();
+                        $('.kfsi-main-banner').removeClass('pause');
+                      });
+                    });
+                  </script>
+                </div>
+                <div class="kfsi-main-search">
+                  <div class="kfsi-main-search-form">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="검색어를 입력해보세요."
+                      title="검색어를 입력해보세요."
+                    />
+                    <button>검색</button>
+                  </div>
+                </div>
+              </div>
+              <div class="kfsi-main-head-end">
+                <div class="kfsi-main-head-login">
+                  <p>원하시는 로그인 방식을 이용해주세요</p>
+                  <div class="kfsi-main-head-login-button">
+                    <button type="button" class="btn btn-lg btn-naver">
+                      네이버 로그인
+                    </button>
+                    <button type="button" class="btn btn-lg btn-kakao">
+                      카카오 로그인
+                    </button>
+                    <div class="kfsi-main-head-login-button-inner">
+                      <button type="button" class="btn btn-lg btn-simple">
+                        간편인증
+                      </button>
+                      <button type="button" class="btn btn-lg btn-one">
+                        디지털원패스
+                      </button>
+                      <button type="button" class="btn btn-lg btn-siren">
+                        실명확인
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="kfsi-inner">
+            <div class="kfsi-main-list">
+              <h3>교육신청</h3>
+              <div class="kfsi-main-list-list">
+                <a href="" class="kfsi-main-list-list-item">
+                  <div class="kfsi-main-list-list-item-thumb">
+                    <p>
+                      <img src="./assets/images/main/img02.png" alt="" />
+                    </p>
+                  </div>
+                  <div class="kfsi-main-list-list-item-text">
+                    <strong>강습교육</strong>
+                    <p>
+                      강습교육에 대한 안내사항을 기재해 주세요. 간단히 요약해
+                      주세요.
+                    </p>
+                  </div>
+                </a>
+                <a href="" class="kfsi-main-list-list-item">
+                  <div class="kfsi-main-list-list-item-thumb">
+                    <p>
+                      <img src="./assets/images/main/img03.png" alt="" />
+                    </p>
+                  </div>
+                  <div class="kfsi-main-list-list-item-text">
+                    <strong>실무교육</strong>
+                    <p>
+                      실무교육에 대한 안내사항을 기재해 주세요. 간단히 요약해
+                      주세요.
+                    </p>
+                  </div>
+                </a>
+                <a href="" class="kfsi-main-list-list-item">
+                  <div class="kfsi-main-list-list-item-thumb">
+                    <p>
+                      <img src="./assets/images/main/img02.png" alt="" />
+                    </p>
+                  </div>
+                  <div class="kfsi-main-list-list-item-text">
+                    <strong>다중이용업교육</strong>
+                    <p>
+                      다중이용업교육에 대한 안내사항을 기재해 주세요. 간단히
+                      요약해 주세요.
+                    </p>
+                  </div>
+                </a>
+                <a href="" class="kfsi-main-list-list-item">
+                  <div class="kfsi-main-list-list-item-thumb">
+                    <p>
+                      <img src="./assets/images/main/img02.png" alt="" />
+                    </p>
+                  </div>
+                  <div class="kfsi-main-list-list-item-text">
+                    <strong>의용소방대교육</strong>
+                    <p>
+                      의용소방대교육에 대한 안내사항을 기재해 주세요. 간단히
+                      요약해 주세요.
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="kfsi-main-board-wrap">
+              <div class="kfsi-main-board">
+                <div class="kfsi-main-board-head">
+                  <h3>공지사항</h3>
+                  <a href="">더보기</a>
+                </div>
+                <div class="kfsi-main-board-list">
+                  <a href="" class="kfsi-main-board-list-item">
+                    <p>제21회 특급 소방안전관리자 자격시험 모집공고 안내</p>
+                  </a>
+                  <a href="" class="kfsi-main-board-list-item">
+                    <p>제21회 특급 소방안전관리자 자격시험 응시원서 접수안내</p>
+                  </a>
+                  <a href="" class="kfsi-main-board-list-item">
+                    <p>제21회 특급 소방안전관리자 자격시험 모집공고 안내</p>
+                  </a>
+                  <a href="" class="kfsi-main-board-list-item">
+                    <p>
+                      제21회 특급 소방안전관리자 자격시험 응시원서 접수안내
+                      제21회 특급 소방안전관리자 자격시험 응시원서 접수안내
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="kfsi-main-board">
+                <div class="kfsi-main-board-head">
+                  <h3>자주묻는 질문</h3>
+                  <a href="">더보기</a>
+                </div>
+                <div class="kfsi-main-board-list">
+                  <a href="" class="kfsi-main-board-list-item">
+                    <span class="me-5 text-primary">분류4</span>
+                    <p>회원정보 변경을 원합니다.</p>
+                  </a>
+                  <a href="" class="kfsi-main-board-list-item">
+                    <span class="me-5 text-primary">분류1</span>
+                    <p>특급 소방안전관리자 자격시험 신청 관련 문의</p>
+                  </a>
+                  <a href="" class="kfsi-main-board-list-item">
+                    <span class="me-5 text-primary">분류4</span>
+                    <p>회원정보 변경을 원합니다.</p>
+                  </a>
+                  <a href="" class="kfsi-main-board-list-item">
+                    <span class="me-5 text-primary">분류1</span>
+                    <p>특급 소방안전관리자 자격시험 신청 관련 문의</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="kfsi-main-quick">
+            <div class="kfsi-inner">
+              <a href="" class="kfsi-main-quick-item">
+                <i class="kfsi-main-quick-ico01"></i>
+                <p>
+                  시험관련<br />
+                  확인서 신청
+                </p>
+              </a>
+              <a href="" class="kfsi-main-quick-item">
+                <i class="kfsi-main-quick-ico02"></i>
+                <p>
+                  자격발급<br />
+                  진위확인
+                </p>
+              </a>
+              <a href="" class="kfsi-main-quick-item">
+                <i class="kfsi-main-quick-ico03"></i>
+                <p>교재</p>
+              </a>
+              <a href="" class="kfsi-main-quick-item">
+                <i class="kfsi-main-quick-ico04"></i>
+                <p>서식</p>
+              </a>
+              <a href="" class="kfsi-main-quick-item">
+                <i class="kfsi-main-quick-ico05"></i>
+                <p>
+                  회원서비스<br />
+                  소개
+                </p>
+              </a>
+            </div>
+          </div>
+          <script>
+            $('.kfsi').addClass('kfsi--main');
+          </script>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

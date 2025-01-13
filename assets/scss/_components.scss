@@ -372,6 +372,9 @@ $mobileWidth: 992px;
             color: #054a9d;
             text-decoration: underline;
           }
+          &.kfsi-table-none {
+            color: #666;
+          }
         }
         tr {
           th,
@@ -474,6 +477,13 @@ $mobileWidth: 992px;
                 //word-break: normal;
               }
               &.title-none {
+                &::before {
+                  display: none;
+                }
+              }
+              &.kfsi-table-none {
+                color: #666;
+                justify-content: center;
                 &::before {
                   display: none;
                 }

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>시험 및 점수</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">시험안내(응시자격 등)</a>
+              <a href="" class="kfsi-snb-item">시험신청</a>
+              <a href="" class="kfsi-snb-item">응시자격 심사 신청</a>
+              <a href="" class="kfsi-snb-item">시험(심사) 신청내역</a>
+              <a href="" class="kfsi-snb-item">시험(평가) 점수확인 </a>
+              <a href="" class="kfsi-snb-item">합격자 발표 조회</a>
+              <a href="" class="kfsi-snb-item active">응시자격 자가진단</a>
+              <a href="" class="kfsi-snb-item">시험관련 확인서 신청</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">시험 및 점수</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      응시자격 자가진단
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>응시자격 자가진단</h1>
+              </div>
+              <div class="kfsi-test">
+                <div class="kfsi-test-nav">
+                  <ul>
+                    <li>
+                      <strong>정보확인</strong>
+                    </li>
+                    <li>
+                      <strong>보유자격</strong>
+                    </li>
+                    <li>
+                      <strong>학력정보</strong>
+                    </li>
+                    <li class="active">
+                      <strong>경력사항</strong>
+                    </li>
+                    <li>
+                      <strong>진단결과</strong>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="kfsi-board">
+                    <div
+                      class="kfsi-board-head mo-flex-column mo-align-items-end gap-3"
+                    >
+                      <div class="kfsi-board-head-start">
+                        <h4 class="kfsi-h4">
+                          경력사항을 입력해 주세요. (복수입력 가능)
+                        </h4>
+                      </div>
+                      <div class="kfsi-board-head-end"></div>
+                    </div>
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form">
+                        <table summary="경력사항 입력 테이블">
+                          <caption>
+                            경력사항 입력
+                          </caption>
+                          <colgroup>
+                            <col style="width: 135px" />
+                            <col style="width: 400px" />
+                            <col style="width: 135px" />
+                            <col style="width: 250px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row">경력구분1</th>
+                              <td colspan="3">
+                                <select
+                                  class="form-select w-100"
+                                  title="경력구분1 선택"
+                                >
+                                  <option selected>선택</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">등급</th>
+                              <td>
+                                <span>
+                                  <div class="d-flex align-items-center gap-6">
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="radio1"
+                                        id="radio1-1"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="radio1-1"
+                                      >
+                                        특급
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="radio1"
+                                        id="radio1-2"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="radio1-2"
+                                      >
+                                        1급
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="radio1"
+                                        id="radio1-3"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="radio1-3"
+                                      >
+                                        2급
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="radio1"
+                                        id="radio1-4"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="radio1-4"
+                                      >
+                                        3급
+                                      </label>
+                                    </div>
+                                  </div>
+                                </span>
+                              </td>
+                              <th scope="row">업무대행 선임여부</th>
+                              <td>
+                                <span>
+                                  <div class="d-flex align-items-center gap-6">
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="radio2"
+                                        id="radio2-1"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="radio2-1"
+                                      >
+                                        예
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="radio2"
+                                        id="radio2-2"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="radio2-2"
+                                      >
+                                        아니오
+                                      </label>
+                                    </div>
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">선임기간</th>
+                              <td colspan="3">
+                                <div
+                                  class="d-flex align-items-center column-gap-6 row-gap-2 mo-flex-column"
+                                >
+                                  <div class="d-flex align-items-center gap-1">
+                                    <input
+                                      type="date"
+                                      class="form-control"
+                                      title="선임기간 시작일"
+                                    />
+                                    부터
+                                  </div>
+                                  <div class="d-flex align-items-center gap-1">
+                                    <input
+                                      type="date"
+                                      class="form-control"
+                                      title="선임기간 종료일"
+                                    />
+                                    까지
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <div class="kfsi-board-write mt-5">
+                      <div class="kfsi-board-write-form">
+                        <table summary="경력사항 입력 테이블">
+                          <caption>
+                            경력사항 입력
+                          </caption>
+                          <colgroup>
+                            <col style="width: 135px" />
+                            <col style="width: 400px" />
+                            <col style="width: 135px" />
+                            <col style="width: 250px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row">경력구분2</th>
+                              <td colspan="3">
+                                <select
+                                  class="form-select w-100"
+                                  title="경력구분2 선택"
+                                >
+                                  <option selected>선택</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">등급</th>
+                              <td colspan="3">
+                                <span>
+                                  <div class="d-flex align-items-center gap-6">
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="radio1"
+                                        id="radio1-1"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="radio1-1"
+                                      >
+                                        특급
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="radio1"
+                                        id="radio1-2"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="radio1-2"
+                                      >
+                                        1급
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="radio1"
+                                        id="radio1-3"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="radio1-3"
+                                      >
+                                        2급
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="radio1"
+                                        id="radio1-4"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="radio1-4"
+                                      >
+                                        3급
+                                      </label>
+                                    </div>
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">선임기간</th>
+                              <td colspan="3">
+                                <div
+                                  class="d-flex justify-content-between w-100"
+                                >
+                                  <div
+                                    class="d-flex align-items-center column-gap-6 row-gap-2 mo-flex-column"
+                                  >
+                                    <div
+                                      class="d-flex align-items-center gap-1"
+                                    >
+                                      <input
+                                        type="date"
+                                        class="form-control"
+                                        title="선임기간 시작일"
+                                      />
+                                      부터
+                                    </div>
+                                    <div
+                                      class="d-flex align-items-center gap-1"
+                                    >
+                                      <input
+                                        type="date"
+                                        class="form-control"
+                                        title="선임기간 종료일"
+                                      />
+                                      까지
+                                    </div>
+                                  </div>
+
+                                  <button
+                                    type="button"
+                                    class="btn btn-outline-danger btn-sm px-3 mo-h-40"
+                                  >
+                                    <i class="ico-minus"></i>삭제
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <div class="kfsi-board-write mt-5">
+                      <div class="kfsi-board-write-form">
+                        <table summary="경력사항 입력 테이블">
+                          <caption>
+                            경력사항 입력
+                          </caption>
+                          <colgroup>
+                            <col style="width: 135px" />
+                            <col style="width: 400px" />
+                            <col style="width: 135px" />
+                            <col style="width: 250px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row">경력구분3</th>
+                              <td colspan="3">
+                                <select
+                                  class="form-select w-100"
+                                  title="경력구분3 선택"
+                                >
+                                  <option selected>선택</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">선임기간</th>
+                              <td colspan="3">
+                                <div
+                                  class="d-flex justify-content-between w-100"
+                                >
+                                  <div
+                                    class="d-flex align-items-center column-gap-6 row-gap-2 mo-flex-column mo-align-items-start"
+                                  >
+                                    <div
+                                      class="d-flex align-items-center gap-1"
+                                    >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        title="선임기간 종료일"
+                                        style="
+                                          min-width: 60px;
+                                          width: 60px !important;
+                                        "
+                                      />
+                                      년
+                                    </div>
+                                    <div
+                                      class="d-flex align-items-center gap-1"
+                                    >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        title="선임기간 종료일"
+                                        style="
+                                          min-width: 60px;
+                                          width: 60px !important;
+                                        "
+                                      />
+                                      개월
+                                    </div>
+                                  </div>
+
+                                  <button
+                                    type="button"
+                                    class="btn btn-outline-danger btn-sm px-3 mo-h-40"
+                                  >
+                                    <i class="ico-minus"></i>삭제
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <div class="kfsi-board-write mt-5">
+                      <div class="kfsi-board-write-form">
+                        <table summary="경력사항 입력 테이블">
+                          <caption>
+                            경력사항 입력
+                          </caption>
+                          <colgroup>
+                            <col style="width: 135px" />
+                            <col style="width: 400px" />
+                            <col style="width: 135px" />
+                            <col style="width: 250px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row">경력구분4</th>
+                              <td colspan="3">
+                                <span>
+                                  <select
+                                    class="form-select w-100"
+                                    title="경력구분4 선택"
+                                  >
+                                    <option selected>선택</option>
+                                  </select>
+                                  <p class="m-0 mt-1 text-danger">
+                                    ※ 경력 증명서류에 화재진압 또는 그
+                                    보조업무가 명시되어야 경력인정 됩니다.
+                                  </p>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">선임기간</th>
+                              <td colspan="3">
+                                <div
+                                  class="d-flex justify-content-between w-100"
+                                >
+                                  <div
+                                    class="d-flex align-items-center column-gap-6 row-gap-2 mo-flex-column mo-align-items-start"
+                                  >
+                                    <div
+                                      class="d-flex align-items-center gap-1"
+                                    >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        title="선임기간 종료일"
+                                        style="
+                                          min-width: 60px;
+                                          width: 60px !important;
+                                        "
+                                      />
+                                      년
+                                    </div>
+                                    <div
+                                      class="d-flex align-items-center gap-1"
+                                    >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        title="선임기간 종료일"
+                                        style="
+                                          min-width: 60px;
+                                          width: 60px !important;
+                                        "
+                                      />
+                                      개월
+                                    </div>
+                                  </div>
+
+                                  <button
+                                    type="button"
+                                    class="btn btn-outline-danger btn-sm px-3 mo-h-40"
+                                  >
+                                    <i class="ico-minus"></i>삭제
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex align-items-center justify-content-between mo-flex-column mo-align-items-end gap-2 w-100 mt-3"
+                    >
+                      <p class="m-0 text-danger"></p>
+                      <button
+                        type="button"
+                        class="btn btn-outline-success btn-sm px-3 mo-h-40"
+                      >
+                        <i class="ico-plus"></i>학력정보 추가
+                      </button>
+                    </div>
+                  </div>
+                  <div class="kfsi-textlist mt-15 mo-mt-10">
+                    <ul>
+                      <li>
+                        본 응시자격 자가진단은 시험 접수 전 본인의 응시자격
+                        여부를 스스로 진단해보는 것으로서 시험 응시를 희망하는
+                        경우 별도로 시험접수를 진행하셔야 합니다.<br />
+                        <span class="text-danger"
+                          >※ 응시자격은 실제 제출서류의 사실관계 등에 따라
+                          결과가 달라질 수 있으므로 이점 유의하시기
+                          바랍니다.</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="kfsi-button">
+                  <p>
+                    <a href="" class="btn btn-primary btn-lg">다음</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
