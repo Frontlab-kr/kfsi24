@@ -124,8 +124,14 @@ small {
 .text-333 {
   color: #333 !important;
 }
+.text-444 {
+  color: #444 !important;
+}
 .text-666 {
   color: #666 !important;
+}
+.text-999 {
+  color: #999 !important;
 }
 .rounded {
   &-3 {
@@ -312,17 +318,27 @@ small {
   background-size: 28px 28px;
 }
 .invalid-feedback {
-  margin: 5px 0 0 10px;
+  margin: 5px 0 0 0;
   font-size: 14px;
+}
+
+.bg-primary-subtle {
+  background: #f8fff4 !important;
+}
+.bg-success-subtle {
+  background: #edfbff !important;
+}
+.bg-danger-subtle {
+  background: #fee !important;
 }
 .bg-warning-subtle {
   background: var(--FEF3DD, #fef3dd) !important;
 }
+.bg-secondary-subtle {
+  background: #eee !important;
+}
 .bg-light {
   background: var(--f6f6f6, #f6f6f6) !important;
-}
-.bg-success-subtle {
-  background: #f8fff4 !important;
 }
 .badge {
   padding: 3px 9px;

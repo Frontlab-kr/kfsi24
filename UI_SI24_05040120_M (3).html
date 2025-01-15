@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">강습교육</a>
+              <a href="" class="kfsi-snb-item">실무교육</a>
+              <a href="" class="kfsi-snb-item">의용소방대교육</a>
+              <a href="" class="kfsi-snb-item active">다중이용업교육</a>
+              <a href="" class="kfsi-snb-item">열린교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">다중이용업교육</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      교육신청
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>교육신청</h1>
+              </div>
+              <div class="kfsi-education">
+                <div class="kfsi-tab02">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab01"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab01-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab01-pane"
+                        aria-selected="true"
+                      >
+                        사이버 교육 이용안내
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab02"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab02-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab02-pane"
+                        aria-selected="false"
+                      >
+                        다중이용업 종사자 교육
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="tab03"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab03-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab03-pane"
+                        aria-selected="false"
+                      >
+                        수강신청
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div
+                      class="tab-pane fade show active"
+                      id="tab03-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab03"
+                      tabindex="0"
+                    >
+                      <div class="mb-15 mo-mb-10">
+                        <h4 class="kfsi-h4">
+                          개인정보 수집·이용 및 제3자 제공에 대한 동의
+                        </h4>
+                        <div>
+                          • 다중이용업 소방안전교육은 개인정보가 필요한
+                          콘텐츠로서 개인정보 수집이용 등의 동의가 필요합니다.
+                        </div>
+                      </div>
+                      <div class="mb-15 mo-mb-10">
+                        <div class="kfsi-agree-form">
+                          <div class="kfsi-agree-form__title">
+                            개인정보 수집 · 이용 동의 [필수]
+                          </div>
+                          <div class="kfsi-agree-form__contents">
+                            의용소방대교육은 개인정보가 필요한 콘텐츠로서
+                            개인정보 수집이용 동의가 필요합니다.
+                            <div class="pc my-5">
+                              <div class="kfsi-table">
+                                <table
+                                  summary="다중이용업 소방안전교육을 위한 개인정보 수집 항목과 이용 기간을 설명합니다."
+                                >
+                                  <caption>
+                                    개인정보 수집 · 이용 안내
+                                  </caption>
+                                  <colgroup>
+                                    <col style="width: 330px" />
+                                    <col style="width: 330px" />
+                                    <col style="width: 220px" />
+                                  </colgroup>
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">수집·이용 항목</th>
+                                      <th scope="col">항목</th>
+                                      <th scope="col">보유 · 이용기간</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <a href=""
+                                          >다중이용업 소방안전교육업무</a
+                                        >
+                                      </td>
+                                      <td>
+                                        (필수) 성명, 휴대폰 번호, 생년월일<br />
+                                        (선택) 관할지역, 관할소방서
+                                      </td>
+                                      <td>
+                                        <a href="">준영구</a>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="mo my-5">
+                              <div class="kfsi-textlist">
+                                <ul>
+                                  <li>
+                                    수집, 이용 항목 :
+                                    <a href="">다중이용업 소방안전교육업무</a>
+                                  </li>
+                                  <li>
+                                    <div class="d-flex">
+                                      <span class="me-1">항목 :</span>
+                                      <p class="m-0">
+                                        (필수) 성명, 휴대폰 번호, 생년월일<br />
+                                        (선택) 관할지역, 관할소방서
+                                      </p>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    보유 · 이용기간 : <a href="">준영구</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            ※ 개인정보 수집 및 이용 동의를 거부할 권리가 있으며,
+                            동의 거부시 해당 서비스를 이용할 수 없습니다.<br />
+                               (소방관서의 교육수강을 원하는 경우, 관할소방서로
+                            연락하시기 바랍니다.)
+                          </div>
+                          <div class="kfsi-agree-form__foot">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="checkbox01"
+                              />
+                              <label class="form-check-label" for="checkbox01">
+                                위 개인정보 수집·이용에 동의합니다.
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="kfsi-agree-form">
+                          <div class="kfsi-agree-form__title">
+                            개인정보의 제3자 제공 동의 [필수]
+                          </div>
+                          <div class="kfsi-agree-form__contents">
+                            <div class="pc mb-5">
+                              <div class="kfsi-table">
+                                <table
+                                  summary="소방청 및 소방본부에 개인정보를 제공하는 목적과 항목, 보유 기간에 대한 정보를 설명합니다."
+                                >
+                                  <caption>
+                                    개인정보 제3자 제공 안내
+                                  </caption>
+                                  <colgroup>
+                                    <col style="width: 220px" />
+                                    <col style="width: 220px" />
+                                    <col style="width: 220px" />
+                                    <col style="width: 220px" />
+                                  </colgroup>
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">제공받는 자</th>
+                                      <th scope="col">제공목적</th>
+                                      <th scope="col">항목</th>
+                                      <th scope="col">보유 · 이용기간</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <a href="">
+                                          소방청<br />
+                                          (소방본부 및 소방관서)
+                                        </a>
+                                      </td>
+                                      <td>
+                                        다중이용업 소방안전교육 이수현황 관리
+                                      </td>
+                                      <td>성명, 생년월일, 업소명, 업소주소</td>
+                                      <td>
+                                        <a href=""
+                                          >제공받는 기관 내부 규정에 따라
+                                          처리</a
+                                        >
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="mo mb-5">
+                              <div class="kfsi-textlist">
+                                <ul>
+                                  <li>
+                                    제공받는 자 :
+                                    <a href="">소방청(소방본부 및 소방관서)</a>
+                                  </li>
+                                  <li>
+                                    제공목적 : 다중이용업 소방안전교육 이수현황
+                                    관리
+                                  </li>
+                                  <li>
+                                    항목 : 성명, 생년월일, 업소명, 업소주소
+                                  </li>
+                                  <li>
+                                    보유 · 이용기간 :
+                                    <a href=""
+                                      >제공받는 기관 내부 규정에 따라 처리
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            ※ 개인정보 수집 및 이용 동의를 거부할 권리가 있으며,
+                            동의 거부시 해당 서비스를 이용할 수 없습니다.<br />
+                               (소방관서의 교육수강을 원하는 경우, 관할소방서로
+                            연락하시기 바랍니다.)
+                          </div>
+                          <div class="kfsi-agree-form__foot">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="checkbox02"
+                              />
+                              <label class="form-check-label" for="checkbox02">
+                                위 개인정보 제3자 제공에 동의합니다.
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="kfsi-button">
+                        <p>
+                          <button type="button" class="btn btn-primary btn-lg">
+                            수강신청
+                          </button>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

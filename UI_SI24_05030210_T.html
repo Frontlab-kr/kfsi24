@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">강습교육</a>
+              <a href="" class="kfsi-snb-item">실무교육</a>
+              <a href="" class="kfsi-snb-item active">의용소방대교육</a>
+              <a href="" class="kfsi-snb-item">다중이용업교육</a>
+              <a href="" class="kfsi-snb-item">열린교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">교육신청</li>
+                    <li class="breadcrumb-item">의용소방대교육</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      나의 교육정보
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>나의 의용소방대 교육정보</h1>
+              </div>
+              <div class="kfsi-education">
+                <div class="kfsi-tab02">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="tab01"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab01-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab01-pane"
+                        aria-selected="true"
+                      >
+                        교육
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab02"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab02-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab02-pane"
+                        aria-selected="false"
+                      >
+                        수강완료 내역
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div
+                      class="tab-pane fade show active"
+                      id="tab01-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab01"
+                      tabindex="0"
+                    >
+                      <div class="mb-15 mo-mb-10">
+                        <h4 class="kfsi-h4">의용소방대 교육(기본, 전문)</h4>
+                        <div class="kfsi-table kfsi-table-mo-list">
+                          <table
+                            summary="의용소방대 교육(기본, 전문): 과정명, 학습 진도, 학습 기간, 학습 버튼 및 수강 취소 버튼 정보를 제공합니다."
+                          >
+                            <caption>
+                              의용소방대 교육(기본, 전문)
+                            </caption>
+                            <colgroup>
+                              <col style="width: 188px" />
+                              <col style="width: 120px" />
+                              <col style="width: 256px" />
+                              <col style="width: 188px" />
+                              <col style="width: 188px" />
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">과정명</th>
+                                <th scope="col">진도</th>
+                                <th scope="col">학습기간</th>
+                                <th scope="col">학습</th>
+                                <th scope="col">수강취소</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td title="과정명">화재진압 4인조 법</td>
+                                <td title="진도">50%</td>
+                                <td title="학습기간">2024.04.22~2024.12.13</td>
+                                <td title="학습">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary btn-sm"
+                                  >
+                                    학습하기
+                                  </button>
+                                </td>
+                                <td title="수강취소">
+                                  <button
+                                    type="button"
+                                    class="btn btn-outline-dark btn-sm"
+                                  >
+                                    취소하기
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td title="과정명">구조기술</td>
+                                <td title="진도">100%</td>
+                                <td title="학습기간">2024.04.22~2024.12.13</td>
+                                <td title="학습">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary btn-sm"
+                                  >
+                                    학습하기
+                                  </button>
+                                </td>
+                                <td title="수강취소">
+                                  <button
+                                    type="button"
+                                    class="btn btn-outline-dark btn-sm"
+                                  >
+                                    취소하기
+                                  </button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="mt-4">
+                          ※ 수강완료한 경우에는
+                          <span class="text-success">이수증 출력</span>에서
+                          확인하시면 됩니다
+                        </div>
+                      </div>
+                      <div>
+                        <h4 class="kfsi-h4">의용소방대 전문화 교육(집합)</h4>
+                        <div class="kfsi-table kfsi-table-mo-list">
+                          <table
+                            summary="의용소방대 전문화 교육 과정의 회차, 직능 교육, 지부 정보, 교육 기간, 상태, 약도, 수강 취소 여부 등을 제공합니다."
+                          >
+                            <caption>
+                              의용소방대 전문화 교육(집합)
+                            </caption>
+                            <colgroup>
+                              <col style="width: 134px" />
+                              <col style="width: 134px" />
+                              <col style="width: 134px" />
+                              <col style="width: 134px" />
+                              <col style="width: 134px" />
+                              <col style="width: 134px" />
+                              <col style="width: 134px" />
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">회차</th>
+                                <th scope="col">직능(교육과정)</th>
+                                <th scope="col">지부</th>
+                                <th scope="col">교육기간</th>
+                                <th scope="col">상태</th>
+                                <th scope="col">약도</th>
+                                <th scope="col">수강취소</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td title="회차">&nbsp;</td>
+                                <td title="직능(교육과정)">&nbsp;</td>
+                                <td title="지부">&nbsp;</td>
+                                <td title="교육기간">&nbsp;</td>
+                                <td title="상태">&nbsp;</td>
+                                <td title="약도">&nbsp;</td>
+                                <td title="수강취소">&nbsp;</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab02-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab02"
+                      tabindex="0"
+                    >
+                      <div class="mb-15 mo-mb-10">
+                        <div class="kfsi-board-head mo-flex-column gap-3">
+                          <div class="kfsi-board-head-start">
+                            <h4 class="kfsi-h4">
+                              의용소방대 수강완료 내역(기본, 전문)
+                            </h4>
+                          </div>
+                          <div class="kfsi-board-head-end">
+                            <select
+                              class="form-select"
+                              title="년도 선택"
+                              style="min-width: 100px; width: 100px"
+                            >
+                              <option selected>2024</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="kfsi-table kfsi-table-mo-list">
+                          <table
+                            summary="의용소방대 기본 및 전문 수강 완료 내역: 과정명, 이수일, 상태, 이수증 출력, 복습 기능 정보를 제공합니다."
+                          >
+                            <caption>
+                              의용소방대 수강완료 내역
+                            </caption>
+                            <colgroup>
+                              <col style="width: 188px" />
+                              <col style="width: 188px" />
+                              <col style="width: 188px" />
+                              <col style="width: 188px" />
+                              <col style="width: 188px" />
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">과정명</th>
+                                <th scope="col">이수일</th>
+                                <th scope="col">상태</th>
+                                <th scope="col">이수증</th>
+                                <th scope="col">복습하기</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td title="과정명">반부패 및 청렴교육</td>
+                                <td title="이수일">2024.11.12</td>
+                                <td title="상태">이수</td>
+                                <td title="이수증">
+                                  <button
+                                    type="button"
+                                    class="btn btn-outline-dark btn-sm"
+                                  >
+                                    출력하기
+                                  </button>
+                                </td>
+                                <td title="복습하기">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary btn-sm"
+                                  >
+                                    복습하기
+                                  </button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div>
+                        <h4 class="kfsi-h4">
+                          의용소방대 전문화 교육 수강완료 내역(집합)
+                        </h4>
+                        <div class="kfsi-table kfsi-table-mo-list">
+                          <table
+                            summary="의용소방대 전문화 집합 교육 과정 수강 내역: 수강번호, 교육과정, 지부, 교육일자, 상태, 수료증, 자격증 정보를 제공합니다."
+                          >
+                            <caption>
+                              전문화 교육 수강 완료 정보
+                            </caption>
+                            <colgroup>
+                              <col style="width: 134px" />
+                              <col style="width: 134px" />
+                              <col style="width: 134px" />
+                              <col style="width: 134px" />
+                              <col style="width: 134px" />
+                              <col style="width: 134px" />
+                              <col style="width: 134px" />
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">수강번호</th>
+                                <th scope="col">교육과정</th>
+                                <th scope="col">지부</th>
+                                <th scope="col">교육일자</th>
+                                <th scope="col">상태</th>
+                                <th scope="col">수료증</th>
+                                <th scope="col">자격증</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td title="수강번호">&nbsp;</td>
+                                <td title="교육과정">&nbsp;</td>
+                                <td title="지부">&nbsp;</td>
+                                <td title="교육일자">&nbsp;</td>
+                                <td title="상태">&nbsp;</td>
+                                <td title="수료증">&nbsp;</td>
+                                <td title="자격증">&nbsp;</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

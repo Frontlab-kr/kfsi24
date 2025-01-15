@@ -725,8 +725,8 @@ $mobileWidth: 992px;
       &::before {
         content: '';
         position: absolute;
-        left: -15px;
-        right: -15px;
+        left: 50px;
+        right: 50px;
         top: 50%;
         border-top: 1px solid #ccc;
       }
@@ -737,10 +737,10 @@ $mobileWidth: 992px;
         align-items: center;
         justify-content: center;
         gap: 40px;
-        min-width: 33.333%;
+        min-width: 110px;
         margin: 0;
         padding: 0;
-        white-space: noWrap;
+
         &::before {
           position: absolute;
           top: 50%;
@@ -783,6 +783,17 @@ $mobileWidth: 992px;
         }
       }
     }
+    &--step4 {
+      ol {
+        &::before {
+          // left: -100px;
+          // right: -100px;
+        }
+        li {
+          //width: 40px;
+        }
+      }
+    }
     @media screen and (max-width: $mobileWidth) {
       margin-bottom: 40px;
       ol {
@@ -797,8 +808,8 @@ $mobileWidth: 992px;
         &::before {
           content: '';
           position: absolute;
-          left: 15px;
-          right: 15px;
+          // left: 10px;
+          // right: 10px;
           top: 50%;
           border-top: 1px solid #ccc;
         }
@@ -809,9 +820,10 @@ $mobileWidth: 992px;
           align-items: center;
           justify-content: center;
           gap: 40px;
+          min-width: 94px;
           margin: 0;
           padding: 0;
-          white-space: noWrap;
+          //white-space: noWrap;
           &::before {
             position: absolute;
             top: 50%;

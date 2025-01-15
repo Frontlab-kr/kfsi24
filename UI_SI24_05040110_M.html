@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">강습교육</a>
+              <a href="" class="kfsi-snb-item">실무교육</a>
+              <a href="" class="kfsi-snb-item">의용소방대교육</a>
+              <a href="" class="kfsi-snb-item active">다중이용업교육</a>
+              <a href="" class="kfsi-snb-item">열린교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">다중이용업교육</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      교육신청
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>교육신청</h1>
+              </div>
+              <div class="kfsi-education">
+                <div class="kfsi-tab02">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="tab01"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab01-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab01-pane"
+                        aria-selected="true"
+                      >
+                        사이버 교육 이용안내
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab02"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab02-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab02-pane"
+                        aria-selected="false"
+                      >
+                        다중이용업 종사자 교육
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab03"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab03-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab03-pane"
+                        aria-selected="false"
+                      >
+                        수강신청
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div
+                      class="tab-pane fade show active"
+                      id="tab01-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab01"
+                      tabindex="0"
+                    >
+                      <div class="mb-15 mo-mb-10">
+                        <h4 class="kfsi-h4">수강신청방법</h4>
+                        <div>
+                          <div class="pc">
+                            <img
+                              src="./assets/images/education/step.png"
+                              alt="회원가입 후 로그인 → 과정 선택 후 수강 신청 → 학습하기 → 업소명 및 업소 주소 입력"
+                            />
+                          </div>
+                          <div class="mo text-center">
+                            <img
+                              src="./assets/images/education/step-mo.png"
+                              alt="회원가입 후 로그인 → 과정 선택 후 수강 신청 → 학습하기 → 업소명 및 업소 주소 입력"
+                              style="width: 180px"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mb-15 mo-mb-10">
+                        <h4 class="kfsi-h4">과정 구분</h4>
+                        <div class="kfsi-table">
+                          <table
+                            summary="다중이용업 소방안전교육 과정 및 구분 설명을 제공합니다."
+                          >
+                            <caption>
+                              다중이용업 소방안전교육 과정 안내
+                            </caption>
+                            <colgroup>
+                              <col style="width: 235px" />
+                              <col style="width: 235px" />
+                              <col style="width: 470px" />
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">시</th>
+                                <th scope="col">과정분류</th>
+                                <th scope="col">비고</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td rowspan="3">다중이용업 소방안전교육</td>
+                                <td>신규교육</td>
+                                <td class="text-start">
+                                  신규 교육은 다중이용업에 종사하기 전 이수해야
+                                  하는 교육
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>보수교육</td>
+                                <td class="text-start">
+                                  보수교육은 다중이용업주 또는 종업원
+                                  교육대상자가 2년 주기로 재교육
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>수시교육</td>
+                                <td class="text-start">
+                                  수시교육은 관련법에 따라 위반행위가 적발된
+                                  날부터 3개월 이내 이수해야 하는 교육
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div>
+                        <h4 class="kfsi-h4">과정 상세</h4>
+                        <div class="kfsi-table">
+                          <table
+                            summary="소방안전교육 과정 및 상세 정보를 제공합니다."
+                          >
+                            <caption>
+                              소방안전교육 과정 정보
+                            </caption>
+                            <colgroup>
+                              <col style="width: 314px" />
+                              <col style="width: 314px" />
+                              <col style="width: 314px" />
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">과정</th>
+                                <th scope="col">과정상세</th>
+                                <th scope="col">교육수수료</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>다중이용업 소방안전교육</td>
+                                <td>신규교육, 보수교육, 수시교육</td>
+                                <td>무료</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab02-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab02"
+                      tabindex="0"
+                    >
+                      <div class="mb-15 mo-mb-10">
+                        <h4 class="kfsi-h4">
+                          다중이용업 소방안전교육과정이란?
+                        </h4>
+                        <div>
+                          • 다중이용업은「다중이용업소의 안전관리에 관한
+                          특별법」제8조, 동법「시행규칙」제6조 및 다중이용업주
+                          및 종업원 소방안전교육에 관한 규정 제6조의2에 따라
+                          다중이용업주 및 종업원이 받아야하는 교육과정입니다.
+                          다만, 다중이용업주나 종업원이 그 해당연도에 다음 각
+                          호의 어느 하나에 해당하는 교육을 받은 경우에는
+                          다중이용업 교육을 수강하지 않아도 됩니다.<br />
+                          <br />
+                          <strong>
+                            1. 「화재의 예방 및 안전관리에 관한 법률」 제34조에
+                            따른 소방안전관리자 강습 또는 실무교육<br />
+                            2. 「위험물안전관리법」 제28조에 따른
+                            위험물안전관리자 교육
+                          </strong>
+                        </div>
+                      </div>
+                      <div class="mb-15 mo-mb-10">
+                        <h4 class="kfsi-h4">교육의 종류 및 시기</h4>
+                        <div>
+                          • 신규교육 : 다중이용업주는 다중이용업을 시작하기 전,
+                          교육대상 종업원은 다중이용업에 종사하기 전에 이수해야
+                          하는 교육<br />
+                          • 수시교육(특별법 위반자) : 법령을 위반한 다중이용업주
+                          및 종업원이 위반행위가 적발된 날부터 3개월 이내
+                          이수해야 하는 교육<br />
+                          • 보수교육 : 다중이용업주 및 종업원 교육대상자가 2년
+                          주기로 받는 재교육<br />
+                          <br />
+                          <strong>
+                            ※ '신규' 과정을 이수하여야 하는 사람이 '수시'과정을
+                            이수하였을 경우, 또는 그 반대의 경우 교육 이수내역이
+                            무효 처리됩니다.
+                          </strong>
+                        </div>
+                      </div>
+                      <div class="mb-15 mo-mb-10">
+                        <h4 class="kfsi-h4">교육 안내</h4>
+                        <div>• 수료기준 : 진도율이 90% 이상 → 자동수료</div>
+                      </div>
+                      <div>
+                        <h4 class="kfsi-h4">유의사항</h4>
+                        <div>
+                          • 동일 건물 동일 층에 업종을 2개로 분할하여 종업원
+                          없이 1인이 영업장을 운영하는 경우에만 다중이용업소
+                          소방안전교육 중복 이수가 인정됩니다.<br />
+                          <strong
+                            >(단, 관리 종업원이 채용되는 경우에는 그 관리
+                            종업원은 교육을 받아야 함)</strong
+                          >
+                        </div>
+                      </div>
+                      <div class="kfsi-button">
+                        <p>
+                          <button type="button" class="btn btn-primary btn-lg">
+                            수강신청
+                          </button>
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab03-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab03"
+                      tabindex="0"
+                    >
+                      <div>
+                        <h4 class="kfsi-h4">다중이용업 교육과정</h4>
+                        <div
+                          class="kfsi-education-application kfsi-education-application--grid3"
+                        >
+                          <dl>
+                            <dt><p>소방안전교육(보수)</p></dt>
+                            <dd>
+                              <div>
+                                <p class="m-0">• 개설지부 :   -</p>
+                                <p class="m-0 mt-5">• 수강료 : 무료</p>
+                              </div>
+                            </dd>
+                            <dd
+                              class="kfsi-education-application-button border-top"
+                            >
+                              <button class="bg-white">맛보기</button>
+                            </dd>
+                            <dd
+                              class="kfsi-education-application-button border-top"
+                            >
+                              <button>수강신청</button>
+                            </dd>
+                          </dl>
+                          <dl>
+                            <dt><p>소방안전교육(수시-특별법 위반자)</p></dt>
+                            <dd>
+                              <div>
+                                <p class="m-0">• 개설지부 :   -</p>
+                                <p class="m-0 mt-5">• 수강료 : 무료</p>
+                              </div>
+                            </dd>
+                            <dd
+                              class="kfsi-education-application-button border-top"
+                            >
+                              <button class="bg-white">맛보기</button>
+                            </dd>
+                            <dd
+                              class="kfsi-education-application-button border-top"
+                            >
+                              <button>수강신청</button>
+                            </dd>
+                          </dl>
+                          <dl>
+                            <dt><p>소방안전교육(신규)</p></dt>
+                            <dd>
+                              <div>
+                                <p class="m-0">• 개설지부 :   -</p>
+                                <p class="m-0 mt-5">• 수강료 : 무료</p>
+                              </div>
+                            </dd>
+                            <dd
+                              class="kfsi-education-application-button border-top"
+                            >
+                              <button class="bg-white">맛보기</button>
+                            </dd>
+                            <dd
+                              class="kfsi-education-application-button border-top"
+                            >
+                              <button>수강신청</button>
+                            </dd>
+                          </dl>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

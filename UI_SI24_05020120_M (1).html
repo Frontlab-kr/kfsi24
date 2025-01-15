@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">강습교육</a>
+              <a href="" class="kfsi-snb-item active">실무교육</a>
+              <a href="" class="kfsi-snb-item">의용소방대교육</a>
+              <a href="" class="kfsi-snb-item">다중이용업교육</a>
+              <a href="" class="kfsi-snb-item">열린교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">교육신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      실무교육 신청안내
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>실무교육 신청안내</h1>
+              </div>
+              <div class="kfsi-education">
+                <div class="kfsi-tab02">
+                  <ul class="nav nav-tabs mo-mb-0" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="tab01"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab01-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab01-pane"
+                        aria-selected="true"
+                      >
+                        소방
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab02"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab02-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab02-pane"
+                        aria-selected="false"
+                      >
+                        위험물
+                      </button>
+                    </li>
+                  </ul>
+                  <div
+                    class="position-absolute top-0 end-0 mo-position-relative text-center mo-mt-6 mo-mb-10"
+                  >
+                    <a href="" class="btn btn-secondary btn-sm">
+                      접수방법 안내
+                    </a>
+                  </div>
+                  <div class="tab-content">
+                    <div
+                      class="tab-pane fade show active"
+                      id="tab01-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab01"
+                      tabindex="0"
+                    >
+                      <h4 class="kfsi-h4">교육과정</h4>
+                      <div class="kfsi-education-application">
+                        <dl>
+                          <dt class="justify-content-between">
+                            <span class="badge rounded-pill text-bg-light"
+                              >소방</span
+                            >
+                            <p>안전관리자</p>
+                          </dt>
+                          <dd>
+                            <div
+                              class="d-flex justify-content-center mo-justify-content-start"
+                            >
+                              <div class="kfsi-textlist">
+                                <ul class="d-block">
+                                  <li class="d-flex gap-6">
+                                    교육안내
+                                    <div class="d-flex gap-6">
+                                      <a
+                                        target="_blank"
+                                        href="/assets/downloadDoc/41.pdf"
+                                        title="교육안내.pdf가 다운로드 됩니다"
+                                        style="font-size: 0; line-height: 0"
+                                      >
+                                        <i class="ico-pdf">pdf</i>
+                                      </a>
+                                      <a
+                                        target="_blank"
+                                        href="/assets/downloadDoc/41.hwp"
+                                        title="선임기준 및 자격.hwp가 다운로드 됩니다"
+                                        style="font-size: 0; line-height: 0"
+                                      >
+                                        <i class="ico-hwp">hwp</i>
+                                      </a>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                          <dd class="kfsi-education-application-button">
+                            <button>교육일정보기</button>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt class="justify-content-between">
+                            <span class="badge rounded-pill text-bg-light"
+                              >소방</span
+                            >
+                            <p>안전관리보조자</p>
+                          </dt>
+                          <dd>
+                            <div
+                              class="d-flex justify-content-center mo-justify-content-start"
+                            >
+                              <div class="kfsi-textlist">
+                                <ul class="d-block">
+                                  <li class="d-flex gap-6">
+                                    교육안내
+                                    <div class="d-flex gap-6">
+                                      <a
+                                        target="_blank"
+                                        href="/assets/downloadDoc/45.pdf"
+                                        title="교육안내.pdf가 다운로드 됩니다"
+                                        style="font-size: 0; line-height: 0"
+                                      >
+                                        <i class="ico-pdf">pdf</i>
+                                      </a>
+                                      <a
+                                        target="_blank"
+                                        href="/assets/downloadDoc/45.hwp"
+                                        title="선임기준 및 자격.hwp가 다운로드 됩니다"
+                                        style="font-size: 0; line-height: 0"
+                                      >
+                                        <i class="ico-hwp">hwp</i>
+                                      </a>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                          <dd class="kfsi-education-application-button">
+                            <button>교육일정보기</button>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt class="justify-content-between">
+                            <span class="badge rounded-pill text-bg-light"
+                              >소방</span
+                            >
+                            <p>기술자</p>
+                          </dt>
+                          <dd>
+                            <div
+                              class="d-flex justify-content-center mo-justify-content-start"
+                            >
+                              <div class="kfsi-textlist">
+                                <ul class="d-block">
+                                  <li class="d-flex gap-6">
+                                    교육안내
+                                    <div class="d-flex gap-6">
+                                      <a
+                                        target="_blank"
+                                        href="/assets/downloadDoc/43.pdf"
+                                        title="교육안내.pdf가 다운로드 됩니다"
+                                        style="font-size: 0; line-height: 0"
+                                      >
+                                        <i class="ico-pdf">pdf</i>
+                                      </a>
+                                      <a
+                                        target="_blank"
+                                        href="/assets/downloadDoc/43.hwp"
+                                        title="선임기준 및 자격.hwp가 다운로드 됩니다"
+                                        style="font-size: 0; line-height: 0"
+                                      >
+                                        <i class="ico-hwp">hwp</i>
+                                      </a>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                          <dd class="kfsi-education-application-button">
+                            <button>교육일정보기</button>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="mt-5">
+                        ※ 방화관리자의 명칭이 소방안전관리자로
+                        변경되었습니다.<br />
+                        ※ 선착순 접수이므로 조기에 마감될 수 있으며, 마감된
+                        교육일정은 나타나지 않습니다.<br />
+                        ※ 교육 신청 후 미참가시, 교육 당일에는 교육
+                        신청/변경/환불이 되지 않습니다.
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab02-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab02"
+                      tabindex="0"
+                    >
+                      <h4 class="kfsi-h4">위험물 교육과정</h4>
+                      <div class="kfsi-education-application">
+                        <dl>
+                          <dt class="justify-content-between">
+                            <span class="badge rounded-pill text-bg-light"
+                              >위험물 안전관리자</span
+                            >
+                          </dt>
+                          <dd>
+                            <div
+                              class="d-flex justify-content-center mo-justify-content-start"
+                            >
+                              <div class="kfsi-textlist">
+                                <ul class="d-block">
+                                  <li class="d-flex gap-6">
+                                    교육안내
+                                    <div class="d-flex gap-6">
+                                      <a
+                                        target="_blank"
+                                        href="/assets/downloadDoc/42.pdf"
+                                        title="교육안내.pdf가 다운로드 됩니다"
+                                        style="font-size: 0; line-height: 0"
+                                      >
+                                        <i class="ico-pdf">pdf</i>
+                                      </a>
+                                      <a
+                                        target="_blank"
+                                        href="/assets/downloadDoc/42.hwp"
+                                        title="선임기준 및 자격.hwp가 다운로드 됩니다"
+                                        style="font-size: 0; line-height: 0"
+                                      >
+                                        <i class="ico-hwp">hwp</i>
+                                      </a>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                          <dd class="kfsi-education-application-button">
+                            <button>교육일정보기</button>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt class="justify-content-between">
+                            <span class="badge rounded-pill text-bg-light"
+                              >위험물 운송자</span
+                            >
+                          </dt>
+                          <dd>
+                            <div
+                              class="d-flex justify-content-center mo-justify-content-start"
+                            >
+                              <div class="kfsi-textlist">
+                                <ul class="d-block">
+                                  <li class="d-flex gap-6">
+                                    교육안내
+                                    <div class="d-flex gap-6">
+                                      <a
+                                        target="_blank"
+                                        href="/assets/downloadDoc/44.pdf"
+                                        title="교육안내.pdf가 다운로드 됩니다"
+                                        style="font-size: 0; line-height: 0"
+                                      >
+                                        <i class="ico-pdf">pdf</i>
+                                      </a>
+                                      <a
+                                        target="_blank"
+                                        href="/assets/downloadDoc/44.hwp"
+                                        title="선임기준 및 자격.hwp가 다운로드 됩니다"
+                                        style="font-size: 0; line-height: 0"
+                                      >
+                                        <i class="ico-hwp">hwp</i>
+                                      </a>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                          <dd class="kfsi-education-application-button">
+                            <button>교육일정보기</button>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt class="justify-content-between">
+                            <span class="badge rounded-pill text-bg-light"
+                              >위험물 운반자</span
+                            >
+                          </dt>
+                          <dd>
+                            <div
+                              class="d-flex justify-content-center mo-justify-content-start"
+                            >
+                              <div class="kfsi-textlist">
+                                <ul class="d-block">
+                                  <li class="d-flex gap-6">
+                                    교육안내
+                                    <div class="d-flex gap-6">
+                                      <a
+                                        target="_blank"
+                                        href="/assets/downloadDoc/46.pdf"
+                                        title="교육안내.pdf가 다운로드 됩니다"
+                                        style="font-size: 0; line-height: 0"
+                                      >
+                                        <i class="ico-pdf">pdf</i>
+                                      </a>
+                                      <a
+                                        target="_blank"
+                                        href="/assets/downloadDoc/46.hwp"
+                                        title="선임기준 및 자격.hwp가 다운로드 됩니다"
+                                        style="font-size: 0; line-height: 0"
+                                      >
+                                        <i class="ico-hwp">hwp</i>
+                                      </a>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                          <dd class="kfsi-education-application-button">
+                            <button>교육일정보기</button>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="mt-5">
+                        ※ 선착순 접수이므로 조기에 마감될 수 있으며, 마감된
+                        교육일정은 나타나지 않습니다.<br />
+                        ※ 교육 신청 후 미참가시, 교육 당일에는 교육
+                        신청/변경/환불이 되지 않습니다.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

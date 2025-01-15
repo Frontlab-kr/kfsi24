@@ -829,12 +829,6 @@
     });
 
     //header title
-    $('.kfsi-header-title').html($('.kfsi-snb-item.active').text());
-    if ($('.kfsi-snb-item.active').length === 0) {
-      $('.kfsi-header-title').html($('.kfsi-contents-title h1').text());
-    }
-    if ($('.kfsi-snb-item-sub.active > a').length > 0) {
-      $('.kfsi-header-title').html($('.kfsi-snb-item-sub.active > a').text());
-    }
+    $('.kfsi-header-title').html($('.kfsi-contents-title h1').text());
   });
 </script>

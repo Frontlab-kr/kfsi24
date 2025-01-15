@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">강습교육</a>
+              <a href="" class="kfsi-snb-item active">실무교육</a>
+              <a href="" class="kfsi-snb-item">의용소방대교육</a>
+              <a href="" class="kfsi-snb-item">다중이용업교육</a>
+              <a href="" class="kfsi-snb-item">열린교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">교육신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      실무교육 신청
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>실무교육 신청</h1>
+              </div>
+              <div class="kfsi-education">
+                <div class="kfsi-nav">
+                  <ol>
+                    <li>
+                      <span>01</span>
+                      <strong>교육정보 확인</strong>
+                    </li>
+                    <li>
+                      <span>02</span>
+                      <strong>교육 안내사항</strong>
+                    </li>
+                    <li class="active">
+                      <span>03</span>
+                      <strong>수강자 정보입력 </strong>
+                    </li>
+                  </ol>
+                </div>
+                <div class="mb-15 mo-mb-10">
+                  <h4 class="kfsi-h4">선임대상처 정보확인</h4>
+                  <div class="kfsi-textlist">
+                    <ul>
+                      <li class="text-danger">
+                        현재 소방관서에 선임된 건물(업체)명을 선택하고, 반드시
+                        선임신고 후 실무교육을 신청해 주세요.
+                      </li>
+                      <li>
+                        선임대상처 정보는 성명, 생년월일을 기초로 검색된
+                        대상처이므로, 종전근무처 또는 동명이인의 대상처가
+                        포함되어 있을 수 있습니다.
+                      </li>
+                      <li>
+                        검색결과에 선임되신 대상처가 없는 경우, 대상처 정보를
+                        직접 입력하세요.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mt-15 mo-mt-7">
+                    <div class="kfsi-table kfsi-table-mo-list">
+                      <table
+                        summary="건물이나 업체의 선임대상처 정보를 나타내는 테이블입니다. 건물명, 업종, 주소, 선임신고일에 관한 정보를 포함합니다."
+                      >
+                        <caption>
+                          선임대상처 정보확인
+                        </caption>
+                        <colgroup>
+                          <col style="width: 170px" />
+                          <col style="width: 112px" />
+                          <col style="width: 488px" />
+                          <col style="width: 170px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">건물(업체)명</th>
+                            <th scope="col">업종</th>
+                            <th scope="col">주소</th>
+                            <th scope="col">선임신고일</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td title="건물(업체)명">한국소방안전원</td>
+                            <td title="업종">관리업</td>
+                            <td title="주소">
+                              서울특별시 영등포구 영중로 170(영등포동8가 87-4,
+                              한국소방안전원)
+                            </td>
+                            <td title="선임신고일">2014.12.03</td>
+                          </tr>
+                          <tr>
+                            <td title="건물(업체)명">드림프라자</td>
+                            <td title="업종">임대업</td>
+                            <td title="주소">
+                              서울특별시 영등포구 영중로200(드림프라자 A동)
+                            </td>
+                            <td title="선임신고일">2024.10.11</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="kfsi-h4">선임자 정보확인</h4>
+                  <div class="kfsi-table kfsi-table-mo-list">
+                    <table
+                      summary="선임자의 이름과 연락처 정보를 포함한 테이블입니다. 연락처 수정 버튼을 통해 정보를 업데이트할 수 있습니다."
+                    >
+                      <caption>
+                        선임자 정보확인
+                      </caption>
+                      <colgroup>
+                        <col style="width: 470px" />
+                        <col style="width: 470px" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">선임자명</th>
+                          <th scope="col">연락처</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td title="선임자명">김소방</td>
+                          <td title="연락처">
+                            <div
+                              class="d-flex justify-content-center align-items-center mo-flex-column column-gap-10 row-gap-1"
+                            >
+                              010-1234-5678
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                연락처 수정
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="mt-5">
+                    • 변경내용이 있으신 경우, 정보를 변경하세요.
+                  </div>
+                </div>
+
+                <div class="kfsi-button">
+                  <p>
+                    <a href="" class="btn btn-outline-secondary btn-lg"
+                      >선임자 등 정보변경</a
+                    >
+                    <a href="" class="btn btn-primary btn-lg">교육 신청하기</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">강습교육</a>
+              <a href="" class="kfsi-snb-item">실무교육</a>
+              <a href="" class="kfsi-snb-item">의용소방대교육</a>
+              <a href="" class="kfsi-snb-item">다중이용업교육</a>
+              <a href="" class="kfsi-snb-item active">열린교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">열린교육</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      교육신청
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>교육신청</h1>
+              </div>
+              <div class="kfsi-education">
+                <div class="mt-15 mo-mt-10">
+                  <h4 class="kfsi-h4">주제별 교육과정</h4>
+                  <div>
+                    • 한국소방안전원에서 개발한 우수한 사이버교육 콘텐츠와
+                    동영상 교육 자료를 선임된 관련 직무능력의 향상 등을 위해
+                    제공하는 무료 교육과정 으로
+                    <span class="text-danger"
+                      >안전원에서 실시하는 법정 실무교육의 사이버교육과는 무관한
+                      교육</span
+                    >임을 알려드립니다.
+                  </div>
+                </div>
+                <div class="mt-15 mo-mt-10">
+                  <h4 class="kfsi-h4">이용안내</h4>
+                  <div>
+                    • 대상자 : 안전원 사이트 가입 회원<br />
+                    • 수료기준 : 학습진도율 90% 이상
+                  </div>
+                </div>
+                <div class="mt-15 mo-mt-10">
+                  <h4 class="kfsi-h4">주제별 교육과정</h4>
+                  <div
+                    class="kfsi-tab01 kfsi-tab01--grid3 kfsi-tab01--mo-grid2"
+                  >
+                    <ul class="nav nav-tabs mb-15 mo-mb-10" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link active"
+                          id="tab01"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab01-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="tab01-pane"
+                          aria-selected="true"
+                        >
+                          위험물 관리 및 안전
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="tab02"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab02-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="tab02-pane"
+                          aria-selected="false"
+                        >
+                          소방 시설 및 설비 관리
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="tab03"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab03-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="tab03-pane"
+                          aria-selected="false"
+                        >
+                          피난 및 구조 설비 관리
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="tab04"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab04-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="tab04-pane"
+                          aria-selected="false"
+                        >
+                          법령 및 행정 실무
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="tab05"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab05-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="tab05-pane"
+                          aria-selected="false"
+                        >
+                          자위소방대 및 초기 대응 실습
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="tab06"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab06-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="tab06-pane"
+                          aria-selected="false"
+                        >
+                          기타 소방 및 안전 관리
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
+                      <div
+                        class="tab-pane fade show active"
+                        id="tab01-pane"
+                        role="tabpanel"
+                        aria-labelledby="tab01"
+                        tabindex="0"
+                      >
+                        <div class="kfsi-table kfsi-table-mo-list">
+                          <table
+                            summary="교육과정의 정보와 수강료, 수강시간 및 수강신청 버튼을 확인할 수 있는 테이블입니다."
+                          >
+                            <caption>
+                              교육과정 정보
+                            </caption>
+                            <colgroup>
+                              <col style="width: 55px" />
+                              <col style="width: 458px" />
+                              <col style="width: 124px" />
+                              <col style="width: 124px" />
+                              <col style="width: 180px" />
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">No.</th>
+                                <th scope="col">과정명</th>
+                                <th scope="col">수강료</th>
+                                <th scope="col">수강시간</th>
+                                <th scope="col">수강신청</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td title="No.">1</td>
+                                <td title="과정명" class="text-start">
+                                  내진설계현황 및 문제점
+                                </td>
+                                <td title="수강료">무료</td>
+                                <td title="수강시간">1시간</td>
+                                <td title="수강신청">
+                                  <a href="" class="btn btn-secondary btn-sm"
+                                    >수강신청</a
+                                  >
+                                </td>
+                              </tr>
+                              <tr>
+                                <td title="No.">2</td>
+                                <td title="과정명" class="text-start">
+                                  이동탱크저장소 사고사례 및 질의회신
+                                </td>
+                                <td title="수강료">무료</td>
+                                <td title="수강시간">1시간</td>
+                                <td title="수강신청">
+                                  <a href="" class="btn btn-secondary btn-sm"
+                                    >수강신청</a
+                                  >
+                                </td>
+                              </tr>
+                              <tr>
+                                <td title="No.">3</td>
+                                <td title="과정명" class="text-start">
+                                  위험물 사고 시 응급처치 요령
+                                </td>
+                                <td title="수강료">무료</td>
+                                <td title="수강시간">1시간</td>
+                                <td title="수강신청">
+                                  <a href="" class="btn btn-secondary btn-sm"
+                                    >수강신청</a
+                                  >
+                                </td>
+                              </tr>
+                              <tr>
+                                <td title="No.">4</td>
+                                <td title="과정명" class="text-start">
+                                  이동탱크저장소 점검기준 및 점검표 작성실습
+                                </td>
+                                <td title="수강료">무료</td>
+                                <td title="수강시간">1시간</td>
+                                <td title="수강신청">
+                                  <a href="" class="btn btn-secondary btn-sm"
+                                    >수강신청</a
+                                  >
+                                </td>
+                              </tr>
+                              <tr>
+                                <td title="No.">5</td>
+                                <td title="과정명" class="text-start">
+                                  위험물 관계 법규(2020년)
+                                </td>
+                                <td title="수강료">무료</td>
+                                <td title="수강시간">1시간</td>
+                                <td title="수강신청">
+                                  <a href="" class="btn btn-secondary btn-sm"
+                                    >수강신청</a
+                                  >
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="tab02-pane"
+                        role="tabpanel"
+                        aria-labelledby="tab02"
+                        tabindex="0"
+                      >
+                        2
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="tab03-pane"
+                        role="tabpanel"
+                        aria-labelledby="tab03"
+                        tabindex="0"
+                      >
+                        3
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="tab04-pane"
+                        role="tabpanel"
+                        aria-labelledby="tab04"
+                        tabindex="0"
+                      >
+                        4
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="tab05-pane"
+                        role="tabpanel"
+                        aria-labelledby="tab05"
+                        tabindex="0"
+                      >
+                        5
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="tab06-pane"
+                        role="tabpanel"
+                        aria-labelledby="tab06"
+                        tabindex="0"
+                      >
+                        6
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 5000;
+      "
+    >
+      <div>
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#alert01"
+        >
+          alert1
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+
+    <div
+      class="modal fade"
+      id="alert01"
+      tabindex="-1"
+      aria-labelledby="alert01Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered kfsi-alert">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex flex-column align-items-center gap-4 my-4">
+              <i class="ico-exclamation-alert2"></i>
+              <p class="m-0">
+                선택하신 과목은 "실무교육"이 아닙니다. <br />
+                실무교육은 "실무교육-소방안전관리자 접수 및 수납" 후에만 수강할
+                수 있으며, "열린과정" 사이버교육은 실무교육을 대체하지
+                않습니다.<br />
+                수강 신청을 진행하시겠습니까?
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-lg btn-outline-secondary">
+              취소
+            </button>
+            <button type="button" class="btn btn-lg btn-primary">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

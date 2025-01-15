@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item active">강습교육</a>
+              <a href="" class="kfsi-snb-item">실무교육</a>
+              <a href="" class="kfsi-snb-item">의용소방대교육</a>
+              <a href="" class="kfsi-snb-item">다중이용업교육</a>
+              <a href="" class="kfsi-snb-item">열린교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">교육신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      강습교육 신청
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>강습교육 신청</h1>
+              </div>
+              <div class="kfsi-education">
+                <div class="kfsi-tab02">
+                  <ul class="nav nav-tabs mo-mb-0" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="tab01"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab01-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab01-pane"
+                        aria-selected="true"
+                      >
+                        소방안전관리자
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab02"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab02-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab02-pane"
+                        aria-selected="false"
+                      >
+                        위험물
+                      </button>
+                    </li>
+                  </ul>
+                  <div
+                    class="position-absolute top-0 end-0 mo-position-relative text-center mo-mt-6 mo-mb-10"
+                  >
+                    <a href="" class="btn btn-secondary btn-sm">
+                      강습교육 안내 보기
+                    </a>
+                  </div>
+                  <div class="tab-content">
+                    <div
+                      class="tab-pane fade show active"
+                      id="tab01-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab01"
+                      tabindex="0"
+                    >
+                      <h4 class="kfsi-h4">소방안전관리자 교육과정</h4>
+                      <div class="kfsi-education-application">
+                        <dl>
+                          <dt class="justify-content-between">
+                            <span class="badge rounded-pill text-bg-light"
+                              >3급</span
+                            >
+                            <p>소방안전관리자</p>
+                          </dt>
+                          <dd>
+                            <div
+                              class="d-flex justify-content-center mo-justify-content-start"
+                            >
+                              <div class="kfsi-textlist">
+                                <ul>
+                                  <li class="d-flex gap-2">
+                                    교육안내
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/30.pdf"
+                                      title="교육안내.pdf가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-pdf">pdf</i>
+                                    </a>
+                                  </li>
+                                  <li>교육비 : 144,000원</li>
+                                  <li class="d-flex gap-2">
+                                    선임기준 및 자격
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/30-1.hwp"
+                                      title="선임기준 및 자격.hwp가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-hwp">hwp</i>
+                                    </a>
+                                  </li>
+                                  <li>교육일 : 3일(1일 8h)</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                          <dd class="kfsi-education-application-button">
+                            <button>교육일정보기</button>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt class="justify-content-between">
+                            <span class="badge rounded-pill text-bg-light"
+                              >2급</span
+                            >
+                            <p>소방안전관리자</p>
+                          </dt>
+                          <dd>
+                            <div
+                              class="d-flex justify-content-center mo-justify-content-start"
+                            >
+                              <div class="kfsi-textlist">
+                                <ul>
+                                  <li class="d-flex gap-2">
+                                    교육안내
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/23.pdf"
+                                      title="교육안내.pdf가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-pdf">pdf</i>
+                                    </a>
+                                  </li>
+                                  <li>교육비 : 240,000원</li>
+                                  <li class="d-flex gap-2">
+                                    선임기준 및 자격
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/23-1.hwp"
+                                      title="선임기준 및 자격.hwp가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-hwp">hwp</i>
+                                    </a>
+                                  </li>
+                                  <li>교육일 : 5일(1일 8h)</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                          <dd class="kfsi-education-application-button">
+                            <button>교육일정보기</button>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt class="justify-content-between">
+                            <span class="badge rounded-pill text-bg-light"
+                              >1급</span
+                            >
+                            <p>소방안전관리자</p>
+                          </dt>
+                          <dd>
+                            <div
+                              class="d-flex justify-content-center mo-justify-content-start"
+                            >
+                              <div class="kfsi-textlist">
+                                <ul>
+                                  <li class="d-flex gap-2">
+                                    교육안내
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/22.pdf"
+                                      title="교육안내.pdf가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-pdf">pdf</i>
+                                    </a>
+                                  </li>
+                                  <li>교육비 : 480,000원</li>
+                                  <li class="d-flex gap-2">
+                                    선임기준 및 자격
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/22-1.hwp"
+                                      title="선임기준 및 자격.hwp가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-hwp">hwp</i>
+                                    </a>
+                                  </li>
+                                  <li>교육일: 10일(1일 8h)</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                          <dd class="kfsi-education-application-button">
+                            <button>교육일정보기</button>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt class="justify-content-between">
+                            <span class="badge rounded-pill text-bg-light"
+                              >특급</span
+                            >
+                            <p>소방안전관리자</p>
+                          </dt>
+                          <dd>
+                            <div
+                              class="d-flex justify-content-center mo-justify-content-start"
+                            >
+                              <div class="kfsi-textlist">
+                                <ul>
+                                  <li class="d-flex gap-2">
+                                    교육안내
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/21.pdf"
+                                      title="교육안내.pdf가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-pdf">pdf</i>
+                                    </a>
+                                  </li>
+                                  <li>교육비 : 144,000원</li>
+                                  <li class="d-flex gap-2">
+                                    선임기준 및 자격
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/21-1.hwp"
+                                      title="선임기준 및 자격.hwp가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-hwp">hwp</i>
+                                    </a>
+                                  </li>
+                                  <li>교육일 : 20일(1일 8h)</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                          <dd class="kfsi-education-application-button">
+                            <button>교육일정보기</button>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt class="justify-content-between">
+                            <span class="badge rounded-pill text-bg-light"
+                              >공공기관</span
+                            >
+                            <p>소방안전관리자</p>
+                          </dt>
+                          <dd>
+                            <div
+                              class="d-flex justify-content-center mo-justify-content-start"
+                            >
+                              <div class="kfsi-textlist">
+                                <ul>
+                                  <li class="d-flex gap-2">
+                                    교육안내
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/20.pdf"
+                                      title="교육안내.pdf가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-pdf">pdf</i>
+                                    </a>
+                                  </li>
+                                  <li>교육비 : 240,000원</li>
+                                  <li class="d-flex gap-2">
+                                    선임기준 및 자격
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/20-1.hwp"
+                                      title="선임기준 및 자격.hwp가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-hwp">hwp</i>
+                                    </a>
+                                  </li>
+                                  <li>교육일 : 5일(1일 8h)</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                          <dd class="kfsi-education-application-button">
+                            <button>교육일정보기</button>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt class="justify-content-between">
+                            <span class="badge rounded-pill text-bg-light"
+                              >공공기관<span class="text-666"
+                                >(혼합)</span
+                              ></span
+                            >
+                            <p>소방안전관리자</p>
+                          </dt>
+                          <dd>
+                            <div
+                              class="d-flex justify-content-center mo-justify-content-start"
+                            >
+                              <div class="kfsi-textlist">
+                                <ul>
+                                  <li class="d-flex gap-2">
+                                    교육안내
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/20.pdf"
+                                      title="교육안내.pdf가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-pdf">pdf</i>
+                                    </a>
+                                  </li>
+                                  <li>교육비 : 240,000원</li>
+                                  <li class="d-flex gap-2">
+                                    선임기준 및 자격
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/20-1.hwp"
+                                      title="선임기준 및 자격.hwp가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-hwp">hwp</i>
+                                    </a>
+                                  </li>
+                                  <li>교육일 : 사이버16차시 +4일(1일 8h)</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                          <dd class="kfsi-education-application-button">
+                            <button>교육일정보기</button>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt class="justify-content-between">
+                            <span class="badge rounded-pill text-bg-light"
+                              >건설현장</span
+                            >
+                            <p>소방안전관리자</p>
+                          </dt>
+                          <dd>
+                            <div
+                              class="d-flex justify-content-center mo-justify-content-start"
+                            >
+                              <div class="kfsi-textlist">
+                                <ul>
+                                  <li class="d-flex gap-2">
+                                    교육안내
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/28.pdf"
+                                      title="교육안내.pdf가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-pdf">pdf</i>
+                                    </a>
+                                  </li>
+                                  <li>교육비 : 144,000원</li>
+                                  <li class="d-flex gap-2">
+                                    선임기준 및 자격
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/28-1.hwp"
+                                      title="선임기준 및 자격.hwp가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-hwp">hwp</i>
+                                    </a>
+                                  </li>
+                                  <li>교육일 : 3일(1일 8h)</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                          <dd class="kfsi-education-application-button">
+                            <button>교육일정보기</button>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt class="justify-content-between">
+                            <span class="badge rounded-pill text-bg-light"
+                              >업무대행감독</span
+                            >
+                            <p>소방안전관리자</p>
+                          </dt>
+                          <dd>
+                            <div
+                              class="d-flex justify-content-center mo-justify-content-start"
+                            >
+                              <div class="kfsi-textlist">
+                                <ul>
+                                  <li class="d-flex gap-2">
+                                    교육안내
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/29.pdf"
+                                      title="교육안내.pdf가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-pdf">pdf</i>
+                                    </a>
+                                  </li>
+                                  <li>교육비 : 96,000원</li>
+                                  <li class="d-flex gap-2">
+                                    선임기준 및 자격
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/29-1.hwp"
+                                      title="선임기준 및 자격.hwp가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-hwp">hwp</i>
+                                    </a>
+                                  </li>
+                                  <li>교육일 : 2일(1일 8h)</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                          <dd class="kfsi-education-application-button">
+                            <button>교육일정보기</button>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="mt-5">
+                        ※ 구비서류 : 사진1매(사진 미등록자에 한함),
+                        주민등록증(운전면허증),
+                        재직증명서(공공기관소방안전관리자 과정에 한함)<br />
+                        ※ 방화관리자의 명칭이 소방안전관리자로 변경 되었습니다.
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab02-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab02"
+                      tabindex="0"
+                    >
+                      <h4 class="kfsi-h4">위험물 교육과정</h4>
+                      <div class="kfsi-education-application">
+                        <dl>
+                          <dt class="justify-content-between">
+                            <span class="badge rounded-pill text-bg-light"
+                              >위험물 안전관리자</span
+                            >
+                          </dt>
+                          <dd class="pt-3">
+                            <div class="pc mb-5 fs-14 text-danger text-start">
+                              &nbsp;
+                            </div>
+                            <div
+                              class="d-flex justify-content-center mo-justify-content-start"
+                            >
+                              <div class="kfsi-textlist">
+                                <ul>
+                                  <li class="d-flex gap-2">
+                                    교육안내
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/24.pdf"
+                                      title="교육안내.pdf가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-pdf">pdf</i>
+                                    </a>
+                                  </li>
+                                  <li>교육비 : 120,000원</li>
+                                  <li class="d-flex gap-2">
+                                    선임기준 및 자격
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/24-1.hwp"
+                                      title="선임기준 및 자격.hwp가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-hwp">hwp</i>
+                                    </a>
+                                  </li>
+                                  <li>교육일 : 3일(1일 8h)</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                          <dd class="kfsi-education-application-button">
+                            <button>교육일정보기</button>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt class="justify-content-between">
+                            <span class="badge rounded-pill text-bg-light"
+                              >위험물 운송자</span
+                            >
+                          </dt>
+                          <dd class="pt-3 mo-pt-6">
+                            <div class="mb-5 fs-14 text-danger text-start">
+                              이동탱크저장소에 의하여 위험물을 운송하는 자
+                            </div>
+                            <div
+                              class="d-flex justify-content-center mo-justify-content-start"
+                            >
+                              <div class="kfsi-textlist">
+                                <ul>
+                                  <li class="d-flex gap-2">
+                                    교육안내
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/25.pdf"
+                                      title="교육안내.pdf가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-pdf">pdf</i>
+                                    </a>
+                                  </li>
+                                  <li>교육비 : 80,000원</li>
+                                  <li class="d-flex gap-2">
+                                    선임기준 및 자격
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/25-1.hwp"
+                                      title="선임기준 및 자격.hwp가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-hwp">hwp</i>
+                                    </a>
+                                  </li>
+                                  <li>교육일 : 2일(1일 8h)</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                          <dd class="kfsi-education-application-button">
+                            <button>교육일정보기</button>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt class="justify-content-between">
+                            <span class="badge rounded-pill text-bg-light"
+                              >위험물 통합자</span
+                            >
+                          </dt>
+                          <dd class="pt-3 mo-pt-6">
+                            <div class="mb-5 fs-14 text-success text-start">
+                              위험물안전관리자+위험물운송자
+                            </div>
+                            <div
+                              class="d-flex justify-content-center mo-justify-content-start"
+                            >
+                              <div class="kfsi-textlist">
+                                <ul>
+                                  <li class="d-flex gap-2">
+                                    교육안내
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/26.pdf"
+                                      title="교육안내.pdf가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-pdf">pdf</i>
+                                    </a>
+                                  </li>
+                                  <li>교육비 : 144,000원</li>
+                                  <li class="d-flex gap-2">
+                                    선임기준 및 자격
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/26-1.hwp"
+                                      title="선임기준 및 자격.hwp가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-hwp">hwp</i>
+                                    </a>
+                                  </li>
+                                  <li>교육일 : 3일(1일 8h)</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                          <dd class="kfsi-education-application-button">
+                            <button>교육일정보기</button>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt class="justify-content-between">
+                            <span class="badge rounded-pill text-bg-light"
+                              >위험물 운반자</span
+                            >
+                          </dt>
+                          <dd class="pt-3 mo-pt-6">
+                            <div class="mb-5 fs-14 text-danger text-start">
+                              운반용기에 수납된 위험물을 지정수량 이상으로
+                              차량에 적재하여 운반하는 차량의 운전자
+                            </div>
+                            <div
+                              class="d-flex justify-content-center mo-justify-content-start"
+                            >
+                              <div class="kfsi-textlist">
+                                <ul>
+                                  <li class="d-flex gap-2">
+                                    교육안내
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/27.pdf"
+                                      title="교육안내.pdf가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-pdf">pdf</i>
+                                    </a>
+                                  </li>
+                                  <li>교육비 : 80,000원</li>
+                                  <li class="d-flex gap-2">
+                                    선임기준 및 자격
+                                    <a
+                                      target="_blank"
+                                      href="/assets/downloadDoc/27-1.hwp"
+                                      title="선임기준 및 자격.hwp가 다운로드 됩니다"
+                                      style="font-size: 0; line-height: 0"
+                                    >
+                                      <i class="ico-hwp">hwp</i>
+                                    </a>
+                                  </li>
+                                  <li>교육일 : 2일(1일 8h)</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                          <dd class="kfsi-education-application-button">
+                            <button>교육일정보기</button>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="mt-5">
+                        ※ 구비서류 : 사진1매(사진 미등록자에 한함),
+                        주민등록증(운전면허증),
+                        재직증명서(공공기관소방안전관리자 과정에 한함)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

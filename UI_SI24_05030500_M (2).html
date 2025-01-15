@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">강습교육</a>
+              <a href="" class="kfsi-snb-item">실무교육</a>
+              <a href="" class="kfsi-snb-item active">의용소방대교육</a>
+              <a href="" class="kfsi-snb-item">다중이용업교육</a>
+              <a href="" class="kfsi-snb-item">열린교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">교육신청</li>
+                    <li class="breadcrumb-item">의용소방대교육</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      전문교육신청(집합)
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>전문화 교육 신청</h1>
+              </div>
+              <div class="kfsi-education">
+                <div class="mb-15 mo-mb-10">
+                  <h4 class="kfsi-h4">의용소방대원 전문화교육 신청 유의사항</h4>
+                  <div class="kfsi-textlist">
+                    <ul>
+                      <li>
+                        점심시간은 12:00 ~ 13:00(1시간) 이며, 점심 식비는
+                        교육비에 포함되어 있지 않습니다.
+                      </li>
+                      <li>
+                        상기 일정은 지부 사정에 따라 일부 변경 또는 취소될 수
+                        있습니다.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <div class="mb-5 text-success">
+                    ※ 원하시는 일자를 클릭하시면 교육접수 화면으로 이동합니다.
+                  </div>
+
+                  <div
+                    class="kfsi-board-list kfsi-board-list--border"
+                    id="accordion01"
+                  >
+                    <table
+                      summary="심폐소생술 전문자격 교육 신청 정보를 제공합니다. 지부별 교육 계획 및 일정 정보가 포함됩니다."
+                    >
+                      <caption>
+                        전문화 교육 신청 내역
+                      </caption>
+                      <colgroup>
+                        <col style="width: 195px" />
+                        <col style="width: 745px" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th
+                            scope="col"
+                            colspan="2"
+                            class="bg-primary text-white fs-18 py-3"
+                          >
+                            <strong>심폐소생술 전문자격</strong>
+                          </th>
+                        </tr>
+                        <tr>
+                          <th scope="col" class="py-3">지부</th>
+                          <th scope="col" class="py-3 bg-warning-subtle">
+                            교육정보
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">
+                            서울<br />
+                            (영등포)
+                          </th>
+                          <td class="text-start text-666">계획없음</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="p-0 h-100 border-0">
+                            <div
+                              id="collapse1-01"
+                              class="accordion-collapse collapse"
+                              data-bs-parent="#accordion01"
+                            >
+                              <div class="accordion-body p-5">
+                                <div
+                                  class="d-flex align-items-center justify-content-between mb-3"
+                                >
+                                  <div>
+                                    <strong class="bg-primary text-white">
+                                      ■ MM.DD~MM.DD
+                                    </strong>
+                                  </div>
+                                  <a href="" class="btn btn-secondary btn-sm"
+                                    >접수하기</a
+                                  >
+                                </div>
+                                <div class="kfsi-textlist">
+                                  <ul>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육접수 가능한 인원 :</strong
+                                      >
+                                      5 명
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육시간 :</strong
+                                      >
+                                      09:00~18:00
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >안내사항 :</strong
+                                      >
+                                      [국비] 의소대 경력 5년이상, 심폐기본과정
+                                      수료자(2년이내)
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육장소 :</strong
+                                      >
+                                      서울동부 신설동 신설대로 343(신설동)
+                                      [한남대북문 버스정류장, 스타벅스 옆]
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >특이사항 :</strong
+                                      >
+                                      [대면교육] / 주차공간 매우 협소(대중교통
+                                      이용권장) 102, 605, 706,802, 611
+                                      신설동북문 하차
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            서울동부<br />
+                            (신설동)
+                          </th>
+                          <td class="text-start">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn-view collapsed"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapse1-02"
+                              aria-expanded="true"
+                              aria-controls="collapse1-02"
+                            >
+                              MM.DD~MM.DD 국비<br />
+                              MM.DD~MM.DD 지방비
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="p-0 h-100 border-0">
+                            <div
+                              id="collapse1-02"
+                              class="accordion-collapse collapse"
+                              data-bs-parent="#accordion01"
+                            >
+                              <div class="accordion-body p-5">
+                                <div
+                                  class="d-flex align-items-center justify-content-between mb-3"
+                                >
+                                  <div>
+                                    <strong class="bg-primary text-white">
+                                      ■ MM.DD~MM.DD
+                                    </strong>
+                                  </div>
+                                  <a href="" class="btn btn-secondary btn-sm"
+                                    >접수하기</a
+                                  >
+                                </div>
+                                <div class="kfsi-textlist">
+                                  <ul>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육접수 가능한 인원 :</strong
+                                      >
+                                      5 명
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육시간 :</strong
+                                      >
+                                      09:00~18:00
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >안내사항 :</strong
+                                      >
+                                      [국비] 의소대 경력 5년이상, 심폐기본과정
+                                      수료자(2년이내)
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육장소 :</strong
+                                      >
+                                      서울동부 신설동 신설대로 343(신설동)
+                                      [한남대북문 버스정류장, 스타벅스 옆]
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >특이사항 :</strong
+                                      >
+                                      [대면교육] / 주차공간 매우 협소(대중교통
+                                      이용권장) 102, 605, 706,802, 611
+                                      신설동북문 하차
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">부산</th>
+                          <td class="text-start text-666">계획없음</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="p-0 h-100 border-0">
+                            <div
+                              id="collapse1-03"
+                              class="accordion-collapse collapse"
+                              data-bs-parent="#accordion01"
+                            >
+                              <div class="accordion-body p-5">
+                                <div
+                                  class="d-flex align-items-center justify-content-between mb-3"
+                                >
+                                  <div>
+                                    <strong class="bg-primary text-white">
+                                      ■ MM.DD~MM.DD
+                                    </strong>
+                                  </div>
+                                  <a href="" class="btn btn-secondary btn-sm"
+                                    >접수하기</a
+                                  >
+                                </div>
+                                <div class="kfsi-textlist">
+                                  <ul>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육접수 가능한 인원 :</strong
+                                      >
+                                      5 명
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육시간 :</strong
+                                      >
+                                      09:00~18:00
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >안내사항 :</strong
+                                      >
+                                      [국비] 의소대 경력 5년이상, 심폐기본과정
+                                      수료자(2년이내)
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육장소 :</strong
+                                      >
+                                      서울동부 신설동 신설대로 343(신설동)
+                                      [한남대북문 버스정류장, 스타벅스 옆]
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >특이사항 :</strong
+                                      >
+                                      [대면교육] / 주차공간 매우 협소(대중교통
+                                      이용권장) 102, 605, 706,802, 611
+                                      신설동북문 하차
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">대구경북</th>
+                          <td class="text-start">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn-view collapsed"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapse1-04"
+                              aria-expanded="true"
+                              aria-controls="collapse1-04"
+                            >
+                              MM.DD~MM.DD 국비<br />
+                              MM.DD~MM.DD 지방비
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="p-0 h-100 border-0">
+                            <div
+                              id="collapse1-04"
+                              class="accordion-collapse collapse"
+                              data-bs-parent="#accordion01"
+                            >
+                              <div class="accordion-body p-5">
+                                <div
+                                  class="d-flex align-items-center justify-content-between mb-3"
+                                >
+                                  <div>
+                                    <strong class="bg-primary text-white">
+                                      ■ MM.DD~MM.DD
+                                    </strong>
+                                  </div>
+                                  <a href="" class="btn btn-secondary btn-sm"
+                                    >접수하기</a
+                                  >
+                                </div>
+                                <div class="kfsi-textlist">
+                                  <ul>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육접수 가능한 인원 :</strong
+                                      >
+                                      5 명
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육시간 :</strong
+                                      >
+                                      09:00~18:00
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >안내사항 :</strong
+                                      >
+                                      [국비] 의소대 경력 5년이상, 심폐기본과정
+                                      수료자(2년이내)
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육장소 :</strong
+                                      >
+                                      서울동부 신설동 신설대로 343(신설동)
+                                      [한남대북문 버스정류장, 스타벅스 옆]
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >특이사항 :</strong
+                                      >
+                                      [대면교육] / 주차공간 매우 협소(대중교통
+                                      이용권장) 102, 605, 706,802, 611
+                                      신설동북문 하차
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">인천</th>
+                          <td class="text-start text-666">계획없음</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="p-0 h-100 border-0">
+                            <div
+                              id="collapse1-05"
+                              class="accordion-collapse collapse"
+                              data-bs-parent="#accordion01"
+                            >
+                              <div class="accordion-body p-5">
+                                <div
+                                  class="d-flex align-items-center justify-content-between mb-3"
+                                >
+                                  <div>
+                                    <strong class="bg-primary text-white">
+                                      ■ MM.DD~MM.DD
+                                    </strong>
+                                  </div>
+                                  <a href="" class="btn btn-secondary btn-sm"
+                                    >접수하기</a
+                                  >
+                                </div>
+                                <div class="kfsi-textlist">
+                                  <ul>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육접수 가능한 인원 :</strong
+                                      >
+                                      5 명
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육시간 :</strong
+                                      >
+                                      09:00~18:00
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >안내사항 :</strong
+                                      >
+                                      [국비] 의소대 경력 5년이상, 심폐기본과정
+                                      수료자(2년이내)
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육장소 :</strong
+                                      >
+                                      서울동부 신설동 신설대로 343(신설동)
+                                      [한남대북문 버스정류장, 스타벅스 옆]
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >특이사항 :</strong
+                                      >
+                                      [대면교육] / 주차공간 매우 협소(대중교통
+                                      이용권장) 102, 605, 706,802, 611
+                                      신설동북문 하차
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">광주전남</th>
+                          <td class="text-start">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn-view collapsed"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapse1-06"
+                              aria-expanded="true"
+                              aria-controls="collapse1-06"
+                            >
+                              MM.DD~MM.DD 국비<br />
+                              MM.DD~MM.DD 지방비
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="p-0 h-100 border-0">
+                            <div
+                              id="collapse1-06"
+                              class="accordion-collapse collapse"
+                              data-bs-parent="#accordion01"
+                            >
+                              <div class="accordion-body p-5">
+                                <div
+                                  class="d-flex align-items-center justify-content-between mb-3"
+                                >
+                                  <div>
+                                    <strong class="bg-primary text-white">
+                                      ■ MM.DD~MM.DD
+                                    </strong>
+                                  </div>
+                                  <a href="" class="btn btn-secondary btn-sm"
+                                    >접수하기</a
+                                  >
+                                </div>
+                                <div class="kfsi-textlist">
+                                  <ul>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육접수 가능한 인원 :</strong
+                                      >
+                                      5 명
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육시간 :</strong
+                                      >
+                                      09:00~18:00
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >안내사항 :</strong
+                                      >
+                                      [국비] 의소대 경력 5년이상, 심폐기본과정
+                                      수료자(2년이내)
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육장소 :</strong
+                                      >
+                                      서울동부 신설동 신설대로 343(신설동)
+                                      [한남대북문 버스정류장, 스타벅스 옆]
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >특이사항 :</strong
+                                      >
+                                      [대면교육] / 주차공간 매우 협소(대중교통
+                                      이용권장) 102, 605, 706,802, 611
+                                      신설동북문 하차
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">대전충남</th>
+                          <td class="text-start">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn-view collapsed"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapse1-07"
+                              aria-expanded="true"
+                              aria-controls="collapse1-07"
+                            >
+                              MM.DD~MM.DD 국비<br />
+                              MM.DD~MM.DD 지방비
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="p-0 h-100 border-0">
+                            <div
+                              id="collapse1-07"
+                              class="accordion-collapse collapse"
+                              data-bs-parent="#accordion01"
+                            >
+                              <div class="accordion-body p-5">
+                                <div
+                                  class="d-flex align-items-center justify-content-between mb-3"
+                                >
+                                  <div>
+                                    <strong class="bg-primary text-white">
+                                      ■ MM.DD~MM.DD
+                                    </strong>
+                                  </div>
+                                  <a href="" class="btn btn-secondary btn-sm"
+                                    >접수하기</a
+                                  >
+                                </div>
+                                <div class="kfsi-textlist">
+                                  <ul>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육접수 가능한 인원 :</strong
+                                      >
+                                      5 명
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육시간 :</strong
+                                      >
+                                      09:00~18:00
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >안내사항 :</strong
+                                      >
+                                      [국비] 의소대 경력 5년이상, 심폐기본과정
+                                      수료자(2년이내)
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육장소 :</strong
+                                      >
+                                      서울동부 신설동 신설대로 343(신설동)
+                                      [한남대북문 버스정류장, 스타벅스 옆]
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >특이사항 :</strong
+                                      >
+                                      [대면교육] / 주차공간 매우 협소(대중교통
+                                      이용권장) 102, 605, 706,802, 611
+                                      신설동북문 하차
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">울산</th>
+                          <td class="text-start text-666">계획없음</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="p-0 h-100 border-0">
+                            <div
+                              id="collapse1-08"
+                              class="accordion-collapse collapse"
+                              data-bs-parent="#accordion01"
+                            >
+                              <div class="accordion-body p-5">
+                                <div
+                                  class="d-flex align-items-center justify-content-between mb-3"
+                                >
+                                  <div>
+                                    <strong class="bg-primary text-white">
+                                      ■ MM.DD~MM.DD
+                                    </strong>
+                                  </div>
+                                  <a href="" class="btn btn-secondary btn-sm"
+                                    >접수하기</a
+                                  >
+                                </div>
+                                <div class="kfsi-textlist">
+                                  <ul>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육접수 가능한 인원 :</strong
+                                      >
+                                      5 명
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육시간 :</strong
+                                      >
+                                      09:00~18:00
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >안내사항 :</strong
+                                      >
+                                      [국비] 의소대 경력 5년이상, 심폐기본과정
+                                      수료자(2년이내)
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육장소 :</strong
+                                      >
+                                      서울동부 신설동 신설대로 343(신설동)
+                                      [한남대북문 버스정류장, 스타벅스 옆]
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >특이사항 :</strong
+                                      >
+                                      [대면교육] / 주차공간 매우 협소(대중교통
+                                      이용권장) 102, 605, 706,802, 611
+                                      신설동북문 하차
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">경기(수원)</th>
+                          <td class="text-start">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn-view collapsed"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapse1-09"
+                              aria-expanded="true"
+                              aria-controls="collapse1-09"
+                            >
+                              MM.DD~MM.DD 국비<br />
+                              MM.DD~MM.DD 지방비
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="p-0 h-100 border-0">
+                            <div
+                              id="collapse1-09"
+                              class="accordion-collapse collapse"
+                              data-bs-parent="#accordion01"
+                            >
+                              <div class="accordion-body p-5">
+                                <div
+                                  class="d-flex align-items-center justify-content-between mb-3"
+                                >
+                                  <div>
+                                    <strong class="bg-primary text-white">
+                                      ■ MM.DD~MM.DD
+                                    </strong>
+                                  </div>
+                                  <a href="" class="btn btn-secondary btn-sm"
+                                    >접수하기</a
+                                  >
+                                </div>
+                                <div class="kfsi-textlist">
+                                  <ul>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육접수 가능한 인원 :</strong
+                                      >
+                                      5 명
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육시간 :</strong
+                                      >
+                                      09:00~18:00
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >안내사항 :</strong
+                                      >
+                                      [국비] 의소대 경력 5년이상, 심폐기본과정
+                                      수료자(2년이내)
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육장소 :</strong
+                                      >
+                                      서울동부 신설동 신설대로 343(신설동)
+                                      [한남대북문 버스정류장, 스타벅스 옆]
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >특이사항 :</strong
+                                      >
+                                      [대면교육] / 주차공간 매우 협소(대중교통
+                                      이용권장) 102, 605, 706,802, 611
+                                      신설동북문 하차
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            경기북부<br />
+                            (파주,의정부)
+                          </th>
+                          <td class="text-start text-666">계획없음</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="p-0 h-100 border-0">
+                            <div
+                              id="collapse1-10"
+                              class="accordion-collapse collapse"
+                              data-bs-parent="#accordion01"
+                            >
+                              <div class="accordion-body p-5">
+                                <div
+                                  class="d-flex align-items-center justify-content-between mb-3"
+                                >
+                                  <div>
+                                    <strong class="bg-primary text-white">
+                                      ■ MM.DD~MM.DD
+                                    </strong>
+                                  </div>
+                                  <a href="" class="btn btn-secondary btn-sm"
+                                    >접수하기</a
+                                  >
+                                </div>
+                                <div class="kfsi-textlist">
+                                  <ul>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육접수 가능한 인원 :</strong
+                                      >
+                                      5 명
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육시간 :</strong
+                                      >
+                                      09:00~18:00
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >안내사항 :</strong
+                                      >
+                                      [국비] 의소대 경력 5년이상, 심폐기본과정
+                                      수료자(2년이내)
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육장소 :</strong
+                                      >
+                                      서울동부 신설동 신설대로 343(신설동)
+                                      [한남대북문 버스정류장, 스타벅스 옆]
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >특이사항 :</strong
+                                      >
+                                      [대면교육] / 주차공간 매우 협소(대중교통
+                                      이용권장) 102, 605, 706,802, 611
+                                      신설동북문 하차
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">강원</th>
+                          <td class="text-start">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn-view collapsed"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapse1-11"
+                              aria-expanded="true"
+                              aria-controls="collapse1-11"
+                            >
+                              MM.DD~MM.DD 국비<br />
+                              MM.DD~MM.DD 지방비
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="p-0 h-100 border-0">
+                            <div
+                              id="collapse1-11"
+                              class="accordion-collapse collapse"
+                              data-bs-parent="#accordion01"
+                            >
+                              <div class="accordion-body p-5">
+                                <div
+                                  class="d-flex align-items-center justify-content-between mb-3"
+                                >
+                                  <div>
+                                    <strong class="bg-primary text-white">
+                                      ■ MM.DD~MM.DD
+                                    </strong>
+                                  </div>
+                                  <a href="" class="btn btn-secondary btn-sm"
+                                    >접수하기</a
+                                  >
+                                </div>
+                                <div class="kfsi-textlist">
+                                  <ul>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육접수 가능한 인원 :</strong
+                                      >
+                                      5 명
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육시간 :</strong
+                                      >
+                                      09:00~18:00
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >안내사항 :</strong
+                                      >
+                                      [국비] 의소대 경력 5년이상, 심폐기본과정
+                                      수료자(2년이내)
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육장소 :</strong
+                                      >
+                                      서울동부 신설동 신설대로 343(신설동)
+                                      [한남대북문 버스정류장, 스타벅스 옆]
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >특이사항 :</strong
+                                      >
+                                      [대면교육] / 주차공간 매우 협소(대중교통
+                                      이용권장) 102, 605, 706,802, 611
+                                      신설동북문 하차
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">충북(청주)</th>
+                          <td class="text-start text-666">계획없음</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="p-0 h-100 border-0">
+                            <div
+                              id="collapse1-12"
+                              class="accordion-collapse collapse"
+                              data-bs-parent="#accordion01"
+                            >
+                              <div class="accordion-body p-5">
+                                <div
+                                  class="d-flex align-items-center justify-content-between mb-3"
+                                >
+                                  <div>
+                                    <strong class="bg-primary text-white">
+                                      ■ MM.DD~MM.DD
+                                    </strong>
+                                  </div>
+                                  <a href="" class="btn btn-secondary btn-sm"
+                                    >접수하기</a
+                                  >
+                                </div>
+                                <div class="kfsi-textlist">
+                                  <ul>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육접수 가능한 인원 :</strong
+                                      >
+                                      5 명
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육시간 :</strong
+                                      >
+                                      09:00~18:00
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >안내사항 :</strong
+                                      >
+                                      [국비] 의소대 경력 5년이상, 심폐기본과정
+                                      수료자(2년이내)
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육장소 :</strong
+                                      >
+                                      서울동부 신설동 신설대로 343(신설동)
+                                      [한남대북문 버스정류장, 스타벅스 옆]
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >특이사항 :</strong
+                                      >
+                                      [대면교육] / 주차공간 매우 협소(대중교통
+                                      이용권장) 102, 605, 706,802, 611
+                                      신설동북문 하차
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">전북</th>
+                          <td class="text-start">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn-view collapsed"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapse1-13"
+                              aria-expanded="true"
+                              aria-controls="collapse1-13"
+                            >
+                              MM.DD~MM.DD 국비<br />
+                              MM.DD~MM.DD 지방비
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="p-0 h-100 border-0">
+                            <div
+                              id="collapse1-13"
+                              class="accordion-collapse collapse"
+                              data-bs-parent="#accordion01"
+                            >
+                              <div class="accordion-body p-5">
+                                <div
+                                  class="d-flex align-items-center justify-content-between mb-3"
+                                >
+                                  <div>
+                                    <strong class="bg-primary text-white">
+                                      ■ MM.DD~MM.DD
+                                    </strong>
+                                  </div>
+                                  <a href="" class="btn btn-secondary btn-sm"
+                                    >접수하기</a
+                                  >
+                                </div>
+                                <div class="kfsi-textlist">
+                                  <ul>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육접수 가능한 인원 :</strong
+                                      >
+                                      5 명
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육시간 :</strong
+                                      >
+                                      09:00~18:00
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >안내사항 :</strong
+                                      >
+                                      [국비] 의소대 경력 5년이상, 심폐기본과정
+                                      수료자(2년이내)
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육장소 :</strong
+                                      >
+                                      서울동부 신설동 신설대로 343(신설동)
+                                      [한남대북문 버스정류장, 스타벅스 옆]
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >특이사항 :</strong
+                                      >
+                                      [대면교육] / 주차공간 매우 협소(대중교통
+                                      이용권장) 102, 605, 706,802, 611
+                                      신설동북문 하차
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">경남</th>
+                          <td class="text-start text-666">계획없음</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="p-0 h-100 border-0">
+                            <div
+                              id="collapse1-14"
+                              class="accordion-collapse collapse"
+                              data-bs-parent="#accordion01"
+                            >
+                              <div class="accordion-body p-5">
+                                <div
+                                  class="d-flex align-items-center justify-content-between mb-3"
+                                >
+                                  <div>
+                                    <strong class="bg-primary text-white">
+                                      ■ MM.DD~MM.DD
+                                    </strong>
+                                  </div>
+                                  <a href="" class="btn btn-secondary btn-sm"
+                                    >접수하기</a
+                                  >
+                                </div>
+                                <div class="kfsi-textlist">
+                                  <ul>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육접수 가능한 인원 :</strong
+                                      >
+                                      5 명
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육시간 :</strong
+                                      >
+                                      09:00~18:00
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >안내사항 :</strong
+                                      >
+                                      [국비] 의소대 경력 5년이상, 심폐기본과정
+                                      수료자(2년이내)
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육장소 :</strong
+                                      >
+                                      서울동부 신설동 신설대로 343(신설동)
+                                      [한남대북문 버스정류장, 스타벅스 옆]
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >특이사항 :</strong
+                                      >
+                                      [대면교육] / 주차공간 매우 협소(대중교통
+                                      이용권장) 102, 605, 706,802, 611
+                                      신설동북문 하차
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">제주</th>
+                          <td class="text-start">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn-view collapsed"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapse1-15"
+                              aria-expanded="true"
+                              aria-controls="collapse1-15"
+                            >
+                              MM.DD~MM.DD 국비<br />
+                              MM.DD~MM.DD 지방비
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="p-0 h-100 border-0">
+                            <div
+                              id="collapse1-15"
+                              class="accordion-collapse collapse"
+                              data-bs-parent="#accordion01"
+                            >
+                              <div class="accordion-body p-5">
+                                <div
+                                  class="d-flex align-items-center justify-content-between mb-3"
+                                >
+                                  <div>
+                                    <strong class="bg-primary text-white">
+                                      ■ MM.DD~MM.DD
+                                    </strong>
+                                  </div>
+                                  <a href="" class="btn btn-secondary btn-sm"
+                                    >접수하기</a
+                                  >
+                                </div>
+                                <div class="kfsi-textlist">
+                                  <ul>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육접수 가능한 인원 :</strong
+                                      >
+                                      5 명
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육시간 :</strong
+                                      >
+                                      09:00~18:00
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >안내사항 :</strong
+                                      >
+                                      [국비] 의소대 경력 5년이상, 심폐기본과정
+                                      수료자(2년이내)
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >교육장소 :</strong
+                                      >
+                                      서울동부 신설동 신설대로 343(신설동)
+                                      [한남대북문 버스정류장, 스타벅스 옆]
+                                    </li>
+                                    <li class="d-flex">
+                                      <strong class="text-nowrap me-1"
+                                        >특이사항 :</strong
+                                      >
+                                      [대면교육] / 주차공간 매우 협소(대중교통
+                                      이용권장) 102, 605, 706,802, 611
+                                      신설동북문 하차
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

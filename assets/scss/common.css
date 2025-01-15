@@ -19094,8 +19094,16 @@ small, .small {
   color: #333 !important;
 }
 
+.text-444 {
+  color: #444 !important;
+}
+
 .text-666 {
   color: #666 !important;
+}
+
+.text-999 {
+  color: #999 !important;
 }
 
 .rounded-3 {
@@ -19285,20 +19293,32 @@ small, .small {
 }
 
 .invalid-feedback {
-  margin: 5px 0 0 10px;
+  margin: 5px 0 0 0;
   font-size: 14px;
+}
+
+.bg-primary-subtle {
+  background: #f8fff4 !important;
+}
+
+.bg-success-subtle {
+  background: #edfbff !important;
+}
+
+.bg-danger-subtle {
+  background: #fee !important;
 }
 
 .bg-warning-subtle {
   background: var(--FEF3DD, #fef3dd) !important;
 }
 
-.bg-light {
-  background: var(--f6f6f6, #f6f6f6) !important;
+.bg-secondary-subtle {
+  background: #eee !important;
 }
 
-.bg-success-subtle {
-  background: #f8fff4 !important;
+.bg-light {
+  background: var(--f6f6f6, #f6f6f6) !important;
 }
 
 .badge {
@@ -19809,6 +19829,16 @@ small, .small {
   line-height: 0;
 }
 
+.ico-exclamation-alert2 {
+  display: inline-block;
+  min-width: 80px;
+  height: 80px;
+  background: url(../images/icon/ico-exclamation-alert2.png) no-repeat 50% 50%;
+  background-size: cover;
+  font-size: 0;
+  line-height: 0;
+}
+
 .ico-refresh-alert {
   display: inline-block;
   min-width: 80px;
@@ -19944,6 +19974,16 @@ small, .small {
   min-width: 21px;
   height: 22px;
   background: url(../images/icon/ico-refresh-calendar.svg) no-repeat 50% 50%;
+  background-size: cover;
+  font-size: 0;
+  line-height: 0;
+}
+
+.ico-check-primary {
+  display: inline-block;
+  min-width: 24px;
+  height: 24px;
+  background: url(../images/icon/ico-check-primary.svg) no-repeat 50% 50%;
   background-size: cover;
   font-size: 0;
   line-height: 0;
@@ -20662,8 +20702,8 @@ small, .small {
 .kfsi-nav ol::before {
   content: "";
   position: absolute;
-  left: -15px;
-  right: -15px;
+  left: 50px;
+  right: 50px;
   top: 50%;
   border-top: 1px solid #ccc;
 }
@@ -20674,10 +20714,9 @@ small, .small {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  min-width: 33.333%;
+  min-width: 110px;
   margin: 0;
   padding: 0;
-  white-space: noWrap;
 }
 .kfsi-nav ol li::before {
   position: absolute;
@@ -20734,8 +20773,6 @@ small, .small {
   .kfsi-nav ol::before {
     content: "";
     position: absolute;
-    left: 15px;
-    right: 15px;
     top: 50%;
     border-top: 1px solid #ccc;
   }
@@ -20746,9 +20783,9 @@ small, .small {
     align-items: center;
     justify-content: center;
     gap: 40px;
+    min-width: 94px;
     margin: 0;
     padding: 0;
-    white-space: noWrap;
   }
   .kfsi-nav ol li::before {
     position: absolute;
@@ -23771,6 +23808,12 @@ body {
   }
   .mo-text-center {
     text-align: center !important;
+  }
+  .mo-border-start-0 {
+    border-left: 0 !important;
+  }
+  .mo-position-relative {
+    position: relative !important;
   }
 }
 @media screen and (max-width: 992px) {
@@ -28119,6 +28162,15 @@ body {
 .kfsi-board-list table tbody td .btn-view:not(.collapsed):hover {
   color: #fff !important;
 }
+.kfsi-board-list table tbody td a.btn-view:not(.collapsed) {
+  background: #004d16;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.kfsi-board-list table tbody td a.btn-view:not(.collapsed):hover {
+  color: #fff !important;
+}
 .kfsi-board-list-collapse:not(.collapsed) {
   font-weight: 700;
 }
@@ -30056,6 +30108,13 @@ body {
 .kfsi-tab01 > .nav-item:first-child .nav-link.active {
   border-color: var(--0F6327, #0f6327);
 }
+.kfsi-tab01--grid3 .nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.kfsi-tab01--grid3 .nav-item:nth-child(3n+1) .nav-link {
+  border-left: 1px solid #ccc;
+}
 .kfsi-tab01--grid4 .nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -30099,6 +30158,9 @@ body {
   }
   .kfsi-tab01--mo-grid2 .nav-item:nth-child(2n-1) .nav-link {
     border-left: 1px solid #ccc;
+  }
+  .kfsi-tab01--grid3 .nav-item:nth-child(3n+1) .nav-link {
+    border-left: none;
   }
 }
 .kfsi-tab02 > .nav {
@@ -32292,6 +32354,9 @@ body {
     border-radius: 30px;
   }
 }
+.kfsi-education {
+  position: relative;
+}
 .kfsi-education-list {
   border: 1px solid #ddd;
 }
@@ -32301,21 +32366,356 @@ body {
   list-style: none;
 }
 .kfsi-education-list ol li {
-  display: flex;
-  gap: 4px;
   margin: 0;
   padding: 18px 20px;
   border-bottom: 1px solid #ddd;
   color: #000;
   font-family: Pretendard;
-  font-size: 15px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 160% */
-  letter-spacing: 0.45px;
+  line-height: 24px;
+}
+.kfsi-education-list ol li span {
+  color: #004d16;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
 }
 .kfsi-education-list ol li:last-child {
   border-bottom: none;
+}
+.kfsi-education-application {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.kfsi-education-application--grid3 {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.kfsi-education-application dl {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.kfsi-education-application dl dt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 55px;
+  margin: 0;
+  padding: 0 16px;
+  background: var(--E4F2D3, #e4f2d3);
+  color: #000;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+.kfsi-education-application dl dt .badge {
+  padding: 6px 24px;
+  color: #333;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 120% */
+}
+.kfsi-education-application dl dt p {
+  margin: 0;
+  display: -webkit-box;
+  overflow: hidden;
+  /* autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-break: break-all;
+}
+.kfsi-education-application dl dd {
+  height: 100%;
+  margin: 0;
+  padding: 40px 30px;
+  text-align: center;
+  color: #000;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+.kfsi-education-application dl dd.kfsi-education-application-button {
+  min-height: 55px;
+  height: 55px;
+  padding: 0;
+}
+.kfsi-education-application dl dd.kfsi-education-application-button button,
+.kfsi-education-application dl dd.kfsi-education-application-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 55px;
+  border: 0;
+  color: #333;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.54px;
+}
+.kfsi-education-application dl dd.kfsi-education-application-button button::after,
+.kfsi-education-application dl dd.kfsi-education-application-button a::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(./../images/icon/ico-arrow2.svg) no-repeat 50% 50%;
+}
+.kfsi-education-application dl dd.kfsi-education-application-button-complete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 55px;
+  height: 55px;
+  padding: 0;
+  background: #ddd;
+  color: #666;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.54px;
+}
+.kfsi-education-application dl dd .kfsi-textlist {
+  margin: 0;
+}
+.kfsi-education-application dl dd .kfsi-textlist ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 15px;
+}
+@media screen and (max-width: 992px) {
+  .kfsi-education-application {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .kfsi-education-application dl {
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  .kfsi-education-application dl dt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    margin: 0;
+    padding: 0 16px 0 10px;
+    background: var(--E4F2D3, #e4f2d3);
+    color: #000;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.51px;
+  }
+  .kfsi-education-application dl dt .badge {
+    padding: 6px 24px;
+    color: #333;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 120% */
+  }
+  .kfsi-education-application dl dd {
+    margin: 0;
+    padding: 20px 30px;
+    text-align: center;
+    color: #000;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
+  }
+  .kfsi-education-application dl dd.kfsi-education-application-button {
+    height: 55px;
+  }
+  .kfsi-education-application dl dd.kfsi-education-application-button button,
+  .kfsi-education-application dl dd.kfsi-education-application-button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    color: #333;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.51px;
+  }
+  .kfsi-education-application dl dd.kfsi-education-application-button button::after,
+  .kfsi-education-application dl dd.kfsi-education-application-button a::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(./../images/icon/ico-arrow2.svg) no-repeat 50% 50%;
+  }
+  .kfsi-education-application dl dd.kfsi-education-application-button-complete {
+    height: 55px;
+    background: #ddd;
+    color: #666;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.51px;
+  }
+  .kfsi-education-application dl dd .kfsi-textlist ul {
+    display: block;
+  }
+  .kfsi-education-application dl dd .kfsi-textlist ul li {
+    margin-bottom: 10px;
+  }
+  .kfsi-education-application dl dd .kfsi-textlist ul li:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .kfsi-education .kfsi-nav ol {
+    gap: 0;
+  }
+  .kfsi-education-list {
+    border: 1px solid #ddd;
+  }
+  .kfsi-education-list ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .kfsi-education-list ol li {
+    margin: 0;
+    padding: 15px 14px;
+    border-bottom: 1px solid #ddd;
+    color: #000;
+    font-family: Pretendard;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .kfsi-education-list ol li span {
+    color: #004d16;
+    font-family: Pretendard;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+  }
+  .kfsi-education-list ol li:last-child {
+    border-bottom: none;
+  }
+  .kfsi-education-tablelist h4, .kfsi-education-tablelist .h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    margin: 0;
+    padding: 0;
+    background: #004d16;
+    color: #fff;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 141.176% */
+  }
+  .kfsi-education-tablelist-list {
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    background: #f6f6f6;
+  }
+  .kfsi-education-tablelist-list-item {
+    margin-top: 10px;
+    border: 1px solid #666;
+  }
+  .kfsi-education-tablelist-list-item:first-child {
+    margin-top: 0;
+  }
+  .kfsi-education-tablelist-list-item h5, .kfsi-education-tablelist-list-item .h5 {
+    margin: 0;
+    padding: 8px;
+    border-bottom: 1px solid #666;
+    background: #e4f2d3;
+    color: #000;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+  }
+  .kfsi-education-tablelist-list-item-dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ccc;
+    gap: 1px;
+  }
+  .kfsi-education-tablelist-list-item-dl dl {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+  .kfsi-education-tablelist-list-item-dl dl dt {
+    margin: 0;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+  }
+  .kfsi-education-tablelist-list-item-dl dl dd {
+    margin: 0;
+    padding: 12px 10px;
+    text-align: center;
+  }
 }
 .kfsi-login-head {
   position: relative;

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">강습교육</a>
+              <a href="" class="kfsi-snb-item">실무교육</a>
+              <a href="" class="kfsi-snb-item">의용소방대교육</a>
+              <a href="" class="kfsi-snb-item active">다중이용업교육</a>
+              <a href="" class="kfsi-snb-item">열린교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">다중이용업교육</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      업소정보 관리
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>업소정보 관리</h1>
+              </div>
+              <div class="kfsi-education">
+                <div class="mb-15 mo-mb-10">
+                  <div class="kfsi-board">
+                    <div class="kfsi-board-head">
+                      <div class="kfsi-board-head-start">
+                        <h4 class="kfsi-h4">다중이용업 정보입력</h4>
+                      </div>
+                      <div class="kfsi-board-head-end"></div>
+                    </div>
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form">
+                        <table
+                          summary="이 표는 업소명과 주소 정보를 입력받는 양식입니다. 우편번호와 상세 주소도 포함됩니다."
+                        >
+                          <caption>
+                            업소 정보 입력
+                          </caption>
+                          <colgroup>
+                            <col style="width: 195px" />
+                            <col style="width: 745px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row">
+                                <span>업소명</span>
+                              </th>
+                              <td>
+                                <span>
+                                  <input
+                                    type="password"
+                                    class="form-control w-100"
+                                    title="업소명"
+                                    placeholder="업소명을 입력해 주세요."
+                                  />
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row"><span>업소 주소</span></th>
+                              <td>
+                                <span>
+                                  <div class="kfsi-mypage-address">
+                                    <div class="kfsi-mypage-address-post">
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        value="12345"
+                                        style="min-width: 110px; width: 110px"
+                                        readonly
+                                        title="우편번호"
+                                      />
+                                      <a
+                                        href=""
+                                        class="btn btn-secondary btn-sm"
+                                        >우편번호찾기
+                                        <i class="ico-post"></i>
+                                      </a>
+                                    </div>
+                                    <div class="kfsi-mypage-address-input">
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        value="서울특별시 강남구 도산대로 523 한성빌딩"
+                                        style="min-width: 460px; width: 460px"
+                                        readonly
+                                        title="주소"
+                                      />
+                                    </div>
+                                    <div class="kfsi-mypage-address-input">
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        value="106호"
+                                        style="min-width: 460px; width: 460px"
+                                        title="상세 주소"
+                                      />
+                                    </div>
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="kfsi-button">
+                      <p>
+                        <button type="button" class="btn btn-primary btn-lg">
+                          정보 저장
+                        </button>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <strong>개인정보 변경 안내</strong>
+                  <div class="mt-1 mb-1">
+                    • 한국소방안전원의 다중이용업 교육 회원정보는 한국소방안전원
+                    사이트에서 통합 관리됩니다. 개인정보를 변경하려면
+                    한국소방안전원 사이트의 ‘나의정보 > 개인정보수정’ 기능을
+                    이용해 주세요. 
+                  </div>
+                  <a href="" class="text-success text-decoration-underline"
+                    >개인정보수정 바로가기</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
