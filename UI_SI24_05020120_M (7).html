@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">강습교육</a>
+              <a href="" class="kfsi-snb-item active">실무교육</a>
+              <a href="" class="kfsi-snb-item">의용소방대교육</a>
+              <a href="" class="kfsi-snb-item">다중이용업교육</a>
+              <a href="" class="kfsi-snb-item">열린교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      선임대상처 정보
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>선임대상처 정보</h1>
+              </div>
+              <div class="kfsi-education">
+                <div>
+                  <h4 class="kfsi-h4">
+                    선임대상처 정보를 확인 후 변경 내용이 있으신 경우, 정보를
+                    수정입력하세요.
+                  </h4>
+                  <div class="mt-15 mo-mt-7">
+                    <div class="mb-4 text-danger">*는 필수 입력항목입니다.</div>
+                    <div class="kfsi-board">
+                      <div class="kfsi-board-write">
+                        <div class="kfsi-board-write-form">
+                          <table
+                            summary="소방기술자의 선임대상처 정보를 입력하고 변경할 수 있는 양식입니다."
+                          >
+                            <caption>
+                              소방기술자 선임대상처 정보 입력
+                            </caption>
+                            <colgroup>
+                              <col style="width: 170px" />
+                              <col style="width: 300px" />
+                              <col style="width: 170px" />
+                              <col style="width: 300px" />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <th scope="row">변경구분</th>
+                                <td colspan="3">현재 대상물(업체) 정보 변경</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">직능</th>
+                                <td>소방기술자(관리업)</td>
+                                <th scope="row">원격교육</th>
+                                <td>
+                                  <select
+                                    class="form-select"
+                                    aria-label="원격교육 선택"
+                                    title="원격교육 선택"
+                                    style="min-width: 189px; width: 189px"
+                                  >
+                                    <option selected>선택</option>
+                                  </select>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">주의사항</th>
+                                <td colspan="3">
+                                  <span>
+                                    <div class="kfsi-textlist">
+                                      <ul>
+                                        <li>
+                                          선임대상처 신청자는 반드시 소방시설업
+                                          또는 소방시설관리업의 기술인력으로
+                                          등록된 소방기술자 이어야 하며, 청한
+                                          정보의 사실유무에 대한 모든 책임은
+                                          신청자 본인에게 있습니다.
+                                        </li>
+                                        <li>
+                                          입력하신 정보는 선임대상처 및 개인
+                                          교육이수내역 등의 정보에 반영되므로,
+                                          상세히 기입하여 주시기 바랍니다.
+                                        </li>
+                                      </ul>
+                                    </div>
+                                    <div
+                                      class="d-flex justify-content-end mt-10 mo-mt-5"
+                                    >
+                                      <div
+                                        class="d-flex align-items-center justify-content-between py-2 px-4 bg-secondary-subtle border mo-w-100 gap-2"
+                                        style="width: 440px"
+                                      >
+                                        <p class="m-0">
+                                          주의사항을 확인했습니다.
+                                        </p>
+
+                                        <div class="form-check">
+                                          <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id="flexCheckDefault"
+                                          />
+                                          <label
+                                            class="form-check-label"
+                                            for="flexCheckDefault"
+                                          >
+                                            확인
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">건물(업체)명</th>
+                                <td>
+                                  <input
+                                    type="text"
+                                    class="form-control w-100"
+                                    title="건물(업체)명"
+                                  />
+                                </td>
+                                <th scope="row">선임지역</th>
+                                <td>
+                                  <div
+                                    class="d-flex align-items-center gap-2 w-100"
+                                  >
+                                    <select
+                                      class="form-select w-100"
+                                      aria-label="선임지역 선택"
+                                      title="선임지역 선택"
+                                    >
+                                      <option selected>선택</option>
+                                    </select>
+                                    <button
+                                      type="button"
+                                      class="btn btn-secondary btn-sm mo-h-40"
+                                    >
+                                      지부 정보보기
+                                    </button>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><span>업체주소</span></th>
+                                <td colspan="3">
+                                  <span>
+                                    <div class="kfsi-mypage-address">
+                                      <div class="kfsi-mypage-address-post">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          value="12345"
+                                          style="min-width: 120px; width: 120px"
+                                          readonly
+                                          title="우편번호"
+                                        />
+                                      </div>
+                                      <div class="kfsi-mypage-address-input">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          value="서울특별시 강남구 도산대로 523 한성빌딩"
+                                          style="min-width: 550px; width: 550px"
+                                          readonly
+                                          title="주소"
+                                        />
+                                      </div>
+                                      <div class="kfsi-mypage-address-input">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          value="106호"
+                                          style="min-width: 550px; width: 550px"
+                                          readonly
+                                          title="상세 주소"
+                                        />
+                                      </div>
+                                    </div>
+                                  </span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">
+                                  <span> 선임자 성명 </span>
+                                </th>
+                                <td>
+                                  <span> 김소방 </span>
+                                </td>
+                                <th scope="row">
+                                  <span> 연락처 </span>
+                                </th>
+                                <td>
+                                  <span>
+                                    <div class="kfsi-mypage-phone">
+                                      <div class="kfsi-mypage-phone-input">
+                                        <select
+                                          class="form-select"
+                                          aria-label="연락처 앞자리 선택"
+                                          title="연락처 앞자리 선택"
+                                          style="min-width: 80px; width: 80px"
+                                        >
+                                          <option selected>선택</option>
+                                        </select>
+                                        -
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          title="연락처 중간 자리 입력"
+                                          style="min-width: 80px; width: 80px"
+                                        />
+                                        -
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          title="연락처 마지막 자리 입력"
+                                          style="min-width: 80px; width: 80px"
+                                        />
+                                      </div>
+                                    </div>
+                                  </span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">
+                                  <span> 우편물수령지 구분 </span>
+                                </th>
+                                <td>
+                                  <span>
+                                    <select
+                                      class="form-select w-100"
+                                      aria-label="우편물수령지 구분 선택"
+                                      title="우편물수령지 구분 선택"
+                                    >
+                                      <option selected>선택</option>
+                                    </select>
+                                  </span>
+                                </td>
+                                <th scope="row">
+                                  <span> 선임일자 </span>
+                                </th>
+                                <td>
+                                  <span>
+                                    <input
+                                      type="date"
+                                      class="form-control"
+                                      title="선임일자"
+                                    />
+                                  </span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">
+                                  <span> 우편수령지 </span>
+                                </th>
+                                <td colspan="3">
+                                  <span>
+                                    <div class="kfsi-mypage-address">
+                                      <div class="kfsi-mypage-address-post">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          value="12345"
+                                          style="min-width: 120px; width: 120px"
+                                          readonly
+                                          title="우편번호"
+                                        />
+                                        <a
+                                          href=""
+                                          class="btn btn-secondary btn-sm"
+                                          >우편번호찾기
+                                          <i class="ico-post"></i>
+                                        </a>
+                                      </div>
+                                      <div class="kfsi-mypage-address-input">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          value="서울특별시 강남구 도산대로 523 한성빌딩"
+                                          style="min-width: 550px; width: 550px"
+                                          readonly
+                                          title="주소"
+                                        />
+                                      </div>
+                                      <div class="kfsi-mypage-address-input">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          value="106호"
+                                          style="min-width: 550px; width: 550px"
+                                          title="상세 주소"
+                                        />
+                                      </div>
+                                    </div>
+                                    <div class="invalid-feedback d-block">
+                                      주소를 확인해 주세요.
+                                    </div>
+                                  </span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">
+                                  <span> 주의사항 </span>
+                                </th>
+                                <td colspan="3">
+                                  <span>
+                                    <textarea
+                                      class="form-control w-100"
+                                      rows="3"
+                                      title="주의사항"
+                                      style="height: 160px"
+                                    ></textarea>
+                                    <div
+                                      class="d-flex justify-content-end mt-2"
+                                    >
+                                      <div
+                                        class="d-flex align-items-center justify-content-between py-2 px-4 bg-secondary-subtle border mo-w-100 gap-2"
+                                        style="width: 440px"
+                                      >
+                                        <p class="m-0">
+                                          개인정보 수집 및 이동 등에 관한 안내
+                                        </p>
+
+                                        <div class="form-check">
+                                          <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id="flexCheckDefault2"
+                                          />
+                                          <label
+                                            class="form-check-label"
+                                            for="flexCheckDefault2"
+                                          >
+                                            확인
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </span>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="kfsi-button">
+                  <p>
+                    <a href="" class="btn btn-outline-secondary btn-lg">목록</a>
+                    <a href="" class="btn btn-primary btn-lg">저장</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
