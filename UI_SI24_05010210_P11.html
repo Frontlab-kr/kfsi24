@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item active">강습교육</a>
+              <a href="" class="kfsi-snb-item">실무교육</a>
+              <a href="" class="kfsi-snb-item">의용소방대교육</a>
+              <a href="" class="kfsi-snb-item">다중이용업교육</a>
+              <a href="" class="kfsi-snb-item">열린교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">교육신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      강습교육 신청 내역
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>강습교육 신청 내역</h1>
+              </div>
+              <div class="kfsi-education">
+                <div class="mb-15 mo-mb-10">
+                  <h4 class="kfsi-h4">접수한 교육 정보</h4>
+                  <div class="kfsi-board">
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form">
+                        <table
+                          summary="3급 소방안전관리자 교육과정에 대한 정보"
+                        >
+                          <caption>
+                            3급 소방안전관리자 교육과정 정보
+                          </caption>
+                          <colgroup>
+                            <col style="width: 180px" />
+                            <col style="width: 760px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row">
+                                <span> 교육과정 </span>
+                              </th>
+                              <td class="text-start">
+                                <div>3급소방안전관리자</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">
+                                <span> 교육지부 </span>
+                              </th>
+                              <td class="text-start">
+                                <div class="w-100">서울동부지부</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">
+                                <span> 교육일자 </span>
+                              </th>
+                              <td class="text-start">
+                                <div class="w-100">2025.03.31~04.02</div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="kfsi-h4">변경 가능한 교육 내역</h4>
+                  <div class="kfsi-table kfsi-table-mo-list">
+                    <table summary="교육지부 및 교육 일정에 대한 정보">
+                      <caption>
+                        교육지부 및 교육 일정 정보
+                      </caption>
+                      <colgroup>
+                        <col style="width: 64px" />
+                        <col style="width: 120px" />
+                        <col style="width: 200px" />
+                        <col style="width: 456px" />
+                        <col style="width: 100px" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">선택</th>
+                          <th scope="col">지부</th>
+                          <th scope="col">교육일자</th>
+                          <th scope="col">교육장소</th>
+                          <th scope="col">약도</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td title="선택">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="radio1"
+                              id="radio1-1"
+                              title="선택"
+                            />
+                          </td>
+                          <td title="지부">부산</td>
+                          <td title="교육일자">2025.02.24~02.26</td>
+                          <td title="교육장소" class="text-start">
+                            한국소방안전원 부산지부 [부산광역시 금정구 공단서로
+                            8번길 53-12(금사동 80-1)]
+                          </td>
+                          <td title="약도">
+                            <button
+                              type="button"
+                              class="btn btn-outline-dark btn-sm mo-w-100"
+                            >
+                              약도
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td title="선택">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="radio1"
+                              id="radio1-2"
+                              title="선택"
+                            />
+                          </td>
+                          <td title="지부">부산</td>
+                          <td title="교육일자">2025.02.24~02.26</td>
+                          <td title="교육장소" class="text-start">
+                            한국소방안전원 부산지부 [부산광역시 금정구 공단서로
+                            8번길 53-12(금사동 80-1)]
+                          </td>
+                          <td title="약도">
+                            <button
+                              type="button"
+                              class="btn btn-outline-dark btn-sm mo-w-100"
+                            >
+                              약도
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td title="선택">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="radio1"
+                              id="radio1-3"
+                              title="선택"
+                            />
+                          </td>
+                          <td title="지부">부산</td>
+                          <td title="교육일자">2025.02.24~02.26</td>
+                          <td title="교육장소" class="text-start">
+                            한국소방안전원 부산지부 [부산광역시 금정구 공단서로
+                            8번길 53-12(금사동 80-1)]
+                          </td>
+                          <td title="약도">
+                            <button
+                              type="button"
+                              class="btn btn-outline-dark btn-sm mo-w-100"
+                            >
+                              약도
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="kfsi-board mt-10">
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form">
+                        <table summary="변경사유 선택을 위한 표">
+                          <caption>
+                            변경사유 선택
+                          </caption>
+                          <colgroup>
+                            <col style="width: 180px" />
+                            <col style="width: 760px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row">
+                                <span> 변경사유 </span>
+                              </th>
+                              <td class="text-start">
+                                <div>
+                                  <span>
+                                    <div
+                                      class="d-flex flex-wrap column-gap-4 row-gap-1 mo-flex-column"
+                                    >
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="radio"
+                                          name="radio2"
+                                          id="radio2-1"
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="radio2-1"
+                                        >
+                                          업무관계상
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="radio"
+                                          name="radio2"
+                                          id="radio2-2"
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="radio2-2"
+                                        >
+                                          개인사정상
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="radio"
+                                          name="radio2"
+                                          id="radio2-3"
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="radio2-3"
+                                        >
+                                          기타
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </span>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-button">
+                  <p>
+                    <button type="button" class="btn btn-primary btn-lg">
+                      변경하기
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item active">강습교육</a>
+              <a href="" class="kfsi-snb-item">실무교육</a>
+              <a href="" class="kfsi-snb-item">의용소방대교육</a>
+              <a href="" class="kfsi-snb-item">다중이용업교육</a>
+              <a href="" class="kfsi-snb-item">열린교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">교육신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      강습교육 신청 내역
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>강습교육 신청 내역</h1>
+              </div>
+              <div>
+                <h4 class="kfsi-h4">증명사진 관리</h4>
+                <div>
+                  <div
+                    class="kfsi-license-profile"
+                    style="border-bottom: 1px solid #ccc"
+                  >
+                    <div
+                      class="kfsi-license-profile-img d-flex gap-7 mo-w-100"
+                      style="width: 370px; margin: 0 auto"
+                    >
+                      <div class="kfsi-license-profile-img-img">
+                        <img
+                          src="./assets/images/license/profile.svg"
+                          alt="신청자 이미지"
+                        />
+                      </div>
+                      <div class="kfsi-license-profile-img-info">
+                        <input
+                          type="text"
+                          class="form-control w-100"
+                          placeholder="선택된 파일 없음"
+                          title="신청자 이미지 파일 등록"
+                        />
+                        <button type="button" class="btn btn-secondary btn-sm">
+                          사진파일 등록<i class="ico-camera"></i>
+                        </button>
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              웹 브라우저 사양에 따라 등록된 사진이 미리보기에
+                              보이지 않을 수 있습니다.
+                            </li>
+                            <li>
+                              미리보기에 보이지 않아도 증명사진은 저장됩니다.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kfsi-board">
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form border-0">
+                        <table
+                          summary="사용자의 이름, 전화번호, 휴대폰번호를 포함한 연락처 정보 표입니다."
+                        >
+                          <caption>
+                            연락처 정보
+                          </caption>
+                          <colgroup>
+                            <col style="width: 195px" />
+                            <col style="width: 745px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row"><span>이름</span></th>
+                              <td><span>김소방</span></td>
+                            </tr>
+                            <tr>
+                              <th scope="row"><span>전화번호</span></th>
+                              <td><span>02-1234-5678</span></td>
+                            </tr>
+                            <tr>
+                              <th scope="row"><span>휴대폰번호</span></th>
+                              <td><span>010-0000-0000</span></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-license-profile-example">
+                  <strong>증명사진 등록 유의사항</strong>
+                  <div class="kfsi-textlist mo-ms-0">
+                    <ul>
+                      <li>최근 6개월 이내 사진을 등록하세요.</li>
+                      <li>
+                        등록불가사진 : 흑백, 저화질, 배경 표시, 홀로그램 표시,
+                        상단 여백 불충분, 기타 본인 확인이 어려운 사진
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="kfsi-license-profile-example-text">
+                    ※ 등록불가사진에 해당하는 경우 담당자가 사진 수정·보완
+                    요청을 할 수 있습니다.<br />
+                    ※ 등록불가사진 예시
+                  </div>
+                  <div class="text-center mt-7 mo-mt-4">
+                    <div class="pc">
+                      <img
+                        src="./assets/images/license/profile-example.png"
+                        alt="아래 대체 텍스트를 확인해주세요."
+                      />
+                    </div>
+                    <div class="mo">
+                      <img
+                        src="./assets/images/license/profile-example-mo.png"
+                        alt="아래 대체 텍스트를 확인해주세요."
+                      />
+                    </div>
+                    <div class="hide">
+                      적합하지 않은 사진 예시:<br />
+                      1. 흑백사진 (적합하지 않음 표시)<br />
+                      2. 저화질 사진 (본인 확인 불가)<br />
+                      3. 배경 표시가 있는 사진<br />
+                      4. 신분증 홀로그램 표시가 있는 사진<br />
+                      5. 상단 여백이 부족한 사진
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-button">
+                  <p>
+                    <button type="button" class="btn btn-primary btn-lg">
+                      저장
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

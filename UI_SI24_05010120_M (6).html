@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item active">강습교육</a>
+              <a href="" class="kfsi-snb-item">실무교육</a>
+              <a href="" class="kfsi-snb-item">의용소방대교육</a>
+              <a href="" class="kfsi-snb-item">다중이용업교육</a>
+              <a href="" class="kfsi-snb-item">열린교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">교육신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      강습교육 신청
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>강습교육 신청</h1>
+              </div>
+              <div class="kfsi-education">
+                <div class="kfsi-nav kfsi-nav--step4">
+                  <ol>
+                    <li>
+                      <span>01</span>
+                      <strong>교육정보 확인</strong>
+                    </li>
+                    <li>
+                      <span>02</span>
+                      <strong>교육 안내사항</strong>
+                    </li>
+                    <li>
+                      <span>03</span>
+                      <strong>수강자 정보입력 </strong>
+                    </li>
+                    <li class="active">
+                      <span>04</span>
+                      <strong>결제하기 </strong>
+                    </li>
+                  </ol>
+                </div>
+                <div class="mb-15 mo-mb-10">
+                  <h4 class="kfsi-h4">교육수수료 결제 타입을 선택해 주세요.</h4>
+                  <div class="kfsi-radio-type3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="radio1"
+                        id="radio1-1"
+                        checked
+                      />
+                      <label class="form-check-label" for="radio1-1">
+                        수첩수수료 추후 결제타입<br />
+                        강습교육 : 480,000원
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="radio1"
+                        id="radio1-2"
+                      />
+                      <label class="form-check-label" for="radio1-2">
+                        수첩수수료 미리 결제 타입<br />
+                        강습교육 (480,000원) + 수첩교부(10,000원) : 490,000원
+                      </label>
+                    </div>
+                  </div>
+                  <div class="kfsi-textlist ms-0">
+                    <ul>
+                      <li>
+                        「화재의 예방 및 안전관리에 관한 법률」 제47조에 따라
+                        1급, 2급 또는 3급 소방안전관리자 자격증을 수첩형으로
+                        발급을 희망하는 경우 수첩교부수수료 10,000원 이
+                        부과되며, 수첩교부수수료를 미리 납부하신 경우 시험에
+                        합격한 후 수첩형 자격증 발급 시 수수료가 면제됩니다.
+                      </li>
+                      <li>
+                        강습교육 수수료만 납부할 경우, 자격증을 수첩형으로
+                        발급을 희망하는 경우 해당 지부에 별도로 수첩교부수수료를
+                        납부하셔야 합니다.
+                      </li>
+                      <li>
+                        수첩교부수수료를 미리 납부한 후 시험에 불합격하거나
+                        수첩형 자격증 발급을 희망하지 않는 경우 수첩교부수수료를
+                        환불신청할 수 있습니다.
+                      </li>
+                      <li>
+                        강습교육수수료와 수첩교부수수료를 함께 납부한 후 환불을
+                        원하실 경우 전체 금액을 환불하셔야 합니다.<br />
+                        (인터넷으로는 수첩교부수수료만 환불 불가)
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="kfsi-h4">교육수수료 결제 방식을 선택해 주세요.</h4>
+                  <div class="kfsi-textlist ms-0">
+                    <ul>
+                      <li>
+                        신용카드 결제는 카드사 통신 등의 문제로 결제시간이
+                        지체되거나 취소 될 수 있습니다.
+                      </li>
+                      <li>
+                        접수 가능인원이 적을 경우, 접수 중 마감이 될 수 있으므로
+                        무통장계좌 입금을 이용하시기 바랍니다.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="kfsi-tab03 mt-10">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="tab01"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab01-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab01-pane"
+                        aria-selected="true"
+                      >
+                        무통장 입금
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="tab02"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab02-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab02-pane"
+                        aria-selected="false"
+                      >
+                        신용카드 결제
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="tab01-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab01"
+                      tabindex="0"
+                    >
+                      <div class="kfsi-tab03-contents p-0">
+                        <div class="kfsi-board">
+                          <div class="kfsi-board-write">
+                            <div class="kfsi-board-write-form border-0">
+                              <table summary="">
+                                <caption></caption>
+                                <colgroup>
+                                  <col style="width: 180px" />
+                                  <col style="width: 760px" />
+                                </colgroup>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row" class="bg-primary-subtle">
+                                      입금은행 선택
+                                    </th>
+                                    <td>
+                                      <select
+                                        class="form-select"
+                                        aria-label="입금은행 선택"
+                                        title="입금은행 선택"
+                                      >
+                                        <option selected>선택</option>
+                                      </select>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row" class="bg-primary-subtle">
+                                      현금영수증
+                                    </th>
+                                    <td>
+                                      <select
+                                        class="form-select"
+                                        aria-label="입금은행 선택"
+                                        title="입금은행 선택"
+                                      >
+                                        <option selected>선택</option>
+                                      </select>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row" class="bg-primary-subtle">
+                                      현금영수증<br />
+                                      발급번호
+                                    </th>
+                                    <td>
+                                      <input
+                                        type="text"
+                                        class="form-control me-2"
+                                        title="현금영수증 발급번호"
+                                      />
+                                      휴대폰번호 등 국세청에 신고된 번호 입력
+                                      <span class="text-danger"
+                                        >(주민번호 사용불가)</span
+                                      >
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row" class="bg-primary-subtle">
+                                      전자계산서<br />
+                                      신청기한
+                                    </th>
+                                    <td>
+                                      발급을 원하는 작성일자의 다음달 7일까지
+                                      신청하셔야 작성일자의 계산서를 발급받으실
+                                      수 있습니다.<br />
+                                      (기한경과시 발급불가)
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mt-10">
+                        <div class="kfsi-member-accordion">
+                          <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <div class="accordion-button">
+                                  전자계산서는 어떻게 신청하나요?
+                                  <button
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="true"
+                                    aria-controls="collapseOne"
+                                  >
+                                    열기
+                                  </button>
+                                </div>
+                              </h2>
+                              <div
+                                id="collapseOne"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample"
+                              >
+                                <div class="accordion-body">
+                                  <strong>1. 발급요건</strong><br />
+                                  - “현금결제”하시거나 “계좌입금”하셔야 발급이
+                                  가능합니다.<br />
+                                  <span class="text-danger"
+                                    >※ 신용카드 결제 시 계산서 발급이
+                                    불가합니다.</span
+                                  ><br />
+                                  <strong>2. 발급되는 계산서의 종류</strong
+                                  ><br />
+                                  -부가가치세액이 없는 면세 “전자계산서”<br />
+                                  <span class="text-danger"
+                                    >※ 안전원 회비 납부는 계산서 발행대상이 되지
+                                    않습니다.</span
+                                  ><br />
+                                  <strong>3. 신청기한</strong><br />
+                                  - 발급을 원하는 작성일자의 다음달 7일까지
+                                  신청하셔야 원하는 작성일자의 계산서를 발급
+                                  받으실 수 있습니다.<br />
+                                  <strong>4. 신청방법</strong><br />
+                                  1) 인터넷 신청<br />
+                                    - 신청가능기간 : 결제일로부터 다음달
+                                  7일까지<br />
+                                    - 신청방법<br />
+                                       ①「나의 신청내역」또는「상세보기
+                                  화면」에서「계산서」버튼을 클릭합니다.<br />
+                                       ② 기재사항을 작성하고 사업자등록증파일을
+                                  첨부하여 저장합니다.<br />
+                                    - 신청 후「계산서」버튼을 클릭하여
+                                  진행상황을 조회하실 수 있습니다.<br />
+                                    - 발급 완료 시 기재하신 이메일로 계산서가
+                                  발송됩니다.<br />
+                                  2) 오프라인 신청<br />
+                                    - 사업자등록증 사본에 아래사항을 기재하여
+                                  제출합니다.<br />
+                                       ① 수강자명 또는 신청자명(생년월일을 함께
+                                  기재)<br />
+                                       ② 교육과정 또는 자격수첩명칭<br />
+                                       ③ 계산서 수령용 이메일 주소<br />
+                                       ④ 발급을 원하는 계산서 작성일자<br />
+                                        
+                                  <span class="text-danger"
+                                    >※ 단, 발급을 원하는 작성일자의 다음달
+                                    7일까지 신청하여야함.</span
+                                  ><br />
+                                       ⑤ 연락처<br />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="kfsi-textlist mt-10 ms-0">
+                        <ul>
+                          <li>무통장계좌는 신청자 전용계좌입니다.</li>
+                          <li>
+                            무통장입금의 경우, 교육시작 전 공공기관은 접수일+5일
+                            18시까지, 그 외의 직능은 접수일 +1일 18시까지 입금해
+                            주시기 바랍니다.
+                          </li>
+                          <li>
+                            단, 온라인 강습의 경우 접수마감일 기준으로
+                            입금기한이 변경될 수 있으니 입금 안내 문자를 꼭
+                            참고하시기 바랍니다.
+                          </li>
+                          <li>
+                            과오납이나 분할납이 허용되지 않으므로 정확한 금액을
+                            입금하셔야 합니다.
+                          </li>
+                          <li>
+                            입금은행의 규정에 따라 송금수수료가 발생할 수
+                            있습니다.
+                          </li>
+                          <li>
+                            은행 ATM CD기를 이용한 입금이 불가합니다. 은행
+                            창구나 인터넷 뱅킹, 폰 뱅킹을 사용하여 입금하시기
+                            바랍니다.
+                          </li>
+                          <li>
+                            만료일시까지 입금하지 않을 경우, 신청하신 교육이
+                            자동으로 취소됩니다.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab02-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab02"
+                      tabindex="0"
+                    >
+                      <div class="kfsi-tab03-contents">
+                        <div class="kfsi-textlist ms-0">
+                          <ul>
+                            <li>
+                              신용카드 결제 시 전자계산서는 발행되지 않습니다.
+                            </li>
+                            <li>
+                              계산서 발급이 필요한 경우 무통장계좌 입금으로
+                              결제하시기 바랍니다.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-button">
+                  <p>
+                    <a href="" class="btn btn-primary btn-lg">결제하기</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

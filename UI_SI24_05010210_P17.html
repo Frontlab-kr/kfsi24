@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item active">강습교육</a>
+              <a href="" class="kfsi-snb-item">실무교육</a>
+              <a href="" class="kfsi-snb-item">의용소방대교육</a>
+              <a href="" class="kfsi-snb-item">다중이용업교육</a>
+              <a href="" class="kfsi-snb-item">열린교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">교육신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      강습교육 신청 내역
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>강습교육 신청 내역</h1>
+              </div>
+              <div class="kfsi-education">
+                <div
+                  class="mb-10 mo-mb-6 text-center fs-22 mo-fs-17 text-primary"
+                >
+                  <strong>일정 변경 접수가 성공적으로 완료되었습니다.</strong>
+                </div>
+                <div>
+                  <h4 class="kfsi-h4">변경한 교육정보</h4>
+                  <div class="kfsi-board">
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form">
+                        <table summary="교육 과정 관련 정보">
+                          <caption>
+                            교육 과정 세부 사항
+                          </caption>
+                          <colgroup>
+                            <col style="width: 180px" />
+                            <col style="width: 760px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row">교육과정</th>
+                              <td class="text-start">
+                                <div>3급 소방안전관리자</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">교육일자</th>
+                              <td class="text-start">
+                                <div>2025.02.24~2025.02.26 (09:00~18:00)</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">지부</th>
+                              <td class="text-start">
+                                <div>부산지부 (051-553-8423)</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">교육장소</th>
+                              <td class="text-start">
+                                <div>
+                                  <div class="mb-2">
+                                    한국소방안전원 부산지부 [부산광역시 금정구
+                                    공단서로 8번길 53-12(금사동 80-1)]
+                                  </div>
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary btn-sm"
+                                  >
+                                    약도보기
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">구비서류</th>
+                              <td class="text-start">
+                                <div class="lh-base">
+                                  <strong>
+                                    1. 교육 접수시 사진 미등록자는
+                                    사진(3.5*4.5cm) 1매 제출 (반드시 제출)<br />
+                                    2. 주민등록증 또는 운전면허증(반드시 지참)
+                                  </strong>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-button">
+                  <p>
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary btn-lg"
+                    >
+                      인쇄하기
+                    </button>
+                    <button type="button" class="btn btn-primary btn-lg">
+                      확인
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 5000;
+      "
+    >
+      <div>
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#modal01"
+        >
+          우편번호 찾기
+        </button>
+      </div>
+      <div class="mt-2">
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#modal02"
+        >
+          우편번호 찾기
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal01" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" style="max-width: 600px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5">우편번호 찾기</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex gap-2 py-1 px-2 bg-light rounded">
+              <input
+                type="text"
+                class="form-control w-100"
+                title="주소를 입력해 주세요."
+                placeholder="주소를 입력해 주세요."
+              />
+              <a href="" class="btn btn-secondary btn-sm mo-h-40"
+                ><span class="pc">검색</span>
+                <i class="ico-post"></i>
+              </a>
+            </div>
+            <div class="my-10 mx-4">
+              <strong>아래 예시를 참고해주세요.</strong>
+              <div class="pt-4 fs-15">
+                <div class="mb-4">
+                  도로명 + 건물번호
+                  <p class="m-0 ms-2 text-info">
+                    예) 판교역로 166, 제주 첨단로 242
+                  </p>
+                </div>
+                <div class="mb-4">
+                  지역명(동/리) + 번지
+                  <p class="m-0 ms-2 text-info">
+                    예) 백현동 123, 제주 영평동 1111
+                  </p>
+                </div>
+                <div class="mb-4">
+                  지역명(동/리) + 건물명(아파트명)
+                  <p class="m-0 ms-2 text-info">
+                    예) 분당 주공, 연수동 주공3차
+                  </p>
+                </div>
+                <div class="mb-4">
+                  사서함명 + 번호
+                  <p class="m-0 ms-2 text-info">예) 분당우체국사서함 1~100</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              data-bs-dismiss="modal"
+            >
+              결제하기
+            </button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal02" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" style="max-width: 600px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5">우편번호 찾기</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex gap-2 py-1 px-2 bg-light rounded">
+              <input
+                type="text"
+                class="form-control w-100"
+                title="주소를 입력해 주세요."
+                placeholder="주소를 입력해 주세요."
+              />
+              <a href="" class="btn btn-secondary btn-sm mo-h-40"
+                ><span class="pc">검색</span>
+                <i class="ico-post"></i>
+              </a>
+            </div>
+            <div class="my-6">
+              <div class="overflow-auto" style="max-height: 400px">
+                <a href="" class="d-block mb-2 py-5 px-4 border">
+                  <div class="d-flex gap-4 mb-2">
+                    <div>
+                      <div
+                        class="d-flex align-items-center px-4 fs-13 text-primary"
+                        style="
+                          width: 70px;
+                          border-radius: 20px;
+                          background: #e4f2d3;
+                        "
+                      >
+                        우편번호
+                      </div>
+                    </div>
+                    <p class="m-0">12345</p>
+                  </div>
+                  <div class="d-flex gap-4 mb-2">
+                    <div>
+                      <div
+                        class="d-flex align-items-center px-4 fs-13 text-primary"
+                        style="
+                          width: 70px;
+                          border-radius: 20px;
+                          background: #e4f2d3;
+                        "
+                      >
+                        도로명
+                      </div>
+                    </div>
+                    <p class="m-0">
+                      인천광역시 연수구 랜드마크로 68인천광역시 연수구
+                      랜드마크로 68인천광역시 연수구 랜드마크로 68인천광역시
+                      연수구 랜드마크로 68
+                    </p>
+                  </div>
+                  <div class="d-flex gap-4">
+                    <div>
+                      <div
+                        class="d-flex align-items-center px-4 fs-13 text-primary"
+                        style="
+                          width: 70px;
+                          border-radius: 20px;
+                          background: #e4f2d3;
+                        "
+                      >
+                        지번
+                      </div>
+                    </div>
+                    <p class="m-0">
+                      인천광역시 연수구 송도동 311
+                      랜드마크시티센트럴더샵인천광역시 연수구 송도동 311
+                      랜드마크시티센트럴더샵
+                    </p>
+                  </div>
+                </a>
+                <a href="" class="d-block mb-2 py-5 px-4 border">
+                  <div class="d-flex gap-4 mb-2">
+                    <div>
+                      <div
+                        class="d-flex align-items-center px-4 fs-13 text-primary"
+                        style="
+                          width: 70px;
+                          border-radius: 20px;
+                          background: #e4f2d3;
+                        "
+                      >
+                        우편번호
+                      </div>
+                    </div>
+                    <p class="m-0">12345</p>
+                  </div>
+                  <div class="d-flex gap-4 mb-2">
+                    <div>
+                      <div
+                        class="d-flex align-items-center px-4 fs-13 text-primary"
+                        style="
+                          width: 70px;
+                          border-radius: 20px;
+                          background: #e4f2d3;
+                        "
+                      >
+                        도로명
+                      </div>
+                    </div>
+                    <p class="m-0">인천광역시 연수구 랜드마크로 68</p>
+                  </div>
+                  <div class="d-flex gap-4">
+                    <div>
+                      <div
+                        class="d-flex align-items-center px-4 fs-13 text-primary"
+                        style="
+                          width: 70px;
+                          border-radius: 20px;
+                          background: #e4f2d3;
+                        "
+                      >
+                        지번
+                      </div>
+                    </div>
+                    <p class="m-0">
+                      인천광역시 연수구 송도동 311 랜드마크시티센트럴더샵
+                    </p>
+                  </div>
+                </a>
+                <a href="" class="d-block mb-2 py-5 px-4 border">
+                  <div class="d-flex gap-4 mb-2">
+                    <div>
+                      <div
+                        class="d-flex align-items-center px-4 fs-13 text-primary"
+                        style="
+                          width: 70px;
+                          border-radius: 20px;
+                          background: #e4f2d3;
+                        "
+                      >
+                        우편번호
+                      </div>
+                    </div>
+                    <p class="m-0">12345</p>
+                  </div>
+                  <div class="d-flex gap-4 mb-2">
+                    <div>
+                      <div
+                        class="d-flex align-items-center px-4 fs-13 text-primary"
+                        style="
+                          width: 70px;
+                          border-radius: 20px;
+                          background: #e4f2d3;
+                        "
+                      >
+                        도로명
+                      </div>
+                    </div>
+                    <p class="m-0">인천광역시 연수구 랜드마크로 68</p>
+                  </div>
+                  <div class="d-flex gap-4">
+                    <div>
+                      <div
+                        class="d-flex align-items-center px-4 fs-13 text-primary"
+                        style="
+                          width: 70px;
+                          border-radius: 20px;
+                          background: #e4f2d3;
+                        "
+                      >
+                        지번
+                      </div>
+                    </div>
+                    <p class="m-0">
+                      인천광역시 연수구 송도동 311 랜드마크시티센트럴더샵
+                    </p>
+                  </div>
+                </a>
+                <a href="" class="d-block mb-2 py-5 px-4 border">
+                  <div class="d-flex gap-4 mb-2">
+                    <div>
+                      <div
+                        class="d-flex align-items-center px-4 fs-13 text-primary"
+                        style="
+                          width: 70px;
+                          border-radius: 20px;
+                          background: #e4f2d3;
+                        "
+                      >
+                        우편번호
+                      </div>
+                    </div>
+                    <p class="m-0">12345</p>
+                  </div>
+                  <div class="d-flex gap-4 mb-2">
+                    <div>
+                      <div
+                        class="d-flex align-items-center px-4 fs-13 text-primary"
+                        style="
+                          width: 70px;
+                          border-radius: 20px;
+                          background: #e4f2d3;
+                        "
+                      >
+                        도로명
+                      </div>
+                    </div>
+                    <p class="m-0">인천광역시 연수구 랜드마크로 68</p>
+                  </div>
+                  <div class="d-flex gap-4">
+                    <div>
+                      <div
+                        class="d-flex align-items-center px-4 fs-13 text-primary"
+                        style="
+                          width: 70px;
+                          border-radius: 20px;
+                          background: #e4f2d3;
+                        "
+                      >
+                        지번
+                      </div>
+                    </div>
+                    <p class="m-0">
+                      인천광역시 연수구 송도동 311 랜드마크시티센트럴더샵
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="mt-4 fs-14 text-center">1 / 1</div>
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              data-bs-dismiss="modal"
+            >
+              결제하기
+            </button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

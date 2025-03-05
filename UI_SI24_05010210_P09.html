@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item active">강습교육</a>
+              <a href="" class="kfsi-snb-item">실무교육</a>
+              <a href="" class="kfsi-snb-item">의용소방대교육</a>
+              <a href="" class="kfsi-snb-item">다중이용업교육</a>
+              <a href="" class="kfsi-snb-item">열린교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">교육신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      강습교육 신청 내역
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>강습교육 신청 내역</h1>
+              </div>
+              <div class="kfsi-education">
+                <div class="">
+                  <h4 class="kfsi-h4">현금영수증 발행</h4>
+                  <div class="kfsi-board">
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form">
+                        <table
+                          summary="현금영수증 사용용도 및 발급번호 입력 폼"
+                        >
+                          <caption>
+                            현금영수증 정보 입력
+                          </caption>
+                          <colgroup>
+                            <col style="width: 180px" />
+                            <col style="width: 760px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row">
+                                <span>
+                                  현금영수증<br />
+                                  사용용도
+                                </span>
+                              </th>
+                              <td class="text-start">
+                                <div>
+                                  <span>
+                                    <div class="d-flex flex-wrap gap-4">
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="radio"
+                                          name="radio1"
+                                          id="radio1-1"
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="radio1-1"
+                                        >
+                                          소득공제
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="radio"
+                                          name="radio1"
+                                          id="radio1-2"
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="radio1-2"
+                                        >
+                                          지출증빙
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </span>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">
+                                <span>
+                                  현금영수증<br />
+                                  발급번호
+                                </span>
+                              </th>
+                              <td class="text-start">
+                                <div class="w-100">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    title="예금주명"
+                                    style="min-width: 305px; width: 305px"
+                                  />
+                                  <div class="mt-1 text-secondary fs-15">
+                                    휴대번호 등 국세청에 신고하신 번호를
+                                    입력하세요. (주민등록번호 입력 불가)
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-button">
+                  <p>
+                    <button type="button" class="btn btn-primary btn-lg">
+                      현금영수증 발급
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

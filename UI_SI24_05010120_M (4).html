@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item active">강습교육</a>
+              <a href="" class="kfsi-snb-item">실무교육</a>
+              <a href="" class="kfsi-snb-item">의용소방대교육</a>
+              <a href="" class="kfsi-snb-item">다중이용업교육</a>
+              <a href="" class="kfsi-snb-item">열린교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">교육신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      강습교육 신청
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>강습교육 신청</h1>
+              </div>
+              <div class="kfsi-education">
+                <div class="kfsi-nav kfsi-nav--step4">
+                  <ol>
+                    <li>
+                      <span>01</span>
+                      <strong>교육정보 확인</strong>
+                    </li>
+                    <li class="active">
+                      <span>02</span>
+                      <strong>교육 안내사항</strong>
+                    </li>
+                    <li>
+                      <span>03</span>
+                      <strong>수강자 정보입력 </strong>
+                    </li>
+                    <li>
+                      <span>04</span>
+                      <strong>결제하기 </strong>
+                    </li>
+                  </ol>
+                </div>
+                <div class="kfsi-education">
+                  <h4 class="kfsi-h4">교육 안내사항을 모두 확인해 주세요.</h4>
+                  <div class="kfsi-textlist">
+                    <ul>
+                      <li>
+                        각 안내사항 명을 클릭하여 상세내용을 확인 후 내용 맨
+                        하단의 버튼을 클릭하여 확인을 완료해 주세요.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="kfsi-education-agree">
+                    <div class="kfsi-education-agree-menu">
+                      <ul id="myTab" role="tablist">
+                        <li role="presentation">
+                          <button
+                            class="nav-link active"
+                            id="tab01"
+                            data-bs-toggle="tab"
+                            data-bs-target="#tab01-pane"
+                            type="button"
+                            role="tab"
+                            aria-controls="tab01-pane"
+                            aria-selected="true"
+                          >
+                            대리교육 금지 안내
+                          </button>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="tab-checkbox01"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="tab-checkbox01"
+                            >
+                              확인
+                            </label>
+                            <div class="kfsi-education-agree-menu-bg"></div>
+                          </div>
+                        </li>
+                        <li role="presentation">
+                          <button
+                            class="nav-link"
+                            id="tab02"
+                            data-bs-toggle="tab"
+                            data-bs-target="#tab02-pane"
+                            type="button"
+                            role="tab"
+                            aria-controls="tab02-pane"
+                            aria-selected="false"
+                          >
+                            교육접수시 주의사항 및 환불기준
+                          </button>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="tab-checkbox02"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="tab-checkbox02"
+                            >
+                              확인
+                            </label>
+                            <div class="kfsi-education-agree-menu-bg"></div>
+                          </div>
+                        </li>
+                        <li role="presentation">
+                          <button
+                            class="nav-link"
+                            id="tab03"
+                            data-bs-toggle="tab"
+                            data-bs-target="#tab03-pane"
+                            type="button"
+                            role="tab"
+                            aria-controls="tab03-pane"
+                            aria-selected="false"
+                          >
+                            개인정보 수집 및 이동 등에 관한 안내
+                          </button>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="tab-checkbox03"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="tab-checkbox03"
+                            >
+                              확인
+                            </label>
+                            <div class="kfsi-education-agree-menu-bg"></div>
+                          </div>
+                        </li>
+                        <li role="presentation">
+                          <button
+                            class="nav-link"
+                            id="tab04"
+                            data-bs-toggle="tab"
+                            data-bs-target="#tab04-pane"
+                            type="button"
+                            role="tab"
+                            aria-controls="tab04-pane"
+                            aria-selected="false"
+                          >
+                            교육 및 시험 관련 감염병 관련 유의사항
+                          </button>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="tab-checkbox04"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="tab-checkbox04"
+                            >
+                              확인
+                            </label>
+                            <div class="kfsi-education-agree-menu-bg"></div>
+                          </div>
+                        </li>
+                        <li role="presentation">
+                          <button
+                            class="nav-link"
+                            id="tab05"
+                            data-bs-toggle="tab"
+                            data-bs-target="#tab05-pane"
+                            type="button"
+                            role="tab"
+                            aria-controls="tab05-pane"
+                            aria-selected="false"
+                          >
+                            원격교육 참가 관련 유의사항
+                          </button>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="tab-checkbox05"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="tab-checkbox05"
+                            >
+                              확인
+                            </label>
+                            <div class="kfsi-education-agree-menu-bg"></div>
+                          </div>
+                        </li>
+                      </ul>
+                      <p>
+                        ※ 한국소방안전원에서는 「개인정보보호법」
+                        제15조제1항제3호에 따라 정보주체의 동의 없이 다음과 같이
+                        개인정보를 수집·이용하고 있음을 알려드립니다.
+                      </p>
+                    </div>
+                    <div class="kfsi-education-agree-contents">
+                      <div class="tab-content" id="myTabContent">
+                        <div
+                          class="tab-pane fade show active"
+                          id="tab01-pane"
+                          role="tabpanel"
+                          aria-labelledby="tab01"
+                          tabindex="0"
+                        >
+                          1
+                        </div>
+                        <div
+                          class="tab-pane fade"
+                          id="tab02-pane"
+                          role="tabpanel"
+                          aria-labelledby="tab02"
+                          tabindex="0"
+                        >
+                          2
+                        </div>
+                        <div
+                          class="tab-pane fade"
+                          id="tab03-pane"
+                          role="tabpanel"
+                          aria-labelledby="tab03"
+                          tabindex="0"
+                        >
+                          3
+                        </div>
+                        <div
+                          class="tab-pane fade"
+                          id="tab04-pane"
+                          role="tabpanel"
+                          aria-labelledby="tab04"
+                          tabindex="0"
+                        >
+                          4
+                        </div>
+                        <div
+                          class="tab-pane fade"
+                          id="tab05-pane"
+                          role="tabpanel"
+                          aria-labelledby="tab05"
+                          tabindex="0"
+                        >
+                          5
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="kfsi-button">
+                  <p>
+                    <a href="" class="btn btn-primary btn-lg">다음</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

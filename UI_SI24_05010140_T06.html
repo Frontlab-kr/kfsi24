@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item active">강습교육</a>
+              <a href="" class="kfsi-snb-item">실무교육</a>
+              <a href="" class="kfsi-snb-item">의용소방대교육</a>
+              <a href="" class="kfsi-snb-item">다중이용업교육</a>
+              <a href="" class="kfsi-snb-item">열린교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">교육신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      강습교육 신청
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>강습교육 신청</h1>
+              </div>
+              <div class="kfsi-education">
+                <div>
+                  <h4 class="kfsi-h4">선택 교육정보</h4>
+                  <div class="kfsi-board">
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form">
+                        <table summary="교육 과정 세부 사항">
+                          <caption>
+                            교육 과정 정보
+                          </caption>
+                          <colgroup>
+                            <col style="width: 180px" />
+                            <col style="width: 760px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row">교육과정</th>
+                              <td class="text-start">
+                                <div>3급 소방안전관리자</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">지부</th>
+                              <td class="text-start">
+                                <div>인천지부 (032-569-1971)</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">교육일시</th>
+                              <td class="text-start">
+                                <div>2025.03.31~2025.04.02 (09:00~18:00)</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">교육장소</th>
+                              <td class="text-start">
+                                <div>
+                                  인천 서구 경명대로 701 한국소방안전원 인천지부
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">수수료</th>
+                              <td class="text-start">
+                                <div class="lh-base">154,000원</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">카드결제 안내</th>
+                              <td class="text-start">
+                                <div class="lh-base">
+                                  신용카드 결제 시 전자계산서는 발행되지
+                                  않습니다.<br />
+                                  계산서 발급이 필요한 경우 무통장계좌 입금으로
+                                  결제하시기 바랍니다.
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-button">
+                  <p>
+                    <button type="button" class="btn btn-primary btn-lg">
+                      결제하기
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 5000;
+      "
+    >
+      <div>
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#modal01"
+        >
+          카드결제 안내
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal01" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" style="max-width: 600px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5">카드결제 안내</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="kfsi-textlist mb-5">
+              <ul>
+                <li>
+                  Wifi망 또는 회사 사내망 이용 시 카드 결제가 정상적으로
+                  이루어지지 않는 경우, 스마트폰의 모바일 데이터를 이용하여
+                  결제해 주시기 바랍니다.
+                </li>
+                <li>(문제원인) 네트워크 방화벽으로 인한 차단</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              data-bs-dismiss="modal"
+            >
+              결제하기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
