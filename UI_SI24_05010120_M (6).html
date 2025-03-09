@@ -183,8 +183,12 @@
                         <div class="kfsi-board">
                           <div class="kfsi-board-write">
                             <div class="kfsi-board-write-form border-0">
-                              <table summary="">
-                                <caption></caption>
+                              <table
+                                summary="무통장 입금 시 필요한 정보인 입금은행 선택, 현금영수증 신청, 발급번호 입력 및 전자계산서 신청 기한을 포함한 표입니다."
+                              >
+                                <caption>
+                                  무통장 입금 정보
+                                </caption>
                                 <colgroup>
                                   <col style="width: 180px" />
                                   <col style="width: 760px" />
@@ -224,15 +228,22 @@
                                       발급번호
                                     </th>
                                     <td>
-                                      <input
-                                        type="text"
-                                        class="form-control me-2"
-                                        title="현금영수증 발급번호"
-                                      />
-                                      휴대폰번호 등 국세청에 신고된 번호 입력
-                                      <span class="text-danger"
-                                        >(주민번호 사용불가)</span
+                                      <div
+                                        class="d-flex align-items-center gap-2 mo-flex-column"
                                       >
+                                        <input
+                                          type="text"
+                                          class="form-control mo-w-100"
+                                          title="현금영수증 발급번호"
+                                        />
+                                        <div>
+                                          휴대폰번호 등 국세청에 신고된 번호
+                                          입력
+                                          <span class="text-danger"
+                                            >(주민번호 사용불가)</span
+                                          >
+                                        </div>
+                                      </div>
                                     </td>
                                   </tr>
                                   <tr>

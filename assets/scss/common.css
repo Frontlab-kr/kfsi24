@@ -19185,6 +19185,11 @@ small, .small {
   background-color: #406491;
   color: #fff !important;
 }
+.btn-warning {
+  border-color: var(--FEF3DD, #fef3dd);
+  background: var(--FEF3DD, #fef3dd);
+  color: #333 !important;
+}
 .btn-outline-primary {
   color: var(--004D16, #004d16) !important;
   border: 1px solid var(--004D16, #004d16);
@@ -30441,101 +30446,6 @@ body {
 .kfsi-tab03-contents {
   padding: 20px 30px;
   border: 1px solid var(--004D16, #004d16);
-}
-@media screen and (max-width: 992px) {
-  .kfsi-tab03 > .nav {
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    margin-bottom: 40px;
-  }
-  .kfsi-tab03 > .nav-tabs {
-    border: 0;
-    background: #fff;
-    border-radius: 0;
-  }
-  .kfsi-tab03 > .nav-tabs .nav-link {
-    position: relative;
-    width: 100%;
-    min-height: 40px;
-    height: 100%;
-    padding: 10px 10px;
-    background: #fff;
-    border-radius: 0;
-    border: 1px solid #ccc;
-    border-left: none;
-    color: #666;
-    text-align: center;
-    font-family: Pretendard;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    word-break: keep-all;
-    z-index: 10;
-  }
-  .kfsi-tab03 > .nav-tabs .nav-link.active {
-    border-radius: 0;
-    background: var(--E4F2D3, #e4f2d3);
-    color: #004d16;
-    text-align: center;
-    font-family: Pretendard;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    z-index: 20;
-  }
-  .kfsi-tab03 > .nav-tabs .nav-link.active::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -1px;
-    right: -1px;
-    bottom: -1px;
-    left: -1px;
-    border: 1px solid var(--0F6327, #0f6327);
-  }
-  .kfsi-tab03 > .nav-item {
-    width: 100%;
-  }
-  .kfsi-tab03 > .nav-item:first-child .nav-link {
-    border-left: 1px solid #ccc;
-  }
-  .kfsi-tab03 .nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .kfsi-tab03 .nav-item:nth-child(2n-1) .nav-link {
-    border-left: 1px solid #ccc;
-  }
-  .kfsi-tab03--grid3 .nav, .kfsi-tab03--mo-grid3 .nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .kfsi-tab03--grid3 .nav-item .nav-link, .kfsi-tab03--mo-grid3 .nav-item .nav-link {
-    border-left: none !important;
-  }
-  .kfsi-tab03--grid3 .nav-item:nth-child(1) .nav-link, .kfsi-tab03--mo-grid3 .nav-item:nth-child(1) .nav-link {
-    border-left: 1px solid #ccc !important;
-  }
-  .kfsi-tab03-type2 > .nav {
-    display: flex;
-    width: auto;
-    overflow: auto;
-    margin: -30px -16px 30px -16px;
-    border-bottom: 1px solid #ccc;
-  }
-  .kfsi-tab03-type2 > .nav .nav-link {
-    display: inline-flex;
-    padding: 10px 16px;
-    border: none !important;
-    background: none !important;
-    white-space: noWrap;
-  }
-  .kfsi-tab03-type2 > .nav .nav-link:before {
-    display: none !important;
-  }
 }
 .kfsi-faq-search {
   display: flex;

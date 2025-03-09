@@ -210,6 +210,13 @@ small {
       color: #fff !important;
     }
   }
+  &-warning {
+    border-color: var(--FEF3DD, #fef3dd);
+    background: var(--FEF3DD, #fef3dd);
+    color: #333 !important;
+    &:hover {
+    }
+  }
   &-outline-primary {
     color: var(--004D16, #004d16) !important;
     border: 1px solid var(--004D16, #004d16);

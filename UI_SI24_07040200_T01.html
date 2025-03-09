@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- dropzone -->
+    <script src="./assets/js/dropzone.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>자격발급 신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">자격 발급안내</a>
+              <a href="" class="kfsi-snb-item">자격 재발급안내</a>
+              <a href="" class="kfsi-snb-item">자격 발급심사 신청</a>
+              <a href="" class="kfsi-snb-item active">자격 발급 신청</a>
+              <a href="" class="kfsi-snb-item">
+                자격 발급<br />
+                (심사) 신청 내역
+              </a>
+              <a href="" class="kfsi-snb-item">자격 취득확인</a>
+              <a href="" class="kfsi-snb-item">자격 발급 진위확인</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">자격발급 신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      자격 발급 신청
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>자격 발급 신청</h1>
+              </div>
+              <div class="kfsi-license">
+                <div class="mb-15 mo-mb-10">
+                  <div class="kfsi-agree-form">
+                    <div class="kfsi-agree-form__title">
+                      사진 등록시 유의사항
+                    </div>
+                    <div class="kfsi-agree-form__contents">
+                      <div class="kfsi-textlist">
+                        <ul>
+                          <li>최근 6개월 이내 사진을 등록하시기 바랍니다.</li>
+                          <li>
+                            모자 또는 선글라스 착용사진, 흑백사진, 셀카, 등
+                            식별이 곤란한 사진은 사용할 수 없습니다.
+                          </li>
+                          <li>
+                            반드시 , 자격소지자 본인 사진을 등록하시기 바랍니다.
+                            타인의 사진으로 자격 발급을 신청할 경우,
+                            자격무효처리는 물론 형사고발조치 되어 형법 제
+                            137조에 따라 처벌될 수 있습니다.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="kfsi-agree-form__foot">
+                      <div
+                        class="d-flex align-items-center justify-content-center gap-10"
+                      >
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="checkbox01"
+                          />
+                          <label class="form-check-label" for="checkbox01">
+                            위의 사진 등록시 유의사항을 확인하였습니다.
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-15 mo-mb-10">
+                  <h4 class="kfsi-h4">신청서 작성</h4>
+                  <div class="kfsi-license-profile">
+                    <div class="kfsi-license-profile-img">
+                      <div class="kfsi-license-profile-img-img">
+                        <img
+                          src="./assets/images/license/profile.svg"
+                          alt="신청자 이미지"
+                        />
+                      </div>
+                      <div class="kfsi-license-profile-img-info">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="선택된 파일 없음"
+                          title="신청자 이미지 파일 등록"
+                        />
+                        <button type="button" class="btn btn-secondary btn-sm">
+                          사진파일 등록<i class="ico-camera"></i>
+                        </button>
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              웹 브라우저 사양에 따라 등록된 사진이 미리보기에
+                              보이지 않을 수 있습니다.
+                            </li>
+                            <li>
+                              미리보기에 보이지 않아도 증명사진은 저장됩니다.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-license-profile-info">
+                      <div class="kfsi-board">
+                        <div class="kfsi-board-write">
+                          <div class="kfsi-board-write-form">
+                            <table
+                              summary="신청자의 이름, 생년월일, 성별, 전화번호, 휴대폰 번호, 주소 등의 정보를 나타냅니다."
+                            >
+                              <caption>
+                                신청자 정보
+                              </caption>
+                              <colgroup>
+                                <col style="width: 195px" />
+                                <col style="width: 164px" />
+                                <col style="width: 150px" />
+                                <col style="width: 150px" />
+                              </colgroup>
+                              <tbody>
+                                <tr>
+                                  <th scope="row"><span>이름</span></th>
+                                  <td colspan="3"><span>김소방</span></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                    <span>생년월일</span>
+                                  </th>
+                                  <td><span>1980.01.01</span></td>
+                                  <th scope="row"><span>성별</span></th>
+                                  <td><span>남자</span></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                    <span>전화번호</span>
+                                  </th>
+                                  <td colspan="3">
+                                    <span>
+                                      <div class="kfsi-mypage-phone">
+                                        <div class="kfsi-mypage-phone-input">
+                                          <select
+                                            class="form-select"
+                                            aria-label="휴대폰 번호 앞자리 선택"
+                                            title="휴대폰 번호 앞자리 선택"
+                                            style="min-width: 80px; width: 80px"
+                                          >
+                                            <option selected>선택</option>
+                                          </select>
+                                          -
+                                          <input
+                                            type="text"
+                                            class="form-control"
+                                            title="휴대폰 번호 중간 자리 입력"
+                                            style="min-width: 80px; width: 80px"
+                                          />
+                                          -
+                                          <input
+                                            type="text"
+                                            class="form-control"
+                                            title="휴대폰 번호 마지막 자리 입력"
+                                            style="min-width: 80px; width: 80px"
+                                          />
+                                        </div>
+                                      </div>
+                                    </span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                    <span>
+                                      휴대폰 번호
+                                      <span class="text-danger">*</span>
+                                    </span>
+                                  </th>
+                                  <td colspan="3">
+                                    <span>
+                                      <div class="kfsi-mypage-phone">
+                                        <div class="kfsi-mypage-phone-input">
+                                          <select
+                                            class="form-select"
+                                            aria-label="휴대폰 번호 앞자리 선택"
+                                            title="휴대폰 번호 앞자리 선택"
+                                            style="min-width: 80px; width: 80px"
+                                          >
+                                            <option selected>선택</option>
+                                          </select>
+                                          -
+                                          <input
+                                            type="text"
+                                            class="form-control"
+                                            title="휴대폰 번호 중간 자리 입력"
+                                            style="min-width: 80px; width: 80px"
+                                          />
+                                          -
+                                          <input
+                                            type="text"
+                                            class="form-control"
+                                            title="휴대폰 번호 마지막 자리 입력"
+                                            style="min-width: 80px; width: 80px"
+                                          />
+                                        </div>
+                                      </div>
+                                    </span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                    <span>
+                                      주소(주민등록상)
+                                      <span class="text-danger">*</span>
+                                    </span>
+                                  </th>
+                                  <td colspan="3">
+                                    <span>
+                                      <div class="kfsi-mypage-address">
+                                        <div class="kfsi-mypage-address-post">
+                                          <input
+                                            type="text"
+                                            class="form-control"
+                                            style="
+                                              min-width: 110px;
+                                              width: 110px;
+                                            "
+                                            readonly
+                                            title="우편번호"
+                                          />
+                                          <a
+                                            href=""
+                                            class="btn btn-secondary btn-sm"
+                                            >우편번호찾기
+                                            <i class="ico-post"></i>
+                                          </a>
+                                        </div>
+                                        <div class="kfsi-mypage-address-input">
+                                          <input
+                                            type="text"
+                                            class="form-control w-100"
+                                            readonly
+                                            title="주소"
+                                          />
+                                        </div>
+                                        <div class="kfsi-mypage-address-input">
+                                          <input
+                                            type="text"
+                                            class="form-control w-100"
+                                            title="상세 주소"
+                                          />
+                                        </div>
+                                      </div>
+                                    </span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kfsi-license-profile-example">
+                    <strong>증명사진 등록 유의사항</strong>
+                    <div class="kfsi-textlist mo-ms-0">
+                      <ul>
+                        <li>최근 6개월 이내 사진을 등록하세요.</li>
+                        <li>
+                          등록불가사진 : 흑백, 저화질, 배경 표시, 홀로그램 표시,
+                          상단 여백 불충분, 기타 본인 확인이 어려운 사진
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="kfsi-license-profile-example-text">
+                      ※ 등록불가사진에 해당하는 경우 담당자가 사진 수정·보완
+                      요청을 할 수 있습니다.<br />
+                      ※ 등록불가사진 예시
+                    </div>
+                    <div class="text-center mt-7 mo-mt-4">
+                      <div class="pc">
+                        <img
+                          src="./assets/images/license/profile-example.png"
+                          alt="아래 대체 텍스트를 확인해주세요."
+                        />
+                      </div>
+                      <div class="mo">
+                        <img
+                          src="./assets/images/license/profile-example-mo.png"
+                          alt="아래 대체 텍스트를 확인해주세요."
+                        />
+                      </div>
+                      <div class="hide">
+                        적합하지 않은 사진 예시:<br />
+                        1. 흑백사진 (적합하지 않음 표시)<br />
+                        2. 저화질 사진 (본인 확인 불가)<br />
+                        3. 배경 표시가 있는 사진<br />
+                        4. 신분증 홀로그램 표시가 있는 사진<br />
+                        5. 상단 여백이 부족한 사진
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-15 mo-mb-10">
+                  <h4 class="kfsi-h4">배송지 정보 입력</h4>
+                  <div class="kfsi-board">
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form">
+                        <table
+                          summary="배송을 위한 이름 및 주소 정보를 입력하는 표입니다."
+                        >
+                          <caption>
+                            배송지 정보
+                          </caption>
+                          <colgroup>
+                            <col style="width: 195px" />
+                            <col style="width: 745px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row">
+                                <span> 이름 </span>
+                              </th>
+                              <td>
+                                <span> 김소방 </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">
+                                <span> 주소 </span>
+                              </th>
+                              <td>
+                                <span>
+                                  <div class="form-check mb-2">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="checkbox02"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="checkbox02"
+                                    >
+                                      위의 사진 등록시 유의사항을
+                                      확인하였습니다.
+                                    </label>
+                                  </div>
+                                  <div class="kfsi-mypage-address">
+                                    <div class="kfsi-mypage-address-post">
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        style="min-width: 110px; width: 110px"
+                                        readonly
+                                        title="우편번호"
+                                      />
+                                      <a
+                                        href=""
+                                        class="btn btn-secondary btn-sm"
+                                        >우편번호찾기
+                                        <i class="ico-post"></i>
+                                      </a>
+                                    </div>
+                                    <div class="kfsi-mypage-address-input">
+                                      <input
+                                        type="text"
+                                        class="form-control mo-w-100"
+                                        readonly
+                                        title="주소"
+                                        style="min-width: 460px; width: 460px"
+                                      />
+                                    </div>
+                                    <div class="kfsi-mypage-address-input">
+                                      <input
+                                        type="text"
+                                        class="form-control mo-w-100"
+                                        title="상세 주소"
+                                        style="min-width: 460px; width: 460px"
+                                      />
+                                    </div>
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="kfsi-h4">수수료 결제</h4>
+                  <div class="mb-15 mb-10">
+                    <div
+                      class="kfsi-box text-center border"
+                      style="background: #f9fafc"
+                    >
+                      발급수수료 <span class="text-danger">10,000</span> 원 +
+                      배송료(별도) <span class="text-danger">3,000</span> 원 =
+                      <strong
+                        >총 <span class="text-danger">13,000</span> 원</strong
+                      >
+                    </div>
+                  </div>
+                  <div class="kfsi-tab03 mt-10">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link active"
+                          id="tab01"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab01-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="tab01-pane"
+                          aria-selected="true"
+                        >
+                          무통장 입금
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="tab02"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab02-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="tab02-pane"
+                          aria-selected="false"
+                        >
+                          신용카드 결제
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div
+                        class="tab-pane fade show active"
+                        id="tab01-pane"
+                        role="tabpanel"
+                        aria-labelledby="tab01"
+                        tabindex="0"
+                      >
+                        <div class="kfsi-tab03-contents p-0">
+                          <div class="kfsi-board">
+                            <div class="kfsi-board-write">
+                              <div class="kfsi-board-write-form border-0">
+                                <table
+                                  summary="무통장 입금 시 필요한 정보인 입금은행 선택, 현금영수증 신청, 발급번호 입력 및 전자계산서 신청 기한을 포함한 표입니다."
+                                >
+                                  <caption>
+                                    무통장 입금 정보
+                                  </caption>
+                                  <colgroup>
+                                    <col style="width: 180px" />
+                                    <col style="width: 760px" />
+                                  </colgroup>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row" class="bg-primary-subtle">
+                                        입금은행 선택
+                                      </th>
+                                      <td>
+                                        <select
+                                          class="form-select"
+                                          aria-label="입금은행 선택"
+                                          title="입금은행 선택"
+                                        >
+                                          <option selected>선택</option>
+                                        </select>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row" class="bg-primary-subtle">
+                                        현금영수증
+                                      </th>
+                                      <td>
+                                        <select
+                                          class="form-select"
+                                          aria-label="입금은행 선택"
+                                          title="입금은행 선택"
+                                        >
+                                          <option selected>선택</option>
+                                        </select>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row" class="bg-primary-subtle">
+                                        현금영수증<br />
+                                        발급번호
+                                      </th>
+                                      <td>
+                                        <div
+                                          class="d-flex align-items-center gap-2 mo-flex-column"
+                                        >
+                                          <input
+                                            type="text"
+                                            class="form-control mo-w-100"
+                                            title="현금영수증 발급번호"
+                                          />
+                                          <div>
+                                            휴대폰번호 등 국세청에 신고된 번호
+                                            입력
+                                            <span class="text-danger"
+                                              >(주민번호 사용불가)</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row" class="bg-primary-subtle">
+                                        전자계산서<br />
+                                        신청기한
+                                      </th>
+                                      <td>
+                                        발급을 원하는 작성일자의 다음달 7일까지
+                                        신청하셔야 작성일자의 계산서를
+                                        발급받으실 수 있습니다.<br />
+                                        (기한경과시 발급불가)
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mt-10">
+                          <div class="kfsi-member-accordion">
+                            <div class="accordion" id="accordionExample">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <div class="accordion-button">
+                                    전자계산서는 어떻게 신청하나요?
+                                    <button
+                                      type="button"
+                                      data-bs-toggle="collapse"
+                                      data-bs-target="#collapseOne"
+                                      aria-expanded="true"
+                                      aria-controls="collapseOne"
+                                    >
+                                      열기
+                                    </button>
+                                  </div>
+                                </h2>
+                                <div
+                                  id="collapseOne"
+                                  class="accordion-collapse collapse"
+                                  data-bs-parent="#accordionExample"
+                                >
+                                  <div class="accordion-body">
+                                    <strong>1. 발급요건</strong><br />
+                                    - “현금결제”하시거나 “계좌입금”하셔야 발급이
+                                    가능합니다.<br />
+                                    <span class="text-danger"
+                                      >※ 신용카드 결제 시 계산서 발급이
+                                      불가합니다.</span
+                                    ><br />
+                                    <strong>2. 발급되는 계산서의 종류</strong
+                                    ><br />
+                                    -부가가치세액이 없는 면세 “전자계산서”<br />
+                                    <span class="text-danger"
+                                      >※ 안전원 회비 납부는 계산서 발행대상이
+                                      되지 않습니다.</span
+                                    ><br />
+                                    <strong>3. 신청기한</strong><br />
+                                    - 발급을 원하는 작성일자의 다음달 7일까지
+                                    신청하셔야 원하는 작성일자의 계산서를 발급
+                                    받으실 수 있습니다.<br />
+                                    <strong>4. 신청방법</strong><br />
+                                    1) 인터넷 신청<br />
+                                      - 신청가능기간 : 결제일로부터 다음달
+                                    7일까지<br />
+                                      - 신청방법<br />
+                                         ①「나의 신청내역」또는「상세보기
+                                    화면」에서「계산서」버튼을 클릭합니다.<br />
+                                         ② 기재사항을 작성하고
+                                    사업자등록증파일을 첨부하여 저장합니다.<br />
+                                      - 신청 후「계산서」버튼을 클릭하여
+                                    진행상황을 조회하실 수 있습니다.<br />
+                                      - 발급 완료 시 기재하신 이메일로 계산서가
+                                    발송됩니다.<br />
+                                    2) 오프라인 신청<br />
+                                      - 사업자등록증 사본에 아래사항을 기재하여
+                                    제출합니다.<br />
+                                         ① 수강자명 또는 신청자명(생년월일을
+                                    함께 기재)<br />
+                                         ② 교육과정 또는 자격수첩명칭<br />
+                                         ③ 계산서 수령용 이메일 주소<br />
+                                         ④ 발급을 원하는 계산서 작성일자<br />
+                                          
+                                    <span class="text-danger"
+                                      >※ 단, 발급을 원하는 작성일자의 다음달
+                                      7일까지 신청하여야함.</span
+                                    ><br />
+                                         ⑤ 연락처<br />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kfsi-textlist mt-10 ms-0">
+                          <ul>
+                            <li>무통장계좌는 신청자 전용계좌입니다.</li>
+                            <li>
+                              무통장입금의 경우, 교육시작 전 공공기관은
+                              접수일+5일 18시까지, 그 외의 직능은 접수일 +1일
+                              18시까지 입금해 주시기 바랍니다.
+                            </li>
+                            <li>
+                              단, 온라인 강습의 경우 접수마감일 기준으로
+                              입금기한이 변경될 수 있으니 입금 안내 문자를 꼭
+                              참고하시기 바랍니다.
+                            </li>
+                            <li>
+                              과오납이나 분할납이 허용되지 않으므로 정확한
+                              금액을 입금하셔야 합니다.
+                            </li>
+                            <li>
+                              입금은행의 규정에 따라 송금수수료가 발생할 수
+                              있습니다.
+                            </li>
+                            <li>
+                              은행 ATM CD기를 이용한 입금이 불가합니다. 은행
+                              창구나 인터넷 뱅킹, 폰 뱅킹을 사용하여 입금하시기
+                              바랍니다.
+                            </li>
+                            <li>
+                              만료일시까지 입금하지 않을 경우, 신청하신 교육이
+                              자동으로 취소됩니다.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="tab02-pane"
+                        role="tabpanel"
+                        aria-labelledby="tab02"
+                        tabindex="0"
+                      >
+                        <div class="kfsi-tab03-contents">
+                          <div class="kfsi-textlist ms-0">
+                            <ul>
+                              <li>
+                                신용카드 결제 시 전자계산서는 발행되지 않습니다.
+                              </li>
+                              <li>
+                                계산서 발급이 필요한 경우 무통장계좌 입금으로
+                                결제하시기 바랍니다.
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-button">
+                  <p>
+                    <a href="" class="btn btn-primary btn-lg">결제하기</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
