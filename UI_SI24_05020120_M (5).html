@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">강습교육</a>
+              <a href="" class="kfsi-snb-item active">실무교육</a>
+              <a href="" class="kfsi-snb-item">의용소방대교육</a>
+              <a href="" class="kfsi-snb-item">다중이용업교육</a>
+              <a href="" class="kfsi-snb-item">열린교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">교육신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      실무교육 신청
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>실무교육 신청</h1>
+              </div>
+              <div class="kfsi-education">
+                <div class="kfsi-nav kfsi-nav--step4">
+                  <ol>
+                    <li>
+                      <span>01</span>
+                      <strong>교육정보 확인</strong>
+                    </li>
+                    <li class="active">
+                      <span>02</span>
+                      <strong>교육 안내사항</strong>
+                    </li>
+                    <li>
+                      <span>03</span>
+                      <strong>수강자 정보입력 </strong>
+                    </li>
+                  </ol>
+                </div>
+                <div class="kfsi-education">
+                  <h4 class="kfsi-h4">교육 안내사항을 모두 확인해 주세요.</h4>
+                  <div class="kfsi-textlist">
+                    <ul>
+                      <li>
+                        각 안내사항 명을 클릭하여 상세내용을 확인 후 내용 맨
+                        하단의 버튼을 클릭하여 확인을 완료해 주세요.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="kfsi-education-agree">
+                    <div
+                      class="kfsi-education-agree-menu"
+                      id="myTab"
+                      role="tablist"
+                    >
+                      <div
+                        role="presentation"
+                        class="kfsi-education-agree-menu-item"
+                      >
+                        <button
+                          class="nav-link active"
+                          id="tab01"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab01-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="tab01-pane"
+                          aria-selected="true"
+                        >
+                          대리교육 금지 안내
+                        </button>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="tab-checkbox01"
+                            tabindex="-1"
+                          />
+                          <label class="form-check-label" for="tab-checkbox01">
+                            <span class="text-primary">확인</span>
+                            <span class="text-danger">미확인</span>
+                          </label>
+                          <div class="kfsi-education-agree-menu-bg"></div>
+                        </div>
+                      </div>
+                      <div
+                        class="kfsi-education-agree-contents-item tab-pane fade show active"
+                        id="tab01-pane"
+                        role="tabpanel"
+                        aria-labelledby="tab01"
+                      >
+                        <h6 class="mb-4">
+                          <strong>대리교육 금지 안내</strong>
+                        </h6>
+                        <div class="mb-10">
+                          <div class="mb-2">
+                            <strong>본인 참석여부 확인</strong>
+                          </div>
+                          <div class="kfsi-textlist">
+                            <ul>
+                              <li>
+                                <span class="text-info">대리교육</span>은 교육의
+                                목적을 침해할 뿐만 아니라 교육에 참석한 선량한
+                                관리자에게 불이익을 초래하여 교육 질서를
+                                문란하게 하는 등 소방안전교육제도의 실효성을
+                                확보하기
+                                <span class="text-info">어려워 엄격히</span>
+                                금지되고 있습니다.
+                              </li>
+                              <li>
+                                이에
+                                <span class="text-info"
+                                  >교육 참석자 얼굴과 교육원서(선임 자격수첩
+                                  또는 신분증) 등을 대조하여 본인 여부를
+                                  확인</span
+                                >하고 있음을 양지하여 주시기 바랍니다.
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="mb-10">
+                          <div class="mb-2">
+                            <strong>기타 유의사항</strong>
+                          </div>
+                          <div class="kfsi-textlist">
+                            <ul>
+                              <li>
+                                본인 참석여부 확인을 통해
+                                <span class="text-info"
+                                  >대리교육임이 발견될 경우 즉각 퇴실조치되며
+                                  해당 교육은 무효처리</span
+                                >
+                                됩니다.
+                              </li>
+                              <li>
+                                사후 적발된 경우라도 교육무효처리는 물론
+                                형사고발 조치되며 형법 제137조에 따라
+                                <span class="text-info"
+                                  >5년 이하의 징역 또는 1천만원 이하의
+                                  벌금</span
+                                >에 처할 수 있습니다.
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="text-center">
+                          <button
+                            type="button"
+                            class="btn btn-secondary btn-sm"
+                            onclick="document.getElementById('tab-checkbox01').checked = true;"
+                          >
+                            위 내용을 확인했습니다.
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        role="presentation"
+                        class="kfsi-education-agree-menu-item"
+                      >
+                        <button
+                          class="nav-link"
+                          id="tab02"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab02-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="tab02-pane"
+                          aria-selected="false"
+                        >
+                          교육접수시 주의사항 및 환불기준
+                        </button>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="tab-checkbox02"
+                            tabindex="-1"
+                          />
+                          <label class="form-check-label" for="tab-checkbox02">
+                            <span class="text-primary">확인</span>
+                            <span class="text-danger">미확인</span>
+                          </label>
+                          <div class="kfsi-education-agree-menu-bg"></div>
+                        </div>
+                      </div>
+                      <div
+                        class="kfsi-education-agree-contents-item fade"
+                        id="tab02-pane"
+                        role="tabpanel"
+                        aria-labelledby="tab02"
+                      >
+                        <h6 class="mb-4">
+                          <strong>교육접수시 주의사항 및 환불기준</strong>
+                        </h6>
+                        <div class="mb-10">
+                          <div class="mb-2">
+                            <strong>접수 시 주의사항</strong>
+                          </div>
+                          <ol>
+                            <li>
+                              선착순 접수이므로 조기에 마감 될 수 있습니다.
+                            </li>
+                            <li>
+                              지부 사정 또는 접수 상황에 따라 교육 일정이 변경
+                              또는 취소될 수 있습니다.
+                            </li>
+                            <li>
+                              <div class="kfsi-textlist">
+                                <ul>
+                                  <li>
+                                    (집합 강습교육 접수자) 1급·2급·3급
+                                    소방안전관리자 강습교육은 마지막날 시험이
+                                    포함되어 있습니다.
+                                  </li>
+                                  <li>
+                                    (집합 강습교육 접수자) 1급·2급·3급
+                                    소방안전관리자 강습교육은 마지막날 시험이
+                                    포함되어 있습니다.
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li>
+                              교육과정별 결격처리시간은 다음과 같으며 1일 최대
+                              3시간을 초과할 수 없습니다.
+                            </li>
+                          </ol>
+                          <div class="kfsi-table">
+                            <table
+                              summary="이 표는 다양한 소방안전관리 및 위험물 안전관리 교육과정의 교육 시간과 결격처리 기준을 나타냅니다."
+                            >
+                              <caption>
+                                소방안전 및 위험물 안전관리 교육과정
+                              </caption>
+                              <colgroup>
+                                <col width="43%" />
+                                <col width="23%" />
+                                <col width="33%" />
+                              </colgroup>
+                              <thead>
+                                <tr>
+                                  <th scope="col">교육과정</th>
+                                  <th scope="col">교육시간(h)</th>
+                                  <th scope="col">결격처리시간</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>특급 소방안전관리자</td>
+                                  <td>160</td>
+                                  <td>16시간 초과</td>
+                                </tr>
+                                <tr>
+                                  <td>1급 소방안전관리자</td>
+                                  <td>80</td>
+                                  <td>8시간 초과</td>
+                                </tr>
+                                <tr>
+                                  <td>2급 소방안전관리자</td>
+                                  <td>40</td>
+                                  <td>4시간 초과</td>
+                                </tr>
+                                <tr>
+                                  <td>3급 소방안전관리자</td>
+                                  <td>24</td>
+                                  <td>3시간 이상</td>
+                                </tr>
+                                <tr>
+                                  <td>공공기관 소방안전관리자</td>
+                                  <td>40</td>
+                                  <td>4시간 초과</td>
+                                </tr>
+                                <tr>
+                                  <td>업무대행감독 소방안전관리자</td>
+                                  <td>16</td>
+                                  <td>2시간 이상</td>
+                                </tr>
+                                <tr>
+                                  <td>건설현장 소방안전관리자</td>
+                                  <td>24</td>
+                                  <td>3시간 이상</td>
+                                </tr>
+                                <tr>
+                                  <td>위험물안전관리자</td>
+                                  <td>24</td>
+                                  <td>3시간 이상</td>
+                                </tr>
+                                <tr>
+                                  <td>위험물운송자</td>
+                                  <td>16</td>
+                                  <td>2시간 이상</td>
+                                </tr>
+                                <tr>
+                                  <td>위험물통합자</td>
+                                  <td>32</td>
+                                  <td>3시간 이상</td>
+                                </tr>
+                                <tr>
+                                  <td>위험물운반자</td>
+                                  <td>8</td>
+                                  <td>1시간 이상</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="mb-10">
+                          <div class="mb-2">
+                            <strong>교육수수료 환불기준</strong>
+                          </div>
+                          <ol>
+                            <li>
+                              환불 방법 : 홈페이지 ‘강습교육 신청내역＇에서 취소
+                              신청 또는 지부 사무실로 환불신청서 제출
+                            </li>
+                            <li>
+                              <div class="kfsi-textlist">
+                                <ul>
+                                  <li>
+                                    (집합 강습교육 접수자) 1일차 교육 당일
+                                    18시까지 일정변경 및 전액 환불이 가능합니다.
+                                  </li>
+                                  <li>
+                                    (원격·혼용 강습교육 접수자) 강습교재 발송
+                                    전일까지 일정변경 및 전액 환불이
+                                    가능합니다.<br />
+                                    ※ 원격 강습교육 접수 시 전 주 월요일에
+                                    교재는 택배 발송되며, 교재 발송 이후에는
+                                    일정변경 및 전액 환불이 일부 제한됩니다.
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ol>
+                          <div class="kfsi-table">
+                            <table
+                              summary="수수료 환불기준 및 금액 - 환불기준, 교육수수료 환불금액"
+                            >
+                              <caption>
+                                수수료 환불기준 및 금액
+                              </caption>
+                              <thead>
+                                <tr>
+                                  <th scope="col">환불기준</th>
+                                  <th scope="col">교육수수료 환불금액</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    수강자가 1일차 교육 종료 전까지 신청할 경우
+                                  </td>
+                                  <td>전액</td>
+                                </tr>
+                                <tr class="center">
+                                  <td>과오납한 경우</td>
+                                  <td>과오납 금액</td>
+                                </tr>
+                                <tr class="center">
+                                  <td>
+                                    일부 교육을 받은후 신청할 경우<br />(교육시작일로부터
+                                    1년 이내 신청)
+                                  </td>
+                                  <td>
+                                    교육받은 일수만큼 교육수수료를 공제한 금액
+                                  </td>
+                                </tr>
+                                <tr class="center">
+                                  <td>
+                                    교육을 받지 않고 신청할 경우<br />(교육시작일로부터
+                                    1년 이내 신청)
+                                  </td>
+                                  <td>교육수수료를 20%를 공제한 금액</td>
+                                </tr>
+                                <tr class="center">
+                                  <td>
+                                    교육시작일로부터 1년이 지난 후 신청 할 경우
+                                  </td>
+                                  <td>없음</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="mb-10">
+                          <div class="mb-2">
+                            <strong>환불시 주의사항</strong>
+                          </div>
+                          <ol>
+                            <li>
+                              신용카드 결제 후 1일차 교육 종료 후에 환불 신청 할
+                              경우, 별도의 공제금액이 발생하므로 인터넷으로 환불
+                              신청을 할 수 없으며, 해당 지부로 방문하셔서 환불
+                              신청하셔야 합니다.
+                            </li>
+                            <li>
+                              무통장으로 입금하신 후 환불 신청할 경우 금융기관
+                              송금수수료를 제한 금액이 환불됩니다.
+                            </li>
+                            <li>
+                              사이버교육의 교육일수는 사이버교육의 학습인정시간
+                              기준에 따라 산정되어 환불됩니다.
+                            </li>
+                            <li>
+                              일부교육 이수 후 환불하였을 경우, 이수한
+                              교육시간은 인정되지 않습니다.
+                            </li>
+                          </ol>
+                        </div>
+                        <div class="text-center">
+                          <button
+                            type="button"
+                            class="btn btn-secondary btn-sm"
+                            onclick="document.getElementById('tab-checkbox02').checked = true;"
+                          >
+                            위 내용을 확인했습니다.
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        role="presentation"
+                        class="kfsi-education-agree-menu-item"
+                      >
+                        <button
+                          class="nav-link"
+                          id="tab03"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab03-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="tab03-pane"
+                          aria-selected="false"
+                        >
+                          실무교육(사이버)이수 안내
+                        </button>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="tab-checkbox03"
+                            tabindex="-1"
+                          />
+                          <label class="form-check-label" for="tab-checkbox03">
+                            <span class="text-primary">확인</span>
+                            <span class="text-danger">미확인</span>
+                          </label>
+                          <div class="kfsi-education-agree-menu-bg"></div>
+                        </div>
+                      </div>
+                      <div
+                        class="kfsi-education-agree-contents-item fade"
+                        id="tab03-pane"
+                        role="tabpanel"
+                        aria-labelledby="tab03"
+                      >
+                        <h6 class="mb-4">
+                          <strong>실무교육(사이버)이수 안내</strong>
+                        </h6>
+                        <div class="mb-10">
+                          <ol>
+                            <li>
+                              귀하께서 접수하신 교육과정은 다음과 같습니다.<br />
+                              <br />
+                              교육과정 : 소방안전관리자(사전이수과정)<br />
+                              교육장소(교육형태) : 온라인학습(사이버) + 안전원
+                              교육장(소집)<br />
+                              비고 : 사이버교육 사전 이수 후, 안전원교육장에서
+                              소집교육 이수<br />
+                              <br />
+                            </li>
+                            <li class="text-danger">
+                              반드시 사이버교육을 사전 이수 후, 소집교육에
+                              참석하여 <br />
+                              주시기 바랍니다.<br />
+                              ※ 사이버교육 미이수시 소집교육 참석이 불가합니다.
+                            </li>
+                          </ol>
+                        </div>
+                        <div class="text-center">
+                          <button
+                            type="button"
+                            class="btn btn-secondary btn-sm"
+                            onclick="document.getElementById('tab-checkbox03').checked = true;"
+                          >
+                            위 내용을 확인했습니다.
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        role="presentation"
+                        class="kfsi-education-agree-menu-item"
+                      >
+                        <button
+                          class="nav-link"
+                          id="tab04"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab04-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="tab04-pane"
+                          aria-selected="false"
+                        >
+                          교육 및 시험 관련 감염병 관련 유의사항
+                        </button>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="tab-checkbox04"
+                            tabindex="-1"
+                          />
+                          <label class="form-check-label" for="tab-checkbox04">
+                            <span class="text-primary">확인</span>
+                            <span class="text-danger">미확인</span>
+                          </label>
+                          <div class="kfsi-education-agree-menu-bg"></div>
+                        </div>
+                      </div>
+                      <div
+                        class="kfsi-education-agree-contents-item fade"
+                        id="tab04-pane"
+                        role="tabpanel"
+                        aria-labelledby="tab03"
+                      >
+                        <h6 class="mb-4">
+                          <strong>개인정보 수집 및 이동 등에 관한 안내</strong>
+                        </h6>
+                        <div class="mb-10">
+                          <div class="mb-5">
+                            한국소방안전원에서는 「개인정보보호법」
+                            제15조제1항제3호에 따라 정보주체의 동의 없이 다음과
+                            같이 개인정보를 수집·이용하고 있음을 알려드립니다.
+                          </div>
+                          <div class="mb-5">
+                            1. 개인정보 수집 근거법령<br />
+                            ① 교육실시근거<br />
+                            「화재의 예방 및 안전관리에 관한 법률」 제34조 및
+                            같은 법 시행규칙 제25조부터 제33조까지<br />
+                            「공공기관의 소방안전관리에 관한 규정」 제5조<br />
+                            「위험물안전관리법」 제28조 및 같은 법 시행규칙
+                            제78조<br />
+                            <br />
+                            ② 자격시험실시 근거<br />
+                            「화재의 예방 및 안전관리에 관한 법률」 제32조, 같은
+                            법 시행령 제31조 및 같은 법 시행규칙 제20조부터
+                            제24조까지<br />
+                            <br />
+                            ③ 자격증 발급 근거<br />
+                            「화재의 예방 및 안전관리에 관한 법률」 제30조 및
+                            제31조, 같은 법 시행령 제30조 및 같은 법 시행규칙
+                            제18조 및 제19조<br />
+                            <br />
+                            ④ 교육, 자격시험 및 자격증 발급 위탁 근거<br />
+                            「화재의 예방 및 안전관리에 관한 법률」 제48조<br />
+                            「위험물안전관리법」 제30조 및 같은 법 시행령
+                            제22조<br />
+                            <br />
+                            ⑤ 고유식별정보 수집근거<br />
+                            「화재의 예방 및 안전관리에 관한 법률 시행령」
+                            제49조<br />
+                            「위험물안전관리법 시행령」 제22조의2 제11호<br />
+                            <br />
+                            2. 개인정보 수집항목<br />
+                            ① 필수항목 : 성명, 생년월일, 성별, 개인식별정보(CI,
+                            DI포함), 주소, 휴대폰번호, 현금 환불시(계좌번호),
+                            사진, 이메일(원격교육 시), 근무처(공공기관
+                            소방안전관리자 강습교육)<br />
+                            ② 선택항목 : 근무처(공공기관 소방안전관리자 강습교육
+                            外), 소속, 전화번호, 이메일(집합교육 시)<br />
+                            <br />
+                            3. 개인정보 수집목적<br />
+                            ① 안전원 교수이수기록 관리<br />
+                            ② 교육수수료 환불 등 교육행정업무처리<br />
+                            ③ 소방안전관리자 자격시험에 관한 사무<br />
+                            ④ 소방안전관리자 자격증의 발급·재발급에 관한 사무<br />
+                            ⑤ 소방안전관리자 자격의 정지·취소에 관한 사무<br />
+                            <br />
+                            <strong>
+                              4. 수집한 개인정보의 보유, 이용기간<br />
+                              ① 안전원 자격 취득자 : 준영구<br />
+                              ② 안전원 강습 및 실무교육 이수자 : 준영구<br />
+                              ③ 안전원 강습교육 미수료자 : 교육일로부터 3년<br />
+                              ④ 소방안전관리자 자격시험 접수자 : 준영구
+                            </strong>
+                          </div>
+                          <div>
+                            안전원은 수집된 귀하의 개인정보를 그 이용목적으로만
+                            이용할 것이며, 사용목적이 변경될 시에는 반드시
+                            귀하께 사전동의를 구할 것입니다.
+                          </div>
+                        </div>
+                        <div class="text-center">
+                          <button
+                            type="button"
+                            class="btn btn-secondary btn-sm"
+                            onclick="document.getElementById('tab-checkbox04').checked = true;"
+                          >
+                            위 내용을 확인했습니다.
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-education-agree-text">
+                      ※ 한국소방안전원에서는 「개인정보보호법」
+                      제15조제1항제3호에 따라 정보주체의 동의 없이 다음과 같이
+                      개인정보를 수집·이용하고 있음을 알려드립니다.
+                    </div>
+                  </div>
+                  <div class="kfsi-button">
+                    <p>
+                      <a href="" class="btn btn-primary btn-lg">다음</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
