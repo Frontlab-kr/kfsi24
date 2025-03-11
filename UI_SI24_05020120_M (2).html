@@ -148,6 +148,17 @@
                             <button class="nav-link" type="button">제주</button>
                           </li>
                         </ul>
+                        <script>
+                          $(document).ready(function () {
+                            $('.nav-link').on('click', function () {
+                              $(this)
+                                .parents('.nav')
+                                .find('.nav-link')
+                                .removeClass('active');
+                              $(this).addClass('active');
+                            });
+                          });
+                        </script>
                       </div>
                       <div class="kfsi-apply-contents">
                         <div class="kfsi-apply-contents-box">
@@ -906,7 +917,11 @@
                         서울동부 (신설동)
                       </div>
                       <div class="kfsi-apply-list-item__table">
-                        <div class="kfsi-table">
+                        <div
+                          class="kfsi-table"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modal01"
+                        >
                           <table
                             summary="서울동부(신설동) 교육의 일시, 유형, 접수 가능 인원, 교육장소 정보를 포함한 표입니다."
                           >
@@ -951,7 +966,11 @@
                             </tbody>
                           </table>
                         </div>
-                        <div class="kfsi-table">
+                        <div
+                          class="kfsi-table"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modal01"
+                        >
                           <table
                             summary="서울동부(신설동) 교육의 일시, 유형, 접수 가능 인원, 교육장소 정보를 포함한 표입니다."
                           >
@@ -990,7 +1009,11 @@
                             </tbody>
                           </table>
                         </div>
-                        <div class="kfsi-table">
+                        <div
+                          class="kfsi-table"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modal01"
+                        >
                           <table
                             summary="서울동부(신설동) 교육의 일시, 유형, 접수 가능 인원, 교육장소 정보를 포함한 표입니다."
                           >
@@ -1034,7 +1057,11 @@
                     <div class="kfsi-apply-list-item" id="section02">
                       <div class="kfsi-apply-list-item__title">부산</div>
                       <div class="kfsi-apply-list-item__table">
-                        <div class="kfsi-table">
+                        <div
+                          class="kfsi-table"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modal01"
+                        >
                           <table
                             summary="서울동부(신설동) 교육의 일시, 유형, 접수 가능 인원, 교육장소 정보를 포함한 표입니다."
                           >
@@ -1079,7 +1106,11 @@
                             </tbody>
                           </table>
                         </div>
-                        <div class="kfsi-table">
+                        <div
+                          class="kfsi-table"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modal01"
+                        >
                           <table
                             summary="서울동부(신설동) 교육의 일시, 유형, 접수 가능 인원, 교육장소 정보를 포함한 표입니다."
                           >
@@ -1118,7 +1149,11 @@
                             </tbody>
                           </table>
                         </div>
-                        <div class="kfsi-table">
+                        <div
+                          class="kfsi-table"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modal01"
+                        >
                           <table
                             summary="서울동부(신설동) 교육의 일시, 유형, 접수 가능 인원, 교육장소 정보를 포함한 표입니다."
                           >
