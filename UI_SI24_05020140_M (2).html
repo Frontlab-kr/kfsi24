@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">강습교육</a>
+              <a href="" class="kfsi-snb-item active">실무교육</a>
+              <a href="" class="kfsi-snb-item">의용소방대교육</a>
+              <a href="" class="kfsi-snb-item">다중이용업교육</a>
+              <a href="" class="kfsi-snb-item">열린교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">교육신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      실무교육 신청
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>실무교육 신청</h1>
+              </div>
+              <div class="kfsi-education">
+                <div class="mb-10 text-center fs-22 mo-fs-17 text-primary">
+                  <strong>※ 교육신청이 성공적으로 완료되었습니다.</strong>
+                </div>
+                <div class="mb-15 mo-mb-10">
+                  <k4 class="kfsi-h4">선택교육정보</k4>
+                  <div class="kfsi-board">
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form">
+                        <table
+                          summary="소방안전관리자 사전이수과정의 교육 일정, 장소 및 지부 정보를 제공합니다."
+                        >
+                          <caption>
+                            소방안전관리자 교육 정보
+                          </caption>
+                          <colgroup>
+                            <col style="width: 180px" />
+                            <col style="width: 760px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row">교육과정</th>
+                              <td class="text-start">
+                                <div>소방안전관리자 (사전이수과정)</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">교육일자</th>
+                              <td class="text-start">
+                                <div>11.16(토) 09:00 [주말]</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">지부</th>
+                              <td class="text-start">
+                                <div>충북지부 (043-237-3119)</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">교육장소</th>
+                              <td class="text-start">
+                                <div>
+                                  [비대면 실시간 온라인교육] 자택권장<br />
+                                  [집합교육]한국소방안전원 충북지부(청주시
+                                  서원구 2순환로 1502번길 5)
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-15 mo-mb-10">
+                  <h4 class="kfsi-h4">회비납부</h4>
+                  <div class="mb-5">
+                    ■ 김소방님은
+                    <strong class="text-primary">안전원 회원입니다.</strong
+                    ><br />
+                    ■ 납부하실 회비 :
+                    <strong>2025년도 안전원 회비 48,000원</strong>
+                  </div>
+                  <div class="kfsi-agree-form kfsi-agree-form-type2">
+                    <div class="kfsi-agree-form__title">
+                      <div>
+                        회비를 납부하시면
+                        <span class="text-decoration-underline"
+                          >교육비 면제 및 회원 혜택</span
+                        >을 받으실 수 있습니다.
+                      </div>
+                    </div>
+                    <div class="kfsi-agree-form__contents">
+                      <div class="mb-10 border py-7 px-3 mo-py-4">
+                        <div class="mb-7 text-center text-primary">
+                          <strong><안전원 회원서비스 주요 내용></strong>
+                        </div>
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li class="mb-6">
+                              <strong
+                                >소방계획서 및 소방업무메뉴얼 등 영상 자료 무료
+                                제공 (회원만 열람 가능 : 168편)</strong
+                              >
+                              <div class="mt-2 fs-15">
+                                소방안전관리(보조)자에게 필요한
+                                <span class="text-decoration-underline"
+                                  >소방계획서 작성법, 소방교육 및 훈련방법,
+                                  소방시설점검방법</span
+                                >
+                                등, 위험물안전관리자에게 필요한 위험물 점검 및
+                                점검표 작성방법 등, 소방기술자에게 필요한 가스계
+                                소화설비 및 제연설비의 설계·감리·점검 시 문제점
+                                및 개선방안 등
+                                <span class="text-decoration-underline"
+                                  >업무매뉴얼 영상자료 무료 제공</span
+                                >
+                              </div>
+                            </li>
+                            <li class="mb-6">
+                              <strong
+                                >화재 재해를 입은 회원에게 100만원~500만원
+                                재해위로금 지급</strong
+                              >
+                              <div class="mt-2 fs-15">
+                                회원 본연의 업무 수행 중 화재의 직접적인 결과로
+                                인해 재해를 입은 경우,
+                                <span class="text-decoration-underline"
+                                  >부상자 100만원</span
+                                >,
+                                <span class="text-decoration-underline"
+                                  >사망자 500만원</span
+                                >의 재해위로금을 드립니다.<br />
+                                <span class="text-danger">
+                                  ※ 신청자격 : 화재발생일까지 회원가입 기간 1년
+                                  이상인 사람으로 회비를 완납한 회원<br />
+                                  ※ 신청기간 : 화재발생일로부터 2년 이내
+                                </span>
+                              </div>
+                            </li>
+                            <li>
+                              <strong>3,300여권 전자도서 무료대여</strong>
+                              <div class="mt-2 fs-15">
+                                회원서비스 증진을 위한 전자도서
+                                <span class="text-decoration-underline"
+                                  >3,300여권을 무료로 대여</span
+                                >해 드립니다.
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="mb-2 fs-18">
+                          <strong
+                            >※ 모바일 정보제공 수신여부 동의 (선택사항)</strong
+                          >
+                        </div>
+                        <div class="mx-4">
+                          모바일을 통해 안전원에서 제공하는 정보를
+                          받으시겠습니까?
+                        </div>
+                        <div
+                          class="d-flex justify-content-end mo-flex-column column-gap-10 mo-mt-4"
+                        >
+                          <div class="form-check mx-2">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="radio1-1"
+                            />
+                            <label class="form-check-label" for="radio1-1">
+                              동의합니다.
+                            </label>
+                          </div>
+                          <div class="form-check mx-2">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="radio1-2"
+                            />
+                            <label class="form-check-label" for="radio1-2">
+                              동의하지 않습니다.
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-agree-form__foot">
+                      <div class="mb-2 text-danger">
+                        ※ 회원을 탈퇴하시면 회원서비스를 받으실 수 없으며,
+                        별도로 교육비를 납부하셔야 합니다.
+                      </div>
+                      <button type="button" class="btn btn-secondary btn-sm">
+                        교육비로 납부하기 (회원탈퇴)
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-15 mo-mb-10">
+                  <h4 class="kfsi-h4">수수료 결제</h4>
+                  <div class="kfsi-tab03">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link active"
+                          id="tab01"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab01-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="tab01-pane"
+                          aria-selected="true"
+                        >
+                          무통장 입금
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="tab02"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab02-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="tab02-pane"
+                          aria-selected="false"
+                        >
+                          신용카드 결제
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div
+                        class="tab-pane fade show active"
+                        id="tab01-pane"
+                        role="tabpanel"
+                        aria-labelledby="tab01"
+                        tabindex="0"
+                      >
+                        <div class="kfsi-tab03-contents p-0">
+                          <div class="kfsi-board">
+                            <div class="kfsi-board-write">
+                              <div class="kfsi-board-write-form border-0">
+                                <table
+                                  summary="무통장 입금 시 필요한 정보인 입금은행 선택, 현금영수증 신청, 발급번호 입력 및 전자계산서 신청 기한을 포함한 표입니다."
+                                >
+                                  <caption>
+                                    무통장 입금 정보
+                                  </caption>
+                                  <colgroup>
+                                    <col style="width: 180px" />
+                                    <col style="width: 760px" />
+                                  </colgroup>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row" class="bg-primary-subtle">
+                                        입금은행 선택
+                                      </th>
+                                      <td>
+                                        <select
+                                          class="form-select"
+                                          aria-label="입금은행 선택"
+                                          title="입금은행 선택"
+                                        >
+                                          <option selected>선택</option>
+                                        </select>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row" class="bg-primary-subtle">
+                                        현금영수증
+                                      </th>
+                                      <td>
+                                        <select
+                                          class="form-select"
+                                          aria-label="입금은행 선택"
+                                          title="입금은행 선택"
+                                        >
+                                          <option selected>선택</option>
+                                        </select>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row" class="bg-primary-subtle">
+                                        현금영수증<br />
+                                        발급번호
+                                      </th>
+                                      <td>
+                                        <div
+                                          class="d-flex align-items-center gap-2 mo-flex-column w-100 mo-align-items-start"
+                                        >
+                                          <input
+                                            type="text"
+                                            class="form-control mo-w-100"
+                                            title="현금영수증 발급번호"
+                                          />
+                                          <div>
+                                            휴대폰번호 등 국세청에 신고된 번호
+                                            입력
+                                            <br class="mo" />
+                                            <span class="text-danger"
+                                              >(주민번호 사용불가)</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row" class="bg-primary-subtle">
+                                        전자계산서<br />
+                                        신청기한
+                                      </th>
+                                      <td>
+                                        <div>
+                                          <div class="mb-2">
+                                            발급을 원하는 작성일자의 다음달
+                                            7일까지 신청하셔야 작성일자의
+                                            계산서를 발급받으실 수 있습니다.<br />
+                                            (기한경과시 발급불가)
+                                          </div>
+                                          <a
+                                            href=""
+                                            class="text-decoration-underline text-info"
+                                            >전자계산서 발급안내 보기</a
+                                          >
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kfsi-textlist mt-10 ms-0">
+                          <ul>
+                            <li>가상계좌는 신청자 전용 계좌입니다.</li>
+                            <li>
+                              과오납이나 분할납이 허용되지 않으므로 정확한
+                              금액을 입금하셔야 합니다.
+                            </li>
+                            <li>
+                              입금은행의 규정에 따라 송금수수료가 발생할 수
+                              있습니다.
+                            </li>
+                            <li>
+                              은행 ATM CD기를 이용한 입금이 불가합니다. 은행
+                              창구나 인터넷 뱅킹, 폰 뱅킹을 활용하여 입금하시기
+                              바랍니다.
+                            </li>
+                            <li>
+                              만료일시까지 입금하지 않을 경우, 신청하신 교육이
+                              자동으로 취소됩니다.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="tab02-pane"
+                        role="tabpanel"
+                        aria-labelledby="tab02"
+                        tabindex="0"
+                      >
+                        <div class="kfsi-tab03-contents">
+                          <div class="kfsi-textlist ms-0">
+                            <ul>
+                              <li>
+                                신용카드 결제 시 전자계산서는 발행되지 않습니다.
+                              </li>
+                              <li>
+                                계산서 발급이 필요한 경우 무통장계좌 입금으로
+                                결제하시기 바랍니다.
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-button">
+                  <p>
+                    <a href="" class="btn btn-primary btn-lg">확인</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 5000;
+      "
+    >
+      <div>
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#modal01"
+        >
+          회원 탈퇴 후 교육신청시 주의사항
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal01" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" style="max-width: 600px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5">회원 탈퇴 후 교육신청시 주의사항</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="py-4 px-2 bg-light rounded-4">
+              ○ 교육비는 <strong>55,000원</strong> 입니다.<br />
+              ○ 성명 : 김소방
+              <div class="mt-2 text-danger">
+                ※ 주의사항 : 안전원 회원 탈퇴는 본인이 직접 확인하시고
+                진행하셔야합니다.
+              </div>
+            </div>
+            <div class="mt-4">
+              회원을 탈퇴하실 경우<br />
+              소방계획서 및 소방업무메뉴얼 등 영상자료 무료제공, 화재 재해를
+              입은 회원에게 100만원~500만원 재해위로금 지급, 3,300여권 전자도서
+              무료대여, 소방안전장학금 2억원 지급, 콘도·리조트 등 안전원
+              제휴업체 이용 시 할인 혜택, 회원퀴즈이벤트 참여 등 회원서비스를 더
+              이상 받으실 수 없으며,
+              <span class="text-decoration-underline"
+                >향후 3개월간 회원 재가입이 불가 하오니</span
+              >
+              회원 탈퇴시 신중하게 진행하여 주시기 바랍니다.
+            </div>
+            <div class="d-flex justify-content-center mt-8">
+              <div class="form-check form-check-reverse">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label fs-17" for="flexCheckDefault">
+                  <strong>※ 주의사항을 확인하였으며 이에 동의합니다.</strong>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              data-bs-dismiss="modal"
+            >
+              교육비로 납부하기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

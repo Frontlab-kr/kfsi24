@@ -188,5 +188,139 @@
       </div>
       <div id="footer"></div>
     </div>
+
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 5000;
+      "
+    >
+      <div>
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#modal01"
+        >
+          연락처 수정
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal01" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" style="max-width: 600px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5">연락처 수정</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="kfsi-board">
+              <div class="kfsi-board-write">
+                <div class="kfsi-board-write-form">
+                  <table
+                    summary="휴대폰 번호 입력 및 인증번호 확인을 위한 입력란을 제공합니다."
+                  >
+                    <caption>
+                      휴대폰 인증 정보
+                    </caption>
+                    <colgroup>
+                      <col style="width: 150px" />
+                      <col style="width: 390px" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><span>휴대폰 번호</span></th>
+                        <td>
+                          <span>
+                            <div class="d-flex">
+                              <div class="kfsi-mypage-phone">
+                                <div class="kfsi-mypage-phone-input">
+                                  <select
+                                    class="form-select"
+                                    aria-label="휴대폰 번호 앞자리 선택"
+                                    title="휴대폰 번호 앞자리 선택"
+                                    style="min-width: 80px; width: 80px"
+                                  >
+                                    <option selected>선택</option>
+                                  </select>
+                                  -
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    title="휴대폰 번호 중간 자리 입력"
+                                    style="min-width: 80px; width: 80px"
+                                  />
+                                  -
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    title="휴대폰 번호 마지막 자리 입력"
+                                    style="min-width: 80px; width: 80px"
+                                  />
+                                </div>
+                              </div>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm ms-2"
+                              >
+                                인증번호 전송
+                              </button>
+                            </div>
+                            <div class="mt-1 fs-14 text-333">
+                              (카카오 알림톡 또는 SMS 전송)
+                            </div>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><span>인증번호</span></th>
+                        <td>
+                          <span>
+                            <div class="d-flex">
+                              <input
+                                type="text"
+                                class="form-control w-100"
+                                title="인증번호 입력"
+                              />
+
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm ms-2"
+                              >
+                                인증번호 확인
+                              </button>
+                            </div>
+                          </span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-dark btn-lg"
+              data-bs-dismiss="modal"
+            >
+              취소
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

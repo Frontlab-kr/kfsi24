@@ -29034,7 +29034,7 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.5;
   letter-spacing: 0.48px;
 }
 .kfsi-board-write-form table tbody td + td {
@@ -34143,6 +34143,30 @@ body {
     border-radius: 50px;
     border: 4px solid #8bc53f;
     background: #fff;
+  }
+  .kfsi-agree-form-type2 .kfsi-agree-form__title {
+    padding: 12px 10px;
+    border-top: 2px solid var(--004D16, #004d16);
+    background: #e4f2d3;
+    color: var(--004D16, #004d16);
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+  }
+  .kfsi-agree-form-type2 .kfsi-agree-form__title::before {
+    display: none;
+  }
+  .kfsi-agree-form-type2 .kfsi-agree-form__contents {
+    padding: 0 0 30px 0;
+    border: none;
+  }
+  .kfsi-agree-form-type2 .kfsi-agree-form__foot {
+    padding: 20px;
+    border-radius: 0;
+    border-right: none;
+    border-left: none;
   }
   .kfsi-agree-form__contents {
     padding: 24px 14px;
