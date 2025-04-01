@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>시험 및 점수</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">시험안내(응시자격 등)</a>
+              <a href="" class="kfsi-snb-item active">시험신청</a>
+              <a href="" class="kfsi-snb-item">응시자격 심사 신청</a>
+              <a href="" class="kfsi-snb-item">시험(심사) 신청내역</a>
+              <a href="" class="kfsi-snb-item">시험(평가) 점수확인 </a>
+              <a href="" class="kfsi-snb-item">합격자 발표 조회</a>
+              <a href="" class="kfsi-snb-item">응시자격 자가진단</a>
+              <a href="" class="kfsi-snb-item">시험관련 확인서 신청</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">시험 및 점수</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      시험신청
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>시험신청</h1>
+              </div>
+              <div class="kfsi-education">
+                <div class="mb-15 mo-mb-10">
+                  <h4 class="kfsi-h4">
+                    <div>
+                      사전에 접수진행 중인 시험이 있습니다.
+                      <div class="mt-1 fs-16 fw-normal">
+                        [접수진행 중인 시험]*과 [선택한 시험]** 중에 원하는
+                        시험을 선택해 주세요.
+                      </div>
+                    </div>
+                  </h4>
+                  <div class="kfsi-box bg-light">
+                    * 접수진행 중인 시험 : 선착순으로 들어온 접수페이지에서
+                    원서를 작성중인 상태(미결제 상태)<br />
+                    ** 선택한 시험 : 방금 전 일정표에서 선택한 시험
+                  </div>
+                </div>
+                <div>
+                  <strong class="text-danger">※주의사항</strong>
+                  <p class="m-0 mt-1">
+                    [선택한 시험]의 계속 접수를 클릭하면 [접수진행 중인 시험]이
+                    자동 취소되며, 선착순에 따라 접수페이지(접수가능시),
+                    대기페이지(대기가능시), 접수불가 메시지(정원초과시)가
+                    나타납니다.
+                  </p>
+                  <div class="d-flex gap-6 mt-6 mo-flex-column">
+                    <div class="w-100 border p-6 mo-px-4 mo-py-4">
+                      <div class="text-primary fs-20 mo-fs-17">
+                        <strong>접수 진행중인 시험</strong>
+                      </div>
+                      <div class="kfsi-table mt-3">
+                        <table summary="소방안전관리자 3급 시험 과정 정보">
+                          <caption>
+                            소방안전관리자 3급 시험 과정 안내
+                          </caption>
+                          <colgroup>
+                            <col style="width: 120px" />
+                            <col style="width: 288px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row">시험과정</th>
+                              <td class="text-start bg-light">
+                                <strong>소방안전관리자 3급</strong>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">시험지부</th>
+                              <td class="text-start">
+                                충북지부 (043-237-3119)
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">시험기간</th>
+                              <td class="text-start">11.16(토) 09:00 [주말]</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="kfsi-button mt-10 mo-mt-7">
+                        <p>
+                          <a href="" class="btn btn-primary btn-lg"
+                            >계속 접수하기</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <div class="w-100 border p-6">
+                      <div class="text-primary fs-20 mo-fs-17">
+                        <strong>선택한 시험</strong>
+                      </div>
+                      <div class="kfsi-table mt-3">
+                        <table
+                          summary="소방안전관리자 3급 시험 과정 및 접수 가능 인원 안내"
+                        >
+                          <caption>
+                            소방안전관리자 3급 시험 과정 안내
+                          </caption>
+                          <colgroup>
+                            <col style="width: 120px" />
+                            <col style="width: 288px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row">시험과정</th>
+                              <td class="text-start bg-light">
+                                <strong>소방안전관리자 3급</strong>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">시험지부</th>
+                              <td class="text-start">
+                                서울동부(신설동) (02-237-3119)
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">시험기간</th>
+                              <td class="text-start">11.16(토) 09:00 [주말]</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">접수가능</th>
+                              <td class="text-start">
+                                62명 [시험접수 가능인원]
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="kfsi-button mt-10 mo-mt-7">
+                        <p>
+                          <a href="" class="btn btn-primary btn-lg"
+                            >선착순 접수하기</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
