@@ -122,7 +122,7 @@
                   ‘강습교육‘의 ‘수료증 진위확인＇에서 확인 가능합니다.
                 </div>
                 <div class="mt-15 mo-mt-10">
-                  <h4 class="kfsi-h4">영문/중문 수료증 신청</h4>
+                  <h4 class="kfsi-h4">영문/중문 취득확인서 신청</h4>
                   <div class="kfsi-textlist mb-3">
                     <ul>
                       <li>
@@ -137,15 +137,22 @@
                       거쳐 출력하실 수 있습니다.<br />
                       아래 본인의 이름을 영문 또는 중문으로 정확히 입력해 주시기
                       바랍니다.
+                      <select
+                        class="form-select"
+                        title="영문 또는 중문 선택"
+                        style="min-width: 80px; width: 80px"
+                      >
+                        <option selected>영문</option>
+                      </select>
                     </div>
                     <div class="kfsi-board">
                       <div class="kfsi-board-write">
                         <div class="kfsi-board-write-form">
                           <table
-                            summary="영문 또는 중문 이름 입력과 출력, 팩스 발송 기능을 제공하는 표입니다."
+                            summary="영문과 출력, 팩스 발송 기능을 제공하는 표입니다."
                           >
                             <caption>
-                              영문 또는 중문 이름 입력
+                              영문
                             </caption>
                             <colgroup>
                               <col style="width: 180px" />
@@ -154,7 +161,7 @@
                             <tbody>
                               <tr>
                                 <th scope="row">
-                                  <span>영문 또는 중문 이름</span>
+                                  <span>영문</span>
                                 </th>
                                 <td>
                                   <span>
@@ -162,22 +169,14 @@
                                       <input
                                         type="text"
                                         class="form-control w-100"
-                                        title="영문 또는 중문 이름"
+                                        title="영문"
                                       />
                                       <p>
                                         <button
                                           type="button"
-                                          class="btn btn-secondary btn-sm"
+                                          class="btn btn-primary btn-sm"
                                         >
-                                          출력하기
-                                        </button>
-                                        <button
-                                          type="button"
-                                          class="btn btn-outline-dark btn-sm"
-                                          data-bs-toggle="modal"
-                                          data-bs-target="#modal01"
-                                        >
-                                          팩스발송
+                                          신청하기
                                         </button>
                                       </p>
                                     </div>
@@ -235,6 +234,79 @@
                         </tr>
                       </tbody>
                     </table>
+                  </div>
+                </div>
+                <div class="mt-15 mo-mt-10">
+                  <h4 class="kfsi-h4">영문/중문 취득확인서 신청내역</h4>
+                  <div class="kfsi-board">
+                    <div class="kfsi-table kfsi-table-mo-list">
+                      <table
+                        summary="영문/중문 취득확인서 신청내역을 나타내는 표입니다."
+                      >
+                        <caption>
+                          영문/중문 취득확인서 신청내역
+                        </caption>
+                        <colgroup>
+                          <col style="width: 170px" />
+                          <col style="width: 210px" />
+                          <col style="width: 120px" />
+                          <col style="width: 100px" />
+                          <col style="width: 100px" />
+                          <col style="width: 120px" />
+                          <col style="width: 120px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">구분</th>
+                            <th scope="col">자격번호</th>
+                            <th scope="col">발급일자</th>
+                            <th scope="col">신청상태</th>
+                            <th scope="col">신청내역</th>
+                            <th scope="col">취득확인서</th>
+                            <th scope="col">팩스 발송</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td title="구분">
+                              <div>2급 소방안전관리자</div>
+                            </td>
+                            <td title="자격번호">
+                              <div>2024-12-34-5-678901</div>
+                            </td>
+                            <td title="발급일자">
+                              <div>2024.03.22</div>
+                            </td>
+                            <td title="신청상태">
+                              <div class="text-info">신청</div>
+                            </td>
+                            <td title="신청내역">
+                              <div class="text-info">영문</div>
+                            </td>
+                            <td title="취득확인서">
+                              <div>
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary btn-sm"
+                                >
+                                  출력하기
+                                </button>
+                              </div>
+                            </td>
+                            <td title="팩스 발송">
+                              <div>
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-dark btn-sm"
+                                >
+                                  발송하기
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -12086,6 +12086,9 @@ body {
       border: 1px solid #ccc;
       border-bottom: none;
       &__title {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
         padding: 10px;
         color: #000;
         font-family: Pretendard;
@@ -12227,6 +12230,7 @@ body {
       &-apply {
         border: none;
         &__title {
+          flex-direction: column;
           padding: 16px;
           background: #f6f6f6;
           color: #000;
