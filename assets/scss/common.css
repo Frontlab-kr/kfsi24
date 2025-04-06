@@ -25494,7 +25494,7 @@ body {
 }
 .kfsi-main-head-login {
   width: 100%;
-  padding: 31px 30px;
+  padding: 32px 30px;
   border-radius: 10px;
   border: 1px solid #ccc;
   background: #fff;
@@ -25522,7 +25522,7 @@ body {
 }
 .kfsi-main-head-login-button .btn {
   position: relative;
-  height: 80px;
+  height: 57px;
   border-radius: 10px;
   border: 1px solid #ccc;
   background: #f7f7f7;
