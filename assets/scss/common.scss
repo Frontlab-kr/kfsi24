@@ -14,7 +14,7 @@
 }
 #footer {
   position: relative;
-  z-index: 50;
+  //z-index: 50;
 }
 @mixin text-clamp($lines: 2, $line-height: false) {
   display: -webkit-box;
@@ -1399,6 +1399,10 @@ body {
         margin: 0;
       }
     }
+    &-modal {
+      width: 1200px;
+      max-width: 1200px;
+    }
     @media screen and (max-width: $mobileWidth) {
       position: relative;
       background-color: #666;
@@ -1627,6 +1631,10 @@ body {
           display: flex;
           gap: 4px;
         }
+      }
+      &-modal {
+        width: 100%;
+        max-width: 100%;
       }
     }
   }

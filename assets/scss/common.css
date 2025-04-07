@@ -23756,7 +23756,6 @@ small, .small {
 
 #footer {
   position: relative;
-  z-index: 50;
 }
 
 @keyframes slideIn {
@@ -25068,6 +25067,10 @@ body {
   display: inline;
   margin: 0;
 }
+.kfsi-footer-modal {
+  width: 1200px;
+  max-width: 1200px;
+}
 @media screen and (max-width: 992px) {
   .kfsi-footer {
     position: relative;
@@ -25291,6 +25294,10 @@ body {
   .kfsi-footer address p {
     display: flex;
     gap: 4px;
+  }
+  .kfsi-footer-modal {
+    width: 100%;
+    max-width: 100%;
   }
 }
 .kfsi-snb {
