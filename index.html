@@ -1718,10 +1718,156 @@
                 </tr>
               </tbody>
             </table>
+            <div class="mt-10">
+              <button
+                type="button"
+                class="btn btn-lg btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modal01"
+              >
+                증명사진 관리
+              </button>
+            </div>
           </div>
         </div>
       </div>
       <div id="footer"></div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal01" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" style="max-width: 940px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5">증명사진 관리</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <div
+                class="kfsi-license-profile"
+                style="border-bottom: 1px solid #ccc"
+              >
+                <div
+                  class="kfsi-license-profile-img d-flex gap-7 mo-w-100"
+                  style="width: 370px; margin: 0 auto"
+                >
+                  <div class="kfsi-license-profile-img-img">
+                    <img
+                      src="./assets/images/license/profile.svg"
+                      alt="신청자 이미지"
+                    />
+                  </div>
+                  <div class="kfsi-license-profile-img-info">
+                    <input
+                      type="text"
+                      class="form-control w-100"
+                      placeholder="선택된 파일 없음"
+                      title="신청자 이미지 파일 등록"
+                    />
+                    <button type="button" class="btn btn-secondary btn-sm">
+                      사진파일 등록<i class="ico-camera"></i>
+                    </button>
+                    <div class="kfsi-textlist">
+                      <ul>
+                        <li>
+                          웹 브라우저 사양에 따라 등록된 사진이 미리보기에
+                          보이지 않을 수 있습니다.
+                        </li>
+                        <li>미리보기에 보이지 않아도 증명사진은 저장됩니다.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="kfsi-board">
+                <div class="kfsi-board-write">
+                  <div class="kfsi-board-write-form border-0">
+                    <table
+                      summary="사용자의 이름, 전화번호, 휴대폰번호를 포함한 연락처 정보 표입니다."
+                    >
+                      <caption>
+                        연락처 정보
+                      </caption>
+                      <colgroup>
+                        <col style="width: 195px" />
+                        <col style="width: 745px" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="row"><span>이름</span></th>
+                          <td><span>김소방</span></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><span>전화번호</span></th>
+                          <td><span>02-1234-5678</span></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><span>휴대폰번호</span></th>
+                          <td><span>010-0000-0000</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="kfsi-license-profile-example">
+              <strong>증명사진 등록 유의사항</strong>
+              <div class="kfsi-textlist mo-ms-0">
+                <ul>
+                  <li>최근 6개월 이내 사진을 등록하세요.</li>
+                  <li>
+                    등록불가사진 : 흑백, 저화질, 배경 표시, 홀로그램 표시, 상단
+                    여백 불충분, 기타 본인 확인이 어려운 사진
+                  </li>
+                </ul>
+              </div>
+              <div class="kfsi-license-profile-example-text">
+                ※ 등록불가사진에 해당하는 경우 담당자가 사진 수정·보완 요청을 할
+                수 있습니다.<br />
+                ※ 등록불가사진 예시
+              </div>
+              <div class="text-center mt-7 mo-mt-4">
+                <div class="pc">
+                  <img
+                    src="./assets/images/license/profile-example.png"
+                    alt="아래 대체 텍스트를 확인해주세요."
+                  />
+                </div>
+                <div class="mo">
+                  <img
+                    src="./assets/images/license/profile-example-mo.png"
+                    alt="아래 대체 텍스트를 확인해주세요."
+                  />
+                </div>
+                <div class="hide">
+                  적합하지 않은 사진 예시:<br />
+                  1. 흑백사진 (적합하지 않음 표시)<br />
+                  2. 저화질 사진 (본인 확인 불가)<br />
+                  3. 배경 표시가 있는 사진<br />
+                  4. 신분증 홀로그램 표시가 있는 사진<br />
+                  5. 상단 여백이 부족한 사진
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              data-bs-dismiss="modal"
+            >
+              저장
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
