@@ -118,10 +118,14 @@ body {
   min-width: 1240px;
   color: #000;
   //overflow: auto;
+
   @media screen and (max-width: $mobileWidth) {
     min-width: 100%;
     font-size: 15px;
   }
+}
+html.oacxHtml {
+  font-size: 16px;
 }
 @media screen and (max-width: $mobileWidth) {
   #header {
@@ -9836,6 +9840,7 @@ body {
       position: relative;
       margin: 0 0 60px 0;
       word-break: keep-all;
+      font-size: 16px;
       &-button {
         position: absolute;
         top: 0;
