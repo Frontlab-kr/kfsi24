@@ -19070,7 +19070,7 @@ small, .small {
 }
 .modal-title {
   margin: 0;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -19082,6 +19082,7 @@ small, .small {
 .modal-body {
   margin: 0;
   padding: 24px;
+  font-size: 16px;
 }
 .modal-footer {
   padding: 0 0 24px 0;
