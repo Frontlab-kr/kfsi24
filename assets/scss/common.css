@@ -36512,6 +36512,13 @@ html.oacxHtml {
   height: 18px;
   background: url(../images/icon/ico-pencil.svg) no-repeat 50% 50%;
 }
+.kfsi-quiz-result__item {
+  margin-bottom: 40px;
+  padding: 16px;
+}
+.kfsi-quiz-result__item:last-child {
+  margin-bottom: 0;
+}
 @media screen and (max-width: 992px) {
   .kfsi-quiz-result {
     padding: 40px 0;

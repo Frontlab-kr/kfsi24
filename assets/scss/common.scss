@@ -13527,6 +13527,13 @@ html.oacxHtml {
           background: url(../images/icon/ico-pencil.svg) no-repeat 50% 50%;
         }
       }
+      &__item {
+        margin-bottom: 40px;
+        padding: 16px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
       @media screen and (max-width: $mobileWidth) {
         padding: 40px 0;
         &__title {
