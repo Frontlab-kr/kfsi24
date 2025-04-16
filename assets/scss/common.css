@@ -36483,10 +36483,10 @@ html.oacxHtml {
   border-bottom: 1px dashed #666;
 }
 .kfsi-quiz-result--x {
-  background: url(../images/icon/ico-x-large.svg) no-repeat 50% 40%;
+  background: url(../images/icon/ico-x-large.svg) no-repeat 50% 0%;
 }
 .kfsi-quiz-result--o {
-  background: url(../images/icon/ico-o-large.svg) no-repeat 50% 40%;
+  background: url(../images/icon/ico-o-large.svg) no-repeat 50% 0%;
 }
 .kfsi-quiz-result__title {
   position: absolute;
@@ -36515,6 +36515,9 @@ html.oacxHtml {
 .kfsi-quiz-result__item {
   margin-bottom: 40px;
   padding: 16px;
+}
+.kfsi-quiz-result__item-head {
+  min-height: 240px;
 }
 .kfsi-quiz-result__item:last-child {
   margin-bottom: 0;

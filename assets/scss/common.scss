@@ -13498,10 +13498,10 @@ html.oacxHtml {
       border-top: 1px dashed #666;
       border-bottom: 1px dashed #666;
       &--x {
-        background: url(../images/icon/ico-x-large.svg) no-repeat 50% 40%;
+        background: url(../images/icon/ico-x-large.svg) no-repeat 50% 0%;
       }
       &--o {
-        background: url(../images/icon/ico-o-large.svg) no-repeat 50% 40%;
+        background: url(../images/icon/ico-o-large.svg) no-repeat 50% 0%;
       }
       &__title {
         position: absolute;
@@ -13530,6 +13530,9 @@ html.oacxHtml {
       &__item {
         margin-bottom: 40px;
         padding: 16px;
+        &-head {
+          min-height: 240px;
+        }
         &:last-child {
           margin-bottom: 0;
         }
