@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">강습교육</a>
+              <a href="" class="kfsi-snb-item active">실무교육</a>
+              <a href="" class="kfsi-snb-item">의용소방대교육</a>
+              <a href="" class="kfsi-snb-item">다중이용업교육</a>
+              <a href="" class="kfsi-snb-item">열린교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">교육신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      실무교육 신청 내역
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>실무교육 신청 내역</h1>
+              </div>
+              <div class="kfsi-education">
+                <div class="mb-15 mo-mb-10">
+                  <div class="kfsi-board">
+                    <div class="kfsi-board-head mo-flex-column gap-3">
+                      <div class="kfsi-board-head-start">
+                        <h4 class="kfsi-h4">실무교육 신청내역</h4>
+                      </div>
+                      <div class="kfsi-board-head-end">
+                        <a
+                          href=""
+                          class="btn btn-link fs-16 mo-fs-15 p-0 h-auto"
+                        >
+                          <strong
+                            >▶ 나의 강의실로 가기 [사이버교육 수강하기]</strong
+                          >
+                        </a>
+                      </div>
+                    </div>
+                    <div class="kfsi-table kfsi-table-mo-list">
+                      <table
+                        summary="실무교육 내역을 표시합니다. 교육과정, 지부, 사이버교육기간, 소집교육기간, 상태 및 영수증 출력 옵션을 제공합니다."
+                      >
+                        <caption>
+                          실무교육 내역
+                        </caption>
+                        <colgroup>
+                          <col style="width: 160px" />
+                          <col style="width: 120px" />
+                          <col style="width: 200px" />
+                          <col style="width: 200px" />
+                          <col style="width: 110px" />
+                          <col style="width: 150px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">교육과정</th>
+                            <th scope="col">지부</th>
+                            <th scope="col">사이버교육기간</th>
+                            <th scope="col">소집교육기간</th>
+                            <th scope="col">상태</th>
+                            <th scope="col">영수증</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td title="교육과정">소방안전관리자</td>
+                            <td title="지부">경기남부지부</td>
+                            <td title="사이버교육기간">
+                              2024.11.12~2024.12.31
+                            </td>
+                            <td title="소집교육기간">2024.11.12~2024.12.31</td>
+                            <td title="상태">
+                              <span class="text-primary">접수완료</span>
+                            </td>
+                            <td title="영수증">
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                영수증 출력
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-center column-gap-2 row-gap-2 mt-10 mb-10 mo-flex-column flex-wrap mo-px-3 mo-d-grid"
+                      style="grid-template-columns: 1fr 1fr"
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary btn-lg mo-w-100"
+                        style="width: 180px"
+                      >
+                        신청확인증 출력
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary btn-lg mo-w-100"
+                        style="width: 180px"
+                      >
+                        신청확인증 팩스
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary btn-lg mo-w-100"
+                        style="width: 180px"
+                      >
+                        일정변경신청
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary btn-lg mo-w-100"
+                        style="width: 180px"
+                      >
+                        취소신청(환불)
+                      </button>
+                    </div>
+
+                    <p>
+                      <a
+                        href=""
+                        class="btn btn-outline-dark btn-lg mo-w-100"
+                        style="width: 225px"
+                        >과거신청 이력보기</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="p-6 rounded-4 bg-light">
+                  <div class="kfsi-table kfsi-table-scroll-mo">
+                    <table
+                      summary="교육과정, 지부, 사이버교육기간, 소집교육기간, 상태, 영수증 정보를 포함한 교육 신청 내역 테이블입니다."
+                    >
+                      <caption>
+                        교육 신청 내역
+                      </caption>
+                      <colgroup>
+                        <col style="width: 160px" />
+                        <col style="width: 120px" />
+                        <col style="width: 200px" />
+                        <col style="width: 200px" />
+                        <col style="width: 90px" />
+                        <col style="width: 130px" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">교육과정</th>
+                          <th scope="col">지부</th>
+                          <th scope="col">사이버교육기간</th>
+                          <th scope="col">소집교육기간</th>
+                          <th scope="col">상태</th>
+                          <th scope="col">영수증</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>소방안전관리자</td>
+                          <td>인천지부</td>
+                          <td>2023.11.12~2023.12.31</td>
+                          <td>2023.11.12~2023.12.31</td>
+                          <td class="text-primary">접수완료</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>소방안전관리자</td>
+                          <td>인천지부</td>
+                          <td>2023.11.12~2023.12.31</td>
+                          <td>2023.11.12~2023.12.31</td>
+                          <td class="text-primary">접수완료</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>소방안전관리자</td>
+                          <td>인천지부</td>
+                          <td>2023.11.12~2023.12.31</td>
+                          <td>2023.11.12~2023.12.31</td>
+                          <td class="text-primary">접수완료</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>소방안전관리자</td>
+                          <td>인천지부</td>
+                          <td>2023.11.12~2023.12.31</td>
+                          <td>2023.11.12~2023.12.31</td>
+                          <td class="text-primary">접수완료</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>소방안전관리자</td>
+                          <td>인천지부</td>
+                          <td>2023.11.12~2023.12.31</td>
+                          <td>2023.11.12~2023.12.31</td>
+                          <td class="text-primary">접수완료</td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
