@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>자격발급 신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">자격 발급안내</a>
+              <a href="" class="kfsi-snb-item">자격 재발급안내</a>
+              <a href="" class="kfsi-snb-item">자격 발급심사 신청</a>
+              <a href="" class="kfsi-snb-item">자격 (재)발급신청</a>
+              <a href="" class="kfsi-snb-item active">
+                자격 발급<br />
+                (심사) 신청 내역
+              </a>
+              <a href="" class="kfsi-snb-item">자격 취득확인</a>
+              <a href="" class="kfsi-snb-item">자격 발급 진위확인</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">자격발급 신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      자격 발급(심사) 신청 내역
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>자격 발급(심사) 신청 내역 - 상세정보보기 - 계산서신청</h1>
+              </div>
+              <div class="kfsi-education">
+                <div class="">
+                  <h4 class="kfsi-h4">전자계산서 신청</h4>
+                  <div class="kfsi-textlist">
+                    <ul>
+                      <li>계산서는 신청일 기준 4영업일 이내에 발급됩니다.</li>
+                      <li>
+                        계산서 발급 진행 중에는 신청 내용을 수정하실 수
+                        없습니다.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="kfsi-board mt-3">
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form">
+                        <table summary="사업자 정보 입력을 위한 테이블입니다.">
+                          <caption>
+                            사업자 정보 입력
+                          </caption>
+                          <colgroup>
+                            <col style="width: 180px" />
+                            <col style="width: 760px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row">
+                                사업자등록번호
+                                <span class="text-danger">*</span>
+                              </th>
+                              <td class="text-start">
+                                <div class="w-100">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    title="사업자등록번호"
+                                    style="min-width: 305px; width: 305px"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">종사업자 번호</th>
+                              <td class="text-start">
+                                <div class="w-100">
+                                  <div
+                                    class="d-flex align-items-center gap-2 mo-flex-column mo-align-items-start"
+                                  >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      title="계좌번호"
+                                      style="min-width: 305px; width: 305px"
+                                    />
+                                    <div
+                                      class="ms-2 text-secondary fs-15 mo-ms-0"
+                                    >
+                                      (해당하는 경우만 입력)
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">
+                                상호(법인명)
+                                <span class="text-danger">*</span>
+                              </th>
+                              <td class="text-start">
+                                <div class="w-100">
+                                  <input
+                                    type="text"
+                                    class="form-control w-100"
+                                    title="상호(법인명)"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">
+                                <span>
+                                  대표자 성명
+                                  <span class="text-danger">*</span>
+                                </span>
+                              </th>
+                              <td class="text-start">
+                                <div class="w-100">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    title="대표자 성명"
+                                    style="min-width: 305px; width: 305px"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">
+                                <span
+                                  >사업장 주소
+                                  <span class="text-danger">*</span></span
+                                >
+                              </th>
+                              <td>
+                                <span>
+                                  <div class="kfsi-mypage-address">
+                                    <div class="kfsi-mypage-address-post">
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        style="min-width: 110px; width: 110px"
+                                        readonly
+                                        title="우편번호"
+                                      />
+                                      <a
+                                        href=""
+                                        class="btn btn-secondary btn-sm"
+                                        >우편번호찾기
+                                        <i class="ico-post"></i>
+                                      </a>
+                                    </div>
+                                    <div class="kfsi-mypage-address-input">
+                                      <input
+                                        type="text"
+                                        class="form-control w-100"
+                                        readonly
+                                        title="주소"
+                                      />
+                                    </div>
+                                    <div class="kfsi-mypage-address-input">
+                                      <input
+                                        type="text"
+                                        class="form-control w-100"
+                                        title="상세 주소"
+                                        placeholder="상세주소를 입력해주세요."
+                                      />
+                                    </div>
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">업태</th>
+                              <td class="text-start">
+                                <div class="w-100">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    title="업태"
+                                    style="min-width: 305px; width: 305px"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">종목</th>
+                              <td class="text-start">
+                                <div class="w-100">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    title="종목"
+                                    style="min-width: 305px; width: 305px"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">
+                                <span>
+                                  이메일 <span class="text-danger">*</span>
+                                </span>
+                              </th>
+                              <td>
+                                <span>
+                                  <div class="kfsi-mypage-email">
+                                    <div class="kfsi-mypage-email-input">
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        title="E-mail 아이디 입력"
+                                        style="min-width: 120px; width: 120px"
+                                      />
+                                      @
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        title="E-mail 도메인 입력"
+                                        style="min-width: 120px; width: 120px"
+                                      />
+                                    </div>
+                                    <select
+                                      class="form-select"
+                                      aria-label="E-mail 선택"
+                                      title="E-mail 선택"
+                                    >
+                                      <option selected>선택</option>
+                                      <option value="daum.net">daum.net</option>
+                                      <option value="gmail.com">
+                                        gmail.com
+                                      </option>
+                                      <option value="hotmail.com">
+                                        hotmail.com
+                                      </option>
+                                      <option value="naver.com">
+                                        naver.com
+                                      </option>
+                                      <option value="nate.com">nate.com</option>
+                                      <option value="self">직접입력</option>
+                                    </select>
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">
+                                <span>
+                                  휴대폰 번호
+                                  <span class="text-danger">*</span></span
+                                >
+                              </th>
+                              <td>
+                                <span>
+                                  <div class="kfsi-mypage-phone">
+                                    <div class="kfsi-mypage-phone-input">
+                                      <select
+                                        class="form-select"
+                                        aria-label="휴대폰 번호 앞자리 선택"
+                                        title="휴대폰 번호 앞자리 선택"
+                                        style="min-width: 80px; width: 80px"
+                                      >
+                                        <option selected>선택</option>
+                                      </select>
+                                      -
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        title="휴대폰 번호 중간 자리 입력"
+                                        style="min-width: 80px; width: 80px"
+                                      />
+                                      -
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        title="휴대폰 번호 마지막 자리 입력"
+                                        style="min-width: 80px; width: 80px"
+                                      />
+                                    </div>
+                                    <div
+                                      class="ms-2 mo-ms-0 text-secondary fs-15"
+                                    >
+                                      (안내문자 수신)
+                                    </div>
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">
+                                <span>
+                                  사업자등록증<br />
+                                  사본첨부
+                                  <span class="text-danger">*</span></span
+                                >
+                              </th>
+                              <td>
+                                <div class="w-100">
+                                  <div style="width: 340px" class="mo-w-100">
+                                    <div class="bg-light" style="height: 140px">
+                                      <img
+                                        src="https://picsum.photos/2000/1300"
+                                        alt=""
+                                        style="
+                                          width: 100%;
+                                          height: 100%;
+                                          object-fit: cover;
+                                        "
+                                      />
+                                    </div>
+                                    <div
+                                      class="d-flex column-gap-2 row-gap-1 mt-3 mo-flex-column"
+                                    >
+                                      <input
+                                        type="text"
+                                        class="form-control w-100"
+                                        readonly
+                                        title="우편번호"
+                                      />
+                                      <a
+                                        href=""
+                                        class="btn btn-secondary btn-sm mo-h-40"
+                                        >우편번호찾기
+                                        <i class="ico-post"></i>
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">
+                                <span>
+                                  작성일자 <span class="text-danger">*</span>
+                                </span>
+                              </th>
+                              <td class="text-start">
+                                <div class="w-100">
+                                  <div
+                                    class="d-flex align-items-center gap-2 mo-flex-column mo-align-items-start"
+                                  >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      title="작성일자"
+                                      style="min-width: 305px; width: 305px"
+                                      placeholder="8자리 입력 (예. 20250221)"
+                                    />
+                                    <div class="ms-2 text-secondary fs-15">
+                                      2025.02.21~2025.02.21 범위 내 지정
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-button">
+                  <p>
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary btn-lg"
+                    >
+                      이전 페이지
+                    </button>
+                    <button type="button" class="btn btn-primary btn-lg">
+                      전자계산서 신청
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

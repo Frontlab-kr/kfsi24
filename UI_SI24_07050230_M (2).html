@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>자격발급 신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">자격 발급안내</a>
+              <a href="" class="kfsi-snb-item">자격 재발급안내</a>
+              <a href="" class="kfsi-snb-item">자격 발급심사 신청</a>
+              <a href="" class="kfsi-snb-item">자격 (재)발급신청</a>
+              <a href="" class="kfsi-snb-item active">
+                자격 발급<br />
+                (심사) 신청 내역
+              </a>
+              <a href="" class="kfsi-snb-item">자격 취득확인</a>
+              <a href="" class="kfsi-snb-item">자격 발급 진위확인</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">자격발급 신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      자격 발급(심사) 신청 내역
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>자격 발급(심사) 신청 내역 - 상세정보보기</h1>
+              </div>
+              <div class="kfsi-license">
+                <div class="mb-15 mo-mb-10">
+                  <h4 class="kfsi-h4">발급신청한 자격수첩</h4>
+                  <div class="kfsi-table kfsi-table-mo-list">
+                    <table
+                      summary="자격명, 자격번호, 취득일자, 발급구분에 대한 자격수첩 발급 신청 내역을 확인할 수 있는 표입니다."
+                    >
+                      <caption>
+                        자격수첩 발급 신청 내역
+                      </caption>
+                      <colgroup>
+                        <col style="width: 320px" />
+                        <col style="width: 280px" />
+                        <col style="width: 180px" />
+                        <col style="width: 160px" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">자격명</th>
+                          <th scope="col">자격번호</th>
+                          <th scope="col">취득일자</th>
+                          <th scope="col">발급구분</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td title="자격명" class="text-info">
+                            <div>2급 소방안전관리자</div>
+                          </td>
+                          <td title="자격번호">
+                            <div>2025-01-01-1-111234</div>
+                          </td>
+                          <td title="취득일자">
+                            <div>2024.10.24</div>
+                          </td>
+                          <td title="발급구분">
+                            <div>신규</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="mb-15 mo-mb-10">
+                  <h4 class="kfsi-h4">신청자 정보</h4>
+                  <div
+                    class="d-flex mo-flex-column-reverse"
+                    style="border-top: 2px solid #004d16"
+                  >
+                    <div class="kfsi-board">
+                      <div class="kfsi-board-write">
+                        <div class="kfsi-board-write-form border-0">
+                          <table
+                            summary="신청자의 성명, 생년월일, 전화번호, 휴대폰번호, 주소 및 프로필 사진 정보를 포함한 표입니다."
+                          >
+                            <caption>
+                              신청자 정보
+                            </caption>
+                            <colgroup>
+                              <col style="width: 195px" />
+                              <col style="width: 550px" />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <th scope="row">성명</th>
+                                <td>김소방</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">생년월일</th>
+                                <td>1980.01.01</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">전화번호</th>
+                                <td>010-1425-7854</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">휴대폰번호</th>
+                                <td>010-1425-7854</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">반려사유</th>
+                                <td class="text-danger">본인확인불가</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-center mo-w-100 border-bottom p-4"
+                      style="width: 195px"
+                    >
+                      <img
+                        src="./assets/images/license/profile.svg"
+                        alt="신청자 이미지"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-button">
+                  <p>
+                    <a href="" class="btn btn-outline-secondary btn-lg">닫기</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
