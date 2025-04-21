@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>안전관리자 선해임</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">안전관리자 선임 신고</a>
+              <a href="" class="kfsi-snb-item">신규대상처 신청 신고</a>
+              <a href="" class="kfsi-snb-item">안전관리보조자 선임 신고</a>
+              <a href="" class="kfsi-snb-item active"
+                >건설현장 소방안전관리자 선임신고</a
+              >
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">안전관리자 선해임</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      안전관리자 선임 신고
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>건설현장 소방안전관리자 선임 신고</h1>
+              </div>
+              <div class="kfsi-">
+                <div class="kfsi-nav">
+                  <ol>
+                    <li>
+                      <span>01</span>
+                      <strong>대상물 확인</strong>
+                    </li>
+                    <li>
+                      <span>02</span>
+                      <strong>기 선임자 확인</strong>
+                    </li>
+                    <li class="active">
+                      <span>03</span>
+                      <strong>선임신고</strong>
+                    </li>
+                  </ol>
+                </div>
+                <div class="mb-15 mo-mb-10">
+                  <h4 class="kfsi-h4">건설현장 소방안전관리 대상물 정보</h4>
+                  <div class="kfsi-board">
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form">
+                        <table
+                          summary="건설현장 소방안전관리 대상물에 대한 상호, 용도, 소재지 정보를 제공하는 표입니다."
+                        >
+                          <caption class="visually-hidden">
+                            건설현장 소방안전관리 대상물 정보
+                          </caption>
+                          <colgroup>
+                            <col style="width: 170px" />
+                            <col style="width: 300px" />
+                            <col style="width: 170px" />
+                            <col style="width: 300px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row"><span>상호</span></th>
+                              <td><span>헤브헤이 컴퍼니</span></td>
+                              <th scope="row"><span>용도</span></th>
+                              <td><span>사무</span></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">
+                                <span>소재지(도로명 주소)</span>
+                              </th>
+                              <td colspan="5">
+                                <span
+                                  >인천광역시 서구 승학로236번길28 (A동)</span
+                                >
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-15 mo-mb-10">
+                  <h4 class="kfsi-h4">건설공사현황</h4>
+                  <div class="kfsi-board">
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form">
+                        <table
+                          summary="건설공사현황에 대한 소방시설공사 착공신고일, 건축물 사용승인 예정일, 공사구분, 공사규모 정보를 입력하는 표입니다."
+                        >
+                          <caption class="visually-hidden">
+                            건설공사현황 입력
+                          </caption>
+                          <colgroup>
+                            <col style="width: 170px" />
+                            <col style="width: 300px" />
+                            <col style="width: 170px" />
+                            <col style="width: 300px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row">
+                                <span>소방시설공사 착공신고일</span>
+                              </th>
+                              <td>
+                                <span>
+                                  <div class="kfsi-date">
+                                    <input
+                                      type="date"
+                                      class="form-control"
+                                      title="소방시설공사 착공신고일"
+                                    />
+                                  </div>
+                                </span>
+                              </td>
+                              <th scope="row">
+                                <span>건축물 사용승인 예정일</span>
+                              </th>
+                              <td>
+                                <span>
+                                  <div class="kfsi-date">
+                                    <input
+                                      type="date"
+                                      class="form-control"
+                                      title="건축물 사용승인
+                                      예정일"
+                                    />
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">
+                                <span>공사구분</span>
+                              </th>
+                              <td colspan="3">
+                                <span>
+                                  <div class="kfsi-radio-type1">
+                                    <div class="form-check" style="width: 80px">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="radio5"
+                                        id="radio5-1"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="radio5-1"
+                                      >
+                                        신축
+                                      </label>
+                                    </div>
+                                    <div class="form-check" style="width: 80px">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="radio5"
+                                        id="radio5-2"
+                                        checked
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="radio5-2"
+                                      >
+                                        증축
+                                      </label>
+                                    </div>
+                                    <div class="form-check" style="width: 80px">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="radio5"
+                                        id="radio5-3"
+                                        checked
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="radio5-3"
+                                      >
+                                        개축
+                                      </label>
+                                    </div>
+                                    <div class="form-check" style="width: 80px">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="radio5"
+                                        id="radio5-4"
+                                        checked
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="radio5-4"
+                                      >
+                                        재축
+                                      </label>
+                                    </div>
+                                    <div class="form-check" style="width: 80px">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="radio5"
+                                        id="radio5-5"
+                                        checked
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="radio5-5"
+                                      >
+                                        이전
+                                      </label>
+                                    </div>
+                                    <div class="form-check" style="width: 80px">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="radio5"
+                                        id="radio5-6"
+                                        checked
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="radio5-6"
+                                      >
+                                        용도변경
+                                      </label>
+                                    </div>
+                                    <div class="form-check" style="width: 80px">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="radio5"
+                                        id="radio5-7"
+                                        checked
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="radio5-7"
+                                      >
+                                        대수선
+                                      </label>
+                                    </div>
+                                    <div class="form-check" style="width: 80px">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="radio5"
+                                        id="radio5-8"
+                                        checked
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="radio5-8"
+                                      >
+                                        기타
+                                      </label>
+                                    </div>
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">
+                                <span>공사규모</span>
+                              </th>
+                              <td colspan="3">
+                                <span>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="radio"
+                                      name="radio1"
+                                      id="radio1-1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="radio1-1"
+                                    >
+                                      연면적 15,000 ㎡ 이상
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="radio"
+                                      name="radio1"
+                                      id="radio1-2"
+                                      checked
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="radio1-2"
+                                    >
+                                      연면적 5,000 ㎡ 이상인 것으로서 지하 2개
+                                      층 이상
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="radio"
+                                      name="radio1"
+                                      id="radio1-3"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="radio1-3"
+                                    >
+                                      연면적 5,000 ㎡ 이상인 것으로서 지상 11층
+                                      이상
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="radio"
+                                      name="radio1"
+                                      id="radio1-4"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="radio1-4"
+                                    >
+                                      연면적 5,000 ㎡ 이상인 것으로서 냉동창고,
+                                      냉장창고 또는 냉동·냉장창고
+                                    </label>
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-15 mo-mb-10">
+                  <h4 class="kfsi-h4">공사 시공자(신고인)</h4>
+                  <div class="kfsi-board">
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form">
+                        <table
+                          summary="공사 시공자에 대한 회사명, 시공분야, 주소, 전화번호, 대표자명 및 대표자 생년월일 정보를 입력하는 표입니다."
+                        >
+                          <caption class="visually-hidden">
+                            공사 시공자 정보 입력
+                          </caption>
+                          <colgroup>
+                            <col style="width: 145px" />
+                            <col style="width: 325px" />
+                            <col style="width: 145px" />
+                            <col style="width: 325px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row"><span>회사명</span></th>
+                              <td>
+                                <span>
+                                  <input
+                                    type="text"
+                                    class="form-control w-100"
+                                    title="회사명"
+                                  />
+                                </span>
+                              </td>
+                              <th scope="row"><span>시공분야</span></th>
+                              <td>
+                                <span>
+                                  <input
+                                    type="text"
+                                    class="form-control w-100"
+                                    title="시공분야"
+                                  />
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row"><span>주소</span></th>
+                              <td>
+                                <span>
+                                  <input
+                                    type="text"
+                                    class="form-control w-100"
+                                    title="주소"
+                                  />
+                                </span>
+                              </td>
+                              <th scope="row"><span>전화번호</span></th>
+                              <td>
+                                <span>
+                                  <div class="kfsi-mypage-phone">
+                                    <div class="kfsi-mypage-phone-input">
+                                      <select
+                                        class="form-select"
+                                        aria-label="전화번호 번호 앞자리 선택"
+                                        title="전화번호 번호 앞자리 선택"
+                                        style="min-width: 80px; width: 80px"
+                                      >
+                                        <option selected>선택</option>
+                                      </select>
+                                      -
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        title="전화번호 번호 중간 자리 입력"
+                                        style="min-width: 80px; width: 80px"
+                                      />
+                                      -
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        title="전화번호 번호 마지막 자리 입력"
+                                        style="min-width: 80px; width: 80px"
+                                      />
+                                    </div>
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row"><span>대표자명</span></th>
+                              <td>
+                                <span>
+                                  <input
+                                    type="text"
+                                    class="form-control w-100"
+                                    title="대표자명"
+                                  />
+                                </span>
+                              </td>
+                              <th scope="row">
+                                <span>
+                                  대표자 생년월일<br />
+                                  <span class="text-666 fs-14">
+                                    (법인일 경우 법인등록번호)
+                                  </span>
+                                </span>
+                              </th>
+                              <td>
+                                <span>
+                                  <input
+                                    type="text"
+                                    class="form-control w-100"
+                                    title="대표자 생년월일"
+                                  />
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-15 mo-mb-10">
+                  <h4 class="kfsi-h4">건설현장 소방안전관리자(선임자)</h4>
+                  <div class="kfsi-board">
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form">
+                        <table
+                          summary="건설현장 소방안전관리자 선임자의 성명, 주민등록번호, 선임일자, 자격번호, 강습교육 수료일, 자격등급, 주소, 전화번호, 선임증 발급 여부 정보를 입력하는 표입니다."
+                        >
+                          <caption class="visually-hidden">
+                            건설현장 소방안전관리자(선임자) 정보 입력
+                          </caption>
+                          <colgroup>
+                            <col style="width: 145px" />
+                            <col style="width: 325px" />
+                            <col style="width: 145px" />
+                            <col style="width: 325px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row"><span>성명</span></th>
+                              <td>
+                                <span>
+                                  <input
+                                    type="text"
+                                    class="form-control w-100"
+                                    title="성명"
+                                  />
+                                </span>
+                              </td>
+                              <th scope="row">
+                                <span>
+                                  주민등록번호<br />
+                                  <span class="text-666 fs-14">
+                                    (외국인의 경우 외국인등록번호)
+                                  </span>
+                                </span>
+                              </th>
+                              <td>
+                                <span>
+                                  <input
+                                    type="text"
+                                    class="form-control w-100"
+                                    title="시공분야"
+                                  />
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row"><span>선임일자</span></th>
+                              <td>
+                                <span>
+                                  <div class="kfsi-date">
+                                    <input
+                                      type="date"
+                                      class="form-control"
+                                      title="선임일자"
+                                    />
+                                  </div>
+                                </span>
+                              </td>
+                              <th scope="row"><span>자격번호</span></th>
+                              <td>
+                                <span>
+                                  <input
+                                    type="text"
+                                    class="form-control w-100"
+                                    title="자격번호"
+                                  />
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row"><span>강습교육 수료일</span></th>
+                              <td>
+                                <span>
+                                  <div class="kfsi-date">
+                                    <input
+                                      type="date"
+                                      class="form-control"
+                                      title="강습교육 수료일"
+                                    />
+                                  </div>
+                                </span>
+                              </td>
+                              <th scope="row"><span>자격등급</span></th>
+                              <td>
+                                <span>
+                                  <input
+                                    type="text"
+                                    class="form-control w-100"
+                                    title="자격번호"
+                                  />
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row"><span>주소</span></th>
+                              <td>
+                                <span>
+                                  <input
+                                    type="text"
+                                    class="form-control w-100"
+                                    title="주소"
+                                  />
+                                </span>
+                              </td>
+                              <th scope="row"><span>전화번호</span></th>
+                              <td>
+                                <span>
+                                  <div class="kfsi-mypage-phone">
+                                    <div class="kfsi-mypage-phone-input">
+                                      <select
+                                        class="form-select"
+                                        aria-label="전화번호 번호 앞자리 선택"
+                                        title="전화번호 번호 앞자리 선택"
+                                        style="min-width: 80px; width: 80px"
+                                      >
+                                        <option selected>선택</option>
+                                      </select>
+                                      -
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        title="전화번호 번호 중간 자리 입력"
+                                        style="min-width: 80px; width: 80px"
+                                      />
+                                      -
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        title="전화번호 번호 마지막 자리 입력"
+                                        style="min-width: 80px; width: 80px"
+                                      />
+                                    </div>
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row"><span>선임증 발급</span></th>
+                              <td colspan="3">
+                                <span>
+                                  <div class="kfsi-radio-type1">
+                                    <div
+                                      class="form-check"
+                                      style="width: 150px"
+                                    >
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="radio5"
+                                        id="radio5-1"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="radio5-1"
+                                      >
+                                        신청
+                                      </label>
+                                    </div>
+                                    <div
+                                      class="form-check"
+                                      style="width: 150px"
+                                    >
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="radio5"
+                                        id="radio5-2"
+                                        checked
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="radio5-2"
+                                      >
+                                        신청안함
+                                      </label>
+                                    </div>
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-15 mo-mb-10">
+                  <h4 class="kfsi-h4">제출서류 파일첨부</h4>
+                  <div class="kfsi-board">
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form">
+                        <table
+                          summary="소방안전관리자 제출서류 파일을 첨부하고 자격발급 및 강습교육 수료 인증을 진행하는 영역입니다."
+                        >
+                          <caption class="visually-hidden">
+                            제출서류 파일첨부 및 인증
+                          </caption>
+                          <tbody>
+                            <tr>
+                              <!-- <th scope="row"></th> -->
+                              <td colspan="2" class="w-100">
+                                <span>
+                                  <ol>
+                                    <li>
+                                      소방안전관리자 자격증 첨부 또는 자격발급
+                                      인증하기(택1)
+                                    </li>
+                                    <li>
+                                      건설현장 소방안전관리자 강습교육 수료증
+                                      또는 강습교육 수료 인증하기(택1)
+                                    </li>
+                                    <li>
+                                      건설현장 소방안전관리대상물의 공사 계약서
+                                      사본<br />
+                                    </li>
+                                  </ol>
+                                  ※ 수수료 없음
+                                  <div
+                                    class="d-flex gap-2 justify-content-end mt-3"
+                                  >
+                                    <button
+                                      type="button"
+                                      class="btn btn-outline-dark btn-sm"
+                                    >
+                                      자격발급 인증하기
+                                    </button>
+                                    <button
+                                      type="button"
+                                      class="btn btn-outline-dark btn-sm"
+                                    >
+                                      강습교육 수료 인증하기
+                                    </button>
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row"><span>파일첨부</span></th>
+                              <td>
+                                <span>
+                                  <div class="kfsi-upload">
+                                    <div id="dropzone">
+                                      <form
+                                        class="dropzone needsclick"
+                                        id="demo-upload"
+                                        action="/upload"
+                                      >
+                                        <div class="dz-message needsclick">
+                                          <div class="dz-message__title">
+                                            <i class="ico-file-plus"></i>
+                                            파일을 이곳에 드래그하세요.<br />
+                                          </div>
+                                          <small
+                                            >(또는 클릭하여 파일을
+                                            선택하세요)</small
+                                          >
+                                        </div>
+                                      </form>
+                                    </div>
+                                  </div>
+                                  <script>
+                                    var dropzone = new Dropzone(
+                                      '#demo-upload',
+                                      {
+                                        previewTemplate:
+                                          document.querySelector(
+                                            '#preview-template'
+                                          ).innerHTML,
+                                        parallelUploads: 2,
+                                        thumbnailHeight: 120,
+                                        thumbnailWidth: 120,
+                                        maxFilesize: 3, // 최대 파일 크기 (MB)
+                                        filesizeBase: 1000,
+                                        dictDefaultMessage:
+                                          '파일을 이곳에 드래그하세요.', // 기본 메시지
+                                        dictFallbackMessage:
+                                          '이 브라우저는 드래그 앤 드롭 파일 업로드를 지원하지 않습니다.',
+                                        dictFileTooBig:
+                                          '파일 크기가 너무 큽니다 ({{filesize}}MB). 최대 크기: {{maxFilesize}}MB.',
+                                        dictInvalidFileType:
+                                          '이 파일 형식은 업로드할 수 없습니다.',
+                                        dictResponseError:
+                                          '서버에서 {{statusCode}} 에러가 발생했습니다.',
+                                        dictCancelUpload: '업로드 취소',
+                                        dictCancelUploadConfirmation:
+                                          '이 업로드를 정말 취소하시겠습니까?',
+                                        dictRemoveFile: '파일 삭제',
+                                        dictMaxFilesExceeded:
+                                          '더 이상 파일을 업로드할 수 없습니다.',
+                                        thumbnail: function (file, dataUrl) {
+                                          if (file.previewElement) {
+                                            file.previewElement.classList.remove(
+                                              'dz-file-preview'
+                                            );
+                                            var images =
+                                              file.previewElement.querySelectorAll(
+                                                '[data-dz-thumbnail]'
+                                              );
+                                            for (
+                                              var i = 0;
+                                              i < images.length;
+                                              i++
+                                            ) {
+                                              var thumbnailElement = images[i];
+                                              thumbnailElement.alt = file.name;
+                                              thumbnailElement.src = dataUrl;
+                                            }
+                                            setTimeout(function () {
+                                              file.previewElement.classList.add(
+                                                'dz-image-preview'
+                                              );
+                                            }, 1);
+                                          }
+                                        },
+                                      }
+                                    );
+
+                                    // 파일 업로드 시 시뮬레이션
+                                    var minSteps = 6,
+                                      maxSteps = 60,
+                                      timeBetweenSteps = 100,
+                                      bytesPerStep = 100000;
+
+                                    dropzone.uploadFiles = function (files) {
+                                      var self = this;
+
+                                      for (var i = 0; i < files.length; i++) {
+                                        var file = files[i];
+                                        totalSteps = Math.round(
+                                          Math.min(
+                                            maxSteps,
+                                            Math.max(
+                                              minSteps,
+                                              file.size / bytesPerStep
+                                            )
+                                          )
+                                        );
+
+                                        for (
+                                          var step = 0;
+                                          step < totalSteps;
+                                          step++
+                                        ) {
+                                          var duration =
+                                            timeBetweenSteps * (step + 1);
+                                          setTimeout(
+                                            (function (file, totalSteps, step) {
+                                              return function () {
+                                                file.upload = {
+                                                  progress:
+                                                    (100 * (step + 1)) /
+                                                    totalSteps,
+                                                  total: file.size,
+                                                  bytesSent:
+                                                    ((step + 1) * file.size) /
+                                                    totalSteps,
+                                                };
+
+                                                self.emit(
+                                                  'uploadprogress',
+                                                  file,
+                                                  file.upload.progress,
+                                                  file.upload.bytesSent
+                                                );
+                                                if (
+                                                  file.upload.progress == 100
+                                                ) {
+                                                  file.status =
+                                                    Dropzone.SUCCESS;
+                                                  self.emit(
+                                                    'success',
+                                                    file,
+                                                    'success',
+                                                    null
+                                                  );
+                                                  self.emit('complete', file);
+                                                  self.processQueue();
+                                                }
+                                              };
+                                            })(file, totalSteps, step),
+                                            duration
+                                          );
+                                        }
+                                      }
+                                    };
+                                  </script>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="border-top border-black pt-2">
+                  <strong class="fs-18 mo-fs-17">
+                    [화재의 예방 및 안전관리에 관한 법률] 제 29조제1항 및 같은
+                    법 시행규칙 제17조제1항에 따라 건설현장 소방안전관리자를
+                    선임했기에 이를 신고합니다.</strong
+                  >
+                </div>
+                <div
+                  class="kfsi-board-button justify-content-between mo-flex-column"
+                >
+                  <p class="mo-flex-column">
+                    <button
+                      type="button"
+                      class="btn btn-outline-warning btn-lg"
+                    >
+                      임시저장
+                    </button>
+                  </p>
+                  <p class="mo-flex-column">
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary btn-lg"
+                    >
+                      취소
+                    </button>
+                    <button type="button" class="btn btn-primary btn-lg">
+                      신고하기
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 5000;
+      "
+    >
+      <div>
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#modal01"
+        >
+          자격 발급 인증
+        </button>
+      </div>
+
+      <div class="mt-1">
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#modal02"
+        >
+          수료증 인증
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal01" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5">자격 발급 인증</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="kfsi-license">
+              <div class="mo-fs-15 mb-4 mo-mb-3">
+                <strong
+                  >안전원에서 발급된 자격을 인증하시면, 별도의 자격관련
+                  파일첨부를 하지 않아도 됩니다.</strong
+                >
+              </div>
+              <div class="kfsi-board">
+                <div class="kfsi-board-write">
+                  <div class="kfsi-board-write-form">
+                    <table
+                      summary="자격 발급 인증을 위한 정보 입력 테이블입니다. 발급시기, 자격번호, 종목, 성명, 생년월일을 입력합니다."
+                    >
+                      <caption class="visually-hidden">
+                        자격 발급 인증 정보 입력
+                      </caption>
+                      <colgroup>
+                        <col style="width: 180px" />
+                        <col style="width: 760px" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="row"><span>발급시기</span></th>
+                          <td>
+                            <span>
+                              <div class="d-flex align-items-center gap-2">
+                                2005년 10월 20일
+                                <select
+                                  class="form-select"
+                                  aria-label="발급시기 선택"
+                                  title="발급시기 선택"
+                                  style="
+                                    min-width: 80px !important;
+                                    width: 80px !important;
+                                  "
+                                >
+                                  <option selected>이후</option>
+                                </select>
+                              </div>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><span>자격번호</span></th>
+                          <td>
+                            <span>
+                              <div
+                                class="d-flex align-items-center gap-2 flex-wrap fs-14"
+                                style="color: #ccc"
+                              >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  title="자격번호 첫번째자리 입력"
+                                  style="
+                                    min-width: 80px !important;
+                                    width: 80px !important;
+                                  "
+                                />
+                                -
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  title="자격번호 두번째자리 입력"
+                                  style="
+                                    min-width: 80px !important;
+                                    width: 80px !important;
+                                  "
+                                />
+                                -
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  title="자격번호 세번째자리 입력"
+                                  style="
+                                    min-width: 80px !important;
+                                    width: 80px !important;
+                                  "
+                                />
+                                -
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  title="자격번호 네번째자리 입력"
+                                  style="
+                                    min-width: 80px !important;
+                                    width: 80px !important;
+                                  "
+                                />
+                                -
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  title="자격번호 다섯번째자리 입력"
+                                  style="
+                                    min-width: 80px !important;
+                                    width: 80px !important;
+                                  "
+                                />
+                              </div>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><span>종목</span></th>
+                          <td>
+                            <span>
+                              <select
+                                class="form-select"
+                                aria-label="종목 선택"
+                                title="종목 선택"
+                                style="min-width: 200px"
+                              >
+                                <option selected>특급소방안전관리자</option>
+                              </select>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><span>성명</span></th>
+                          <td>
+                            <span>
+                              <input
+                                type="text"
+                                class="form-control"
+                                title="성명"
+                                style="min-width: 200px"
+                              />
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><span>생년월일</span></th>
+                          <td>
+                            <span>
+                              <div
+                                class="d-flex align-items-center row-gap-1 column-gap-5 flex-wrap"
+                              >
+                                <div class="d-flex align-items-center gap-1">
+                                  <select
+                                    class="form-select"
+                                    title="년도 선택"
+                                    style="min-width: 100px; width: 100px"
+                                  >
+                                    <option selected>선택</option>
+                                  </select>
+                                  년
+                                </div>
+                                <div class="d-flex align-items-center gap-1">
+                                  <select
+                                    class="form-select"
+                                    title="월 선택"
+                                    style="min-width: 80px; width: 80px"
+                                  >
+                                    <option selected>선택</option>
+                                  </select>
+                                  월
+                                </div>
+                                <div class="d-flex align-items-center gap-1">
+                                  <select
+                                    class="form-select"
+                                    title="일 선택"
+                                    style="min-width: 80px; width: 80px"
+                                  >
+                                    <option selected>선택</option>
+                                  </select>
+                                  일
+                                </div>
+                              </div>
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  ※ 공공기관, 건설현장, 업무대행감독 소방안전관리자 자격 여부는
+                  ‘강습교육‘의 ‘수료증 진위확인’ 에서 확인 가능합니다. ‘기간한정
+                  소방안전관리자’의 자격은 ‘겸직’등의 사유로 선임된 기간에
+                  한하여 인정되는 자격이므로 관할 지부로 문의 바랍니다.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-lg btn-primary">
+              진위여부 확인
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal02" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5">수료증 인증</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="kfsi-license">
+              <div class="kfsi-textlist">
+                <ul>
+                  <li>
+                    안전원에서 수료한 강습교육 수료여부를 인증하시면, 별도의
+                    자격관련 파일첨부를 하지 않아도 됩니다.
+                  </li>
+                  <li>
+                    수료증을 발급 받기를 원하실 경우, 소방안전교육 > 강습교육>
+                    수료증 발급 메뉴를 이용하세요.
+                  </li>
+                  <li>
+                    강습교육 수료증 발급내역이 확인되지 않는 경우 관할 지부로
+                    문의바랍니다.
+                  </li>
+                </ul>
+              </div>
+              <div class="kfsi-board mt-10 mo-mt-6">
+                <div class="fs-22 mo-fs-17 text-primary mb-4">
+                  <strong>수료증 정보</strong>
+                </div>
+                <div class="kfsi-board-write">
+                  <div class="kfsi-board-write-form">
+                    <table
+                      summary="수료증 정보를 위해 수료번호와 신청자 성명을 입력하는 양식입니다."
+                    >
+                      <caption>
+                        수료증 정보 입력 양식
+                      </caption>
+                      <colgroup>
+                        <col style="width: 180px" />
+                        <col style="width: 760px" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="row"><span>수료번호</span></th>
+                          <td>
+                            <span>
+                              <div
+                                class="d-flex align-items-center column-gap-4 row-gap-1 mo-flex-column mo-align-items-start"
+                              >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  title="수료번호"
+                                  style="width: 282px"
+                                  placeholder="숫자로만 입력해 주세요."
+                                />
+                                <span class="text-666"
+                                  >예) 2010-01-21-000001</span
+                                >
+                              </div>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><span>신청자 성명</span></th>
+                          <td>
+                            <span>
+                              <input
+                                type="text"
+                                class="form-control"
+                                title="신청자 성명"
+                                style="width: 282px"
+                                placeholder="성명을 입력해 주세요."
+                              />
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-lg btn-primary">
+              발급 여부 확인
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
