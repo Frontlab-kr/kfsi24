@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>나의정보</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">개인정보수정</a>
+              <a href="" class="kfsi-snb-item">비밀번호 변경</a>
+              <a href="" class="kfsi-snb-item">로그인 기록보기</a>
+              <a href="" class="kfsi-snb-item">회원탈퇴</a>
+              <a href="" class="kfsi-snb-item">안전관리자 선임 이력 관리</a>
+              <a href="" class="kfsi-snb-item">나의 교육 정보 조회</a>
+              <a href="" class="kfsi-snb-item">나의 소속 관리</a>
+              <a href="" class="kfsi-snb-item">나의 자격 관리</a>
+              <a href="" class="kfsi-snb-item active">안전원 멤버십 관리</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">나의정보</li>
+                    <li class="breadcrumb-item">안전원 멤버십 관리</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      회비납부
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>회비납부</h1>
+              </div>
+              <div>
+                <div class="mb-15 mo-mb-10">
+                  <h4 class="kfsi-h4">회비 안내</h4>
+                  <div class="kfsi-list border-0 m-0">
+                    <ul>
+                      <li>
+                        납부해 주신 회비는 안전문화 정착을 위해 소방안전교육,
+                        연구, 대국민 화재예방홍보 및 회원권익증진을 위하여
+                        소중하게 사용됩니다.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="mb-15 mo-mb-10">
+                  <h4 class="kfsi-h4">수수료 결제</h4>
+                  <div
+                    class="d-flex justify-content-between mo-flex-column align-items-center gap-2 mb-10 p-4 bg-light relative border"
+                  >
+                    <div class="fs-18 mo-fs-17">
+                      미납금액 : <strong class="text-info">36,000</strong>원
+                    </div>
+                    <div class="d-flex gap-2">
+                      <button type="button" class="btn btn-outline-dark btn-sm">
+                        결제금액 상세보기
+                      </button>
+                      <button type="button" class="btn btn-outline-dark btn-sm">
+                        회비고지서 팩스
+                      </button>
+                    </div>
+                  </div>
+                  <div class="kfsi-tab03">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link active"
+                          id="tab01"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab01-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="tab01-pane"
+                          aria-selected="true"
+                        >
+                          무통장 입금
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="tab02"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab02-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="tab02-pane"
+                          aria-selected="false"
+                        >
+                          신용카드 결제
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div
+                        class="tab-pane fade show active"
+                        id="tab01-pane"
+                        role="tabpanel"
+                        aria-labelledby="tab01"
+                        tabindex="0"
+                      >
+                        <div class="kfsi-tab03-contents p-0">
+                          <div class="kfsi-board">
+                            <div class="kfsi-board-write">
+                              <div class="kfsi-board-write-form border-0">
+                                <table
+                                  summary="무통장 입금 시 필요한 정보인 입금은행 선택, 현금영수증 신청, 발급번호 입력 및 전자계산서 신청 기한을 포함한 표입니다."
+                                >
+                                  <caption>
+                                    무통장 입금 정보
+                                  </caption>
+                                  <colgroup>
+                                    <col style="width: 180px" />
+                                    <col style="width: 760px" />
+                                  </colgroup>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row" class="bg-primary-subtle">
+                                        입금은행 선택
+                                      </th>
+                                      <td>
+                                        <select
+                                          class="form-select"
+                                          aria-label="입금은행 선택"
+                                          title="입금은행 선택"
+                                        >
+                                          <option selected>선택</option>
+                                        </select>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row" class="bg-primary-subtle">
+                                        현금영수증
+                                      </th>
+                                      <td>
+                                        <select
+                                          class="form-select"
+                                          aria-label="입금은행 선택"
+                                          title="입금은행 선택"
+                                        >
+                                          <option selected>선택</option>
+                                        </select>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row" class="bg-primary-subtle">
+                                        현금영수증<br />
+                                        발급번호
+                                      </th>
+                                      <td>
+                                        <div
+                                          class="d-flex align-items-center gap-2 mo-flex-column"
+                                        >
+                                          <input
+                                            type="text"
+                                            class="form-control mo-w-100"
+                                            title="현금영수증 발급번호"
+                                          />
+                                          <div>
+                                            휴대폰번호 등 국세청에 신고된 번호
+                                            입력
+                                            <span class="text-danger"
+                                              >(주민번호 사용불가)</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row" class="bg-primary-subtle">
+                                        전자계산서<br />
+                                        신청기한
+                                      </th>
+                                      <td>
+                                        발급을 원하는 작성일자의 다음달 7일까지
+                                        신청하셔야 작성일자의 계산서를
+                                        발급받으실 수 있습니다.<br />
+                                        (기한경과시 발급불가)
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mt-10">
+                          <div class="kfsi-member-accordion">
+                            <div class="accordion" id="accordionExample">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <div class="accordion-button">
+                                    전자계산서는 어떻게 신청하나요?
+                                    <button
+                                      type="button"
+                                      data-bs-toggle="collapse"
+                                      data-bs-target="#collapseOne"
+                                      aria-expanded="true"
+                                      aria-controls="collapseOne"
+                                    >
+                                      열기
+                                    </button>
+                                  </div>
+                                </h2>
+                                <div
+                                  id="collapseOne"
+                                  class="accordion-collapse collapse"
+                                  data-bs-parent="#accordionExample"
+                                >
+                                  <div class="accordion-body">
+                                    <strong>1. 발급요건</strong><br />
+                                    - “현금결제”하시거나 “계좌입금”하셔야 발급이
+                                    가능합니다.<br />
+                                    <span class="text-danger"
+                                      >※ 신용카드 결제 시 계산서 발급이
+                                      불가합니다.</span
+                                    ><br />
+                                    <strong>2. 발급되는 계산서의 종류</strong
+                                    ><br />
+                                    -부가가치세액이 없는 면세 “전자계산서”<br />
+                                    <span class="text-danger"
+                                      >※ 안전원 회비 납부는 계산서 발행대상이
+                                      되지 않습니다.</span
+                                    ><br />
+                                    <strong>3. 신청기한</strong><br />
+                                    - 발급을 원하는 작성일자의 다음달 7일까지
+                                    신청하셔야 원하는 작성일자의 계산서를 발급
+                                    받으실 수 있습니다.<br />
+                                    <strong>4. 신청방법</strong><br />
+                                    1) 인터넷 신청<br />
+                                      - 신청가능기간 : 결제일로부터 다음달
+                                    7일까지<br />
+                                      - 신청방법<br />
+                                         ①「나의 신청내역」또는「상세보기
+                                    화면」에서「계산서」버튼을 클릭합니다.<br />
+                                         ② 기재사항을 작성하고
+                                    사업자등록증파일을 첨부하여 저장합니다.<br />
+                                      - 신청 후「계산서」버튼을 클릭하여
+                                    진행상황을 조회하실 수 있습니다.<br />
+                                      - 발급 완료 시 기재하신 이메일로 계산서가
+                                    발송됩니다.<br />
+                                    2) 오프라인 신청<br />
+                                      - 사업자등록증 사본에 아래사항을 기재하여
+                                    제출합니다.<br />
+                                         ① 수강자명 또는 신청자명(생년월일을
+                                    함께 기재)<br />
+                                         ② 교육과정 또는 자격수첩명칭<br />
+                                         ③ 계산서 수령용 이메일 주소<br />
+                                         ④ 발급을 원하는 계산서 작성일자<br />
+                                          
+                                    <span class="text-danger"
+                                      >※ 단, 발급을 원하는 작성일자의 다음달
+                                      7일까지 신청하여야함.</span
+                                    ><br />
+                                         ⑤ 연락처<br />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kfsi-textlist mt-10 ms-0">
+                          <ul>
+                            <li>무통장계좌는 신청자 전용계좌입니다.</li>
+                            <li>
+                              무통장입금의 경우, 교육시작 전 공공기관은
+                              접수일+5일 18시까지, 그 외의 직능은 접수일 +1일
+                              18시까지 입금해 주시기 바랍니다.
+                            </li>
+                            <li>
+                              단, 온라인 강습의 경우 접수마감일 기준으로
+                              입금기한이 변경될 수 있으니 입금 안내 문자를 꼭
+                              참고하시기 바랍니다.
+                            </li>
+                            <li>
+                              과오납이나 분할납이 허용되지 않으므로 정확한
+                              금액을 입금하셔야 합니다.
+                            </li>
+                            <li>
+                              입금은행의 규정에 따라 송금수수료가 발생할 수
+                              있습니다.
+                            </li>
+                            <li>
+                              은행 ATM CD기를 이용한 입금이 불가합니다. 은행
+                              창구나 인터넷 뱅킹, 폰 뱅킹을 사용하여 입금하시기
+                              바랍니다.
+                            </li>
+                            <li>
+                              만료일시까지 입금하지 않을 경우, 신청하신 교육이
+                              자동으로 취소됩니다.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="tab02-pane"
+                        role="tabpanel"
+                        aria-labelledby="tab02"
+                        tabindex="0"
+                      >
+                        <div class="kfsi-tab03-contents">
+                          <div class="kfsi-textlist ms-0">
+                            <ul>
+                              <li>
+                                신용카드 결제 시 전자계산서는 발행되지 않습니다.
+                              </li>
+                              <li>
+                                계산서 발급이 필요한 경우 무통장계좌 입금으로
+                                결제하시기 바랍니다.
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-button">
+                  <p>
+                    <a href="" class="btn btn-primary btn-lg">결제하기</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 5000;
+      "
+    >
+      <div>
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#modal01"
+        >
+          회비 미납 내역
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal01" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" style="max-width: 400px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5">회비 미납 내역</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="kfsi-table">
+              <table
+                summary="회비 미납 내역을 년도별로 확인할 수 있는 표입니다. 각 행은 해당 년도와 그에 해당하는 미납 회비 금액을 나타냅니다."
+              >
+                <caption class="visually-hidden">
+                  년도별 회비 미납 내역
+                </caption>
+                <colgroup>
+                  <col style="width: 113px" />
+                  <col style="width: 245px" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col"><span>년도</span></th>
+                    <th scope="col"><span>미납회비</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2025</td>
+                    <td>
+                      <div>36,000</div>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td class="bg-light">
+                      <strong>총액</strong>
+                    </td>
+                    <td class="bg-light">
+                      <strong>36,000</strong>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
