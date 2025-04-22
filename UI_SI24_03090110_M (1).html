@@ -369,7 +369,17 @@
           data-bs-toggle="modal"
           data-bs-target="#modal01"
         >
-          회비 미납 내역
+          UI_SI24_03090110_P01
+        </button>
+      </div>
+      <div class="mt-2">
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#modal02"
+        >
+          UI_SI24_03090110_P02
         </button>
       </div>
     </div>
@@ -425,6 +435,86 @@
                 </tfoot>
               </table>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal02" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5">팩스 전송</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="kfsi-board">
+              <div class="kfsi-board-write">
+                <div class="kfsi-board-write-form">
+                  <table
+                    summary="팩스 전송을 위한 팩스번호와 팩스번호 재확인을 입력하는 테이블입니다."
+                  >
+                    <caption>
+                      팩스번호 입력
+                    </caption>
+                    <colgroup>
+                      <col style="width: 195px" />
+                      <col style="width: 500px" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><span>팩스번호</span></th>
+                        <td>
+                          <span>
+                            <input
+                              type="text"
+                              class="form-control"
+                              value="sobang"
+                              title="팩스번호"
+                            />
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><span>팩스번호 재확인</span></th>
+                        <td>
+                          <span>
+                            <input
+                              type="password"
+                              class="form-control"
+                              title="팩스번호 재확인"
+                            />
+                          </span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="mt-5">
+                ※ 수료증을 받고자 하는 팩스번호(지역번호 포함)를 정확히
+                입력하시기 바랍니다.<br />
+                예) 0212345678<br />
+                ※ 팩스번호를 잘못 입력하여 다른 팩스번호로 발송될 경우 개인정보
+                유출 위험이 있으니 유의하시기 바랍니다.<br />
+                ※ 증명서 팩스 수신시간은 통신환경에 따라서 최장 5~10분까지
+                소요될 수 있습니다.
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              data-bs-dismiss="modal"
+            >
+              전송하기
+            </button>
           </div>
         </div>
       </div>
