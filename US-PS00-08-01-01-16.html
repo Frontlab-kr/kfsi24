@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-contents" style="max-width: 100%">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      검색
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>검색</h1>
+              </div>
+              <div class="kfsi-search">
+                <div class="kfsi-search-form">
+                  <div class="kfsi-search-form-head">
+                    <button class="kfsi-search-form-filter-toggle">필터</button>
+                    <div class="kfsi-search-form-head-contents">
+                      <div class="kfsi-search-form-filter">
+                        <button class="kfsi-search-form-filter-title">
+                          상세검색
+                        </button>
+                        <div class="kfsi-search-form-filter-box">
+                          <div class="kfsi-search-form-filter-contents">
+                            <dl>
+                              <dt>결과 내 재검색</dt>
+                              <dd>
+                                <div class="kfsi-search-form-filter-check">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="radio"
+                                      name="flexRadioDefault"
+                                      id="flexRadioDefault1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="flexRadioDefault1"
+                                    >
+                                      검색어 포함
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="radio"
+                                      name="flexRadioDefault"
+                                      id="flexRadioDefault2"
+                                      checked
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="flexRadioDefault2"
+                                    >
+                                      검색어 제외
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="kfsi-search-form-filter-input">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="검색어를 입력해 주세요."
+                                    title="검색어를 입력해 주세요."
+                                  />
+                                </div>
+                              </dd>
+                            </dl>
+                            <dl>
+                              <dt>기간조회</dt>
+                              <dd>
+                                <div class="kfsi-search-form-filter-radio">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="radio"
+                                      name="flexRadioDefault2"
+                                      id="flexRadioDefault2-1"
+                                      checked
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="flexRadioDefault2-1"
+                                    >
+                                      전체
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="radio"
+                                      name="flexRadioDefault2"
+                                      id="flexRadioDefault2-2"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="flexRadioDefault2-2"
+                                    >
+                                      일주일
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="radio"
+                                      name="flexRadioDefault2"
+                                      id="flexRadioDefault2-3"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="flexRadioDefault2-3"
+                                    >
+                                      1개월
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="radio"
+                                      name="flexRadioDefault2"
+                                      id="flexRadioDefault2-4"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="flexRadioDefault2-4"
+                                    >
+                                      6개월
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="radio"
+                                      name="flexRadioDefault2"
+                                      id="flexRadioDefault2-5"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="flexRadioDefault2-5"
+                                    >
+                                      1년
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="kfsi-search-form-filter-date"></div>
+                              </dd>
+                            </dl>
+                            <dl>
+                              <dt>항목 분류</dt>
+                              <dd>
+                                <div
+                                  class="kfsi-search-form-filter-check kfsi-search-form-filter-check--check"
+                                >
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      name="flexCheckboxDefault"
+                                      id="flexCheckboxDefault1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="flexCheckboxDefault1"
+                                    >
+                                      전체
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      name="flexCheckboxDefault"
+                                      id="flexCheckboxDefault2"
+                                      checked
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="flexCheckboxDefault2"
+                                    >
+                                      안전원소개
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      name="flexCheckboxDefault"
+                                      id="flexCheckboxDefault3"
+                                      checked
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="flexCheckboxDefault3"
+                                    >
+                                      소방안전센터
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      name="flexCheckboxDefault"
+                                      id="flexCheckboxDefault4"
+                                      checked
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="flexCheckboxDefault4"
+                                    >
+                                      화재안전진단
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      name="flexCheckboxDefault"
+                                      id="flexCheckboxDefault5"
+                                      checked
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="flexCheckboxDefault5"
+                                    >
+                                      회원서비스
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      name="flexCheckboxDefault"
+                                      id="flexCheckboxDefault6"
+                                      checked
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="flexCheckboxDefault6"
+                                    >
+                                      고객센터
+                                    </label>
+                                  </div>
+                                </div>
+                              </dd>
+                            </dl>
+                          </div>
+                          <div class="kfsi-search-form-filter-button">
+                            <button class="btn btn-primary">
+                              선택된 조건으로 검색
+                            </button>
+                          </div>
+                          <button class="kfsi-search-form-filter__close">
+                            닫기
+                          </button>
+                        </div>
+                      </div>
+                      <div class="kfsi-search-form-input">
+                        <div class="kfsi-search-form-input__inner">
+                          <div class="kfsi-search-form-input-dropdown">
+                            <div class="dropdown">
+                              <button
+                                type="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                전체
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="javascript:void(0);"
+                                    >선택</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="javascript:void(0);"
+                                    >선택</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="javascript:void(0);"
+                                    >선택</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <input type="text" title="검색어를 입력해주세요." />
+                          <div class="kfsi-search-form-input-keyword">
+                            <a
+                              href=""
+                              class="kfsi-search-form-input-keyword-item"
+                              ><strong>소방안전</strong></a
+                            >
+                            <a
+                              href=""
+                              class="kfsi-search-form-input-keyword-item"
+                              >건축물 <strong>소방안전</strong>관리</a
+                            >
+                            <a
+                              href=""
+                              class="kfsi-search-form-input-keyword-item"
+                              ><strong>소방안전</strong>관리</a
+                            >
+
+                            <a
+                              href=""
+                              class="kfsi-search-form-input-keyword-item"
+                              ><strong>소방안전</strong></a
+                            >
+                            <a
+                              href=""
+                              class="kfsi-search-form-input-keyword-item"
+                              >건축물 <strong>소방안전</strong>관리</a
+                            >
+                            <a
+                              href=""
+                              class="kfsi-search-form-input-keyword-item"
+                              ><strong>소방안전</strong>관리</a
+                            >
+                          </div>
+                          <button class="kfsi-search-form-input-remove">
+                            삭제
+                          </button>
+                          <button class="kfsi-search-form-input-search">
+                            검색
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-search-text">
+                  <p>일치하는 검색결과가 없습니다.</p>
+                  <p>
+                    “<strong class="text-primary">소방안전</strong>”으로
+                    검색하시겠습니까?
+                  </p>
+                  <div class="kfsi-search-text__link">
+                    <a href="">검색 결과보기</a>
+                  </div>
+                </div>
+              </div>
+              <script>
+                $(document).ready(function () {
+                  $(
+                    '.kfsi-search-form-filter-toggle, .kfsi-search-form-filter__close, .kfsi-search-form-filter-title'
+                  ).on('click', function () {
+                    $('.kfsi-search-form-filter').toggleClass('active');
+
+                    $('.kfsi-search-form').toggleClass(
+                      'kfsi-search-form--filter'
+                    );
+                  });
+                  $('.kfsi-search-form-input__inner > input').on(
+                    'focus',
+                    function () {
+                      $('.kfsi-search-form-input').addClass('active');
+                    }
+                  );
+                  $(
+                    '.kfsi-search-form-input-dropdown button, .kfsi-search-form-input-search'
+                  ).on('focus', function () {
+                    $('.kfsi-search-form-input').removeClass('active');
+                  });
+                  $(document).on('click', function (e) {
+                    if (
+                      !$(e.target).closest('.kfsi-search-form-input').length
+                    ) {
+                      $('.kfsi-search-form-input').removeClass('active');
+                    }
+                  });
+                });
+                $(document).ready(function () {
+                  const $tabs = $('.kfsi-search-tab-item');
+                  const $sections = $('.kfsi-search-section');
+                  const $tabContainer = $('.kfsi-search-tab');
+                  const tabHeight = $tabContainer.outerHeight(); // kfsi-search-tab 높이 구하기
+
+                  // 스크롤 이벤트: 활성화된 탭 변경
+                  $(window).on('scroll', function () {
+                    let currentIndex = 0;
+
+                    $sections.each(function (index) {
+                      const sectionTop = $(this).offset().top - tabHeight;
+                      const sectionBottom = sectionTop + $(this).outerHeight();
+                      const scrollTop = $(window).scrollTop();
+
+                      if (
+                        scrollTop >= sectionTop &&
+                        scrollTop < sectionBottom
+                      ) {
+                        currentIndex = index;
+                      }
+                    });
+
+                    $tabs
+                      .removeClass('active')
+                      .eq(currentIndex)
+                      .addClass('active');
+                  });
+
+                  // 탭 클릭 이벤트: 해당 섹션으로 이동
+                  $tabs.on('click', function (e) {
+                    const targetId = $(this).find('a').attr('href');
+                    const targetSection = $(targetId);
+                    if (targetId != '#section00') {
+                      e.preventDefault();
+                      if (targetSection.length) {
+                        const targetPosition =
+                          targetSection.offset().top - tabHeight + 1; // 탭 높이만큼 조정
+                        $(window).scrollTop(targetPosition); // 즉시 스크롤
+                      }
+                    }
+                  });
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
