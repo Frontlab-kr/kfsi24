@@ -55,139 +55,247 @@
               </div>
               <div class="kfsi-license">
                 <div class="mb-15 mo-mb-10">
-                  <h4 class="kfsi-h4">선택한 자격</h4>
-                  <div class="kfsi-table kfsi-table-mo-list">
-                    <table
-                      summary="사용자가 선택한 자격 정보를 나타내며, 자격명, 자격번호, 취득일자, 발급구분, 발급수수료를 포함한 표입니다."
-                    >
-                      <caption>
-                        선택한 자격 목록
-                      </caption>
-                      <colgroup>
-                        <col style="width: 278px" />
-                        <col style="width: 250px" />
-                        <col style="width: 150px" />
-                        <col style="width: 120px" />
-                        <col style="width: 140px" />
-                      </colgroup>
-                      <thead>
-                        <tr>
-                          <th scope="col">자격명</th>
-                          <th scope="col">자격번호</th>
-                          <th scope="col">취득일자</th>
-                          <th scope="col">발급구분</th>
-                          <th scope="col">발급수수료</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td title="자격명" class="text-info">
-                            <div>2급 소방안전관리자</div>
-                          </td>
-                          <td title="자격번호">
-                            <div>2025-01-01-1-111234</div>
-                          </td>
-                          <td title="취득일자">
-                            <div>2024.10.24</div>
-                          </td>
-                          <td title="발급구분">
-                            <div>신규</div>
-                          </td>
-                          <td title="발급수수료">
-                            <div>10,000원</div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td title="자격명" class="text-info">
-                            <div>1급 소방안전관리자</div>
-                          </td>
-                          <td title="자격번호">
-                            <div>2025-01-01-1-111234</div>
-                          </td>
-                          <td title="취득일자">
-                            <div>2024.10.24</div>
-                          </td>
-                          <td title="발급구분">
-                            <div>신규</div>
-                          </td>
-                          <td title="발급수수료">
-                            <div>10,000원</div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-                <div class="mb-15 mo-mb-10">
-                  <h4 class="kfsi-h4">신청자 정보</h4>
-                  <div
-                    class="d-flex mo-flex-column-reverse"
-                    style="border-top: 2px solid #004d16"
-                  >
-                    <div class="kfsi-board">
-                      <div class="kfsi-board-write">
-                        <div class="kfsi-board-write-form border-0">
-                          <table
-                            summary="신청자의 성명, 생년월일, 전화번호, 휴대폰번호, 주소 및 프로필 사진 정보를 포함한 표입니다."
-                          >
-                            <caption>
-                              신청자 정보
-                            </caption>
-                            <colgroup>
-                              <col style="width: 195px" />
-                              <col style="width: 550px" />
-                            </colgroup>
-                            <tbody>
-                              <tr>
-                                <th scope="row">성명</th>
-                                <td>김소방</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">생년월일</th>
-                                <td>1980.01.01</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">전화번호</th>
-                                <td>010-1425-7854</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">휴대폰번호</th>
-                                <td>010-1425-7854</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">주소(주민등록상)</th>
-                                <td>
-                                  (01234)<br />
-                                  서울시 강남구 공달래로123, 타워팰리스
-                                  204동2204호
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
+                  <h4 class="kfsi-h4">신청서</h4>
+                  <div class="kfsi-license-profile">
+                    <div class="kfsi-license-profile-img">
+                      <div class="kfsi-license-profile-img-img">
+                        <img
+                          src="./assets/images/license/profile.svg"
+                          alt="응시자 이미지"
+                        />
+                      </div>
+                      <div class="kfsi-license-profile-img-info">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="선택된 파일 없음"
+                          title="신청자 이미지 파일 등록"
+                        />
+                        <button type="button" class="btn btn-secondary btn-sm">
+                          사진파일 등록<i class="ico-camera"></i>
+                        </button>
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              웹 브라우저 사양에 따라 등록된 사진이 미리보기에
+                              보이지 않을 수 있습니다.
+                            </li>
+                            <li>
+                              미리보기에 보이지 않아도 증명사진은 저장됩니다.
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
-                    <div
-                      class="d-flex align-items-center justify-content-center mo-w-100 border-bottom p-4"
-                      style="width: 195px"
-                    >
-                      <img
-                        src="./assets/images/license/profile.svg"
-                        alt="신청자 이미지"
-                      />
+                    <div class="kfsi-license-profile-info">
+                      <div class="kfsi-board">
+                        <div class="kfsi-board-write">
+                          <div class="kfsi-board-write-form">
+                            <table
+                              summary="신청자의 기본 정보를 제공하는 표입니다. 이름, 생년월일, 성별, 전화번호, 휴대폰 번호, 주소 등의 정보를 포함합니다."
+                            >
+                              <caption>
+                                신청자 정보
+                              </caption>
+                              <colgroup>
+                                <col style="width: 195px" />
+                                <col style="width: 164px" />
+                                <col style="width: 150px" />
+                                <col style="width: 150px" />
+                              </colgroup>
+                              <tbody>
+                                <tr>
+                                  <th scope="row"><span>이름</span></th>
+                                  <td colspan="3"><span>김소방</span></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                    <span>생년월일</span>
+                                  </th>
+                                  <td><span>1980.01.01</span></td>
+                                  <th scope="row"><span>성별</span></th>
+                                  <td><span>남자</span></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                    <span>전화번호</span>
+                                  </th>
+                                  <td colspan="3">
+                                    <span>
+                                      <div class="kfsi-mypage-phone">
+                                        <div class="kfsi-mypage-phone-input">
+                                          <select
+                                            class="form-select"
+                                            aria-label="휴대폰 번호 앞자리 선택"
+                                            title="휴대폰 번호 앞자리 선택"
+                                            style="min-width: 80px; width: 80px"
+                                          >
+                                            <option selected>선택</option>
+                                          </select>
+                                          -
+                                          <input
+                                            type="text"
+                                            class="form-control"
+                                            title="휴대폰 번호 중간 자리 입력"
+                                            style="min-width: 80px; width: 80px"
+                                          />
+                                          -
+                                          <input
+                                            type="text"
+                                            class="form-control"
+                                            title="휴대폰 번호 마지막 자리 입력"
+                                            style="min-width: 80px; width: 80px"
+                                          />
+                                        </div>
+                                      </div>
+                                    </span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                    <span>
+                                      휴대폰 번호
+                                      <span class="text-danger">*</span>
+                                    </span>
+                                  </th>
+                                  <td colspan="3">
+                                    <span>
+                                      <div class="kfsi-mypage-phone">
+                                        <div class="kfsi-mypage-phone-input">
+                                          <select
+                                            class="form-select"
+                                            aria-label="휴대폰 번호 앞자리 선택"
+                                            title="휴대폰 번호 앞자리 선택"
+                                            style="min-width: 80px; width: 80px"
+                                          >
+                                            <option selected>선택</option>
+                                          </select>
+                                          -
+                                          <input
+                                            type="text"
+                                            class="form-control"
+                                            title="휴대폰 번호 중간 자리 입력"
+                                            style="min-width: 80px; width: 80px"
+                                          />
+                                          -
+                                          <input
+                                            type="text"
+                                            class="form-control"
+                                            title="휴대폰 번호 마지막 자리 입력"
+                                            style="min-width: 80px; width: 80px"
+                                          />
+                                        </div>
+                                      </div>
+                                    </span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                    <span>
+                                      주소(주민등록상)
+                                      <span class="text-danger">*</span>
+                                    </span>
+                                  </th>
+                                  <td colspan="3">
+                                    <span>
+                                      <div class="kfsi-mypage-address">
+                                        <div class="kfsi-mypage-address-post">
+                                          <input
+                                            type="text"
+                                            class="form-control"
+                                            value="12345"
+                                            style="
+                                              min-width: 110px;
+                                              width: 110px;
+                                            "
+                                            readonly
+                                            title="우편번호"
+                                          />
+                                          <a
+                                            href=""
+                                            class="btn btn-secondary btn-sm"
+                                            >우편번호찾기
+                                            <i class="ico-post"></i>
+                                          </a>
+                                        </div>
+                                        <div class="kfsi-mypage-address-input">
+                                          <input
+                                            type="text"
+                                            class="form-control w-100"
+                                            value="서울특별시 강남구 도산대로 523 한성빌딩"
+                                            readonly
+                                            title="주소"
+                                          />
+                                        </div>
+                                        <div class="kfsi-mypage-address-input">
+                                          <input
+                                            type="text"
+                                            class="form-control w-100"
+                                            value="106호"
+                                            title="상세 주소"
+                                          />
+                                        </div>
+                                      </div>
+                                    </span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kfsi-license-profile-example">
+                    <strong>증명사진 등록 유의사항</strong>
+                    <div class="kfsi-textlist mo-ms-0">
+                      <ul>
+                        <li>최근 6개월 이내 사진을 등록하세요.</li>
+                        <li>
+                          등록불가사진 : 흑백, 저화질, 배경 표시, 홀로그램 표시,
+                          상단 여백 불충분, 기타 본인 확인이 어려운 사진
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="kfsi-license-profile-example-text">
+                      ※ 등록불가사진에 해당하는 경우 담당자가 사진 수정·보완
+                      요청을 할 수 있습니다.<br />
+                      ※ 등록불가사진 예시
+                    </div>
+                    <div class="text-center mt-7 mo-mt-4">
+                      <div class="pc">
+                        <img
+                          src="./assets/images/license/profile-example.png"
+                          alt="아래 대체 텍스트를 확인해주세요."
+                        />
+                      </div>
+                      <div class="mo">
+                        <img
+                          src="./assets/images/license/profile-example-mo.png"
+                          alt="아래 대체 텍스트를 확인해주세요."
+                        />
+                      </div>
+                      <div class="hide">
+                        적합하지 않은 사진 예시:<br />
+                        1. 흑백사진 (적합하지 않음 표시)<br />
+                        2. 저화질 사진 (본인 확인 불가)<br />
+                        3. 배경 표시가 있는 사진<br />
+                        4. 신분증 홀로그램 표시가 있는 사진<br />
+                        5. 상단 여백이 부족한 사진
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="mb-15 mo-mb-10">
-                  <h4 class="kfsi-h4">배송지 정보</h4>
+                  <h4 class="kfsi-h4">배송지 정보 수정</h4>
                   <div class="kfsi-board">
                     <div class="kfsi-board-write">
                       <div class="kfsi-board-write-form">
                         <table
-                          summary="배송주소, 발행지부, 신청 상태 등의 배송지 정보를 제공합니다."
+                          summary="수령인의 이름과 주소 정보, 우편번호, 상세 주소 입력 필드를 포함하는 배송지 정보 수정 양식입니다."
                         >
                           <caption>
-                            배송지 정보
+                            배송지 정보 수정 입력표
                           </caption>
                           <colgroup>
                             <col style="width: 195px" />
@@ -195,24 +303,69 @@
                           </colgroup>
                           <tbody>
                             <tr>
-                              <th scope="row">배송주소</th>
-                              <td>
-                                (01234)<br />
-                                서울시 강남구 공달래로123, 타워팰리스
-                                204동2204호
-                              </td>
+                              <th scope="row">이름</th>
+                              <td>김소방</td>
                             </tr>
                             <tr>
-                              <th scope="row">발행지부</th>
-                              <td>
-                                (01234)<br />
-                                서울시 강남구 공달래로123, 타워팰리스
-                                204동2204호
+                              <th scope="row">
+                                <span> 주소 </span>
+                              </th>
+                              <td colspan="3">
+                                <span>
+                                  <div class="mb-4">
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="checkbox01"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="checkbox01"
+                                        class="fs-15"
+                                      >
+                                        신청서 주소와 동일
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div class="kfsi-mypage-address">
+                                    <div class="kfsi-mypage-address-post">
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        value="12345"
+                                        style="min-width: 110px; width: 110px"
+                                        readonly
+                                        title="우편번호"
+                                      />
+                                      <a
+                                        href=""
+                                        class="btn btn-secondary btn-sm"
+                                        >우편번호찾기
+                                        <i class="ico-post"></i>
+                                      </a>
+                                    </div>
+                                    <div class="kfsi-mypage-address-input">
+                                      <input
+                                        type="text"
+                                        class="form-control w-100"
+                                        value="서울특별시 강남구 도산대로 523 한성빌딩"
+                                        readonly
+                                        title="주소"
+                                      />
+                                    </div>
+                                    <div class="kfsi-mypage-address-input">
+                                      <input
+                                        type="text"
+                                        class="form-control w-100"
+                                        value="106호"
+                                        title="상세 주소"
+                                      />
+                                    </div>
+                                  </div>
+                                </span>
                               </td>
-                            </tr>
-                            <tr>
-                              <th scope="row">신청(발송)상태</th>
-                              <td class="text-info">신청(결제)완료</td>
                             </tr>
                           </tbody>
                         </table>
@@ -220,44 +373,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="mb-15 mo-mb-10">
-                  <h4 class="kfsi-h4">결제 정보</h4>
-                  <div class="kfsi-board">
-                    <div class="kfsi-board-write">
-                      <div class="kfsi-board-write-form">
-                        <table
-                          summary="결제방법, 결제상태, 결제금액, 처리일자 등의 결제 정보를 제공합니다."
-                        >
-                          <caption>
-                            결제 정보
-                          </caption>
-                          <colgroup>
-                            <col style="width: 195px" />
-                            <col style="width: 745px" />
-                          </colgroup>
-                          <tbody>
-                            <tr>
-                              <th scope="row">결제방법</th>
-                              <td>무통장입금</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">결제상태</th>
-                              <td>결제완료</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">결제금액</th>
-                              <td>12,620원</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">처리일자</th>
-                              <td>2024.10.24</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
                 <div
                   class="d-flex justify-content-center column-gap-2 row-gap-2 mt-15 mo-mt-10 mo-flex-column flex-wrap mo-px-3 mo-d-grid"
                   style="grid-template-columns: 1fr 1fr"
@@ -271,10 +387,10 @@
                   </button>
                   <button
                     type="button"
-                    class="btn btn-outline-secondary btn-lg mo-w-100"
+                    class="btn btn-primary btn-lg mo-w-100"
                     style="width: 225px"
                   >
-                    정보수정
+                    수정하기
                   </button>
                 </div>
               </div>
@@ -283,6 +399,200 @@
         </div>
       </div>
       <div id="footer"></div>
+    </div>
+
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 5000;
+      "
+    >
+      <div>
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#modal01"
+        >
+          UI_SI24_07050210_P03
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal01" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" style="max-width: 840px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5">무통장계좌 출력</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-15 mo-mb-10">
+              <h4 class="kfsi-h4">입금은행 안내</h4>
+              <div class="kfsi-board">
+                <div class="kfsi-board-write">
+                  <div class="kfsi-board-write-form">
+                    <table summary="교육 수강료 입금 정보를 안내하는 표입니다.">
+                      <caption>
+                        교육 수강료 입금 정보
+                      </caption>
+                      <colgroup>
+                        <col style="width: 180px" />
+                        <col style="width: 612px" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="row">입금은행</th>
+                          <td class="text-start">
+                            <div>국민</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">계좌번호</th>
+                          <td class="text-start">
+                            <div>123123-12-123123</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">예금주명</th>
+                          <td class="text-start">
+                            <div>한국소방안전원 – 김소방</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">만료일시</th>
+                          <td class="text-start">
+                            <div>
+                              <strong class="text-danger"
+                                >2025년 02월 24일 18시 00분까지</strong
+                              >
+                              입금하셔야 합니다.
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">입금액</th>
+                          <td class="text-start">
+                            <div>144,000원</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">주의사항</th>
+                          <td class="text-start">
+                            <div class="lh-base">
+                              1. 위 입금은행 계좌는 신청자 전용계좌입니다.<br />
+                              2. 위의 만료일시까지 입금이 완료되지 않을 경우
+                              해당 강습교육 신청이 자동취소됩니다.<br />
+                              3. 무통장 계좌는 일회성 계좌이므로 재사용(다시 그
+                              계좌로 입금하는 경우)이 불가능합니다.<br />
+                              재사용으로 인한 금전손실에 대해서는 신청자의
+                              책임이므로 사용에 주의하시기 바랍니다.<br />
+                              4. 은행 ATM CD기를 이용한 입금이 불가하므로 은행
+                              창구나 인터넷 뱅킹, 폰 뱅킹을 사용하여 입금하시기
+                              바랍니다.<br />
+                              5. 과오납이나 분할납이 허용되지 않으므로 정확한
+                              금액을 입금하셔야 합니다.<br />
+                              6. 입금하신 후 정상처리 여부를 반드시 확인하시기
+                              바랍니다.<br />
+                              &nbsp;&nbsp;&nbsp;[ 확인방법 :
+                              <a href="http://www.kfsi.or.kr" class="text-info"
+                                >http://www.kfsi.or.kr</a
+                              >
+                              접속 (소방교육 > 강습교육 > 나의 교육신청 내역) ]
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h4 class="kfsi-h4">선택한 자격</h4>
+              <div class="kfsi-table kfsi-table-mo-list">
+                <table
+                  summary="선택한 자격에 대한 자격명, 자격번호, 취득일자, 발급 구분, 발급 수수료, 배송료를 포함한 목록입니다."
+                >
+                  <caption>
+                    선택한 자격 정보
+                  </caption>
+                  <colgroup>
+                    <col style="width: 172px" />
+                    <col style="width: 200px" />
+                    <col style="width: 120px" />
+                    <col style="width: 100px" />
+                    <col style="width: 100px" />
+                    <col style="width: 100px" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">자격명</th>
+                      <th scope="col">자격번호</th>
+                      <th scope="col">취득일자</th>
+                      <th scope="col">발급구분</th>
+                      <th scope="col">발급수수료</th>
+                      <th scope="col">배송료</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td title="자격명" class="text-info">
+                        <div>2급 소방안전관리자</div>
+                      </td>
+                      <td title="자격번호">
+                        <div>2025-01-01-1-111234</div>
+                      </td>
+                      <td title="취득일자">
+                        <div>2024.10.24</div>
+                      </td>
+                      <td title="발급구분">
+                        <div>신규</div>
+                      </td>
+                      <td title="발급수수료">
+                        <div>10,000원</div>
+                      </td>
+                      <td title="배송료">
+                        <div>10,000원</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td title="자격명" class="text-info">
+                        <div>1급 소방안전관리자</div>
+                      </td>
+                      <td title="자격번호">
+                        <div>2025-01-01-1-111234</div>
+                      </td>
+                      <td title="취득일자">
+                        <div>2024.10.24</div>
+                      </td>
+                      <td title="발급구분">
+                        <div>신규</div>
+                      </td>
+                      <td title="발급수수료">
+                        <div>10,000원</div>
+                      </td>
+                      <td title="배송료">
+                        <div>10,000원</div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
