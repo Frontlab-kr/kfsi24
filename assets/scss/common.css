@@ -24165,10 +24165,9 @@ html.oacxHtml {
   width: 167px;
 }
 .kfsi-header-gnb {
-  position: relative;
   display: flex;
   align-items: center;
-  gap: 56px;
+  gap: 40px;
   height: 58px;
 }
 .kfsi-header-gnb-item {
@@ -24176,12 +24175,16 @@ html.oacxHtml {
   align-items: center;
   height: 100%;
 }
+.kfsi-header-gnb-item:first-child > a::before {
+  display: none;
+}
 .kfsi-header-gnb-item > a {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   height: 100%;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -24190,6 +24193,15 @@ html.oacxHtml {
   text-align: center;
   color: #000;
   transition: all 0.2s ease;
+}
+.kfsi-header-gnb-item > a::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 10px;
+  background: #d5d5d5;
+  position: absolute;
+  left: -20px;
 }
 .kfsi-header-gnb-item > a::after {
   content: "";
