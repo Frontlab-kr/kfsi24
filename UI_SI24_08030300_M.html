@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>회원서비스 신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">회원서비스 안내</a>
+              <a href="" class="kfsi-snb-item">재해위로금</a>
+              <a href="" class="kfsi-snb-item active">소방안전장학금</a>
+              <a href="" class="kfsi-snb-item">퀴즈이벤트</a>
+              <a href="" class="kfsi-snb-item">전자도서관</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">회원서비스 신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      소방안전장학금 신청
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>소방안전장학금 신청 목록</h1>
+              </div>
+              <div class="kfsi-member">
+                <div class="mb-15">
+                  <div
+                    class="d-flex align-items-center justify-content-between gap-3 mb-5 mo-flex-column mo-align-items-start"
+                  >
+                    <h4 class="kfsi-h4 m-0">소방장학금 신청 결과</h4>
+                    <div
+                      class="d-flex gap-2 mo-justify-content-center mo-w-100"
+                    >
+                      <button type="button" class="btn btn-secondary btn-sm">
+                        수정
+                      </button>
+                      <button type="button" class="btn btn-secondary btn-sm">
+                        삭제
+                      </button>
+                    </div>
+                  </div>
+                  <div class="kfsi-table mt-3">
+                    <table
+                      summary="소방안전장학금 신청자의 기본 정보 및 학교 정보, 신청 결과를 나타내는 테이블입니다."
+                    >
+                      <caption>
+                        소방안전장학금 신청자 정보 및 결과
+                      </caption>
+                      <colgroup>
+                        <col width="220px" />
+                        <col width="250px" />
+                        <col width="470px" />
+                      </colgroup>
+
+                      <thead>
+                        <tr>
+                          <th scope="col" colspan="2"><span>구분</span></th>
+                          <th scope="col"><span>입력정보</span></th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td colspan="2" class="bg-primary-subtle">
+                            <span>신청연도</span>
+                          </td>
+                          <td>
+                            <span>2024년</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td rowspan="3" class="bg-primary-subtle">
+                            <span>장학금 신청자</span>
+                          </td>
+                          <td class="bg-primary-subtle"><span>성명</span></td>
+                          <td>
+                            <span><strong>김소방</strong></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="bg-primary-subtle"><span>관계</span></td>
+                          <td>
+                            <span><strong>자녀</strong></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="bg-primary-subtle">
+                            <span>생년월일</span>
+                          </td>
+                          <td>
+                            <span><strong>1991-10-24</strong></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td rowspan="4" class="bg-primary-subtle">
+                            <span>학교정보</span>
+                          </td>
+                          <td class="bg-primary-subtle"><span>학교명</span></td>
+                          <td>
+                            <span><strong>소방대학교</strong></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="bg-primary-subtle">
+                            <span>학년</span>
+                          </td>
+                          <td>
+                            <span><strong>2</strong></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="bg-primary-subtle">
+                            <span>이수 학점</span>
+                          </td>
+                          <td>
+                            <span><strong>34</strong></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="bg-primary-subtle">
+                            <span>성적(백분율)</span>
+                          </td>
+                          <td>
+                            <span><strong>87-10-24</strong></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="bg-primary-subtle">
+                            <span>결과</span>
+                          </td>
+                          <td>
+                            <span
+                              ><strong class="text-primary">신청</strong></span
+                            >
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

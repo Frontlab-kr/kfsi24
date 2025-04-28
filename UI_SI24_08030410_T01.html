@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- dropzone -->
+    <script src="./assets/js/dropzone.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>회원서비스 신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">회원서비스 안내</a>
+              <a href="" class="kfsi-snb-item">재해위로금</a>
+              <a href="" class="kfsi-snb-item active">소방안전장학금</a>
+              <a href="" class="kfsi-snb-item">퀴즈이벤트</a>
+              <a href="" class="kfsi-snb-item">전자도서관</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">회원서비스 신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      소방안전장학금 신청
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>소방안전장학금 신청자격 검토</h1>
+              </div>
+              <div class="kfsi-member">
+                <div class="mb-15">
+                  <h4 class="kfsi-h4">소방안전장학금 신청자격 검토</h4>
+                  <div class="kfsi-textlist">
+                    <ul>
+                      <li>
+                        <strong>김소방</strong> 님은 장학금 신청이
+                        <strong class="text-danger">불가능</strong> 합니다.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="kfsi-table kfsi-table-scroll-mo mt-3">
+                    <table
+                      summary="소방안전장학금 신청자의 신청 자격 항목별 충족 여부와 세부 내역, 미충족 사유를 안내하는 표입니다."
+                    >
+                      <caption>
+                        소방안전장학금 신청자격 검토 항목
+                      </caption>
+                      <colgroup>
+                        <col style="width: 290px" />
+                        <col style="width: 80px" />
+                        <col style="width: 100px" />
+                        <col style="width: 470px" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">신청자격</th>
+                          <th scope="col">충족여부</th>
+                          <th scope="col">세부내역</th>
+                          <th scope="col">미충족사유</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>안전원 회원 여부</td>
+                          <td style="font-size: 0; line-height: 0">
+                            <i class="ico-o-30"></i>
+                          </td>
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-outline-dark btn-sm"
+                            >
+                              확인
+                            </button>
+                          </td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>2024년 회비납부 여부</td>
+                          <td style="font-size: 0; line-height: 0">
+                            <i class="ico-o-30"></i>
+                          </td>
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-outline-dark btn-sm"
+                            >
+                              확인
+                            </button>
+                          </td>
+                          <td>회비 비납</td>
+                        </tr>
+                        <tr>
+                          <td>회원가입기간(회비납부) 5년 이상</td>
+                          <td style="font-size: 0; line-height: 0">
+                            <i class="ico-x-30"></i>
+                          </td>
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-outline-dark btn-sm"
+                            >
+                              확인
+                            </button>
+                          </td>
+                          <td>회원가입 5년 미만</td>
+                        </tr>
+                        <tr>
+                          <td>최근 5년 이내 소방안전원장학금 미선발</td>
+                          <td style="font-size: 0; line-height: 0">
+                            <i class="ico-o-30"></i>
+                          </td>
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-outline-dark btn-sm"
+                            >
+                              확인
+                            </button>
+                          </td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="mb-15">
+                  <div class="kfsi-button">
+                    <p>
+                      <a href="" class="btn btn-primary btn-lg">신청하기</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="mb-15">
+                  <h4 class="kfsi-h4">회원가입기간 추가 등록</h4>
+                  <div class="kfsi-textlist">
+                    <ul>
+                      <li
+                        class="d-flex align-items-center mo-flex-column mo-align-items-start mo-justify-content-start gap-4"
+                      >
+                        <div>총 회원가입 기간 등록</div>
+
+                        <div
+                          class="d-flex align-items-center gap-2 ms-20 mo-ms-0"
+                        >
+                          <div class="d-flex align-items-center gap-1">
+                            <select class="form-select w-100" title="년">
+                              <option selected>선택</option>
+                            </select>
+                            년
+                          </div>
+                          <div class="d-flex align-items-center gap-1">
+                            <select class="form-select w-100" title="월">
+                              <option selected>선택</option>
+                            </select>
+                            월
+                          </div>
+                          <div class="d-flex align-items-center gap-1">
+                            <select class="form-select w-100" title="일">
+                              <option selected>선택</option>
+                            </select>
+                            일
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="kfsi-board mt-5">
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form">
+                        <table
+                          summary="증명서류 목록과 파일 첨부 기능을 제공하는 양식 테이블입니다."
+                        >
+                          <caption>
+                            증명서류 등록 양식
+                          </caption>
+                          <tbody>
+                            <tr>
+                              <!-- <th scope="row"></th> -->
+                              <td colspan="2" class="w-100">
+                                <span>
+                                  증명서류 등록
+                                  <div class="fs-15 text-danger">
+                                    ※ 첨부파일이 2개 이상인 경우, 압축파일 1개로
+                                    첨부하여 주시기 바랍니다.<br />
+                                    ※ 첨부파일은 JPG, PNG, PDF, 또는 압축한
+                                    ZIP파일만 등록할 수 있습니다.
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row"><span>파일첨부</span></th>
+                              <td>
+                                <span>
+                                  <div class="kfsi-upload">
+                                    <div id="dropzone">
+                                      <form
+                                        class="dropzone needsclick"
+                                        id="demo-upload"
+                                        action="/upload"
+                                      >
+                                        <div class="dz-message needsclick">
+                                          <div class="dz-message__title">
+                                            <i class="ico-file-plus"></i>
+                                            파일을 이곳에 드래그하세요.<br />
+                                          </div>
+                                          <small
+                                            >(또는 클릭하여 파일을
+                                            선택하세요)</small
+                                          >
+                                        </div>
+                                      </form>
+                                    </div>
+                                  </div>
+                                  <script>
+                                    var dropzone = new Dropzone(
+                                      '#demo-upload',
+                                      {
+                                        previewTemplate:
+                                          document.querySelector(
+                                            '#preview-template'
+                                          ).innerHTML,
+                                        parallelUploads: 2,
+                                        thumbnailHeight: 120,
+                                        thumbnailWidth: 120,
+                                        maxFilesize: 3, // 최대 파일 크기 (MB)
+                                        filesizeBase: 1000,
+                                        dictDefaultMessage:
+                                          '파일을 이곳에 드래그하세요.', // 기본 메시지
+                                        dictFallbackMessage:
+                                          '이 브라우저는 드래그 앤 드롭 파일 업로드를 지원하지 않습니다.',
+                                        dictFileTooBig:
+                                          '파일 크기가 너무 큽니다 ({{filesize}}MB). 최대 크기: {{maxFilesize}}MB.',
+                                        dictInvalidFileType:
+                                          '이 파일 형식은 업로드할 수 없습니다.',
+                                        dictResponseError:
+                                          '서버에서 {{statusCode}} 에러가 발생했습니다.',
+                                        dictCancelUpload: '업로드 취소',
+                                        dictCancelUploadConfirmation:
+                                          '이 업로드를 정말 취소하시겠습니까?',
+                                        dictRemoveFile: '파일 삭제',
+                                        dictMaxFilesExceeded:
+                                          '더 이상 파일을 업로드할 수 없습니다.',
+                                        thumbnail: function (file, dataUrl) {
+                                          if (file.previewElement) {
+                                            file.previewElement.classList.remove(
+                                              'dz-file-preview'
+                                            );
+                                            var images =
+                                              file.previewElement.querySelectorAll(
+                                                '[data-dz-thumbnail]'
+                                              );
+                                            for (
+                                              var i = 0;
+                                              i < images.length;
+                                              i++
+                                            ) {
+                                              var thumbnailElement = images[i];
+                                              thumbnailElement.alt = file.name;
+                                              thumbnailElement.src = dataUrl;
+                                            }
+                                            setTimeout(function () {
+                                              file.previewElement.classList.add(
+                                                'dz-image-preview'
+                                              );
+                                            }, 1);
+                                          }
+                                        },
+                                      }
+                                    );
+
+                                    // 파일 업로드 시 시뮬레이션
+                                    var minSteps = 6,
+                                      maxSteps = 60,
+                                      timeBetweenSteps = 100,
+                                      bytesPerStep = 100000;
+
+                                    dropzone.uploadFiles = function (files) {
+                                      var self = this;
+
+                                      for (var i = 0; i < files.length; i++) {
+                                        var file = files[i];
+                                        totalSteps = Math.round(
+                                          Math.min(
+                                            maxSteps,
+                                            Math.max(
+                                              minSteps,
+                                              file.size / bytesPerStep
+                                            )
+                                          )
+                                        );
+
+                                        for (
+                                          var step = 0;
+                                          step < totalSteps;
+                                          step++
+                                        ) {
+                                          var duration =
+                                            timeBetweenSteps * (step + 1);
+                                          setTimeout(
+                                            (function (file, totalSteps, step) {
+                                              return function () {
+                                                file.upload = {
+                                                  progress:
+                                                    (100 * (step + 1)) /
+                                                    totalSteps,
+                                                  total: file.size,
+                                                  bytesSent:
+                                                    ((step + 1) * file.size) /
+                                                    totalSteps,
+                                                };
+
+                                                self.emit(
+                                                  'uploadprogress',
+                                                  file,
+                                                  file.upload.progress,
+                                                  file.upload.bytesSent
+                                                );
+                                                if (
+                                                  file.upload.progress == 100
+                                                ) {
+                                                  file.status =
+                                                    Dropzone.SUCCESS;
+                                                  self.emit(
+                                                    'success',
+                                                    file,
+                                                    'success',
+                                                    null
+                                                  );
+                                                  self.emit('complete', file);
+                                                  self.processQueue();
+                                                }
+                                              };
+                                            })(file, totalSteps, step),
+                                            duration
+                                          );
+                                        }
+                                      }
+                                    };
+                                  </script>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

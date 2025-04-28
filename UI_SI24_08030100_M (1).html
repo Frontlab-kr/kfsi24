@@ -11,6 +11,9 @@
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
 
+    <!-- dropzone -->
+    <script src="./assets/js/dropzone.min.js"></script>
+
     <!-- js -->
     <script src="./assets/js/common.js"></script>
 
@@ -40,138 +43,536 @@
                     <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
                     <li class="breadcrumb-item">회원서비스 신청</li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      소방안전장학금
+                      소방안전장학금 신청
                     </li>
                   </ol>
                 </nav>
               </div>
               <div class="kfsi-contents-title">
-                <h1>소방안전장학금</h1>
+                <h1>소방안전장학금 신청</h1>
               </div>
               <div class="kfsi-member">
                 <div class="mb-15">
-                  <h4 class="kfsi-h4">신청자격</h4>
-                  다음의 각 호를 모두 만족하는 안전원 회원
-                  <div class="kfsi-textlist">
-                    <ul>
-                      <li>회원가입기간이 5년 이상인 사람</li>
-                      <li>
-                        회원 본인 또는 회원의 자녀가 대학(교)에 재학중인 사람
-                      </li>
-                      <li>안전원 회원으로써 회원의 의무를 다한 사람</li>
-                    </ul>
-                  </div>
-                  <span class="text-danger">
-                    ※ 최근 5년간 안전원 소방안전장학금 기 수혜 회원 신청 불가
-                  </span>
-                </div>
-                <div class="mb-15">
-                  <h4 class="kfsi-h4">선발개요</h4>
-                  <div class="kfsi-textlist">
-                    <ul>
-                      <li>
-                        접수처 : 구비서류 지참하여 회원 소속 시·도지부 사무실
-                        방문 또는 페이지 하단 온라인 소방안전장학금 신청
-                      </li>
-                      <li>
-                        접수기간 : 10월 중 접수 (9월 경 안전원 홈페이지 공지사항
-                        참조)
-                      </li>
-                      <li>선발기준 : 회원가입기간이 오래된 순</li>
-                      <li>
-                        선발인원 및 장학금 지급액 : 총 200명 / 2억원(1인당
-                        100만원)
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="mb-15">
-                  <h4 class="kfsi-h4">구비서류</h4>
-                  <div class="d-flex justify-content-between mo-flex-column">
-                    <div>
-                      <span class="text-danger"
-                        >※ 모든 서류 주민번호 뒤 7자리 삭제 후 제출</span
-                      >
-                      <div class="kfsi-textlist">
-                        <ul>
-                          <li
-                            class="d-flex align-items-center column-gap-2 row-gap-1 mo-flex-column mo-align-items-start mo-mb-2"
-                          >
-                            소방안전장학생 신청서(안전원 양식) 1부 
-                            <a
-                              href=""
-                              class="btn btn-outline-primary btn-sm rounded-3"
-                            >
-                              양식 다운로드
-                              <i class="ico-download-primary"></i>
-                            </a>
-                          </li>
-                          <li>재학증명서 1부</li>
-                          <li>
-                            회원 및 자녀 모두 등재된 주민등록등본 또는
-                            가족관계증명서
-                          </li>
-                          <li>
-                            관할소방서에 선임신고 필한 자격증
-                            <ul class="no-bullet">
-                              <li>
-                                * 직위선임자 및 개인회원은 자격증 외 확인
-                                서류(재직증명서, 경력증명서 등)
-                              </li>
-                            </ul>
-                          </li>
-                          <li
-                            class="d-flex align-items-center column-gap-2 row-gap-1 mo-flex-column mo-align-items-start mo-mb-2"
-                          >
-                            개인정보동의서(안전원 양식) 1부 
-                            <a
-                              href=""
-                              class="btn btn-outline-primary btn-sm rounded-3"
-                            >
-                              양식 다운로드
-                              <i class="ico-download-primary"></i>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
+                  <h4 class="kfsi-h4">관계를 선택해 주세요.</h4>
+                  <div class="d-flex gap-12 mb-5 mo-mb-15 mo-ms-6">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="radio1"
+                        id="radio1-1"
+                        checked
+                        onclick="$('#section01').hide()"
+                      />
+                      <label class="form-check-label" for="radio1-1">
+                        본인
+                      </label>
                     </div>
-                    <div class="mo-mt-10 text-center">
-                      <div>
-                        <a href="" class="btn btn-secondary btn-sm"
-                          >온라인 소방안전장학금 신청하기</a
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="radio1"
+                        id="radio1-2"
+                        onclick="$('#section01').show()"
+                      />
+                      <label class="form-check-label" for="radio1-2">
+                        자녀
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-15" id="section01" style="display: none">
+                  <h4 class="kfsi-h4">가족관계증명서 파일첨부</h4>
+                  <div class="kfsi-board">
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form">
+                        <table
+                          summary="가족관계증명서 파일 첨부를 위한 테이블입니다. 가족관계증명서 제출 및 파일 업로드 양식을 포함하고 있습니다."
                         >
+                          <caption>
+                            가족관계증명서 파일첨부
+                          </caption>
+                          <colgroup>
+                            <col style="width: 180px" />
+                            <col style="width: 760px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <td colspan="2">
+                                <span>
+                                  <span> 가족관계증명서 1부 </span>
+                                  <div class="fs-15 text-danger">
+                                    ※ 주민등록번호 뒷부분 7자리 비공개 제출
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row"><span>파일첨부</span></th>
+                              <td>
+                                <span>
+                                  <div class="kfsi-upload">
+                                    <div id="dropzone">
+                                      <form
+                                        class="dropzone needsclick"
+                                        id="demo-upload"
+                                        action="/upload"
+                                      >
+                                        <div class="dz-message needsclick">
+                                          <div class="dz-message__title">
+                                            <i class="ico-file-plus"></i>
+                                            파일을 이곳에 드래그하세요.<br />
+                                          </div>
+                                          <small
+                                            >(또는 클릭하여 파일을
+                                            선택하세요)</small
+                                          >
+                                        </div>
+                                      </form>
+                                    </div>
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div>
-                  <h4 class="kfsi-h4">기타사항</h4>
-                  <div class="kfsi-textlist">
-                    <ul>
-                      <li>
-                        선발자에 한하여 1인당 100만원씩 해당 시·도지부에서
-                        지급(11~12월중)
-                      </li>
-                      <li>
-                        제출된 서류는 반환되지 않으며 허위사실을 기재하거나 기타
-                        부정한 방법 등으로 장학생에 선발된 경우 지급된 장학금은
-                        환수될 수 있습니다.
-                      </li>
-                      <li>
-                        추가 문의사항은 안전원 시·도지부로 문의하시기 바랍니다.
-                        <ul class="no-bullet">
-                          <li
-                            class="d-flex align-items-center column-gap-2 row-gap-1 mo-flex-column mo-align-items-start"
+                <div class="mb-15">
+                  <div class="d-flex align-items-center mb-5">
+                    <h4 class="kfsi-h4 m-0">회원정보를 입력해 주세요.</h4>
+                  </div>
+                  <div class="kfsi-member-form">
+                    <div class="kfsi-member-form-item">
+                      <div class="kfsi-member-form-item-title">
+                        성명 <span class="text-danger">*</span>
+                      </div>
+                      <div class="kfsi-member-form-item-contents">
+                        <input
+                          type="text"
+                          class="form-control w-100 is-invalid"
+                          title="성명을 입력해주세요(홍길동)"
+                          placeholder="성명을 입력해주세요(홍길동)"
+                        />
+                        <div class="invalid-feedback">
+                          성명을 확인해 주세요.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-member-form-item">
+                      <div class="kfsi-member-form-item-title">
+                        생년월일 <span class="text-danger">*</span>
+                      </div>
+                      <div class="kfsi-member-form-item-contents">
+                        <input
+                          type="text"
+                          class="form-control w-100 is-invalid"
+                          title="생년월일을 입력해주세요(1971-11-09)"
+                          placeholder="생년월일을 입력해주세요(1971-11-09)"
+                        />
+                        <div class="invalid-feedback">
+                          생년월일(YYYY-MM-DD)을 확인해 주세요.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-member-form-item">
+                      <div class="kfsi-member-form-item-title">
+                        학교명 <span class="text-danger">*</span>
+                      </div>
+                      <div class="kfsi-member-form-item-contents">
+                        <input
+                          type="text"
+                          class="form-control w-100 is-invalid"
+                          title="학교명을 입력해주세요"
+                          placeholder="학교명을 입력해주세요"
+                        />
+                        <div class="invalid-feedback">
+                          학교명을 확인해 주세요.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-member-form-item">
+                      <div class="kfsi-member-form-item-title">
+                        학년 <span class="text-danger">*</span>
+                      </div>
+                      <div class="kfsi-member-form-item-contents">
+                        <select
+                          class="form-select w-100"
+                          aria-label="직능 선택"
+                          title="직능 선택"
+                        >
+                          <option selected>선택</option>
+                        </select>
+                        <div class="invalid-feedback d-block">
+                          학년을 선택해 주세요.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-member-form-item">
+                      <div class="kfsi-member-form-item-title">
+                        이수학점 <span class="text-danger">*</span>
+                      </div>
+                      <div class="kfsi-member-form-item-contents">
+                        <input
+                          type="text"
+                          class="form-control w-100 is-invalid"
+                          title="이수학점"
+                        />
+                        <div class="invalid-feedback">
+                          이수 학점을 선택해 주세요.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-member-form-item">
+                      <div class="kfsi-member-form-item-title">
+                        성적<br />
+                        (백분율) <span class="text-danger">*</span>
+                      </div>
+                      <div class="kfsi-member-form-item-contents">
+                        <input
+                          type="text"
+                          class="form-control w-100 is-invalid"
+                          title="성적 (백분율)"
+                        />
+                        <div class="invalid-feedback">
+                          ※ 소수점 2자리 입력<br />
+                          (소수점 3자리에서 반올림)
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-15">
+                  <h4 class="kfsi-h4">성적증명서 파일첨부</h4>
+                  <div class="kfsi-board">
+                    <div class="kfsi-board-write">
+                      <div class="kfsi-board-write-form">
+                        <table
+                          summary="성적증명서 파일 첨부를 위한 테이블입니다. 성적증명서 제출 및 파일 업로드 양식을 포함하고 있습니다."
+                        >
+                          <caption>
+                            성적증명서 파일첨부
+                          </caption>
+                          <colgroup>
+                            <col style="width: 180px" />
+                            <col style="width: 760px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <td colspan="2">
+                                <span>
+                                  <span> 성적증명서 1부 </span>
+                                  <div class="fs-15 text-danger">
+                                    ※ 백점환산점수 병행 표기분(소수점 세자리에서
+                                    반올림, 소수점 두자리 표기)<br />
+                                    ※ 백점환산점수 병행표기 성적증명서 미발행
+                                    학교의 경우는 학과사무실에서 발급한
+                                    백분위확인서 제출
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row"><span>파일첨부</span></th>
+                              <td>
+                                <span>
+                                  <div class="kfsi-upload">
+                                    <div id="dropzone">
+                                      <form
+                                        class="dropzone needsclick"
+                                        id="demo-upload"
+                                        action="/upload"
+                                      >
+                                        <div class="dz-message needsclick">
+                                          <div class="dz-message__title">
+                                            <i class="ico-file-plus"></i>
+                                            파일을 이곳에 드래그하세요.<br />
+                                          </div>
+                                          <small
+                                            >(또는 클릭하여 파일을
+                                            선택하세요)</small
+                                          >
+                                        </div>
+                                      </form>
+                                    </div>
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-15">
+                  <h4 class="kfsi-h4">개인정보 동의</h4>
+                  <div class="kfsi-table mb-5">
+                    <table
+                      summary="개인정보 동의 방식을 선택하고 본인 인증 또는 개인정보동의서 첨부를 위한 테이블입니다."
+                    >
+                      <caption>
+                        개인정보 동의 방법 선택
+                      </caption>
+                      <colgroup class="mo-d-none">
+                        <col style="width: 180px" />
+                        <col style="width: 760px" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th rowspan="2" class="mo-d-none">
+                            <div class="pc">개인정보 동의</div>
+                          </th>
+                          <td class="bg-light">
+                            <div
+                              class="d-flex align-items-center column-gap-10 row-gap-2 mo-flex-column mo-align-items-start"
+                            >
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radioDefault"
+                                  id="radioDefault1"
+                                  checked
+                                  onclick="showTabSub('tab01-01')"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="radioDefault1"
+                                >
+                                  본인인증
+                                </label>
+                              </div>
+                              <div
+                                class="d-flex align-items-center column-gap-4 mo-flex-column mo-align-items-start"
+                              >
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="radioDefault"
+                                    id="radioDefault2"
+                                    onclick="showTabSub('tab01-02')"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="radioDefault2"
+                                  >
+                                    개인정보 동의서 첨부
+                                  </label>
+                                </div>
+                                <a
+                                  href=""
+                                  class="btn btn-outline-primary btn-sm rounded-3"
+                                >
+                                  개인정보 수집 이용 동의서
+                                  <i class="ico-download-primary"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">
+                            <div id="tab-tab01-01" class="tab-content-sub">
+                              <a href="" class="btn btn-secondary">
+                                본인인증 하기
+                              </a>
+                              <div class="mt-2 fs-15 text-danger">
+                                ※ 신청대상이 자녀인 경우는 자녀 명의 핸드폰으로
+                                본인인증을 진행하거나 자녀 명의로
+                                개인정보동의서를 작성하여 첨부하셔야 합니다.
+                              </div>
+                            </div>
+                            <div
+                              id="tab-tab01-02"
+                              class="tab-content-sub"
+                              style="display: none"
+                            >
+                              개인정보 동의서 첨부
+                              <div class="kfsi-board mt-2">
+                                <div class="kfsi-board-write">
+                                  <div class="kfsi-board-write-form">
+                                    <table
+                                      summary="개인정보 동의서 첨부를 위한 파일 업로드 입력 테이블"
+                                      class="border-0"
+                                    >
+                                      <caption>
+                                        개인정보 동의서 파일첨부 입력
+                                      </caption>
+                                      <colgroup>
+                                        <col style="width: 180px" />
+                                        <col style="width: 760px" />
+                                      </colgroup>
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row">
+                                            <span>파일첨부</span>
+                                          </th>
+                                          <td>
+                                            <span>
+                                              <div class="kfsi-upload">
+                                                <div id="dropzone">
+                                                  <form
+                                                    class="dropzone needsclick"
+                                                    id="demo-upload"
+                                                    action="/upload"
+                                                  >
+                                                    <div
+                                                      class="dz-message needsclick"
+                                                    >
+                                                      <div
+                                                        class="dz-message__title"
+                                                      >
+                                                        <i
+                                                          class="ico-file-plus"
+                                                        ></i>
+                                                        파일을 이곳에
+                                                        드래그하세요.<br />
+                                                      </div>
+                                                      <small
+                                                        >(또는 클릭하여 파일을
+                                                        선택하세요)</small
+                                                      >
+                                                    </div>
+                                                  </form>
+                                                </div>
+                                              </div>
+                                            </span>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <div class="mt-2 fs-15 text-danger">
+                                      ※ 신청대상이 자녀인 경우는 자녀 명의
+                                      핸드폰으로 본인인증을 진행하거나 자녀
+                                      명의로 개인정보동의서를 작성하여
+                                      첨부하셔야 합니다.
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div class="kfsi-agree-form">
+                    <div class="kfsi-agree-form__title">
+                      개인정보 수집 · 이용동의 [필수]
+                    </div>
+                    <div class="kfsi-agree-form__contents">
+                      소방안전장학생 신청을 위해 「개인정보 보호법」에 따라
+                      개인정보 수집∙이용, 제공 동의를 받고자 합니다.<br />
+                      <div class="pc my-5">
+                        <div class="kfsi-table">
+                          <table
+                            summary="소방안전장학생 신청을 위한 개인정보 수집·이용 항목과 보유 및 이용기간을 안내하는 표입니다."
                           >
-                            * 시·도지부 연락처 : 안전원소개 -
-                            찾아오시는길(연락처) 
-                            <a href="" class="btn btn-secondary btn-sm"
-                              >바로가기 <i class="ico-newwindow-white"></i
-                            ></a>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
+                            <caption>
+                              개인정보 수집·이용 항목 및 보유기간 안내
+                            </caption>
+                            <colgroup>
+                              <col style="width: 240px" />
+                              <col style="width: 400px" />
+                              <col style="width: 240px" />
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">수집·이용 항목</th>
+                                <th scope="col">항목</th>
+                                <th scope="col">보유 · 이용기간</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <a href="">소방안전장학생 신청 업무</a>
+                                </td>
+                                <td class="text-start">
+                                  ⦁ 신청인정보 :<br />
+                                  성명, 생년월일, 업체명, 전화번호, 성적, 등
+                                  소방안전장학금 신청에 관련된 신청인 정보)<br />
+                                  ⦁ 기타정보(해당시에만 제출) :<br />
+                                  가족관계증명서
+                                </td>
+                                <td>
+                                  <a href=""> 5년 </a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="mo my-5">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              <a href="">소방안전장학생 신청 업무</a>
+                            </li>
+                            <li>
+                              ⦁ 신청인정보 :<br />
+                              성명, 생년월일, 업체명, 전화번호, 성적, 등
+                              소방안전장학금 신청에 관련된 신청인 정보)<br />
+                              ⦁ 기타정보(해당시에만 제출) :<br />
+                              가족관계증명서
+                            </li>
+                            <li>
+                              <a href="">5년 </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      ※ 동의를 거부할 수 있으며, 동의 거부 시 소방안전장학생
+                      신청이 불가합니다.
+                    </div>
+                    <div class="kfsi-agree-form__foot">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox02"
+                        />
+                        <label class="form-check-label" for="checkbox02">
+                          위 개인정보 수집·이용에 동의합니다.
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-top border-dark pt-4">
+                  <div class="form-check d-flex justify-content-center gap-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="checkDefault"
+                    />
+                    <label class="form-check-label" for="checkDefault">
+                      <strong class="fs-18"
+                        >소방안전장학금 신청 및 유의사항 등을
+                        확인하였습니다.</strong
+                      >
+                    </label>
+                  </div>
+                  <div class="kfsi-button mt-15 mo-mt-10">
+                    <p>
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary btn-lg"
+                      >
+                        취소
+                      </button>
+                      <button type="button" class="btn btn-primary btn-lg">
+                        신청하기
+                      </button>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -181,5 +582,112 @@
       </div>
       <div id="footer"></div>
     </div>
+    <script>
+      var dropzone = new Dropzone('#demo-upload', {
+        previewTemplate: document.querySelector('#preview-template').innerHTML,
+        parallelUploads: 2,
+        thumbnailHeight: 120,
+        thumbnailWidth: 120,
+        maxFilesize: 3, // 최대 파일 크기 (MB)
+        filesizeBase: 1000,
+        dictDefaultMessage: '파일을 이곳에 드래그하세요.', // 기본 메시지
+        dictFallbackMessage:
+          '이 브라우저는 드래그 앤 드롭 파일 업로드를 지원하지 않습니다.',
+        dictFileTooBig:
+          '파일 크기가 너무 큽니다 ({{filesize}}MB). 최대 크기: {{maxFilesize}}MB.',
+        dictInvalidFileType: '이 파일 형식은 업로드할 수 없습니다.',
+        dictResponseError: '서버에서 {{statusCode}} 에러가 발생했습니다.',
+        dictCancelUpload: '업로드 취소',
+        dictCancelUploadConfirmation: '이 업로드를 정말 취소하시겠습니까?',
+        dictRemoveFile: '파일 삭제',
+        dictMaxFilesExceeded: '더 이상 파일을 업로드할 수 없습니다.',
+        thumbnail: function (file, dataUrl) {
+          if (file.previewElement) {
+            file.previewElement.classList.remove('dz-file-preview');
+            var images = file.previewElement.querySelectorAll(
+              '[data-dz-thumbnail]'
+            );
+            for (var i = 0; i < images.length; i++) {
+              var thumbnailElement = images[i];
+              thumbnailElement.alt = file.name;
+              thumbnailElement.src = dataUrl;
+            }
+            setTimeout(function () {
+              file.previewElement.classList.add('dz-image-preview');
+            }, 1);
+          }
+        },
+      });
+
+      // 파일 업로드 시 시뮬레이션
+      var minSteps = 6,
+        maxSteps = 60,
+        timeBetweenSteps = 100,
+        bytesPerStep = 100000;
+
+      dropzone.uploadFiles = function (files) {
+        var self = this;
+
+        for (var i = 0; i < files.length; i++) {
+          var file = files[i];
+          totalSteps = Math.round(
+            Math.min(maxSteps, Math.max(minSteps, file.size / bytesPerStep))
+          );
+
+          for (var step = 0; step < totalSteps; step++) {
+            var duration = timeBetweenSteps * (step + 1);
+            setTimeout(
+              (function (file, totalSteps, step) {
+                return function () {
+                  file.upload = {
+                    progress: (100 * (step + 1)) / totalSteps,
+                    total: file.size,
+                    bytesSent: ((step + 1) * file.size) / totalSteps,
+                  };
+
+                  self.emit(
+                    'uploadprogress',
+                    file,
+                    file.upload.progress,
+                    file.upload.bytesSent
+                  );
+                  if (file.upload.progress == 100) {
+                    file.status = Dropzone.SUCCESS;
+                    self.emit('success', file, 'success', null);
+                    self.emit('complete', file);
+                    self.processQueue();
+                  }
+                };
+              })(file, totalSteps, step),
+              duration
+            );
+          }
+        }
+      };
+    </script>
+    <script>
+      function showTabSub(tabName) {
+        const tabs = document.querySelectorAll('.tab-content-sub');
+        tabs.forEach((tab) => {
+          tab.style.display = 'none';
+        });
+
+        const selectedTab = document.getElementById('tab-' + tabName);
+        if (selectedTab) {
+          // 모든 탭 숨기기
+          document.getElementById('tab-tab01-01').style.display = 'none';
+          document.getElementById('tab-tab01-02').style.display = 'none';
+
+          // 선택한 탭 보이기
+          selectedTab.style.display = 'block';
+          // kfsi-agree-form 보이기/숨기기
+          if (tabName === 'tab01-01') {
+            $('.kfsi-agree-form').show();
+          } else if (tabName === 'tab01-02') {
+            $('.kfsi-agree-form').hide();
+          }
+        }
+      }
+    </script>
   </body>
 </html>
