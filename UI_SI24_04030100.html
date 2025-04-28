@@ -69,7 +69,7 @@
                 <h1>완료된 교육</h1>
               </div>
               <div class="kfsi-classroom-list">
-                <div class="kfsi-classroom-list-head">
+                <!-- <div class="kfsi-classroom-list-head">
                   <div class="kfsi-classroom-list-head-select">
                     <select
                       class="form-select"
@@ -97,133 +97,403 @@
                       검색
                     </button>
                   </div>
+                </div> -->
+                <div class="mb-15 mo-mb-10">
+                  <div class="kfsi-h4">강습교육 수료내역</div>
+                  <div class="kfsi-board">
+                    <div class="kfsi-table kfsi-table-mo-list">
+                      <table
+                        summary="강습교육 수료내역 목록을 보여주는 표로, 직능(교육과정), 지부, 교육년도, 교육일자, 수료여부, 수료증 출력 여부, 사이버교육 여부를 포함합니다."
+                      >
+                        <caption>
+                          강습교육 수료내역 목록
+                        </caption>
+                        <colgroup>
+                          <col style="width: 50px" />
+                          <col style="width: 210px" />
+                          <col style="width: 80px" />
+                          <col style="width: 100px" />
+                          <col style="width: 200px" />
+                          <col style="width: 100px" />
+                          <col style="width: 100px" />
+                          <col style="width: 100px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">번호</th>
+                            <th scope="col">직능(교육과정)</th>
+                            <th scope="col">지부</th>
+                            <th scope="col">교육년도</th>
+                            <th scope="col">교육일자</th>
+                            <th scope="col">수료여부</th>
+                            <th scope="col">수료증</th>
+                            <th scope="col">사이버교육</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td title="번호">1</td>
+                            <td title="직능(교육과정)">소방안전관리자 3급</td>
+                            <td title="지부">서울</td>
+                            <td title="교육년도">2025</td>
+                            <td title="교육일자">2025.01.01~2025.01.05</td>
+                            <td title="수료여부" class="text-info">수료</td>
+                            <td title="수료증">
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark btn-sm"
+                              >
+                                출력
+                              </button>
+                            </td>
+                            <td title="사이버교육"></td>
+                          </tr>
+                          <tr>
+                            <td title="번호">1</td>
+                            <td title="직능(교육과정)">소방안전관리자 3급</td>
+                            <td title="지부">서울</td>
+                            <td title="교육년도">2025</td>
+                            <td title="교육일자">2025.01.01~2025.01.05</td>
+                            <td title="수료여부" class="text-danger">미수료</td>
+                            <td title="수료증"></td>
+                            <td title="사이버교육"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
                 </div>
-                <div class="kfsi-board mt-15 mo-mt-10">
-                  <div class="kfsi-table kfsi-table-mo-list">
-                    <table
-                      summary="완료된 교육 정보를 제공합니다. 각 교육의 번호, 구분, 과정명, 학습기간, 수료 여부, 평가항목, 과제 상태, 복습 가능 여부, 수료증 출력 여부를 포함합니다."
-                    >
-                      <caption>
-                        완료된 교육
-                      </caption>
-                      <thead>
-                        <tr>
-                          <th scope="col">번호</th>
-                          <th scope="col">구분</th>
-                          <th scope="col">과정명</th>
-                          <th scope="col">학습기간</th>
-                          <th scope="col">수료여부 (합격)</th>
-                          <th scope="col">평가항목</th>
-                          <th scope="col">과제</th>
-                          <th scope="col">복습</th>
-                          <th scope="col">수료증</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td title="번호">1</td>
-                          <td title="구분">다중이용업교육</td>
-                          <td title="과정명">소방안전관리자 실무교육</td>
-                          <td title="학습기간">2024.10.31~2024.11.30</td>
-                          <td title="수료여부 (합격)" class="text-success">
-                            합격
-                          </td>
-                          <td title="평가항목">
-                            <button
-                              type="button"
-                              class="btn btn-outline-dark btn-sm"
-                            >
-                              확인
-                            </button>
-                          </td>
-                          <td title="과제">제출</td>
-                          <td title="복습">
-                            <button
-                              type="button"
-                              class="btn btn-outline-dark btn-sm"
-                            >
-                              복습
-                            </button>
-                          </td>
-                          <td title="수료증">
-                            <button
-                              type="button"
-                              class="btn btn-outline-dark btn-sm"
-                            >
-                              출력
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td title="번호">1</td>
-                          <td title="구분">다중이용업교육</td>
-                          <td title="과정명">소방안전관리자 실무교육</td>
-                          <td title="학습기간">2024.10.31~2024.11.30</td>
-                          <td title="수료여부 (합격)" class="text-success">
-                            합격
-                          </td>
-                          <td title="평가항목">
-                            <button
-                              type="button"
-                              class="btn btn-outline-dark btn-sm"
-                            >
-                              확인
-                            </button>
-                          </td>
-                          <td title="과제">제출</td>
-                          <td title="복습">
-                            <button
-                              type="button"
-                              class="btn btn-outline-dark btn-sm"
-                            >
-                              복습
-                            </button>
-                          </td>
-                          <td title="수료증">
-                            <button
-                              type="button"
-                              class="btn btn-outline-dark btn-sm"
-                            >
-                              출력
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td title="번호">1</td>
-                          <td title="구분">다중이용업교육</td>
-                          <td title="과정명">소방안전관리자 실무교육</td>
-                          <td title="학습기간">2024.10.31~2024.11.30</td>
-                          <td title="수료여부 (합격)" class="text-danger">
-                            불합격
-                          </td>
-                          <td title="평가항목">
-                            <button
-                              type="button"
-                              class="btn btn-outline-dark btn-sm"
-                            >
-                              확인
-                            </button>
-                          </td>
-                          <td title="과제">제출</td>
-                          <td title="복습">
-                            <button
-                              type="button"
-                              class="btn btn-outline-dark btn-sm"
-                            >
-                              복습
-                            </button>
-                          </td>
-                          <td title="수료증">
-                            <button
-                              type="button"
-                              class="btn btn-outline-dark btn-sm"
-                            >
-                              출력
-                            </button>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                <div class="mb-15 mo-mb-10">
+                  <div class="kfsi-h4">실무교육 수료내역</div>
+                  <div class="kfsi-board">
+                    <div class="kfsi-table kfsi-table-mo-list">
+                      <table
+                        summary="실무교육 수료내역 목록을 보여주는 표로, 직능(교육과정), 지부, 교육년도, 교육일자, 수료여부, 수료증 출력 여부, 사이버교육 여부를 포함합니다."
+                      >
+                        <caption>
+                          실무교육 수료내역 목록
+                        </caption>
+                        <colgroup>
+                          <col style="width: 50px" />
+                          <col style="width: 210px" />
+                          <col style="width: 80px" />
+                          <col style="width: 100px" />
+                          <col style="width: 200px" />
+                          <col style="width: 100px" />
+                          <col style="width: 100px" />
+                          <col style="width: 100px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">번호</th>
+                            <th scope="col">직능(교육과정)</th>
+                            <th scope="col">지부</th>
+                            <th scope="col">교육년도</th>
+                            <th scope="col">교육일자</th>
+                            <th scope="col">수료여부</th>
+                            <th scope="col">수료증</th>
+                            <th scope="col">사이버교육</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td title="번호">1</td>
+                            <td title="직능(교육과정)">소방안전관리자 3급</td>
+                            <td title="지부">서울</td>
+                            <td title="교육년도">2025</td>
+                            <td title="교육일자">2025.01.01~2025.01.05</td>
+                            <td title="수료여부" class="text-info">수료</td>
+                            <td title="수료증">
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark btn-sm"
+                              >
+                                출력
+                              </button>
+                            </td>
+                            <td title="사이버교육"></td>
+                          </tr>
+                          <tr>
+                            <td title="번호">1</td>
+                            <td title="직능(교육과정)">소방안전관리자 3급</td>
+                            <td title="지부">서울</td>
+                            <td title="교육년도">2025</td>
+                            <td title="교육일자">2025.01.01~2025.01.05</td>
+                            <td title="수료여부" class="text-info">수료</td>
+                            <td title="수료증"></td>
+                            <td title="사이버교육"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-15 mo-mb-10">
+                  <div class="kfsi-h4">열린교육 수료내역</div>
+                  <div class="kfsi-board">
+                    <div class="kfsi-table kfsi-table-mo-list">
+                      <table
+                        summary="열린교육 수료내역 목록을 보여주는 표로, 직능(교육과정),  교육년도, 교육일자, 수료여부, 수료증 출력 여부, 사이버교육 여부를 포함합니다."
+                      >
+                        <caption>
+                          열린교육 수료내역 목록
+                        </caption>
+                        <colgroup>
+                          <col style="width: 50px" />
+                          <col style="width: 290px" />
+                          <col style="width: 100px" />
+                          <col style="width: 200px" />
+                          <col style="width: 100px" />
+                          <col style="width: 100px" />
+                          <col style="width: 100px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">번호</th>
+                            <th scope="col">직능(교육과정)</th>
+                            <th scope="col">교육년도</th>
+                            <th scope="col">교육일자</th>
+                            <th scope="col">수료여부</th>
+                            <th scope="col">수료증</th>
+                            <th scope="col">사이버교육</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td title="번호">1</td>
+                            <td title="직능(교육과정)">소방안전관리자 3급</td>
+                            <td title="교육년도">2025</td>
+                            <td title="교육일자">2025.01.01~2025.01.05</td>
+                            <td title="수료여부" class="text-info">수료</td>
+                            <td title="수료증">
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark btn-sm"
+                              >
+                                출력
+                              </button>
+                            </td>
+                            <td title="사이버교육"></td>
+                          </tr>
+                          <tr>
+                            <td title="번호">1</td>
+                            <td title="직능(교육과정)">소방안전관리자 3급</td>
+                            <td title="교육년도">2025</td>
+                            <td title="교육일자">2025.01.01~2025.01.05</td>
+                            <td title="수료여부" class="text-danger">미수료</td>
+                            <td title="수료증"></td>
+                            <td title="사이버교육"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-15 mo-mb-10">
+                  <div class="kfsi-h4">다중이용업교육 수료내역</div>
+                  <div class="kfsi-board">
+                    <div class="kfsi-table kfsi-table-mo-list">
+                      <table
+                        summary="다중이용업교육 수료내역 목록을 보여주는 표로, 직능(교육과정),  교육년도, 교육일자, 수료여부, 수료증 출력 여부, 사이버교육 여부를 포함합니다."
+                      >
+                        <caption>
+                          다중이용업교육 수료내역 목록
+                        </caption>
+                        <colgroup>
+                          <col style="width: 50px" />
+                          <col style="width: 290px" />
+                          <col style="width: 100px" />
+                          <col style="width: 200px" />
+                          <col style="width: 100px" />
+                          <col style="width: 100px" />
+                          <col style="width: 100px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">번호</th>
+                            <th scope="col">직능(교육과정)</th>
+                            <th scope="col">교육년도</th>
+                            <th scope="col">교육일자</th>
+                            <th scope="col">수료여부</th>
+                            <th scope="col">수료증</th>
+                            <th scope="col">사이버교육</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td title="번호">1</td>
+                            <td title="직능(교육과정)">소방안전관리자 3급</td>
+                            <td title="교육년도">2025</td>
+                            <td title="교육일자">2025.01.01~2025.01.05</td>
+                            <td title="수료여부" class="text-info">수료</td>
+                            <td title="수료증">
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark btn-sm"
+                              >
+                                출력
+                              </button>
+                            </td>
+                            <td title="사이버교육"></td>
+                          </tr>
+                          <tr>
+                            <td title="번호">1</td>
+                            <td title="직능(교육과정)">소방안전관리자 3급</td>
+                            <td title="교육년도">2025</td>
+                            <td title="교육일자">2025.01.01~2025.01.05</td>
+                            <td title="수료여부" class="text-danger">미수료</td>
+                            <td title="수료증"></td>
+                            <td title="사이버교육"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-15 mo-mb-10">
+                  <div class="kfsi-h4">의용소방대 교육(기본,전문) 수료내역</div>
+                  <div class="kfsi-board">
+                    <div class="kfsi-table kfsi-table-mo-list">
+                      <table
+                        summary="의용소방대 교육(기본, 전문) 수료내역을 보여주는 표로, 과정명, 학습기간, 상태, 수료증 출력 여부, 사이버교육 복습 여부를 포함합니다."
+                      >
+                        <caption>
+                          의용소방대 교육(기본, 전문) 수료내역
+                        </caption>
+                        <colgroup>
+                          <col style="width: 50px" />
+                          <col style="width: 390px" />
+                          <col style="width: 200px" />
+                          <col style="width: 100px" />
+                          <col style="width: 100px" />
+                          <col style="width: 100px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">번호</th>
+                            <th scope="col">과정명</th>
+                            <th scope="col">학습기간</th>
+                            <th scope="col">상태</th>
+                            <th scope="col">수료증</th>
+                            <th scope="col">사이버교육</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td title="번호">1</td>
+                            <td title="과정명">소방안전관리자 3급</td>
+                            <td title="학습기간">서울</td>
+                            <td title="상태" class="text-info">수료</td>
+                            <td title="수료증">
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark btn-sm"
+                              >
+                                출력
+                              </button>
+                            </td>
+                            <td title="사이버교육">
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark btn-sm"
+                              >
+                                복습
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td title="번호">1</td>
+                            <td title="과정명">소방안전관리자 3급</td>
+                            <td title="학습기간">서울</td>
+                            <td title="상태" class="text-info">수료</td>
+                            <td title="수료증">
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark btn-sm"
+                              >
+                                출력
+                              </button>
+                            </td>
+                            <td title="사이버교육">
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark btn-sm"
+                              >
+                                복습
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="kfsi-button mt-10">
+                    <p>
+                      <a href="" class="btn btn-secondary btn-sm"
+                        >의용소방대 년도별 수료내역 조회 바로가기</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="mb-15 mo-mb-10">
+                  <div class="kfsi-h4">
+                    의용소방대 전문화교육(집합) 수료내역
+                  </div>
+                  <div class="kfsi-board">
+                    <div class="kfsi-table kfsi-table-mo-list">
+                      <table
+                        summary="의용소방대 소방안전교육 수강 내역을 나타내는 표로, 수강 번호, 교육과정, 지부, 교육일자, 수료 상태, 수료증 및 자격증 출력 여부를 포함합니다."
+                      >
+                        <caption>
+                          의용소방대 소방안전교육 수강 내역
+                        </caption>
+                        <colgroup>
+                          <col style="width: 50px" />
+                          <col style="width: 310px" />
+                          <col style="width: 80px" />
+                          <col style="width: 200px" />
+                          <col style="width: 100px" />
+                          <col style="width: 100px" />
+                          <col style="width: 100px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">수강 번호</th>
+                            <th scope="col">교육과정</th>
+                            <th scope="col">지부</th>
+                            <th scope="col">교육일자</th>
+                            <th scope="col">상태</th>
+                            <th scope="col">수료증</th>
+                            <th scope="col">자격증</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td title="수강 번호">1</td>
+                            <td title="교육과정">의용소방대 소방안전교육</td>
+                            <td title="지부">서울</td>
+                            <td title="교육일자">2025.01.01~2025.01.05</td>
+                            <td title="상태" class="text-info">수료</td>
+                            <td title="수료증">
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark btn-sm"
+                              >
+                                출력
+                              </button>
+                            </td>
+                            <td title="자격증">
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark btn-sm"
+                              >
+                                출력
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </div>
               </div>
