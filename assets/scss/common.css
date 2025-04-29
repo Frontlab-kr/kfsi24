@@ -20446,7 +20446,7 @@ small, .small {
   line-height: normal;
   letter-spacing: 0.48px;
   line-height: 24px;
-  word-break: keep-all;
+  word-break: break-all;
 }
 .kfsi-table table tbody td a:not(.btn),
 .kfsi-table table tfoot td a:not(.btn) {
@@ -20545,6 +20545,7 @@ small, .small {
     line-height: 24px; /* 150% */
     border: none;
     text-align: left;
+    word-break: keep-all;
   }
   .kfsi-table.kfsi-table-mo-list table tbody td:before,
   .kfsi-table.kfsi-table-mo-list table tfoot td:before {

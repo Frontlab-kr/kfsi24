@@ -119,7 +119,7 @@
               <div class="kfsi-education">
                 <div class="mb-15 mo-mb-10">
                   <div class="kfsi-board">
-                    <div class="kfsi-board-head mo-flex-column gap-3">
+                    <div class="kfsi-board-head mo-flex-column gap-2">
                       <div class="kfsi-board-head-start">
                         <h4 class="kfsi-h4">실무교육 신청내역</h4>
                       </div>
@@ -136,10 +136,10 @@
                     </div>
                     <div class="kfsi-table kfsi-table-mo-list">
                       <table
-                        summary="실무교육 내역을 표시합니다. 교육과정, 지부, 사이버교육기간, 소집교육기간, 상태 및 영수증 출력 옵션을 제공합니다."
+                        summary="소방안전관리자 교육과정의 교육지부, 교육기간, 수료여부, 상태, 영수증 출력 여부에 대한 정보"
                       >
                         <caption>
-                          실무교육 내역
+                          소방안전관리자 교육과정 수강 내역
                         </caption>
                         <colgroup>
                           <col style="width: 160px" />
@@ -155,6 +155,10 @@
                             <th scope="col">지부</th>
                             <th scope="col">사이버교육기간</th>
                             <th scope="col">소집교육기간</th>
+                            <th scope="col">
+                              사이버교육<br />
+                              수료여부
+                            </th>
                             <th scope="col">상태</th>
                             <th scope="col">영수증</th>
                           </tr>
@@ -167,15 +171,16 @@
                               2024.11.12~2024.12.31
                             </td>
                             <td title="소집교육기간">2024.11.12~2024.12.31</td>
-                            <td title="상태">
-                              <span class="text-primary">접수완료</span>
+                            <td title="사이버교육 수료여부" class="text-info">
+                              미수료
                             </td>
+                            <td title="상태" class="text-primary">접수완료</td>
                             <td title="영수증">
                               <button
                                 type="button"
                                 class="btn btn-secondary btn-sm"
                               >
-                                영수증 출력
+                                출력하기
                               </button>
                             </td>
                           </tr>
@@ -241,7 +246,6 @@
                         <col style="width: 200px" />
                         <col style="width: 200px" />
                         <col style="width: 90px" />
-                        <col style="width: 130px" />
                       </colgroup>
                       <thead>
                         <tr>
@@ -250,7 +254,6 @@
                           <th scope="col">사이버교육기간</th>
                           <th scope="col">소집교육기간</th>
                           <th scope="col">상태</th>
-                          <th scope="col">영수증</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -260,7 +263,6 @@
                           <td>2023.11.12~2023.12.31</td>
                           <td>2023.11.12~2023.12.31</td>
                           <td class="text-primary">접수완료</td>
-                          <td></td>
                         </tr>
                         <tr>
                           <td>소방안전관리자</td>
@@ -268,7 +270,6 @@
                           <td>2023.11.12~2023.12.31</td>
                           <td>2023.11.12~2023.12.31</td>
                           <td class="text-primary">접수완료</td>
-                          <td></td>
                         </tr>
                         <tr>
                           <td>소방안전관리자</td>
@@ -276,7 +277,6 @@
                           <td>2023.11.12~2023.12.31</td>
                           <td>2023.11.12~2023.12.31</td>
                           <td class="text-primary">접수완료</td>
-                          <td></td>
                         </tr>
                         <tr>
                           <td>소방안전관리자</td>
@@ -284,7 +284,6 @@
                           <td>2023.11.12~2023.12.31</td>
                           <td>2023.11.12~2023.12.31</td>
                           <td class="text-primary">접수완료</td>
-                          <td></td>
                         </tr>
                         <tr>
                           <td>소방안전관리자</td>
@@ -292,7 +291,6 @@
                           <td>2023.11.12~2023.12.31</td>
                           <td>2023.11.12~2023.12.31</td>
                           <td class="text-primary">접수완료</td>
-                          <td></td>
                         </tr>
                       </tbody>
                     </table>
