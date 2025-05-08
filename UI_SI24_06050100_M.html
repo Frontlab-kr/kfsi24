@@ -73,8 +73,8 @@
                     </caption>
                     <colgroup>
                       <col style="width: 310px" />
-                      <col style="width: 210px" />
-                      <col style="width: 210px" />
+                      <col style="width: 154px" />
+                      <col style="width: 266px" />
                       <col style="width: 210px" />
                     </colgroup>
                     <thead>
@@ -87,10 +87,18 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td title="시험과정">&nbsp;</td>
-                        <td title="지부">&nbsp;</td>
-                        <td title="시험일자">&nbsp;</td>
-                        <td title="점수확인">&nbsp;</td>
+                        <td title="시험과정">
+                          <strong class="text-primary"
+                            >2급 소방안전관리자</strong
+                          >
+                        </td>
+                        <td title="지부">
+                          <strong class="text-primary">서울</strong>
+                        </td>
+                        <td title="시험일자">2025.04.30 16:00~18:00</td>
+                        <td title="점수확인">
+                          <a href="">시험접수 확인</a>
+                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -101,6 +109,111 @@
         </div>
       </div>
       <div id="footer"></div>
+    </div>
+
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 5000;
+      "
+    >
+      <div>
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#modal01"
+        >
+          UI_SI24_06050100_M (P)
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="modal01" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" style="max-width: 648px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5">시험(평가) 점수확인</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-15 mo-mb-10">
+              <h4 class="kfsi-h4">시험점수 확인</h4>
+              <div class="kfsi-table">
+                <table
+                  summary="소방안전관리자 3급 시험 점수 확인을 위한 정보로, 각 과목별 점수와 평균 점수, 합격 여부를 포함합니다."
+                >
+                  <caption class="visually-hidden">
+                    소방안전관리자 3급 시험 점수 정보
+                  </caption>
+                  <colgroup>
+                    <col style="width: 180px" />
+                    <col style="width: 210px" />
+                    <col style="width: 210px" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row">구분</th>
+                      <td class="text-start" colspan="2">
+                        <div class="w-100">
+                          <strong class="text-primary"
+                            >소방안전관리자 3급</strong
+                          >
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" rowspan="2">구분</th>
+                      <td colspan="2" class="bg-primary-subtle text-center">
+                        <div class="w-100">과목</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">1과목</td>
+                      <td class="text-center">2과목</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">점수</th>
+                      <td class="text-center">76점</td>
+                      <td class="text-center">84점</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">총점(평균)</th>
+                      <td class="text-center" colspan="2">80점</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">합격여부</th>
+                      <td class="text-center" colspan="2">
+                        <strong class="text-info">합격</strong>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-outline-secondary btn-lg"
+          data-bs-dismiss="modal"
+        >
+          닫기
+        </button>
+      </div> -->
+        </div>
+      </div>
     </div>
   </body>
 </html>
