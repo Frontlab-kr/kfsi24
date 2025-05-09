@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>회원서비스 신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">회원서비스 안내</a>
+              <a href="" class="kfsi-snb-item active">재해위로금</a>
+              <a href="" class="kfsi-snb-item">소방안전장학금</a>
+              <a href="" class="kfsi-snb-item">퀴즈이벤트</a>
+              <a href="" class="kfsi-snb-item">전자도서관</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">회원서비스 신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      재해위로금 신청 목록
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>재해위로금 신청 목록</h1>
+              </div>
+              <div class="kfsi-board mb-15 mo-mb-10">
+                <div class="kfsi-board-head">
+                  <div class="kfsi-board-head-start">
+                    <h4 class="kfsi-h4">재해위로금 신청 목록</h4>
+                  </div>
+                  <div
+                    class="kfsi-board-head-end mo-justify-content-start"
+                  ></div>
+                </div>
+                <div class="kfsi-table kfsi-table-mo-list">
+                  <table
+                    summary="재해위로금 신청 목록 표. 신청번호, 회원과의 관계, 발생장소, 발생일자, 상태 및 상세보기 버튼을 포함."
+                  >
+                    <caption class="visually-hidden">
+                      재해위로금 신청 목록
+                    </caption>
+                    <colgroup>
+                      <col style="width: 180px" />
+                      <col style="width: 140px" />
+                      <col style="width: 160px" />
+                      <col style="width: 160px" />
+                      <col style="width: 160px" />
+                      <col style="width: 140px" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">신청번호</th>
+                        <th scope="col">회원과의 관계</th>
+                        <th scope="col">발생장소</th>
+                        <th scope="col">발생일자</th>
+                        <th scope="col">상태</th>
+                        <th scope="col">상세보기</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td title="신청번호">90066-99-443</td>
+                        <td title="회원과의 관계">본인</td>
+                        <td title="발생장소">서울</td>
+                        <td title="발생일자">2024.11.10</td>
+                        <td title="상태" class="text-danger">신청완료</td>
+                        <td title="상세보기">
+                          <button
+                            type="button"
+                            class="btn btn-outline-dark btn-sm"
+                          >
+                            상세보기
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
