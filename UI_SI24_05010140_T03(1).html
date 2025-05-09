@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육신청</h2>
+              </div>
+              <div class="kfsi-snb-item-sub active">
+                <a href="javscript:void(0)" class="kfsi-snb-item">강습교육</a>
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item active"
+                    >강습교육 신청</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >강습교육 신청 내역</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">대기자 교육 신청</a>
+                  <a href="" class="kfsi-snb-item-sub-item">수료증 발급</a>
+                  <a href="" class="kfsi-snb-item-sub-item">수료증 진위확인</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >교육접수증 진위확인</a
+                  >
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item">실무교육</a>
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">실무교육 신청 </a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >실무교육 신청 내역(사이버교육 수강하기)</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">수료확인서 발급</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >수료확인서 발급 진위확인</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">권장학습</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >권장학습 신청내역</a
+                  >
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >의용소방대교육</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">교육안내 </a>
+                  <a href="" class="kfsi-snb-item-sub-item">나의 교육 정보</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >기본교육 신청(사이버)</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >전문교육 신청(사이버)</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >전문화교육 신청(집합)</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">관할소방서 확인</a>
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >다중이용업교육</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">교육신청 </a>
+                  <a href="" class="kfsi-snb-item-sub-item">업소정보 관리</a>
+                  <a href="" class="kfsi-snb-item-sub-item">수료증 출력</a>
+                  <a href="" class="kfsi-snb-item-sub-item">수료진위확인</a>
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item">열린교육</a>
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">열린교육 신청 </a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >열린교육 신청내역</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">수료확인서 발급</a>
+                  <a href="" class="kfsi-snb-item-sub-item">수료진위확인</a>
+                </div>
+              </div>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">교육신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      강습교육 신청
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>강습교육 신청</h1>
+              </div>
+              <div class="kfsi-education">
+                <div class="kfsi-nav kfsi-nav--step4">
+                  <ol>
+                    <li>
+                      <span>01</span>
+                      <strong>교육정보 확인</strong>
+                    </li>
+                    <li>
+                      <span>02</span>
+                      <strong>교육 안내사항</strong>
+                    </li>
+                    <li class="active">
+                      <span>03</span>
+                      <strong>수강자 정보입력 </strong>
+                    </li>
+                    <li>
+                      <span>04</span>
+                      <strong>결제하기 </strong>
+                    </li>
+                  </ol>
+                </div>
+                <div class="mb-15 mo-mb-10">
+                  <div
+                    class="d-flex align-items-center mb-5 mo-flex-column mo-align-items-start mo-mb-3"
+                  >
+                    <h4 class="kfsi-h4 m-0 mo-mb-2 me-5">수강자 정보 입력</h4>
+                    <span class="text-danger">※ 필수 입력항목입니다.</span>
+                  </div>
+                  <div class="kfsi-license-profile">
+                    <div class="kfsi-license-profile-img">
+                      <div class="kfsi-license-profile-img-img">
+                        <img
+                          src="./assets/images/license/profile.svg"
+                          alt="신청자 이미지"
+                        />
+                      </div>
+                      <div class="kfsi-license-profile-img-info">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="선택된 파일 없음"
+                          title="신청자 이미지 파일 등록"
+                        />
+                        <button type="button" class="btn btn-secondary btn-sm">
+                          사진파일 등록<i class="ico-camera"></i>
+                          <span class="text-danger">*</span>
+                        </button>
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              웹 브라우저 사양에 따라 등록된 사진이 미리보기에
+                              보이지 않을 수 있습니다.
+                            </li>
+                            <li>
+                              미리보기에 보이지 않아도 증명사진은 저장됩니다.
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="mt-2 invalid-feedback d-block">
+                          증명사진을 확인해 주세요.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-license-profile-info">
+                      <div class="kfsi-board">
+                        <div class="kfsi-board-write">
+                          <div class="kfsi-board-write-form">
+                            <table
+                              summary="신청자의 개인 정보 및 교재 수령지를 입력하는 테이블입니다."
+                            >
+                              <caption>
+                                신청자 정보 입력 테이블
+                              </caption>
+                              <colgroup>
+                                <col style="width: 195px" />
+                                <col style="width: 500px" />
+                              </colgroup>
+                              <tbody>
+                                <tr>
+                                  <th scope="row"><span>이름</span></th>
+                                  <td><span>김소방</span></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                    <span>
+                                      휴대폰 번호
+                                      <span class="text-danger">*</span>
+                                    </span>
+                                  </th>
+                                  <td>
+                                    <span>
+                                      <div class="kfsi-mypage-phone">
+                                        <div class="kfsi-mypage-phone-input">
+                                          <select
+                                            class="form-select"
+                                            aria-label="휴대폰 번호 앞자리 선택"
+                                            title="휴대폰 번호 앞자리 선택"
+                                            style="min-width: 80px; width: 80px"
+                                          >
+                                            <option selected>선택</option>
+                                          </select>
+                                          -
+                                          <input
+                                            type="text"
+                                            class="form-control"
+                                            title="휴대폰 번호 중간 자리 입력"
+                                            style="min-width: 80px; width: 80px"
+                                          />
+                                          -
+                                          <input
+                                            type="text"
+                                            class="form-control"
+                                            title="휴대폰 번호 마지막 자리 입력"
+                                            style="min-width: 80px; width: 80px"
+                                          />
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="mt-2 invalid-feedback d-block"
+                                      >
+                                        번호를 확인해 주세요.
+                                      </div>
+                                      <div class="mt-2 fs-14">
+                                        휴대폰번호 입력시 접수결과 등이
+                                        문자메시지로 발송됩니다.
+                                      </div>
+                                    </span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                    <span> 업체명 </span>
+                                  </th>
+                                  <td>
+                                    <span>
+                                      <div
+                                        class="d-flex align-items-center column-gap-2 row-gap-1 mo-flex-column mo-align-items-start"
+                                      >
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          style="width: 282px"
+                                          title="업체명"
+                                        />
+                                        <div class="fs-14">해당자만 입력</div>
+                                      </div>
+                                    </span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                    <span>
+                                      주소(주민등록상)
+                                      <span class="text-danger">*</span>
+                                    </span>
+                                  </th>
+                                  <td>
+                                    <span>
+                                      <div class="kfsi-mypage-address">
+                                        <div class="kfsi-mypage-address-post">
+                                          <input
+                                            type="text"
+                                            class="form-control"
+                                            value="12345"
+                                            style="
+                                              min-width: 110px;
+                                              width: 110px;
+                                            "
+                                            readonly
+                                            title="우편번호"
+                                          />
+                                          <a
+                                            href=""
+                                            class="btn btn-secondary btn-sm"
+                                            >우편번호찾기
+                                            <i class="ico-post"></i>
+                                          </a>
+                                        </div>
+                                        <div class="kfsi-mypage-address-input">
+                                          <input
+                                            type="text"
+                                            class="form-control w-100"
+                                            value="서울특별시 강남구 도산대로 523 한성빌딩"
+                                            readonly
+                                            title="주소"
+                                          />
+                                        </div>
+                                        <div class="kfsi-mypage-address-input">
+                                          <input
+                                            type="text"
+                                            class="form-control w-100"
+                                            value="106호"
+                                            title="상세 주소"
+                                          />
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="mt-2 invalid-feedback d-block"
+                                      >
+                                        주소를 확인해 주세요.
+                                      </div>
+                                    </span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                    <span>
+                                      주소(교재수령지)
+                                      <span class="text-danger">*</span>
+                                    </span>
+                                  </th>
+                                  <td>
+                                    <span>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="flexCheckDefault"
+                                        />
+                                        <label
+                                          class="form-check-label fs-15"
+                                          for="flexCheckDefault"
+                                        >
+                                          주민등록상 주소와 동일한 주소 사용
+                                        </label>
+                                      </div>
+                                      <div class="mt-2 fs-14">
+                                        ※ 교재는 교육시작 전일까지 우체국 택배로
+                                        배송됩니다.(별도 구매 불필요)
+                                      </div>
+                                      <div class="kfsi-mypage-address mt-2">
+                                        <div class="kfsi-mypage-address-post">
+                                          <input
+                                            type="text"
+                                            class="form-control"
+                                            value="12345"
+                                            style="
+                                              min-width: 110px;
+                                              width: 110px;
+                                            "
+                                            readonly
+                                            title="우편번호"
+                                          />
+                                          <a
+                                            href=""
+                                            class="btn btn-secondary btn-sm"
+                                            >우편번호찾기
+                                            <i class="ico-post"></i>
+                                          </a>
+                                        </div>
+                                        <div class="kfsi-mypage-address-input">
+                                          <input
+                                            type="text"
+                                            class="form-control w-100"
+                                            value="서울특별시 강남구 도산대로 523 한성빌딩"
+                                            readonly
+                                            title="주소"
+                                          />
+                                        </div>
+                                        <div class="kfsi-mypage-address-input">
+                                          <input
+                                            type="text"
+                                            class="form-control w-100"
+                                            value="106호"
+                                            title="상세 주소"
+                                          />
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="mt-2 invalid-feedback d-block"
+                                      >
+                                        주소를 확인해 주세요.
+                                      </div>
+                                    </span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                    <span>
+                                      E-mail <span class="text-danger">*</span>
+                                    </span>
+                                  </th>
+                                  <td>
+                                    <span>
+                                      <div class="kfsi-mypage-email">
+                                        <div class="kfsi-mypage-email-input">
+                                          <input
+                                            type="text"
+                                            class="form-control"
+                                            title="E-mail 아이디 입력"
+                                            style="
+                                              min-width: 120px;
+                                              width: 120px;
+                                            "
+                                          />
+                                          @
+                                          <input
+                                            type="text"
+                                            class="form-control"
+                                            title="E-mail 도메인 입력"
+                                            style="
+                                              min-width: 120px;
+                                              width: 120px;
+                                            "
+                                          />
+                                        </div>
+                                        <select
+                                          class="form-select"
+                                          aria-label="E-mail 선택"
+                                          title="E-mail 선택"
+                                        >
+                                          <option selected>선택</option>
+                                          <option value="daum.net">
+                                            daum.net
+                                          </option>
+                                          <option value="gmail.com">
+                                            gmail.com
+                                          </option>
+                                          <option value="hotmail.com">
+                                            hotmail.com
+                                          </option>
+                                          <option value="naver.com">
+                                            naver.com
+                                          </option>
+                                          <option value="nate.com">
+                                            nate.com
+                                          </option>
+                                          <option value="self">직접입력</option>
+                                        </select>
+                                      </div>
+                                      <div
+                                        class="mt-2 invalid-feedback d-block"
+                                      >
+                                        E-mail을 확인해 주세요.
+                                      </div>
+                                    </span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kfsi-license-profile-example">
+                    <strong>증명사진 등록 유의사항</strong>
+                    <div class="kfsi-textlist mo-ms-0">
+                      <ul>
+                        <li>최근 6개월 이내 사진을 등록하세요.</li>
+                        <li>
+                          등록불가사진 : 흑백, 저화질, 배경 표시, 홀로그램 표시,
+                          상단 여백 불충분, 기타 본인 확인이 어려운 사진
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="kfsi-license-profile-example-text">
+                      ※ 등록불가사진에 해당하는 경우 담당자가 사진 수정·보완
+                      요청을 할 수 있습니다.<br />
+                      ※ 등록불가사진 예시
+                    </div>
+                    <div class="text-center mt-7 mo-mt-4">
+                      <div class="pc">
+                        <img
+                          src="./assets/images/license/profile-example.png"
+                          alt="아래 대체 텍스트를 확인해주세요."
+                        />
+                      </div>
+                      <div class="mo">
+                        <img
+                          src="./assets/images/license/profile-example-mo.png"
+                          alt="아래 대체 텍스트를 확인해주세요."
+                        />
+                      </div>
+                      <div class="hide">
+                        적합하지 않은 사진 예시:<br />
+                        1. 흑백사진 (적합하지 않음 표시)<br />
+                        2. 저화질 사진 (본인 확인 불가)<br />
+                        3. 배경 표시가 있는 사진<br />
+                        4. 신분증 홀로그램 표시가 있는 사진<br />
+                        5. 상단 여백이 부족한 사진
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-15 mo-mb-10">
+                  <h4 class="kfsi-h4">재직증명서 파일 첨부</h4>
+                  <div class="kfsi-textlist">
+                    <ul>
+                      <li>
+                        선택 사항이며 미첨부시 현장에서 재직증명서를
+                        제출해야합니다.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="kfsi-upload mt-5">
+                    <div id="dropzone">
+                      <form
+                        class="dropzone needsclick"
+                        id="demo-upload"
+                        action="/upload"
+                      >
+                        <div class="dz-message needsclick">
+                          <div class="dz-message__title">
+                            <i class="ico-file-plus"></i>
+                            파일을 이곳에 드래그하세요.<br />
+                          </div>
+                          <small>(또는 클릭하여 파일을 선택하세요)</small>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <script>
+                    var dropzone = new Dropzone('#demo-upload', {
+                      previewTemplate:
+                        document.querySelector('#preview-template').innerHTML,
+                      parallelUploads: 2,
+                      thumbnailHeight: 120,
+                      thumbnailWidth: 120,
+                      maxFilesize: 3, // 최대 파일 크기 (MB)
+                      filesizeBase: 1000,
+                      dictDefaultMessage: '파일을 이곳에 드래그하세요.', // 기본 메시지
+                      dictFallbackMessage:
+                        '이 브라우저는 드래그 앤 드롭 파일 업로드를 지원하지 않습니다.',
+                      dictFileTooBig:
+                        '파일 크기가 너무 큽니다 ({{filesize}}MB). 최대 크기: {{maxFilesize}}MB.',
+                      dictInvalidFileType:
+                        '이 파일 형식은 업로드할 수 없습니다.',
+                      dictResponseError:
+                        '서버에서 {{statusCode}} 에러가 발생했습니다.',
+                      dictCancelUpload: '업로드 취소',
+                      dictCancelUploadConfirmation:
+                        '이 업로드를 정말 취소하시겠습니까?',
+                      dictRemoveFile: '파일 삭제',
+                      dictMaxFilesExceeded:
+                        '더 이상 파일을 업로드할 수 없습니다.',
+                      thumbnail: function (file, dataUrl) {
+                        if (file.previewElement) {
+                          file.previewElement.classList.remove(
+                            'dz-file-preview'
+                          );
+                          var images = file.previewElement.querySelectorAll(
+                            '[data-dz-thumbnail]'
+                          );
+                          for (var i = 0; i < images.length; i++) {
+                            var thumbnailElement = images[i];
+                            thumbnailElement.alt = file.name;
+                            thumbnailElement.src = dataUrl;
+                          }
+                          setTimeout(function () {
+                            file.previewElement.classList.add(
+                              'dz-image-preview'
+                            );
+                          }, 1);
+                        }
+                      },
+                    });
+
+                    // 파일 업로드 시 시뮬레이션
+                    var minSteps = 6,
+                      maxSteps = 60,
+                      timeBetweenSteps = 100,
+                      bytesPerStep = 100000;
+
+                    dropzone.uploadFiles = function (files) {
+                      var self = this;
+
+                      for (var i = 0; i < files.length; i++) {
+                        var file = files[i];
+                        totalSteps = Math.round(
+                          Math.min(
+                            maxSteps,
+                            Math.max(minSteps, file.size / bytesPerStep)
+                          )
+                        );
+
+                        for (var step = 0; step < totalSteps; step++) {
+                          var duration = timeBetweenSteps * (step + 1);
+                          setTimeout(
+                            (function (file, totalSteps, step) {
+                              return function () {
+                                file.upload = {
+                                  progress: (100 * (step + 1)) / totalSteps,
+                                  total: file.size,
+                                  bytesSent:
+                                    ((step + 1) * file.size) / totalSteps,
+                                };
+
+                                self.emit(
+                                  'uploadprogress',
+                                  file,
+                                  file.upload.progress,
+                                  file.upload.bytesSent
+                                );
+                                if (file.upload.progress == 100) {
+                                  file.status = Dropzone.SUCCESS;
+                                  self.emit('success', file, 'success', null);
+                                  self.emit('complete', file);
+                                  self.processQueue();
+                                }
+                              };
+                            })(file, totalSteps, step),
+                            duration
+                          );
+                        }
+                      }
+                    };
+                  </script>
+                </div>
+
+                <div class="kfsi-button">
+                  <p>
+                    <a href="" class="btn btn-primary btn-lg">다음</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
