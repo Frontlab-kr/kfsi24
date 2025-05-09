@@ -36467,11 +36467,15 @@ html.oacxHtml {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  width: 100%;
 }
 @media screen and (max-width: 992px) {
   .kfsi-test-questions-body {
     flex-direction: column;
   }
+}
+.kfsi-test-questions-list {
+  width: 100%;
 }
 .kfsi-test-questions-list-item {
   margin-bottom: 20px;

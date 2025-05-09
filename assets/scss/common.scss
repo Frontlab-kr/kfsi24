@@ -13442,11 +13442,13 @@ html.oacxHtml {
         display: flex;
         justify-content: space-between;
         gap: 20px;
+        width: 100%;
         @media screen and (max-width: $mobileWidth) {
           flex-direction: column;
         }
       }
       &-list {
+        width: 100%;
         &-item {
           margin-bottom: 20px;
           &--x {
