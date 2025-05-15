@@ -34752,8 +34752,46 @@ html.oacxHtml {
   align-items: center;
   justify-content: space-between;
 }
+.kfsi-classroom-detail-head-info-dl {
+  display: flex;
+  background: #f6f6f6;
+  margin-top: 40px;
+}
+.kfsi-classroom-detail-head-info-dl dl {
+  min-width: 200px;
+  margin: 0;
+  padding: 16px 30px;
+}
+.kfsi-classroom-detail-head-info-dl dl dt {
+  margin: 0 0 10px 0;
+  padding: 0;
+  color: #000;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 120% */
+}
+.kfsi-classroom-detail-head-info-dl dl dd {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: Pretendard;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 133.333% */
+}
+.kfsi-classroom-detail-head-info-text-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.kfsi-classroom-detail-head-info-text h4, .kfsi-classroom-detail-head-info-text .h4 {
+  margin: 0 0 10px 0;
+}
 .kfsi-classroom-detail-head-info-text p {
-  margin: 10px 0 5px 0;
+  margin: 0 0 5px 0;
   color: #000;
   font-family: Pretendard;
   font-size: 18px;
@@ -34971,6 +35009,29 @@ html.oacxHtml {
 .kfsi-classroom-detail-list-item .btn {
   min-width: 150px;
 }
+.kfsi-classroom-detail-task {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding: 30px 24px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+.kfsi-classroom-detail-task-text {
+  width: 100%;
+}
+.kfsi-classroom-detail-task-text p span {
+  margin: 0 10px;
+  padding: 0 10px;
+  border-radius: 50px;
+  border: 1px solid #d93600;
+  color: #d93600;
+  font-family: Pretendard;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 141.176% */
+}
 @media screen and (max-width: 992px) {
   .kfsi-classroom-detail-head {
     border-radius: 20px;
@@ -35067,12 +35128,52 @@ html.oacxHtml {
     justify-content: space-between;
     flex-direction: column;
     gap: 20px;
+  }
+  .kfsi-classroom-detail-head-info > div {
     width: 100%;
+  }
+  .kfsi-classroom-detail-head-info-dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+  }
+  .kfsi-classroom-detail-head-info-dl dl {
+    min-width: 100%;
+    margin: 0;
+    padding: 10px 24px;
+  }
+  .kfsi-classroom-detail-head-info-dl dl dt {
+    margin: 0 0 5px 0;
+    color: #000;
+    font-family: Pretendard;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 141.176% */
+  }
+  .kfsi-classroom-detail-head-info-dl dl dd {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
   }
   .kfsi-classroom-detail-head-info-text {
     width: 100%;
     padding: 10px;
     background: #f6f6f6;
+  }
+  .kfsi-classroom-detail-head-info-text-area {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+  .kfsi-classroom-detail-head-info-text-area .kfsi-classroom-detail-head-info-text {
+    background: none;
   }
   .kfsi-classroom-detail-head-info-text p {
     margin: 10px 0 5px 0;
@@ -35296,6 +35397,30 @@ html.oacxHtml {
   }
   .kfsi-classroom-detail-list-item .btn {
     min-width: 150px;
+  }
+  .kfsi-classroom-detail-task {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+  }
+  .kfsi-classroom-detail-task-text {
+    width: 100%;
+  }
+  .kfsi-classroom-detail-task-text p span {
+    margin: 0 10px;
+    padding: 0 10px;
+    border-radius: 50px;
+    border: 1px solid #d93600;
+    color: #d93600;
+    font-family: Pretendard;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 141.176% */
   }
 }
 .kfsi-license-apply {

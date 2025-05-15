@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- chart.js -->
+    <script src="./assets/js/chart.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>나의강의실</h2>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >나의 교육 정보 조회</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">납부 내역 조회</a>
+                  <a href="" class="kfsi-snb-item-sub-item">자격 취득 현황</a>
+                  <a href="" class="kfsi-snb-item-sub-item">선임 대상처 현황</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >실무교육수료 기한</a
+                  >
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub active">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >진행 중인 교육</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">목차</a>
+                  <a href="" class="kfsi-snb-item-sub-item">평가</a>
+                  <a href="" class="kfsi-snb-item-sub-item">설문</a>
+                </div>
+              </div>
+              <a href="" class="kfsi-snb-item">완료된 교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">나의 강의실</li>
+                    <li class="breadcrumb-item">나의 교육정보 조회</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      진행중 교육
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>학습 홈</h1>
+              </div>
+              <div class="kfsi-classroom-detail">
+                <div class="kfsi-classroom-detail-head">
+                  <div class="kfsi-classroom-detail-head-title">
+                    교육정보
+                    <p>1급 소방안전관리자 (강습교육)</p>
+                  </div>
+                  <div class="kfsi-classroom-detail-head-contents">
+                    <div class="kfsi-classroom-detail-head-info">
+                      <div>
+                        <div class="kfsi-classroom-detail-head-info-text-area">
+                          <div class="kfsi-classroom-detail-head-info-text">
+                            <h4>교육기간</h4>
+                            <span>2024.10.10 ~ 2024. 10.15</span>
+                          </div>
+                          <div class="kfsi-classroom-detail-head-info-text">
+                            <h4>집합교육</h4>
+                            <span>2024.10.10 ~ 2024. 10.15</span>
+                          </div>
+                          <div class="kfsi-classroom-detail-head-info-text">
+                            <h4>원격교육</h4>
+                            <span>2024.10.10 ~ 2024. 10.15</span>
+                          </div>
+                        </div>
+                        <div class="kfsi-classroom-detail-head-info-dl">
+                          <dl>
+                            <dt>담당지부</dt>
+                            <dd><strong>서울지부</strong></dd>
+                          </dl>
+                          <dl>
+                            <dt>교육구분</dt>
+                            <dd><strong>집합</strong></dd>
+                          </dl>
+                          <dl>
+                            <dt>수강번호</dt>
+                            <dd><strong>826-126</strong></dd>
+                          </dl>
+                        </div>
+                      </div>
+                      <a href="" class="btn btn-primary btn-lg flex-column">
+                        원격교육 수강하기<br />
+                        <span class="fs-15" style="font-weight: 400"
+                          >(ZOOM 강의실)</span
+                        >
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-15 mo-mt-10">
+                  <h4 class="kfsi-h4">실무능력평가</h4>
+                  <div class="kfsi-classroom-detail-task">
+                    <div class="kfsi-classroom-detail-task-text">
+                      <p class="mo-text-center">
+                        [과제] 과제를
+                        <span>미제출</span>
+                        하셨습니다.
+                      </p>
+                    </div>
+                    <div class="d-flex flex-column gap-2">
+                      <a
+                        href=""
+                        class="btn btn-primary btn-lg"
+                        style="min-width: 150px"
+                      >
+                        응시하기
+                      </a>
+                      <a
+                        href=""
+                        class="btn btn-outline-secondary btn-lg"
+                        style="min-width: 150px"
+                      >
+                        응시결과보기
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-15 mo-mt-10">
+                  <h4 class="kfsi-h4">과제</h4>
+                  <div class="kfsi-classroom-detail-task">
+                    <div class="kfsi-classroom-detail-task-text">
+                      <p class="mo-text-center">
+                        [과제] 과제를
+                        <span>미제출</span>
+                        하셨습니다.
+                      </p>
+                      <div class="kfsi-textlist">
+                        <ul>
+                          <li>
+                            [제출] 버튼을 누르지 않으면 과제가 제출되지
+                            않습니다.
+                          </li>
+                          <li>
+                            과제 제출 후 더 이상 수정이 불가능하니 꼭 확인 후
+                            제출바랍니다.
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="mt-4">
+                        <input
+                          class="form-control w-100 h-100"
+                          type="file"
+                          id="formFile"
+                        />
+                        <div class="mt-2 text-danger fs-15">
+                          ※ 10MB 미만의 파일 최대 1개까지 첨부 가능합니다.
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      href=""
+                      class="btn btn-primary btn-lg"
+                      style="min-width: 150px"
+                    >
+                      제출하기
+                    </a>
+                  </div>
+                </div>
+                <div class="mt-15 mo-mt-10">
+                  <h4 class="kfsi-h4">학습 유의사항</h4>
+                  <div class="kfsi-classroom-detail-box">
+                    <div>
+                      원격 교육은 수강생의 얼굴이 수업시간 동안 계속 보여져야
+                      합니다.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
