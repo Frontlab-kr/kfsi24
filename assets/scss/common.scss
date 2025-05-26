@@ -319,7 +319,8 @@ html.oacxHtml {
             width: 100%;
             &-button {
               display: flex;
-              gap: 10px;
+              column-gap: 10px;
+              row-gap: 6px;
               flex-wrap: wrap;
             }
             &-remove {

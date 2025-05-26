@@ -832,9 +832,9 @@ $mobileWidth: 992px;
           dl {
             display: flex;
             align-items: center;
-            height: 53px;
+            min-height: 53px;
             margin: 0;
-            padding: 0;
+            padding: 8px 0;
             border-bottom: 1px solid #ccc;
             dt {
               min-width: 134px;
@@ -921,12 +921,15 @@ $mobileWidth: 992px;
         }
         &-input {
           width: 100%;
+          max-width: 512px;
           margin-left: 40px;
         }
         &-check {
           display: flex;
           align-items: center;
-          gap: 28px;
+          flex-wrap: wrap;
+          column-gap: 28px;
+          row-gap: 0px;
         }
         &-button {
           display: flex;
@@ -1005,6 +1008,9 @@ $mobileWidth: 992px;
           letter-spacing: normal;
           text-align: center;
           color: #666;
+          span {
+            @include text-clamp(1);
+          }
         }
         &:first-child {
           a {

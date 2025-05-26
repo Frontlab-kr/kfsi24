@@ -22502,9 +22502,9 @@ small, .small {
 .kfsi-search-form-filter-contents dl {
   display: flex;
   align-items: center;
-  height: 53px;
+  min-height: 53px;
   margin: 0;
-  padding: 0;
+  padding: 8px 0;
   border-bottom: 1px solid #ccc;
 }
 .kfsi-search-form-filter-contents dl dt {
@@ -22590,12 +22590,16 @@ small, .small {
 }
 .kfsi-search-form-filter-input {
   width: 100%;
+  max-width: 512px;
   margin-left: 40px;
 }
 .kfsi-search-form-filter-check {
   display: flex;
   align-items: center;
-  gap: 28px;
+  flex-wrap: wrap;
+  -moz-column-gap: 28px;
+       column-gap: 28px;
+  row-gap: 0px;
 }
 .kfsi-search-form-filter-button {
   display: flex;
@@ -22672,6 +22676,14 @@ small, .small {
   letter-spacing: normal;
   text-align: center;
   color: #666;
+}
+.kfsi-search-tab-item a span {
+  display: -webkit-box;
+  overflow: hidden;
+  /* autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-break: break-all;
 }
 .kfsi-search-tab-item:first-child a {
   border-left: none;
@@ -24126,7 +24138,9 @@ html.oacxHtml {
 }
 .kfsi-header-head-search-keyword-list-button {
   display: flex;
-  gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 6px;
   flex-wrap: wrap;
 }
 .kfsi-header-head-search-keyword-list-remove {
