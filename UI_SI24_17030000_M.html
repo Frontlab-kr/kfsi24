@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="skip">
+        <a href="#kfsi-body">본문 내용 바로가기</a>
+      </div>
+      <header
+        class="kfsi-header"
+        style="
+          position: sticky;
+          top: 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 50px;
+          padding: 0 16px;
+        "
+      >
+        <div
+          class="kfsi-header-sub"
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+          "
+        >
+          <div class="kfsi-header-back"></div>
+          <div class="kfsi-header-title">
+            <strong>{1급 소방안전관리자} 설문조사</strong>
+          </div>
+          <div class="kfsi-header-button justify-content-end m-0 d-flex">
+            <a href="../index.html" class="ico-header-close">홈</a>
+          </div>
+        </div>
+      </header>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-contents">
+              <div class="kfsi-survey">
+                <div class="kfsi-survey-head">
+                  <p>
+                    본 설문은 교육 품질 향상을 위해 시행되며, 응답 내용은 통계
+                    목적으로만 안전하게 활용됩니다. <br />
+                    <br />
+                    참여해 주셔서 감사합니다.
+                  </p>
+                  <div class="mt-10 text-end">
+                    <img src="./assets/images/icon/logo-survey.svg" alt="" />
+                  </div>
+                </div>
+
+                <div class="kfsi-survey-button">
+                  <button type="button" class="btn btn-lg btn-primary w-100">
+                    닫기
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

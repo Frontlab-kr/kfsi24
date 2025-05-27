@@ -14113,4 +14113,96 @@ html.oacxHtml {
       }
     }
   }
+  &-lecture {
+    background: #f1f1f1;
+    &-head {
+      display: flex;
+      align-items: center;
+      height: 60px;
+      padding: 0 30px;
+      border-bottom: 1px solid #eee;
+      background: #fff;
+      p {
+        margin: 0;
+        color: #000;
+        font-family: Pretendard;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 141.176% */
+        @include text-clamp(1);
+      }
+    }
+    &-body {
+      display: flex;
+      height: calc(100vh - 60px);
+    }
+    &-contents {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    &-test {
+      height: calc(100vh - 140px);
+      padding: 40px 30px 30px;
+    }
+    &-menu {
+      min-width: 100px;
+      border-left: 1px solid #eee;
+      background: #fff;
+    }
+    &-foot {
+      margin-top: auto;
+      padding: 20px 30px;
+      border-top: 1px solid #eee;
+      background: #fff;
+    }
+  }
+  &-survey {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 140px);
+    &-form {
+      margin-top: 40px;
+      padding: 30px 16px;
+      border-radius: 20px;
+      background: #f6f6f6;
+      dl {
+        margin: 30px 0 0 0;
+        padding: 0;
+        dt {
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+          margin: 0 0 5px 0;
+          padding: 0;
+          color: #000;
+          text-align: right;
+          font-family: Pretendard;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px; /* 142.857% */
+          strong {
+            color: #004d16;
+            font-family: Pretendard;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px; /* 150% */
+          }
+        }
+        dd {
+          margin: 0;
+          padding: 0;
+        }
+        &:first-child {
+          margin: 0;
+        }
+      }
+    }
+    &-button {
+      margin-top: auto;
+    }
+  }
 }

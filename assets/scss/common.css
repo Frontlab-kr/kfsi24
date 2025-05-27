@@ -20065,6 +20065,16 @@ small, .small {
   line-height: 0;
 }
 
+.ico-header-close {
+  display: inline-block;
+  min-width: 20px;
+  height: 20px;
+  background: url(../images/icon/ico-header-close.svg) no-repeat 50% 50%;
+  background-size: cover;
+  font-size: 0;
+  line-height: 0;
+}
+
 .kfsi-h3 {
   color: var(--004D16, #004d16);
   font-family: Pretendard;
@@ -37112,4 +37122,101 @@ html.oacxHtml {
 }
 .kfsi-training-detail-contents-box p:last-child {
   margin: 0;
+}
+.kfsi-lecture {
+  background: #f1f1f1;
+}
+.kfsi-lecture-head {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 0 30px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+.kfsi-lecture-head p {
+  margin: 0;
+  color: #000;
+  font-family: Pretendard;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 141.176% */
+  display: -webkit-box;
+  overflow: hidden;
+  /* autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-break: break-all;
+}
+.kfsi-lecture-body {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+.kfsi-lecture-contents {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.kfsi-lecture-test {
+  height: calc(100vh - 140px);
+  padding: 40px 30px 30px;
+}
+.kfsi-lecture-menu {
+  min-width: 100px;
+  border-left: 1px solid #eee;
+  background: #fff;
+}
+.kfsi-lecture-foot {
+  margin-top: auto;
+  padding: 20px 30px;
+  border-top: 1px solid #eee;
+  background: #fff;
+}
+.kfsi-survey {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 140px);
+}
+.kfsi-survey-form {
+  margin-top: 40px;
+  padding: 30px 16px;
+  border-radius: 20px;
+  background: #f6f6f6;
+}
+.kfsi-survey-form dl {
+  margin: 30px 0 0 0;
+  padding: 0;
+}
+.kfsi-survey-form dl dt {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 0 0 5px 0;
+  padding: 0;
+  color: #000;
+  text-align: right;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+.kfsi-survey-form dl dt strong {
+  color: #004d16;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+.kfsi-survey-form dl dd {
+  margin: 0;
+  padding: 0;
+}
+.kfsi-survey-form dl:first-child {
+  margin: 0;
+}
+.kfsi-survey-button {
+  margin-top: auto;
 }/*# sourceMappingURL=common.css.map */
