@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육신청</h2>
+              </div>
+              <div class="kfsi-snb-item-sub active">
+                <a href="javscript:void(0)" class="kfsi-snb-item">강습교육</a>
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item active"
+                    >강습교육 신청</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >강습교육 신청 내역</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">대기자 교육 신청</a>
+                  <a href="" class="kfsi-snb-item-sub-item">수료증 발급</a>
+                  <a href="" class="kfsi-snb-item-sub-item">수료증 진위확인</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >교육접수증 진위확인</a
+                  >
+                </div>
+              </div>
+
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item">실무교육</a>
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">실무교육 신청 </a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >실무교육 신청 내역(사이버교육 수강하기)</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">수료확인서 발급</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >수료확인서 발급 진위확인</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">권장학습</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >권장학습 신청내역</a
+                  >
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >의용소방대교육</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">교육안내 </a>
+                  <a href="" class="kfsi-snb-item-sub-item">나의 교육 정보</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >기본교육 신청(사이버)</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >전문교육 신청(사이버)</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >전문화교육 신청(집합)</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">관할소방서 확인</a>
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >다중이용업교육</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">교육신청 </a>
+                  <a href="" class="kfsi-snb-item-sub-item">업소정보 관리</a>
+                  <a href="" class="kfsi-snb-item-sub-item">수료증 출력</a>
+                  <a href="" class="kfsi-snb-item-sub-item">수료진위확인</a>
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item">열린교육</a>
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">열린교육 신청 </a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >열린교육 신청내역</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">수료확인서 발급</a>
+                  <a href="" class="kfsi-snb-item-sub-item">수료진위확인</a>
+                </div>
+              </div>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">교육신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      강습교육 신청
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>강습교육 신청</h1>
+              </div>
+              <div class="kfsi-training">
+                <div class="kfsi-training-head">
+                  <h4>직능 선택</h4>
+                  <div class="kfsi-training-head-category">
+                    <div class="kfsi-training-head-category-item">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          value=""
+                          name="radio1"
+                          id="radio1-1"
+                        />
+                        <label class="form-check-label" for="radio1-1">
+                          소방안전관리자<br />
+                          교육과정
+                        </label>
+                      </div>
+                      <div class="kfsi-training-head-category-item-button">
+                        <div
+                          class="kfsi-training-head-category-item-button-item"
+                        >
+                          <button type="button">3급 소방안전관리자</button>
+                        </div>
+                        <div
+                          class="kfsi-training-head-category-item-button-item"
+                        >
+                          <button type="button">2급 소방안전관리자</button>
+                        </div>
+                        <div
+                          class="kfsi-training-head-category-item-button-item"
+                        >
+                          <button type="button">1급 소방안전관리자</button>
+                        </div>
+                        <div
+                          class="kfsi-training-head-category-item-button-item"
+                        >
+                          <button type="button">특급 소방안전관리자</button>
+                        </div>
+                        <div
+                          class="kfsi-training-head-category-item-button-item"
+                        >
+                          <button type="button">공공기관 소방안전관리자</button>
+                        </div>
+                        <div
+                          class="kfsi-training-head-category-item-button-item"
+                        >
+                          <button type="button">
+                            업무대행감독 소방안전관리자
+                          </button>
+                        </div>
+                        <div
+                          class="kfsi-training-head-category-item-button-item"
+                        >
+                          <button type="button">건설현장 소방안전관리자</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-training-head-category-item">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          value=""
+                          name="radio1"
+                          id="radio1-2"
+                        />
+                        <label class="form-check-label" for="radio1-2">
+                          위험물<br />
+                          교육과정
+                        </label>
+                      </div>
+                      <div class="kfsi-training-head-category-item-button">
+                        <div
+                          class="kfsi-training-head-category-item-button-item"
+                        >
+                          <button type="button">
+                            위험물 안전관리자
+                            <p class="text-danger">
+                              이동탱크저장소에 의하여 위험물을 운송하는 자
+                            </p>
+                          </button>
+                        </div>
+                        <div
+                          class="kfsi-training-head-category-item-button-item"
+                        >
+                          <button type="button">
+                            위험물 운송자
+
+                            <p class="text-danger">
+                              이동탱크저장소에 의하여 위험물을 운송하는 자
+                            </p>
+                          </button>
+                        </div>
+                        <div
+                          class="kfsi-training-head-category-item-button-item"
+                        >
+                          <button type="button">
+                            위험물 통합자
+                            <p class="text-danger">
+                              이동탱크저장소에 의하여 위험물을 운송하는 자
+                            </p>
+                          </button>
+                        </div>
+                        <div
+                          class="kfsi-training-head-category-item-button-item"
+                        >
+                          <button type="button">
+                            위험물 운반자
+                            <p class="text-danger">
+                              이동탱크저장소에 의하여 위험물을 운송하는 자
+                            </p>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                      // 모든 라디오 버튼 가져오기
+                      const radios = document.querySelectorAll(
+                        'input[name="radio1"]'
+                      );
+
+                      radios.forEach((radio) => {
+                        radio.addEventListener('change', () => {
+                          // 모든 항목에서 active 제거
+                          document
+                            .querySelectorAll(
+                              '.kfsi-training-head-category-item'
+                            )
+                            .forEach((item) => item.classList.remove('active'));
+
+                          // 💡 모든 그룹의 버튼 active 제거
+                          document
+                            .querySelectorAll(
+                              '.kfsi-training-head-category-item-button button'
+                            )
+                            .forEach((btn) => btn.classList.remove('active'));
+
+                          // 현재 선택된 라디오의 상위 항목에 active 추가
+                          if (radio.checked) {
+                            const parent = radio.closest(
+                              '.kfsi-training-head-category-item'
+                            );
+                            if (parent) {
+                              parent.classList.add('active');
+                            }
+                          }
+                        });
+                      });
+
+                      // 버튼 클릭 시 그룹 내 단일 active
+                      const buttonGroups = document.querySelectorAll(
+                        '.kfsi-training-head-category-item-button'
+                      );
+
+                      buttonGroups.forEach((group) => {
+                        group.addEventListener('click', (e) => {
+                          if (e.target.tagName === 'BUTTON') {
+                            group.querySelectorAll('button').forEach((btn) => {
+                              btn.classList.remove('active');
+                            });
+                            e.target.classList.add('active');
+                          }
+                        });
+                      });
+                    });
+                  </script>
+
+                  <h4>지역 선택</h4>
+                  <div class="kfsi-training-head-region">
+                    <dl>
+                      <dt>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            name="checkbox1"
+                            id="checkbox1-1"
+                          />
+                          <label class="form-check-label" for="checkbox1-1">
+                            전체
+                          </label>
+                        </div>
+                      </dt>
+                      <dd>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            name="checkbox1"
+                            id="checkbox1-2"
+                          />
+                          <label class="form-check-label" for="checkbox1-2">
+                            서울(영등포)
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            name="checkbox1"
+                            id="checkbox1-3"
+                          />
+                          <label class="form-check-label" for="checkbox1-3">
+                            서울(신설동)
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            name="checkbox1"
+                            id="checkbox1-4"
+                          />
+                          <label class="form-check-label" for="checkbox1-4">
+                            인천
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            name="checkbox1"
+                            id="checkbox1-5"
+                          />
+                          <label class="form-check-label" for="checkbox1-5">
+                            경기(수원)
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            name="checkbox1"
+                            id="checkbox1-6"
+                          />
+                          <label class="form-check-label" for="checkbox1-6">
+                            경기북부(파주,의정부)
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            name="checkbox1"
+                            id="checkbox1-7"
+                          />
+                          <label class="form-check-label" for="checkbox1-7">
+                            충북(청주)
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            name="checkbox1"
+                            id="checkbox1-8"
+                          />
+                          <label class="form-check-label" for="checkbox1-8">
+                            광주전남(광주)
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            name="checkbox1"
+                            id="checkbox1-9"
+                          />
+                          <label class="form-check-label" for="checkbox1-9">
+                            전북
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            name="checkbox1"
+                            id="checkbox1-10"
+                          />
+                          <label class="form-check-label" for="checkbox1-10">
+                            부산
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            name="checkbox1"
+                            id="checkbox1-11"
+                          />
+                          <label class="form-check-label" for="checkbox1-11">
+                            대구경북(대구)
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            name="checkbox1"
+                            id="checkbox1-12"
+                          />
+                          <label class="form-check-label" for="checkbox1-12">
+                            강원
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            name="checkbox1"
+                            id="checkbox1-13"
+                          />
+                          <label class="form-check-label" for="checkbox1-13">
+                            제주
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            name="checkbox1"
+                            id="checkbox1-14"
+                          />
+                          <label class="form-check-label" for="checkbox1-14">
+                            경남
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            name="checkbox1"
+                            id="checkbox1-15"
+                          />
+                          <label class="form-check-label" for="checkbox1-15">
+                            울산
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            name="checkbox1"
+                            id="checkbox1-16"
+                          />
+                          <label class="form-check-label" for="checkbox1-16">
+                            대전충남(대전)
+                          </label>
+                        </div>
+                      </dd>
+                    </dl>
+                  </div>
+                  <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                      const selectAllCheckbox =
+                        document.getElementById('checkbox1-1');
+                      const subCheckboxes = document.querySelectorAll(
+                        'input[name="checkbox1"]:not(#checkbox1-1)'
+                      );
+
+                      // "Select All" checkbox toggles all sub-checkboxes
+                      selectAllCheckbox.addEventListener('change', () => {
+                        const isChecked = selectAllCheckbox.checked;
+                        subCheckboxes.forEach((cb) => (cb.checked = isChecked));
+                      });
+
+                      // Each sub-checkbox updates the "Select All" checkbox
+                      subCheckboxes.forEach((cb) => {
+                        cb.addEventListener('change', () => {
+                          const allSelected = Array.from(subCheckboxes).every(
+                            (cb) => cb.checked
+                          );
+                          selectAllCheckbox.checked = allSelected;
+                        });
+                      });
+                    });
+                  </script>
+
+                  <div class="kfsi-training-head-type">
+                    <h5>교육 형태</h5>
+                    <div class="kfsi-training-head-type-button">
+                      <button type="button">전체</button>
+                      <button type="button">집합</button>
+                      <button type="button">혼용(원격+집합)</button>
+                      <button type="button">원격</button>
+                    </div>
+                  </div>
+                  <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                      const buttonGroup = document.querySelector(
+                        '.kfsi-training-head-type-button'
+                      );
+                      const buttons = buttonGroup.querySelectorAll('button');
+
+                      buttonGroup.addEventListener('click', (e) => {
+                        if (e.target.tagName === 'BUTTON') {
+                          // 모든 버튼의 active 제거
+                          buttons.forEach((btn) =>
+                            btn.classList.remove('active')
+                          );
+
+                          // 클릭한 버튼에 active 추가
+                          e.target.classList.add('active');
+                        }
+                      });
+                    });
+                  </script>
+
+                  <div class="kfsi-training-head-filter">
+                    <h5>필터</h5>
+                    <div class="kfsi-training-head-filter-button">
+                      <button type="button">1급 소방안전관리자</button>
+                      <button type="button">서울(영등포)</button>
+                      <button type="button">인천</button>
+                      <button type="button">경기(수원)</button>
+                      <button type="button">혼용(원격+집합)</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="kfsi-training-detail">
+                  <div class="kfsi-training-detail-head">
+                    <div class="kfsi-training-detail-head-title">
+                      <h4 class="kfsi-h4">위험물 운송자</h4>
+                      <p>
+                        <span>80,000원</span>
+                        <span>2일</span>
+                      </p>
+                    </div>
+                    <div class="kfsi-training-detail-head-button">
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary btn-sm rounded-2"
+                      >
+                        PDF 교육안내
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary btn-sm rounded-2"
+                      >
+                        HWP 선임기준
+                      </button>
+                    </div>
+                  </div>
+                  <div class="kfsi-training-detail-contents">
+                    <p>
+                      ※ 구비서류 : 사진1매(사진 미등록자에 한함),
+                      주민등록증(운전면허증), 재직증명서(공공기관소방안전관리자
+                      과정에 한함)<br />
+                      ※ 방화관리자의 명칭이 소방안전관리자로 변경 되었습니다.
+                    </p>
+                    <div class="kfsi-training-detail-contents-box">
+                      <p class="text-info">
+                        <strong
+                          >선착순(일정 클릭순) 접수이므로 조기에 마감될 수
+                          있습니다.</strong
+                        >
+                      </p>
+                      <p class="text-danger">
+                        <strong
+                          >원격교육은 거주지역과 관계없이 타지역으로 교육 신청이
+                          가능합니다.</strong
+                        >
+                      </p>
+                      <p>
+                        → 단, 신청한 교육일정에 접수인원이 적은 경우 신청지부가
+                        아닌 타 지부에서 교육이 실시 될 수 있습니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-test-application">
+                  <div class="kfsi-test-application-list">
+                    <div class="kfsi-test-application-list-head">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          신청 가능한 시험만 보기
+                        </label>
+                      </div>
+                      <div class="kfsi-test-application-list-head-title">
+                        집합
+                      </div>
+                      <button type="button" class="btn btn-sm btn-secondary">
+                        <i class="ico-refresh-calendar"></i>
+                        일정 새로고침
+                      </button>
+                    </div>
+                    <div class="kfsi-test-application-list-table">
+                      <div class="kfsi-board">
+                        <div
+                          class="kfsi-board-list kfsi-board-list--border"
+                          id="accordion01"
+                        >
+                          <table
+                            summary="자격 시험 접수 정보: 지역별 시험 일정과 접수 가능 인원을 제공합니다."
+                          >
+                            <caption>
+                              자격 시험 리스트
+                            </caption>
+                            <colgroup>
+                              <col style="width: 100px" />
+                              <col style="width: 160px" />
+                              <col style="width: 280px" />
+                              <col style="width: 200px" />
+                              <col style="width: 200px" />
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">지역</th>
+                                <th scope="col">교육 운영지부</th>
+                                <th scope="col">교육일정 (접수가능인원)</th>
+                                <th scope="col">교육장소</th>
+                                <th scope="col">상태</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>수도권</td>
+                                <td>서울(영등포)</td>
+                                <td>
+                                  05.08~05.15 (06)
+                                  <span
+                                    class="kfsi-test-application-list-table-badge-danger"
+                                    >주말</span
+                                  >
+                                </td>
+
+                                <td>영등포</td>
+                                <td>
+                                  <a
+                                    href="javascript:void(0)"
+                                    class="btn btn-outline-info btn-sm btn-view text-info collapsed w-100"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapse1-01"
+                                    aria-expanded="true"
+                                    aria-controls="collapse1-01"
+                                    >접수가능</a
+                                  >
+                                </td>
+                              </tr>
+                              <tr>
+                                <td colspan="6" class="p-0 h-100 border-0">
+                                  <div
+                                    id="collapse1-01"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordion01"
+                                  >
+                                    <div class="accordion-body p-5">
+                                      <div class="kfsi-textlist">
+                                        <ul>
+                                          <li>
+                                            교육접수 가능한 인원 : 06명
+                                            <span
+                                              class="kfsi-test-application-list-table-badge-danger"
+                                              >주말</span
+                                            >
+                                          </li>
+                                          <li>교육시간 : 09:00~18:00</li>
+                                          <li>
+                                            추가알림 : 9월24일(월) 10:00부터
+                                            선착순 접수 예정(접수 상황에 따라
+                                            변경될 수 있습니다) / 교육참석시
+                                            사진 1장(등록자 제외), 신분증 지참
+                                          </li>
+                                          <li>
+                                            <strong class="text-danger"
+                                              >교육장소</strong
+                                            >
+                                            <strong
+                                              >: 서울동부 신설동 신설대로
+                                              343(신설동) [한남대북문
+                                              버스정류장, 스타벅스 옆]</strong
+                                            >
+                                          </li>
+                                          <li>
+                                            특이사항 : [대면교육] / 주차공간
+                                            매우 협소(대중교통 이용권장) 102,
+                                            605, 706,802, 611 신설동북문 하차
+                                          </li>
+                                        </ul>
+                                      </div>
+                                      <div class="kfsi-button mt-7">
+                                        <p>
+                                          <button
+                                            type="button"
+                                            class="btn btn-secondary btn-lg"
+                                          >
+                                            대기 신청하기
+                                          </button>
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr
+                                class="kfsi-test-application-list-table-disabled"
+                              >
+                                <td>수도권</td>
+                                <td>서울(영등포)</td>
+                                <td>05.08~05.15 (06)</td>
+
+                                <td>영등포</td>
+                                <td>
+                                  <a
+                                    href="javascript:void(0)"
+                                    class="btn btn-light btn-sm btn-view text-info collapsed w-100"
+                                    disabled
+                                    >마감</a
+                                  >
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>수도권</td>
+                                <td>서울(영등포)</td>
+                                <td>05.08~05.15 (06)</td>
+
+                                <td>인천</td>
+                                <td>
+                                  <div class="d-flex align-items-center gap-1">
+                                    <a
+                                      href="javascript:void(0)"
+                                      class="btn btn-outline-dark btn-sm btn-view w-100"
+                                      >마감(대기자접수)</a
+                                    >
+                                    <button class="border-0 bg-transparent">
+                                      <i class="ico-comment"></i>
+                                    </button>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>수도권</td>
+                                <td>서울(신설동)</td>
+                                <td>05.08~05.15</td>
+
+                                <td>신설동</td>
+                                <td>
+                                  <a
+                                    href="javascript:void(0)"
+                                    class="btn btn-outline-danger btn-sm btn-view w-100"
+                                    style="opacity: 0.5"
+                                    disabled
+                                    >접수 예정</a
+                                  >
+                                </td>
+                              </tr>
+                              <tr
+                                class="kfsi-test-application-list-table-disabled"
+                              >
+                                <td>수도권</td>
+                                <td>경기(수원)</td>
+                                <td>05.08~05.15 (06)</td>
+
+                                <td>수원</td>
+                                <td>
+                                  <a
+                                    href="javascript:void(0)"
+                                    class="btn btn-light btn-sm btn-view text-info collapsed w-100"
+                                    disabled
+                                    >마감</a
+                                  >
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="mt-5">
+                        ※ 교육과정은 노동부 환급교육과정과 무관합니다.<br />
+                        ※ 교육날짜 옆 [100] 표기는 접수가능인원 입니다.<br />
+                        ※ 점심시간은 12:00 ~ 13:00(1시간) 이며, 점심 식비는
+                        교육비에 포함되어 있지 않습니다.<br />
+                        ※ 상기 일정은 지부 사정에 따라 일부 변경 또는 취소될 수
+                        있습니다.<br />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

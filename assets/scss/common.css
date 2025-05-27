@@ -20055,6 +20055,16 @@ small, .small {
   line-height: 0;
 }
 
+.ico-comment {
+  display: inline-block;
+  min-width: 22px;
+  height: 24px;
+  background: url(../images/icon/ico-comment.svg) no-repeat 50% 50%;
+  background-size: cover;
+  font-size: 0;
+  line-height: 0;
+}
+
 .kfsi-h3 {
   color: var(--004D16, #004d16);
   font-family: Pretendard;
@@ -28338,37 +28348,9 @@ html.oacxHtml {
   letter-spacing: 0.48px;
   vertical-align: middle;
 }
-.kfsi-board-list table tbody td a {
-  color: #000;
-}
-.kfsi-board-list table tbody td a:hover {
-  color: var(--1854a3, #1854a3);
-  text-decoration: underline;
-}
-.kfsi-board-list table tbody td a:not(.collapsed) {
-  font-weight: 700;
-  text-decoration: underline;
-}
 .kfsi-board-list table tbody td .form-control {
   min-width: auto;
   width: 100%;
-}
-.kfsi-board-list table tbody td .btn-view:not(.collapsed) {
-  background: var(--6c6e75, #6c6e75);
-  color: #fff;
-  font-weight: 700;
-}
-.kfsi-board-list table tbody td .btn-view:not(.collapsed):hover {
-  color: #fff !important;
-}
-.kfsi-board-list table tbody td a.btn-view:not(.collapsed) {
-  background: #004d16;
-  color: #fff;
-  font-weight: 700;
-  text-decoration: underline;
-}
-.kfsi-board-list table tbody td a.btn-view:not(.collapsed):hover {
-  color: #fff !important;
 }
 .kfsi-board-list-collapse:not(.collapsed) {
   font-weight: 700;
@@ -36180,7 +36162,19 @@ html.oacxHtml {
   letter-spacing: 0.54px;
 }
 .kfsi-test-application-list-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin: 0 0 14px 0;
+}
+.kfsi-test-application-list-head-title {
+  color: #004d16;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 .kfsi-test-application-list-head .form-check {
   margin: 0;
@@ -36287,6 +36281,22 @@ html.oacxHtml {
   font-weight: 900;
   line-height: 0px; /* 0% */
   letter-spacing: 0.27px;
+}
+.kfsi-test-application-list-table .btn:hover {
+  background: none !important;
+}
+.kfsi-test-application-list-table .btn-light {
+  background: #ddd !important;
+  border-color: #ddd !important;
+  color: #999 !important;
+}
+.kfsi-test-application-list-table .btn-light:hover {
+  background: #ddd !important;
+  border-color: #ddd !important;
+  color: #999 !important;
+}
+.kfsi-test-application-list-table .btn-outline-danger:hover {
+  color: var(--bs-btn-hover-border-color) !important;
 }
 @media screen and (max-width: 992px) {
   .kfsi-test-nav {
@@ -36745,4 +36755,361 @@ html.oacxHtml {
     line-height: 24px; /* 141.176% */
     transform: translateY(-50%);
   }
+}
+.kfsi-training-head {
+  margin: 0 0 60px 0;
+  padding: 16px 10px;
+  border-radius: 10px;
+  border: 1px solid #999;
+  background: #fff;
+}
+.kfsi-training-head h4, .kfsi-training-head .h4 {
+  margin: 0 6px 10px;
+  color: #0f6327;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.kfsi-training-head-category {
+  margin-bottom: 40px;
+}
+.kfsi-training-head-category-item {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-top: -1px;
+  padding: 14px 20px;
+  border: 1px solid #eee;
+}
+.kfsi-training-head-category-item:first-child {
+  margin-top: 0;
+}
+.kfsi-training-head-category-item-button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.kfsi-training-head-category-item-button button {
+  position: relative;
+  padding: 7px 22px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #666;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  pointer-events: none;
+}
+.kfsi-training-head-category-item-button button p {
+  display: none;
+  margin: 0;
+  white-space: noWrap;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.kfsi-training-head-category-item-button button.active {
+  margin-bottom: 30px;
+  background: #004d16;
+  border-color: #004d16;
+  color: #fff;
+}
+.kfsi-training-head-category-item-button button.active p {
+  display: block;
+  position: absolute;
+  bottom: -26px;
+  left: 0;
+}
+.kfsi-training-head-category-item .form-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 124px;
+  width: 124px;
+}
+.kfsi-training-head-category-item .form-check-label {
+  color: #999;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+.kfsi-training-head-category-item.active {
+  z-index: 20;
+  border: 1px solid #004d16;
+  background: #e4f2d3;
+}
+.kfsi-training-head-category-item.active .form-check-label {
+  color: #000;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+.kfsi-training-head-category-item.active .kfsi-training-head-category-item-button button {
+  pointer-events: all;
+}
+.kfsi-training-head-tab {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.kfsi-training-head-tab a {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  margin-left: -1px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #666;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+.kfsi-training-head-tab a:first-child {
+  margin: 0;
+}
+.kfsi-training-head-tab a.active {
+  position: relative;
+  z-index: 20;
+  border: 1px solid var(--004D16, #004d16);
+  background: var(--E4F2D3, #e4f2d3);
+  color: var(--004D16, #004d16);
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+.kfsi-training-head-region {
+  margin: 0 0 30px 0;
+  border-radius: 10px;
+  background: #f6f6f6;
+}
+.kfsi-training-head-region dl {
+  margin: 0;
+}
+.kfsi-training-head-region dl dt {
+  margin: 0;
+  padding: 16px 14px;
+  border-bottom: 1px solid #ddd;
+}
+.kfsi-training-head-region dl dd {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 12px;
+  margin: 0;
+  padding: 16px 14px;
+}
+.kfsi-training-head-type {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-height: 60px;
+  margin: 0 0 30px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.kfsi-training-head-type h5, .kfsi-training-head-type .h5 {
+  min-width: 180px;
+  width: 180px;
+  color: #000;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 133.333% */
+}
+.kfsi-training-head-type-button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.kfsi-training-head-type-button button {
+  min-width: 140px;
+  width: 140px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #999;
+  background: #fff;
+  color: #666;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 133.333% */
+}
+.kfsi-training-head-type-button button.active {
+  border-radius: 5px;
+  border: 2px solid #0f6327;
+  background: #fff;
+  color: #0f6327;
+  font-weight: 700;
+}
+.kfsi-training-head-filter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.kfsi-training-head-filter h5, .kfsi-training-head-filter .h5 {
+  color: #000;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+.kfsi-training-head-filter-button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.kfsi-training-head-filter-button button {
+  display: inline-flex;
+  height: 30px;
+  padding: 6px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #333;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 133.333% */
+}
+.kfsi-training-info {
+  margin: 0 0 60px 0;
+  padding: 18px 24px;
+  background: #fef3dd;
+  color: #000;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.kfsi-training-info dl {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 82px;
+}
+.kfsi-training-info dl::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  min-width: 62px;
+  width: 62px;
+  height: 80px;
+  background: url(../images/icon/ico-training.svg) no-repeat 100% 50%;
+}
+.kfsi-training-info dl dt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 10px 0;
+  padding: 0;
+  color: #000;
+  font-family: Pretendard;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 133.333% */
+}
+.kfsi-training-info dl dd {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: Pretendard;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+}
+.kfsi-training-detail-head {
+  display: flex;
+  justify-content: space-between;
+}
+.kfsi-training-detail-head-title {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.kfsi-training-detail-head-title h4, .kfsi-training-detail-head-title .h4 {
+  margin: 0;
+}
+.kfsi-training-detail-head-title p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.kfsi-training-detail-head-title p span {
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-family: Pretendard;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.kfsi-training-detail-head-title p span::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 10px;
+  background: #999;
+  margin: 0 10px;
+}
+.kfsi-training-detail-head-title p span:first-child::before {
+  display: none;
+}
+.kfsi-training-detail-contents {
+  color: #000;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.kfsi-training-detail-contents-box {
+  padding: 30px 24px;
+  border-radius: 20px;
+  background: rgba(246, 246, 246, 0.96);
+}
+.kfsi-training-detail-contents-box p {
+  margin: 0 0 5px 0;
+}
+.kfsi-training-detail-contents-box p:last-child {
+  margin: 0;
 }/*# sourceMappingURL=common.css.map */

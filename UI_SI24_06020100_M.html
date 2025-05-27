@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>시험 및 점수</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">시험안내(응시자격 등)</a>
+              <a href="" class="kfsi-snb-item active">시험신청</a>
+              <a href="" class="kfsi-snb-item">응시자격 심사 신청</a>
+              <a href="" class="kfsi-snb-item">시험(심사) 신청내역</a>
+              <a href="" class="kfsi-snb-item">시험(평가) 점수확인 </a>
+              <a href="" class="kfsi-snb-item">합격자 발표 조회</a>
+              <a href="" class="kfsi-snb-item">응시자격 자가진단</a>
+              <a href="" class="kfsi-snb-item">시험관련 확인서 신청</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">시험 및 점수</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      시험신청
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>시험신청</h1>
+              </div>
+              <div class="kfsi-test">
+                <div class="kfsi-tab02 kfsi-tab02-type2">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="page-tab01"
+                        data-bs-toggle="tab"
+                        data-bs-target="#page-tab01-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="page-tab01-pane"
+                        aria-selected="true"
+                      >
+                        시험안내사항
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="page-tab02"
+                        data-bs-toggle="tab"
+                        data-bs-target="#page-tab02-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="page-tab02-pane"
+                        aria-selected="true"
+                      >
+                        시험안내
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="page-tab03"
+                        data-bs-toggle="tab"
+                        data-bs-target="#page-tab03-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="page-tab03-pane"
+                        aria-selected="false"
+                      >
+                        시험접수
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div
+                      class="tab-pane fade show active"
+                      id="page-tab03-pane"
+                      role="tabpanel"
+                      aria-labelledby="page-tab03"
+                      tabindex="0"
+                    >
+                      <div class="kfsi-training">
+                        <div class="kfsi-training-head">
+                          <h4>직능 선택</h4>
+                          <div class="kfsi-training-head-tab">
+                            <a href="">소방안전관리자</a>
+                            <a href="">소방안전관리보조자</a>
+                            <a href="" class="active">위험물안전관리자</a>
+                            <a href="">소방기술자</a>
+                            <a href="">위험물운송자</a>
+                            <a href="">위험물운반자</a>
+                          </div>
+                          <script>
+                            document.addEventListener(
+                              'DOMContentLoaded',
+                              () => {
+                                const tabContainer = document.querySelector(
+                                  '.kfsi-training-head-tab'
+                                );
+                                const tabs = tabContainer.querySelectorAll('a');
+
+                                tabContainer.addEventListener('click', (e) => {
+                                  if (e.target.tagName === 'A') {
+                                    e.preventDefault(); // 기본 링크 이동 방지 (원하면 제거 가능)
+                                    // 모든 탭의 active 제거
+                                    tabs.forEach((tab) =>
+                                      tab.classList.remove('active')
+                                    );
+                                    // 클릭한 탭에 active 추가
+                                    e.target.classList.add('active');
+                                  }
+                                });
+                              }
+                            );
+                          </script>
+
+                          <h4>지역 선택</h4>
+                          <div class="kfsi-training-head-region">
+                            <dl>
+                              <dt>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    name="checkbox1"
+                                    id="checkbox1-1"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox1-1"
+                                  >
+                                    전체
+                                  </label>
+                                </div>
+                              </dt>
+                              <dd>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    name="checkbox1"
+                                    id="checkbox1-2"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox1-2"
+                                  >
+                                    서울(영등포)
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    name="checkbox1"
+                                    id="checkbox1-3"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox1-3"
+                                  >
+                                    서울(신설동)
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    name="checkbox1"
+                                    id="checkbox1-4"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox1-4"
+                                  >
+                                    인천
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    name="checkbox1"
+                                    id="checkbox1-5"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox1-5"
+                                  >
+                                    경기(수원)
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    name="checkbox1"
+                                    id="checkbox1-6"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox1-6"
+                                  >
+                                    경기북부(파주,의정부)
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    name="checkbox1"
+                                    id="checkbox1-7"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox1-7"
+                                  >
+                                    충북(청주)
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    name="checkbox1"
+                                    id="checkbox1-8"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox1-8"
+                                  >
+                                    광주전남(광주)
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    name="checkbox1"
+                                    id="checkbox1-9"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox1-9"
+                                  >
+                                    전북
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    name="checkbox1"
+                                    id="checkbox1-10"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox1-10"
+                                  >
+                                    부산
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    name="checkbox1"
+                                    id="checkbox1-11"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox1-11"
+                                  >
+                                    대구경북(대구)
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    name="checkbox1"
+                                    id="checkbox1-12"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox1-12"
+                                  >
+                                    강원
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    name="checkbox1"
+                                    id="checkbox1-13"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox1-13"
+                                  >
+                                    제주
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    name="checkbox1"
+                                    id="checkbox1-14"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox1-14"
+                                  >
+                                    경남
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    name="checkbox1"
+                                    id="checkbox1-15"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox1-15"
+                                  >
+                                    울산
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    name="checkbox1"
+                                    id="checkbox1-16"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox1-16"
+                                  >
+                                    대전충남(대전)
+                                  </label>
+                                </div>
+                              </dd>
+                            </dl>
+                          </div>
+                          <script>
+                            document.addEventListener(
+                              'DOMContentLoaded',
+                              () => {
+                                const selectAllCheckbox =
+                                  document.getElementById('checkbox1-1');
+                                const subCheckboxes = document.querySelectorAll(
+                                  'input[name="checkbox1"]:not(#checkbox1-1)'
+                                );
+
+                                // "Select All" checkbox toggles all sub-checkboxes
+                                selectAllCheckbox.addEventListener(
+                                  'change',
+                                  () => {
+                                    const isChecked = selectAllCheckbox.checked;
+                                    subCheckboxes.forEach(
+                                      (cb) => (cb.checked = isChecked)
+                                    );
+                                  }
+                                );
+
+                                // Each sub-checkbox updates the "Select All" checkbox
+                                subCheckboxes.forEach((cb) => {
+                                  cb.addEventListener('change', () => {
+                                    const allSelected = Array.from(
+                                      subCheckboxes
+                                    ).every((cb) => cb.checked);
+                                    selectAllCheckbox.checked = allSelected;
+                                  });
+                                });
+                              }
+                            );
+                          </script>
+
+                          <div class="kfsi-training-head-filter">
+                            <h5>내가 선택한 조건</h5>
+                            <div class="kfsi-training-head-filter-button">
+                              <button type="button">1급 소방안전관리자</button>
+                              <button type="button">서울(영등포)</button>
+                              <button type="button">인천</button>
+                              <button type="button">경기(수원)</button>
+                              <button type="button">혼용(원격+집합)</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="kfsi-test-application">
+                          <div class="kfsi-test-application-list">
+                            <div class="kfsi-test-application-list-head">
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexCheckDefault"
+                                >
+                                  신청 가능한 시험만 보기
+                                </label>
+                              </div>
+
+                              <button
+                                type="button"
+                                class="btn btn-sm btn-secondary"
+                              >
+                                <i class="ico-refresh-calendar"></i>
+                                일정 새로고침
+                              </button>
+                            </div>
+                            <div class="kfsi-test-application-list-table">
+                              <div class="kfsi-board">
+                                <div
+                                  class="kfsi-board-list kfsi-board-list--border"
+                                  id="accordion01"
+                                >
+                                  <table
+                                    summary="자격 시험 접수 정보: 지역별 시험 일정과 접수 가능 인원을 제공합니다."
+                                  >
+                                    <caption>
+                                      자격 시험 리스트
+                                    </caption>
+                                    <colgroup>
+                                      <col style="width: 100px" />
+                                      <col style="width: 160px" />
+                                      <col style="width: 310px" />
+                                      <col style="width: 170px" />
+                                      <col style="width: 200px" />
+                                    </colgroup>
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">지역</th>
+                                        <th scope="col">시험 운영지부</th>
+                                        <th scope="col">
+                                          시험일 (접수가능인원)
+                                        </th>
+                                        <th scope="col">시험장</th>
+                                        <th scope="col">상태</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>수도권</td>
+                                        <td>서울(영등포)</td>
+                                        <td>2024.10.23(수) 10:00 (06)</td>
+                                        <td>당산역</td>
+                                        <td>
+                                          <a
+                                            href="javascript:void(0)"
+                                            class="btn btn-outline-info btn-sm btn-view text-info collapsed w-100"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapse1-01"
+                                            aria-expanded="true"
+                                            aria-controls="collapse1-01"
+                                            >접수가능</a
+                                          >
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td
+                                          colspan="5"
+                                          class="p-0 h-100 border-0"
+                                        >
+                                          <div
+                                            id="collapse1-01"
+                                            class="accordion-collapse collapse"
+                                            data-bs-parent="#accordion01"
+                                          >
+                                            <div class="accordion-body p-5">
+                                              <div class="kfsi-textlist">
+                                                <ul>
+                                                  <li>
+                                                    접수문의 : 02-850-1378
+                                                  </li>
+                                                  <li>
+                                                    <div
+                                                      class="d-flex align-items-center column-gap-2 row-gap-1 mo-flex-column mo-align-items-start mo-mb-2"
+                                                    >
+                                                      시험장소 : 한국 소방안전원
+                                                      서울지부 (2호선 당산역
+                                                      6번출구)
+                                                      <button
+                                                        type="button"
+                                                        class="btn btn-secondary btn-sm"
+                                                      >
+                                                        약도보기
+                                                      </button>
+                                                    </div>
+                                                  </li>
+                                                  <li>
+                                                    추가알림 :
+                                                    <span class="text-danger"
+                                                      >10.17부터 접수가능하며
+                                                      접수기간 외에는 접수불가,
+                                                      주말방문 접수불가</span
+                                                    >
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                              <div class="kfsi-button mt-7">
+                                                <p>
+                                                  <button
+                                                    type="button"
+                                                    class="btn btn-primary btn-lg"
+                                                  >
+                                                    선착순 접수하기
+                                                  </button>
+                                                </p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr
+                                        class="kfsi-test-application-list-table-disabled"
+                                      >
+                                        <td>수도권</td>
+                                        <td>서울(영등포)</td>
+                                        <td>05.08~05.15 (06)</td>
+
+                                        <td>영등포</td>
+                                        <td>
+                                          <a
+                                            href="javascript:void(0)"
+                                            class="btn btn-light btn-sm btn-view text-info collapsed w-100"
+                                            disabled
+                                            >마감</a
+                                          >
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>수도권</td>
+                                        <td>서울(영등포)</td>
+                                        <td>05.08~05.15 (06)</td>
+
+                                        <td>인천</td>
+                                        <td>
+                                          <div
+                                            class="d-flex align-items-center gap-1"
+                                          >
+                                            <a
+                                              href="javascript:void(0)"
+                                              class="btn btn-outline-dark btn-sm btn-view w-100"
+                                              >마감(대기자접수)</a
+                                            >
+                                            <button
+                                              class="border-0 bg-transparent"
+                                            >
+                                              <i class="ico-comment"></i>
+                                            </button>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>수도권</td>
+                                        <td>서울(신설동)</td>
+                                        <td>05.08~05.15</td>
+
+                                        <td>신설동</td>
+                                        <td>
+                                          <a
+                                            href="javascript:void(0)"
+                                            class="btn btn-outline-danger btn-sm btn-view w-100"
+                                            style="opacity: 0.5"
+                                            disabled
+                                            >접수 예정</a
+                                          >
+                                        </td>
+                                      </tr>
+                                      <tr
+                                        class="kfsi-test-application-list-table-disabled"
+                                      >
+                                        <td>수도권</td>
+                                        <td>경기(수원)</td>
+                                        <td>05.08~05.15 (06)</td>
+
+                                        <td>수원</td>
+                                        <td>
+                                          <a
+                                            href="javascript:void(0)"
+                                            class="btn btn-light btn-sm btn-view text-info collapsed w-100"
+                                            disabled
+                                            >마감</a
+                                          >
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
