@@ -13209,8 +13209,11 @@ html.oacxHtml {
             }
           }
           .btn {
+          }
+          .btn-outline-info,
+          .btn-outline-danger {
             &:hover {
-              background: none !important;
+              background-color: #fff;
             }
           }
           .btn-light {

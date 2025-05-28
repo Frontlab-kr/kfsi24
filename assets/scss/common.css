@@ -19049,6 +19049,22 @@ small, .small {
 }
 .tooltip {
   word-break: keep-all;
+  border-radius: 5px;
+}
+.tooltip-inner {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: rgba(51, 51, 51, 0.9);
+  color: #fff;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 142.857% */
+  text-align: left;
+}
+.tooltip-arrow {
+  opacity: 0.7;
 }
 
 .modal-dialog {
@@ -36296,8 +36312,9 @@ html.oacxHtml {
   line-height: 0px; /* 0% */
   letter-spacing: 0.27px;
 }
-.kfsi-test-application-list-table .btn:hover {
-  background: none !important;
+.kfsi-test-application-list-table .btn-outline-info:hover,
+.kfsi-test-application-list-table .btn-outline-danger:hover {
+  background-color: #fff;
 }
 .kfsi-test-application-list-table .btn-light {
   background: #ddd !important;
