@@ -551,3 +551,12 @@
   font-size: 0;
   line-height: 0;
 }
+.logo-simple {
+  display: inline-block;
+  min-width: 32px;
+  height: 30px;
+  background: url(../images/logo-simple.svg) no-repeat 50% 50%;
+  background-size: cover;
+  font-size: 0;
+  line-height: 0;
+}
