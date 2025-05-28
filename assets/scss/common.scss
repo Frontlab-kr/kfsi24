@@ -13781,6 +13781,21 @@ html.oacxHtml {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
+            &-item {
+              &.active {
+                button {
+                  background: #004d16;
+                  border-color: #004d16;
+                  color: #fff;
+                }
+                p {
+                  display: block;
+                  // position: absolute;
+                  // bottom: -26px;
+                  // left: 0;
+                }
+              }
+            }
             button {
               position: relative;
               padding: 7px 22px;
@@ -13793,28 +13808,16 @@ html.oacxHtml {
               font-style: normal;
               font-weight: 700;
               line-height: normal;
-              pointer-events: none;
-              p {
-                display: none;
-                margin: 0;
-                white-space: noWrap;
-                font-size: 15px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-              }
-              &.active {
-                margin-bottom: 30px;
-                background: #004d16;
-                border-color: #004d16;
-                color: #fff;
-                p {
-                  display: block;
-                  position: absolute;
-                  bottom: -26px;
-                  left: 0;
-                }
-              }
+              //pointer-events: none;
+            }
+            p {
+              display: none;
+              width: 150px;
+              margin: 12px 0 0 0;
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
             }
           }
           .form-check {

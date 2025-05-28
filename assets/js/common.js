@@ -68,4 +68,12 @@ $(document).ready(function () {
     // 글자 수 업데이트
     textArea.closest('.kfsi-textarea').find('strong').text(charCount);
   });
+
+  // 모든 data-bs-toggle="tooltip" 요소 초기화
+  const tooltipTriggerList = document.querySelectorAll(
+    '[data-bs-toggle="tooltip"]'
+  );
+  tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+    new bootstrap.Tooltip(tooltipTriggerEl);
+  });
 });

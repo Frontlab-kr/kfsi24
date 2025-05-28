@@ -195,69 +195,59 @@
                         <div
                           class="kfsi-training-head-category-item-button-item"
                         >
-                          <button type="button">
-                            위험물 안전관리자
-                            <p class="text-danger">
-                              이동탱크저장소에 의하여 위험물을 운송하는 자
-                            </p>
-                          </button>
+                          <button type="button">위험물 안전관리자</button>
+                          <p class="text-danger">
+                            이동탱크저장소에 의하여 위험물을 운송하는 자
+                          </p>
                         </div>
                         <div
                           class="kfsi-training-head-category-item-button-item"
                         >
-                          <button type="button">
-                            위험물 운송자
-
-                            <p class="text-danger">
-                              이동탱크저장소에 의하여 위험물을 운송하는 자
-                            </p>
-                          </button>
+                          <button type="button">위험물 운송자</button>
+                          <p class="text-danger">
+                            이동탱크저장소에 의하여 위험물을 운송하는 자
+                          </p>
                         </div>
                         <div
                           class="kfsi-training-head-category-item-button-item"
                         >
-                          <button type="button">
-                            위험물 통합자
-                            <p class="text-danger">
-                              이동탱크저장소에 의하여 위험물을 운송하는 자
-                            </p>
-                          </button>
+                          <button type="button">위험물 통합자</button>
+                          <p class="text-danger">
+                            이동탱크저장소에 의하여 위험물을 운송하는 자
+                          </p>
                         </div>
                         <div
                           class="kfsi-training-head-category-item-button-item"
                         >
-                          <button type="button">
-                            위험물 운반자
-                            <p class="text-danger">
-                              이동탱크저장소에 의하여 위험물을 운송하는 자
-                            </p>
-                          </button>
+                          <button type="button">위험물 운반자</button>
+                          <p class="text-danger">
+                            이동탱크저장소에 의하여 위험물을 운송하는 자
+                          </p>
                         </div>
                       </div>
                     </div>
                   </div>
                   <script>
                     document.addEventListener('DOMContentLoaded', () => {
-                      // 모든 라디오 버튼 가져오기
+                      // 라디오 선택 시 동작
                       const radios = document.querySelectorAll(
                         'input[name="radio1"]'
                       );
-
                       radios.forEach((radio) => {
                         radio.addEventListener('change', () => {
-                          // 모든 항목에서 active 제거
+                          // 모든 항목의 active 제거
                           document
                             .querySelectorAll(
                               '.kfsi-training-head-category-item'
                             )
                             .forEach((item) => item.classList.remove('active'));
 
-                          // 💡 모든 그룹의 버튼 active 제거
+                          // 모든 버튼-item의 active 제거
                           document
                             .querySelectorAll(
-                              '.kfsi-training-head-category-item-button button'
+                              '.kfsi-training-head-category-item-button-item'
                             )
-                            .forEach((btn) => btn.classList.remove('active'));
+                            .forEach((item) => item.classList.remove('active'));
 
                           // 현재 선택된 라디오의 상위 항목에 active 추가
                           if (radio.checked) {
@@ -271,18 +261,56 @@
                         });
                       });
 
-                      // 버튼 클릭 시 그룹 내 단일 active
+                      // 버튼 클릭 시 그룹 내 단일 active 및 form-check 활성화
                       const buttonGroups = document.querySelectorAll(
                         '.kfsi-training-head-category-item-button'
                       );
 
                       buttonGroups.forEach((group) => {
                         group.addEventListener('click', (e) => {
-                          if (e.target.tagName === 'BUTTON') {
-                            group.querySelectorAll('button').forEach((btn) => {
-                              btn.classList.remove('active');
-                            });
-                            e.target.classList.add('active');
+                          const target = e.target;
+                          if (target.tagName === 'BUTTON') {
+                            // 클릭한 버튼의 상위 button-item 찾기
+                            const parentItem = target.closest(
+                              '.kfsi-training-head-category-item-button-item'
+                            );
+                            const categoryItem = target.closest(
+                              '.kfsi-training-head-category-item'
+                            );
+
+                            if (parentItem && categoryItem) {
+                              // 모든 button-item의 active 제거
+                              document
+                                .querySelectorAll(
+                                  '.kfsi-training-head-category-item-button-item'
+                                )
+                                .forEach((item) =>
+                                  item.classList.remove('active')
+                                );
+
+                              // 모든 category-item의 active 제거
+                              document
+                                .querySelectorAll(
+                                  '.kfsi-training-head-category-item'
+                                )
+                                .forEach((item) =>
+                                  item.classList.remove('active')
+                                );
+
+                              // 클릭한 버튼의 상위 item에 active 추가
+                              parentItem.classList.add('active');
+
+                              // 해당 카테고리 항목에 active 추가
+                              categoryItem.classList.add('active');
+
+                              // 해당 항목의 라디오 선택도 연동
+                              const radio = categoryItem.querySelector(
+                                'input[type="radio"]'
+                              );
+                              if (radio) {
+                                radio.checked = true;
+                              }
+                            }
                           }
                         });
                       });
@@ -696,12 +724,17 @@
                                   <div
                                     id="collapse1-01"
                                     class="accordion-collapse collapse"
-                                    data-bs-parent="#accordion01"
                                   >
                                     <div class="accordion-body p-5">
                                       <div class="kfsi-textlist">
                                         <ul>
-                                          <li>교육접수 가능한 인원 : 06명</li>
+                                          <li>
+                                            교육접수 가능한 인원 : 06명
+                                            <span
+                                              class="kfsi-test-application-list-table-badge-danger"
+                                              >주말</span
+                                            >
+                                          </li>
                                           <li>교육시간 : 09:00~18:00</li>
                                           <li>
                                             추가알림 : 9월24일(월) 10:00부터
@@ -768,11 +801,73 @@
                                     <a
                                       href="javascript:void(0)"
                                       class="btn btn-outline-dark btn-sm btn-view w-100"
+                                      data-bs-toggle="collapse"
+                                      data-bs-target="#collapse1-02"
+                                      aria-expanded="true"
+                                      aria-controls="collapse1-02"
                                       >마감(대기자접수)</a
                                     >
-                                    <button class="border-0 bg-transparent">
+                                    <button
+                                      class="border-0 bg-transparent"
+                                      data-bs-toggle="tooltip"
+                                      data-bs-title="해당 교육은 정원이 마감되었습니다. 결원 발생 시, 대기자 신청 순서에 따라 개별 안내 드리겠습니다."
+                                    >
                                       <i class="ico-comment"></i>
                                     </button>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td colspan="6" class="p-0 h-100 border-0">
+                                  <div
+                                    id="collapse1-02"
+                                    class="accordion-collapse collapse"
+                                  >
+                                    <div class="accordion-body p-5">
+                                      <div class="kfsi-textlist">
+                                        <ul>
+                                          <li>
+                                            교육접수 가능한 인원 : 06명
+                                            <span
+                                              class="kfsi-test-application-list-table-badge-danger"
+                                              >주말</span
+                                            >
+                                          </li>
+                                          <li>교육시간 : 09:00~18:00</li>
+                                          <li>
+                                            추가알림 : 9월24일(월) 10:00부터
+                                            선착순 접수 예정(접수 상황에 따라
+                                            변경될 수 있습니다) / 교육참석시
+                                            사진 1장(등록자 제외), 신분증 지참
+                                          </li>
+                                          <li>
+                                            <strong class="text-danger"
+                                              >교육장소</strong
+                                            >
+                                            <strong
+                                              >: 서울동부 신설동 신설대로
+                                              343(신설동) [한남대북문
+                                              버스정류장, 스타벅스 옆]</strong
+                                            >
+                                          </li>
+                                          <li>
+                                            특이사항 : [대면교육] / 주차공간
+                                            매우 협소(대중교통 이용권장) 102,
+                                            605, 706,802, 611 신설동북문 하차
+                                          </li>
+                                        </ul>
+                                      </div>
+                                      <div class="kfsi-button mt-7">
+                                        <p>
+                                          <button
+                                            type="button"
+                                            class="btn btn-secondary btn-lg"
+                                          >
+                                            대기자 접수하기
+                                          </button>
+                                        </p>
+                                      </div>
+                                    </div>
                                   </div>
                                 </td>
                               </tr>
@@ -787,9 +882,66 @@
                                     href="javascript:void(0)"
                                     class="btn btn-outline-danger btn-sm btn-view w-100"
                                     style="opacity: 0.5"
-                                    disabled
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapse1-03"
+                                    aria-expanded="true"
+                                    aria-controls="collapse1-03"
                                     >접수 예정</a
                                   >
+                                </td>
+                              </tr>
+                              <tr>
+                                <td colspan="6" class="p-0 h-100 border-0">
+                                  <div
+                                    id="collapse1-03"
+                                    class="accordion-collapse collapse"
+                                  >
+                                    <div class="accordion-body p-5">
+                                      <div class="kfsi-textlist">
+                                        <ul>
+                                          <li>
+                                            교육접수 가능한 인원 : 06명
+                                            <span
+                                              class="kfsi-test-application-list-table-badge-danger"
+                                              >주말</span
+                                            >
+                                          </li>
+                                          <li>교육시간 : 09:00~18:00</li>
+                                          <li>
+                                            추가알림 : 9월24일(월) 10:00부터
+                                            선착순 접수 예정(접수 상황에 따라
+                                            변경될 수 있습니다) / 교육참석시
+                                            사진 1장(등록자 제외), 신분증 지참
+                                          </li>
+                                          <li>
+                                            <strong class="text-danger"
+                                              >교육장소</strong
+                                            >
+                                            <strong
+                                              >: 서울동부 신설동 신설대로
+                                              343(신설동) [한남대북문
+                                              버스정류장, 스타벅스 옆]</strong
+                                            >
+                                          </li>
+                                          <li>
+                                            특이사항 : [대면교육] / 주차공간
+                                            매우 협소(대중교통 이용권장) 102,
+                                            605, 706,802, 611 신설동북문 하차
+                                          </li>
+                                        </ul>
+                                      </div>
+                                      <!-- <div class="kfsi-button mt-7">
+                                        <p>
+                                          <button
+                                            type="button"
+                                            class="btn btn-primary btn-lg"
+                                          >
+                                            선착순 접수하기
+                                          </button>
+                                        </p>
+                                      </div> -->
+                                    </div>
+                                  </div>
                                 </td>
                               </tr>
                               <tr

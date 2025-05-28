@@ -77,6 +77,9 @@ small {
     font-size: 14px !important;
   }
 }
+.tooltip {
+  word-break: keep-all;
+}
 .modal {
   &-dialog {
     max-width: 750px;
