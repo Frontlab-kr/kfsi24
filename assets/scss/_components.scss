@@ -705,6 +705,26 @@ $mobileWidth: 992px;
       }
     }
   }
+  &-table-sm {
+    @media screen and (max-width: $mobileWidth) {
+      table {
+        thead {
+          th {
+            padding: 10px 6px !important;
+          }
+        }
+        tbody,
+        tfoot {
+          th {
+            padding: 10px 6px !important;
+          }
+          td {
+            padding: 10px 6px !important;
+          }
+        }
+      }
+    }
+  }
   &-list {
     @media screen and (max-width: $mobileWidth) {
       border-top: 2px solid #004d16;
