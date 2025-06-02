@@ -28538,9 +28538,6 @@ html.oacxHtml {
 .kfsi-board-list-button + .kfsi-board-pagination {
   margin-top: 60px;
 }
-.kfsi-board-list {
-  border-top: 2px solid #032c5e;
-}
 .kfsi-board-list__none {
   padding: 32px;
   border-bottom: 1px solid #ccc;
