@@ -7159,6 +7159,162 @@ html.oacxHtml {
     @media screen and (max-width: $mobileWidth) {
     }
   }
+  &-tab04 {
+    > .nav {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 10px;
+      row-gap: 16px;
+      margin-bottom: 60px;
+      padding: 16px;
+      border: 1px solid #ccc;
+      background: #f1f1f1;
+      &-tabs {
+        .nav-link {
+          width: 100%;
+          height: 40px;
+          padding: 0 16px;
+          background: #fff;
+          border-radius: 30px;
+          border: none;
+          color: #666;
+          text-align: center;
+          font-family: Pretendard;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px; /* 150% */
+
+          &.active {
+            border-radius: 100px;
+            border: 1px solid #0f6327;
+            background: #e4f2d3;
+            color: #004d16;
+            text-align: center;
+            font-family: Pretendard;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px; /* 150% */
+          }
+        }
+      }
+      &-item {
+      }
+    }
+    @media screen and (max-width: $mobileWidth) {
+      > .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 0;
+        width: 100%;
+        margin-bottom: 40px;
+        &-tabs {
+          border: 0;
+          background: #fff;
+          border-radius: 0;
+          .nav-link {
+            position: relative;
+            width: 100%;
+            min-height: 40px;
+            height: 100%;
+            //margin-left: -1px;
+            padding: 10px 10px;
+            background: #fff;
+            border-radius: 0;
+            border: 1px solid #ccc;
+            border-left: none;
+            color: #666;
+            text-align: center;
+            font-family: Pretendard;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            word-break: keep-all;
+            z-index: 10;
+            &.active {
+              border-radius: 0;
+              background: var(--E4F2D3, #e4f2d3);
+              color: #004d16;
+              text-align: center;
+              font-family: Pretendard;
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              z-index: 20;
+              &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: -1px;
+                right: -1px;
+                bottom: -1px;
+                left: -1px;
+                border: 1px solid var(--0F6327, #0f6327);
+              }
+            }
+          }
+        }
+        &-item {
+          width: 100%;
+          &:first-child {
+            .nav-link {
+              border-left: 1px solid #ccc;
+            }
+          }
+        }
+      }
+      .nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        &-item {
+          &:nth-child(2n-1) {
+            .nav-link {
+              border-left: 1px solid #ccc;
+            }
+          }
+        }
+      }
+      &--grid3,
+      &--mo-grid3 {
+        .nav {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          &-item {
+            .nav-link {
+              border-left: none !important;
+            }
+            &:nth-child(1) {
+              .nav-link {
+                border-left: 1px solid #ccc !important;
+              }
+            }
+          }
+        }
+      }
+      &-type2 {
+        > .nav {
+          display: flex;
+          width: auto;
+          overflow: auto;
+          margin: -30px -16px 30px -16px;
+          border-bottom: 1px solid #ccc;
+          .nav-link {
+            display: inline-flex;
+            padding: 10px 16px;
+            border: none !important;
+            background: none !important;
+            white-space: noWrap;
+            &:before {
+              display: none !important;
+            }
+          }
+        }
+      }
+    }
+  }
   // &-table {
   //   &-head {
   //     margin-bottom: 24px;
