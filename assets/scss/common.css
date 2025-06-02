@@ -30799,7 +30799,7 @@ html.oacxHtml {
   border-radius: 0;
 }
 .kfsi-faq-list .accordion-button {
-  height: 52px;
+  min-height: 52px;
   padding: 0 10px 0 0;
   border-radius: 0 !important;
 }
@@ -30862,12 +30862,6 @@ html.oacxHtml {
   font-weight: 400;
   line-height: 24px; /* 150% */
   letter-spacing: 0.48px;
-  display: -webkit-box;
-  overflow: hidden;
-  /* autoprefixer: ignore next */
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  word-break: break-all;
 }
 .kfsi-faq-list-body {
   position: relative;
