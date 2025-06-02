@@ -14277,6 +14277,107 @@ html.oacxHtml {
   }
   &-lecture {
     background: #f1f1f1;
+    width: 100%;
+    @media screen and (max-width: $mobileWidth) {
+    }
+    &--active-list {
+      .kfsi-lecture-contents {
+        width: calc(100% - 400px);
+      }
+      .kfsi-lecture-menu-index {
+        display: block;
+      }
+      .kfsi-lecture-menu-list {
+        .btn01 {
+          background: #0f6327;
+          color: #fff;
+          .ico-lecture-list {
+            background: url(../images/icon/ico-lecture-list-active.svg)
+              no-repeat 50% 50%;
+          }
+        }
+      }
+      @media screen and (max-width: $mobileWidth) {
+        .kfsi-lecture-contents {
+          width: 100%;
+        }
+        .kfsi-lecture-menu-index {
+          display: block;
+        }
+        .kfsi-lecture-menu-list {
+          .btn01 {
+            position: relative;
+            background: #fff;
+            color: #004d16;
+            text-align: center;
+            font-family: Pretendard;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px; /* 141.176% */
+            &::after {
+              content: '';
+              display: block;
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              left: 0;
+              height: 2px;
+              background: #0f6327;
+            }
+          }
+        }
+      }
+    }
+    &--active-tv {
+      .kfsi-lecture-contents {
+        width: calc(100% - 400px);
+      }
+      .kfsi-lecture-menu-state {
+        display: block;
+      }
+      .kfsi-lecture-menu-list {
+        .btn02 {
+          background: #0f6327;
+          color: #fff;
+          .ico-lecture-tv {
+            background: url(../images/icon/ico-lecture-tv-active.svg) no-repeat
+              50% 50%;
+          }
+        }
+      }
+      @media screen and (max-width: $mobileWidth) {
+        .kfsi-lecture-contents {
+          width: 100%;
+        }
+        .kfsi-lecture-menu-state {
+          display: block;
+        }
+        .kfsi-lecture-menu-list {
+          .btn02 {
+            position: relative;
+            background: #fff;
+            color: #004d16;
+            text-align: center;
+            font-family: Pretendard;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px; /* 141.176% */
+            &::after {
+              content: '';
+              display: block;
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              left: 0;
+              height: 2px;
+              background: #0f6327;
+            }
+          }
+        }
+      }
+    }
     &-head {
       display: flex;
       align-items: center;
@@ -14298,25 +14399,136 @@ html.oacxHtml {
     &-body {
       display: flex;
       height: calc(100vh - 60px);
+      @media screen and (max-width: $mobileWidth) {
+        flex-direction: column;
+        height: auto;
+      }
+    }
+    &-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 80px;
+      padding: 0 30px;
+      background: #fff;
+      @media screen and (max-width: $mobileWidth) {
+        height: auto;
+        background: none;
+        padding: 0 0 30px 0;
+        .kfsi-lecture-foot-end {
+          display: none;
+        }
+      }
+      &-start {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        @media screen and (max-width: $mobileWidth) {
+          display: none;
+        }
+      }
+      &-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        color: #000;
+        font-family: Pretendard;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        p {
+          margin: 0;
+        }
+        strong {
+          color: #004d16;
+          text-align: center;
+          font-family: Pretendard;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px; /* 120% */
+        }
+      }
+      &-end {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+        width: 100%;
+        .btn {
+          min-width: 160px;
+        }
+        @media screen and (max-width: $mobileWidth) {
+          justify-content: center;
+
+          height: 80px;
+          background: #fff;
+        }
+      }
     }
     &-contents {
       display: flex;
       flex-direction: column;
-      width: 100%;
+      width: calc(100% - 100px);
+      height: 100%;
+      @media screen and (max-width: $mobileWidth) {
+        width: 100%;
+        height: auto;
+      }
     }
     &-test {
       height: calc(100vh - 140px);
       padding: 40px 30px 30px;
+      overflow: auto;
+      &-title {
+        margin-bottom: 24px;
+        p {
+          margin: 0 0 5px 0;
+        }
+        > strong {
+          color: #000;
+          font-family: Pretendard;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+      }
+      &-video {
+        aspect-ratio: 700 / 394;
+        iframe {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      @media screen and (max-width: $mobileWidth) {
+        height: auto;
+        padding: 40px 30px 16px;
+      }
+      @media screen and (max-width: 600px) {
+        padding: 16px;
+      }
     }
     &-menu {
       display: flex;
       min-width: 100px;
       border-left: 1px solid #eee;
       background: #fff;
+      @media screen and (max-width: $mobileWidth) {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        border: none;
+      }
       &-state {
         display: none;
       }
       &-index {
+        display: none;
         width: 300px;
         min-width: 300px;
         &__head {
@@ -14341,9 +14553,11 @@ html.oacxHtml {
           }
         }
         &-list {
+          max-height: calc(100% - 61px);
+          overflow: auto;
           &-item {
             display: flex;
-            height: 100px;
+            min-height: 100px;
             padding: 27px 16px;
             gap: 14px;
             border-bottom: 1px solid #eee;
@@ -14369,7 +14583,55 @@ html.oacxHtml {
                 background: url(../images/icon/ico-lecture-check.svg) no-repeat
                   50% 50%;
               }
-              &.active {
+            }
+            &-contents {
+            }
+            &-title {
+              margin-bottom: 2px;
+              color: #000;
+              font-family: Pretendard;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 24px; /* 150% */
+            }
+            &-text {
+              display: flex;
+              flex-wrap: wrap;
+              > span {
+                color: #999;
+                font-family: Pretendard;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; /* 142.857% */
+              }
+              p {
+                display: flex;
+                align-items: center;
+                margin: 0;
+                color: #000;
+                font-family: Pretendard;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; /* 142.857% */
+                strong {
+                  margin-left: 4px;
+                }
+                &::before {
+                  content: '';
+                  display: block;
+                  width: 1px;
+                  height: 10px;
+                  background: #999;
+                  margin: 0 10px;
+                }
+              }
+            }
+            &.active {
+              background: rgba(224, 239, 219, 0.5);
+              .kfsi-lecture-menu-index-list-item-check {
                 color: #0f6327;
                 font-weight: 700;
                 &::before {
@@ -14378,37 +14640,22 @@ html.oacxHtml {
                 }
               }
             }
-            &-contents {
-
-            }
-            &-title {
-              margin-bottom: 2px;
-              color: #000;
-font-family: Pretendard;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 24px; /* 150% */
-            }
-            &-text {
-              > span {
-                color: #999;
-font-family: Pretendard;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px; /* 142.857% */
-              }
-              p {
-                margin: 0;
-                color: #000;
-font-family: Pretendard;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px; /* 142.857% */
-              }
-            }
+          }
+        }
+        @media screen and (max-width: $mobileWidth) {
+          width: 100%;
+          &__head {
+            display: none;
+          }
+          &-list {
+            max-height: 100%;
+            overflow: auto;
+            padding: 0 30px;
+          }
+        }
+        @media screen and (max-width: 600px) {
+          &-list {
+            padding: 0;
           }
         }
       }
@@ -14434,13 +14681,174 @@ line-height: 20px; /* 142.857% */
           background: #f6f6f6;
           border: 0;
         }
+        @media screen and (max-width: $mobileWidth) {
+          flex-direction: row;
+          width: 100%;
+          padding: 0 30px;
+          border-bottom: 1px solid #eee;
+          button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0;
+            width: 140px;
+            height: 60px;
+            border-radius: 100px;
+            background: #fff;
+            border: 0;
+            color: #999;
+            text-align: center;
+            font-family: Pretendard;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px; /* 141.176% */
+            i {
+              display: none;
+            }
+          }
+        }
+        @media screen and (max-width: 600px) {
+          padding: 0;
+        }
       }
-    }
-    &-foot {
-      margin-top: auto;
-      padding: 20px 30px;
-      border-top: 1px solid #eee;
-      background: #fff;
+      &-state {
+        display: none;
+        width: 300px;
+        min-width: 300px;
+        &__head {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 18px 20px;
+          border-bottom: 1px solid #eee;
+          color: #004d16;
+          font-family: Pretendard;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px; /* 120% */
+          button {
+            width: 18px;
+            height: 18px;
+            background: url(../images/icon/ico-lecture-close.svg) no-repeat 50%
+              50%;
+            font-size: 0;
+            border: 0;
+          }
+        }
+        &__title {
+          padding: 26px 20px;
+          border-bottom: 1px solid #eee;
+          h4 {
+            margin: 0 0 10px 0;
+            color: #000;
+
+            text-overflow: ellipsis;
+            font-family: Pretendard;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px; /* 150% */
+          }
+          p {
+            margin: 0;
+            color: #000;
+            font-family: Pretendard;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px; /* 142.857% */
+            span {
+              margin-right: 10px;
+              color: #999;
+            }
+          }
+        }
+        &__progress {
+          padding: 26px 20px;
+          border-bottom: 1px solid #eee;
+          h4 {
+            margin: 0 0 10px 0;
+            color: #000;
+
+            text-overflow: ellipsis;
+            font-family: Pretendard;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px; /* 150% */
+          }
+          p {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0;
+            span {
+              color: #e49800;
+              font-family: Pretendard;
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 20px; /* 153.846% */
+            }
+            strong {
+              color: #1854a3;
+              text-align: right;
+              font-family: Pretendard;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 20px; /* 142.857% */
+            }
+          }
+          .progress {
+            position: relative;
+            &-bar {
+              position: relative;
+              z-index: 10;
+              background: #0094d0;
+              border-radius: 40px;
+            }
+            &-current {
+              position: absolute;
+              left: 0;
+              z-index: 20;
+              width: 16px;
+              height: 16px;
+              background: #ffb626;
+              border: 2px solid #fff;
+              border-radius: 16px;
+            }
+          }
+        }
+        &__table {
+          padding: 26px 20px;
+          border-bottom: 1px solid #eee;
+          h4 {
+            margin: 0 0 10px 0;
+            color: #000;
+
+            text-overflow: ellipsis;
+            font-family: Pretendard;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px; /* 150% */
+          }
+        }
+        @media screen and (max-width: $mobileWidth) {
+          width: 100%;
+          padding: 0 30px;
+          &__head {
+            display: none;
+          }
+        }
+        @media screen and (max-width: 600px) {
+          padding: 0;
+        }
+      }
     }
   }
   &-survey {
