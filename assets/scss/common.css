@@ -24108,6 +24108,9 @@ html.oacxHtml {
   .mo-flex-wrap {
     flex-wrap: wrap;
   }
+  .mo-w-auto {
+    width: auto !important;
+  }
   .mo-w-100 {
     width: 100% !important;
   }

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>나의정보</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">개인정보수정</a>
+              <a href="" class="kfsi-snb-item">비밀번호 변경</a>
+              <a href="" class="kfsi-snb-item">로그인 기록보기</a>
+              <a href="" class="kfsi-snb-item">회원탈퇴</a>
+              <a href="" class="kfsi-snb-item">안전관리자 선임 이력 관리</a>
+              <a href="" class="kfsi-snb-item">나의 교육 정보 조회</a>
+              <a href="" class="kfsi-snb-item">나의 소속 관리</a>
+              <a href="" class="kfsi-snb-item">나의 자격 관리</a>
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >안전원 멤버십 관리</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">회비 납부</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >안전원 회원확인서 발급</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >안전원 회원확인서 진위확인</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">안전원 회원 탈퇴</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >정보제공 수신동의 신청/해지</a
+                  >
+                </div>
+              </div>
+              <a href="" class="kfsi-snb-item active">열린채용관리</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">나의정보</li>
+                    <li class="breadcrumb-item">열린채용관리</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      증빙서류 제출
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>증빙서류 제출</h1>
+              </div>
+              <div class="kfsi-mypage">
+                <div class="kfsi-board">
+                  <div class="kfsi-table">
+                    <table
+                      summary="지원자가 제출해야 할 증빙서류 목록을 구분별로 나타낸 표입니다. 필수 제출서류와 해당자에 한해 제출해야 하는 항목들로 구성되어 있습니다."
+                    >
+                      <caption class="visually-hidden">
+                        필수 및 해당자 제출 증빙서류 목록
+                      </caption>
+                      <colgroup>
+                        <col style="width: 100px" />
+                        <col style="width: 530px" />
+                        <col style="width: 310px" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">구분</th>
+                          <th scope="col">증빙서류</th>
+                          <th scope="col">파일첨부</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th class="bg-primary-subtle" scope="row" rowspan="2">
+                            필수<br />
+                            공통
+                          </th>
+                          <td class="text-start">
+                            개인정보 수집.이용 및 제3자 제공 동의서(학력조회용)
+                          </td>
+                          <td>
+                            <div
+                              class="d-flex align-items-center justify-content-between gap-2 mo-flex-column w-100"
+                            >
+                              <a href="">접수번호_개인정보 동의서.pdf</a>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                첨부
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">채용관련 친족관계 신고서</td>
+                          <td>
+                            <div
+                              class="d-flex align-items-center justify-content-between gap-2 mo-flex-column w-100"
+                            >
+                              <span></span>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                첨부
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th class="bg-primary-subtle" scope="row" rowspan="7">
+                            해당자에<br />
+                            한함
+                          </th>
+                          <td class="text-start">
+                            입사지원서에 기재한 모든 자격증 사본
+                          </td>
+                          <td>
+                            <div
+                              class="d-flex align-items-center justify-content-between gap-2 mo-flex-column w-100"
+                            >
+                              <span></span>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                첨부
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">
+                            대학교(대학) 졸업증명서(학사, 전문학사에 한함)
+                          </td>
+                          <td>
+                            <div
+                              class="d-flex align-items-center justify-content-between gap-2 mo-flex-column w-100"
+                            >
+                              <span></span>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                첨부
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">
+                            학위증명서(석사, 박사학위 소지자에 한함)<br />
+                            <span class="fs-15 text-666">
+                              * 해외 소재 학위 취득자의 경우 졸업(학위)증명서는
+                              번역공증, 아포스티유(Apostile) 또는 대사관인증을
+                              받은 증빙서류 제출
+                            </span>
+                          </td>
+                          <td>
+                            <div
+                              class="d-flex align-items-center justify-content-between gap-2 mo-flex-column w-100"
+                            >
+                              <span></span>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                첨부
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">
+                            입사지원서에 기재한 모든 공인어학성적증명서<br />
+                            <span class="fs-15 text-666">
+                              * 유효기간(2년)이 만료 전인 경우 상기 증빙서류를
+                              제출
+                            </span>
+                          </td>
+                          <td>
+                            <div
+                              class="d-flex align-items-center justify-content-between gap-2 mo-flex-column w-100"
+                            >
+                              <span></span>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                첨부
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">
+                            사이버국가고시센터에 등록되어 유효기간을 +5년
+                            인정받은 어학성적은 아래 2가지 증빙서류 모두 제출<br />
+                            <div class="kfsi-textlist mb-2">
+                              <ul>
+                                <li>
+                                  개인정보 수집.이용 및 제3자 제공
+                                  동의서(어학성적조회용)
+                                </li>
+                                <li>
+                                  사전등록 어학성적 진위확인 정보(인사혁신처
+                                  진위확인용)
+                                </li>
+                              </ul>
+                            </div>
+                            <span class="fs-15 text-666">
+                              * 어학성적이 유효기간(2년)을 초과한 대상자만
+                              인사혁신처로 진위여부 확인 예정
+                            </span>
+                          </td>
+                          <td>
+                            <div
+                              class="d-flex align-items-center justify-content-between gap-2 mo-flex-column w-100"
+                            >
+                              <span></span>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                첨부
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">
+                            취업지원대상자증명서 (해당자에 한함)
+                          </td>
+                          <td>
+                            <div
+                              class="d-flex align-items-center justify-content-between gap-2 mo-flex-column w-100"
+                            >
+                              <span></span>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                첨부
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">
+                            장애인증명서 (해당자에 한함)
+                          </td>
+                          <td>
+                            <div
+                              class="d-flex align-items-center justify-content-between gap-2 mo-flex-column w-100"
+                            >
+                              <span></span>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                첨부
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="kfsi-button justify-content-end mt-10">
+                  <p class="mo-flex-column">
+                    <a
+                      href=""
+                      class="btn btn-outline-dark btn-lg"
+                      style="min-width: 140px"
+                      >취소</a
+                    >
+                    <a
+                      href=""
+                      class="btn btn-outline-secondary btn-lg"
+                      style="min-width: 140px"
+                      >저장</a
+                    >
+                    <a
+                      href=""
+                      class="btn btn-primary btn-lg"
+                      style="min-width: 140px"
+                      >제출</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
