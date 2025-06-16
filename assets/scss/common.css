@@ -20085,6 +20085,16 @@ small, .small {
   line-height: 0;
 }
 
+.ico-comment2 {
+  display: inline-block;
+  min-width: 15px;
+  height: 16px;
+  background: url(../images/icon/ico-comment2.svg) no-repeat 50% 50%;
+  background-size: cover;
+  font-size: 0;
+  line-height: 0;
+}
+
 .ico-header-close {
   display: inline-block;
   min-width: 20px;
@@ -36354,7 +36364,7 @@ html.oacxHtml {
   background-size: 38px 38px;
 }
 .kfsi-test-application {
-  margin: 60px 0 0 0;
+  margin: 40px 0 0 0;
 }
 .kfsi-test-application-title {
   margin: 0 0 40px 0;
@@ -36995,32 +37005,45 @@ html.oacxHtml {
   }
 }
 .kfsi-training-head {
-  margin: 0 0 60px 0;
-  padding: 16px 10px;
+  margin: 0 0 30px 0;
+  padding: 10px 10px 14px;
   border-radius: 10px;
   border: 1px solid #999;
   background: #fff;
 }
 .kfsi-training-head h4, .kfsi-training-head .h4 {
-  margin: 0 6px 10px;
+  margin: 0 6px 5px;
   color: #0f6327;
   font-family: Pretendard;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 24px; /* 150% */
 }
 .kfsi-training-head-category {
-  margin-bottom: 40px;
+  margin-bottom: 16px;
+}
+.kfsi-training-head-category .form-check {
+  margin: 0;
+  padding: 0;
+}
+.kfsi-training-head-category .form-check-label {
+  cursor: pointer;
+}
+.kfsi-training-head-category .form-check-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
 }
 .kfsi-training-head-category-item {
   position: relative;
   z-index: 10;
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 24px;
   margin-top: -1px;
-  padding: 14px 20px;
+  padding: 10px 16px;
   border: 1px solid #eee;
 }
 .kfsi-training-head-category-item:first-child {
@@ -37030,6 +37053,7 @@ html.oacxHtml {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  row-gap: 5px;
 }
 .kfsi-training-head-category-item-button-item.active button {
   background: #004d16;
@@ -37039,18 +37063,25 @@ html.oacxHtml {
 .kfsi-training-head-category-item-button-item.active p {
   display: block;
 }
+.kfsi-training-head-category-item-button-item.active i.ico-comment2 {
+  background: url(../images/icon/ico-comment2-active.svg) no-repeat 50% 50%;
+  background-size: cover;
+}
 .kfsi-training-head-category-item-button button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   position: relative;
-  padding: 7px 22px;
+  padding: 3px 10px;
   border: 1px solid #ccc;
   background: #fff;
   color: #666;
   text-align: center;
   font-family: Pretendard;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 20px; /* 142.857% */
 }
 .kfsi-training-head-category-item-button p {
   display: none;
@@ -37065,16 +37096,17 @@ html.oacxHtml {
   display: flex;
   align-items: center;
   gap: 10px;
-  min-width: 124px;
-  width: 124px;
+  min-width: 100px;
+  width: 100px;
+  margin: 0;
 }
 .kfsi-training-head-category-item .form-check-label {
   color: #999;
   font-family: Pretendard;
-  font-size: 16px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 700;
-  line-height: 24px; /* 150% */
+  line-height: 20px; /* 133.333% */
 }
 .kfsi-training-head-category-item.active {
   z-index: 20;
@@ -37083,11 +37115,7 @@ html.oacxHtml {
 }
 .kfsi-training-head-category-item.active .form-check-label {
   color: #000;
-  font-family: Pretendard;
-  font-size: 16px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 24px; /* 150% */
 }
 .kfsi-training-head-category-item.active .kfsi-training-head-category-item-button button {
   pointer-events: all;
@@ -37095,7 +37123,9 @@ html.oacxHtml {
 .kfsi-training-head-tab {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 40px;
+  margin: 1px 0 16px 1px;
 }
 .kfsi-training-head-tab a {
   position: relative;
@@ -37104,8 +37134,10 @@ html.oacxHtml {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 40px;
+  max-width: 33.333%;
+  height: 36px;
   margin-left: -1px;
+  margin-top: -1px;
   border: 1px solid #ccc;
   background: #fff;
   color: #666;
@@ -37116,9 +37148,6 @@ html.oacxHtml {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.48px;
-}
-.kfsi-training-head-tab a:first-child {
-  margin: 0;
 }
 .kfsi-training-head-tab a.active {
   position: relative;
@@ -37135,31 +37164,46 @@ html.oacxHtml {
   letter-spacing: 0.48px;
 }
 .kfsi-training-head-region {
-  margin: 0 0 30px 0;
+  margin: 0 0 16px 0;
   border-radius: 10px;
   background: #f6f6f6;
 }
 .kfsi-training-head-region dl {
+  display: flex;
   margin: 0;
 }
 .kfsi-training-head-region dl dt {
+  display: flex;
+  align-items: center;
+  min-width: 90px;
   margin: 0;
   padding: 16px 14px;
-  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
 }
 .kfsi-training-head-region dl dd {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 12px;
+  gap: 6px;
   margin: 0;
-  padding: 16px 14px;
+  padding: 8px 20px;
+}
+.kfsi-training-head-region .form-check {
+  margin: 0;
+}
+.kfsi-training-head-region .form-check-label {
+  color: #000;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
 }
 .kfsi-training-head-type {
   display: flex;
   align-items: center;
   gap: 24px;
-  min-height: 60px;
-  margin: 0 0 30px 0;
+  min-height: 44px;
+  margin: 0 0 16px 0;
   border-radius: 10px;
   border: 1px solid #ccc;
 }
@@ -37180,9 +37224,9 @@ html.oacxHtml {
   gap: 10px;
 }
 .kfsi-training-head-type-button button {
-  min-width: 140px;
-  width: 140px;
-  height: 30px;
+  min-width: 150px;
+  width: 150px;
+  height: 28px;
   border-radius: 5px;
   border: 1px solid #999;
   background: #fff;
@@ -37205,15 +37249,16 @@ html.oacxHtml {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 8px;
 }
 .kfsi-training-head-filter h5, .kfsi-training-head-filter .h5 {
+  padding: 0 16px;
   color: #000;
   font-family: Pretendard;
-  font-size: 16px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 700;
-  line-height: 24px; /* 150% */
+  line-height: 24px; /* 160% */
 }
 .kfsi-training-head-filter-button {
   display: flex;
@@ -37222,8 +37267,8 @@ html.oacxHtml {
 }
 .kfsi-training-head-filter-button button {
   display: inline-flex;
-  height: 30px;
-  padding: 6px 16px;
+  height: 24px;
+  padding: 0 16px;
   justify-content: center;
   align-items: center;
   gap: 10px;
