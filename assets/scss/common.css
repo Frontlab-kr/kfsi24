@@ -25924,10 +25924,10 @@ html.oacxHtml {
 }
 .kfsi-main-education-inner {
   display: flex;
-  gap: 40px;
+  gap: 20px;
 }
 .kfsi-main-education-thumb {
-  min-width: 483px;
+  min-width: 400px;
   border-radius: 10px;
   border: 1px solid #ccc;
   background: #fff url(./../images/main/default.png) no-repeat 50% 50%;
@@ -25949,10 +25949,10 @@ html.oacxHtml {
   margin: 0;
 }
 .kfsi-main-education-info dl dt {
-  margin-bottom: 18px;
+  margin-bottom: 13px;
 }
 .kfsi-main-education-info dl dt p {
-  margin: 7px 0 0 0;
+  margin: 2px 0 0 0;
   color: #000;
   font-family: Pretendard;
   font-size: 24px;
@@ -25964,11 +25964,13 @@ html.oacxHtml {
 .kfsi-main-education-info dl dd ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
-  -moz-column-gap: 6px;
-       column-gap: 6px;
+  -moz-column-gap: 0;
+       column-gap: 0;
 }
 .kfsi-main-education-info dl dd ul li {
   display: flex;
@@ -25981,15 +25983,20 @@ html.oacxHtml {
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 150% */
+  width: 43%;
+}
+.kfsi-main-education-info dl dd ul li:nth-child(2n-1) {
+  width: 57%;
 }
 .kfsi-main-education-info dl dd ul li strong {
-  min-width: 146px;
-  width: 146px;
+  min-width: 100px;
+  width: 100px;
   font-weight: 400 !important;
 }
 .kfsi-main-education-info-button {
   display: flex;
   justify-content: end;
+  margin-top: 16px;
 }
 .kfsi-main-education-info-button .btn {
   width: 200px;
@@ -26501,22 +26508,17 @@ html.oacxHtml {
     margin-bottom: 12px;
   }
   .kfsi-main-education-info dl dt p {
-    margin: 7px 0 0 0;
+    margin: 2px 0 0 0;
     color: #000;
-    font-family: Pretendard;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px; /* 120% */
   }
   .kfsi-main-education-info dl dd ul {
-    display: grid;
-    grid-template-columns: 1fr;
     margin: 0;
     padding: 0;
     list-style: none;
-    -moz-column-gap: 6px;
-         column-gap: 6px;
   }
   .kfsi-main-education-info dl dd ul li {
     display: flex;
@@ -26529,16 +26531,15 @@ html.oacxHtml {
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 150% */
+    width: 100% !important;
   }
   .kfsi-main-education-info dl dd ul li strong {
-    min-width: 146px;
-    width: 146px;
     font-weight: 400 !important;
   }
   .kfsi-main-education-info-button {
     display: flex;
     justify-content: end;
-    margin-top: 26px;
+    margin-top: 20px;
   }
   .kfsi-main-education-info-button .btn {
     width: 100%;

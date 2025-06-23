@@ -2073,10 +2073,10 @@ html.oacxHtml {
       }
       &-inner {
         display: flex;
-        gap: 40px;
+        gap: 20px;
       }
       &-thumb {
-        min-width: 483px;
+        min-width: 400px;
         border-radius: 10px;
         border: 1px solid #ccc;
         background: #fff url(./../images/main/default.png) no-repeat 50% 50%;
@@ -2095,9 +2095,9 @@ html.oacxHtml {
         dl {
           margin: 0;
           dt {
-            margin-bottom: 18px;
+            margin-bottom: 13px;
             p {
-              margin: 7px 0 0 0;
+              margin: 2px 0 0 0;
               color: #000;
               font-family: Pretendard;
               font-size: 24px;
@@ -2111,10 +2111,12 @@ html.oacxHtml {
             ul {
               display: grid;
               grid-template-columns: 1fr 1fr;
+              display: flex;
+              flex-wrap: wrap;
               margin: 0;
               padding: 0;
               list-style: none;
-              column-gap: 6px;
+              column-gap: 0;
               li {
                 display: flex;
                 align-items: center;
@@ -2126,9 +2128,13 @@ html.oacxHtml {
                 font-style: normal;
                 font-weight: 400;
                 line-height: 24px; /* 150% */
+                width: 43%;
+                &:nth-child(2n -1) {
+                  width: 57%;
+                }
                 strong {
-                  min-width: 146px;
-                  width: 146px;
+                  min-width: 100px;
+                  width: 100px;
                   font-weight: 400 !important;
                 }
               }
@@ -2139,6 +2145,7 @@ html.oacxHtml {
         &-button {
           display: flex;
           justify-content: end;
+          margin-top: 16px;
           .btn {
             width: 200px;
           }
@@ -2672,9 +2679,8 @@ html.oacxHtml {
             dt {
               margin-bottom: 12px;
               p {
-                margin: 7px 0 0 0;
+                margin: 2px 0 0 0;
                 color: #000;
-                font-family: Pretendard;
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 700;
@@ -2683,12 +2689,10 @@ html.oacxHtml {
             }
             dd {
               ul {
-                display: grid;
-                grid-template-columns: 1fr;
                 margin: 0;
                 padding: 0;
                 list-style: none;
-                column-gap: 6px;
+
                 li {
                   display: flex;
                   align-items: center;
@@ -2700,9 +2704,8 @@ html.oacxHtml {
                   font-style: normal;
                   font-weight: 400;
                   line-height: 24px; /* 150% */
+                  width: 100% !important;
                   strong {
-                    min-width: 146px;
-                    width: 146px;
                     font-weight: 400 !important;
                   }
                 }
@@ -2712,7 +2715,7 @@ html.oacxHtml {
           &-button {
             display: flex;
             justify-content: end;
-            margin-top: 26px;
+            margin-top: 20px;
             .btn {
               width: 100%;
             }
