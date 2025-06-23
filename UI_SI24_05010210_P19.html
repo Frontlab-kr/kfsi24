@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육신청</h2>
+              </div>
+              <div class="kfsi-snb-item-sub active">
+                <a href="javscript:void(0)" class="kfsi-snb-item">강습교육</a>
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">강습교육 신청</a>
+                  <a href="" class="kfsi-snb-item-sub-item active"
+                    >강습교육 신청 내역</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">대기자 교육 신청</a>
+                  <a href="" class="kfsi-snb-item-sub-item">수료증 발급</a>
+                  <a href="" class="kfsi-snb-item-sub-item">수료증 진위확인</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >교육접수증 진위확인</a
+                  >
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item">실무교육</a>
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">실무교육 신청 </a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >실무교육 신청 내역(사이버교육 수강하기)</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">수료확인서 발급</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >수료확인서 발급 진위확인</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">권장학습</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >권장학습 신청내역</a
+                  >
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >의용소방대교육</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">교육안내 </a>
+                  <a href="" class="kfsi-snb-item-sub-item">나의 교육 정보</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >기본교육 신청(사이버)</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >전문교육 신청(사이버)</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >전문화교육 신청(집합)</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">관할소방서 확인</a>
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >다중이용업교육</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">교육신청 </a>
+                  <a href="" class="kfsi-snb-item-sub-item">업소정보 관리</a>
+                  <a href="" class="kfsi-snb-item-sub-item">수료증 출력</a>
+                  <a href="" class="kfsi-snb-item-sub-item">수료진위확인</a>
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item">열린교육</a>
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">열린교육 신청 </a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >열린교육 신청내역</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">수료확인서 발급</a>
+                  <a href="" class="kfsi-snb-item-sub-item">수료진위확인</a>
+                </div>
+              </div>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">교육신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      강습교육 신청 내역
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>교육좌석 선택하기</h1>
+              </div>
+              <div>
+                <div class="kfsi-textlist">
+                  <ul>
+                    <li>교육좌석은 선택하지 않으면 임의 배정됩니다.</li>
+                    <li>
+                      빈 좌석은 흰 화면으로 표기되며 X 표시 되어 있는 좌석은
+                      사용할 수 없거나 이미 신청된 좌석입니다.
+                    </li>
+                    <li>
+                      희망좌석은 최대한 반영되나, 현장 사정에 따라 변경될 수
+                      있습니다.
+                    </li>
+                  </ul>
+                </div>
+                <div class="kfsi-seat">
+                  <div class="kfsi-seat__title">
+                    <p>강연대</p>
+                  </div>
+                  <div class="kfsi-seat__list">
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button" disabled>
+                      <strong>김소방</strong>
+                    </button>
+                    <button type="button" disabled>
+                      <strong>김소방</strong>
+                    </button>
+                    <button type="button" class="active">
+                      <strong>김소방</strong>
+                    </button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button" disabled>
+                      <strong>김소방</strong>
+                    </button>
+                    <button type="button"><strong>김소방</strong></button>
+
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button" disabled>
+                      <strong>김소방</strong>
+                    </button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button"><strong>김소방</strong></button>
+
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button" disabled>
+                      <strong>김소방</strong>
+                    </button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button"><strong>김소방</strong></button>
+
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button" disabled>
+                      <strong>김소방</strong>
+                    </button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button" disabled>
+                      <strong>김소방</strong>
+                    </button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button"><strong>김소방</strong></button>
+                    <button type="button"><strong>김소방</strong></button>
+                  </div>
+                </div>
+                <div class="kfsi-button">
+                  <p>
+                    <a href="" class="btn btn-outline-dark btn-lg">닫기</a>
+                    <a href="" class="btn btn-primary btn-lg">선택하기</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
