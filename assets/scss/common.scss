@@ -6608,12 +6608,12 @@ html.oacxHtml {
                 > th {
                   display: flex;
                   align-items: center;
-                  width: 110px;
-                  max-width: 110px;
-                  min-width: 110px;
+                  width: 80px;
+                  max-width: 80px;
+                  min-width: 80px;
                   height: auto;
                   min-height: 55px;
-                  padding: 14px 12px;
+                  padding: 14px 8px;
                   border-right: none;
                   border-bottom: 1px solid #ccc;
                   background: none;
@@ -6632,10 +6632,10 @@ html.oacxHtml {
                 > td {
                   display: flex;
                   align-items: center;
-                  width: calc(100% - 110px);
+                  width: calc(100% - 80px);
                   height: auto;
                   min-height: 55px;
-                  padding: 7px 10px;
+                  padding: 7px 8px;
                   border-bottom: 1px solid #ccc;
                   font-size: 16px;
                   font-weight: normal;
