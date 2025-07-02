@@ -37739,6 +37739,23 @@ html.oacxHtml {
 .kfsi-training-m-application-list-item__table table th {
   background: #e4f2d3;
 }
+.kfsi-training-m-application .btn-outline-info:hover,
+.kfsi-training-m-application .btn-outline-danger:hover {
+  background-color: #fff;
+}
+.kfsi-training-m-application .btn-light {
+  background: #ddd !important;
+  border-color: #ddd !important;
+  color: #999 !important;
+}
+.kfsi-training-m-application .btn-light:hover {
+  background: #ddd !important;
+  border-color: #ddd !important;
+  color: #999 !important;
+}
+.kfsi-training-m-application .btn-outline-danger:hover {
+  color: var(--bs-btn-hover-border-color) !important;
+}
 .kfsi-lecture {
   background: #f1f1f1;
   width: 100%;

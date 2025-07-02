@@ -14669,6 +14669,27 @@ html.oacxHtml {
           }
         }
       }
+      .btn-outline-info,
+      .btn-outline-danger {
+        &:hover {
+          background-color: #fff;
+        }
+      }
+      .btn-light {
+        background: #ddd !important;
+        border-color: #ddd !important;
+        color: #999 !important;
+        &:hover {
+          background: #ddd !important;
+          border-color: #ddd !important;
+          color: #999 !important;
+        }
+      }
+      .btn-outline-danger {
+        &:hover {
+          color: var(--bs-btn-hover-border-color) !important;
+        }
+      }
     }
   }
   &-lecture {
