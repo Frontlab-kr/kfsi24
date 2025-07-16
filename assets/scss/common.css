@@ -32285,13 +32285,12 @@ html.oacxHtml {
 }
 .kfsi-seat__list {
   display: grid;
-  grid-template-columns: repeat(11, 1fr);
   gap: 5px;
   overflow: auto;
 }
 .kfsi-seat__list button {
-  width: 80px;
-  height: 80px;
+  width: 42px;
+  height: 42px;
   padding: 0;
   border-radius: 10px;
   border: 1px solid #999;
@@ -32302,7 +32301,7 @@ html.oacxHtml {
   color: #004d16;
   text-align: center;
   font-family: Pretendard;
-  font-size: 17px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -32349,38 +32348,7 @@ html.oacxHtml {
   }
   .kfsi-seat__list {
     display: grid;
-    grid-template-columns: repeat(11, 1fr);
     gap: 5px;
-  }
-  .kfsi-seat__list button {
-    width: 50px;
-    min-width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    border: 1px solid #999;
-    background: #fff;
-  }
-  .kfsi-seat__list button strong {
-    display: none;
-    color: #004d16;
-    text-align: center;
-    font-family: Pretendard;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-  .kfsi-seat__list button:disabled {
-    background: #eee url(../images/icon/seat-x.svg) no-repeat 50% 50%;
-    border-color: #ccc;
-  }
-  .kfsi-seat__list button.active {
-    border-radius: 10px;
-    border: 2px solid #0f6327;
-    background: #e4f2d3;
-  }
-  .kfsi-seat__list button.active strong {
-    display: block;
   }
 }
 .kfsi-edu-index {
