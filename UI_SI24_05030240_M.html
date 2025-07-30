@@ -1,0 +1,1891 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>교육신청</h2>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item">강습교육</a>
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">강습교육 신청</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >강습교육 신청 내역</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">대기자 교육 신청</a>
+                  <a href="" class="kfsi-snb-item-sub-item">수료증 발급</a>
+                  <a href="" class="kfsi-snb-item-sub-item">수료증 진위확인</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >교육접수증 진위확인</a
+                  >
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item">실무교육</a>
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">실무교육 신청 </a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >실무교육 신청 내역(사이버교육 수강하기)</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">수료확인서 발급</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >수료확인서 발급 진위확인</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">권장학습</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >권장학습 신청내역</a
+                  >
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub active">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >의용소방대교육</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">교육안내 </a>
+                  <a href="" class="kfsi-snb-item-sub-item active"
+                    >나의 교육 정보</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >기본교육 신청(사이버)</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >전문교육 신청(사이버)</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >전문화교육 신청(집합)</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">관할소방서 확인</a>
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >다중이용업교육</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">교육신청 </a>
+                  <a href="" class="kfsi-snb-item-sub-item">업소정보 관리</a>
+                  <a href="" class="kfsi-snb-item-sub-item">수료증 출력</a>
+                  <a href="" class="kfsi-snb-item-sub-item">수료진위확인</a>
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item">열린교육</a>
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">열린교육 신청 </a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >열린교육 신청내역</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">수료확인서 발급</a>
+                  <a href="" class="kfsi-snb-item-sub-item">수료진위확인</a>
+                </div>
+              </div>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">교육신청</li>
+                    <li class="breadcrumb-item">의용소방대교육</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      관할소방서 연락처
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>관할소방서 연락처</h1>
+              </div>
+              <div class="kfsi-education">
+                <div class="mb-4">
+                  ※ 의용소방대 교육신청 관련 관할소방서 연락처를 참고해 주세요.
+                </div>
+                <div class="kfsi-table kfsi-table-mo-list">
+                  <table>
+                    <caption>
+                      관할소방서 연락처
+                    </caption>
+                    <colgroup>
+                      <col width="8%" />
+                      <col width="18%" />
+                      <col width="15%" />
+                      <col width="45%" />
+                      <col width="15%" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">본부명</th>
+                        <th scope="col">소방서</th>
+                        <th scope="col">주소</th>
+                        <th scope="col">전화번호</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="center">
+                        <td title="No">1</td>
+                        <td title="본부명">서울소방재난본부</td>
+                        <td title="소방서">강남소방서</td>
+                        <td title="주소">
+                          서울특별시 강남구 테헤란로 629(삼성동)
+                        </td>
+                        <td title="전화번호">02-6981-7575</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">2</td>
+                        <td title="본부명">서울소방재난본부</td>
+                        <td title="소방서">강동소방서</td>
+                        <td title="주소">
+                          서울특별시 강동구 성내로 39(성내동)
+                        </td>
+                        <td title="전화번호">02-470-0119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">3</td>
+                        <td title="본부명">서울소방재난본부</td>
+                        <td title="소방서">강북소방서</td>
+                        <td title="주소">서울특별시 강북구 한천로 911(번동)</td>
+                        <td title="전화번호">02-6946-0200</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">4</td>
+                        <td title="본부명">서울소방재난본부</td>
+                        <td title="소방서">강서소방서</td>
+                        <td title="주소">
+                          서울특별시 강서구 양천로 550(등촌동)
+                        </td>
+                        <td title="전화번호">02-3663-0119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">5</td>
+                        <td title="본부명">서울소방재난본부</td>
+                        <td title="소방서">관악소방서</td>
+                        <td title="주소">
+                          서울특별시 관악구 관악로 97(봉천동)
+                        </td>
+                        <td title="전화번호">02-6981-8310</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">6</td>
+                        <td title="본부명">서울소방재난본부</td>
+                        <td title="소방서">광진소방서</td>
+                        <td title="주소">
+                          서울특별시 광진구 광나루로 480(구의동)
+                        </td>
+                        <td title="전화번호">02-457-0119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">7</td>
+                        <td title="본부명">서울소방재난본부</td>
+                        <td title="소방서">구로소방서</td>
+                        <td title="주소">
+                          서울특별시 구로구 경인로 408(고척동)
+                        </td>
+                        <td title="전화번호">02-2618-0119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">8</td>
+                        <td title="본부명">서울소방재난본부</td>
+                        <td title="소방서">노원소방서</td>
+                        <td title="주소">
+                          서울특별시 노원구 한글비석로 1길 8(하계동)
+                        </td>
+                        <td title="전화번호">02-6981-6910</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">9</td>
+                        <td title="본부명">서울소방재난본부</td>
+                        <td title="소방서">도봉소방서</td>
+                        <td title="주소">
+                          서울특별시 도봉구 도봉로 666(방학동)
+                        </td>
+                        <td title="전화번호">02-6981-8119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">10</td>
+                        <td title="본부명">서울소방재난본부</td>
+                        <td title="소방서">동대문소방서</td>
+                        <td title="주소">
+                          서울특별시 동대문구 장한로 34(장안동)
+                        </td>
+                        <td title="전화번호">02-6942-1310</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">11</td>
+                        <td title="본부명">서울소방재난본부</td>
+                        <td title="소방서">동작소방서</td>
+                        <td title="주소">
+                          서울특별시 동작구 여의대방로16길 55(신대방동)
+                        </td>
+                        <td title="전화번호">02-847-1190</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">12</td>
+                        <td title="본부명">서울소방재난본부</td>
+                        <td title="소방서">마포소방서</td>
+                        <td title="주소">
+                          서울특별시 마포구 창전로 76(신수동)
+                        </td>
+                        <td title="전화번호">02-6981-7910</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">13</td>
+                        <td title="본부명">서울소방재난본부</td>
+                        <td title="소방서">서대문소방서</td>
+                        <td title="주소">
+                          서울특별시 서대문구 연희로 182(연희동)
+                        </td>
+                        <td title="전화번호">02-6981-5510</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">14</td>
+                        <td title="본부명">서울소방재난본부</td>
+                        <td title="소방서">서초소방서</td>
+                        <td title="주소">
+                          서울특별시 서초구 사평대로 67(반포동)
+                        </td>
+                        <td title="전화번호">02-537-0119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">15</td>
+                        <td title="본부명">서울소방재난본부</td>
+                        <td title="소방서">성동소방서</td>
+                        <td title="주소">
+                          서울특별시 성동구 살곶이길 331(행당동)
+                        </td>
+                        <td title="전화번호">02-2622-1711</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">16</td>
+                        <td title="본부명">서울소방재난본부</td>
+                        <td title="소방서">성북소방서</td>
+                        <td title="주소">
+                          서울특별시 성북구 종암로 27길 3(종암동)
+                        </td>
+                        <td title="전화번호">02-6981-7310</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">17</td>
+                        <td title="본부명">서울소방재난본부</td>
+                        <td title="소방서">송파소방서</td>
+                        <td title="주소">
+                          서울특별시 송파구 오금로51길 56(마천동)
+                        </td>
+                        <td title="전화번호">02-403-2119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">18</td>
+                        <td title="본부명">서울소방재난본부</td>
+                        <td title="소방서">양천소방서</td>
+                        <td title="주소">
+                          서울특별시 양천구 목동서로 180(목동)
+                        </td>
+                        <td title="전화번호">02-2655-1119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">19</td>
+                        <td title="본부명">서울소방재난본부</td>
+                        <td title="소방서">영등포소방서</td>
+                        <td title="주소">
+                          서울특별시 영등포구 문래로 197(영등포동4가)
+                        </td>
+                        <td title="전화번호">02-6981-7119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">20</td>
+                        <td title="본부명">서울소방재난본부</td>
+                        <td title="소방서">용산소방서</td>
+                        <td title="주소">
+                          서울특별시 용산구 한강대로 167(한강로2가)
+                        </td>
+                        <td title="전화번호">02-794-0119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">21</td>
+                        <td title="본부명">서울소방재난본부</td>
+                        <td title="소방서">은평소방서</td>
+                        <td title="주소">
+                          서울특별시 은평구 통일로 962(진관동)
+                        </td>
+                        <td title="전화번호">02-355-0119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">22</td>
+                        <td title="본부명">서울소방재난본부</td>
+                        <td title="소방서">종로소방서</td>
+                        <td title="주소">
+                          서울특별시 종로구 종로1길 28(수송동)
+                        </td>
+                        <td title="전화번호">02-735-6119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">23</td>
+                        <td title="본부명">서울소방재난본부</td>
+                        <td title="소방서">중부소방서</td>
+                        <td title="주소">서울특별시 중구 퇴계로 394(무학동)</td>
+                        <td title="전화번호">02-2234-0119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">24</td>
+                        <td title="본부명">서울소방재난본부</td>
+                        <td title="소방서">중랑소방서</td>
+                        <td title="주소">
+                          서울특별시 중랑구 신내로 183(신내동)
+                        </td>
+                        <td title="전화번호">02-6981-8920</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">25</td>
+                        <td title="본부명">부산소방재난본부</td>
+                        <td title="소방서">강서소방서</td>
+                        <td title="주소">
+                          부산광역시 강서구 녹산산단361로 9(송정동)
+                        </td>
+                        <td title="전화번호">051-760-5000</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">26</td>
+                        <td title="본부명">부산소방재난본부</td>
+                        <td title="소방서">금정소방서</td>
+                        <td title="주소">
+                          부산광역시 금정구 중앙대로 1789(부곡동)
+                        </td>
+                        <td title="전화번호">051-760-4700</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">27</td>
+                        <td title="본부명">부산소방재난본부</td>
+                        <td title="소방서">기장소방서</td>
+                        <td title="주소">부산광역시 기장군 정관면 용수로 7</td>
+                        <td title="전화번호">051-760-5100</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">28</td>
+                        <td title="본부명">부산소방재난본부</td>
+                        <td title="소방서">부산진소방서</td>
+                        <td title="주소">부산광역시 동구 범일로 115(범일동)</td>
+                        <td title="전화번호">051-760-4200</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">29</td>
+                        <td title="본부명">부산소방재난본부</td>
+                        <td title="소방서">북부소방서</td>
+                        <td title="주소">
+                          부산광역시 사상구 삼덕로 17(삼락동)
+                        </td>
+                        <td title="전화번호">051-760-4400</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">30</td>
+                        <td title="본부명">부산소방재난본부</td>
+                        <td title="소방서">사하소방서</td>
+                        <td title="주소">
+                          부산광역시 사하구 장평로 270(신평동)
+                        </td>
+                        <td title="전화번호">051-760-4500</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">31</td>
+                        <td title="본부명">부산소방재난본부</td>
+                        <td title="소방서">남부소방서</td>
+                        <td title="주소">
+                          부산광역시 수영구 광일로 64(광안동)
+                        </td>
+                        <td title="전화번호">051-760-4800</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">32</td>
+                        <td title="본부명">부산소방재난본부</td>
+                        <td title="소방서">동래소방서</td>
+                        <td title="주소">
+                          부산광역시 연제구 고분로 216(연산동)
+                        </td>
+                        <td title="전화번호">051-760-4300</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">33</td>
+                        <td title="본부명">부산소방재난본부</td>
+                        <td title="소방서">항만소방서</td>
+                        <td title="주소">
+                          부산광역시 영도구 해양로 297(동삼동)
+                        </td>
+                        <td title="전화번호">051-760-4900</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">34</td>
+                        <td title="본부명">부산소방재난본부</td>
+                        <td title="소방서">중부소방서</td>
+                        <td title="주소">
+                          부산광역시 중구 충장대로 6(중앙동4가)
+                        </td>
+                        <td title="전화번호">051-760-4100</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">35</td>
+                        <td title="본부명">부산소방재난본부</td>
+                        <td title="소방서">해운대소방서</td>
+                        <td title="주소">
+                          부산광역시 해운대구 해운대해변로 106(우동)
+                        </td>
+                        <td title="전화번호">051-760-4600</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">36</td>
+                        <td title="본부명">대구소방안전본부</td>
+                        <td title="소방서">달서소방서</td>
+                        <td title="주소">대구광역시 달서구 학산로 75</td>
+                        <td title="전화번호">053-607-2216</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">37</td>
+                        <td title="본부명">대구소방안전본부</td>
+                        <td title="소방서">강서소방서</td>
+                        <td title="주소">
+                          대구광역시 달성군 다사읍 달구벌대로 920
+                        </td>
+                        <td title="전화번호">053-601-4600</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">38</td>
+                        <td title="본부명">대구소방안전본부</td>
+                        <td title="소방서">달성소방서</td>
+                        <td title="주소">
+                          대구광역시 달성군 현풍읍 비슬로 480
+                        </td>
+                        <td title="전화번호">053-670-5200</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">39</td>
+                        <td title="본부명">대구소방안전본부</td>
+                        <td title="소방서">동부소방서</td>
+                        <td title="주소">대구광역시 동구 동대구로 507</td>
+                        <td title="전화번호">053-601-4317</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">40</td>
+                        <td title="본부명">대구소방안전본부</td>
+                        <td title="소방서">북부소방서</td>
+                        <td title="주소">대구광역시 북구 칠성남로 112</td>
+                        <td title="전화번호">053-350-4700</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">41</td>
+                        <td title="본부명">대구소방안전본부</td>
+                        <td title="소방서">서부소방서</td>
+                        <td title="주소">대구광역시 서구 달서천로 186</td>
+                        <td title="전화번호">053-320-4499</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">42</td>
+                        <td title="본부명">대구소방안전본부</td>
+                        <td title="소방서">수성소방서</td>
+                        <td title="주소">대구광역시 수성구 청호로 87</td>
+                        <td title="전화번호">053-780-5213</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">43</td>
+                        <td title="본부명">대구소방안전본부</td>
+                        <td title="소방서">중부소방서</td>
+                        <td title="주소">대구광역시 중구 달구벌대로 1926</td>
+                        <td title="전화번호">053-601-4517</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">44</td>
+                        <td title="본부명">광주소방안전본부</td>
+                        <td title="소방서">광산소방서</td>
+                        <td title="주소">
+                          광주광역시 광산구 하남산단1번로 13(하남동)
+                        </td>
+                        <td title="전화번호">062-613-8813</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">45</td>
+                        <td title="본부명">광주소방안전본부</td>
+                        <td title="소방서">남부소방서</td>
+                        <td title="주소">
+                          광주광역시 남구 송암로58번길 13(송하동)
+                        </td>
+                        <td title="전화번호">062-613-8613</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">46</td>
+                        <td title="본부명">광주소방안전본부</td>
+                        <td title="소방서">동부소방서</td>
+                        <td title="주소">광주광역시 동구 제봉로 210(대인동)</td>
+                        <td title="전화번호">062-613-8413</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">47</td>
+                        <td title="본부명">광주소방안전본부</td>
+                        <td title="소방서">북부소방서</td>
+                        <td title="주소">광주광역시 북구 서하로 290(오치동)</td>
+                        <td title="전화번호">062-613-8713</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">48</td>
+                        <td title="본부명">광주소방안전본부</td>
+                        <td title="소방서">서부소방서</td>
+                        <td title="주소">광주광역시 서구 화운로 197(화정동)</td>
+                        <td title="전화번호">062-613-8513</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">49</td>
+                        <td title="본부명">인천소방본부</td>
+                        <td title="소방서">강화소방서</td>
+                        <td title="주소">
+                          인천광역시<span style="mso-spacerun: yes">  </span
+                          >강화군 강화읍 남문로 23번길 11
+                        </td>
+                        <td title="전화번호">032-930-5811</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">50</td>
+                        <td title="본부명">인천소방본부</td>
+                        <td title="소방서">계양소방서</td>
+                        <td title="주소">
+                          인천광역시<span style="mso-spacerun: yes">  </span
+                          >계양구 장제로 774(계산동)
+                        </td>
+                        <td title="전화번호">032-650-5611</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">51</td>
+                        <td title="본부명">인천소방본부</td>
+                        <td title="소방서">미추홀소방서</td>
+                        <td title="주소">
+                          인천광역시<span style="mso-spacerun: yes">  </span
+                          >남구 인하로 190(주안동)
+                        </td>
+                        <td title="전화번호">032-870-3216</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">52</td>
+                        <td title="본부명">인천소방본부</td>
+                        <td title="소방서">공단소방서</td>
+                        <td title="주소">
+                          인천광역시<span style="mso-spacerun: yes">  </span
+                          >남동구 남동서로 208(고잔동)
+                        </td>
+                        <td title="전화번호">032-723-5512</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">53</td>
+                        <td title="본부명">인천소방본부</td>
+                        <td title="소방서">남동소방서</td>
+                        <td title="주소">
+                          인천광역시<span style="mso-spacerun: yes">  </span
+                          >남동구 인주대로 714(구월동)
+                        </td>
+                        <td title="전화번호">032-870-5210</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">54</td>
+                        <td title="본부명">인천소방본부</td>
+                        <td title="소방서">부평소방서</td>
+                        <td title="주소">
+                          인천광역시<span style="mso-spacerun: yes">  </span
+                          >부평구 부평대로 324(갈산동)
+                        </td>
+                        <td title="전화번호">032-723-5310</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">55</td>
+                        <td title="본부명">인천소방본부</td>
+                        <td title="소방서">서부소방서</td>
+                        <td title="주소">
+                          인천광역시<span style="mso-spacerun: yes">  </span
+                          >서구 서곶로 292(심곡동)
+                        </td>
+                        <td title="전화번호">032-723-5440</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">56</td>
+                        <td title="본부명">인천소방본부</td>
+                        <td title="소방서">송도소방서</td>
+                        <td title="주소">
+                          인천광역시<span style="mso-spacerun: yes">  </span
+                          >연수구 첨단대로60번길 15(송도동)
+                        </td>
+                        <td title="전화번호">032-810-6609</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">57</td>
+                        <td title="본부명">인천소방본부</td>
+                        <td title="소방서">중부소방서</td>
+                        <td title="주소">
+                          인천광역시<span style="mso-spacerun: yes">  </span
+                          >중구 인중로 204(항동)
+                        </td>
+                        <td title="전화번호">032-870-5115</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">58</td>
+                        <td title="본부명">인천소방본부</td>
+                        <td title="소방서">영종소방서</td>
+                        <td title="주소">
+                          인천광역시<span style="mso-spacerun: yes">  </span
+                          >중구 중구 제2터미널대로 268(운서동)
+                        </td>
+                        <td title="전화번호">032-727-6110</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">59</td>
+                        <td title="본부명">대전소방본부</td>
+                        <td title="소방서">대덕소방서</td>
+                        <td title="주소">대전광역시 대덕구 계족로 682</td>
+                        <td title="전화번호">042-270-1514</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">60</td>
+                        <td title="본부명">대전소방본부</td>
+                        <td title="소방서">동부소방서</td>
+                        <td title="주소">대전광역시 동구 계족로 300</td>
+                        <td title="전화번호">042-270-1314</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">61</td>
+                        <td title="본부명">대전소방본부</td>
+                        <td title="소방서">둔산소방서</td>
+                        <td title="주소">대전광역시 서구 갈마중로 15</td>
+                        <td title="전화번호">042-270-1413</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">62</td>
+                        <td title="본부명">대전소방본부</td>
+                        <td title="소방서">서부소방서</td>
+                        <td title="주소">대전광역시 서구 북부서로 67</td>
+                        <td title="전화번호">042-270-1713</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">63</td>
+                        <td title="본부명">대전소방본부</td>
+                        <td title="소방서">유성소방서</td>
+                        <td title="주소">대전광역시 유성구 대덕대로 516</td>
+                        <td title="전화번호">042-270-1613</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">64</td>
+                        <td title="본부명">울산소방본부</td>
+                        <td title="소방서">남부소방서</td>
+                        <td title="주소">울산광역시 남구 삼산중로 149</td>
+                        <td title="전화번호">052-210-4720</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">65</td>
+                        <td title="본부명">울산소방본부</td>
+                        <td title="소방서">동부소방서</td>
+                        <td title="주소">울산광역시 동구 꽃바위2가길 9</td>
+                        <td title="전화번호">052-279-6320</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">66</td>
+                        <td title="본부명">울산소방본부</td>
+                        <td title="소방서">북부소방서</td>
+                        <td title="주소">울산광역시 북구 화동로 178</td>
+                        <td title="전화번호">052-229-8001</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">67</td>
+                        <td title="본부명">울산소방본부</td>
+                        <td title="소방서">온산소방서</td>
+                        <td title="주소">
+                          울산광역시 울주군 온산읍 덕신로 232
+                        </td>
+                        <td title="전화번호">052-241-6620</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">68</td>
+                        <td title="본부명">세종소방본부</td>
+                        <td title="소방서">중부소방서</td>
+                        <td title="주소">울산광역시 중구 종가로 205</td>
+                        <td title="전화번호">052-210-4423</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">69</td>
+                        <td title="본부명">세종소방본부</td>
+                        <td title="소방서">세종소방서</td>
+                        <td title="주소">세종특별자치시 절재로 301(어진동)</td>
+                        <td title="전화번호">044-300-6119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">70</td>
+                        <td title="본부명">세종소방본부</td>
+                        <td title="소방서">조치원소방서</td>
+                        <td title="주소">
+                          세종특별자치시 조치원읍 세종로 2439
+                        </td>
+                        <td title="전화번호">044-300-8119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">71</td>
+                        <td title="본부명">경기재난안전본부</td>
+                        <td title="소방서">가평소방서</td>
+                        <td title="주소">경기도 가평군 가평읍 가화로36</td>
+                        <td title="전화번호">031-580-0212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">72</td>
+                        <td title="본부명">경기재난안전본부</td>
+                        <td title="소방서">고양소방서</td>
+                        <td title="주소">경기도 고양시 덕양구 고양대로 1342</td>
+                        <td title="전화번호">031-931-0212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">73</td>
+                        <td title="본부명">경기재난안전본부</td>
+                        <td title="소방서">일산소방서</td>
+                        <td title="주소">경기도 고양시 일산동구 중앙로 1325</td>
+                        <td title="전화번호">031-930-0212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">74</td>
+                        <td title="본부명">경기재난안전본부</td>
+                        <td title="소방서">과천소방서</td>
+                        <td title="주소">경기도 과천시 통영로 12</td>
+                        <td title="전화번호">02-331-4212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">75</td>
+                        <td title="본부명">경기재난안전본부</td>
+                        <td title="소방서">광명소방서</td>
+                        <td title="주소">경기도 광명시 금하로 472</td>
+                        <td title="전화번호">02-2610-3213</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">76</td>
+                        <td title="본부명">경기재난안전본부</td>
+                        <td title="소방서">광주소방서</td>
+                        <td title="주소">경기도 광주시 초월읍 무들로 112</td>
+                        <td title="전화번호">031-799-2212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">77</td>
+                        <td title="본부명">경기재난안전본부</td>
+                        <td title="소방서">구리소방서</td>
+                        <td title="주소">경기도 구리시 아차산로 487번길 46</td>
+                        <td title="전화번호">031-570-6214</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">78</td>
+                        <td title="본부명">경기재난안전본부</td>
+                        <td title="소방서">군포소방서</td>
+                        <td title="주소">경기도 군포시 고산로 429</td>
+                        <td title="전화번호">031-479-8212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">79</td>
+                        <td title="본부명">경기재난안전본부</td>
+                        <td title="소방서">김포소방서</td>
+                        <td title="주소">경기도 김포시 감암로 111</td>
+                        <td title="전화번호">031-980-4212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">80</td>
+                        <td title="본부명">경기재난안전본부</td>
+                        <td title="소방서">남양주소방서</td>
+                        <td title="주소">경기도 남양주시 평내로 25</td>
+                        <td title="전화번호">031-590-0212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">81</td>
+                        <td title="본부명">경기재난안전본부</td>
+                        <td title="소방서">동두천소방서</td>
+                        <td title="주소">경기도 동두천시 지행로 6(지행동)</td>
+                        <td title="전화번호">031-830-5504</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">82</td>
+                        <td title="본부명">경기재난안전본부</td>
+                        <td title="소방서">부천소방서</td>
+                        <td title="주소">경기도 부천시 원미구 신흥로 115</td>
+                        <td title="전화번호">031-650-4214</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">83</td>
+                        <td title="본부명">경기재난안전본부</td>
+                        <td title="소방서">분당소방서</td>
+                        <td title="주소">경기도 성남시 분당구 양현로 14</td>
+                        <td title="전화번호">031-8018-3212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">84</td>
+                        <td title="본부명">경기재난안전본부</td>
+                        <td title="소방서">성남소방서</td>
+                        <td title="주소">경기도 성남시 수정구 제일로 111</td>
+                        <td title="전화번호">031-720-0212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">85</td>
+                        <td title="본부명">경기재난안전본부</td>
+                        <td title="소방서">수원소방서</td>
+                        <td title="주소">
+                          경기도 수원시 장안구 정자천로 189번길 12
+                        </td>
+                        <td title="전화번호">031-8012-9212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">86</td>
+                        <td title="본부명">경기재난안전본부</td>
+                        <td title="소방서">수원남부소방서</td>
+                        <td title="주소">
+                          경기도 수원시 권선구 동수원로 286 (권선동)
+                        </td>
+                        <td title="전화번호">031-6398324</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">87</td>
+                        <td title="본부명">경기재난안전본부</td>
+                        <td title="소방서">시흥소방서</td>
+                        <td title="주소">
+                          경기도 시흥시 정왕신길로 206 (정왕동)
+                        </td>
+                        <td title="전화번호">031-310-0212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">88</td>
+                        <td title="본부명">경기재난안전본부</td>
+                        <td title="소방서">안산소방서</td>
+                        <td title="주소">경기도 안산시 단원구 화랑로 407</td>
+                        <td title="전화번호">031-470-7212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">89</td>
+                        <td title="본부명">경기재난안전본부</td>
+                        <td title="소방서">안성소방서</td>
+                        <td title="주소">경기도 안성시 미양로 855</td>
+                        <td title="전화번호">031-678-4212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">90</td>
+                        <td title="본부명">경기재난안전본부</td>
+                        <td title="소방서">안양소방서</td>
+                        <td title="주소">경기도 안양시 동안구 동안로 82</td>
+                        <td title="전화번호">031-470-0212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">91</td>
+                        <td title="본부명">경기재난안전본부</td>
+                        <td title="소방서">양주소방서</td>
+                        <td title="주소">경기도 양주시 백석읍 꿈나무로 156</td>
+                        <td title="전화번호">031-849-8212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">92</td>
+                        <td title="본부명">경기재난안전본부</td>
+                        <td title="소방서">양평소방서</td>
+                        <td title="주소">경기도 양평군 양평읍 경강로 2047</td>
+                        <td title="전화번호">031-770-0212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">93</td>
+                        <td title="본부명">경기북부소방재난본부</td>
+                        <td title="소방서">여주소방서</td>
+                        <td title="주소">경기도 여주시 우암로 110</td>
+                        <td title="전화번호">031-887-7214</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">94</td>
+                        <td title="본부명">경기북부소방재난본부</td>
+                        <td title="소방서">연천소방서</td>
+                        <td title="주소">경기도 연천군 전곡읍 평화로 892</td>
+                        <td title="전화번호">031-830-0212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">95</td>
+                        <td title="본부명">경기북부소방재난본부</td>
+                        <td title="소방서">오산소방서</td>
+                        <td title="주소">경기도 오산시 청학로 67</td>
+                        <td title="전화번호">031-8059-7212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">96</td>
+                        <td title="본부명">경기북부소방재난본부</td>
+                        <td title="소방서">용인소방서</td>
+                        <td title="주소">경기도 용인시 처인구 명지로 45</td>
+                        <td title="전화번호">031-8021-0212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">97</td>
+                        <td title="본부명">경기북부소방재난본부</td>
+                        <td title="소방서">의왕소방서</td>
+                        <td title="주소">경기도 의왕시 오봉로 9</td>
+                        <td title="전화번호">031-596-0214</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">98</td>
+                        <td title="본부명">경기북부소방재난본부</td>
+                        <td title="소방서">의정부소방서</td>
+                        <td title="주소">경기도 의정부시 의정로 48</td>
+                        <td title="전화번호">031-849-7212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">99</td>
+                        <td title="본부명">경기북부소방재난본부</td>
+                        <td title="소방서">이천소방서</td>
+                        <td title="주소">경기도 이천시 경충대로 2739</td>
+                        <td title="전화번호">031-645-5212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">100</td>
+                        <td title="본부명">경기북부소방재난본부</td>
+                        <td title="소방서">파주소방서</td>
+                        <td title="주소">경기도 파주시 파주읍 통일로1564</td>
+                        <td title="전화번호">031-956-9212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">101</td>
+                        <td title="본부명">경기북부소방재난본부</td>
+                        <td title="소방서">송탄소방서</td>
+                        <td title="주소">경기도 평택시 경기대로 1637</td>
+                        <td title="전화번호">031-685-8212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">102</td>
+                        <td title="본부명">경기북부소방재난본부</td>
+                        <td title="소방서">평택소방서</td>
+                        <td title="주소">경기도 평택시 남부문예회관앞길 11</td>
+                        <td title="전화번호">031-8053-6212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">103</td>
+                        <td title="본부명">경기북부소방재난본부</td>
+                        <td title="소방서">포천소방서</td>
+                        <td title="주소">경기도 포천시 군내면 호국로 1538</td>
+                        <td title="전화번호">031-538-5212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">104</td>
+                        <td title="본부명">경기북부소방재난본부</td>
+                        <td title="소방서">하남소방서</td>
+                        <td title="주소">경기도 하남시 대청로 76 (신장동)</td>
+                        <td title="전화번호">031-799-4212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">105</td>
+                        <td title="본부명">경기북부소방재난본부</td>
+                        <td title="소방서">화성소방서</td>
+                        <td title="주소">경기도 화성시 향남읍 향남로 399</td>
+                        <td title="전화번호">031-8012-6212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">106</td>
+                        <td title="본부명">강원소방본부</td>
+                        <td title="소방서">강릉소방서</td>
+                        <td title="주소">
+                          강원도 강릉시 선수촌로 64-28(홍제동)
+                        </td>
+                        <td title="전화번호">033-643-3119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">107</td>
+                        <td title="본부명">강원소방본부</td>
+                        <td title="소방서">고성소방서</td>
+                        <td title="주소">강원도 고성군 간성읍 수성로 37-11</td>
+                        <td title="전화번호">033-681-1119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">108</td>
+                        <td title="본부명">강원소방본부</td>
+                        <td title="소방서">동해소방서</td>
+                        <td title="주소">강원도 동해시 천곡로 120</td>
+                        <td title="전화번호">033-533-2119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">109</td>
+                        <td title="본부명">강원소방본부</td>
+                        <td title="소방서">삼척소방서</td>
+                        <td title="주소">강원도 삼척시 봉황로 101</td>
+                        <td title="전화번호">033-572-9119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">110</td>
+                        <td title="본부명">강원소방본부</td>
+                        <td title="소방서">속초소방서</td>
+                        <td title="주소">강원도 속초시 미시령로 3226</td>
+                        <td title="전화번호">033-636-2119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">111</td>
+                        <td title="본부명">강원소방본부</td>
+                        <td title="소방서">양구소방서</td>
+                        <td title="주소">강원도 양구군 양구읍 중심로 92</td>
+                        <td title="전화번호">033-482-0119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">112</td>
+                        <td title="본부명">강원소방본부</td>
+                        <td title="소방서">양양소방서</td>
+                        <td title="주소">강원도 양양군 양양읍 남대천로 33</td>
+                        <td title="전화번호">033-671-0119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">113</td>
+                        <td title="본부명">강원소방본부</td>
+                        <td title="소방서">영월소방서</td>
+                        <td title="주소">강원도 영월군 영월읍 영월로 1863</td>
+                        <td title="전화번호">033-373-1119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">114</td>
+                        <td title="본부명">강원소방본부</td>
+                        <td title="소방서">원주소방서</td>
+                        <td title="주소">강원도 원주시 동부순환로 201</td>
+                        <td title="전화번호">033-763-4119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">115</td>
+                        <td title="본부명">강원소방본부</td>
+                        <td title="소방서">인제소방서</td>
+                        <td title="주소">
+                          강원도 인제군 인제읍 비봉로 44번길 71
+                        </td>
+                        <td title="전화번호">033-460-9211</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">116</td>
+                        <td title="본부명">강원소방본부</td>
+                        <td title="소방서">정선소방서</td>
+                        <td title="주소">강원도 정선군 정선읍 녹송로 27</td>
+                        <td title="전화번호">033-563-0119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">117</td>
+                        <td title="본부명">강원소방본부</td>
+                        <td title="소방서">철원소방서</td>
+                        <td title="주소">강원도 철원군 갈말읍 태봉로 1504</td>
+                        <td title="전화번호">033-452-7119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">118</td>
+                        <td title="본부명">강원소방본부</td>
+                        <td title="소방서">춘천소방서</td>
+                        <td title="주소">강원도 춘천시 후석로 446</td>
+                        <td title="전화번호">033-241-0119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">119</td>
+                        <td title="본부명">강원소방본부</td>
+                        <td title="소방서">태백소방서</td>
+                        <td title="주소">강원도 태백시 태백로 1120</td>
+                        <td title="전화번호">033-553-1119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">120</td>
+                        <td title="본부명">강원소방본부</td>
+                        <td title="소방서">평창소방서</td>
+                        <td title="주소">강원도 평창군 평창읍 살구실길 10</td>
+                        <td title="전화번호">033-339-9118</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">121</td>
+                        <td title="본부명">강원소방본부</td>
+                        <td title="소방서">홍천소방서</td>
+                        <td title="주소">강원도 홍천군 홍천읍 공작산로 99</td>
+                        <td title="전화번호">033-432-3119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">122</td>
+                        <td title="본부명">강원소방본부</td>
+                        <td title="소방서">횡성소방서</td>
+                        <td title="주소">강원도 횡성군 횡성읍 문예로 157</td>
+                        <td title="전화번호">033-343-0119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">123</td>
+                        <td title="본부명">강원소방본부</td>
+                        <td title="소방서">화천소방서</td>
+                        <td title="주소">강원도 화천군 위라리길 47</td>
+                        <td title="전화번호">033-442-1119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">124</td>
+                        <td title="본부명">충북소방본부</td>
+                        <td title="소방서">괴산소방서</td>
+                        <td title="주소">충청북도 괴산군 괴산읍 괴강로 69</td>
+                        <td title="전화번호">043-760-0113</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">125</td>
+                        <td title="본부명">충북소방본부</td>
+                        <td title="소방서">단양소방서</td>
+                        <td title="주소">
+                          충청북도 단양군 단양읍 별곡리 산28-4
+                        </td>
+                        <td title="전화번호">043-767-4113</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">126</td>
+                        <td title="본부명">충북소방본부</td>
+                        <td title="소방서">보은소방서</td>
+                        <td title="주소">충청북도 보은군 보은읍 남부로 4415</td>
+                        <td title="전화번호">043-773-0113</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">127</td>
+                        <td title="본부명">충북소방본부</td>
+                        <td title="소방서">영동소방서</td>
+                        <td title="주소">
+                          충청북도 영동군 영동읍 영동황간로 174
+                        </td>
+                        <td title="전화번호">043-740-7013</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">128</td>
+                        <td title="본부명">충북소방본부</td>
+                        <td title="소방서">옥천소방서</td>
+                        <td title="주소">충청북도 옥천군 옥천읍 중앙로 132</td>
+                        <td title="전화번호">043-730-1813</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">129</td>
+                        <td title="본부명">충북소방본부</td>
+                        <td title="소방서">음성소방서</td>
+                        <td title="주소">충청북도 음성군 금왕읍 응천서길 11</td>
+                        <td title="전화번호">043-880-0113</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">130</td>
+                        <td title="본부명">충북소방본부</td>
+                        <td title="소방서">제천소방서</td>
+                        <td title="주소">충청북도 제천시 신죽하로 2164</td>
+                        <td title="전화번호">043-641-7113</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">131</td>
+                        <td title="본부명">충북소방본부</td>
+                        <td title="소방서">증평소방서</td>
+                        <td title="주소">충청북도 증평군 충청대로 1789</td>
+                        <td title="전화번호">043-830-0113</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">132</td>
+                        <td title="본부명">충북소방본부</td>
+                        <td title="소방서">진천소방서</td>
+                        <td title="주소">충청북도 진천군 진천읍 진광로 93</td>
+                        <td title="전화번호">043-539-8113</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">133</td>
+                        <td title="본부명">충북소방본부</td>
+                        <td title="소방서">청주동부소방서</td>
+                        <td title="주소">충청북도 청주시 상당구 영운로 61</td>
+                        <td title="전화번호">043-251-0114</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">134</td>
+                        <td title="본부명">충북소방본부</td>
+                        <td title="소방서">청주서부소방서</td>
+                        <td title="주소">충청북도 청주시 흥덕구 풍산로 64</td>
+                        <td title="전화번호">043-249-9113</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">135</td>
+                        <td title="본부명">충북소방본부</td>
+                        <td title="소방서">충주소방서</td>
+                        <td title="주소">충청북도 충주시 도매시장4길 9번</td>
+                        <td title="전화번호">043-841-3114</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">136</td>
+                        <td title="본부명">충남소방본부</td>
+                        <td title="소방서">계룡소방서</td>
+                        <td title="주소">충청남도 계룡시 두마면 사계로 46</td>
+                        <td title="전화번호">041-540-5212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">137</td>
+                        <td title="본부명">충남소방본부</td>
+                        <td title="소방서">공주소방서</td>
+                        <td title="주소">충청남도 공주시 무령로 55</td>
+                        <td title="전화번호">041-851-0212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">138</td>
+                        <td title="본부명">충남소방본부</td>
+                        <td title="소방서">금산소방서</td>
+                        <td title="주소">충청남도 금산군 금산읍 삼풍로 2</td>
+                        <td title="전화번호">041-750-1212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">139</td>
+                        <td title="본부명">충남소방본부</td>
+                        <td title="소방서">논산소방서</td>
+                        <td title="주소">충청남도 논산시 대학로 17</td>
+                        <td title="전화번호">041-730-0212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">140</td>
+                        <td title="본부명">충남소방본부</td>
+                        <td title="소방서">당진소방서</td>
+                        <td title="주소">충청남도 당진시 역천로 838</td>
+                        <td title="전화번호">041-350-5212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">141</td>
+                        <td title="본부명">충남소방본부</td>
+                        <td title="소방서">보령소방서</td>
+                        <td title="주소">충청남도 보령시 성주산로 63</td>
+                        <td title="전화번호">041-930-0212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">142</td>
+                        <td title="본부명">충남소방본부</td>
+                        <td title="소방서">부여소방서</td>
+                        <td title="주소">충청남도 부여군 규암면 계백로 17</td>
+                        <td title="전화번호">041-830-0212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">143</td>
+                        <td title="본부명">충남소방본부</td>
+                        <td title="소방서">서산소방서</td>
+                        <td title="주소">충청남도 서산시 호수공원14로 26-4</td>
+                        <td title="전화번호">041-689-0212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">144</td>
+                        <td title="본부명">충남소방본부</td>
+                        <td title="소방서">서천소방서</td>
+                        <td title="주소">충청남도 서천군 장항읍 장항로 37</td>
+                        <td title="전화번호">041-955-0212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">145</td>
+                        <td title="본부명">충남소방본부</td>
+                        <td title="소방서">아산소방서</td>
+                        <td title="주소">충청남도 아산시 모종로 77</td>
+                        <td title="전화번호">041-538-0212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">146</td>
+                        <td title="본부명">충남소방본부</td>
+                        <td title="소방서">예산소방서</td>
+                        <td title="주소">
+                          충청남도 예산군 오가면 오가중앙로 111
+                        </td>
+                        <td title="전화번호">041-330-4212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">147</td>
+                        <td title="본부명">충남소방본부</td>
+                        <td title="소방서">천안동남소방서</td>
+                        <td title="주소">
+                          충청남도 천안시 동남구 천안대로 580
+                        </td>
+                        <td title="전화번호">041-570-0212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">148</td>
+                        <td title="본부명">충남소방본부</td>
+                        <td title="소방서">천안서북소방서</td>
+                        <td title="주소">
+                          충청남도 천안시 서북구 직산읍 4산단 2길 32
+                        </td>
+                        <td title="전화번호">041-360-0212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">149</td>
+                        <td title="본부명">충남소방본부</td>
+                        <td title="소방서">청양소방서</td>
+                        <td title="주소">충청남도 청양군 청양읍 충절로 1187</td>
+                        <td title="전화번호">041-940-7212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">150</td>
+                        <td title="본부명">충남소방본부</td>
+                        <td title="소방서">태안소방서</td>
+                        <td title="주소">충청남도 태안군 태안읍 동백로 100</td>
+                        <td title="전화번호">041-671-0212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">151</td>
+                        <td title="본부명">충남소방본부</td>
+                        <td title="소방서">홍성소방서</td>
+                        <td title="주소">충청남도 홍성군 홍성읍 충절로 741</td>
+                        <td title="전화번호">041-630-0212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">152</td>
+                        <td title="본부명">전북소방본부</td>
+                        <td title="소방서">고창소방서</td>
+                        <td title="주소">전라북도 고창군 고창읍 녹두로 1294</td>
+                        <td title="전화번호">063-560-1251</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">153</td>
+                        <td title="본부명">전북소방본부</td>
+                        <td title="소방서">군산소방서</td>
+                        <td title="주소">전라북도 군산시 번영로 308</td>
+                        <td title="전화번호">063-450-0251</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">154</td>
+                        <td title="본부명">전북소방본부</td>
+                        <td title="소방서">김제소방서</td>
+                        <td title="주소">전라북도 김제시 벽성로 278</td>
+                        <td title="전화번호">063-540-4251</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">155</td>
+                        <td title="본부명">전북소방본부</td>
+                        <td title="소방서">남원소방서</td>
+                        <td title="주소">전라북도 남원시 요천로 1965</td>
+                        <td title="전화번호">063-630-8251</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">156</td>
+                        <td title="본부명">전북소방본부</td>
+                        <td title="소방서">부안소방서</td>
+                        <td title="주소">전라북도 부안군 행안면 변산로 86</td>
+                        <td title="전화번호">063-580-1251</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">157</td>
+                        <td title="본부명">전북소방본부</td>
+                        <td title="소방서">순창소방서</td>
+                        <td title="주소">전라북도 순창군 순창읍 교성로 24</td>
+                        <td title="전화번호">063-653-7119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">158</td>
+                        <td title="본부명">전북소방본부</td>
+                        <td title="소방서">완주소방서</td>
+                        <td title="주소">전라북도 완주군 삼례읍 삼봉로 518</td>
+                        <td title="전화번호">063-290-0251</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">159</td>
+                        <td title="본부명">전북소방본부</td>
+                        <td title="소방서">익산소방서</td>
+                        <td title="주소">전라북도 익산시 무왕로 1338</td>
+                        <td title="전화번호">063-839-3251</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">160</td>
+                        <td title="본부명">전북소방본부</td>
+                        <td title="소방서">무진장소방서</td>
+                        <td title="주소">
+                          전라북도 장수군 장계면 육십령로 136
+                        </td>
+                        <td title="전화번호">063-350-6251</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">161</td>
+                        <td title="본부명">전북소방본부</td>
+                        <td title="소방서">전주덕진소방서</td>
+                        <td title="주소">
+                          전라북도 전주시 덕진구 백제대로 611
+                        </td>
+                        <td title="전화번호">063-250-4251</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">162</td>
+                        <td title="본부명">전북소방본부</td>
+                        <td title="소방서">전주완산소방서</td>
+                        <td title="주소">전라북도 전주시 완산구 거마평로 73</td>
+                        <td title="전화번호">063-220-4251</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">163</td>
+                        <td title="본부명">전북소방본부</td>
+                        <td title="소방서">정읍소방서</td>
+                        <td title="주소">전라북도 정읍시 서부산업도로 507-5</td>
+                        <td title="전화번호">063-570-1251</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">164</td>
+                        <td title="본부명">전남소방본부</td>
+                        <td title="소방서">강진소방서</td>
+                        <td title="주소">전라남도 강진군 군동면 중앙로 223</td>
+                        <td title="전화번호">061-430-0900</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">165</td>
+                        <td title="본부명">전남소방본부</td>
+                        <td title="소방서">고흥소방서</td>
+                        <td title="주소">전라남도 고흥군 풍양면 고흥로 1330</td>
+                        <td title="전화번호">061-840-0900</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">166</td>
+                        <td title="본부명">전남소방본부</td>
+                        <td title="소방서">광양소방서</td>
+                        <td title="주소">전라남도 광양시 중마중앙로 109</td>
+                        <td title="전화번호">061-798-0900</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">167</td>
+                        <td title="본부명">전남소방본부</td>
+                        <td title="소방서">나주소방서</td>
+                        <td title="주소">전라남도 나주시 예향로 4201</td>
+                        <td title="전화번호">061-330-0900</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">168</td>
+                        <td title="본부명">전남소방본부</td>
+                        <td title="소방서">담양소방서</td>
+                        <td title="주소">전라남도 담양군 담양읍 추성로 1232</td>
+                        <td title="전화번호">061-380-0900</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">169</td>
+                        <td title="본부명">전남소방본부</td>
+                        <td title="소방서">목포소방서</td>
+                        <td title="주소">전라남도 목포시 삼향천로 110</td>
+                        <td title="전화번호">061-280-0900</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">170</td>
+                        <td title="본부명">전남소방본부</td>
+                        <td title="소방서">무안소방서</td>
+                        <td title="주소">
+                          전라남도 무안군 무안읍 공항골 133-9
+                        </td>
+                        <td title="전화번호">061-450-0900</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">171</td>
+                        <td title="본부명">전남소방본부</td>
+                        <td title="소방서">보성소방서</td>
+                        <td title="주소">전라남도 보성군 벌교읍 녹색로 5247</td>
+                        <td title="전화번호">061-859-0900</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">172</td>
+                        <td title="본부명">전남소방본부</td>
+                        <td title="소방서">순천소방서</td>
+                        <td title="주소">전라남도 순천시 서면 삼산로 281</td>
+                        <td title="전화번호">061-750-0900</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">173</td>
+                        <td title="본부명">전남소방본부</td>
+                        <td title="소방서">여수소방서</td>
+                        <td title="주소">전라남도 여수시 망마로 20</td>
+                        <td title="전화번호">061-680-0900</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">174</td>
+                        <td title="본부명">전남소방본부</td>
+                        <td title="소방서">영광소방서</td>
+                        <td title="주소">전라남도 영광군 영광읍 함영로 3508</td>
+                        <td title="전화번호">061-350-0900</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">175</td>
+                        <td title="본부명">전남소방본부</td>
+                        <td title="소방서">영암소방서</td>
+                        <td title="주소">전라남도 영암군 삼호읍 나불로 192</td>
+                        <td title="전화번호">061-460-0900</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">176</td>
+                        <td title="본부명">전남소방본부</td>
+                        <td title="소방서">장성소방서</td>
+                        <td title="주소">전라남도 장성군 장성읍 단풍로 204</td>
+                        <td title="전화번호">061-360-0900</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">177</td>
+                        <td title="본부명">전남소방본부</td>
+                        <td title="소방서">함평소방서</td>
+                        <td title="주소">전라남도 함평군 대동면 학동로386</td>
+                        <td title="전화번호">061-338-0900</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">178</td>
+                        <td title="본부명">전남소방본부</td>
+                        <td title="소방서">해남소방서</td>
+                        <td title="주소">전라남도 해남군 해남읍 교육청길 82</td>
+                        <td title="전화번호">061-530-0900</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">179</td>
+                        <td title="본부명">전남소방본부</td>
+                        <td title="소방서">장흥소방서</td>
+                        <td title="주소">전라남도 장흥군 장흥읍 원도리 215</td>
+                        <td title="전화번호">061-850-0900</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">180</td>
+                        <td title="본부명">전남소방본부</td>
+                        <td title="소방서">화순소방서</td>
+                        <td title="주소">전라남도 화순군 화순읍 학포로 2750</td>
+                        <td title="전화번호">061-379-0900</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">181</td>
+                        <td title="본부명">경북소방본부</td>
+                        <td title="소방서">고령소방서</td>
+                        <td title="주소">경상북도 고령군 고령읍 벽화길 18</td>
+                        <td title="전화번호">054-954-4119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">182</td>
+                        <td title="본부명">경북소방본부</td>
+                        <td title="소방서">구미소방서</td>
+                        <td title="주소">경상북도 구미시 수출대로 112</td>
+                        <td title="전화번호">054-461-1119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">183</td>
+                        <td title="본부명">경북소방본부</td>
+                        <td title="소방서">김천소방서</td>
+                        <td title="주소">경상북도 김천시 강변로 219(양천동)</td>
+                        <td title="전화번호">054-436-1119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">184</td>
+                        <td title="본부명">경북소방본부</td>
+                        <td title="소방서">문경소방서</td>
+                        <td title="주소">경상북도 문경시 중앙로 305</td>
+                        <td title="전화번호">054-559-1813</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">185</td>
+                        <td title="본부명">경북소방본부</td>
+                        <td title="소방서">상주소방서</td>
+                        <td title="주소">경상북도 상주시 상산로 322</td>
+                        <td title="전화번호">054-530-3714</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">186</td>
+                        <td title="본부명">경북소방본부</td>
+                        <td title="소방서">성주소방서</td>
+                        <td title="주소">경상북도 성주군 성주읍 주산로 193</td>
+                        <td title="전화번호">054-933-5119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">187</td>
+                        <td title="본부명">경북소방본부</td>
+                        <td title="소방서">안동소방서</td>
+                        <td title="주소">경상북도 안동시 육사로 301</td>
+                        <td title="전화번호">054-855-8119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">188</td>
+                        <td title="본부명">경북소방본부</td>
+                        <td title="소방서">영덕소방서</td>
+                        <td title="주소">경상북도 영덕군 영덕읍 경동로 8401</td>
+                        <td title="전화번호">054-730-1512</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">189</td>
+                        <td title="본부명">경북소방본부</td>
+                        <td title="소방서">영주소방서</td>
+                        <td title="주소">
+                          경상북도 영주시 문수면 적서로 448번길 17
+                        </td>
+                        <td title="전화번호">054-632-1190</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">190</td>
+                        <td title="본부명">경북소방본부</td>
+                        <td title="소방서">영천소방서</td>
+                        <td title="주소">경상북도 영천시 호국로 187</td>
+                        <td title="전화번호">054-336-8000</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">191</td>
+                        <td title="본부명">경북소방본부</td>
+                        <td title="소방서">울진소방서</td>
+                        <td title="주소">
+                          경상북도 울진군 울진읍 울진북로 508
+                        </td>
+                        <td title="전화번호">054-780-1312</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">192</td>
+                        <td title="본부명">경북소방본부</td>
+                        <td title="소방서">예천소방서</td>
+                        <td title="주소">
+                          경상북도 예천군 예천읍 양궁로 61-12(청복리)
+                        </td>
+                        <td title="전화번호">054-650-3414</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">193</td>
+                        <td title="본부명">경북소방본부</td>
+                        <td title="소방서">의성소방서</td>
+                        <td title="주소">
+                          경상북도 의성군 봉양면 경상북도대로 4741
+                        </td>
+                        <td title="전화번호">054-830-7712</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">194</td>
+                        <td title="본부명">경북소방본부</td>
+                        <td title="소방서">청도소방서</td>
+                        <td title="주소">
+                          경상북도 청도군 청도읍 중앙로 192-34
+                        </td>
+                        <td title="전화번호">054-370-8212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">195</td>
+                        <td title="본부명">경북소방본부</td>
+                        <td title="소방서">칠곡소방서</td>
+                        <td title="주소">
+                          경상북도 칠곡군 기산면 칠곡대로 1216
+                        </td>
+                        <td title="전화번호">054-976-7001</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">196</td>
+                        <td title="본부명">경북소방본부</td>
+                        <td title="소방서">포항남부소방서</td>
+                        <td title="주소">경상북도 포항시 남구 동해안로 5890</td>
+                        <td title="전화번호">054-284-4117</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">197</td>
+                        <td title="본부명">경북소방본부</td>
+                        <td title="소방서">포항북부소방서</td>
+                        <td title="주소">경상북도 포항시 북구 중앙로 332</td>
+                        <td title="전화번호">054-260-2130</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">198</td>
+                        <td title="본부명">경북소방본부</td>
+                        <td title="소방서">경주소방서</td>
+                        <td title="주소">경상북도 경주시 알천남로 276</td>
+                        <td title="전화번호">054-778-0549</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">199</td>
+                        <td title="본부명">경북소방본부</td>
+                        <td title="소방서">경산소방서</td>
+                        <td title="주소">경상북도 경산시 압량면 김유신로 12</td>
+                        <td title="전화번호">053-811-1119</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">200</td>
+                        <td title="본부명">경남소방본부</td>
+                        <td title="소방서">거제소방서</td>
+                        <td title="주소">경상남도 거제시 진목로 1</td>
+                        <td title="전화번호">055-689-9212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">201</td>
+                        <td title="본부명">경남소방본부</td>
+                        <td title="소방서">거창소방서</td>
+                        <td title="주소">
+                          경상남도 거창군 거창읍 거함대로 3324
+                        </td>
+                        <td title="전화번호">055-940-9212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">202</td>
+                        <td title="본부명">경남소방본부</td>
+                        <td title="소방서">고성소방서</td>
+                        <td title="주소">
+                          경상남도 고성군 고성읍 남해안대로 2670
+                        </td>
+                        <td title="전화번호">055-670-9212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">203</td>
+                        <td title="본부명">경남소방본부</td>
+                        <td title="소방서">김해동부소방서</td>
+                        <td title="주소">경상남도 김해시 김해대로 2507</td>
+                        <td title="전화번호">055-320-9212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">204</td>
+                        <td title="본부명">경남소방본부</td>
+                        <td title="소방서">김해서부소방서</td>
+                        <td title="주소">경상남도 김해시 장유로 341</td>
+                        <td title="전화번호">055-344-9212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">205</td>
+                        <td title="본부명">경남소방본부</td>
+                        <td title="소방서">남해소방서</td>
+                        <td title="주소">경상남도 남해군 남해읍 스포츠로 81</td>
+                        <td title="전화번호">055-860-9212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">206</td>
+                        <td title="본부명">경남소방본부</td>
+                        <td title="소방서">밀양소방서</td>
+                        <td title="주소">경상남도 밀양시 밀양대로 1760</td>
+                        <td title="전화번호">055-350-9212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">207</td>
+                        <td title="본부명">경남소방본부</td>
+                        <td title="소방서">사천소방서</td>
+                        <td title="주소">경상남도 사천시 남일로 29</td>
+                        <td title="전화번호">055-830-9212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">208</td>
+                        <td title="본부명">경남소방본부</td>
+                        <td title="소방서">산청소방서</td>
+                        <td title="주소">경상남도 산청군 산청읍 중앙로 76-7</td>
+                        <td title="전화번호">055-970-9212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">209</td>
+                        <td title="본부명">경남소방본부</td>
+                        <td title="소방서">양산소방서</td>
+                        <td title="주소">경상남도 양산시 물금읍 황산로 719</td>
+                        <td title="전화번호">055-379-9212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">210</td>
+                        <td title="본부명">경남소방본부</td>
+                        <td title="소방서">의령소방서</td>
+                        <td title="주소">
+                          경상남도 의령군 의령읍 의병로 108-17
+                        </td>
+                        <td title="전화번호">055-570-9212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">211</td>
+                        <td title="본부명">경남소방본부</td>
+                        <td title="소방서">진주소방서</td>
+                        <td title="주소">경상남도 진주시 동진로 249</td>
+                        <td title="전화번호">055-760-9212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">212</td>
+                        <td title="본부명">경남소방본부</td>
+                        <td title="소방서">창녕소방서</td>
+                        <td title="주소">
+                          경상남도 창녕군 대지면 우포2로 1097
+                        </td>
+                        <td title="전화번호">055-259-9212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">213</td>
+                        <td title="본부명">창원소방본부</td>
+                        <td title="소방서">마산소방서</td>
+                        <td title="주소">
+                          경상남도 창원시 마산합포구 제2부두로 55
+                        </td>
+                        <td title="전화번호">055-249-9212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">214</td>
+                        <td title="본부명">창원소방본부</td>
+                        <td title="소방서">진해소방서</td>
+                        <td title="주소">
+                          경상남도 창원시 진해구 진해대로 1101
+                        </td>
+                        <td title="전화번호">055-548-9212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">215</td>
+                        <td title="본부명">창원소방본부</td>
+                        <td title="소방서">창원소방서</td>
+                        <td title="주소">경상남도 창원시 의창구 상남로 165</td>
+                        <td title="전화번호">055-211-9212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">216</td>
+                        <td title="본부명">경남소방본부</td>
+                        <td title="소방서">통영소방서</td>
+                        <td title="주소">경상남도 통영시 광도면 죽림4로 49</td>
+                        <td title="전화번호">055-640-9212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">217</td>
+                        <td title="본부명">경남소방본부</td>
+                        <td title="소방서">하동소방서</td>
+                        <td title="주소">경상남도 하동군 금성면 금성로 15</td>
+                        <td title="전화번호">055-880-9212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">218</td>
+                        <td title="본부명">경남소방본부</td>
+                        <td title="소방서">함안소방서</td>
+                        <td title="주소">경상남도 함안군 가야읍 선왕길 59</td>
+                        <td title="전화번호">055-580-9212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">219</td>
+                        <td title="본부명">경남소방본부</td>
+                        <td title="소방서">함양소방서</td>
+                        <td title="주소">
+                          경상남도 함양군 함양읍 고운로 161-41
+                        </td>
+                        <td title="전화번호">055-960-9212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">220</td>
+                        <td title="본부명">경남소방본부</td>
+                        <td title="소방서">합천소방서</td>
+                        <td title="주소">경상남도 합천군 합천읍 인덕로 2453</td>
+                        <td title="전화번호">055-930-9212</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">221</td>
+                        <td title="본부명">제주소방본부</td>
+                        <td title="소방서">서귀포소방서</td>
+                        <td title="주소">
+                          제주특별자치도 서귀포시 서호남로 20(법환동)
+                        </td>
+                        <td title="전화번호"><!--064-730-7133 --></td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">222</td>
+                        <td title="본부명">제주소방본부</td>
+                        <td title="소방서">동부소방서</td>
+                        <td title="주소">
+                          제주특별자치도 서귀포시 성산읍 일주동로 4120번길 7
+                        </td>
+                        <td title="전화번호">064-780-9133</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">223</td>
+                        <td title="본부명">제주소방본부</td>
+                        <td title="소방서">제주소방서</td>
+                        <td title="주소">
+                          제주특별자치도 제주시 중앙로 342(이도이동)
+                        </td>
+                        <td title="전화번호">064-729-0134</td>
+                      </tr>
+                      <tr class="center">
+                        <td title="No">224</td>
+                        <td title="본부명">제주소방본부</td>
+                        <td title="소방서">서부소방서</td>
+                        <td title="주소">
+                          제주특별자치도 제주시 한림읍 한림중앙로 150
+                        </td>
+                        <td title="전화번호">064-795-0134</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
