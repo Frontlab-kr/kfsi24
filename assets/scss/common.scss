@@ -14767,8 +14767,9 @@ html.oacxHtml {
     &-head {
       display: flex;
       align-items: center;
-      height: 60px;
-      padding: 0 30px;
+      // height: 60px;
+      // padding: 0 30px;
+      padding-bottom: 16px;
       border-bottom: 1px solid #eee;
       background: #fff;
       p {
@@ -15037,6 +15038,7 @@ html.oacxHtml {
             max-height: 100%;
             overflow: auto;
             padding: 0 30px;
+            padding: 0;
           }
         }
         @media screen and (max-width: 600px) {
@@ -15227,6 +15229,7 @@ html.oacxHtml {
         @media screen and (max-width: $mobileWidth) {
           width: 100%;
           padding: 0 30px;
+          padding: 0;
           &__head {
             display: none;
           }
