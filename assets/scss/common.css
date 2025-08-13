@@ -37953,6 +37953,10 @@ html.oacxHtml {
   width: 100%;
   height: 100%;
 }
+.kfsi-lecture-test-video .video-js {
+  width: 100%;
+  height: 100%;
+}
 @media screen and (max-width: 992px) {
   .kfsi-lecture-test {
     height: auto;

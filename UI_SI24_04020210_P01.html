@@ -85,16 +85,35 @@
                         <strong>1번 레슨 테스트</strong>
                       </div>
                       <div class="kfsi-lecture-test-video">
-                        <iframe
-                          width="560"
-                          height="315"
-                          src="https://www.youtube.com/embed/a35BQhR6Umg?si=LvFoVW_IHKFieIij"
-                          title="YouTube video player"
-                          frameborder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                          referrerpolicy="strict-origin-when-cross-origin"
-                          allowfullscreen
-                        ></iframe>
+                        <video
+                          id="my-video"
+                          class="video-js"
+                          controls
+                          preload="auto"
+                          width="640"
+                          height="264"
+                          poster="https://picsum.photos/200/300"
+                          data-setup="{}"
+                        >
+                          <source
+                            src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                            type="video/mp4"
+                          />
+                          <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and
+                            consider upgrading to a web browser that
+                            <a
+                              href="https://videojs.com/html5-video-support/"
+                              target="_blank"
+                              >supports HTML5 video</a
+                            >
+                          </p>
+                        </video>
+                        <link
+                          href="https://vjs.zencdn.net/8.23.3/video-js.css"
+                          rel="stylesheet"
+                        />
+                        <script src="https://vjs.zencdn.net/8.23.3/video.min.js"></script>
                       </div>
                     </div>
                     <div class="kfsi-lecture-foot">
