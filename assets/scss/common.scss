@@ -14785,7 +14785,7 @@ html.oacxHtml {
     }
     &-body {
       display: flex;
-      height: calc(100vh - 60px);
+
       @media screen and (max-width: $mobileWidth) {
         flex-direction: column;
         height: auto;
@@ -14868,7 +14868,6 @@ html.oacxHtml {
       }
     }
     &-test {
-      height: calc(100vh - 140px);
       padding: 40px 30px 30px;
       overflow: auto;
       &-title {

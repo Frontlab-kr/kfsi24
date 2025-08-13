@@ -37836,7 +37836,6 @@ html.oacxHtml {
 }
 .kfsi-lecture-body {
   display: flex;
-  height: calc(100vh - 60px);
 }
 @media screen and (max-width: 992px) {
   .kfsi-lecture-body {
@@ -37928,7 +37927,6 @@ html.oacxHtml {
   }
 }
 .kfsi-lecture-test {
-  height: calc(100vh - 140px);
   padding: 40px 30px 30px;
   overflow: auto;
 }
