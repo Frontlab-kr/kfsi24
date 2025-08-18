@@ -26201,6 +26201,120 @@ html.oacxHtml {
   font-weight: 700;
   line-height: normal;
 }
+.kfsi-main-list-text__img {
+  height: 105px;
+}
+.kfsi-main-list-text ul {
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+.kfsi-main-list-text ul li {
+  list-style: none;
+}
+.kfsi-main-list-text ul li a {
+  display: inline-flex;
+  margin: 0;
+  padding: 24px 20px 30px 20px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+.kfsi-main-list-text ul li strong {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  color: #004d16;
+  font-family: Pretendard;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.kfsi-main-list-text ul li p {
+  margin: 10px 0 0 0;
+  color: #333;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+}
+.kfsi-main-list-text ul li:nth-child(1) img {
+  width: 85px;
+}
+.kfsi-main-list-text ul li:nth-child(2) img {
+  width: 92px;
+}
+.kfsi-main-list-text ul li:nth-child(3) img {
+  width: 96px;
+}
+.kfsi-main-list-text ul li:nth-child(4) img {
+  width: 104px;
+}
+@media screen and (max-width: 992px) {
+  .kfsi-main-list-text__img {
+    height: 70px;
+  }
+  .kfsi-main-list-text ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+  }
+  .kfsi-main-list-text ul li {
+    list-style: none;
+  }
+  .kfsi-main-list-text ul li a {
+    display: inline-flex;
+    margin: 0;
+    height: 100%;
+    padding: 20px 10px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+  }
+  .kfsi-main-list-text ul li strong {
+    display: block;
+    margin-top: 20px;
+    color: #000;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .kfsi-main-list-text ul li p {
+    margin: 10px 0 0 0;
+    color: #333;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+  }
+  .kfsi-main-list-text ul li:nth-child(1) img {
+    width: 57px;
+  }
+  .kfsi-main-list-text ul li:nth-child(2) img {
+    width: 65px;
+  }
+  .kfsi-main-list-text ul li:nth-child(3) img {
+    width: 65px;
+  }
+  .kfsi-main-list-text ul li:nth-child(4) img {
+    width: 73px;
+  }
+}
 .kfsi-main-list-list {
   display: flex;
   gap: 20px;
