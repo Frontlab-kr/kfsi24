@@ -84,7 +84,7 @@
                         </p>
                         <strong>1번 레슨 테스트</strong>
                       </div>
-                      <div class="kfsi-lecture-test-video">
+                      <!-- <div class="kfsi-lecture-test-video">
                         <video
                           id="my-video"
                           class="video-js"
@@ -114,7 +114,232 @@
                           rel="stylesheet"
                         />
                         <script src="https://vjs.zencdn.net/8.23.3/video.min.js"></script>
+                      </div> -->
+                      <div class="kfsi-lecture-player">
+                        <div class="kfsi-lecture-player-video">
+                          <video
+                            preload="auto"
+                            width="640"
+                            height="264"
+                            poster="https://picsum.photos/200/300"
+                            data-setup="{}"
+                          >
+                            <source
+                              src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                              type="video/mp4"
+                            />
+                            <p class="vjs-no-js">
+                              To view this video please enable JavaScript, and
+                              consider upgrading to a web browser that
+                              <a
+                                href="https://videojs.com/html5-video-support/"
+                                target="_blank"
+                                >supports HTML5 video</a
+                              >
+                            </p>
+                          </video>
+                          <div class="kfsi-lecture-player-video-button">
+                            <button type="button">
+                              <img
+                                src="./assets/images/player/play.svg"
+                                alt=""
+                              />
+                            </button>
+                            <button type="button">
+                              <img
+                                src="./assets/images/player/pause.svg"
+                                alt=""
+                              />
+                            </button>
+                          </div>
+                        </div>
+                        <div class="kfsi-lecture-player-foot">
+                          <div class="kfsi-lecture-player-progress">
+                            <div
+                              id="progress"
+                              class="progress is-draggable"
+                              role="slider"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                              aria-valuenow="25"
+                              tabindex="0"
+                            >
+                              <div
+                                class="progress-bar"
+                                style="width: 25%"
+                              ></div>
+                            </div>
+                          </div>
+                          <div class="kfsi-lecture-player-control">
+                            <div class="kfsi-lecture-player-control-start">
+                              <button
+                                type="button"
+                                class="kfsi-lecture-player-control__play"
+                              >
+                                재생
+                              </button>
+                              <div class="kfsi-lecture-player-control-sound">
+                                <div
+                                  class="kfsi-lecture-player-control-sound-layer"
+                                >
+                                  <div
+                                    id="progress"
+                                    class="progress is-draggable vertical"
+                                    role="slider"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                    aria-valuenow="25"
+                                    tabindex="0"
+                                  >
+                                    <div
+                                      class="progress-bar"
+                                      style="width: 25%"
+                                    ></div>
+                                  </div>
+                                </div>
+                                <button
+                                  type="button"
+                                  class="kfsi-lecture-player-control__volume"
+                                >
+                                  소리
+                                </button>
+                              </div>
+                              <button
+                                type="button"
+                                class="kfsi-lecture-player-control__muted"
+                              >
+                                소리
+                              </button>
+                              <div class="kfsi-lecture-player-control__time">
+                                <p>0:28</p>
+                                /
+                                <p>2:00</p>
+                              </div>
+                            </div>
+                            <div class="kfsi-lecture-player-control-end">
+                              <button
+                                type="button"
+                                class="kfsi-lecture-player-control__zoom"
+                              >
+                                2x
+                              </button>
+                              <button
+                                type="button"
+                                class="kfsi-lecture-player-control__fold"
+                              >
+                                전체화면 취소
+                              </button>
+                              <button
+                                type="button"
+                                class="kfsi-lecture-player-control__fullscreen"
+                              >
+                                전체화면
+                              </button>
+                            </div>
+                          </div>
+                        </div>
                       </div>
+                      <script>
+                        $(function () {
+                          $('.kfsi-lecture-player-control__volume').on(
+                            'click',
+                            function () {
+                              $(this)
+                                .closest('.kfsi-lecture-player')
+                                .toggleClass('is-sound');
+                            }
+                          );
+                        });
+                      </script>
+                      <script>
+                        (function () {
+                          const clamp = (v, min, max) =>
+                            Math.min(max, Math.max(min, v));
+
+                          document
+                            .querySelectorAll('.progress.is-draggable')
+                            .forEach((progress) => {
+                              const bar =
+                                progress.querySelector('.progress-bar');
+                              const vertical =
+                                progress.classList.contains('vertical');
+                              let dragging = false;
+
+                              function percentFromEvent(e) {
+                                const rect = progress.getBoundingClientRect();
+                                if (vertical) {
+                                  const ratio =
+                                    (rect.bottom - e.clientY) / rect.height;
+                                  return clamp(Math.round(ratio * 100), 0, 100);
+                                } else {
+                                  const ratio =
+                                    (e.clientX - rect.left) / rect.width;
+                                  return clamp(Math.round(ratio * 100), 0, 100);
+                                }
+                              }
+
+                              function render(value) {
+                                if (vertical) {
+                                  bar.style.height = value + '%';
+                                } else {
+                                  bar.style.width = value + '%';
+                                  bar.textContent = value + '%';
+                                }
+                                progress.setAttribute(
+                                  'aria-valuenow',
+                                  String(value)
+                                );
+                              }
+
+                              function setFromEvent(e) {
+                                if (
+                                  e.clientX == null &&
+                                  (!e.touches || !e.touches[0])
+                                )
+                                  return;
+                                const clientX =
+                                  e.clientX ?? e.touches[0].clientX;
+                                const clientY =
+                                  e.clientY ?? e.touches[0].clientY;
+                                const fakeEvent = { clientX, clientY };
+                                render(percentFromEvent(fakeEvent));
+                              }
+
+                              progress.addEventListener('pointerdown', (e) => {
+                                dragging = true;
+                                progress.setPointerCapture(e.pointerId);
+                                setFromEvent(e);
+                              });
+                              progress.addEventListener('pointermove', (e) => {
+                                if (!dragging) return;
+                                setFromEvent(e);
+                              });
+                              function endDrag(e) {
+                                if (!dragging) return;
+                                dragging = false;
+                                try {
+                                  progress.releasePointerCapture(e.pointerId);
+                                } catch {}
+                              }
+                              progress.addEventListener('pointerup', endDrag);
+                              progress.addEventListener(
+                                'pointercancel',
+                                endDrag
+                              );
+                              progress.addEventListener(
+                                'lostpointercapture',
+                                () => (dragging = false)
+                              );
+
+                              // 초기 렌더
+                              render(
+                                Number(
+                                  progress.getAttribute('aria-valuenow')
+                                ) || 0
+                              );
+                            });
+                        })();
+                      </script>
                     </div>
                     <div class="kfsi-lecture-foot">
                       <div class="kfsi-lecture-foot-start"></div>

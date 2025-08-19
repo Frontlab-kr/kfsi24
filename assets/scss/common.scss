@@ -15878,6 +15878,370 @@ html.oacxHtml {
       }
     }
   }
+  &-lecture {
+    &-player {
+      padding: 0 10px;
+      background-color: #000;
+      &-video {
+        position: relative;
+        display: flex;
+        video {
+          width: 100%;
+          height: 360px;
+        }
+        &-button {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          button {
+            background: none;
+            border: 0;
+          }
+        }
+      }
+      &-foot {
+        display: flex;
+        flex-direction: column;
+      }
+      &-progress {
+        .progress {
+          height: 6px;
+          border-radius: 50px;
+          background: rgba(255, 255, 255, 0.2);
+          transition: all 0.1s ease;
+          &-bar {
+            border-radius: 50px;
+            background: #ffb626;
+            font-size: 0;
+            transition: all 0.3s ease;
+          }
+        }
+        .progress.is-draggable {
+          cursor: pointer;
+          user-select: none;
+        }
+      }
+      &-control {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-start,
+        &-end {
+          display: flex;
+          align-items: center;
+        }
+        &-sound {
+          position: relative;
+          &-layer {
+            position: absolute;
+            bottom: 65px;
+            display: flex;
+            display: flex;
+            width: 60px;
+            height: 120px;
+            padding: 10px 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.5);
+            display: none;
+            .progress {
+              width: 4px;
+              height: 100px;
+              cursor: pointer;
+              &-bar {
+                width: 4px !important;
+                border-radius: 50px;
+                background: #fff;
+              }
+            }
+
+            /* 세로형 전용 스타일 */
+            .progress {
+              display: flex;
+              align-items: flex-end; /* progress-bar가 아래에서부터 차오르도록 */
+              background-color: #6c757d; /* bootstrap bg-secondary 비슷하게 */
+              border-radius: 12px;
+            }
+            .progress .progress-bar {
+              width: 100%;
+              height: 0%; /* JS에서 제어 */
+              background-color: #fff; /* 흰색 bar */
+              border-radius: 12px;
+              transition: height 0.1s;
+            }
+          }
+        }
+        &__play {
+          width: 60px;
+          height: 50px;
+          background: url(../images/player/control-play.svg) no-repeat 50% 50%;
+          border: 0;
+          font-size: 0;
+        }
+        &__volume {
+          width: 60px;
+          height: 50px;
+          background: url(../images/player/control-volume.svg) no-repeat 50% 50%;
+          border: 0;
+          font-size: 0;
+        }
+        &__muted {
+          width: 60px;
+          height: 50px;
+          background: url(../images/player/control-muted.svg) no-repeat 50% 50%;
+          border: 0;
+          font-size: 0;
+        }
+        &__time {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+          padding: 0 28px;
+          color: #fff;
+          font-family: Pretendard;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 20px; /* 125% */
+          p {
+            margin: 0;
+          }
+        }
+        &__zoom {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          width: 60px;
+          height: 50px;
+          border: 0;
+          background: none;
+          color: #fff;
+          text-align: center;
+          font-family: Pretendard;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+        &__fold {
+          width: 60px;
+          height: 50px;
+          background: url(../images/player/control-fold.svg) no-repeat 50% 50%;
+          border: 0;
+          font-size: 0;
+        }
+        &__fullscreen {
+          width: 60px;
+          height: 50px;
+          background: url(../images/player/control-fullscreen.svg) no-repeat 50%
+            50%;
+          border: 0;
+          font-size: 0;
+        }
+      }
+      &.is-sound {
+        .kfsi-lecture-player-control-sound-layer {
+          display: flex;
+        }
+      }
+      @media screen and (max-width: $mobileWidth) {
+        padding: 0 5px;
+        background-color: #000;
+        &-video {
+          position: relative;
+          display: flex;
+          video {
+            width: 100%;
+            height: 200px;
+          }
+          &-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            button {
+              background: none;
+              border: 0;
+              img {
+                width: 35px;
+              }
+            }
+          }
+        }
+        &-foot {
+          display: flex;
+          flex-direction: column;
+        }
+        &-progress {
+          .progress {
+            height: 4px;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.2);
+            transition: all 0.1s ease;
+            &-bar {
+              border-radius: 50px;
+              background: #ffb626;
+              font-size: 0;
+              transition: all 0.3s ease;
+            }
+          }
+          .progress.is-draggable {
+            cursor: pointer;
+            user-select: none;
+          }
+        }
+        &-control {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          &-start,
+          &-end {
+            display: flex;
+            align-items: center;
+          }
+          &-sound {
+            display: flex;
+            align-items: center;
+            position: relative;
+            &-layer {
+              position: absolute;
+              bottom: 35px;
+              display: flex;
+              display: flex;
+              width: 30px;
+              height: 60px;
+              padding: 5px 0;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              flex-shrink: 0;
+              border-radius: 5px;
+              background: rgba(255, 255, 255, 0.5);
+              display: none;
+              .progress {
+                width: 4px;
+                height: 50px;
+                cursor: pointer;
+                &-bar {
+                  width: 4px !important;
+                  border-radius: 50px;
+                  background: #fff;
+                }
+              }
+
+              /* 세로형 전용 스타일 */
+              .progress {
+                display: flex;
+                align-items: flex-end; /* progress-bar가 아래에서부터 차오르도록 */
+                background-color: #6c757d; /* bootstrap bg-secondary 비슷하게 */
+                border-radius: 12px;
+              }
+              .progress .progress-bar {
+                width: 100%;
+                height: 0%; /* JS에서 제어 */
+                background-color: #fff; /* 흰색 bar */
+                border-radius: 12px;
+                transition: height 0.1s;
+              }
+            }
+          }
+          &__play {
+            width: 30px;
+            height: 25px;
+            background: url(../images/player/control-play.svg) no-repeat 50% 50%;
+            background-size: 30px 25px;
+            border: 0;
+            font-size: 0;
+          }
+          &__volume {
+            width: 30px;
+            height: 25px;
+            background: url(../images/player/control-volume.svg) no-repeat 50%
+              50%;
+            background-size: 13px 11.5px;
+            border: 0;
+            font-size: 0;
+          }
+          &__muted {
+            width: 30px;
+            height: 25px;
+            background: url(../images/player/control-muted.svg) no-repeat 50%
+              50%;
+            background-size: 15px 11.5px;
+            border: 0;
+            font-size: 0;
+          }
+          &__time {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 0 14px;
+            color: #fff;
+            font-family: Pretendard;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px; /* 125% */
+            p {
+              margin: 0;
+            }
+          }
+          &__zoom {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 30px;
+            height: 25px;
+            border: 0;
+            background: none;
+            color: #fff;
+            text-align: center;
+            font-family: Pretendard;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+          &__fold {
+            width: 30px;
+            height: 25px;
+            background: url(../images/player/control-fold.svg) no-repeat 50% 50%;
+            background-size: 11px 11px;
+            border: 0;
+            font-size: 0;
+          }
+          &__fullscreen {
+            width: 30px;
+            height: 25px;
+            background: url(../images/player/control-fullscreen.svg) no-repeat
+              50% 50%;
+            background-size: 11px 11px;
+            border: 0;
+            font-size: 0;
+          }
+        }
+        &.is-sound {
+          .kfsi-lecture-player-control-sound-layer {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
   &-survey {
     display: flex;
     flex-direction: column;
