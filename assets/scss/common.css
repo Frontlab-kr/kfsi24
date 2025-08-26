@@ -18037,9 +18037,9 @@ body {
 }
 
 .oacxHtml body {
-  font-family: "Pretendard", sans-serif;
-  word-spacing: 0;
-  letter-spacing: 0;
+  font-family: "Pretendard", sans-serif !important;
+  word-spacing: 0 !important;
+  letter-spacing: 0 !important;
 }
 
 a {
