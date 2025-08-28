@@ -111,21 +111,114 @@
     </div>
   </div>
   <script>
-    $(document).ready(function () {
-      // 버튼 클릭 시 .kfsi-footer-site-select에 active 클래스 토글
-      $('.kfsi-footer-site-select button').on('click', function (e) {
-        e.stopPropagation(); // 이벤트 버블링 방지
-        $('.kfsi-footer-site-select').toggleClass('active');
+    $(function () {
+      const $wrap = $('.kfsi-footer-site-select');
+      const $btn = $wrap.find('button');
+      const $menu = $wrap.find('ul');
+      const $items = $menu.find('a');
+
+      // ARIA 초기화
+      $btn.attr({
+        'aria-haspopup': 'menu',
+        'aria-expanded': 'false',
+        'aria-controls': 'kfsi-related-sites',
+      });
+      $menu.attr({ id: 'kfsi-related-sites', role: 'menu' });
+      $items.attr({ role: 'menuitem', tabindex: '-1' });
+
+      function openMenu(focusTarget = 'first') {
+        $wrap.addClass('active');
+        $btn.attr('aria-expanded', 'true');
+        $items.attr('tabindex', '-1');
+        const $t = focusTarget === 'last' ? $items.last() : $items.first();
+        $t.attr('tabindex', '0').focus();
+      }
+
+      function closeMenu(returnFocus = false) {
+        $wrap.removeClass('active');
+        $btn.attr('aria-expanded', 'false');
+        $items.attr('tabindex', '-1');
+        if (returnFocus) $btn.focus();
+      }
+
+      // 버튼: 클릭/키보드로 열기/닫기
+      $btn.on('click', function (e) {
+        e.stopPropagation();
+        $wrap.hasClass('active') ? closeMenu(true) : openMenu('first');
+      });
+      $btn.on('keydown', function (e) {
+        switch (e.key) {
+          case 'ArrowDown':
+            e.preventDefault();
+            openMenu('first');
+            break;
+          case 'ArrowUp':
+            e.preventDefault();
+            openMenu('last');
+            break;
+          case 'Enter':
+          case ' ':
+            e.preventDefault();
+            $wrap.hasClass('active') ? closeMenu(true) : openMenu('first');
+            break;
+          case 'Escape':
+            e.preventDefault();
+            closeMenu(true);
+            break;
+        }
       });
 
-      // .kfsi-footer-site-select 외부 영역 클릭 시 active 클래스 제거
-      $(document).on('click', function (e) {
-        if (
-          !$('.kfsi-footer-site-select').is(e.target) &&
-          $('.kfsi-footer-site-select').has(e.target).length === 0
-        ) {
-          $('.kfsi-footer-site-select').removeClass('active');
+      // 메뉴 항목: 방향키/홈/엔드/탭/ESC
+      $items.on('keydown', function (e) {
+        const i = $items.index(this);
+        let next;
+        switch (e.key) {
+          case 'ArrowDown':
+            e.preventDefault();
+            next = (i + 1) % $items.length;
+            break;
+          case 'ArrowUp':
+            e.preventDefault();
+            next = (i - 1 + $items.length) % $items.length;
+            break;
+          case 'Home':
+            e.preventDefault();
+            next = 0;
+            break;
+          case 'End':
+            e.preventDefault();
+            next = $items.length - 1;
+            break;
+          case 'Escape':
+            e.preventDefault();
+            closeMenu(true);
+            return;
+          case 'Tab': // 포커스가 영역 밖으로 나가므로 닫고 기본 탭 이동 유지
+            closeMenu(false);
+            return;
+          default:
+            return;
         }
+        $items.attr('tabindex', '-1');
+        $items.eq(next).attr('tabindex', '0').focus();
+      });
+
+      // 항목 클릭 시 닫기
+      $items.on('click', function () {
+        closeMenu(false);
+      });
+
+      // 바깥 클릭 시 닫기
+      $(document).on('click', function (e) {
+        if (!$wrap.is(e.target) && $wrap.has(e.target).length === 0)
+          closeMenu(false);
+      });
+
+      // 포커스가 컴포넌트 밖으로 완전히 나가면 닫기 (탭 이동 포함)
+      $wrap.on('focusout', function () {
+        setTimeout(function () {
+          if (!$wrap.find(':focus').length) closeMenu(false);
+        }, 0);
       });
     });
   </script>
@@ -182,9 +275,9 @@
           <div>
             <h5 class="kfsi-h5">지부 전화번호 현황</h5>
             <div class="kfsi-table mt-3">
-              <table summary="각 지역 지부의 명칭과 연락처를 정리한 표입니다.">
+              <table>
                 <caption>
-                  지역별 지부 연락처
+                  각 지역 지부의 명칭과 연락처를 정리한 표입니다.
                 </caption>
                 <colgroup>
                   <col width="120px" />
@@ -248,11 +341,9 @@
           <div>
             <h5 class="kfsi-h5">본부 전화번호 현황</h5>
             <div class="kfsi-table mt-3">
-              <table
-                summary="각 부서의 명칭, 전화번호, 및 주요 업무를 정리한 표입니다."
-              >
+              <table>
                 <caption>
-                  부서별 연락처 및 업무
+                  각 부서의 명칭, 전화번호, 및 주요 업무를 정리한 표입니다.
                 </caption>
                 <colgroup>
                   <col width="140px" />

@@ -1,9 +1,5 @@
 <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="Frame">
-<g id="Group">
-<path id="Vector" d="M23 43C34.0457 43 43 34.0457 43 23C43 11.9543 34.0457 3 23 3C11.9543 3 3 11.9543 3 23C3 34.0457 11.9543 43 23 43Z" stroke="#999999" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="Vector_2" d="M14.1001 23H31.9001" stroke="#999999" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="Vector_3" d="M23 31.9V14.1" stroke="#999999" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-</g>
+<path d="M23 43C34.0457 43 43 34.0457 43 23C43 11.9543 34.0457 3 23 3C11.9543 3 3 11.9543 3 23C3 34.0457 11.9543 43 23 43Z" stroke="#787878" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.1001 23H31.9001" stroke="#787878" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M23 31.9V14.1" stroke="#787878" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

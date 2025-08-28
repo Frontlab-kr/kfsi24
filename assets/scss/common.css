@@ -19200,7 +19200,7 @@ small, .small {
   background: #fff;
   color: #000;
 }
-.btn-white:hover {
+.btn-white:hover, .btn-white:active, .btn-white:focus {
   background: #fff;
   color: #000;
 }
@@ -19208,7 +19208,7 @@ small, .small {
   background-color: #406491;
   color: #fff !important;
 }
-.btn-primary-light:hover {
+.btn-primary-light:hover, .btn-primary-light:active, .btn-primary-light:focus {
   background-color: #406491;
   color: #fff !important;
 }
@@ -19222,17 +19222,26 @@ small, .small {
   border: 1px solid var(--004D16, #004d16);
   background: #f8fff4;
 }
-.btn-outline-primary:hover {
+.btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary:focus {
   color: var(--004D16, #004d16);
   border: 1px solid var(--004D16, #004d16);
   background: #f8fff4;
+}
+.btn-outline-info:hover, .btn-outline-info:active, .btn-outline-info:focus {
+  border-color: #1854a3;
+  background-color: #fff;
+}
+.btn-outline-danger:hover, .btn-outline-danger:active, .btn-outline-danger:focus {
+  border-color: #d93600;
+  background-color: #fff;
+  color: #d93600;
 }
 .btn-outline-dark {
   background: #fff;
   color: #333;
   border: 1px solid #ddd;
 }
-.btn-outline-dark:hover, .btn-outline-dark:active {
+.btn-outline-dark:hover, .btn-outline-dark:active, .btn-outline-dark:focus {
   border: 1px solid #ddd;
   background-color: #fff;
   color: #333 !important;
@@ -19242,8 +19251,9 @@ small, .small {
   color: #333 !important;
   background: var(--f6f6f6, #f6f6f6);
 }
-.btn-outline-secondary:hover {
-  background: #e9e9e9;
+.btn-outline-secondary:hover, .btn-outline-secondary:active, .btn-outline-secondary:focus {
+  background-color: #e9e9e9 !important;
+  border-color: #ccc !important;
   border: solid 1px #ccc;
   color: #333;
 }
@@ -19252,7 +19262,7 @@ small, .small {
   color: #333 !important;
   background: var(--FEF3DD, #fef3dd);
 }
-.btn-outline-warning:hover {
+.btn-outline-warning:hover, .btn-outline-warning:active, .btn-outline-warning:focus {
   background: var(--FEF3DD, #fef3dd);
   border: solid 1px #ccc;
   color: #333;
@@ -23967,6 +23977,10 @@ small, .small {
   width: 100%;
   min-width: auto;
 }
+:focus-visible {
+  outline: 3px dotted red !important;
+}
+
 #header {
   position: relative;
   z-index: 100;
@@ -24027,7 +24041,8 @@ table caption {
   white-space: noWrap;
 }
 
-.hide {
+.hide,
+.hidden {
   overflow: hidden;
   position: absolute;
   width: 1px;
@@ -24355,6 +24370,8 @@ html.oacxHtml {
   text-align: center;
   color: #000;
   transition: all 0.2s ease;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
 }
 .kfsi-header-gnb-item > a::before {
   content: "";
@@ -24375,6 +24392,7 @@ html.oacxHtml {
 }
 .kfsi-header-gnb-item:focus-within > a, .kfsi-header-gnb-item:hover > a {
   color: #004d16;
+  border-bottom-color: #004d16;
 }
 .kfsi-header-gnb-item:focus-within > a::after, .kfsi-header-gnb-item:hover > a::after {
   background: url(../images/icon/ico-gnb-arrow-hover.svg) no-repeat 50% 50%;
@@ -24445,9 +24463,11 @@ html.oacxHtml {
 .kfsi-header-gnb-item-depth dl dd a.active {
   font-weight: bold;
   color: #004d16;
+  background: #f1f1f1;
 }
 .kfsi-header-gnb-item-depth dl dd a:hover {
   color: #004d16;
+  background: #f1f1f1;
 }
 .kfsi-header-gnb-item-depth dl dd a:first-child {
   margin-top: 0;
@@ -25092,6 +25112,7 @@ html.oacxHtml {
   position: relative;
   height: 55px;
   background-color: #999;
+  background-color: #787878;
 }
 .kfsi-footer-site-select {
   position: relative;
@@ -25911,7 +25932,7 @@ html.oacxHtml {
   display: flex;
   align-items: center;
   gap: 3px;
-  color: #8bc53f;
+  color: #579500;
   font-family: Pretendard;
   font-size: 14px;
   font-style: normal;
@@ -26049,6 +26070,12 @@ html.oacxHtml {
 }
 .kfsi-main-banner .swiper-slide img {
   width: 100%;
+}
+.kfsi-main-banner .swiper-slide a {
+  display: block;
+}
+.kfsi-main-banner .swiper-slide a:focus-visible {
+  border: 3px dashed red;
 }
 .kfsi-main-banner .swiper-button-prev, .kfsi-main-banner .swiper-button-next {
   position: relative;
@@ -26578,6 +26605,7 @@ html.oacxHtml {
     align-items: center;
     gap: 3px;
     color: #8bc53f;
+    color: #579500;
     font-family: Pretendard;
     font-size: 14px;
     font-style: normal;
@@ -27089,11 +27117,12 @@ html.oacxHtml {
   padding: 0;
 }
 .kfsi-breadcrumb .breadcrumb-item:before {
-  width: 6px;
-  height: 10px;
+  width: 7px;
+  height: 9px;
   margin: 0 16px 0 0;
   padding: 0;
   background: url(../images/icon/breadcrumb-arrow.png) no-repeat 50% 50%;
+  background: url(../images/icon/breadcrumb-arrow.svg) no-repeat 50% 50%;
   font-size: 0;
 }
 @media screen and (max-width: 992px) {
@@ -33014,6 +33043,7 @@ html.oacxHtml {
   width: 5px;
   height: 26px;
   background: #8bc53f;
+  background: #579500;
   border-radius: 30px;
 }
 @media screen and (max-width: 992px) {
@@ -33066,6 +33096,7 @@ html.oacxHtml {
     width: 5px;
     height: 26px;
     background: #8bc53f;
+    background: #579500;
     border-radius: 30px;
   }
 }
@@ -34704,6 +34735,7 @@ html.oacxHtml {
     height: 12px;
     border-radius: 50px;
     border: 4px solid #8bc53f;
+    border: 4px solid #579500;
     background: #fff;
   }
   .kfsi-agree-form-type2 .kfsi-agree-form__title {
@@ -35216,6 +35248,7 @@ html.oacxHtml {
 .kfsi-classroom-detail-head-progress-head p strong {
   margin-left: 4px;
   color: #8bc53f;
+  color: #579500;
   font-family: Pretendard;
   font-size: 40px;
   font-style: normal;
@@ -35230,6 +35263,7 @@ html.oacxHtml {
 .kfsi-classroom-detail-head-progress .progress-bar {
   border-radius: 8px;
   background: #8bc53f;
+  background: #579500;
 }
 .kfsi-classroom-detail-head-info {
   display: flex;
@@ -35591,6 +35625,7 @@ html.oacxHtml {
   .kfsi-classroom-detail-head-progress-head p strong {
     margin-left: 4px;
     color: #8bc53f;
+    color: #579500;
     font-family: Pretendard;
     font-size: 34px;
     font-style: normal;
@@ -35605,6 +35640,7 @@ html.oacxHtml {
   .kfsi-classroom-detail-head-progress .progress-bar {
     border-radius: 8px;
     background: #8bc53f;
+    background: #579500;
   }
   .kfsi-classroom-detail-head-info {
     display: flex;
