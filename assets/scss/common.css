@@ -19272,7 +19272,6 @@ small, .small {
 }
 .btn-info {
   border: solid 1px #ccc;
-  color: #333 !important;
 }
 .btn:disabled, .btn-disabled {
   border-color: #eee !important;

@@ -177,12 +177,11 @@ $(document).ready(function () {
   });
 
   $(document).on('click', 'a[href="#kfsi-body"]', function (e) {
-    e.preventDefault();
-
     const $container = $('.kfsi-contents').first();
 
     if ($container.length) {
-      // 포커스 가능한 요소 선택자
+      e.preventDefault();
+
       const focusable = $container
         .find(
           'a[href], button:not([disabled]), input:not([disabled]), textarea:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])'
@@ -192,12 +191,14 @@ $(document).ready(function () {
       if (focusable.length) {
         focusable.first().focus();
       } else {
-        // 내부에 포커스 가능한 요소가 없으면 container에 포커스
         if (!$container.attr('tabindex')) {
           $container.attr('tabindex', '-1');
         }
         $container.focus();
       }
+    } else {
+      // 기본 동작 유지 (#kfsi-body로 이동)
+      // e.preventDefault() 호출 안 함
     }
   });
 
