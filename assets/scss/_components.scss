@@ -1322,6 +1322,10 @@ $mobileWidth: 992px;
           display: none;
         }
       }
+      button {
+        border: 0;
+        background: none;
+      }
     }
   }
   &-date {

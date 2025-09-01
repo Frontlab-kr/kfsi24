@@ -21446,6 +21446,10 @@ small, .small {
 .kfsi-upload .dropzone.dz-started .dz-message {
   display: none;
 }
+.kfsi-upload .dropzone button {
+  border: 0;
+  background: none;
+}
 .kfsi-date {
   display: flex;
   align-items: center;
