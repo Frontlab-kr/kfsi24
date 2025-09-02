@@ -4,13 +4,27 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  //snb
+  // snb
   $('.kfsi-snb-item-sub > .kfsi-snb-item').each(function () {
     if (!$(this).find('.hidden').length) {
       $(this).append('<span class="hidden">하위메뉴 접힘</span>');
     }
   });
 
+  // 로드 시 active 상태 체크
+  $('.kfsi-snb-item-sub').each(function () {
+    const $sub = $(this);
+    const $item = $sub.children('.kfsi-snb-item');
+    const $status = $item.find('.hidden');
+
+    if ($sub.hasClass('active')) {
+      $status.text('하위메뉴 펼쳐짐');
+    } else {
+      $status.text('하위메뉴 접힘');
+    }
+  });
+
+  // 클릭 이벤트
   $('.kfsi-snb-item-sub > .kfsi-snb-item').on('click', function () {
     const $sub = $(this).parent('.kfsi-snb-item-sub');
     const $status = $(this).find('.hidden');
