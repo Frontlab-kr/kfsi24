@@ -167,28 +167,30 @@ $(document).ready(function () {
 
   //탭 접근성
   // 모든 탭을 Tab 순서에 포함시키기: tabindex를 항상 0으로 유지
-  $(function () {
-    const $tabs = $('[data-bs-toggle="tab"][role="tab"]');
+  setTimeout(() => {
+    $(function () {
+      const $tabs = $('[data-bs-toggle="tab"][role="tab"]');
 
-    // 초기화
-    $tabs.attr('tabindex', '0');
-
-    // 부트스트랩이 탭 변경 시 비활성 탭에 -1을 다시 넣는 것을 방지
-    $tabs.on('shown.bs.tab hidden.bs.tab', function () {
+      // 초기화
       $tabs.attr('tabindex', '0');
-    });
 
-    // 접근성 보강(선택): Space/Enter로 활성화 보장
-    $tabs.on('keydown', function (e) {
-      if (e.key === ' ' || e.key === 'Enter') {
-        e.preventDefault();
-        $(this).tab('show');
-      }
+      // 부트스트랩이 탭 변경 시 비활성 탭에 -1을 다시 넣는 것을 방지
+      $tabs.on('shown.bs.tab hidden.bs.tab', function () {
+        $tabs.attr('tabindex', '0');
+      });
+
+      // 접근성 보강(선택): Space/Enter로 활성화 보장
+      $tabs.on('keydown', function (e) {
+        if (e.key === ' ' || e.key === 'Enter') {
+          e.preventDefault();
+          $(this).tab('show');
+        }
+      });
     });
-  });
-  $(function () {
-    $('.tab-pane[role="tabpanel"]').removeAttr('tabindex');
-  });
+    $(function () {
+      $('.tab-pane[role="tabpanel"]').removeAttr('tabindex');
+    });
+  }, 500);
 
   $(document).on('click', 'a[href="#kfsi-body"]', function (e) {
     const $container = $('.kfsi-contents').first();
