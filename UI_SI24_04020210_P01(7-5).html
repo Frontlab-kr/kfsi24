@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- chart.js -->
+    <script src="./assets/js/chart.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>나의강의실</h2>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >나의 교육 정보 조회</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">납부 내역 조회</a>
+                  <a href="" class="kfsi-snb-item-sub-item">자격 취득 현황</a>
+                  <a href="" class="kfsi-snb-item-sub-item">선임 대상처 현황</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >실무교육수료 기한</a
+                  >
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub active">
+                <a href="javscript:void(0)" class="kfsi-snb-item"
+                  >진행 중인 교육</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">목차</a>
+                  <a href="" class="kfsi-snb-item-sub-item">평가</a>
+                  <a href="" class="kfsi-snb-item-sub-item">설문</a>
+                </div>
+              </div>
+              <a href="" class="kfsi-snb-item">완료된 교육</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">나의 강의실</li>
+                    <li class="breadcrumb-item">나의 교육정보 조회</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      진행중 교육
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>진행중 교육</h1>
+              </div>
+              <div class="kfsi-lecture">
+                <div class="kfsi-lecture-head">
+                  <p>한국소방안전원 이러닝 테스트</p>
+                </div>
+                <div class="kfsi-lecture-body">
+                  <div class="kfsi-lecture-contents">
+                    <div class="kfsi-lecture-test">
+                      <div class="kfsi-lecture-test-title">
+                        <p>
+                          <span class="text-primary">소방기술</span>
+                        </p>
+                        <strong>1. 소방기술 목록</strong>
+                      </div>
+                      <div class="kfsi-lecture-test-quiz">
+                        <div class="kfsi-lecture-test-quiz__inner">
+                          <div class="kfsi-lecture-test-quiz-list">
+                            <div
+                              class="kfsi-lecture-test-quiz-list__title kfsi-lecture-test-quiz-list__title--x"
+                            >
+                              <div class="hidden">오답</div>
+                              <p>문제 1</p>
+                            </div>
+                            <div class="kfsi-lecture-test-quiz-list__question">
+                              다음 중 전기사고의 원인이
+                              <span class="text-danger">아닌</span> 것은 ?
+                            </div>
+                            <div class="kfsi-lecture-test-quiz-list__answer">
+                              <ul>
+                                <li class="kfsi-lecture-test-quiz-list__o">
+                                  <span class="kfsi-lecture-test-quiz-ico-o"
+                                    >정답</span
+                                  >
+                                  <a href="javascript:void(0)">
+                                    <strong>①</strong>
+                                    <p>누전</p>
+                                  </a>
+                                </li>
+                                <li class="kfsi-lecture-test-quiz-list__check">
+                                  <span class="kfsi-lecture-test-quiz-ico-x"
+                                    >오답</span
+                                  >
+                                  <a href="javascript:void(0)">
+                                    <strong>②</strong>
+                                    <p>독성가스</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="javascript:void(0)">
+                                    <strong>③</strong>
+                                    <p>트래킹 현상</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="javascript:void(0)">
+                                    <strong>④</strong>
+                                    <p>
+                                      과부하에 의한 발화과부하에 의한
+                                      발화과부하에 의한 발화과부하에 의한
+                                      발화과부하에 의한 발화과부하에 의한
+                                      발화과부하에 의한 발화과부하에 의한
+                                      발화과부하에 의한 발화과부하에 의한
+                                      발화과부하에 의한 발화
+                                    </p>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kfsi-lecture-test-quiz__text">
+                          <div class="kfsi-lecture-test-quiz__text-start">
+                            <strong>
+                              정답<br />
+                              1
+                            </strong>
+                            <p>정답은 1번이라는 해설입니다.</p>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-lg btn-secondary"
+                          >
+                            다음 문제
+                            <i class="ico-link"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-lecture-foot">
+                      <div class="kfsi-lecture-foot-start"></div>
+                      <div class="kfsi-lecture-foot-center">
+                        <p><strong>1</strong> / 1</p>
+                      </div>
+                      <div class="kfsi-lecture-foot-end">
+                        <button
+                          type="button"
+                          class="btn btn-lg btn-outline-secondary"
+                        >
+                          이전
+                        </button>
+                        <button type="button" class="btn btn-lg btn-primary">
+                          다음
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kfsi-lecture-menu">
+                    <div class="kfsi-lecture-menu-state">
+                      <div class="kfsi-lecture-menu-state__head">
+                        학습현황
+                        <button>닫기</button>
+                      </div>
+                      <div class="kfsi-lecture-menu-state__title">
+                        <h4>과정 학습시간</h4>
+                        <p><span>교육기간</span>2025.05.26~2025.12.31</p>
+                        <span class="text-primary">학습종료까지 218일</span>
+                      </div>
+                      <div class="kfsi-lecture-menu-state__progress">
+                        <h4>나의 진도율</h4>
+                        <p>
+                          <span>권장 진도율 1%</span>
+                          <strong>현재 진도율 50%</strong>
+                        </p>
+                        <div
+                          class="progress"
+                          role="progressbar"
+                          aria-valuenow="50"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div class="progress-bar" style="width: 50%"></div>
+                          <div class="progress-current" style="left: 1%"></div>
+                        </div>
+                      </div>
+                      <div class="kfsi-lecture-menu-state__table">
+                        <h4>수료기준 및 성적</h4>
+                        <div class="kfsi-table kfsi-table-sm kfsi-table-scroll">
+                          <table>
+                            <caption>
+                              이 표는 수료기준 및 성적 정보를 제공하며, 구분,
+                              반영비율, 과락기준, 나의 원점수, 나의 환산점수를
+                              포함합니다.
+                            </caption>
+                            <thead>
+                              <tr>
+                                <th>구분</th>
+                                <th>반영<br />비율</th>
+                                <th>과락<br />기준</th>
+                                <th>나의<br />원점수</th>
+                                <th>나의<br />환산점수</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">진도</th>
+                                <td>100%</td>
+                                <td>-</td>
+                                <td>0</td>
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">총점</th>
+                                <td colspan="4" class="text-start">
+                                  환산점수 0점 / 100점
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">수료<br />기준</th>
+                                <td colspan="4" class="text-start">
+                                  총점 수료기준 <strong>100점 이상·필수</strong>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-lecture-menu-index">
+                      <div class="kfsi-lecture-menu-index__head">
+                        목차
+                        <button>닫기</button>
+                      </div>
+                      <div class="kfsi-lecture-menu-index-list">
+                        <div class="kfsi-lecture-menu-index-list-item active">
+                          <div class="kfsi-lecture-menu-index-list-item-check">
+                            완료
+                          </div>
+                          <div
+                            class="kfsi-lecture-menu-index-list-item-contents"
+                          >
+                            <div
+                              class="kfsi-lecture-menu-index-list-item-title"
+                            >
+                              1차시 1번레슨 test1차시 1번레슨 test1차시 1번레슨
+                              test1차시 1번레슨 test
+                            </div>
+                            <div class="kfsi-lecture-menu-index-list-item-text">
+                              <span>01:00</span>
+                              <p>
+                                학습페이지
+                                <strong>0/1</strong>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kfsi-lecture-menu-index-list-item">
+                          <div class="kfsi-lecture-menu-index-list-item-check">
+                            0%
+                          </div>
+                          <div
+                            class="kfsi-lecture-menu-index-list-item-contents"
+                          >
+                            <div
+                              class="kfsi-lecture-menu-index-list-item-title"
+                            >
+                              1차시 1번레슨 test
+                            </div>
+                            <div class="kfsi-lecture-menu-index-list-item-text">
+                              <span>01:00</span>
+                              <p>학습페이지 <strong>0/1</strong></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kfsi-lecture-menu-index-list-item">
+                          <div class="kfsi-lecture-menu-index-list-item-check">
+                            0%
+                          </div>
+                          <div
+                            class="kfsi-lecture-menu-index-list-item-contents"
+                          >
+                            <div
+                              class="kfsi-lecture-menu-index-list-item-title"
+                            >
+                              1차시 1번레슨 test
+                            </div>
+                            <div class="kfsi-lecture-menu-index-list-item-text">
+                              <span>01:00</span>
+                              <p>학습페이지 <strong>0/1</strong></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kfsi-lecture-menu-index-list-item">
+                          <div class="kfsi-lecture-menu-index-list-item-check">
+                            0%
+                          </div>
+                          <div
+                            class="kfsi-lecture-menu-index-list-item-contents"
+                          >
+                            <div
+                              class="kfsi-lecture-menu-index-list-item-title"
+                            >
+                              1차시 1번레슨 test
+                            </div>
+                            <div class="kfsi-lecture-menu-index-list-item-text">
+                              <span>01:00</span>
+                              <p>학습페이지 <strong>0/1</strong></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kfsi-lecture-menu-index-list-item">
+                          <div class="kfsi-lecture-menu-index-list-item-check">
+                            0%
+                          </div>
+                          <div
+                            class="kfsi-lecture-menu-index-list-item-contents"
+                          >
+                            <div
+                              class="kfsi-lecture-menu-index-list-item-title"
+                            >
+                              1차시 1번레슨 test
+                            </div>
+                            <div class="kfsi-lecture-menu-index-list-item-text">
+                              <span>01:00</span>
+                              <p>학습페이지 <strong>0/1</strong></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kfsi-lecture-menu-index-list-item">
+                          <div class="kfsi-lecture-menu-index-list-item-check">
+                            0%
+                          </div>
+                          <div
+                            class="kfsi-lecture-menu-index-list-item-contents"
+                          >
+                            <div
+                              class="kfsi-lecture-menu-index-list-item-title"
+                            >
+                              1차시 1번레슨 test
+                            </div>
+                            <div class="kfsi-lecture-menu-index-list-item-text">
+                              <span>01:00</span>
+                              <p>학습페이지 <strong>0/1</strong></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kfsi-lecture-menu-index-list-item">
+                          <div class="kfsi-lecture-menu-index-list-item-check">
+                            0%
+                          </div>
+                          <div
+                            class="kfsi-lecture-menu-index-list-item-contents"
+                          >
+                            <div
+                              class="kfsi-lecture-menu-index-list-item-title"
+                            >
+                              1차시 1번레슨 test
+                            </div>
+                            <div class="kfsi-lecture-menu-index-list-item-text">
+                              <span>01:00</span>
+                              <p>학습페이지 <strong>0/1</strong></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kfsi-lecture-menu-index-list-item">
+                          <div class="kfsi-lecture-menu-index-list-item-check">
+                            0%
+                          </div>
+                          <div
+                            class="kfsi-lecture-menu-index-list-item-contents"
+                          >
+                            <div
+                              class="kfsi-lecture-menu-index-list-item-title"
+                            >
+                              1차시 1번레슨 test
+                            </div>
+                            <div class="kfsi-lecture-menu-index-list-item-text">
+                              <span>01:00</span>
+                              <p>학습페이지 <strong>0/1</strong></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kfsi-lecture-menu-index-list-item">
+                          <div class="kfsi-lecture-menu-index-list-item-check">
+                            0%
+                          </div>
+                          <div
+                            class="kfsi-lecture-menu-index-list-item-contents"
+                          >
+                            <div
+                              class="kfsi-lecture-menu-index-list-item-title"
+                            >
+                              1차시 1번레슨 test
+                            </div>
+                            <div class="kfsi-lecture-menu-index-list-item-text">
+                              <span>01:00</span>
+                              <p>학습페이지 <strong>0/1</strong></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kfsi-lecture-menu-index-list-item">
+                          <div class="kfsi-lecture-menu-index-list-item-check">
+                            0%
+                          </div>
+                          <div
+                            class="kfsi-lecture-menu-index-list-item-contents"
+                          >
+                            <div
+                              class="kfsi-lecture-menu-index-list-item-title"
+                            >
+                              1차시 1번레슨 test
+                            </div>
+                            <div class="kfsi-lecture-menu-index-list-item-text">
+                              <span>01:00</span>
+                              <p>학습페이지 <strong>0/1</strong></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kfsi-lecture-menu-list">
+                      <button class="btn01">
+                        <i class="ico-lecture-list"></i>
+                        목차
+                      </button>
+                      <button class="btn02">
+                        <i class="ico-lecture-tv"></i>
+                        학습현황
+                      </button>
+                    </div>
+                    <script>
+                      $(document).ready(function () {
+                        // 목차 버튼 클릭 시
+                        $('.kfsi-lecture-menu-list button:contains("목차")').on(
+                          'click',
+                          function () {
+                            $('.kfsi-lecture')
+                              .removeClass('kfsi-lecture--active-tv')
+                              .addClass('kfsi-lecture--active-list');
+                          }
+                        );
+
+                        // 학습현황 버튼 클릭 시
+                        $(
+                          '.kfsi-lecture-menu-list button:contains("학습현황")'
+                        ).on('click', function () {
+                          $('.kfsi-lecture')
+                            .removeClass('kfsi-lecture--active-list')
+                            .addClass('kfsi-lecture--active-tv');
+                        });
+
+                        $(
+                          '.kfsi-lecture-menu-index__head button,.kfsi-lecture-menu-state__head button'
+                        ).on('click', function () {
+                          $('.kfsi-lecture')
+                            .removeClass('kfsi-lecture--active-tv')
+                            .removeClass('kfsi-lecture--active-list');
+                        });
+                      });
+                    </script>
+                  </div>
+                </div>
+                <div class="mo">
+                  <div class="kfsi-lecture-foot-end">
+                    <button
+                      type="button"
+                      class="btn btn-lg btn-outline-secondary"
+                    >
+                      이전
+                    </button>
+                    <button type="button" class="btn btn-lg btn-primary">
+                      다음
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

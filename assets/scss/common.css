@@ -38173,11 +38173,76 @@ html.oacxHtml {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
   }
 }
+.kfsi-lecture-test-quiz-ico-o {
+  position: absolute;
+  top: 8px;
+  left: -10px;
+  display: inline-flex;
+  padding: 5px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 100px;
+  border: 1px solid #0f6327;
+  background: #fff;
+  color: #0f6327;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 114.286% */
+  transform: translateX(-100%);
+}
+.kfsi-lecture-test-quiz-ico-o::before {
+  content: "";
+  display: block;
+  min-width: 16px;
+  height: 16px;
+  background: url(../images/quiz/ico-check.svg) no-repeat 50% 50%;
+}
+@media screen and (max-width: 992px) {
+  .kfsi-lecture-test-quiz-ico-o {
+    display: none;
+  }
+}
+.kfsi-lecture-test-quiz-ico-x {
+  position: absolute;
+  top: 8px;
+  left: -10px;
+  display: inline-flex;
+  padding: 5px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 100px;
+  border: 1px solid #d93600;
+  background: #fff;
+  color: #d93600;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 114.286% */
+  transform: translateX(-100%);
+}
+.kfsi-lecture-test-quiz-ico-x::before {
+  content: "";
+  display: block;
+  min-width: 16px;
+  height: 16px;
+  background: url(../images/quiz/ico-x.svg) no-repeat 50% 50%;
+}
+@media screen and (max-width: 992px) {
+  .kfsi-lecture-test-quiz-ico-x {
+    display: none;
+  }
+}
 .kfsi-lecture-test-quiz-list {
   padding: 30px;
   max-width: 600px;
 }
 .kfsi-lecture-test-quiz-list__title {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 24px;
@@ -38204,6 +38269,34 @@ html.oacxHtml {
   font-style: normal;
   font-weight: 700;
   line-height: 24px; /* 133.333% */
+}
+.kfsi-lecture-test-quiz-list__title--x:after {
+  content: "";
+  position: absolute;
+  top: -19px;
+  left: -19px;
+  display: block;
+  width: 98px;
+  height: 98px;
+  background: url(../images/quiz/answer-x-lg.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+.kfsi-lecture-test-quiz-list__title--x::before {
+  opacity: 0.5;
+}
+.kfsi-lecture-test-quiz-list__title--o:after {
+  content: "";
+  position: absolute;
+  top: -24px;
+  left: -24px;
+  display: block;
+  width: 108px;
+  height: 108px;
+  background: url(../images/quiz/answer-o-lg.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+.kfsi-lecture-test-quiz-list__title--o::before {
+  opacity: 0.5;
 }
 .kfsi-lecture-test-quiz-list__question {
   margin-bottom: 20px;
@@ -38235,12 +38328,18 @@ html.oacxHtml {
   border: 0;
   font-size: 0;
 }
+.kfsi-lecture-test-quiz-list__answer-o.kfsi-lecture-test-quiz-list__answer-disabled {
+  background: url(../images/quiz/o-disabled.png) no-repeat 50% 50%;
+}
 .kfsi-lecture-test-quiz-list__answer-x {
   width: 123px;
   height: 150px;
   background: url(../images/quiz/x.png) no-repeat 50% 50%;
   border: 0;
   font-size: 0;
+}
+.kfsi-lecture-test-quiz-list__answer-x.kfsi-lecture-test-quiz-list__answer-disabled {
+  background: url(../images/quiz/x-disabled.png) no-repeat 50% 50%;
 }
 .kfsi-lecture-test-quiz-list__answer__button {
   text-align: center;
@@ -38257,6 +38356,7 @@ html.oacxHtml {
   list-style: none;
 }
 .kfsi-lecture-test-quiz-list__answer ul li {
+  position: relative;
   margin: 0;
   padding: 0;
 }
@@ -38289,6 +38389,24 @@ html.oacxHtml {
 }
 .kfsi-lecture-test-quiz-list__answer ul li:hover a {
   color: #984de3;
+}
+.kfsi-lecture-test-quiz-list__o a strong {
+  color: #0f6327;
+}
+.kfsi-lecture-test-quiz-list__o a p {
+  color: #0f6327;
+  text-decoration: underline;
+  font-weight: 700;
+}
+.kfsi-lecture-test-quiz-list__check::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 6px;
+  display: block;
+  width: 36px;
+  height: 34px;
+  background: url(../images/quiz/check.svg) no-repeat 50% 50%;
 }
 .kfsi-lecture-test-quiz-list__button {
   margin-top: 50px;
@@ -38338,6 +38456,28 @@ html.oacxHtml {
     font-weight: 700;
     line-height: 24px; /* 133.333% */
   }
+  .kfsi-lecture-test-quiz-list__title--x:after {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    display: block;
+    width: 49px;
+    height: 49px;
+    background: url(../images/quiz/answer-x-lg.png) no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .kfsi-lecture-test-quiz-list__title--o:after {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    display: block;
+    width: 54px;
+    height: 54px;
+    background: url(../images/quiz/answer-o-lg.png) no-repeat 50% 50%;
+    background-size: cover;
+  }
   .kfsi-lecture-test-quiz-list__question {
     margin-bottom: 10px;
     color: #000;
@@ -38370,6 +38510,10 @@ html.oacxHtml {
     border: 0;
     font-size: 0;
   }
+  .kfsi-lecture-test-quiz-list__answer-o.kfsi-lecture-test-quiz-list__answer-disabled {
+    background: url(../images/quiz/o-disabled.png) no-repeat 50% 50%;
+    background-size: cover;
+  }
   .kfsi-lecture-test-quiz-list__answer-x {
     width: 61.5px;
     height: 75px;
@@ -38377,6 +38521,10 @@ html.oacxHtml {
     background-size: cover;
     border: 0;
     font-size: 0;
+  }
+  .kfsi-lecture-test-quiz-list__answer-x.kfsi-lecture-test-quiz-list__answer-disabled {
+    background: url(../images/quiz/x-disabled.png) no-repeat 50% 50%;
+    background-size: cover;
   }
   .kfsi-lecture-test-quiz-list__answer__button {
     text-align: center;
@@ -38426,6 +38574,17 @@ html.oacxHtml {
   }
   .kfsi-lecture-test-quiz-list__answer ul li:hover a {
     color: #984de3;
+  }
+  .kfsi-lecture-test-quiz-list__check::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 3px;
+    display: block;
+    width: 18px;
+    height: 17px;
+    background: url(../images/quiz/check.svg) no-repeat 50% 50%;
+    background-size: cover;
   }
   .kfsi-lecture-test-quiz-list__button {
     margin-top: 20px;
@@ -38571,6 +38730,86 @@ html.oacxHtml {
   border-radius: 100px;
   background: var(--6c6e75, #6c6e75);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+.kfsi-lecture-test-quiz__text {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 0 30px 24px;
+}
+.kfsi-lecture-test-quiz__text-start {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.kfsi-lecture-test-quiz__text-start > strong {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  height: 80px;
+  background: url(../images/quiz/bg-bubble.svg) no-repeat 50% 50%;
+  color: #fff;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.kfsi-lecture-test-quiz__text-start p {
+  width: 100%;
+  margin: 0 0 0 16px;
+  padding: 28px 24px;
+  border-radius: 1000px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #000;
+  font-family: Pretendard;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media screen and (max-width: 992px) {
+  .kfsi-lecture-test-quiz__text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+    padding: 0 16px 24px;
+  }
+  .kfsi-lecture-test-quiz__text-start > strong {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    background: url(../images/quiz/bg-bubble.svg) no-repeat 50% 50%;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .kfsi-lecture-test-quiz__text-start p {
+    width: 100%;
+    margin: 0 12px 0 8px;
+    padding: 16px;
+    border-radius: 1000px;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #000;
+    font-family: Pretendard;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 }
 .kfsi-lecture-test-video {
   aspect-ratio: 700/394;
