@@ -42,7 +42,7 @@ $(document).ready(function () {
 
   //약관동의 접근성
   // 초기 세팅: active li에 hidden span 삽입
-  $('.kfsi-nav ol li.active').each(function () {
+  $('.kfsi-nav ol li.active, .kfsi-test-nav ul li.active').each(function () {
     if (!$(this).find('.hidden').length) {
       $(this).append('<span class="hidden">현재 진행중인 단계</span>');
     }

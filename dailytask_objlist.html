@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <link
+          rel="stylesheet"
+          href="https://safe.kfsi.or.kr/assets/scss/reports_common.css"
+        />
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>안전관리자 선해임</h2>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javascript:void(0)" class="kfsi-snb-item"
+                  >안전관리(보조)자 선해임</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a
+                    href="/predecessor/fireSafety/myObjView.do"
+                    class="kfsi-snb-item-sub-item"
+                    >소방안전관리자 선해임 신고</a
+                  >
+                  <a
+                    href="/predecessor/fireSafetyAssist/myObjView.do"
+                    class="kfsi-snb-item-sub-item"
+                    >소방안전관리보조자 선해임 신고</a
+                  >
+                  <a
+                    href="/predecessor/constructionSite/myObjView.do"
+                    class="kfsi-snb-item-sub-item"
+                    >건설현장 소방안전관리자 선해임 신고</a
+                  >
+                </div>
+              </div>
+              <a
+                href="/predecessor/fireSafety/prdcssrRpctList.do"
+                class="kfsi-snb-item"
+                >안전관리(보조)자 신청내역</a
+              >
+              <a href="/dailytask/objList.do" class="kfsi-snb-item active"
+                >일일 업무수행</a
+              >
+              <a href="/plan/step1.do" class="kfsi-snb-item">소방계획서 관리</a>
+            </div>
+
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">안전관리(보조)자 선해임</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      일일 업무수행
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="content_wrap">
+                <div class="title_wrap" style="padding-top: 0">
+                  <div class="title">
+                    <i class="bullet"></i>
+                    <h3>대상처 목록</h3>
+                  </div>
+                </div>
+                <div class="desc_list_wrap" style="margin-bottom: 5px">
+                  <ul class="desc_list"></ul>
+                  <div class="desc">
+                    ※ 검색된 대상처가 없을 경우 관할지부로 연락주세요.
+                  </div>
+                </div>
+                <div class="desc_list_wrap">
+                  <ul class="desc_list"></ul>
+                  <div class="btn_wrap">
+                    <button
+                      type="button"
+                      class="btn btn-primary btnQnaWrite"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal01"
+                    >
+                      지부 연락처 보기
+                    </button>
+                  </div>
+                </div>
+                <div class="table_wrap">
+                  <table class="tb_b_t">
+                    <colgroup>
+                      <col style="width: 30%" />
+                      <col style="width: 70%" />
+                    </colgroup>
+                    <caption>
+                      대상처 목록 – 상호명과 주소를 확인할 수 있습니다.
+                    </caption>
+                    <thead>
+                      <tr class="tb_b_b">
+                        <th class="w_30 tb_b_r">상호명</th>
+                        <th class="tb_b_r">주소</th>
+                        <!-- <th class="w_20">선택</th> -->
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('46000001477700')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">GS25 여수향일암점</td>
+                        <td class="tb_b_r">
+                          전남 여수시 향일암로 70-3 (GS25 율림점)
+                        </td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('46000001477700')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000223235')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">시동우체국</td>
+                        <td class="tb_b_r">강원 홍천군 시동안로 229</td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000223235')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000210519')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">최세은 건물</td>
+                        <td class="tb_b_r">강원 태백시 황지로 267-7</td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000210519')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000223169')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">예수재림교회</td>
+                        <td class="tb_b_r">강원 평창군 태기로 541-6</td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000223169')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000395329')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">양양식자재마트</td>
+                        <td class="tb_b_r">강원 양양군 양양로 163</td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000395329')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000207705')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">빌리지 736-1</td>
+                        <td class="tb_b_r">강원 홍천군 노일로 206-7</td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000207705')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000219756')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">방림리 경노당</td>
+                        <td class="tb_b_r">강원 평창군 방림1길 28-13</td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000219756')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000336209')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">
+                          평창군 보건의료원(신)
+                        </td>
+                        <td class="tb_b_r">
+                          강원 평창군 노성로 11 (평창군 보건의료원(신))
+                        </td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000336209')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000323089')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">
+                          서원주코아루아너스아파트
+                        </td>
+                        <td class="tb_b_r">
+                          강원 원주시 원문로 1700 (서원주 코아루 아너스)
+                        </td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000323089')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000223236')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">시동보건지소</td>
+                        <td class="tb_b_r">강원 홍천군 시동안로 219-5</td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000223236')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000258783')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">장평전송국사</td>
+                        <td class="tb_b_r">강원 평창군 경강로 1968</td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000258783')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000222999')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">신봉분교</td>
+                        <td class="tb_b_r">강원 홍천군 신봉로 178-18</td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000222999')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000198078')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">덕산레미콘</td>
+                        <td class="tb_b_r">
+                          강원 삼척시 삼척로 1371 (덕산레미콘)
+                        </td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000198078')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000223239')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">홍천과수영농조합</td>
+                        <td class="tb_b_r">강원 홍천군 망덕산로 367</td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000223239')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000392949')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">
+                          성남경 건축물(엠프라자 주차타워)
+                        </td>
+                        <td class="tb_b_r">강원 원주시 신지정로 201-3</td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000392949')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000210499')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">이명빈 건물</td>
+                        <td class="tb_b_r">
+                          [지번] 강원특별자치도 원주시 신림면 황둔리 925
+                        </td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000210499')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000223238')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">권강원 축사</td>
+                        <td class="tb_b_r">강원 홍천군 망덕산로349번길 27</td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000223238')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000207398')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">제주고씨 건물</td>
+                        <td class="tb_b_r">
+                          [지번] 강원특별자치도 홍천군 남면 명동리 349-2
+                        </td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000207398')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000222661')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">군사시설(내무반)</td>
+                        <td class="tb_b_r">강원 고성군 초도안길 13-22</td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000222661')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000211407')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">김순열 건물</td>
+                        <td class="tb_b_r">강원 인제군 설악로 3251-7</td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000211407')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000293357')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">귀운터널(상행선)</td>
+                        <td class="tb_b_r">
+                          [지번] 강원특별자치도 동해시 귀운동 6
+                        </td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000293357')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('45000000082515')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">
+                          동전주-태평전력용 지하구/금상동
+                        </td>
+                        <td class="tb_b_r">전북 전주시 덕진구 금상길 64</td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('45000000082515')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000192904')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">최상순가옥</td>
+                        <td class="tb_b_r">
+                          [지번] 강원특별자치도 강릉시 초당동 269
+                        </td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000192904')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000359089')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">심재식A 건축물</td>
+                        <td class="tb_b_r">강원 홍천군 송학로 14-14</td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000359089')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('41000002985091')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">명칭없음</td>
+                        <td class="tb_b_r">
+                          [지번] 경기도 평택시 죽백동 0580번지 580-5
+                        </td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('41000002985091')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000433589')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">
+                          지정면 가곡리 1420-10 단독주택 (박종열)
+                        </td>
+                        <td class="tb_b_r">
+                          [지번] 강원특별자치도 원주시 지정면 가곡리 1420번지
+                          1420-10
+                        </td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000433589')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('29000000027816')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">부광미용실</td>
+                        <td class="tb_b_r">광주 서구 광천1길 15</td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('29000000027816')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000352869')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">
+                          재단법인춘천교구천주교회(우두성당)
+                        </td>
+                        <td class="tb_b_r">강원 춘천시 충열로67번길 19</td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000352869')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000224220')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">황경석건물</td>
+                        <td class="tb_b_r">강원 홍천군 군들길 20</td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000224220')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000219846')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">
+                          남면 생활체육공원(남면다목적체육관)
+                        </td>
+                        <td class="tb_b_r">강원 홍천군 양덕원로 221</td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000219846')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000223551')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">박경희 건물</td>
+                        <td class="tb_b_r">
+                          [지번] 강원특별자치도 홍천군 홍천읍 검율리 38
+                        </td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000223551')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000431949')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">
+                          태양광발전소(매화동길 259-10)
+                        </td>
+                        <td class="tb_b_r">강원 정선군 매화동길 259-10</td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000431949')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000285543')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">물미묘원</td>
+                        <td class="tb_b_r">
+                          강원 영월군 솔치로 240-120 (물미묘원 관리사무소)
+                        </td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000285543')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('45000000092123')"
+                        tabindex="0"
+                      >
+                        <td class="tb_b_r text_center">한솔장례문화원</td>
+                        <td class="tb_b_r">전북 전주시 완산구 모악로 4429</td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('45000000092123')">선택</button></td> -->
+                      </tr>
+
+                      <tr
+                        class="tb_b_b list"
+                        onclick="moveToNext('42000000259988')"
+                      >
+                        <td class="tb_b_r text_center">대일연립</td>
+                        <td class="tb_b_r">강원 원주시 상지대길 66-5</td>
+                        <!-- <td class="text_center"><button class="btn btn-primary btnQnaWrite" onclick="moveToNext('42000000259988')">선택</button></td> -->
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

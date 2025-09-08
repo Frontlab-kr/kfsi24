@@ -35417,7 +35417,7 @@ html.oacxHtml {
   line-height: normal;
 }
 .kfsi-classroom-detail-state-progress__progress p strong {
-  color: #e49800;
+  color: #a87000;
   font-family: Pretendard;
   font-size: 32px;
   font-style: normal;
@@ -35489,7 +35489,7 @@ html.oacxHtml {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #e49800;
+  color: #a87000;
   text-align: center;
   font-family: Pretendard;
   font-size: 20px;
@@ -35808,7 +35808,7 @@ html.oacxHtml {
     line-height: normal;
   }
   .kfsi-classroom-detail-state-progress__progress p strong {
-    color: #e49800;
+    color: #a87000;
     font-family: Pretendard;
     font-size: 26px;
     font-style: normal;
@@ -35882,7 +35882,7 @@ html.oacxHtml {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #e49800;
+    color: #a87000;
     text-align: center;
     font-family: Pretendard;
     font-size: 18px;
@@ -36708,7 +36708,7 @@ html.oacxHtml {
 }
 .kfsi-test-application-list-table-disabled td {
   background: var(--f6f6f6, #f6f6f6);
-  color: #999 !important;
+  color: #787878 !important;
 }
 .kfsi-test-application-list-table .accordion-body {
   background: #f8fff4;
@@ -39110,7 +39110,7 @@ html.oacxHtml {
   margin: 0;
 }
 .kfsi-lecture-menu-state__progress p span {
-  color: #e49800;
+  color: #a87000;
   font-family: Pretendard;
   font-size: 13px;
   font-style: normal;
