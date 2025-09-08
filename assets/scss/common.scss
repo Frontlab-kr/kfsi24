@@ -96,7 +96,7 @@ table {
   margin: 0 auto;
   width: 100%;
   list-style: none;
-  font-size: 1.15em;
+  font-size: 16px;
   top: -10.5em;
   left: 0;
   z-index: 999;
@@ -2174,6 +2174,7 @@ html.oacxHtml {
         border: 2px solid #004d16;
         background: #fff;
         overflow: hidden;
+        padding: 2px 16px;
         .form-control {
           width: 100%;
           height: 46px;
