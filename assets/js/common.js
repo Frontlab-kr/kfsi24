@@ -300,3 +300,233 @@ $(document).ready(function () {
     new bootstrap.Tooltip(tooltipTriggerEl);
   });
 });
+
+//dropzone
+// dropzone.a11y.patch.js  —  코어 다음(그리고 인스턴스 생성 전에) 로드
+(function () {
+  if (!window.Dropzone) return;
+
+  // 자동 초기화로 인한 중복 붙임 방지 (전역 기본값)
+  Dropzone.autoDiscover = false;
+
+  // 전역 기본 옵션(원하시면 조정)
+  // ※ 비즈니스 제약(파일 1개 제한/허용 확장자 등)은 여기서도 통일 가능
+  Dropzone.prototype.defaultOptions = Object.assign(
+    {},
+    Dropzone.prototype.defaultOptions,
+    {
+      // 메시지 현지화
+      dictDefaultMessage: '파일을 이곳에 드래그하세요.',
+      dictFallbackMessage:
+        '이 브라우저는 드래그 앤 드롭 파일 업로드를 지원하지 않습니다.',
+      dictFileTooBig:
+        '파일 크기가 너무 큽니다 ({{filesize}}MB). 최대 크기: {{maxFilesize}}MB.',
+      dictInvalidFileType: '이 파일 형식은 업로드할 수 없습니다.',
+      dictResponseError: '서버에서 {{statusCode}} 에러가 발생했습니다.',
+      dictCancelUpload: '업로드 취소',
+      dictCancelUploadConfirmation: '이 업로드를 정말 취소하시겠습니까?',
+      dictRemoveFile: '파일 삭제',
+      dictMaxFilesExceeded: '더 이상 파일을 업로드할 수 없습니다.',
+    }
+  );
+
+  // --- A11y 보조 유틸 ---
+  function ensureLiveRegion(el) {
+    // 각 Dropzone 폼 옆에 aria-live 영역이 없으면 삽입
+    let live = el.parentNode.querySelector('.dz-a11y-live');
+    if (!live) {
+      live = document.createElement('div');
+      live.className = 'dz-a11y-live';
+      live.setAttribute('aria-live', 'polite');
+      live.style.position = 'absolute';
+      live.style.width = '1px';
+      live.style.height = '1px';
+      live.style.overflow = 'hidden';
+      live.style.clip = 'rect(1px, 1px, 1px, 1px)';
+      live.style.whiteSpace = 'nowrap';
+      live.style.border = '0';
+      live.style.padding = '0';
+      live.style.margin = '-1px';
+      // 폼 바로 뒤에 삽입
+      el.insertAdjacentElement('afterend', live);
+    }
+    return live;
+  }
+
+  function announce(dz, msg) {
+    try {
+      const live = ensureLiveRegion(dz.element);
+      live.textContent = msg;
+    } catch (_) {}
+  }
+
+  function setIfMissing(el, name, val) {
+    if (!el.hasAttribute(name)) el.setAttribute(name, val);
+  }
+
+  // 미리보기 엘리먼트 접근성 보강
+  function enhancePreview(file) {
+    const previewEl = file && file.previewElement;
+    if (!previewEl) return;
+
+    previewEl.setAttribute('role', 'listitem');
+    previewEl.setAttribute('tabindex', '0');
+
+    // 진행바
+    const prog = previewEl.querySelector('.dz-progress');
+    if (prog) {
+      setIfMissing(prog, 'role', 'progressbar');
+      setIfMissing(prog, 'aria-valuemin', '0');
+      setIfMissing(prog, 'aria-valuemax', '100');
+      setIfMissing(prog, 'aria-valuenow', '0');
+    }
+
+    // 삭제 버튼
+    const removeBtn = previewEl.querySelector('.dz-remove');
+    if (removeBtn) {
+      if (removeBtn.tagName !== 'BUTTON') {
+        // a 태그일 경우 키보드 가능하게 보정
+        removeBtn.setAttribute('role', 'button');
+        removeBtn.setAttribute('tabindex', '0');
+      }
+      // 파일명 포함 라벨
+      if (file.name) {
+        const label = `${file.name} 제거`;
+        setIfMissing(removeBtn, 'aria-label', label);
+        // title도 함께
+        setIfMissing(removeBtn, 'title', label);
+      }
+    }
+
+    // 썸네일 대체텍스트
+    const img = previewEl.querySelector('[data-dz-thumbnail]');
+    if (img && file.name) {
+      if (!img.getAttribute('alt') || img.getAttribute('alt') === '') {
+        img.setAttribute('alt', `${file.name} 미리보기 이미지`);
+      }
+    }
+  }
+
+  // Dropzone.init 확장: 폼 역할/키보드/안내문 자동 적용
+  const _origInit = Dropzone.prototype.init;
+  Dropzone.prototype.init = function () {
+    _origInit.call(this);
+
+    const el = this.element;
+
+    // 드롭 영역 자체를 키보드 포커스 가능 + 의미 부여
+    setIfMissing(el, 'role', 'button');
+    setIfMissing(el, 'tabindex', '0');
+    setIfMissing(
+      el,
+      'aria-label',
+      '파일 업로드 영역. 파일을 드래그하거나 Enter/Space 키로 파일 선택 대화상자를 열 수 있습니다.'
+    );
+
+    // aria-describedby 연결 (안내문 없으면 삽입)
+    let descId = el.getAttribute('aria-describedby');
+    if (!descId) {
+      const hint = document.createElement('p');
+      descId = 'dz-a11y-desc-' + Math.random().toString(36).slice(2);
+      hint.id = descId;
+      hint.textContent =
+        '파일을 드래그 앤 드롭하거나 Enter 또는 Space 키를 눌러 파일을 선택하세요.';
+      // 시각 숨김
+      hint.style.position = 'absolute';
+      hint.style.width = '1px';
+      hint.style.height = '1px';
+      hint.style.overflow = 'hidden';
+      hint.style.clip = 'rect(1px, 1px, 1px, 1px)';
+      hint.style.whiteSpace = 'nowrap';
+      hint.style.border = '0';
+      hint.style.padding = '0';
+      hint.style.margin = '-1px';
+      el.insertAdjacentElement('afterbegin', hint);
+      el.setAttribute('aria-describedby', descId);
+    }
+
+    // 키보드로 파일 선택 열기
+    el.addEventListener('keydown', (e) => {
+      if (e.key === ' ' || e.key === 'Spacebar' || e.key === 'Enter') {
+        e.preventDefault();
+        // Dropzone 내부 숨김 input 트리거
+        const input =
+          this.hiddenFileInput || el.querySelector('input[type=file]');
+        if (input) input.click();
+      }
+    });
+
+    // 포커스 가시화(간단 클래스 토글; CSS는 프로젝트 공통 CSS에서 처리)
+    el.addEventListener('focus', () => el.classList.add('is-focused'));
+    el.addEventListener('blur', () => el.classList.remove('is-focused'));
+
+    // 미리보기 컨테이너가 <ul>이면 role=list 지정
+    try {
+      const previewsContainer = this.getExistingFallback()
+        ? null
+        : this.previewsContainer;
+      if (previewsContainer && previewsContainer.tagName === 'UL') {
+        setIfMissing(previewsContainer, 'role', 'list');
+        setIfMissing(previewsContainer, 'aria-label', '업로드 파일 목록');
+      }
+    } catch (_) {}
+
+    // 이벤트 훅으로 라이브 영역 안내 + aria 업데이트
+    this.on('addedfile', (file) => {
+      enhancePreview(file);
+      announce(this, `파일 추가: ${file.name || '알 수 없는 파일'}`);
+    });
+
+    this.on('uploadprogress', (file, progress /*, bytesSent */) => {
+      const previewEl = file.previewElement;
+      const prog = previewEl && previewEl.querySelector('.dz-progress');
+      if (prog) prog.setAttribute('aria-valuenow', Math.round(progress || 0));
+      if (progress === 100) {
+        announce(this, `${file.name} 업로드 처리 중`);
+      }
+    });
+
+    this.on('success', (file) => {
+      announce(this, `업로드 성공: ${file.name}`);
+    });
+
+    this.on('error', (file, msg) => {
+      announce(
+        this,
+        `업로드 실패: ${file && file.name ? file.name + '. ' : ''}오류: ${msg}`
+      );
+    });
+
+    this.on('removedfile', (file) => {
+      announce(this, `파일 제거: ${file.name}`);
+      // 제거 후 드롭영역으로 포커스 복귀(선호 시)
+      try {
+        el.focus();
+      } catch (_) {}
+    });
+
+    // 미리보기 리스트에서 Delete/Backspace로 삭제
+    if (this.previewsContainer) {
+      this.previewsContainer.addEventListener('keydown', (e) => {
+        const focused = document.activeElement;
+        if (
+          !focused ||
+          !focused.classList ||
+          !focused.classList.contains('dz-file-preview')
+        )
+          return;
+        if (e.key === 'Delete' || e.key === 'Backspace') {
+          e.preventDefault();
+          const removeBtn = focused.querySelector('.dz-remove');
+          if (removeBtn) removeBtn.click();
+        }
+        if (e.key === 'Escape') {
+          e.preventDefault();
+          try {
+            el.focus();
+          } catch (_) {}
+        }
+      });
+    }
+  };
+})();
