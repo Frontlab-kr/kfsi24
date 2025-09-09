@@ -19276,7 +19276,7 @@ small, .small {
 .btn:disabled, .btn-disabled {
   border-color: #eee !important;
   background-color: #eee !important;
-  color: #999 !important;
+  color: #787878 !important;
 }
 
 .dropdown-toggle {
@@ -25185,6 +25185,9 @@ html.oacxHtml {
 }
 .kfsi-footer-site-select ul li a:hover {
   background-color: #ebf2f5;
+}
+.kfsi-footer-site-select.active button::after {
+  content: "-";
 }
 .kfsi-footer-site-select.active ul {
   display: block;
