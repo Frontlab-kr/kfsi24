@@ -886,7 +886,32 @@
       $('html').toggleClass('kfsi--search');
     });
 
-    //header title
-    $('.kfsi-header-title').html($('.kfsi-contents-title h1').text());
+    // header title
+    // .hidden을 제외한 텍스트만 가져오기
+    function visibleText($el) {
+      return $el
+        .clone() // 원본 영향 없음
+        .find('.hidden')
+        .remove() // 숨김 텍스트 제거
+        .end()
+        .text()
+        .trim();
+    }
+    var $headerTitle = $('.kfsi-header-title');
+    var title = '';
+
+    if ($('.kfsi-snb-item.active').length) {
+      title = visibleText($('.kfsi-snb-item.active').first());
+    }
+    if (!title) {
+      title = visibleText($('.kfsi-contents-title h1').first());
+    }
+
+    if ($('.kfsi-snb-item-sub.active > a').length) {
+      title = visibleText($('.kfsi-snb-item-sub.active > a').first());
+    }
+
+    $headerTitle.html(title);
+    $('.kfsi-header-menu-list-item:eq(0)').addClass('active');
   });
 </script>
