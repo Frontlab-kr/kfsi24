@@ -852,28 +852,71 @@
         }
       }
     });
+    // 스크롤 잠금/복원 유틸
+    let _prevScrollY = 0;
+    function lockScrollAtTop() {
+      _prevScrollY =
+        window.pageYOffset || document.documentElement.scrollTop || 0;
+      window.scrollTo(0, 0); // 항상 맨 위
+      $('body').css({
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        width: '100%',
+        overflow: 'hidden',
+      });
+    }
+    function unlockScroll() {
+      $('body').css({
+        position: '',
+        top: '',
+        left: '',
+        right: '',
+        width: '',
+        overflow: '',
+      });
+      window.scrollTo(0, _prevScrollY); // 닫을 때 기존 위치 복원
+    }
 
-    $('.kfsi-header-menu-nav-item').on('click', function (e) {
-      $('.kfsi-header-menu-nav-item').removeClass('active');
-
-      $(this).addClass('active');
-
-      $('.kfsi-header-menu-list-item').removeClass('active');
-
-      const targetId = $(this).attr('href').substring(1);
-      $('#' + targetId).addClass('active');
-    });
-
-    $('.kfsi-header-menu-nav-item').on('click', function () {
-      $('.kfsi-header-menu-nav-item').removeClass('active');
-      $(this).addClass('active');
-    });
-    $('.kfsi-header-menu__open,.kfsi-header-menu__close').on(
+    // 메뉴 토글
+    $('.kfsi-header-menu__open, .kfsi-header-menu__close').on(
       'click',
       function () {
-        $('html').toggleClass('kfsi--menu');
+        const isOpen = $('html')
+          .toggleClass('kfsi--menu')
+          .hasClass('kfsi--menu');
+        if (isOpen) {
+          lockScrollAtTop();
+        } else {
+          unlockScroll();
+        }
       }
     );
+
+    // 메뉴 아이템 클릭
+    $('.kfsi-header-menu-nav-item').on('click', function (e) {
+      e.preventDefault(); // 기본 앵커 스크롤 방지
+
+      // active 토글 (중복 핸들러 제거하고 한 번만)
+      $('.kfsi-header-menu-nav-item').removeClass('active');
+      $(this).addClass('active');
+
+      // 대상 섹션 활성화
+      $('.kfsi-header-menu-list-item').removeClass('active');
+      const href = $(this).attr('href');
+      if (href && href.startsWith('#')) {
+        const targetId = href.substring(1);
+        $('#' + targetId).addClass('active');
+      }
+
+      // 메뉴가 열린 상태면 항상 맨 위 유지
+      if ($('html').hasClass('kfsi--menu')) {
+        // 두 번 보정: 즉시 0, 렌더 후 한 번 더 0
+        $(window).scrollTop(0);
+        requestAnimationFrame(() => $(window).scrollTop(0));
+      }
+    });
 
     //search
     $('.kfsi-header .btn-search,.kfsi-header-head-search-close').on(
