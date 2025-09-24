@@ -833,6 +833,7 @@ $mobileWidth: 992px;
           }
           strong {
             color: #333;
+            text-decoration: underline;
           }
         }
       }
@@ -1384,6 +1385,9 @@ $mobileWidth: 992px;
           &:checked ~ .form-check-label::after {
             opacity: 1;
           }
+          &:focus-visible ~ .form-check-label {
+            outline: 3px dotted red !important;
+          }
         }
         &-label {
           width: 100%;
@@ -1519,6 +1523,10 @@ $mobileWidth: 992px;
           }
           &:checked ~ .form-check-label::after {
             opacity: 1;
+          }
+          &:focus ~ .form-check-label {
+            outline: 3px dotted red !important;
+            outline-offset: -4px;
           }
         }
         &-label {

@@ -3127,6 +3127,7 @@ textarea.form-control-lg {
   background-position: center;
   background-size: contain;
   border: var(--bs-border-width) solid var(--bs-border-color);
+  border-color: #666;
   -webkit-print-color-adjust: exact;
           print-color-adjust: exact;
 }
@@ -19137,6 +19138,10 @@ small, .small {
   border-radius: 10px !important;
 }
 
+.btn-close {
+  opacity: 1 !important;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -21010,6 +21015,7 @@ small, .small {
 }
 .kfsi-nav ol li.active strong {
   color: #333;
+  text-decoration: underline;
 }
 @media screen and (max-width: 992px) {
   .kfsi-nav {
@@ -21508,6 +21514,9 @@ small, .small {
 .kfsi-radio-type1 .form-check-input:checked ~ .form-check-label::after {
   opacity: 1;
 }
+.kfsi-radio-type1 .form-check-input:focus-visible ~ .form-check-label {
+  outline: 3px dotted red !important;
+}
 .kfsi-radio-type1 .form-check-label {
   width: 100%;
   color: #666;
@@ -21645,6 +21654,10 @@ small, .small {
 }
 .kfsi-radio-type3 .form-check-input:checked ~ .form-check-label::after {
   opacity: 1;
+}
+.kfsi-radio-type3 .form-check-input:focus ~ .form-check-label {
+  outline: 3px dotted red !important;
+  outline-offset: -4px;
 }
 .kfsi-radio-type3 .form-check-label {
   position: relative;
@@ -22709,6 +22722,10 @@ small, .small {
 .kfsi-search-form-filter-radio .form-check-input:checked ~ .form-check-label {
   color: #054a9d;
   border-color: #054a9d;
+}
+.kfsi-search-form-filter-radio .form-check-input:focus-visible ~ .form-check-label {
+  outline: 3px dotted red !important;
+  outline-offset: -2px;
 }
 .kfsi-search-form-filter-radio .form-check-label {
   display: flex;
@@ -23982,6 +23999,7 @@ small, .small {
 }
 :focus-visible {
   outline: 3px dotted red !important;
+  outline-offset: -2px;
 }
 
 #header {
@@ -24208,6 +24226,9 @@ html.oacxHtml {
   justify-content: space-between;
   height: 90px;
 }
+.kfsi-header-head h1 a, .kfsi-header-head .h1 a {
+  display: flex;
+}
 .kfsi-header-head-menu {
   display: flex;
   gap: 10px;
@@ -24248,6 +24269,7 @@ html.oacxHtml {
   overflow: hidden;
 }
 .kfsi-header-head-search-form .form-control {
+  width: 100%;
   height: 100%;
   border: none;
   padding: 0 36px;
@@ -24300,6 +24322,7 @@ html.oacxHtml {
 .kfsi-header-head-search-keyword-list {
   display: flex;
   justify-content: space-between;
+  gap: 100px;
   width: 100%;
 }
 .kfsi-header-head-search-keyword-list-button {
@@ -27044,7 +27067,9 @@ html.oacxHtml {
   padding: 24px 0 22px 0;
   border-bottom: 1px solid #000;
 }
-.kfsi-contents-title h1, .kfsi-contents-title .h1 {
+.kfsi-contents-title h1, .kfsi-contents-title .h1,
+.kfsi-contents-title h3,
+.kfsi-contents-title .h3 {
   margin: 0;
   color: #000;
   font-family: Pretendard;
@@ -27077,7 +27102,9 @@ html.oacxHtml {
     padding: 24px 0 22px 0;
     border-bottom: 1px solid #000;
   }
-  .kfsi-contents-title h1, .kfsi-contents-title .h1 {
+  .kfsi-contents-title h1, .kfsi-contents-title .h1,
+  .kfsi-contents-title h3,
+  .kfsi-contents-title .h3 {
     margin: 0;
     font-size: 24px;
     font-weight: bold;
@@ -30668,6 +30695,7 @@ html.oacxHtml {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.54px;
+  text-decoration: underline;
 }
 @media screen and (max-width: 992px) {
   .kfsi-tab02 > .nav {
@@ -36591,6 +36619,7 @@ html.oacxHtml {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.42px;
+  text-decoration: underline;
 }
 .kfsi-test-nav ul li:nth-child(1)::before {
   background: #fff url(./../images/test/nav01-on.svg) no-repeat 50% 50%;
@@ -37385,7 +37414,7 @@ html.oacxHtml {
   margin: 0;
 }
 .kfsi-training-head-category-item .form-check-label {
-  color: #999;
+  color: #787878;
   font-family: Pretendard;
   font-size: 15px;
   font-style: normal;
@@ -37549,7 +37578,8 @@ html.oacxHtml {
   flex-wrap: wrap;
   gap: 10px;
 }
-.kfsi-training-head-filter-button button {
+.kfsi-training-head-filter-button button,
+.kfsi-training-head-filter-button span {
   display: inline-flex;
   height: 24px;
   padding: 0 16px;
@@ -39091,7 +39121,7 @@ html.oacxHtml {
 }
 .kfsi-lecture-menu-state__title p span {
   margin-right: 10px;
-  color: #999;
+  color: #787878;
 }
 .kfsi-lecture-menu-state__progress {
   padding: 26px 20px;

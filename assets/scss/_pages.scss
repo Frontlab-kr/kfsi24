@@ -877,6 +877,10 @@ $mobileWidth: 992px;
               color: #054a9d;
               border-color: #054a9d;
             }
+            &:focus-visible ~ .form-check-label {
+              outline: 3px dotted red !important;
+              outline-offset: -2px;
+            }
           }
           .form-check-label {
             display: flex;

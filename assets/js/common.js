@@ -233,6 +233,119 @@ $(document).ready(function () {
     });
   });
 
+  //h1 수정
+  $('.kfsi-contents-title h1').each(function () {
+    // h1의 내용과 속성을 그대로 가져와서 h3로 교체
+    var $h1 = $(this);
+    var $h3 = $('<h3>').html($h1.html());
+
+    // h1에 있던 속성이 있다면 복사
+    $.each(this.attributes, function () {
+      if (this.specified) {
+        $h3.attr(this.name, this.value);
+      }
+    });
+
+    $h1.replaceWith($h3);
+  });
+
+  //ico-remove
+  $(function () {
+    setTimeout(() => {
+      $('.ico-remove').attr('tabindex', '0');
+    }, 500);
+  });
+
+  //교육
+  $(function () {
+    // .btn01 → .kfsi-lecture-menu-index로 포커스
+    $(document).on('click', '.kfsi-lecture-menu-list .btn01', function () {
+      $('.kfsi-lecture-menu-index').attr('tabindex', '-1').focus();
+    });
+
+    // .btn02 → .kfsi-lecture-menu-state로 포커스
+    $(document).on('click', '.kfsi-lecture-menu-list .btn02', function () {
+      $('.kfsi-lecture-menu-state').attr('tabindex', '-1').focus();
+    });
+
+    // .kfsi-lecture-menu-index__head button → .btn01로 포커스
+    $(document).on(
+      'click',
+      '.kfsi-lecture-menu-index__head button',
+      function () {
+        $('.kfsi-lecture-menu-list .btn01').focus();
+      }
+    );
+
+    // .kfsi-lecture-menu-state__head → .btn02로 포커스
+    $(document).on('click', '.kfsi-lecture-menu-state__head', function () {
+      $('.kfsi-lecture-menu-list .btn02').focus();
+    });
+  });
+
+  //
+  $(function () {
+    function updateActiveButtonTitles() {
+      // 모든 버튼에서 title 제거
+      $('.kfsi-training-head-category-item-button-item button').removeAttr(
+        'title'
+      );
+
+      // active 된 버튼-item 안의 버튼에 title="선택됨" 추가
+      $('.kfsi-training-head-category-item-button-item.active button').attr(
+        'title',
+        '선택됨'
+      );
+    }
+
+    // 초기 적용
+    updateActiveButtonTitles();
+
+    // DOM class 변경 감지 → 자동 반영
+    const observer = new MutationObserver(updateActiveButtonTitles);
+    observer.observe(document.body, {
+      attributes: true,
+      subtree: true,
+      attributeFilter: ['class'],
+    });
+
+    // 혹시 동적 추가 대비 이벤트 기반 갱신도 추가
+    $(document).on(
+      'click change',
+      '.kfsi-training-head-category-item button, input[type=radio][name=radio1]',
+      function () {
+        updateActiveButtonTitles();
+      }
+    );
+  });
+  $(function () {
+    function updateActiveTabTitles() {
+      // 모든 탭의 title 제거
+      $('.kfsi-training-head-tab a').removeAttr('title');
+      // active 탭에만 title="선택됨"
+      $('.kfsi-training-head-tab a.active').attr('title', '선택됨');
+    }
+
+    // 초기 1회 적용
+    updateActiveTabTitles();
+
+    // 탭 클릭/변경 시 갱신 (기존 코드와 독립적으로 동작)
+    $(document).on('click', '.kfsi-training-head-tab a', function () {
+      // 기존 코드에서 active 토글한 뒤 호출되도록 약간 지연
+      setTimeout(updateActiveTabTitles, 0);
+    });
+
+    // class 변경 등으로 active가 바뀌는 경우 자동 감지
+    const observer = new MutationObserver(function () {
+      updateActiveTabTitles();
+    });
+    observer.observe(document.body, {
+      attributes: true,
+      subtree: true,
+      attributeFilter: ['class'],
+    });
+  });
+
   // $('.kfsi-datepicker').datepicker({
   //   language: 'ko',
   //   format: 'yyyy/mm/dd',
@@ -307,7 +420,7 @@ $(document).ready(function () {
   if (!window.Dropzone) return;
 
   // 자동 초기화로 인한 중복 붙임 방지 (전역 기본값)
-  Dropzone.autoDiscover = false;
+  //Dropzone.autoDiscover = false;
 
   // 전역 기본 옵션(원하시면 조정)
   // ※ 비즈니스 제약(파일 1개 제한/허용 확장자 등)은 여기서도 통일 가능
