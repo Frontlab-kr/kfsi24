@@ -4575,6 +4575,7 @@ textarea.form-control-lg {
 .nav-link:focus-visible {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(15, 99, 39, 0.25);
+  z-index: 20 !important;
 }
 .nav-link.disabled, .nav-link:disabled {
   color: var(--bs-nav-link-disabled-color);
