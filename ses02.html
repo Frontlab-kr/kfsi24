@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="skip">
+        <a href="#kfsi-body">본문 내용 바로가기</a>
+      </div>
+      <header class="kfsi-header">
+        <div class="pc">
+          <div class="kfsi-header-head">
+            <div class="kfsi-inner">
+              <h1>
+                <a href="./index.html" class="kfsi-header-logo">
+                  <img
+                    src="./assets/images/ses/logo.png"
+                    alt="소방행정지원시스템"
+                    style="width: auto; height: 30px"
+                  />
+                </a>
+              </h1>
+
+              <div class="kfsi-header-head-menu">
+                <div class="kfsi-header-head-menu-logo">
+                  <img
+                    src="./assets/images/ses/logo01.svg"
+                    alt="소방청 National Fire Agency 119"
+                  />
+                  <img
+                    src="./assets/images/ses/logo02.svg"
+                    alt="한국소방안전원 KOREA FIRE SAFETY INSTITUTE"
+                  />
+                </div>
+                <a href="" class="btn btn-outline-secondary btn-sm btn-round">
+                  <i class="ico-login"></i>
+                  로그인
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mo" style="width: 100%; height: 100%">
+          <div class="kfsi-header-sub">
+            <div class="kfsi-header-back">
+              <button onclick="history.back()">뒤로가기</button>
+            </div>
+            <div class="kfsi-header-title"></div>
+            <div class="kfsi-header-button">
+              <a href="../index.html" class="kfsi-header-home">홈</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <script>
+        $(document).ready(function () {
+          // header title
+          // .hidden을 제외한 텍스트만 가져오기
+          function visibleText($el) {
+            return $el
+              .clone() // 원본 영향 없음
+              .find('.hidden')
+              .remove() // 숨김 텍스트 제거
+              .end()
+              .text()
+              .trim();
+          }
+          var $headerTitle = $('.kfsi-header-title');
+          var title = '';
+
+          if ($('.kfsi-snb-item.active').length) {
+            title = visibleText($('.kfsi-snb-item.active').first());
+          }
+          if (!title) {
+            title = visibleText($('.kfsi-contents-title h1').first());
+          }
+
+          if ($('.kfsi-snb-item-sub.active > a').length) {
+            title = visibleText($('.kfsi-snb-item-sub.active > a').first());
+          }
+
+          $headerTitle.html(title);
+          $('.kfsi-header-menu-list-item:eq(0)').addClass('active');
+        });
+      </script>
+
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>이용안내</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">이용신청</a>
+              <a href="" class="kfsi-snb-item active">해지신청</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">이용안내</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      해지신청
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>해지신청</h1>
+              </div>
+              <div>
+                <p>
+                  인증서의 해지를 필요한 경우 신청하는 페이지입니다. 해지사유를
+                  입력후 신청시 곧바로 해지 처리됩니다.<br />
+                  <strong class="text-danger">
+                    ※ 문의사항 : SES 고객센터 02-850-1377
+                  </strong>
+                </p>
+                <div class="kfsi-board">
+                  <div class="kfsi-board-write">
+                    <div class="kfsi-board-write-form">
+                      <table>
+                        <caption>
+                          해지신청 테이블
+                        </caption>
+                        <colgroup>
+                          <col style="width: 180px" />
+                          <col style="width: 760px" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row">해지사유</th>
+                            <td class="text-start">
+                              <div class="w-100">
+                                <textarea
+                                  class="form-control w-100"
+                                  style="height: 200px"
+                                  title="해지사유"
+                                ></textarea>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-button">
+                  <p>
+                    <button type="button" class="btn btn-primary btn-lg">
+                      해지신청
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="kfsi-footer">
+        <div class="kfsi-inner">
+          <div class="kfsi-footer-ses">
+            <img
+              src="./assets/images/ses/logo-footer.png"
+              alt="소방행정지원시스템"
+            />
+            <p>
+              <strong>문의 : 소방행정지원시스템 고객센터 02-850-1377</strong
+              ><br />
+              COPYRIGHT ⓒ 2019 소방청·한국소방안전원 All rights reserved.
+            </p>
+          </div>
+          <div class="kfsi-footer-foot">
+            <div>
+              <div class="kfsi-footer-menu">
+                <a href=""><strong>개인정보처리방침</strong></a>
+                <a href="">영상정보처리기기 운영관리 방침</a>
+                <a href="">이용약관</a>
+                <a href="" class="underline">원격지원서비스</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

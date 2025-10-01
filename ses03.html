@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="skip">
+        <a href="#kfsi-body">본문 내용 바로가기</a>
+      </div>
+      <header class="kfsi-header">
+        <div class="pc">
+          <div class="kfsi-header-head">
+            <div class="kfsi-inner">
+              <h1>
+                <a href="./index.html" class="kfsi-header-logo">
+                  <img
+                    src="./assets/images/ses/logo.png"
+                    alt="소방행정지원시스템"
+                    style="width: auto; height: 30px"
+                  />
+                </a>
+              </h1>
+
+              <div class="kfsi-header-head-menu">
+                <div class="kfsi-header-head-menu-logo">
+                  <img
+                    src="./assets/images/ses/logo01.svg"
+                    alt="소방청 National Fire Agency 119"
+                  />
+                  <img
+                    src="./assets/images/ses/logo02.svg"
+                    alt="한국소방안전원 KOREA FIRE SAFETY INSTITUTE"
+                  />
+                </div>
+                <a href="" class="btn btn-outline-secondary btn-sm btn-round">
+                  <i class="ico-login"></i>
+                  로그인
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mo" style="width: 100%; height: 100%">
+          <div class="kfsi-header-sub">
+            <div class="kfsi-header-back">
+              <button onclick="history.back()">뒤로가기</button>
+            </div>
+            <div class="kfsi-header-title"></div>
+            <div class="kfsi-header-button">
+              <a href="../index.html" class="kfsi-header-home">홈</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <script>
+        $(document).ready(function () {
+          // header title
+          // .hidden을 제외한 텍스트만 가져오기
+          function visibleText($el) {
+            return $el
+              .clone() // 원본 영향 없음
+              .find('.hidden')
+              .remove() // 숨김 텍스트 제거
+              .end()
+              .text()
+              .trim();
+          }
+          var $headerTitle = $('.kfsi-header-title');
+          var title = '';
+
+          if ($('.kfsi-snb-item.active').length) {
+            title = visibleText($('.kfsi-snb-item.active').first());
+          }
+          if (!title) {
+            title = visibleText($('.kfsi-contents-title h1').first());
+          }
+
+          if ($('.kfsi-snb-item-sub.active > a').length) {
+            title = visibleText($('.kfsi-snb-item-sub.active > a').first());
+          }
+
+          $headerTitle.html(title);
+          $('.kfsi-header-menu-list-item:eq(0)').addClass('active');
+        });
+      </script>
+
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>이용안내</h2>
+              </div>
+              <a href="" class="kfsi-snb-item active">이용신청</a>
+              <a href="" class="kfsi-snb-item">해지신청</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">이용안내</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      이용신청
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>이용신청</h1>
+              </div>
+              <div>
+                <div class="ses-application">
+                  <dl>
+                    <dt>신청서 작성</dt>
+                    <dd>
+                      <div>
+                        이용신청
+                        <p>
+                          ※ 개인정보 수집 활용 동의 등에 <br />
+                          동의한 자에 한하여 접수
+                        </p>
+                      </div>
+                    </dd>
+                  </dl>
+                  <strong>신청</strong>
+                  <dl>
+                    <dt>본인확인</dt>
+                    <dd>
+                      <div>
+                        소방민원정보시스템 연계한<br />
+                        소방공무원 본인여부 확인<br />
+                        (자동처리)
+                      </div>
+                    </dd>
+                  </dl>
+                  <strong>승인</strong>
+                  <dl>
+                    <dt>로그인</dt>
+                    <dd>
+                      <div>
+                        GPKI인증서 및 본인확인<br />
+                        정보가 일치하는 경우에<br />
+                        한하여 시스템 이용<br />
+                        (로그인)
+                      </div>
+                    </dd>
+                  </dl>
+                </div>
+                <p class="mb-10 text-danger">
+                  ※ 이용 문의사항은 소방행정지원시스템(SES) 고객센터 02-850-1377
+                </p>
+                <div class="kfsi-agree-form">
+                  <div class="kfsi-agree-form__title">이용약관 (필수선택)</div>
+                  <div
+                    class="kfsi-agree-form__contents"
+                    style="height: 300px; overflow: auto"
+                  >
+                    <div class="border-box mgt10">
+                      <p class="p-txt">제1조&nbsp;&nbsp;&nbsp;목적</p>
+                      <p class="p-txt">제2조&nbsp;&nbsp;&nbsp;정의</p>
+                      <p class="p-txt">
+                        제3조&nbsp;&nbsp;&nbsp;약관의 효력 및 변경
+                      </p>
+                      <p class="p-txt">제4조&nbsp;&nbsp;&nbsp;서비스의 제공</p>
+                      <p class="p-txt">제5조&nbsp;&nbsp;&nbsp;서비스의 중단</p>
+                      <p class="p-txt">제6조&nbsp;&nbsp;&nbsp;가입절차</p>
+                      <p class="p-txt">
+                        제7조&nbsp;&nbsp;&nbsp;탈퇴 및 제명 등
+                      </p>
+                      <p class="p-txt">제8조&nbsp;&nbsp;&nbsp;개인정보보호</p>
+                      <p class="p-txt">
+                        제9조&nbsp;&nbsp;&nbsp;게시물 또는 내용물의 삭제
+                      </p>
+                      <p class="p-txt">
+                        제10조&nbsp;&nbsp;&nbsp;게시물의 저작권
+                      </p>
+                      <p class="p-txt">
+                        제11조&nbsp;&nbsp;&nbsp;안전원의 소유권
+                      </p>
+                      <p class="p-txt">제12조&nbsp;&nbsp;&nbsp;안전원의 의무</p>
+                      <p class="p-txt">
+                        제13조&nbsp;&nbsp;&nbsp;이용자의 행정전자서명 및
+                        비밀번호에 대한 의무
+                      </p>
+                      <p class="p-txt">제14조&nbsp;&nbsp;&nbsp;사용자의 의무</p>
+                      <p class="p-txt">제15조&nbsp;&nbsp;&nbsp;손해배상</p>
+                      <p class="p-txt">제16조&nbsp;&nbsp;&nbsp;면책조항</p>
+                      <p class="p-txt">제17조&nbsp;&nbsp;&nbsp;관할법원</p>
+                    </div>
+                    <p class="p-title">제1조 (목적)</p>
+                    <p class="p-txt mgt15">
+                      이 약관은 한국소방안전원(이하 "안전원"이라 한다)가
+                      운영하는 소방행정지원시스템(이하 "시스템"이라 한다)에서
+                      제공하는 인터넷 및 모바일 앱 관련 서비스(이하 "서비스"라
+                      한다)를 이용함에 있어 안전원과 이용자 간의 권리·의무 및
+                      책임사항과 기타 필요한 사항을 규정함을 목적으로 합니다.
+                    </p>
+                    <p class="p-title">제2조 (정의)</p>
+                    <ul class="ul-txt">
+                      <li>
+                        ① 이 약관에서 사용하는 용어의 정의는 다음과 같습니다.
+                        <ul>
+                          <li>
+                            1. "이용자" 라 함은 시스템에 접속하여 안전원이
+                            제공하는 서비스를 받는 소방공무원을 말하며,
+                            행정전자서명인증서(GPKI)과 소방민원정보시스템
+                            (사용자 정보)의 본인확인 후 정상적인 로그인 하여
+                            사용하는 자를 말한다.
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        ② 이 약관에서 사용하는 용어의 정의는 제1항에서 정하는
+                        것을 제외하고는 관계법령 및 서비스별 안내에서 정하는
+                        바에 의합니다.
+                      </li>
+                    </ul>
+                    <p class="p-title">제3조 (약관의 효력 및 변경)</p>
+                    <ul class="ul-txt">
+                      <li>
+                        ① 이 약관은 시스템 초기화면에 게시하거나 기타의 방법으로
+                        공지함으로써 이용자에게 공시하고, 이에 동의한 이용자가
+                        시스템에 가입함으로써 효력이 발생합니다.
+                      </li>
+                      <li>
+                        ② 안전원은 약관의 규제에 관한 법률(전자서명법,
+                        정보통신망이용촉진및정보보호등에관한법률, 소비자보호법
+                        등)에 위배하지 않는 범위에서 이 약관을 변경할 수 있으며,
+                        변경된 약관은 시스템 초기화면에 공지합니다.
+                      </li>
+                      <li>
+                        ③ 이용자는 변경된 약관에 동의하지 않을 경우 시스템
+                        이용을 중단하고 본인의 사용자등록을 취소할 수 있으며,
+                        계속 사용하시는 경우는 약관 변경에 동의한 것으로
+                        간주되며 변경된 약관은 전항과 같은 방법으로 효력이
+                        발생합니다. ④ 이용자가 이 약관의 내용에 동의하는 경우
+                        안전원의 서비스 제공행위 및 이용자의 서비스 이용행위에는
+                        이 약관이 우선적으로 적용되며 약관에 명시 되지 않은
+                        사항에 대해서는 정부가 제정한 관계법령 또는 상관습에
+                        의합니다.
+                      </li>
+                    </ul>
+                    <p class="p-title">제4조 (서비스의 제공)</p>
+                    <p class="p-txt mgt15">
+                      시스템에서 제공되는 서비스는 이용자별로 권한을 부여하여
+                      제공됩니다.
+                    </p>
+                    <p class="p-title">제5조 (서비스의 중단)</p>
+                    <ul class="ul-txt">
+                      <li>
+                        ① 시스템은 컴퓨터 등 정보통신설비의 보수점검·교체 및
+                        고장, 통신의 두절 등의 사유가 발생한 경우에는 서비스의
+                        제공을 일시적으로 중단할 수 있습니다.
+                      </li>
+                      <li>
+                        ② 이용자는 시스템에 보관되거나 전송된 메시지 및 기타
+                        통신 메시지 등의 내용이 시스템에서 통제할 수 없는
+                        사유(자연재해, 정전,디스크 장애, 시스템 다운 등)에
+                        의하여 보관되지 못하거나 삭제된 경우는 안전원에 아무런
+                        책임을 지지 않음에 동의합니다.
+                      </li>
+                      <li>
+                        ③ 정상적인 서비스 제공의 어려움으로 인하여 일시적으로
+                        서비스를 중지하여야 할 경우에는 서비스 중지 고지 후
+                        서비스를 중지할 수 있으며, 이 기간 동안 이용자가
+                        고지내용을 인지하지 못한데 대하여 안전원은 책임을
+                        부담하지 아니합니다. 또한, 위 서비스 중지에 의하여
+                        손실된 데이터가 있을 경우에 대하여도 안전원은 책임을
+                        부담하지 아니합니다.
+                      </li>
+                    </ul>
+                    <p class="p-title">제6조 (가입 절차)</p>
+                    <ul class="ul-txt">
+                      <li>
+                        ① 이용자는 시스템에서 정한 약관에 대한 동의 및 개인정보
+                        수집·이용에 대한 동의, 시스템 이용과 관련 추가적인
+                        사항등에 대해 양식에 정보를 기록하는 방법으로 이용가입을
+                        신청하여 안전원의 이용자 사실확인 절차를 거쳐 승인처리
+                        후 이용이 가능합니다.
+                      </li>
+                      <li>
+                        ② 시스템에 제1항과 같이 승인된 이용자는 다음 각 호에
+                        해당하지 않는 한 이용자로 등록 합니다.
+                        <ul>
+                          <li>
+                            1. 제7조 2항에 의하여 이전에 이용자의 자격을 상실한
+                            자
+                          </li>
+                          <li>
+                            2. 등록 내용에 허위, 기재누락, 오기가 있는 경우
+                          </li>
+                          <li>3. 다른 사람의 명의를 사용한 경우</li>
+                          <li>
+                            4. 기타 안전원이 정한 이용신청 요건이 미비한 경우
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        ③ 이용자는 본인정보관리를 통해 본인의 정보를 열람하고
+                        수정할 수 있습니다. 이용자는 본인정보에 변경이 있을 경우
+                        수정하여야 하며, 수정하지 아니하여 발생하는 문제의
+                        책임은 이용자에게 있습니다.
+                      </li>
+                    </ul>
+                    <p class="p-title">제7조 (탈퇴 및 제명 등)</p>
+                    <ul class="ul-txt">
+                      <li>
+                        ① 승인된 이용자는 시스템을 언제든지 탈퇴 할 수 있습니다.
+                      </li>
+                      <li>
+                        ② 안전원은 승인된 이용자가 다음 각 호에 해당하는 행위를
+                        하였을 경우 사전통지 없이 시스템에서 제명할 수 있습니다.
+                        <ul>
+                          <li>
+                            1. 비 실명가입, 주민등록번호의 도용 등 승인된
+                            이용자가 제공한 데이터가 허위임이 판명된 경우
+                          </li>
+                          <li>2. 범죄적 행위에 관련되는 경우</li>
+                          <li>
+                            3. 국익 또는 사회적 공익을 저해할 목적으로 서비스
+                            이용을 계획 또는 실행할 경우
+                          </li>
+                          <li>
+                            4. 타인의 서비스 아이디 및 비밀 번호를 도용한 경우
+                          </li>
+                          <li>
+                            5. 타인의 명예를 손상시키거나 불이익을 주는 경우
+                          </li>
+                          <li>
+                            6. 같은 사용자가 다른 아이디로 이중 등록을 한 경우
+                          </li>
+                          <li>
+                            7. 서비스에 위해를 가하는 등 서비스의 건전한 이용을
+                            저해하는 경우
+                          </li>
+                          <li>8. 안전원에 대내외적으로 손해를 끼친 경우</li>
+                          <li>
+                            9. 기타 관련법령이나 안전원이 정한 이용조건에
+                            위배되는 경우
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <p class="p-title">제8조 (개인정보보호)</p>
+                    <p class="p-txt mgt15">
+                      시스템은 관계법령이 정하는 바에 따라서 이용자 등록정보를
+                      포함한 이용자의 개인정보를 보호하기 위하여 노력합니다.
+                      개인정보 보호에 관해서는 관계법령 및 시스템이 정하는
+                      "개인정보처리방침"에 정한 바에 의합니다.
+                    </p>
+                    <p class="p-title">제9조 (게시물 또는 내용물의 삭제)</p>
+                    <ul class="ul-txt">
+                      <li>
+                        ① 안전원은 시스템에 이용자가 게시하거나 등록하는 모든
+                        내용물이 다음 각 호의 경우에 해당된다고 판단되는 경우
+                        사전 통지 없이 삭제할 수 있으며, 이에 대해 안전원은
+                        어떠한 책임도 지지 않습니다.
+                        <ul>
+                          <li>
+                            1. 안전원, 다른 이용자 또는 제3자를 비방하거나 중상
+                            모략으로 명예를 손상시키는 내용인 경우
+                          </li>
+                          <li>
+                            2. 공공질서 및 미풍양속에 위반되는 내용인 경우
+                          </li>
+                          <li>
+                            3. 범죄적 행위에 결부된다고 인정되는 내용일 경우
+                          </li>
+                          <li>
+                            4. 제3자의 저작권 등 기타 권리를 침해하는 내용인
+                            경우
+                          </li>
+                          <li>5. 서비스 성격에 부합하지 않는 정보의 경우</li>
+                          <li>
+                            6. 기타 관계 법령 및 안전원에서 정한 규정 등에
+                            위배되는 경우
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        ② 안전원은 시스템에 게시된 내용을 사전 통지한 지 3일
+                        이후 편집, 이동, 삭제할 수 있는 권리를 보유하며, 게시된
+                        내용이 이 약관에 위배되거나 상용 또는 비합법적, 불건전한
+                        내용일 경우 및 해지 사용자가 게시한 게시물은 사전통보
+                        없이 삭제할 수 있습니다.
+                      </li>
+                      <li>
+                        ③ 안전원은 게시된 내용이 일정기간 이상 경과되어,
+                        게시물로써의 효력을 상실하여 그 존치 목적이 불분명한
+                        경우 공지사항 발표 후 1주일간의 통지기간을 거쳐 해당
+                        게시물을 삭제할 수 있습니다.
+                      </li>
+                    </ul>
+                    <p class="p-title">제10조 (게시물의 저작권)</p>
+                    <ul class="ul-txt">
+                      <li>
+                        ① 사용자가 시스템 내에 게시한 게시물의 저작권은 작성한
+                        이용자에게 있으며, 안전원은 다른 서비스에서의 게재 등
+                        활용할 수 있습니다.
+                      </li>
+                      <li>
+                        ② 사용자의 게시물이 타인의 저작권, 프로그램 저작권 등을
+                        침해함으로써 발생하는 민, 형사상의 책임은 전적으로
+                        침해한 이용자가 부담하여야 합니다.
+                      </li>
+                      <li>
+                        ③ 사용자가 시스템을 이용하여 얻은 정보를 가공하는 행위
+                        등 서비스에 게재된 자료를 상업적으로 사용할 수 없습니다.
+                      </li>
+                    </ul>
+                    <p class="p-title">제11조 (안전원의 소유권)</p>
+                    <ul class="ul-txt">
+                      <li>
+                        ① 안전원이 제공하는 서비스, 그에 필요한 소프트웨어,
+                        이미지, 마크, 로고, 디자인, 서비스명칭, 정보 및 상표
+                        등과 관련된 지적재산권 및 기타권리는 안전원에 소유권이
+                        있습니다.
+                      </li>
+                      <li>
+                        ② 이용자는 안전원이 명시적으로 승인한 경우를 제외하고는
+                        제1항 소정의 각 재산에 대한 전부 또는 일부의 수정, 대여,
+                        대출, 판매, 배포, 제작, 양도, 재라이센스, 담보권
+                        설정행위, 상업적 이용행위를 할 수 없으며, 제3자로 하여금
+                        이와 같은 행위를 하도록 허락할 수 없습니다.
+                      </li>
+                    </ul>
+                    <p class="p-title">제12조 (안전원의 의무)</p>
+                    <ul class="ul-txt">
+                      <li>
+                        ① 이용자는 이 약관과 관계법령이 정한 바에 따라
+                        지속적이고, 안정적으로 서비스를 제공하기 위하여
+                        노력합니다.
+                      </li>
+                      <li>
+                        ② 안전원이 제공하는 서비스로 인하여 이용자에게 손해가
+                        발생한 경우 그러한 손해가 안전원의 고의나 중과실에 기해
+                        발생한 경우에 한하여 안전원에서 책임을 부담하며, 그
+                        책임의 범위는 통상손해에 한합니다.
+                      </li>
+                      <li>
+                        ③ 안전원은 이용자로부터 제기되는 의견이나 불만이
+                        정당하다고 인정할 경우에는 신속히 처리하여야 합니다.
+                        다만, 신속한 처리가 곤란한 경우에는 이용자에게 그 사유와
+                        처리일정을 통보하여야 합니다.
+                      </li>
+                      <li>
+                        ④ 안전원은 관련법령이 정하는 바에 따라서 본인 등록정보를
+                        포함한 이용자의 개인정보를 보호하기 위하여 노력합니다.
+                        이용자의 개인정보보호에 관해서는 관련법령 및 제 8조에
+                        제시된 내용을 지킵니다.
+                      </li>
+                    </ul>
+                    <p class="p-title">
+                      제13조 (이용자의 행정전자서명 및 비밀번호에 대한 의무)
+                    </p>
+                    <ul class="ul-txt">
+                      <li>
+                        ① 시스템에서 사용하는 행정전자서명인증서 및
+                        인증서비밀번호에 관한 관리책임은 사용자에게 있습니다.
+                      </li>
+                      <li>
+                        ② 이용자은 본인의 행정전자서명인증서 및 인증서비밀번호를
+                        제3자에게 이용하게 해서는 안됩니다.
+                      </li>
+                      <li>
+                        ③ 사용자가 자신의 행정전자서명인증서 및 인증서비밀번호를
+                        도난 당하거나 제3자가 사용하고 있음을 인지한 경우에는
+                        바로 안전원에 통보하여야 합니다.
+                      </li>
+                      <li>
+                        ④ 사용자는 시스템에 접속 종료 시 확실히 로그아웃을
+                        하여야 합니다.
+                      </li>
+                    </ul>
+                    <p class="p-title">제14조 (사용자의 의무)</p>
+                    <ul class="ul-txt">
+                      <li>
+                        ① 이용자는 시스템을 이용하면서 다음 각 호와 같은 행위를
+                        하지 않기로 동의합니다.
+                        <ul>
+                          <li>
+                            1. 타인(소수를 포함)에게 위해를 가하는 행위
+                            <ul>
+                              <li>
+                                가. 타인의 ID, PASSWORD, 주민등록번호 도용 및
+                                타인으로 가장하는 행위
+                              </li>
+                              <li>나. 타인과의 관계를 허위로 명시하는 행위</li>
+                              <li>
+                                다. 타인을 비방할 목적으로 사실 또는 허위의
+                                사실을 적시하여 명예를 훼손하는 행위
+                              </li>
+                              <li>
+                                라. 자기 또는 타인에게 재산상의 이익을 주거나
+                                타인에게 손해를 가할 목적으로 허위의 정보를 유통
+                                시키는 행위
+                              </li>
+                              <li>
+                                마. 수치심이나 혐오감 또는 공포심을 일으키는
+                                말이나 음향, 글이나 화상 또는 영상을 계속하여
+                                상대방에게 도달하게 하여 상대방의 일상적 생활을
+                                방해하는 행위
+                              </li>
+                              <li>
+                                바. 안전원의 사전 승낙 없이 서비스를 이용한
+                                영리행위
+                              </li>
+                              <li>
+                                사. 타인의 정보통신서비스 이용명의를 도용하여
+                                사용하는 행위
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            2. 불필요하거나 승인되지 않은 광고, 판촉물을
+                            게재하거나, "정크 메일(junk mail)", "스팸(spam)",
+                            "행운의 편지(chain letters)", "도배글", "피라미드
+                            조직" 등을 권유하거나 게시, 게재 또는 전자우편으로
+                            보내는 행위
+                          </li>
+                          <li>
+                            3. 저속 또는 음란한 데이터, 텍스트, 소프트웨어,
+                            음악, 사진, 그래픽, 비디오 메시지 등(이하
+                            "컨텐츠")을 게시, 게재 또는 전자우편으로 보내는 행위
+                          </li>
+                          <li>
+                            4. 권리(지적재산권을 포함한 모든 권리)가 없는
+                            컨텐츠를 게시, 게재 또는 전자우편으로 보내는 행위
+                          </li>
+                          <li>
+                            5. 컴퓨터 소프트웨어, 하드웨어, 전기통신 장비를
+                            파괴, 방해 또는 기능을 제한하기 위한 소프트웨어
+                            바이러스를 게시, 게재 또는 전자우편으로 보내는 행위
+                          </li>
+                          <li>
+                            6. 다른 컴퓨터 코드, 파일, 프로그램을 포함하고 있는
+                            자료를 게시, 게재, 전자우편으로 보내는 행위 등 다른
+                            사용자의 개인정보를 수집 또는 저장하는 행위
+                          </li>
+                          <li>
+                            7. 재물을 걸고 도박하거나 사행행위를 하는 행위
+                          </li>
+                          <li>
+                            8. 윤락행위를 알선하거나 음행을 매개하는 내용의
+                            정보를 유통시키는 행위
+                          </li>
+                          <li>9. 기타 불법적이거나 부당한 행위</li>
+                        </ul>
+                      </li>
+                      <li>
+                        ② 이용자는 이 약관 및 관계법령에서 규정한 사항을
+                        준수하여야 합니다.
+                      </li>
+                    </ul>
+                    <p class="p-title">제15조 (손해배상)</p>
+                    <p class="p-txt mgt15">
+                      안전원은 무료로 제공되는 서비스와 관련하여 이용자에게
+                      어떠한 손해가 발생하더라도 동 손해가 안전원의 중대한
+                      과실에 의한 경우를 제외하고 이에 대하여 책임을 부담하지
+                      아니합니다.
+                    </p>
+                    <p class="p-title">제16조 (면책조항)</p>
+                    <ul class="ul-txt">
+                      <li>
+                        ① 안전원은 천재지변 또는 이에 준하는 불가항력으로 인하여
+                        서비스를 제공할 수 없는 경우에는 서비스 제공에 관한
+                        책임이 면제됩니다.
+                      </li>
+                      <li>
+                        ② 안전원은 이용자의 귀책사유로 인한 서비스이용의 장애에
+                        대하여 책임을 지지 않습니다.
+                      </li>
+                      <li>
+                        ③ 안전원은 이용자가 서비스를 이용하여 기대하는 이익이나
+                        서비스를 통하여 얻은 자료로 인한 손해에 관하여 책임을
+                        지지 않습니다.
+                      </li>
+                      <li>
+                        ④ 안전원은 이용자가 서비스에 게재한 정보, 자료, 사실의
+                        신뢰도, 정확성 등의 내용에 관하여는 책임을 지지
+                        않습니다.
+                      </li>
+                    </ul>
+                    <p class="p-title">제17조 (관할법원)</p>
+                    <ul class="ul-txt">
+                      <li>
+                        ① 서비스 이용과 관련하여 안전원과 이용자 사이에 분쟁이
+                        발생한 경우, 안전원과 이용자간 발생한 분쟁을 원만하게
+                        해결하기 위하여 필요한 모든 노력을 하여야 합니다.
+                      </li>
+                      <li>
+                        ② 제1항의 규정에도 불구하고 서비스 이용으로 발생한
+                        분쟁에 대하여 소송이 제기될 경우 서울시 소재지를
+                        관할하는 법원을 관할법원으로 합니다.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="kfsi-agree-form__foot">
+                    <div
+                      class="d-flex justify-content-center mo-flex-column column-gap-10"
+                    >
+                      <div class="form-check mx-2">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          value=""
+                          id="radio1-1"
+                        />
+                        <label class="form-check-label" for="radio1-1">
+                          위 내용에 동의합니다.
+                        </label>
+                      </div>
+                      <div class="form-check mx-2">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          value=""
+                          id="radio1-2"
+                        />
+                        <label class="form-check-label" for="radio1-2">
+                          위 내용에 동의하지 않습니다.
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="kfsi-agree-form mt-11">
+                  <div class="kfsi-agree-form__title">
+                    개인정보 수집 및 이용에 대한 안내 (필수선택)
+                  </div>
+                  <div
+                    class="kfsi-agree-form__contents"
+                    style="height: 300px; overflow: auto"
+                  >
+                    <strong>□ 개인정보 수집 및 이용내역</strong>
+                    <div class="mt-3">
+                      - 개인정보 수집·활용 동의<br />
+                      <div class="pc mt-2">
+                        <div class="kfsi-table">
+                          <table>
+                            <caption>
+                              개인정보 수집·활용 동의 테이블
+                            </caption>
+                            <colgroup>
+                              <col style="width: 400px" />
+                              <col style="width: 240px" />
+                              <col style="width: 240px" />
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">수집·이용 항목</th>
+                                <th scope="col">수집·이용 목적</th>
+                                <th scope="col">보유기간</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  성명,생년월일,소속,GPKI키,모바일앱사용시[휴대폰번호,IMEI]
+                                </td>
+                                <td>
+                                  소방행정지원시스템(SES) 모바일 앱 및 웹
+                                  사이트를 사용을 위한 사용자 정보 수집
+                                </td>
+                                <td>
+                                  소방행정지원시스템(SES)을 이용완료* 후 1년<br />
+                                  * (이용완료) 최종 접속일 기준 1년이상 경과 및
+                                  탈퇴 신청일 기준
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="mo mt-5">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              성명,생년월일,소속,GPKI키,모바일앱사용시[휴대폰번호,IMEI]
+                            </li>
+                            <li>
+                              소방행정지원시스템(SES) 모바일 앱 및 웹 사이트를
+                              사용을 위한 사용자 정보 수집
+                            </li>
+                            <li>
+                              소방행정지원시스템(SES)을 이용완료* 후 1년<br />
+                              * (이용완료) 최종 접속일 기준 1년이상 경과 및 탈퇴
+                              신청일 기준
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mt-3">
+                      - 사이트 이용 과정에서 자동으로 생성되어 수집될 수 있는
+                      항목<br />
+                      <div class="pc mt-2">
+                        <div class="kfsi-table">
+                          <table>
+                            <caption>
+                              사이트 이용 과정에서 자동으로 생성되어 수집될 수
+                              있는 항목 테이블
+                            </caption>
+                            <colgroup>
+                              <col style="width: 640px" />
+                              <col style="width: 240px" />
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">수집·이용 항목</th>
+                                <th scope="col">보유기간</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  IP주소, MAC주소, 쿠키, 방문 기록, 서비스 이용
+                                  기록, 불량 이용 기록 등
+                                </td>
+                                <td>회원탈퇴시 자동폐기</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="mo mt-5">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              IP주소, MAC주소, 쿠키, 방문 기록, 서비스 이용
+                              기록, 불량 이용 기록 등
+                            </li>
+                            <li>회원탈퇴시 자동폐기</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mt-3">
+                      - 개인정보 보호책임자<br />
+                      <div class="pc mt-2">
+                        <div class="kfsi-table">
+                          <table>
+                            <caption>
+                              개인정보 보호책임자 테이블
+                            </caption>
+                            <colgroup>
+                              <col style="width: 240px" />
+                              <col style="width: 320px" />
+                              <col style="width: 320px" />
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">구분</th>
+                                <th scope="col">개인정보보호 책임자</th>
+                                <th scope="col">개인정보보호 관리자</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>직책</td>
+                                <td>경영기획이사</td>
+                                <td>고객지원과장</td>
+                              </tr>
+                              <tr>
+                                <td>성명</td>
+                                <td>박억조</td>
+                                <td>이기종</td>
+                              </tr>
+                              <tr>
+                                <td>연락처</td>
+                                <td colspan="2">02-850-1377</td>
+                              </tr>
+                              <tr>
+                                <td>전자우편</td>
+                                <td colspan="2">largeant@kfsi.or.kr</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="mo mt-5">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              성명,생년월일,소속,GPKI키,모바일앱사용시[휴대폰번호,IMEI]
+                            </li>
+                            <li>
+                              소방행정지원시스템(SES) 모바일 앱 및 웹 사이트를
+                              사용을 위한 사용자 정보 수집
+                            </li>
+                            <li>
+                              소방행정지원시스템(SES)을 이용완료* 후 1년<br />
+                              * (이용완료) 최종 접속일 기준 1년이상 경과 및 탈퇴
+                              신청일 기준
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-4 border-top">
+                    ※ 동의를 거부할 권리가 있다는 사실 및 동의 거부에 따른
+                    불이익 내용 :<br />
+                    개인정보 수집 및 이용 동의를 거부할 권리가 있으며, 동의
+                    거부시 해당 서비스를 이용할 수 없습니다.
+                  </div>
+                  <div class="kfsi-agree-form__foot">
+                    <div
+                      class="d-flex justify-content-center mo-flex-column column-gap-10"
+                    >
+                      <div class="form-check mx-2">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          value=""
+                          id="radio2-1"
+                        />
+                        <label class="form-check-label" for="radio2-1">
+                          위 내용에 동의합니다.
+                        </label>
+                      </div>
+                      <div class="form-check mx-2">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          value=""
+                          id="radio2-2"
+                        />
+                        <label class="form-check-label" for="radio2-2">
+                          위 내용에 동의하지 않습니다.
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-10">
+                  <h4 class="kfsi-h4">본인확인 정보</h4>
+                  <div class="kfsi-board-write">
+                    <div class="kfsi-board-write-form">
+                      <table>
+                        <caption>
+                          본인확인 정보 입력 테이블
+                        </caption>
+                        <colgroup>
+                          <col style="width: 195px" />
+                          <col style="width: 745px" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row"><span>성명</span></th>
+                            <td>
+                              <span>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  title="성명"
+                                  style="width: 300px"
+                                  placeholder="ex) 홍길동"
+                                />
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><span>생년월일</span></th>
+                            <td>
+                              <span>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  title="생년월일"
+                                  style="width: 300px"
+                                  placeholder="ex) 19790803"
+                                />
+                                <p class="m-0 mt-2">
+                                  ※ 생년월일 입력 시 주민등록번호상
+                                  생년월일(8자리)로 숫자만 입력해주세요.
+                                </p>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><span>소속</span></th>
+                            <td>
+                              <span>
+                                <div class="d-flex align-items-center gap-2">
+                                  <select
+                                    class="form-select w-100"
+                                    title="소속 본부 선택"
+                                  >
+                                    <option selected>- 본 부 -</option>
+                                  </select>
+                                  <select
+                                    class="form-select w-100"
+                                    title="소속 소방서 선택"
+                                  >
+                                    <option selected>- 소방서 -</option>
+                                  </select>
+                                  <select
+                                    class="form-select w-100"
+                                    title="소속 소방센터 선택"
+                                  >
+                                    <option selected>- 소방센터 -</option>
+                                  </select>
+                                </div>
+                              </span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="kfsi-button">
+                    <p>
+                      <button type="button" class="btn btn-primary btn-lg">
+                        인증서 확인
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="kfsi-footer">
+        <div class="kfsi-inner">
+          <div class="kfsi-footer-ses">
+            <img
+              src="./assets/images/ses/logo-footer.png"
+              alt="소방행정지원시스템"
+            />
+            <p>
+              <strong>문의 : 소방행정지원시스템 고객센터 02-850-1377</strong
+              ><br />
+              COPYRIGHT ⓒ 2019 소방청·한국소방안전원 All rights reserved.
+            </p>
+          </div>
+          <div class="kfsi-footer-foot">
+            <div>
+              <div class="kfsi-footer-menu">
+                <a href=""><strong>개인정보처리방침</strong></a>
+                <a href="">영상정보처리기기 운영관리 방침</a>
+                <a href="">이용약관</a>
+                <a href="" class="underline">원격지원서비스</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
