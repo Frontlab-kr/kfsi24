@@ -19497,6 +19497,14 @@ small, .small {
   }
 }
 
+.kfsi-lecture-menu-index-list-sub a {
+  display: block;
+}
+
+.in_step .step_text {
+  text-decoration: underline;
+}
+
 .ico-login {
   display: inline-block;
   min-width: 16px;
@@ -37772,6 +37780,7 @@ html.oacxHtml {
   background: #004d16;
   border-color: #004d16;
   color: #fff;
+  text-decoration: underline;
 }
 .kfsi-training-head-category-item-button-item.active p {
   display: block;
@@ -37875,6 +37884,7 @@ html.oacxHtml {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.48px;
+  text-decoration: underline;
 }
 .kfsi-training-head-region {
   margin: 0 0 16px 0;

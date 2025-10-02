@@ -249,6 +249,15 @@ $(document).ready(function () {
     $h1.replaceWith($h3);
   });
 
+  //
+  $(function () {
+    const setTitle = () => $('.dz-hidden-input').attr('title', '첨부파일');
+    setTitle(); // 초기
+
+    const obs = new MutationObserver(() => setTitle());
+    obs.observe(document.body, { childList: true, subtree: true });
+  });
+
   //ico-remove
   $(function () {
     setTimeout(() => {
