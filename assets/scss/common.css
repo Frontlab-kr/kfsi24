@@ -24954,6 +24954,7 @@ html.oacxHtml {
   border: solid 1px #004d16;
   background-color: #fff;
   display: none;
+  overflow: auto;
 }
 .kfsi-header-menu-title {
   display: flex;
@@ -25510,9 +25511,6 @@ html.oacxHtml {
   }
 }
 @media screen and (max-width: 992px) {
-  .kfsi--menu {
-    overflow: hidden;
-  }
   .kfsi--menu .kfsi-body {
     min-height: auto;
     height: 640px;

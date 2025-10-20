@@ -586,6 +586,7 @@ html.oacxHtml {
         border: solid 1px #004d16;
         background-color: #fff;
         display: none;
+        overflow: auto;
       }
       &-title {
         display: flex;
@@ -1170,7 +1171,7 @@ html.oacxHtml {
   }
   &--menu {
     @media screen and (max-width: $mobileWidth) {
-      overflow: hidden;
+      //overflow: hidden;
       .kfsi-body {
         min-height: auto;
         height: 640px;
