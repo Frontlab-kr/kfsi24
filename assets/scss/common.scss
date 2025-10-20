@@ -13,7 +13,7 @@
   outline: 3px dotted red !important;
   outline-offset: -2px;
 }
- 
+
 #header {
   position: relative;
   z-index: 100;
@@ -1172,6 +1172,10 @@ html.oacxHtml {
     @media screen and (max-width: $mobileWidth) {
       overflow: hidden;
     }
+    .kfsi-body {
+      min-height: auto;
+      height: 640px;
+    }
   }
   &--menu & {
     &-header {
@@ -1870,7 +1874,7 @@ html.oacxHtml {
     z-index: 50;
     display: flex;
     gap: 60px;
-    min-height: 600px;
+    min-height: 700px;
     padding: 50px 0 100px;
     @media screen and (max-width: $mobileWidth) {
       flex-direction: column;

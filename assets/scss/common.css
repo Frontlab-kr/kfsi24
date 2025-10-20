@@ -25514,6 +25514,10 @@ html.oacxHtml {
     overflow: hidden;
   }
 }
+.kfsi--menu .kfsi-body {
+  min-height: auto;
+  height: 640px;
+}
 .kfsi--menu .kfsi-header-menu__open {
   display: none;
 }
@@ -26172,7 +26176,7 @@ html.oacxHtml {
   z-index: 50;
   display: flex;
   gap: 60px;
-  min-height: 600px;
+  min-height: 700px;
   padding: 50px 0 100px;
 }
 @media screen and (max-width: 992px) {
@@ -40016,4 +40020,4 @@ html.oacxHtml {
 }
 .kfsi-survey-button {
   margin-top: auto;
-}/*# sourceMappingURL=common.css.map */
+}
