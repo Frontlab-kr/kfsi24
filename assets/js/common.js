@@ -4,6 +4,20 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+  // header
+  $(document).on('click', function (e) {
+    const $target = $(e.target);
+
+    if ($('html').hasClass('kfsi--menu')) {
+      if (
+        !$target.closest('.kfsi-header-menu-wrap').length &&
+        !$target.closest('.kfsi-header-menu__open').length
+      ) {
+        $('html').removeClass('kfsi--menu');
+      }
+    }
+  });
+
   // snb
   $('.kfsi-snb-item-sub > .kfsi-snb-item').each(function () {
     if (!$(this).find('.hidden').length) {

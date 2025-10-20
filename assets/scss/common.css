@@ -24949,7 +24949,7 @@ html.oacxHtml {
   top: 60px;
   right: 0;
   width: 1240px;
-  height: 850px;
+  height: calc(100vh - 240px);
   box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.1);
   border: solid 1px #004d16;
   background-color: #fff;
@@ -26174,7 +26174,7 @@ html.oacxHtml {
   z-index: 50;
   display: flex;
   gap: 60px;
-  min-height: 700px;
+  min-height: 600px;
   padding: 50px 0 100px;
 }
 @media screen and (max-width: 992px) {
