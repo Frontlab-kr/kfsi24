@@ -1171,10 +1171,10 @@ html.oacxHtml {
   &--menu {
     @media screen and (max-width: $mobileWidth) {
       overflow: hidden;
-    }
-    .kfsi-body {
-      min-height: auto;
-      height: 640px;
+      .kfsi-body {
+        min-height: auto;
+        height: 640px;
+      }
     }
   }
   &--menu & {

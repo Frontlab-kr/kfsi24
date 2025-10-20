@@ -25513,10 +25513,10 @@ html.oacxHtml {
   .kfsi--menu {
     overflow: hidden;
   }
-}
-.kfsi--menu .kfsi-body {
-  min-height: auto;
-  height: 640px;
+  .kfsi--menu .kfsi-body {
+    min-height: auto;
+    height: 640px;
+  }
 }
 .kfsi--menu .kfsi-header-menu__open {
   display: none;
