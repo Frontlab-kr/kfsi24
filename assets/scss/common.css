@@ -31452,7 +31452,7 @@ html.oacxHtml {
   letter-spacing: 0.48px;
 }
 .kfsi-faq-list-head__category {
-  min-width: 100px;
+  min-width: 120px;
   padding: 10px;
   color: #000;
   font-family: Pretendard;
@@ -31461,6 +31461,7 @@ html.oacxHtml {
   font-weight: 400;
   line-height: 24px; /* 150% */
   letter-spacing: 0.48px;
+  white-space: noWrap;
 }
 .kfsi-faq-list-head__title {
   display: flex;
@@ -31477,12 +31478,6 @@ html.oacxHtml {
   font-weight: 400;
   line-height: 24px; /* 150% */
   letter-spacing: 0.48px;
-  display: -webkit-box;
-  overflow: hidden;
-  /* autoprefixer: ignore next */
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  word-break: break-all;
 }
 .kfsi-faq-list-body {
   position: relative;
