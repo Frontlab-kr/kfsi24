@@ -40020,3 +40020,58 @@ html.oacxHtml {
 .kfsi-survey-button {
   margin-top: auto;
 }
+.kfsi-thumb-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  row-gap: 24px;
+}
+.kfsi-thumb-list-item {
+  display: block;
+}
+.kfsi-thumb-list-item-thumb {
+  position: relative;
+  aspect-ratio: 16/9;
+}
+.kfsi-thumb-list-item-thumb img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.kfsi-thumb-list-item-thumb p {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  margin: 0;
+  padding: 0px 4px;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 11px;
+}
+.kfsi-thumb-list-item-title {
+  margin: 8px 0 0 0;
+  color: #000;
+  display: -webkit-box;
+  overflow: hidden;
+  /* autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-break: break-all;
+}
+.kfsi-thumb-list-item-text {
+  color: #666;
+  font-size: 14px;
+}
+.kfsi-thumb-list-item:hover .kfsi-thumb-list-item-title {
+  color: #004d16;
+  font-weight: 700;
+}
+@media screen and (max-width: 992px) {
+  .kfsi-thumb-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
