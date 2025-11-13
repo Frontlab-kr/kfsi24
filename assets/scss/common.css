@@ -40026,6 +40026,8 @@ html.oacxHtml {
   -moz-column-gap: 16px;
        column-gap: 16px;
   row-gap: 24px;
+  padding: 24px 0 0 0;
+  border-top: 2px solid #004d16;
 }
 .kfsi-thumb-list-item {
   display: block;
